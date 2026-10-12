@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+Allow: /blog/
+
+Sitemap: https://bhpapirfinder.ba/sitemap.xml
+
+# BH PapirFinder - Digitalni vodič za administrativne obrasce u BiH
+# https://bhpapirfinder.ba

@@ -1,0 +1,503 @@
+# BH PapirFinder v64 — MGX.dev Fix Prompt
+# Kompletna dijagnoza + rješenja za 8 kritičnih blokera
+# Autor analize: Claude Sonnet 4.6 | Datum: 2026-05-11
+
+---
+
+## KONTEKST PROJEKTA
+
+BH PapirFinder v64 je napredna PWA aplikacija za pronalaženje administrativnih
+obrazaca u BiH. Ima dobru arhitekturu (Supabase, React, TypeScript, i18n) ali
+8 kritičnih blokera sprečavaju pravilno funkcionisanje kao website, digitalni alat i app.
+
+Supabase projekt: zdvqjjmpxifbltihffas
+Tech stack: React + TypeScript + Vite + shadcn/ui + Tailwind + Supabase
+
+---
+
+## BLOKER #1 (KRITIČNO — SIGURNOST): Secret API ključevi u .env fajlu
+
+### Problem
+Fajl `.env` sadrži `API_SECRET_KEY=sk_co286pxlR8-Oa92wj0adzA` i
+`PAYPAL_SECRET=...` koji su committani u repo. Svaki VITE_ prefiks
+varijabla je vidljiva svim korisnicima u browser devtools.
+
+### Ispravak
+1. Ukloni `API_SECRET_KEY` i `PAYPAL_SECRET` iz `.env` odmah
+2. Sve secret operacije premjesti u Supabase Edge Function
+3. U `.env` ostavi SAMO:
+```
+VITE_SUPABASE_URL=https://zdvqjjmpxifbltihffas.supabase.co
+VITE_SUPABASE_ANON_KEY=eyJhbGci...
+VITE_PAYPAL_CLIENT_ID=AUBHyLJ_m-7_...
+```
+4. Rotacija ključeva: odmah generiraj novi API_SECRET_KEY u Atoms Cloud dashboardu
+
+---
+
+## BLOKER #2 (KRITIČNO — BIZNIS): PayPal plaćanje aktivira localStorage, ne Supabase
+
+### Problem
+U `Subscription.tsx`, `onApprove` callback poziva `upgradeToPaid()` iz `trial.ts`
+koja upisuje status u `localStorage`. Ovo znači:
+- Plaćanje se gubi pri clear cache-a
+- Mobilna app ne vidi plaćanje
+- Nema server-side verifikacije — korisnik može lažirati plaćanje
+- `SubscriptionGuard` koristi `isSubscriptionActive()` iz `@/lib/subscription`
+  koji vjerojatno čita localStorage — nije importovan iz `trial.ts`!
+
+### Ispravak — Subscription.tsx onApprove callback:
+```typescript
+onApprove: async (_data, actions) => {
+  try {
+    const order = await actions.order.capture();
+
+    // 1. Sačuvaj transakciju u Supabase
+    const { data: { session } } = await supabase.auth.getSession();
+    if (!session?.user) throw new Error('Korisnik nije prijavljen');
+
+    const daysMap: Record<string, number> = {
+      plan5days: 5, plan30days: 30, plan12months: 365
+    };
+    const days = daysMap[planId] || 5;
+    const expiresAt = new Date(Date.now() + days * 86400000).toISOString();
+
+    const { error } = await supabase.from('transactions').insert({
+      user_id: session.user.id,
+      plan_id: planId,
+      paypal_order_id: order.id,
+      amount_bam: parseFloat(amount),
+      status: 'completed',
+      expires_at: expiresAt,
+    });
+
+    if (error) throw error;
+
+    // 2. Lokalni fallback (backward compat)
+    upgradeToPaid(planId, expiresAt);
+
+    setPaymentSuccess(true);
+  } catch (err) {
+    setPaymentError('Greška pri obradi plaćanja: ' + String(err));
+  }
+},
+```
+
+### Supabase SQL — kreiraj transactions tablicu:
+```sql
+CREATE TABLE IF NOT EXISTS transactions (
+  id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+  user_id UUID REFERENCES auth.users(id),
+  plan_id TEXT NOT NULL,
+  paypal_order_id TEXT,
+  amount_bam NUMERIC,
+  status TEXT DEFAULT 'pending' CHECK (status IN ('pending','completed','failed','refunded')),
+  expires_at TIMESTAMPTZ NOT NULL,
+  created_at TIMESTAMPTZ DEFAULT NOW()
+);
+ALTER TABLE transactions ENABLE ROW LEVEL SECURITY;
+CREATE POLICY "Own transactions" ON transactions FOR ALL USING (auth.uid() = user_id);
+```
+
+---
+
+## BLOKER #3 (KRITIČNO — CORE FEATURE): Nema /form/:id stranice — preview/fill/share/print ne postoje
+
+### Problem
+`MunicipalityForms.tsx` je hardkodiran SAMO za Olovo (`isOlovo = slug === 'olovo'`).
+Za sve ostale 150+ institucija u bazi, klik na rezultat otvara vanjski URL tab — bez
+ikakve preview, fill, download, share ili print funkcionalnosti.
+
+`App.tsx` nema rutu `/form/:id`. `FormDetail` stranica ne postoji.
+
+### Ispravak — App.tsx, dodaj rutu:
+```tsx
+<Route path="/municipality/:slug" element={<MunicipalityForms />} />
+<Route path="/form/:institutionId/:formId?" element={<FormDetail />} />
+```
+
+### Kreiraj src/pages/FormDetail.tsx:
+```tsx
+import { useParams, useNavigate } from 'react-router-dom';
+import { useState } from 'react';
+import { Button } from '@/components/ui/button';
+import { ArrowLeft, Download, Share2, Printer, FileEdit } from 'lucide-react';
+import { getUserAccessLevel } from '@/lib/access-control';
+
+const FormDetail = () => {
+  const { institutionId } = useParams();
+  const navigate = useNavigate();
+  const access = getUserAccessLevel();
+  const [pdfUrl, setPdfUrl] = useState<string | null>(null);
+
+  // Dohvati institution iz verified-domains ili municipalities-database
+  // te njen forms_url
+
+  const handleDownload = () => {
+    if (!pdfUrl) return;
+    const a = document.createElement('a');
+    a.href = pdfUrl;
+    a.download = `formular-${institutionId}.pdf`;
+    a.click();
+  };
+
+  const handleShare = async () => {
+    if (!pdfUrl) return;
+    if (navigator.share) {
+      await navigator.share({ title: 'BH PapirFinder formular', url: pdfUrl });
+    } else {
+      await navigator.clipboard.writeText(pdfUrl);
+      alert('Link kopiran!');
+    }
+  };
+
+  const handlePrint = () => {
+    if (!pdfUrl) return;
+    const iframe = document.createElement('iframe');
+    iframe.style.display = 'none';
+    iframe.src = pdfUrl;
+    document.body.appendChild(iframe);
+    iframe.onload = () => { iframe.contentWindow?.print(); };
+  };
+
+  return (
+    <div className="min-h-screen bg-gray-50">
+      <div className="bg-gradient-to-r from-[#003D7A] to-[#00A651] text-white py-6 px-4">
+        <Button variant="ghost" className="text-white mb-2" onClick={() => navigate(-1)}>
+          <ArrowLeft className="h-4 w-4 mr-2" /> Nazad
+        </Button>
+        <h1 className="text-2xl font-bold">Pregled formulara</h1>
+      </div>
+
+      {/* PDF Preview */}
+      <div className="container px-4 py-6">
+        {pdfUrl ? (
+          <iframe
+            src={`https://docs.google.com/viewer?url=${encodeURIComponent(pdfUrl)}&embedded=true`}
+            className="w-full rounded-lg border shadow"
+            style={{ height: '70vh' }}
+            title="PDF Preview"
+          />
+        ) : (
+          <div className="text-center py-16 text-gray-500">
+            PDF nije dostupan za direktni pregled. Koristite dugmad ispod.
+          </div>
+        )}
+
+        {/* Action Bar */}
+        {access.hasSubscription && (
+          <div className="flex gap-3 mt-6 flex-wrap">
+            <Button onClick={handleDownload} className="bg-[#003D7A]">
+              <Download className="h-4 w-4 mr-2" /> Preuzmi
+            </Button>
+            <Button onClick={handleShare} variant="outline">
+              <Share2 className="h-4 w-4 mr-2" /> Dijeli
+            </Button>
+            <Button onClick={handlePrint} variant="outline">
+              <Printer className="h-4 w-4 mr-2" /> Štampaj
+            </Button>
+            <Button variant="outline" onClick={() => navigate(`/fill/${institutionId}`)}>
+              <FileEdit className="h-4 w-4 mr-2" /> Popuni
+            </Button>
+          </div>
+        )}
+      </div>
+    </div>
+  );
+};
+
+export default FormDetail;
+```
+
+### SearchResults.tsx — zamijeni "Posjeti web stranicu" dugme:
+```tsx
+// STARO (otvara vanjski tab, bez ikakve app funkcionalnosti):
+<Button onClick={() => window.open(result.url, '_blank')}>
+  Posjeti web stranicu
+</Button>
+
+// NOVO (vodi na FormDetail unutar app):
+<Button onClick={() => navigate(`/form/${result.id}`)}>
+  <FileText className="h-4 w-4 mr-2" /> Otvori obrasce
+</Button>
+```
+
+---
+
+## BLOKER #4 (KRITIČNO — AUTH): Dual auth sistem — localStorage i Supabase Auth nisu sinhronizovani
+
+### Problem
+`trial.ts` registruje korisnike u `localStorage` (lokalni loginCode sistem).
+`supabaseClient.ts` ima `signUpUser()` koji koristi Supabase Auth.
+`auth.ts` koristi OBOJE — fallback na localStorage ako Supabase Auth ne radi.
+
+Rezultat: korisnik se može "prijaviti" bez ikakvog Supabase sesiona, a pristup
+se kontroliše localStorage bool-om koji se briše pri incognito/clear cache.
+
+### Ispravak — Login.tsx i Register.tsx moraju koristiti ISKLJUČIVO Supabase Auth:
+```typescript
+// Register.tsx — zamijeni registerUser() sa:
+const { data, error } = await signUpUser(email, password, name);
+if (error) { setError(error.message); return; }
+// Ne koristiti localStorage za registraciju
+
+// Login.tsx — zamijeni loginUser() sa:
+const { data, error } = await signInUser(email, password);
+if (error) { setError(error.message); return; }
+// Supabase automatski čuva sesiju
+```
+
+### access-control.ts — zamijeni localStorage check sa Supabase session:
+```typescript
+export async function getUserAccessLevel(): Promise<AccessLevel> {
+  const { user } = await getCurrentUser();
+  if (!user) return { canViewFormNames: true, canViewFormUrls: false, isAdmin: false, hasSubscription: false };
+
+  const isAdminUser = isAdminEmail(user.email || '');
+  if (isAdminUser) return { canViewFormNames: true, canViewFormUrls: true, isAdmin: true, hasSubscription: true };
+
+  // Provjeri aktivnu pretplatu u Supabase
+  const { data } = await supabase.from('transactions')
+    .select('expires_at').eq('user_id', user.id).eq('status', 'completed')
+    .gte('expires_at', new Date().toISOString()).limit(1).maybeSingle();
+
+  return {
+    canViewFormNames: true,
+    canViewFormUrls: !!data,
+    isAdmin: false,
+    hasSubscription: !!data,
+  };
+}
+```
+
+---
+
+## BLOKER #5 (KRITIČNO — DATA): 71/72 Olovo PDF-ova koristi HTTP (ne HTTPS)
+
+### Problem
+`olovo-forms.ts` sadrži 71 od 72 PDF-ova s `http://olovo.gov.ba/...` URL-ovima.
+Moderni browseri blokiraju mixed content — HTTPS stranica ne može loadati HTTP resurse.
+Rezultat: **svi Olovo PDF-ovi neće raditi** na deployiranom bhpapirfinder.ba.
+
+### Ispravak — automatski fix u olovo-forms.ts:
+```typescript
+// Zamijeni sve URL-ove u olovo-forms.ts:
+// http://olovo.gov.ba → https://olovo.gov.ba
+
+// Brzi bash fix (pokrenuti lokalno):
+// sed -i 's|http://olovo.gov.ba|https://olovo.gov.ba|g' src/data/olovo-forms.ts
+
+// Ili u kodu, proxy kroz Google:
+const safePdfUrl = (url: string) =>
+  url.startsWith('http://')
+    ? `https://docs.google.com/viewer?url=${encodeURIComponent(url)}&embedded=true`
+    : url;
+```
+
+### Dugoročno rješenje — Supabase Storage proxy:
+Uploaduj sve 72 Olovo PDF-ova u Supabase Storage bucket i serviraj ih s HTTPS URL-ovima.
+
+---
+
+## BLOKER #6 (VISOKI): MunicipalityForms.tsx ne podržava nijednu drugu općinu osim Olova
+
+### Problem
+`isOlovo = slug === 'olovo'` — sve ostale općine dobijaju "Općina nije pronađena" grešku.
+Ruta `/municipality/:slug` postoji ali stranica ne radi ni za jednu drugu instituciju.
+
+### Ispravak — generaliziraj MunicipalityForms.tsx:
+```typescript
+const MunicipalityForms = () => {
+  const { slug } = useParams();
+  const [institution, setInstitution] = useState<UnifiedSearchResult | null>(null);
+  const [forms, setForms] = useState<FormEntry[]>([]);
+
+  useEffect(() => {
+    if (slug === 'olovo') {
+      // Koristi postojeće olovo forme
+      setForms(olovoForms.map(f => ({ ...f, url: f.pdfUrl })));
+      return;
+    }
+    // Za ostale institucije — dohvati iz verified-domains ili Supabase
+    const verified = findVerifiedDomain(slug || '');
+    if (verified) {
+      setInstitution(verifiedToUnified(verified, []));
+      // Otvori forms_url u iframe ako postoji
+    }
+  }, [slug]);
+
+  // Prikaži forms_url u iframe + download dugme za sve institucije
+  // Ne vraćaj "Općina nije pronađena" — prikaži forms_url ako postoji
+};
+```
+
+---
+
+## BLOKER #7 (VISOKI): Prijevod koristi MyMemory API (rate limited 500 req/dan besplatno)
+
+### Problem
+`translation.ts` koristi `https://api.mymemory.translated.net` — besplatni tier
+dozvoljava 500 zahtjeva/dan po IP-u. Pri većem broju korisnika, svi prijevodi
+prestaju raditi s greškom 429. Nema retry logike ni rate limit handlera.
+
+### Ispravak — dodaj fallback i throttling:
+```typescript
+// translation.ts
+const RATE_LIMIT_KEY = 'translation_rate_limit';
+
+export async function translateText(text: string, targetLang: SupportedLanguage): Promise<string> {
+  const cacheKey = `${text}_${targetLang}`;
+  const cached = translationCache[cacheKey];
+  if (cached && Date.now() - cached.timestamp < CACHE_DURATION) return cached.translation;
+
+  // Provjeri rate limit
+  const rateLimitData = JSON.parse(localStorage.getItem(RATE_LIMIT_KEY) || '{"count":0,"resetAt":0}');
+  if (rateLimitData.count >= 450 && Date.now() < rateLimitData.resetAt) {
+    console.warn('Translation rate limit reached, returning original');
+    return text; // Vrati originalni tekst, ne baci grešku
+  }
+
+  try {
+    const url = `https://api.mymemory.translated.net/get?q=${encodeURIComponent(text)}&langpair=bs|${targetLang}`;
+    const response = await fetch(url);
+
+    if (response.status === 429) {
+      // Rate limited — postavi reset na midnight
+      const tomorrow = new Date(); tomorrow.setHours(24,0,0,0);
+      localStorage.setItem(RATE_LIMIT_KEY, JSON.stringify({ count: 500, resetAt: tomorrow.getTime() }));
+      return text;
+    }
+
+    const data = await response.json();
+    const translation = data.responseData?.translatedText || text;
+
+    translationCache[cacheKey] = { translation, timestamp: Date.now() };
+    // Inkrementiraj rate limit counter
+    rateLimitData.count++;
+    localStorage.setItem(RATE_LIMIT_KEY, JSON.stringify(rateLimitData));
+
+    return translation;
+  } catch {
+    return text; // Uvijek vrati originalni tekst kao fallback
+  }
+}
+```
+
+---
+
+## BLOKER #8 (VISOKI): SubscriptionGuard importuje iz nepostojećeg fajla
+
+### Problem
+`SubscriptionGuard.tsx` importuje `isSubscriptionActive` iz `@/lib/subscription`
+ali taj fajl ne postoji u projektu! `lib/subscription.ts` nije u listi fajlova.
+
+### Ispravak — kreiraj src/lib/subscription.ts:
+```typescript
+// src/lib/subscription.ts
+import { getUserAccount } from './trial';
+
+export function isSubscriptionActive(): boolean {
+  const account = getUserAccount();
+  if (!account) return false;
+
+  if (account.status === 'paid' && account.paidExpiryDate) {
+    return new Date() < new Date(account.paidExpiryDate);
+  }
+
+  if (account.status === 'trial' && account.trialExpiryDate) {
+    return new Date() < new Date(account.trialExpiryDate);
+  }
+
+  return false;
+}
+
+export function getSubscriptionExpiry(): Date | null {
+  const account = getUserAccount();
+  if (!account) return null;
+  const expiry = account.paidExpiryDate || account.trialExpiryDate;
+  return expiry ? new Date(expiry) : null;
+}
+```
+
+---
+
+## REDOSLJED IMPLEMENTACIJE
+
+### FAZA 1 — Hitno (sigurnost + platni sistem): 1-2 dana
+1. **Bloker #1**: Ukloni secret ključeve iz .env odmah
+2. **Bloker #8**: Kreiraj src/lib/subscription.ts (10 minuta)
+3. **Bloker #2**: Poveži PayPal onApprove sa Supabase transactions tablicom
+
+### FAZA 2 — Core funkcionalnost: 3-5 dana
+4. **Bloker #3**: Kreiraj FormDetail.tsx + /form/:id ruta
+5. **Bloker #5**: HTTP→HTTPS fix za sve Olovo PDF-ove
+6. **Bloker #4**: Migriraj na pure Supabase Auth
+
+### FAZA 3 — Skalabilnost: 1-2 dana
+7. **Bloker #6**: Generaliziraj MunicipalityForms.tsx za sve opcine
+8. **Bloker #7**: Dodaj rate limit handling u translation.ts
+
+---
+
+## ŠTA RADI DOBRO (ne mijenjati)
+
+- Supabase klijent je pravilno konfiguriran (supabaseClient.ts)
+- Enhanced search (municipalities-database-enhanced.ts) s 3-tier fallback logikom
+- Trust score sistem i DomainDetector komponenta
+- AI Chatbot (AIChatbot.tsx) s pdf-form-filler.ts integracija
+- PWA konfiguracija (manifest.json, sw.js)
+- i18n sistem (LanguageContext.tsx)
+- ErrorBoundary komponenta
+- Olovo forms baza (71 obrazac s kategorijama) — samo HTTP→HTTPS fix
+- Audit log sistem
+- Verified domains baza (1114 linija podataka)
+
+---
+
+## SUPABASE SQL — Sve što treba pokrenuti u SQL Editoru
+
+```sql
+-- 1. Transactions tablica (za PayPal plaćanja)
+CREATE TABLE IF NOT EXISTS transactions (
+  id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+  user_id UUID REFERENCES auth.users(id),
+  plan_id TEXT NOT NULL,
+  paypal_order_id TEXT,
+  amount_bam NUMERIC,
+  status TEXT DEFAULT 'pending' CHECK (status IN ('pending','completed','failed','refunded')),
+  expires_at TIMESTAMPTZ NOT NULL,
+  created_at TIMESTAMPTZ DEFAULT NOW()
+);
+ALTER TABLE transactions ENABLE ROW LEVEL SECURITY;
+CREATE POLICY "Own transactions" ON transactions FOR ALL USING (auth.uid() = user_id);
+
+-- 2. Search logs (ako ne postoji)
+CREATE TABLE IF NOT EXISTS search_logs (
+  id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+  user_id UUID REFERENCES auth.users(id),
+  query TEXT NOT NULL,
+  results_count INTEGER DEFAULT 0,
+  created_at TIMESTAMPTZ DEFAULT NOW()
+);
+ALTER TABLE search_logs ENABLE ROW LEVEL SECURITY;
+CREATE POLICY "Own search logs" ON search_logs FOR ALL USING (auth.uid() = user_id);
+CREATE POLICY "Insert anonymous" ON search_logs FOR INSERT WITH CHECK (true);
+
+-- 3. Admin flag za user_profiles (ako tablca postoji)
+DO $$ BEGIN
+  IF EXISTS (SELECT FROM information_schema.tables WHERE table_name = 'user_profiles') THEN
+    ALTER TABLE user_profiles ADD COLUMN IF NOT EXISTS is_admin BOOLEAN DEFAULT FALSE;
+    UPDATE user_profiles SET is_admin = TRUE
+    WHERE id = (SELECT id FROM auth.users WHERE email = 'alenjusufovic@yahoo.com');
+  END IF;
+END $$;
+
+-- 4. Provjera
+SELECT 'transactions' as tablica, COUNT(*) FROM transactions
+UNION ALL SELECT 'search_logs', COUNT(*) FROM search_logs;
+```
+
+---
+
+Implementiraj blokere redom od #1 do #8. Nakon svakog, potvrdi da radi.
+Počni s Blokerom #8 (10 minuta, kreira subscription.ts) jer deblokira build.

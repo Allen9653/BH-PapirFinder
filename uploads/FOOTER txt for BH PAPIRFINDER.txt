@@ -1,0 +1,86 @@
+# POLITIKA PRIVATNOSTI
+
+**Datum stupanja na snagu: 11.10.2026.**
+
+Platforma BH PAPIRFINDER, projekat i vlasništvo privrednog društva B&H Assistant d.o.o. Zenica (u daljem tekstu: "mi", "naše", "društvo"), posvećena je maksimalnoj zaštiti privatnosti i ličnih podataka svojih korisnika. Ova Politika privatnosti objašnjava kako postupamo sa podacima prilikom korištenja našeg generatora poreznih i upravnih obrazaca, u potpunosti u skladu sa Zakonom o zaštiti ličnih podataka Bosne i Hercegovine ("Službeni glasnik BiH", broj 49/06, 76/11 i 89/11) i načelima Opće uredbe o zaštiti podataka (GDPR).
+
+### 1. Koje podatke obrađujemo?
+Prilikom korištenja generatora obrazaca (poput JS, MIP, GPD i dr.), Vi unosite lične i finansijske podatke koji su zakonom propisani za te obrasce (ime, prezime, JMBG, adresa, naziv poslodavca, iznos primanja i sl.). 
+
+### 2. Princip "In-Memory" i privremeno pohranjivanje (Sistem od 5 sati)
+Kako bismo osigurali maksimalnu privatnost, naša arhitektura je dizajnirana na principu minimizacije podataka:
+* **Instant preuzimanje (On-Screen):** Ukoliko dokument preuzimate direktno na svoj uređaj, generisanje se vrši unutar memorije Vašeg pretraživača (Client-Side / In-Memory). U ovom slučaju, Vaši uneseni podaci uopšte ne napuštaju Vaš uređaj i ne upisuju se na naše servere.
+* **Opcije "Podijeli" i "Pošalji na e-mail":** Ukoliko izaberete opciju slanja ili dijeljenja dokumenta, sistem vrši privremeni upis generisanog PDF dokumenta u naš zaštićeni oblak (Supabase Storage). Dokumentu se dodjeljuje kriptovani, privremeni link (Signed URL).
+* **Automatsko i trajno brisanje:** Svi privremeno pohranjeni dokumenti i podaci se automatski, trajno i nepovratno brišu putem automatizovane skripte tačno pet (5) sati nakon generisanja sesije. Nakon isteka ovog roka, podaci više ne postoje na našim sistemima i nemoguće ih je vratiti.
+
+### 3. Google AdSense i kolačići trećih strana
+Ova web lokacija koristi Google AdSense za prikazivanje oglasa. Google koristi kolačiće (Cookies) za prikazivanje oglasa na osnovu Vaših prethodnih posjeta našoj ili drugim web lokacijama. Korisnici mogu onemogućiti personalizovano oglašavanje posjetom Postavkama oglasa na svom Google računu.
+
+### 4. Prava korisnika
+U svakom trenutku imate pravo zahtijevati informacije o tome kako se podaci procesiraju, kao i pravo da zahtijevate trenutno brisanje privremenih podataka slanjem zahtjeva na info@bh-assistant.ba.
+Use code with caution.
+
+2. Uslovi korištenja i odricanje od odgovornosti (Terms of Service / Disclaimer)
+
+Ključni dokument koji štiti firmu B&H Assistant d.o.o. od tužbi u slučaju da korisnik unese pogrešne podatke u poreznu prijavu.
+markdown
+# USLOVI KORIŠTENJA I ODRICANJE OD ODGOVORNOSTI
+
+Dobrodošli na platformu BH PAPIRFINDER. Pristupanjem i korištenjem ove web aplikacije prihvatate sljedeće uslove korištenja:
+
+### 1. Pravni status platforme
+BH PAPIRFINDER je nezavisni privatni softverski alat i projekat u vlasništvu B&H Assistant d.o.o. Zenica. BH PAPIRFINDER **nije** državna institucija, niti je na bilo koji način povezan, odobren ili sponzorisan od strane Porezne uprave Federacije BiH, Porezne uprave Republike Srpske, Porezne uprave Brčko distrikta ili bilo kojeg drugog ministarstva ili organa uprave u Bosni i Hercegovini.
+
+### 2. Odricanje od odgovornosti (Disclaimer)
+* Svi obrasci, zakonski tekstovi i šabloni dostupni na platformi služe isključivo kao tehnička pomoć korisnicima u obavljanju administrativnih poslova.
+* BH PAPIRFINDER i B&H Assistant d.o.o. garantuju da su tehnička forma i izgled generisanih obrazaca usklađeni sa službenim propisima poreznih uprava, ali **ne odgovaraju za tačnost, istinitost i pravnu ispravnost podataka koje korisnik samostalno unese u polja generatora**.
+* Korisnik u potpunosti snosi krivičnu i materijalnu odgovornost za unošenje tačnih podataka (kao što su JMBG, iznosi plata, porezni koeficijenti i sl.) prije predaje dokumenata nadležnim organima.
+* B&H Assistant d.o.o. se odriče bilo kakve odgovornosti za eventualne kazne, kamate, odbijanja na šalterima ili bilo kakvu finansijsku i pravnu štetu nastalu usljed pogrešno ispunjenih obrazaca od strane korisnika.
+
+### 3. Pravo na modifikaciju usluge
+Zadržavamo pravo da u bilo kojem trenutku, bez prethodne najave, izmijenimo, suspendujemo ili ukinemo određene funkcionalnosti generatora u cilju usklađivanja sa novim zakonskim propisima u BiH.
+Use code with caution.
+
+3. Sigurnost i 5h Brisanje podataka (Data Security Overview)
+
+Tehničko-pravni dokument koji stvara povjerenje kod korisnika (Trust Factor) i podiže SEO autoritet stranice objašnjavajući arhitekturu.
+markdown
+# SIGURNOST PODATAKA I MEHANIZAM AUTOMATSKOG BRISANJA
+
+Na platformi BH PAPIRFINDER, sigurnost Vaših finansijskih i ličnih podataka je naš najveći prioritet. Razvili smo naprednu infrastrukturu koja garantuje da Vaši osjetljivi podaci nikada ne mogu biti zloupotrijebljeni, prodati ili trajno zadržani.
+
+### 🔒 Kako štitimo Vaše podatke?
+
+1. **Enkripcija u tranzitu (SSL/TLS):** Sva komunikacija između Vašeg uređaja i platforme BH PAPIRFINDER zaštićena je najmodernijim SSL certifikatima sa 256-bitnom enkripcijom. Podaci koje unosite su nevidljivi za treća lica tokom prenosa.
+2. **Klijentska izolacija (In-Memory Processing):** Naš primarni tok generisanja obrazaca radi direktno u RAM memoriji Vašeg pretraživača. Ako dokument odmah preuzmete, podaci se ne zapisuju na hard disk servera, čime se rizik od curenja podataka svodi na nulu.
+3. **Supabase Kriptovani Signed URL-ovi (Za opcije dijeljenja):** Kada koristite opciju slanja na e-mail ili generisanja linka za dijeljenje, datoteka se smješta u izolovani Supabase Storage. Pristup tom fajlu je zaštićen jedinstvenim privremenim tokenom (Signed URL). Niko ko nema taj tačan, privremeni link ne može pristupiti dokumentu.
+4. **Stroga Cron-Job Skripta (Uništenje nakon 5 sati):** Naš sistem pokreće automatizovane skripte (Edge Functions) koje u realnom vremenu prate starost datoteka. Tačno 5 sati (300 minuta) nakon što kreirate sesiju, skripta trajno, na nivou datotečnog sistema, briše fajl iz baze podataka. 
+
+### Napomena o nepovratnosti
+Molimo korisnike da odmah po generisanju spase dokument na svoj lokalni disk (računar ili telefon). Zbog bezbjednosnog protokola od 5 sati, administratori BH PAPIRFINDER-a nemaju tehničku mogućnost da Vam vrate izbrisani dokument ukoliko propustite rok za preuzimanje.
+Use code with caution.
+
+4. Impressum / O nama (Company Information)
+
+Ovaj dio pruža puni institucionalni i pravni legitimitet pred Google AdSense revizorima, dokazujući da iza projekta stoji registrovano pravno lice.
+markdown
+# IMPRESSUM / O NAMA
+
+Platforma **BH PAPIRFINDER** je inovativni domaći digitalni projekat namijenjen digitalizaciji, automatizaciji i olakšavanju administrativnih i pravnih procesa za građane i pravna lica u Bosni i Hercegovini.
+
+Vlasnik i osnivač platforme je privredno društvo za poslovno i pravno savjetovanje te IT usluge **B&H Assistant d.o.o. Zenica**.
+
+### Zvanični identifikacioni podaci kompanije:
+* **Pun naziv pravnog lica:** B&H Assistant d.o.o. za savjetovanje i usluge Zenica
+* **Skraćeni naziv:** B&H Assistant d.o.o.
+* **Sjedište i adresa:** Bulevar Ezhera Eze Arnautovića 8, 72000 Zenica, Bosna i Hercegovina
+* **Jedinstveni identifikacioni broj (JIB):** 4219296620005
+* **Matični broj subjekta (MBS):** 43-01-0177-25
+* **Zvanična web stranica društva:** [www.bh-assistant.ba](https://bh-assistant.ba)
+
+### Kontakt za medije, pravna pitanja i tehničku podršku:
+* **E-mail:** info@bh-assistant.ba
+* **Telefon:** +387 62 580 207
+
+*BH PAPIRFINDER kontinuirano radi na unapređenju poslovnog ambijenta u BiH kroz kreiranje pristupačnih tehnoloških rješenja koja štede vrijeme i novac.*
+Use code with caution.

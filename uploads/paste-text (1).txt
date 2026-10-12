@@ -1,0 +1,53 @@
+Izdvojio sam adrese koje su u bazi zavedene kao neaktivne ili problematične, kao i one koje zahtijevaju provjeru, te pripremio prijedloge novih aktivnih službenih adresa:
+
+1. Bosanska Krajina
+Općina: Bosanski Petrovac
+
+Zavedeni link (Glavna stranica): https://zzousk.ba/ (Pogrešno preusmjeravanje/pogrešan unos u bazi za općinu)
+
+Status: Neaktivno / Pogrešan link
+
+Prijedlog nove aktivne adrese: Službena web stranica Općine Bosanski Petrovac je https://www.bosanskipetrovac.gov.ba/.
+
+2. Hercegovačka regija
+Grad: Grad Mostar (Odjel za organizaciju i pravne poslove)
+
+Zavedeni link (Obrasci): https://www.mostar.ba/storage/2022/09/Odjel-za-organizaciju-i-pravne-poslove.rar (Direktan .rar download link koji često zastarijeva ili se mijenja)
+
+Status: Potencijalno nedostupno / Istekao link
+
+Prijedlog nove aktivne adrese: Pristup stranici i aktuelnim formularima i odjelima potražiti direktno na glavnoj domeni Grada Mostara: https://www.mostar.ba/.
+
+3. Travnička regija
+Općina: Bugojno
+
+Zavedeni link: opcina-bugojno.ba (Nedostaje protokol poput https://)
+
+Status: Nekompletan/nestabilan URL
+
+Prijedlog nove aktivne adrese: https://www.bugojno.ba/
+
+Općina: Gornji Vakuf-Uskoplje
+
+Zavedeni link: gvu.ba (Skraćeni oblik koji više ne vodi na ispravnu web prezentaciju)
+
+Status: Neaktivno
+
+Prijedlog nove aktivne adrese: https://opcinagvu.ba/
+
+Općina: Donji Vakuf
+
+Zavedeni link: donji-vakuf.ba (Stara domena koja se ne učitava ispravno)
+
+Status: Neaktivno
+
+Prijedlog nove aktivne adrese: https://donjivakuf.ba/
+
+4. Zenička regija
+Općina: Usora
+
+Zavedeni link: http://www.usora.com/ (HTTP nesigurna veza, česte promjene domene)
+
+Status: Zastarjelo / Nestabilno
+
+Prijedlog nove aktivne adrese: https://usora.ba/

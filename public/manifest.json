@@ -1,0 +1,61 @@
+{
+  "short_name": "PapirFinder",
+  "name": "BH PapirFinder - Dokumenti i Forme",
+  "description": "Pronađite besplatne vladine obrasce i dokumente u BiH.",
+  "icons": [
+    {
+      "src": "/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ],
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#003D7A",
+  "background_color": "#ffffff",
+  "orientation": "portrait",
+  "scope": "/",
+  "lang": "bs",
+  "dir": "ltr",
+  "categories": ["productivity", "utilities"],
+  "prefer_related_applications": false,
+  "shortcuts": [
+    {
+      "name": "Pretraga",
+      "short_name": "Pretraga",
+      "description": "Pretraži općine i gradove",
+      "url": "/",
+      "icons": [
+        {
+          "src": "/icon-192x192.png",
+          "sizes": "192x192"
+        }
+      ]
+    },
+    {
+      "name": "Pretplata",
+      "short_name": "Pretplata",
+      "description": "Pogledaj planove pretplate",
+      "url": "/subscription",
+      "icons": [
+        {
+          "src": "/icon-192x192.png",
+          "sizes": "192x192"
+        }
+      ]
+    }
+  ]
+}

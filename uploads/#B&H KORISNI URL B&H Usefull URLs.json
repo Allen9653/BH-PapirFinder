@@ -1,0 +1,1996 @@
+{
+" SARAJEVSKA REGIJA":[
+ {
+  " BOSNA & HERCEGOVINA  SARAJEVSKA REGIJA ": "Entitet",
+  "Column2": "Kanton\/Županija",
+  "Column3": "Grad",
+  "Column4": "Općina\/Opština",
+  "Column5": "Ministarstvo\/Zavod",
+  "Column6": "URL Glavna Stranica",
+  "Column7": "URL Dokumenti\/Obrasci",
+  "Column8": "Status",
+  "Column9": "Ocjena Stabilnosti",
+  "Column10": "Komentar"
+ },
+ {
+  " BOSNA & HERCEGOVINA  SARAJEVSKA REGIJA ": "FBiH",
+  "Column2": "Bosansko-podrinjski kanton (BPK)",
+  "Column3": "Goražde",
+  "Column6": "https:\/\/www.gorazde.ba",
+  "Column7": "https:\/\/www.gorazde.ba\/zahtjevi-i-obrasci\/",
+  "Column8": "Aktivno",
+  "Column9": "Stabilno",
+  "Column10": "Obrasci – urbanistička saglasnost, lokacijska informacija, izdavanje izvoda i uvjerenja"
+ },
+ {
+  " BOSNA & HERCEGOVINA  SARAJEVSKA REGIJA ": "FBiH",
+  "Column2": "Bosansko-podrinjski kanton (BPK)",
+  "Column4": "Pale-Prača",
+  "Column6": "https:\/\/www.palepra.ca.ba",
+  "Column7": "Kontakt šalter",
+  "Column8": "Aktivno",
+  "Column9": "Stabilno",
+  "Column10": "Nema posebnu stranicu za obrasce, koristi se kontakt s općinom za zahtjeve"
+ },
+ {
+  " BOSNA & HERCEGOVINA  SARAJEVSKA REGIJA ": "FBiH",
+  "Column2": "Bosansko-podrinjski kanton (BPK)",
+  "Column4": "Foča-Ustikolina",
+  "Column6": "http:\/\/foca-ustikolina.ba",
+  "Column7": "Kontakt šalter",
+  "Column8": "Aktivno",
+  "Column9": "Stabilno",
+  "Column10": "Nema online sekciju, obrasci dostupni na šalteru"
+ },
+ {
+  " BOSNA & HERCEGOVINA  SARAJEVSKA REGIJA ": "FBiH",
+  "Column2": "Bosansko-podrinjski kanton (BPK)",
+  "Column5": "Ministarstvo za socijalnu politiku, zdravstvo BPK",
+  "Column6": "http:\/\/www.bpkg.gov.ba\/ministarstva\/zdravstvo",
+  "Column7": "http:\/\/www.bpkg.gov.ba\/ministarstva\/zdravstvo",
+  "Column8": "Aktivno",
+  "Column9": "Stabilno",
+  "Column10": "Obrasci – zdravstveno osiguranje, refundacije, ortopedska pomagala"
+ },
+ {
+  " BOSNA & HERCEGOVINA  SARAJEVSKA REGIJA ": "FBiH",
+  "Column2": "Bosansko-podrinjski kanton (BPK)",
+  "Column5": "Ministarstvo za obrazovanje BPK",
+  "Column6": "http:\/\/www.bpkg.gov.ba\/ministarstva\/obrazovanje",
+  "Column7": "http:\/\/www.bpkg.gov.ba\/ministarstva\/obrazovanje",
+  "Column8": "Aktivno",
+  "Column9": "Stabilno",
+  "Column10": "Obrasci – stipendije, nostrifikacija, upisi u školu"
+ },
+ {
+  " BOSNA & HERCEGOVINA  SARAJEVSKA REGIJA ": "FBiH",
+  "Column2": "Bosansko-podrinjski kanton (BPK)",
+  "Column5": "Ministarstvo za urbanizam BPK",
+  "Column6": "http:\/\/www.bpkg.gov.ba\/ministarstva\/urbanizam",
+  "Column7": "http:\/\/www.bpkg.gov.ba\/ministarstva\/urbanizam",
+  "Column8": "Aktivno",
+  "Column9": "Stabilno",
+  "Column10": "Obrasci – lokacijska informacija, urbanističke saglasnosti, okolišne dozvole"
+ },
+ {
+  " BOSNA & HERCEGOVINA  SARAJEVSKA REGIJA ": "FBiH",
+  "Column2": "Bosansko-podrinjski kanton (BPK)",
+  "Column5": "Zavod zdravstvenog osiguranja BPK",
+  "Column6": "http:\/\/www.zzobpk.ba\/",
+  "Column7": "http:\/\/www.zzobpk.ba\/",
+  "Column8": "Aktivno",
+  "Column9": "Stabilno",
+  "Column10": "Obrasci – prijava na zdravstveno osiguranje, refundacija, ortopedska pomagala"
+ },
+ {
+  " BOSNA & HERCEGOVINA  SARAJEVSKA REGIJA ": "FBiH",
+  "Column2": "Kanton Sarajevo (KS)",
+  "Column3": "Grad Sarajevo",
+  "Column4": "Općina Stari Grad",
+  "Column6": "starigrad.ba",
+  "Column8": "Aktivno",
+  "Column9": "Stabilno",
+  "Column10": "PUNOMOĆ – formular; IZJAVA o zajedničkom domaćinstvu"
+ },
+ {
+  " BOSNA & HERCEGOVINA  SARAJEVSKA REGIJA ": "FBiH",
+  "Column2": "Kanton Sarajevo (KS)",
+  "Column3": "Grad Sarajevo",
+  "Column4": "Općina Centar",
+  "Column6": "centar.ba",
+  "Column8": "Aktivno",
+  "Column9": "Stabilno",
+  "Column10": "OPC‑01.1 Izjava o podacima – formular deklaracije"
+ },
+ {
+  " BOSNA & HERCEGOVINA  SARAJEVSKA REGIJA ": "FBiH",
+  "Column2": "Kanton Sarajevo (KS)",
+  "Column4": "Općina Ilidža",
+  "Column6": "ilidza.ba",
+  "Column8": "Aktivno",
+  "Column9": "Stabilno",
+  "Column10": "Elektronski formulari (više PDF obrazaca)"
+ },
+ {
+  " BOSNA & HERCEGOVINA  SARAJEVSKA REGIJA ": "FBiH",
+  "Column2": "Kanton Sarajevo (KS)",
+  "Column3": "Grad Sarajevo",
+  "Column4": "Općina Novi Grad",
+  "Column6": "novigradsarajevo.ba",
+  "Column8": "Aktivno",
+  "Column9": "Stabilno",
+  "Column10": "Elektronski formulari – obrasci (prijava prebivališta, ličnih dokumenata i sl.)"
+ },
+ {
+  " BOSNA & HERCEGOVINA  SARAJEVSKA REGIJA ": "FBiH",
+  "Column2": "Kanton Sarajevo (KS)",
+  "Column3": "Grad Sarajevo",
+  "Column4": "Općina Novo Sarajevo",
+  "Column6": "novosarajevo.ba",
+  "Column8": "Aktivno",
+  "Column9": "Stabilno",
+  "Column10": "Obrasci, formulari za fizička i pravna lica iz raznih oblasti"
+ },
+ {
+  " BOSNA & HERCEGOVINA  SARAJEVSKA REGIJA ": "FBiH",
+  "Column2": "Kanton Sarajevo (KS)",
+  "Column3": "Grad Sarajevo",
+  "Column4": "Općina Vogošća",
+  "Column6": "vogosca.ba",
+  "Column7": "vogosca.ba",
+  "Column8": "Aktivno",
+  "Column9": "Stabilno",
+  "Column10": "Koriste centralnu e-upravu, obrasci nisu javno listani, koriste općinske službe"
+ },
+ {
+  " BOSNA & HERCEGOVINA  SARAJEVSKA REGIJA ": "FBiH",
+  "Column2": "Kanton Sarajevo (KS)",
+  "Column3": "Grad Sarajevo",
+  "Column4": "Općina Hadžići",
+  "Column6": "hadzici.ba",
+  "Column8": "Aktivno",
+  "Column9": "Stabilno",
+  "Column10": "Koriste zajedničke obrasce kroz FZU KS ili centralnu e-upravu"
+ },
+ {
+  " BOSNA & HERCEGOVINA  SARAJEVSKA REGIJA ": "FBiH",
+  "Column2": "Kanton Sarajevo (KS)",
+  "Column3": "Grad Sarajevo",
+  "Column4": "Općina Trnovo",
+  "Column6": "trnovo.ba",
+  "Column8": "Aktivno",
+  "Column9": "Stabilno",
+  "Column10": "Koriste zajedničke obrasce kroz FZU KS ili centralnu e-upravu"
+ },
+ {
+  " BOSNA & HERCEGOVINA  SARAJEVSKA REGIJA ": "FBiH",
+  "Column2": "Kanton Sarajevo (KS)",
+  "Column3": "Grad Sarajevo",
+  "Column4": "Općina Ilijaš",
+  "Column6": "ilijas.ba",
+  "Column8": "Aktivno",
+  "Column9": "Stabilno",
+  "Column10": "Koriste zajedničke obrasce kroz FZU KS ili centralnu e-upravu"
+ },
+ {
+  " BOSNA & HERCEGOVINA  SARAJEVSKA REGIJA ": "Republika Srpska",
+  "Column3": "GRAD  ",
+  "Column4": "Istočno Sarajevo",
+  "Column5": "https:\/\/gradistocnosarajevo.net\/",
+  "Column6": "https:\/\/gradistocnosarajevo.net\/",
+  "Column7": "https:\/\/gradistocnosarajevo.net\/category\/obrasci\/",
+  "Column8": "AKTIVNO",
+  "Column9": "STABILNO",
+  "Column10": "Zvanična web stranica Grada Istočno Sarajevo je aktivna i stabilna, sa jasno označenim odjeljkom za obrasce. Obrasci su zakonski dozvoljeni. Nije potrebna posebna tražilica."
+ },
+ {
+  " BOSNA & HERCEGOVINA  SARAJEVSKA REGIJA ": "Republika Srpska",
+  "Column3": "Istočna Ilidža",
+  "Column4": "N\/A",
+  "Column6": "https:\/\/istocnailidza.net\/",
+  "Column7": "https:\/\/istocnailidza.net\/?page_id=255",
+  "Column8": "AKTIVNO",
+  "Column9": "STABILNO",
+  "Column10": "Zvanična web stranica Opštine Istočna Ilidža je aktivna i stabilna, sa jasno označenim odjeljkom za obrasce. Obrasci su zakonski dozvoljeni. Nije potrebna posebna tražilica."
+ },
+ {
+  " BOSNA & HERCEGOVINA  SARAJEVSKA REGIJA ": "Republika Srpska",
+  "Column3": "Istočno Novo Sarajevo",
+  "Column4": "N\/A",
+  "Column6": "https:\/\/opstinains.net\/",
+  "Column7": "https:\/\/opstinains.net\/%d0%",
+  "Column8": "AKTIVNO",
+  "Column9": "STABILNO",
+  "Column10": "Zvanična web stranica Opštine Istočno Novo Sarajevo je aktivna i stabilna, sa jasno označenim odjeljkom za obrasce. Obrasci su zakonski dozvoljeni. Nije potrebna posebna tražilica."
+ },
+ {
+  " BOSNA & HERCEGOVINA  SARAJEVSKA REGIJA ": "Republika Srpska",
+  "Column3": "Pale",
+  "Column4": "N\/A",
+  "Column6": "https:\/\/www.pale.rs.ba\/",
+  "Column7": "https:\/\/opstinapale.org\/zahtjevi-i-obrasci\/",
+  "Column8": "AKTIVNO",
+  "Column9": "STABILNO",
+  "Column10": "Zvanična web stranica Opštine Pale je aktivna i stabilna, sa jasno označenim odjeljkom za obrasce. Obrasci su zakonski dozvoljeni. Nije potrebna posebna tražilica."
+ },
+ {
+  " BOSNA & HERCEGOVINA  SARAJEVSKA REGIJA ": "Republika Srpska",
+  "Column3": "Trnovo (RS)",
+  "Column4": "N\/A",
+  "Column7": "https:\/\/trnovo-rs.org\/obrasci\/",
+  "Column8": "AKTIVNO",
+  "Column9": "STABILNO",
+  "Column10": "Zvanična web stranica Opštine Trnovo (RS) je aktivna i stabilna, sa jasno označenim odjeljkom za obrasce. Obrasci su zakonski dozvoljeni. Nije potrebna posebna tražilica."
+ },
+ {
+  " BOSNA & HERCEGOVINA  SARAJEVSKA REGIJA ": "Republika Srpska",
+  "Column3": "Istočni Stari Grad",
+  "Column4": "N\/A",
+  "Column6": "https:\/\/opstinaisg.net\/",
+  "Column7": "https:\/\/opstinaisg.net\/obrasci-zahtjeva\/",
+  "Column8": "AKTIVNO",
+  "Column9": "STABILNO",
+  "Column10": "Zvanična web stranica Opštine Istočni Stari Grad je aktivna i stabilna, sa jasno označenim odjeljkom za obrasce. Obrasci su zakonski dozvoljeni. Nije potrebna posebna tražilica."
+ },
+ {
+  " BOSNA & HERCEGOVINA  SARAJEVSKA REGIJA ": "Republika Srpska",
+  "Column3": "Sokolac",
+  "Column4": "N\/A",
+  "Column6": "https:\/\/opstinasokolac.net\/",
+  "Column7": "https:\/\/opstinasokolac.net\/obrasci-i-zahtjevi\/",
+  "Column8": "AKTIVNO",
+  "Column9": "STABILNO",
+  "Column10": "Zvanična web stranica Opštine Sokolac je aktivna i stabilna, sa jasno označenim odjeljkom za obrasce. Obrasci su zakonski dozvoljeni. Nije potrebna posebna tražilica."
+ },
+ {
+  " BOSNA & HERCEGOVINA  SARAJEVSKA REGIJA ": "RS",
+  "Column3": "N\/A",
+  "Column4": "Opština Foča",
+  "Column5": "N\/A",
+  "Column6": "https:\/\/opstinafoca.rs.ba\/",
+  "Column7": "https:\/\/opstinafoca.rs.ba\/zahtjevi-i-obrasci\/",
+  "Column8": "Aktivan ",
+  "Column9": "STABILNO",
+  "Column10": "Svi obrasci su zakonski dostupni privatnim firmama za e-servisiranje građana i stranaca. Obrasci uključuju: Lokacijske informacije, Urbanističke saglasnosti, Građevinske dozvole, Matične knjige, Prijave i odjave prebivališta, Uvjerenja o državljanstvu."
+ },
+ {
+  " BOSNA & HERCEGOVINA  SARAJEVSKA REGIJA ": "RS",
+  "Column3": "N\/A",
+  "Column4": "Opština Čajniče",
+  "Column5": "N\/A",
+  "Column6": "https:\/\/cajnice.rs.ba\/",
+  "Column7": "https:\/\/cajnice.rs.ba\/obrasci\/",
+  "Column8": "Aktivan ",
+  "Column9": "STABILNO",
+  "Column10": "Svi obrasci su zakonski dostupni privatnim firmama za e-servisiranje građana i stranaca. Obrasci uključuju: Lokacijske informacije, Urbanističke saglasnosti, Građevinske dozvole, Matične knjige, Prijave i odjave prebivališta, Uvjerenja o državljanstvu."
+ },
+ {
+  " BOSNA & HERCEGOVINA  SARAJEVSKA REGIJA ": "RS",
+  "Column3": "N\/A",
+  "Column4": "Opština Rudo",
+  "Column5": "N\/A",
+  "Column6": "https:\/\/rudo.rs.ba\/",
+  "Column7": "https:\/\/rudo.rs.ba\/zahtjevi-i-obrasci\/",
+  "Column8": "Aktivan ",
+  "Column9": "STABILNO",
+  "Column10": "Svi obrasci su zakonski dostupni privatnim firmama za e-servisiranje građana i stranaca. Obrasci uključuju: Lokacijske informacije, Urbanističke saglasnosti, Građevinske dozvole, Matične knjige, Prijave i odjave prebivališta, Uvjerenja o državljanstvu."
+ },
+ {
+  " BOSNA & HERCEGOVINA  SARAJEVSKA REGIJA ": "RS",
+  "Column3": "N\/A",
+  "Column4": "Opština Novo Goražde",
+  "Column5": "N\/A",
+  "Column6": "https:\/\/novogorazde.rs.ba\/",
+  "Column7": "https:\/\/novogorazde.rs.ba\/zahtjevi-i-obrasci\/ ",
+  "Column8": "Aktivan ",
+  "Column9": "STABILNO",
+  "Column10": "Svi obrasci su zakonski dostupni privatnim firmama za e-servisiranje građana i stranaca. Obrasci uključuju: Lokacijske informacije, Urbanističke saglasnosti, Građevinske dozvole, Matične knjige, Prijave i odjave prebivališta, Uvjerenja o državljanstvu."
+ },
+ {
+  " BOSNA & HERCEGOVINA  SARAJEVSKA REGIJA ": "RS",
+  "Column4": "Opština Han Pijesak",
+  "Column6": "https:\/\/hanpijesak.org\/",
+  "Column7": "https:\/\/hanpijesak.org\/obrasci-i-zahtjevi\/",
+  "Column8": "Aktivan ",
+  "Column9": "STABILNO",
+  "Column10": "Dostupni obrasci: urbanizam, matični uredi, prijava prebivališta."
+ },
+ {
+  " BOSNA & HERCEGOVINA  SARAJEVSKA REGIJA ": "RS",
+  "Column4": "Opština Rogatica",
+  "Column6": "https:\/\/rogatica.rs.ba\/",
+  "Column7": "https:\/\/rogatica.rs.ba\/zahtjevi-i-obrasci\/ ",
+  "Column8": "Aktivan ",
+  "Column9": "STABILNO",
+  "Column10": "Dostupni obrasci: urbanističke saglasnosti, građevinske dozvole, matični uredi."
+ },
+ {
+  " BOSNA & HERCEGOVINA  SARAJEVSKA REGIJA ": "RS",
+  "Column4": "Opština Sokolac",
+  "Column6": "https:\/\/opstinasokolac.net\/",
+  "Column7": "https:\/\/opstinasokolac.net\/obrasci-i-zahtjevi\/ ",
+  "Column8": "Aktivan ",
+  "Column9": "STABILNO",
+  "Column10": "Dostupni obrasci: urbanizam, građevinske dozvole, matični uredi."
+ },
+ {
+  " BOSNA & HERCEGOVINA  SARAJEVSKA REGIJA ": "RS",
+  "Column4": "Opština Pale",
+  "Column6": "https:\/\/opstinapale.org\/",
+  "Column7": "https:\/\/opstinapale.org\/zahtjevi-i-obrasci\/",
+  "Column8": "Aktivan ",
+  "Column9": "STABILNO",
+  "Column10": "Dostupni obrasci: građevinske dozvole, urbanističke saglasnosti, matični uredi."
+ },
+ {
+  " BOSNA & HERCEGOVINA  SARAJEVSKA REGIJA ": "RS",
+  "Column4": "Opština Trnovo (RS)",
+  "Column6": "https:\/\/trnovo-rs.org\/",
+  "Column7": "https:\/\/trnovo-rs.org\/obrasci\/ ",
+  "Column8": "Aktivan ",
+  "Column9": "STABILNO",
+  "Column10": "Dostupni obrasci: urbanizam, prijava prebivališta, uvjerenja."
+ }
+],
+"B&H MOSTARSKA REGIJA ":[
+ {
+  "B&H      HERCEGOVAČKA REGIJA ": "ENTITET",
+  "Column2": "KANTON \/ ŽUPANIJA ",
+  "Column3": "GRAD",
+  "Column4": "OPĆINA\/OPŠTINA",
+  "Column5": "Ministarstvo Kantona\/Županije ",
+  "Column6": "URL GL. STR",
+  "Column7": "URL OBRAZAC\/FORMULAR",
+  "Column8": "STATUS",
+  "Column9": "OCJENA",
+  "Column10": "KOMENTAR"
+ },
+ {
+  "B&H      HERCEGOVAČKA REGIJA ": "FBiH",
+  "Column2": "Hercegovačko-neretvanski kanton (HNK)",
+  "Column3": "Grad",
+  "Column4": "Grad Mostar",
+  "Column6": "https:\/\/www.mostar.ba",
+  "Column7": "https:\/\/www.mostar.ba\/dokumenti-gradani\/",
+  "Column8": "Aktivno",
+  "Column9": "Stabilno",
+  "Column10": "Obrasci – urbanizam, uvjerenja, matični uredi, socijalna zaštita"
+ },
+ {
+  "B&H      HERCEGOVAČKA REGIJA ": "FBiH",
+  "Column2": "Hercegovačko-neretvanski kanton (HNK)",
+  "Column4": "Općina Čapljina",
+  "Column6": "https:\/\/eregistar.capljina.ba",
+  "Column7": "https:\/\/eregistar.capljina.ba\/administrativni-postupci\/",
+  "Column8": "Aktivno",
+  "Column9": "Stabilno",
+  "Column10": "Obrasci – lokacijska informacija, urbanistička saglasnost, izvod iz matičnih knjiga"
+ },
+ {
+  "B&H      HERCEGOVAČKA REGIJA ": "FBiH",
+  "Column2": "Hercegovačko-neretvanski kanton (HNK)",
+  "Column4": "Općina Čitluk",
+  "Column6": "https:\/\/citluk.ba",
+  "Column7": "https:\/\/citluk.ba\/zahtjevi\/",
+  "Column8": "Aktivno",
+  "Column9": "Stabilno",
+  "Column10": "Obrasci – izdavanje uvjerenja, urbanističke saglasnosti"
+ },
+ {
+  "B&H      HERCEGOVAČKA REGIJA ": "FBiH",
+  "Column2": "Hercegovačko-neretvanski kanton (HNK)",
+  "Column4": "Općina Jablanica",
+  "Column6": "https:\/\/www.jablanica.ba",
+  "Column7": "https:\/\/www.jablanica.ba\/ba\/download-zona\/obrasci-i-zahtjevi.html",
+  "Column8": "Aktivno",
+  "Column9": "Stabilno",
+  "Column10": "Obrasci – zahtjev za uvjerenje, urbanizam, matični uredi"
+ },
+ {
+  "B&H      HERCEGOVAČKA REGIJA ": "FBiH",
+  "Column2": "Hercegovačko-neretvanski kanton (HNK)",
+  "Column4": "Općina Konjic",
+  "Column6": "https:\/\/www.konjic.ba",
+  "Column7": "https:\/\/www.konjic.ba\/ba\/uprava\/opcinske-sluzbe\/obrasci-opcinskih-sluzbi.html",
+  "Column8": "Aktivno",
+  "Column9": "Stabilno",
+  "Column10": "Obrasci – lokacijska informacija, građevinske dozvole, uvjerenja"
+ },
+ {
+  "B&H      HERCEGOVAČKA REGIJA ": "FBiH",
+  "Column2": "Hercegovačko-neretvanski kanton (HNK)",
+  "Column4": "Općina Neum",
+  "Column6": "https:\/\/neum.ba",
+  "Column7": "https:\/\/neum.ba\/dokumenti\/",
+  "Column8": "Aktivno",
+  "Column9": "Stabilno",
+  "Column10": "Obrasci – zahtjev za uvjerenja, urbanistička dokumentacija"
+ },
+ {
+  "B&H      HERCEGOVAČKA REGIJA ": "FBiH",
+  "Column2": "Hercegovačko-neretvanski kanton (HNK)",
+  "Column4": "Općina Prozor-Rama",
+  "Column6": "https:\/\/prozor-rama.org",
+  "Column7": "https:\/\/prozor-rama.org\/euprava\/dokumenti",
+  "Column8": "Aktivno",
+  "Column9": "Stabilno",
+  "Column10": "Obrasci – zahtjev za izdavanje izvoda, urbanizam"
+ },
+ {
+  "B&H      HERCEGOVAČKA REGIJA ": "FBiH",
+  "Column2": "Hercegovačko-neretvanski kanton (HNK)",
+  "Column4": "Općina Stolac",
+  "Column6": "https:\/\/stolac.gov.ba",
+  "Column7": "https:\/\/stolac.gov.ba\/dokumenti\/",
+  "Column8": "Aktivno",
+  "Column9": "Stabilno",
+  "Column10": "Obrasci – zahtjevi za uvjerenja, urbanistička dokumentacija"
+ },
+ {
+  "B&H      HERCEGOVAČKA REGIJA ": "FBiH",
+  "Column2": "Hercegovačko-neretvanski kanton (HNK)",
+  "Column5": "Ministarstvo zdravstva HNK",
+  "Column6": "http:\/\/www.vlada-hnz-k.ba\/ministarstva\/ministarstvo-zdravstva-rada-i-socijalne-zastite",
+  "Column7": "http:\/\/www.vlada-hnz-k.ba\/ministarstva\/ministarstvo-zdravstva-rada-i-socijalne-zastite",
+  "Column8": "Aktivno",
+  "Column9": "Stabilno",
+  "Column10": "Obrasci – zdravstveno osiguranje, refundacija putnih troškova, ortopedska pomagala"
+ },
+ {
+  "B&H      HERCEGOVAČKA REGIJA ": "FBiH",
+  "Column2": "Hercegovačko-neretvanski kanton (HNK)",
+  "Column5": "Ministarstvo obrazovanja HNK",
+  "Column6": "http:\/\/www.vlada-hnz-k.ba\/ministarstva\/ministarstvo-prosvjete-znanosti-kulture-i-sporta",
+  "Column7": "http:\/\/www.vlada-hnz-k.ba\/ministarstva\/ministarstvo-prosvjete-znanosti-kulture-i-sporta",
+  "Column8": "Aktivno",
+  "Column9": "Stabilno",
+  "Column10": "Obrasci – stipendije, nostrifikacija, prijava djece u školu"
+ },
+ {
+  "B&H      HERCEGOVAČKA REGIJA ": "FBiH",
+  "Column2": "Hercegovačko-neretvanski kanton (HNK)",
+  "Column5": "Ministarstvo prostornog uređenja HNK",
+  "Column6": "http:\/\/www.vlada-hnz-k.ba\/ministarstva\/ministarstvo-prostornog-uredenja-gradjenja-i-zastite-okoline",
+  "Column7": "http:\/\/www.vlada-hnz-k.ba\/ministarstva\/ministarstvo-prostornog-uredenja-gradjenja-i-zastite-okoline",
+  "Column8": "https:\/\/tomislavgrad.gov.ba\/obrasci\/",
+  "Column9": "Stabilno",
+  "Column10": "Obrasci – lokacijska informacija, urbanističke saglasnosti, ekološke dozvole"
+ },
+ {
+  "B&H      HERCEGOVAČKA REGIJA ": "FBiH",
+  "Column2": "Hercegovačko-neretvanski kanton (HNK)",
+  "Column5": "Zavod zdravstvenog osiguranja HNK",
+  "Column6": "https:\/\/zzo.ba\/",
+  "Column7": "https:\/\/zzo.ba\/",
+  "Column8": "Aktivno",
+  "Column9": "Stabilno",
+  "Column10": "Obrasci – prijava na osiguranje, ortopedska pomagala, refundacija"
+ },
+ {
+  "B&H      HERCEGOVAČKA REGIJA ": "FBiH",
+  "Column2": "Kanton 10 (Livanjski kanton)",
+  "Column3": "Livno",
+  "Column6": "https:\/\/livno.ba\/",
+  "Column7": "  https:\/\/livno.ba\/za-gradane\/maticni-ured\/",
+  "Column8": "Aktivno"
+ },
+ {
+  "B&H      HERCEGOVAČKA REGIJA ": "FBiH",
+  "Column2": "Kanton\/Županija",
+  "Column3": "Grad",
+  "Column4": "Općina\/Opština",
+  "Column6": "Grad Livno",
+  "Column7": "https:\/\/livno.ba\/zahtjevi-i-obrasci    ",
+  "Column8": "Aktivno",
+  "Column9": "Stabilno"
+ },
+ {
+  "B&H      HERCEGOVAČKA REGIJA ": "FBiH",
+  "Column2": "Kanton 10 (Livanjski kanton)",
+  "Column3": "Livno",
+  "Column6": "https:\/\/tomislavgrad.gov.ba\/",
+  "Column7": "https:\/\/tomislavgrad.gov.ba\/obrasci\/",
+  "Column8": "Aktivno",
+  "Column9": "Stabilno"
+ },
+ {
+  "B&H      HERCEGOVAČKA REGIJA ": "FBiH",
+  "Column2": "Kanton 10 (Livanjski kanton)",
+  "Column4": "Tomislavgrad",
+  "Column6": "http:\/\/www.opstinadrvar.net\/",
+  "Column7": "http:\/\/www.opstinadrvar.net\/obrasci-zahtjeva\/",
+  "Column8": "Aktivno",
+  "Column9": "Nestabilno"
+ },
+ {
+  "B&H      HERCEGOVAČKA REGIJA ": "FBiH",
+  "Column2": "Kanton 10 (Livanjski kanton)",
+  "Column4": "Drvar",
+  "Column6": "https:\/\/www.bosanskograhovo.ba\/",
+  "Column7": "Nema obrazaca za izdavanje ličnih dokumenata",
+  "Column8": "Aktivno",
+  "Column9": "Stabilno"
+ },
+ {
+  "B&H      HERCEGOVAČKA REGIJA ": "FBiH",
+  "Column2": "Kanton 10 (Livanjski kanton)",
+  "Column4": "Bosansko Grahovo",
+  "Column6": "opstinaglamoc.ba\/",
+  "Column7": "Nema aktivnu online sekciju za obrasce",
+  "Column8": "Neaktivno",
+  "Column9": "Nestabilno"
+ },
+ {
+  "B&H      HERCEGOVAČKA REGIJA ": "FBiH",
+  "Column2": "Kanton 10 (Livanjski kanton)",
+  "Column4": "Glamoč",
+  "Column6": "https:\/\/www.opcinakupres.ba\/",
+  "Column7": "https:\/\/www.opcinakupres.ba\/dokumenti",
+  "Column8": "Aktivno",
+  "Column9": "Stabilno"
+ },
+ {
+  "B&H      HERCEGOVAČKA REGIJA ": "FBiH",
+  "Column2": "Kanton 10 (Livanjski kanton)",
+  "Column4": "Kupres",
+  "Column5": "Ministarstvo zdravstva, rada i socijalne skrbi K10",
+  "Column6": "https:\/\/www.vladahbz.com\/ministarstvo-rada-zdravstva-socijalne-skrbi-i-prognanih\/",
+  "Column7": "https:\/\/www.vladahbz.com\/ministarstvo-rada-zdravstva-socijalne-skrbi-i-prognanih-dokumenti\/",
+  "Column8": "Aktivno",
+  "Column9": "Stabilno"
+ },
+ {
+  "Column2": "Kanton 10 (Livanjski kanton)",
+  "Column5": "Zavod zdravstvenog osiguranja K10",
+  "Column6": "https:\/\/www.zzohbz.ba\/",
+  "Column7": "https:\/\/www.zzohbz.ba\/dokumenti-3\/tiskanice-zahtjevi-i-izjave\/",
+  "Column8": "Aktivno",
+  "Column9": "Stabilno"
+ },
+ {
+  "Column2": "Kanton 10 (Livanjski kanton)"
+ },
+ {
+  "B&H      HERCEGOVAČKA REGIJA ": "FBiH",
+  "Column2": "Zapadnohercegovački kanton (ZHK)",
+  "Column3": "Široki Brijeg",
+  "Column6": "https:\/\/www.sirokibrijeg.ba\/",
+  "Column7": "https:\/\/www.sirokibrijeg.ba\/index.php\/dokumenti\/obrasci",
+  "Column8": "Aktivno",
+  "Column9": "Stabilno",
+  "Column10": "Obrasci – urbanistička saglasnost, lokacijska informacija, izdavanje uvjerenja. Jedna od 4 lokalne jedinice ZHK sa online obrascima."
+ },
+ {
+  "B&H      HERCEGOVAČKA REGIJA ": "FBiH",
+  "Column2": "Zapadnohercegovački kanton (ZHK)",
+  "Column3": "Ljubuški",
+  "Column6": "https:\/\/www.ljubuski.ba\/",
+  "Column7": "https:\/\/www.ljubuski.ba\/zahtjevi-i-obrasci\/",
+  "Column8": "Aktivno",
+  "Column9": "Stabilno",
+  "Column10": "Obrasci – urbanističke saglasnosti, uvjerenja, matični uredi. Jedna od 4 lokalne jedinice ZHK sa online obrascima."
+ },
+ {
+  "B&H      HERCEGOVAČKA REGIJA ": "FBiH",
+  "Column2": "Zapadnohercegovački kanton (ZHK)",
+  "Column4": "Grude",
+  "Column6": "https:\/\/www.grude.info\/",
+  "Column7": "https:\/\/www.grude.info\/zahtjevi-i-obrasci\/",
+  "Column8": "Aktivno",
+  "Column9": "Stabilno",
+  "Column10": "Obrasci – urbanizam, građevinske dozvole, izdavanje uvjerenja. Jedna od 4 lokalne jedinice ZHK sa online obrascima."
+ },
+ {
+  "B&H      HERCEGOVAČKA REGIJA ": "FBiH",
+  "Column2": "Zapadnohercegovački kanton (ZHK)",
+  "Column4": "Posušje",
+  "Column6": "https:\/\/www.opcina-posusje.ba\/",
+  "Column7": "https:\/\/www.opcina-posusje.ba\/dokumenti\/obrasci\/",
+  "Column8": "Aktivno",
+  "Column9": "Stabilno",
+  "Column10": "Obrasci – zahtjevi za urbanizam, izdavanje uvjerenja, lokacijske informacije. Jedna od 4 lokalne jedinice ZHK sa online obrascima."
+ },
+ {
+  "B&H      HERCEGOVAČKA REGIJA ": "FBiH",
+  "Column2": "Zapadnohercegovački kanton (ZHK)",
+  "Column5": "Ministarstvo zdravstva, rada i socijalne skrbi ZHK",
+  "Column6": "https:\/\/www.zjz-zzh.ba\/",
+  "Column7": "https:\/\/www.zjz-zzh.ba\/hr\/pristup-informacijama.html",
+  "Column8": "Aktivno",
+  "Column9": "Stabilno",
+  "Column10": "Pristup informacijama za nabavku Obrazaca – zdravstveno osiguranje, refundacije, ortopedska pomagala. Svi obrasci su zakonito dostupni privatnim firmama za podršku građanima i strancima."
+ },
+ {
+  "B&H      HERCEGOVAČKA REGIJA ": "FBiH",
+  "Column2": "Zapadnohercegovački kanton (ZHK)",
+  "Column5": "Ministarstvo obrazovanja, znanosti, kulture i športa ZHK",
+  "Column6": "http:\/\/www.vladazzh.com\/ministarstva\/obrazovanje-znanost-kultura-i-sport\/",
+  "Column7": "http:\/\/www.vladazzh.com\/ministarstva\/obrazovanje-znanost-kultura-i-sport\/",
+  "Column8": "Aktivno",
+  "Column9": "Stabilno",
+  "Column10": "Obrasci – stipendije, nostrifikacija, upis djece u školu. Svi obrasci su zakonito dostupni privatnim firmama za podršku građanima i strancima."
+ },
+ {
+  "B&H      HERCEGOVAČKA REGIJA ": "FBiH",
+  "Column2": "Zapadnohercegovački kanton (ZHK)",
+  "Column5": "Ministarstvo prostornog uređenja, graditeljstva i zaštite okoliša ZHK",
+  "Column6": "http:\/\/www.vladazzh.com\/",
+  "Column7": "http:\/\/www.vladazzh.com\/dokumenti.aspx",
+  "Column8": "Aktivno",
+  "Column9": "Stabilno",
+  "Column10": "Obrasci – urbanistička saglasnost, lokacijske informacije, okolišne dozvole. Svi obrasci su zakonito dostupni privatnim firmama za podršku građanima i strancima."
+ },
+ {
+  "B&H      HERCEGOVAČKA REGIJA ": "FBiH",
+  "Column2": "Zapadnohercegovački kanton (ZHK)",
+  "Column5": "Zavod zdravstvenog osiguranja ZHK",
+  "Column6": "https:\/\/zzozzh.com\/",
+  "Column7": "https:\/\/zzozzh.com\/obrasci\/",
+  "Column8": "Aktivno",
+  "Column9": "Stabilno",
+  "Column10": "Obrasci – prijava zdravstvenog osiguranja, refundacije, ortopedska pomagala. Svi obrasci su zakonito dostupni privatnim firmama za podršku građanima i strancima."
+ },
+ {
+  "B&H      HERCEGOVAČKA REGIJA ": "Republika Srpska",
+  "Column3": "Trebinje",
+  "Column4": "Grad Trebinje",
+  "Column5": "Gradska uprava Trebinje",
+  "Column6": "https:\/\/trebinje.rs.ba\/",
+  "Column7": "https:\/\/trebinje.rs.ba\/obrasci-i-zahtjevi\/",
+  "Column8": "AKTIVNO",
+  "Column9": "STABILNO",
+  "Column10": "Zvanična web stranica Grada Trebinja je aktivna i stabilna, sa jasno označenim odjeljkom za obrasce. Obrasci su zakonski dozvoljeni."
+ },
+ {
+  "B&H      HERCEGOVAČKA REGIJA ": "Republika Srpska",
+  "Column3": "Bileća",
+  "Column4": "N\/A",
+  "Column5": "Gradska uprava Bileća",
+  "Column6": "https:\/\/bileca.rs.ba\/",
+  "Column7": "https:\/\/bileca.rs.ba\/zahtjevi-i-obrasci\/",
+  "Column8": "AKTIVNO",
+  "Column9": "STABILNO",
+  "Column10": "Zvanična web stranica Opštine Bileća je aktivna i stabilna, sa jasno označenim odjeljkom za obrasce. Obrasci su zakonski dozvoljeni."
+ },
+ {
+  "B&H      HERCEGOVAČKA REGIJA ": "Republika Srpska",
+  "Column3": "Gacko",
+  "Column4": "N\/A",
+  "Column5": "Gradska uprava Gacko",
+  "Column6": "https:\/\/gacko-rs.info\/",
+  "Column7": "https:\/\/gacko-rs.info\/obrasci\/",
+  "Column8": "AKTIVNO",
+  "Column9": "STABILNO",
+  "Column10": "Zvanična web stranica Opštine Gacko je aktivna i stabilna, sa jasno označenim odjeljkom za obrasce. Obrasci su zakonski dozvoljeni."
+ },
+ {
+  "B&H      HERCEGOVAČKA REGIJA ": "Republika Srpska",
+  "Column3": "Nevesinje",
+  "Column4": "N\/A",
+  "Column5": "Gradska uprava Nevesinje",
+  "Column6": "https:\/\/opstinanevesinje.rs.ba\/",
+  "Column7": "https:\/\/opstinanevesinje.rs.ba\/zahtjevi-i-obrasci\/",
+  "Column8": "AKTIVNO",
+  "Column9": "STABILNO",
+  "Column10": "Zvanična web stranica Opštine Nevesinje je aktivna i stabilna, sa jasno označenim odjeljkom za obrasce. Obrasci su zakonski dozvoljeni."
+ },
+ {
+  "B&H      HERCEGOVAČKA REGIJA ": "Republika Srpska",
+  "Column3": "Ljubinje",
+  "Column4": "N\/A",
+  "Column5": "Gradska uprava Ljubinje",
+  "Column6": "https:\/\/ljubinje.org\/",
+  "Column7": "https:\/\/ljubinje.org\/zahtjevi-i-obrasci\/",
+  "Column8": "AKTIVNO",
+  "Column9": "STABILNO",
+  "Column10": "Zvanična web stranica Opštine Ljubinje je aktivna i stabilna, sa jasno označenim odjeljkom za obrasce. Obrasci su zakonski dozvoljeni."
+ },
+ {
+  "B&H      HERCEGOVAČKA REGIJA ": "Republika Srpska",
+  "Column3": "Berkovići",
+  "Column4": "N\/A",
+  "Column5": "Gradska uprava Berkovići",
+  "Column6": "https:\/\/berkovici.rs.ba\/",
+  "Column7": "https:\/\/berkovici.rs.ba\/zahtjevi-i-obrasci\/",
+  "Column8": "AKTIVNO",
+  "Column9": "STABILNO",
+  "Column10": "Zvanična web stranica Opštine Berkovići je aktivna i stabilna, sa jasno označenim odjeljkom za obrasce. Obrasci su zakonski dozvoljeni."
+ },
+ {
+  "B&H      HERCEGOVAČKA REGIJA ": "Republika Srpska",
+  "Column3": "Istočni Mostar",
+  "Column4": "N\/A",
+  "Column5": "Gradska uprava Istočni Mostar",
+  "Column6": "https:\/\/istocnimostar.org\/",
+  "Column7": "https:\/\/istocnimostar.org\/obrasci\/",
+  "Column8": "AKTIVNO",
+  "Column9": "STABILNO",
+  "Column10": "Zvanična web stranica Opštine Istočni Mostar je aktivna i stabilna, sa jasno označenim odjeljkom za obrasce. Obrasci su zakonski dozvoljeni."
+ }
+],
+"B&H BOSANSKA KRAJINA":[
+ {
+  "B&H  BOSANSKA KRAJINA ": "Entitet",
+  "Column2": "Kanton\/Županija",
+  "Column3": "Grad",
+  "Column4": "Općina\/Opština",
+  "Column5": "Ministarstvo\/Zavod",
+  "Column6": "URL Zvanična web stranica",
+  "Column7": "URL Dokumenti\/Obrasci",
+  "Column8": "Status",
+  "Column9": "Ocjena Stabilnosti",
+  "Column10": "Komentar"
+ },
+ {
+  "B&H  BOSANSKA KRAJINA ": "FBiH",
+  "Column2": "Unsko-sanski kanton (USK)",
+  "Column3": "Bihać",
+  "Column6": "https:\/\/zzousk.ba\/",
+  "Column7": "https:\/\/www.bihac.org\/dokumenti\/14",
+  "Column8": "Aktivno",
+  "Column9": "Nestabilno",
+  "Column10": "Obrasci i zahtjevi, izjave, prijave – razni obrasci za urbanizam, matične knjige, uvjerenja, lokacijske informacije. Većina web portala u USK nema sigurnu vezu. Bihać ima digitalizovane obrasce, ali je potrebno prilagoditi cookies."
+ },
+ {
+  "B&H  BOSANSKA KRAJINA ": "FBiH",
+  "Column2": "Unsko-sanski kanton (USK)",
+  "Column4": "Bosanska Krupa",
+  "Column6": "https:\/\/zzousk.ba\/",
+  "Column7": "https:\/\/gradbosanskakrupa.ba\/pristup-informacijama\/",
+  "Column8": "Aktivno",
+  "Column9": "Nestabilno",
+  "Column10": "Obrasci – lokacijska informacija, urbanistička saglasnost, građevinske dozvole. Većina web portala u USK nema sigurnu vezu."
+ },
+ {
+  "B&H  BOSANSKA KRAJINA ": "FBiH",
+  "Column2": "Unsko-sanski kanton (USK)",
+  "Column4": "Bosanski Petrovac",
+  "Column6": "https:\/\/zzousk.ba\/",
+  "Column7": "https:\/\/www.bosanskipetrovac.gov.ba\/index.php\/eupravalink",
+  "Column8": "Neaktivno",
+  "Column9": "Nestabilno",
+  "Column10": "Nema direktnu stranicu za obrasce; koriste se u šalter sali, potrebno tražiti kod referenta. Većina web portala u USK nema sigurnu vezu."
+ },
+ {
+  "B&H  BOSANSKA KRAJINA ": "FBiH",
+  "Column2": "Unsko-sanski kanton (USK)",
+  "Column4": "Bužim",
+  "Column6": "https:\/\/zzousk.ba\/",
+  "Column7": "https:\/\/opcinabuzim.ba\/download\/obrazac",
+  "Column8": "Aktivno",
+  "Column9": "Nestabilno",
+  "Column10": "Obrasci – prijava prebivališta, izdavanje uvjerenja, socijalna davanja. Većina web portala u USK nema sigurnu vezu."
+ },
+ {
+  "B&H  BOSANSKA KRAJINA ": "FBiH",
+  "Column2": "Unsko-sanski kanton (USK)",
+  "Column4": "Cazin",
+  "Column6": "https:\/\/zzousk.ba\/",
+  "Column7": "https:\/\/gradcazin.gov.ba\/search\/node?keys=Obrazac",
+  "Column8": "Aktivno",
+  "Column9": "Nestabilno",
+  "Column10": "Obrasci – urbanizam, matični uredi, izdavanje izvoda i uvjerenja. Većina web portala u USK nema sigurnu vezu. Cazin ima digitalizovane obrasce, ali je potrebno prilagoditi cookies."
+ },
+ {
+  "B&H  BOSANSKA KRAJINA ": "FBiH",
+  "Column2": "Unsko-sanski kanton (USK)",
+  "Column4": "Ključ",
+  "Column6": "https:\/\/zzousk.ba\/",
+  "Column7": "http:\/\/opcina-kljuc.ba\/privreda\/",
+  "Column8": "Aktivno",
+  "Column9": "Nestabilno",
+  "Column10": "Obrasci – prijave, zahtjevi za dozvole, urbanizam. Većina web portala u USK nema sigurnu vezu."
+ },
+ {
+  "B&H  BOSANSKA KRAJINA ": "FBiH",
+  "Column2": "Unsko-sanski kanton (USK)",
+  "Column4": "Sanski Most",
+  "Column6": "https:\/\/zzousk.ba\/",
+  "Column7": "https:\/\/www.sanskimost.gov.ba\/index.php\/exploer\/opcinske-sluzbe",
+  "Column8": "Aktivno",
+  "Column9": "Nestabilno",
+  "Column10": "Obrasci – izdavanje izvoda iz matičnih knjiga, urbanizam, lokacijska informacija. Većina web portala u USK nema sigurnu vezu. Sanski Most ima digitalizovane obrasce, ali je potrebno prilagoditi cookies."
+ },
+ {
+  "B&H  BOSANSKA KRAJINA ": "FBiH",
+  "Column2": "Unsko-sanski kanton (USK)",
+  "Column4": "Velika Kladuša",
+  "Column6": "https:\/\/zzousk.ba\/",
+  "Column7": "https:\/\/velikakladusa.gov.ba\/dokumenti-i-obrasci\/",
+  "Column8": "Aktivno",
+  "Column9": "Nestabilno",
+  "Column10": "Obrasci – urbanistička saglasnost, zahtjev za izdavanje uvjerenja, matični uredi. Većina web portala u USK nema sigurnu vezu. Velika Kladuša ima digitalizovane obrasce, ali je potrebno prilagoditi cookies."
+ },
+ {
+  "B&H  BOSANSKA KRAJINA ": "FBiH",
+  "Column2": "Unsko-sanski kanton (USK)",
+  "Column5": "Ministarstvo zdravstva, rada i socijalne politike USK",
+  "Column6": "https:\/\/zzousk.ba\/",
+  "Column7": "https:\/\/vladausk.ba\/v4\/preuzimanja",
+  "Column8": "Aktivno",
+  "Column9": "Stabilno",
+  "Column10": "Obrasci – refundacija putnih troškova, ortopedska pomagala, prijave na zdravstveno osiguranje."
+ },
+ {
+  "B&H  BOSANSKA KRAJINA ": "FBiH",
+  "Column2": "Unsko-sanski kanton (USK)",
+  "Column5": "Ministarstvo obrazovanja, nauke, kulture i sporta USK",
+  "Column6": "https:\/\/zzousk.ba\/",
+  "Column7": "http:\/\/www.vladausk.ba\/ministarstva\/ministarstvo-obrazovanja-nauke-kulture-i-sporta",
+  "Column8": "Aktivno",
+  "Column9": "Stabilno",
+  "Column10": "Obrasci – stipendije, upisi, zahtjevi za nostrifikaciju."
+ },
+ {
+  "B&H  BOSANSKA KRAJINA ": "FBiH",
+  "Column2": "Unsko-sanski kanton (USK)",
+  "Column5": "Ministarstvo za građenje, prostorno uređenje i zaštitu okoliša USK",
+  "Column6": "https:\/\/zzousk.ba\/",
+  "Column7": "http:\/\/www.vladausk.ba\/ministarstva\/ministarstvo-za-gradjenje-prostorno-uredenje-i-zastitu-okoline",
+  "Column8": "Aktivno",
+  "Column9": "Stabilno",
+  "Column10": "Obrasci – lokacijske informacije, urbanističke saglasnosti, ekološke dozvole."
+ },
+ {
+  "B&H  BOSANSKA KRAJINA ": "FBiH",
+  "Column2": "Unsko-sanski kanton (USK)",
+  "Column5": "Zavod zdravstvenog osiguranja USK",
+  "Column6": "https:\/\/zzousk.ba\/",
+  "Column7": "https:\/\/zzousk.ba\/",
+  "Column8": "Aktivno",
+  "Column9": "Stabilno",
+  "Column10": "Obrasci – zahtjevi za refundaciju, prijava na osiguranje, ortopedska pomagala."
+ },
+ {
+  "B&H  BOSANSKA KRAJINA ": "Republika Srpska",
+  "Column3": "Gradiška",
+  "Column5": "Gradska uprava Gradiška",
+  "Column6": "https:\/\/www.gradgradiska.com\/ ",
+  "Column7": "https:\/\/www.gradgradiska.com\/izvodi-iz-maticnih-knjiga-i-upisi-u-mk\/",
+  "Column8": "AKTIVNO",
+  "Column9": "STABILNO",
+  "Column10": "Zvanična web stranica je aktivna i stabilna. Nudi direktne linkove za izvode iz matičnih knjiga i upise, te koristi eCitizen platformu za širi spektar e-usluga i obrazaca. Nije potrebna posebna tražilica."
+ },
+ {
+  "B&H  BOSANSKA KRAJINA ": "Republika Srpska",
+  "Column4": "Laktaši",
+  "Column5": "Opština Laktaši",
+  "Column6": "https:\/\/grad-laktasi.com\/",
+  "Column7": "https:\/\/ecitizen.ba\/laktasi\/eServices",
+  "Column8": "AKTIVNO",
+  "Column9": "STABILNO",
+  "Column10": "Zvanična web stranica Opštine Laktaši je aktivna i stabilna. Direktni linkovi za obrasce i zahtjeve vode na eCitizen platformu, što je uobičajena praksa i osigurava stabilan pristup. Nije potrebna posebna tražilica."
+ },
+ {
+  "B&H  BOSANSKA KRAJINA ": "Republika Srpska",
+  "Column4": "Prnjavor",
+  "Column5": "Opština Prnjavor",
+  "Column6": "https:\/\/gradprnjavor.com\/novi-sajt-opstine-prnjavor\/",
+  "Column7": "https:\/\/opstinaprnjavor.net\/obrasci-i-zahtjevi\/",
+  "Column8": "AKTIVNO",
+  "Column9": "STABILNO",
+  "Column10": "Zvanična web stranica Opštine Prnjavor je aktivna i stabilna, sa jasno označenim odjeljkom za obrasce i zahtjeve. Lako je pronaći potrebne dokumente. Nije potrebna posebna tražilica."
+ },
+ {
+  "B&H  BOSANSKA KRAJINA ": "Republika Srpska",
+  "Column4": "Srbac",
+  "Column5": "Opština Srbac",
+  "Column6": "https:\/\/srbac-rs.com\/",
+  "Column7": "https:\/\/ecitizen.ba\/srbac\/eServices",
+  "Column8": "AKTIVNO",
+  "Column9": "STABILNO",
+  "Column10": "Zvanična web stranica Opštine Srbac je aktivna. Obrasci su dostupni putem eCitizen platforme, što osigurava standardizovan i stabilan pristup. Nije potrebna posebna tražilica."
+ },
+ {
+  "B&H  BOSANSKA KRAJINA ": "Republika Srpska",
+  "Column4": "Čelinac",
+  "Column6": "https:\/\/www.opstina-celinac.com\/ (Zvanična web stranica Opštine Čelinac)",
+  "Column7": "https:\/\/www.ecitizen.ba\/celinac\/eServices",
+  "Column8": "AKTIVNO",
+  "Column9": "STABILNO",
+  "Column10": "Zvanična web stranica Opštine Čelinac je funkcionalna. Kao i mnoge druge opštine, za e-usluge i obrasce koristi eCitizen platformu, što je stabilno rješenje. Nije potrebna posebna tražilica."
+ },
+ {
+  "B&H  BOSANSKA KRAJINA ": "Republika Srpska",
+  "Column4": "Kotor Varoš",
+  "Column6": "https:\/\/opstinakotorvaros.com\/ (Zvanična web stranica Opštine Kotor Varoš)",
+  "Column7": "https:\/\/opstinakotorvaros.com\/%d0%bf%d0%be%d1%82%d1%80%d0%b5%d0%b1%d0%bd%d0%b8-%d0%be%d0%b1%d1%80%d0%b0%d1%81%d1%86%d0%b8-%d0%b7%d0%b0-%d0%b3%d1%80%d0%b0%d1%92%d0%b0%d0%bd%d0%b5\/",
+  "Column8": "AKTIVNO",
+  "Column9": "STABILNO",
+  "Column10": "Zvanična web stranica Opštine Kotor Varoš je aktivna i stabilna. Obrasci su direktno dostupni na web stranici opštine, sa jasnim URL-om. Nije potrebna posebna tražilica."
+ },
+ {
+  "B&H  BOSANSKA KRAJINA ": "Republika Srpska",
+  "Column4": "Kneževo",
+  "Column6": "https:\/\/opstinaknezevo.org\/ (Zvanična web stranica Opštine Kneževo)",
+  "Column7": "https:\/\/opstinaknezevo.org\/%d0%b7%d0%b0%d1%85%d1%82%d1%98%d0%b5%d0%b2%d0%b8-%d0%b8-%d0%be%d0%b1%d1%80%d0%b0%d1%81%d1%86%d0%b8\/",
+  "Column8": "AKTIVNO",
+  "Column9": "STABILNO",
+  "Column10": "Zvanična web stranica Opštine Kneževo je aktivna i stabilna. Obrasci su jasno vidljivi i dostupni na stranici. Nije potrebna posebna tražilica."
+ },
+ {
+  "B&H  BOSANSKA KRAJINA ": "Republika Srpska",
+  "Column4": "Mrkonjić Grad",
+  "Column6": "https:\/\/mrkonjic-grad.rs.ba\/ (Zvanična web stranica Opštine Mrkonjić Grad)",
+  "Column7": "https:\/\/mrkonjic-grad.rs.ba\/ (Obrasci dostupni pri dnu naslovne stranice)",
+  "Column8": "AKTIVNO",
+  "Column9": "STABILNO",
+  "Column10": "Zvanična web stranica Opštine Mrkonjić Grad je aktivna i stabilna. Obrasci se nalaze pri dnu glavne stranice, lako su dostupni i funkcionalni. Nije potrebna posebna tražilica."
+ },
+ {
+  "B&H  BOSANSKA KRAJINA ": "Republika Srpska",
+  "Column4": "Jezero",
+  "Column6": "https:\/\/opstinajezero.org\/ (Zvanična web stranica Opštine Jezero)",
+  "Column7": "https:\/\/opstinajezero.org\/sr\/opstinska-uprava\/c295",
+  "Column8": "AKTIVNO",
+  "Column9": "STABILNO",
+  "Column10": "Zvanična web stranica Opštine Jezero je aktivna i stabilna. Obrasci se nalaze u odjeljku \"Opštinska uprava\". Stranica je funkcionalna. Nije potrebna posebna tražilica."
+ },
+ {
+  "B&H  BOSANSKA KRAJINA ": "Republika Srpska",
+  "Column4": "Šipovo",
+  "Column6": "https:\/\/sipovo.org\/ (Zvanična web stranica Opštine Šipovo)",
+  "Column7": "https:\/\/sipovo.org\/zahtjevi-i-obrasci\/",
+  "Column8": "AKTIVNO",
+  "Column9": "STABILNO",
+  "Column10": "Zvanična web stranica Opštine Šipovo je aktivna i stabilna, sa direktnim linkom na stranicu sa obrascima. Nije potrebna posebna tražilica."
+ },
+ {
+  "B&H  BOSANSKA KRAJINA ": "Republika Srpska",
+  "Column4": "Ribnik",
+  "Column6": "https:\/\/opstinaribnik.org\/lat\/ (Zvanična web stranica Opštine Ribnik)",
+  "Column7": "https:\/\/opstinaribnik.org\/lat\/kategorije\/92\/pristup-informacijama",
+  "Column8": "AKTIVNO",
+  "Column9": "STABILNO",
+  "Column10": "Zvanična web stranica Opštine Ribnik je aktivna i stabilna. Obrasci se nalaze u sekciji \"Pristup informacijama\". Nije potrebna posebna tražilica."
+ },
+ {
+  "B&H  BOSANSKA KRAJINA ": "Republika Srpska",
+  "Column3": "Banja Luka ",
+  "Column4": "Grad",
+  "Column6": "https:\/\/www.banjaluka.rs.ba\/",
+  "Column7": "https:\/\/www.banjaluka.rs.ba\/gradska-uprava\/obrasci-i-zahtjevi\/",
+  "Column8": "AKTIVNO",
+  "Column9": "STABILNO",
+  "Column10": "Web stranica je izuzetno funkcionalna, sa jasnim navigacijom do obrasaca i zahtjeva. Svi obrasci su zakonski dozvoljeni za upotrebu privatnim firmama, građanima i strancima. Nije potrebna posebna tražilica."
+ },
+ {
+  "B&H  BOSANSKA KRAJINA ": "Republika Srpska",
+  "Column3": "PRIJEDOR",
+  "Column4": "GRAD",
+  "Column6": "https:\/\/www.prijedorgrad.org\/",
+  "Column7": "https:\/\/www.prijedorgrad.org\/ ",
+  "Column8": "AKTIVNO",
+  "Column9": "STABILNO",
+  "Column10": "Zvanična web stranica Grada Prijedora je aktivna i stabilna. (Potrebno navigirati do sekcija poput \"Gradska uprava\" -> \"Dokumenti\" ili \"Usluge\")"
+ },
+ {
+  "B&H  BOSANSKA KRAJINA ": "Republika Srpska",
+  "Column4": "Opština",
+  "Column6": "https:\/\/www.opstina-novigrad.com\/",
+  "Column7": "https:\/\/opstina-novigrad.rs.ba\/obrasci-i-zahtjevi\/",
+  "Column8": "AKTIVNO",
+  "Column9": "STABILNO",
+  "Column10": "Zvanična web stranica Opštine Novi Grad je aktivna i stabilna. Postoji jasno označen odjeljak za obrasce i zahtjeve. Nije potrebna posebna tražilica."
+ },
+ {
+  "B&H  BOSANSKA KRAJINA ": "Republika Srpska",
+  "Column3": "N\/A",
+  "Column4": "N\/A",
+  "Column6": "https:\/\/www.banjaluka.rs.ba\/ ",
+  "Column7": "https:\/\/eregistar.banjaluka.rs.ba\/%D0%B%",
+  "Column8": "AKTIVNO",
+  "Column9": "STABILNO",
+  "Column10": "Web stranica je izuzetno funkcionalna, sa jasnom navigacijom do obrazaca i zahtjeva. Svi obrasci su zakonski dozvoljeni za upotrebu privatnim firmama, građanima i strancima. Nije potrebna posebna tražilica."
+ },
+ {
+  "B&H  BOSANSKA KRAJINA ": "Republika Srpska",
+  "Column3": "N\/A",
+  "Column4": "Opština",
+  "Column6": "https:\/\/www.opstinaostraluka.org\/",
+  "Column7": "https:\/\/www.opstinaostraluka.org",
+  "Column8": "AKTIVNO",
+  "Column9": "STABILNO",
+  "Column10": "Zvanična web stranica je aktivna i stabilna. Obrasci (urbanistička saglasnost, prijava prebivališta, uvjerenja) se nalaze na stranici, ali je potrebno pretraživati. Nije potrebna posebna tražilica."
+ },
+ {
+  "B&H  BOSANSKA KRAJINA ": "Republika Srpska",
+  "Column3": "N\/A",
+  "Column4": "Opština",
+  "Column6": "https:\/\/www.krupanauni.org\/index.html",
+  "Column7": "N\/A",
+  "Column8": "AKTIVNO",
+  "Column9": "NESTABILNO",
+  "Column10": "Zvanična web stranica je aktivna. Ozbiljan nedostatak: Ne dopušta preuzimanje dokumenata\/obrazaca za pravna i civilna lica. Za preuzimanje bilo kakve dokumentacije savjetuje se lična posjeta zgradi Opštine. Ovo čini online servis vrlo neefikasnim. Nije potrebna posebna tražilica."
+ }
+],
+"B&H POSAVINA REGIJA":[
+ {
+  "#B&H TUZLANSKA REGIJA  ": "Entitet",
+  "Column2": "Kanton\/Županija",
+  "Column3": "GRAD",
+  "Column4": "Općina\/Opština",
+  "Column5": "Ministarstvo\/Zavod",
+  "Column6": "URL Glavna Stranica",
+  "Column7": "URL Dokumenti\/Obrasci",
+  "Column8": "Status",
+  "Column9": "Ocjena Stabilnosti",
+  "Column10": "Komentar"
+ },
+ {
+  "#B&H TUZLANSKA REGIJA  ": "FBiH",
+  "Column2": "Posavski kanton (PK)",
+  "Column3": "Orašje",
+  "Column6": "https:\/\/orasje.ba\/",
+  "Column7": "https:\/\/orasje.ba\/eObrasci\/",
+  "Column8": "Aktivno",
+  "Column9": "Stabilno",
+  "Column10": "Obrasci – zahtjev za uvjerenja, urbanistička saglasnost, lokacijska informacija."
+ },
+ {
+  "#B&H TUZLANSKA REGIJA  ": "FBiH",
+  "Column2": "Posavski kanton (PK)",
+  "Column4": "Odžak",
+  "Column6": "https:\/\/odzak.ba\/",
+  "Column7": "https:\/\/odzak.ba\/zahtjevi-i-obrasci\/",
+  "Column8": "Aktivno",
+  "Column9": "Stabilno",
+  "Column10": "Obrasci – urbanističke saglasnosti, izdavanje uvjerenja, matični uredi."
+ },
+ {
+  "#B&H TUZLANSKA REGIJA  ": "FBiH",
+  "Column2": "Posavski kanton (PK)",
+  "Column4": "Domaljevac-Šamac",
+  "Column6": "https:\/\/domaljevac.ba\/",
+  "Column7": "Dostupno putem protokola općine",
+  "Column8": "Aktivno",
+  "Column9": "Stabilno",
+  "Column10": "Nema posebnu stranicu za obrasce, dostupno putem protokola općine."
+ },
+ {
+  "#B&H TUZLANSKA REGIJA  ": "FBiH",
+  "Column2": "Posavski kanton (PK)",
+  "Column5": "Ministarstvo zdravstva, rada i socijalne politike PK",
+  "Column6": "http:\/\/www.zupanijaposavska.ba\/ministarstva\/ministarstvo-zdravstva-rada-i-socijalne-politike\/",
+  "Column7": "http:\/\/www.zupanijaposavska.ba\/ministarstva\/ministarstvo-zdravstva-rada-i-socijalne-politike\/",
+  "Column8": "Aktivno",
+  "Column9": "Stabilno",
+  "Column10": "Obrasci – zdravstveno osiguranje, ortopedska pomagala, refundacija putnih troškova."
+ },
+ {
+  "#B&H TUZLANSKA REGIJA  ": "FBiH",
+  "Column2": "Posavski kanton (PK)",
+  "Column5": "Ministarstvo prosvjete, znanosti, kulture i športa PK",
+  "Column6": "http:\/\/www.zupanijaposavska.ba\/ministarstva\/ministarstvo-prosvjete-znanosti-kulture-i-sporta\/",
+  "Column7": "http:\/\/www.zupanijaposavska.ba\/ministarstva\/ministarstvo-prosvjete-znanosti-kulture-i-sporta\/",
+  "Column8": "Aktivno",
+  "Column9": "Stabilno",
+  "Column10": "Obrasci – stipendije, nostrifikacija, prijava djece u škole."
+ },
+ {
+  "#B&H TUZLANSKA REGIJA  ": "FBiH",
+  "Column2": "Posavski kanton (PK)",
+  "Column5": "Ministarstvo prostornog uređenja, zaštite okoliša i returniranja PK",
+  "Column6": "https:\/\/www.zupanijaposavska.ba\/",
+  "Column7": "https:\/\/www.zupanijaposavska.ba\/?s=Obrazac",
+  "Column8": "Aktivno",
+  "Column9": "Stabilno",
+  "Column10": "Obrasci – lokacijska informacija, urbanističke saglasnosti."
+ },
+ {
+  "#B&H TUZLANSKA REGIJA  ": "FBiH",
+  "Column2": "Posavski kanton (PK)",
+  "Column5": "Zavod zdravstvenog osiguranja PK",
+  "Column6": "https:\/\/www.zzozp.ba\/",
+  "Column7": "https:\/\/www.zzozp.ba\/index.php\/dokumenti\/prijavnice",
+  "Column8": "Aktivno",
+  "Column9": "Stabilno",
+  "Column10": "Obrasci – prijava na zdravstveno osiguranje, refundacije, ortopedska pomagala."
+ },
+ {
+  "#B&H TUZLANSKA REGIJA  ": "FBiH",
+  "Column2": "Tuzlanski kanton (TK)",
+  "Column3": "Tuzla",
+  "Column6": "https:\/\/grad.tuzla.ba\/",
+  "Column7": "https:\/\/grad.tuzla.ba\/obrasci-i-zahtjevi\/  https:\/\/grad.tuzla.ba\/category\/gradtuzla\/e-uprava\/_Zahtjev-za-dostavljanje-izvoda-i-uvjerenja.pdf",
+  "Column8": "Aktivno",
+  "Column9": "Stabilno",
+  "Column10": "Razni administrativni formulari za građane iz područja opće uprave; obrasci i zahtjevi za izvod iz matičnih knjiga, uvjerenja, zahtjev za socijalnu pomoć."
+ },
+ {
+  "#B&H TUZLANSKA REGIJA  ": "FBiH",
+  "Column2": "Tuzlanski kanton (TK)",
+  "Column4": "Kalesija",
+  "Column6": "https:\/\/kalesija.ba\/",
+  "Column7": "https:\/\/kalesija.ba\/e-usluge\/",
+  "Column8": "Aktivno",
+  "Column9": "Stabilno",
+  "Column10": "Elektronski formulari za: upis rođenja, prijava zdravstvenog osiguranja, punomoć, kućna lista, lokacijska informacija, uvjerenje iz urbanističkih odsjeka, regulacioni plan."
+ },
+ {
+  "#B&H TUZLANSKA REGIJA  ": "FBiH",
+  "Column2": "Tuzlanski kanton (TK)",
+  "Column4": "Banovići",
+  "Column6": "https:\/\/banovici.gov.ba\/",
+  "Column7": "https:\/\/banovici.gov.ba\/formulari\/",
+  "Column8": "Aktivno",
+  "Column9": "Stabilno",
+  "Column10": "Obrasci – zahtjev za urbanističku saglasnost, lokacijsku informaciju, uvjerenja."
+ },
+ {
+  "#B&H TUZLANSKA REGIJA  ": "FBiH",
+  "Column2": "Tuzlanski kanton (TK)",
+  "Column4": "Čelić",
+  "Column6": "https:\/\/opcinacelic.ba\/",
+  "Column7": "https:\/\/opcinacelic.ba\/novi-link-2",
+  "Column8": "Aktivno",
+  "Column9": "Stabilno",
+  "Column10": "Obrasci – zahtjev za socijalnu pomoć, zahtjev za uvjerenja, građevinske dozvole."
+ },
+ {
+  "#B&H TUZLANSKA REGIJA  ": "FBiH",
+  "Column2": "Tuzlanski kanton (TK)",
+  "Column4": "Doboj Istok",
+  "Column6": "https:\/\/opcinadobojistok.ba\/",
+  "Column7": "https:\/\/opcinadobojistok.ba\/online-uvjerenja\/",
+  "Column8": "Aktivno",
+  "Column9": "Stabilno",
+  "Column10": "Obrasci – prijava prebivališta, izdavanje uvjerenja, zahtjevi prema urbanizmu. Opština Doboj Istok je jedna od rijetkih Općina u BiH koja je građanima omogućila naručivanje svih dokumenata iz udobnosti doma."
+ },
+ {
+  "#B&H TUZLANSKA REGIJA  ": "FBiH",
+  "Column2": "Tuzlanski kanton (TK)",
+  "Column4": "Gračanica",
+  "Column6": "https:\/\/gracanica.gov.ba\/",
+  "Column7": "https:\/\/gracanica.gov.ba\/?s=Obrazac&post_type=post",
+  "Column8": "Aktivno",
+  "Column9": "Stabilno",
+  "Column10": "Obrasci – lokacijska informacija, urbanistička saglasnost, zahtjev za uvid u dokumente."
+ },
+ {
+  "#B&H TUZLANSKA REGIJA  ": "FBiH",
+  "Column2": "Tuzlanski kanton (TK)",
+  "Column4": "Gradačac",
+  "Column6": "https:\/\/www.gradacac.ba\/",
+  "Column7": "https:\/\/www.gradacac.ba\/naslovna\/index.php\/elektronski-zahtjevi",
+  "Column8": "Aktivno",
+  "Column9": "Stabilno",
+  "Column10": "Obrasci – zahtjev za izdavanje izvoda, uvjerenja, lokacijska informacija."
+ },
+ {
+  "#B&H TUZLANSKA REGIJA  ": "FBiH",
+  "Column2": "Tuzlanski kanton (TK)",
+  "Column4": "Kladanj",
+  "Column6": "https:\/\/kladanj.ba\/",
+  "Column7": "https:\/\/kladanj.ba\/about-2.html",
+  "Column8": "Aktivno",
+  "Column9": "Stabilno",
+  "Column10": "Obrasci – socijalna davanja, urbanizam, matični uredi."
+ },
+ {
+  "#B&H TUZLANSKA REGIJA  ": "FBiH",
+  "Column2": "Tuzlanski kanton (TK)",
+  "Column4": "Lukavac",
+  "Column6": "https:\/\/lukavac.ba\/",
+  "Column7": "https:\/\/lukavac.ba\/e-obrasci\/",
+  "Column8": "Aktivno",
+  "Column9": "Stabilno",
+  "Column10": "Obrasci – uvjerenja, lokacijska informacija, urbanizam."
+ },
+ {
+  "#B&H TUZLANSKA REGIJA  ": "FBiH",
+  "Column2": "Tuzlanski kanton (TK)",
+  "Column4": "Sapna",
+  "Column6": "https:\/\/opcina-sapna.ba\/",
+  "Column7": "https:\/\/opcina-sapna.ba\/dokumenti\/",
+  "Column8": "Aktivno",
+  "Column9": "Stabilno",
+  "Column10": "Obrasci – zahtjevi za uvjerenja, urbanistička dokumentacija."
+ },
+ {
+  "#B&H TUZLANSKA REGIJA  ": "FBiH",
+  "Column2": "Tuzlanski kanton (TK)",
+  "Column4": "Srebrenik",
+  "Column6": "https:\/\/www.srebrenik.ba\/",
+  "Column7": "https:\/\/www.srebrenik.ba\/e-uprava\/",
+  "Column8": "Aktivno",
+  "Column9": "Stabilno",
+  "Column10": "Obrasci – urbanistička saglasnost, lokacijska informacija, matični uredi."
+ },
+ {
+  "#B&H TUZLANSKA REGIJA  ": "FBiH",
+  "Column2": "Tuzlanski kanton (TK)",
+  "Column4": "Teočak",
+  "Column6": "https:\/\/teocak.gov.ba\/",
+  "Column7": "https:\/\/teocak.gov.ba\/?s=Obrazac",
+  "Column8": "Aktivno",
+  "Column9": "Stabilno",
+  "Column10": "Obrasci – zahtjevi građana, izdavanje uvjerenja."
+ },
+ {
+  "#B&H TUZLANSKA REGIJA  ": "FBiH",
+  "Column2": "Tuzlanski kanton (TK)",
+  "Column5": "Zavod zdravstvenog osiguranja TK",
+  "Column6": "https:\/\/zzotk.ba\/",
+  "Column7": "https:\/\/zzotk.ba\/obrasci\/   ",
+  "Column8": "Aktivno",
+  "Column9": "Stabilno",
+  "Column10": "Zahtjevi za uputnice (CT, MR, rehabilitacija), podaci o ortopedskim pomagalima, prijava korupcije, e-legitimacija i dr.; povrat premija, izdavanje uvjerenja, turističko osiguranje, e-legitimacija i ostalo. Obrasci za zdravstveno osiguranje (refundacija, upis, ortopedska pomagala)."
+ },
+ {
+  "#B&H TUZLANSKA REGIJA  ": "FBiH",
+  "Column2": "Tuzlanski kanton (TK)",
+  "Column5": "Ministarstvo pravosuđa i uprave TK",
+  "Column6": "http:\/\/mpuzotk.gov.ba\/",
+  "Column7": "http:\/\/mpuzotk.gov.ba\/",
+  "Column8": "Aktivno",
+  "Column9": "Stabilno",
+  "Column10": "Registracija udruženja, promjene u registru, izdavanje izvoda."
+ },
+ {
+  "#B&H TUZLANSKA REGIJA  ": "FBiH",
+  "Column2": "Tuzlanski kanton (TK)",
+  "Column5": "Ministarstvo poljoprivrede, šumarstva i vodoprivrede TK",
+  "Column6": "http:\/\/mpsvtk.gov.ba\/",
+  "Column7": "http:\/\/mpsvtk.gov.ba\/",
+  "Column8": "Aktivno",
+  "Column9": "Stabilno",
+  "Column10": "Zahtjevi: vodna dozvola, krčenje šume, zakup državnog zemljišta, saglasnosti i dr."
+ },
+ {
+  "#B&H TUZLANSKA REGIJA  ": "FBiH",
+  "Column2": "Tuzlanski kanton (TK)",
+  "Column5": "Ministarstvo prostornog uređenja i zaštite okoliša TK",
+  "Column6": "http:\/\/tk.gov.ba\/",
+  "Column7": "http:\/\/tk.gov.ba\/",
+  "Column8": "Aktivno",
+  "Column9": "Stabilno",
+  "Column10": "Okolinska dozvola, dozvola za upravljanje otpadom. (Napomena: URL za obrasce ovog ministarstva nije bio eksplicitno naveden, koristi se opšti kantonalni portal)."
+ },
+ {
+  "#B&H TUZLANSKA REGIJA  ": "Današnji Grad BRČKO zajedno sa područjem sliva i riječne luke je zasebna administrativna jedinica unutar DRŽAVE Bosne & Hercegovine Službeni naziv je DISTRIKT Brčko "
+ },
+ {
+  "#B&H TUZLANSKA REGIJA  ": "Today's City of BRČKO, together with its river port, has the status of an autonomous entity and operates legally like a district (e.g., Washington D.C.) within the state of Bosnia & Herzegovina Official Name for this city is DISTRIKT BRČKO "
+ },
+ {
+  "#B&H TUZLANSKA REGIJA  ": "Brčko distrikt",
+  "Column2": "Brčko distrikt BiH",
+  "Column3": "Brčko",
+  "Column4": "N\/A",
+  "Column5": "Zavod za zapošljavanje Brčko distrikta",
+  "Column6": "https:\/\/www.zzzbrcko.org\/",
+  "Column7": "https:\/\/www.zzzbrcko.org\/",
+  "Column8": "Aktivno",
+  "Column9": "Obrasci – zahtjevi za uvjerenja, urbanistička saglasnost, lokacijska informacija, prijava boravka. Brčko distrikt objedinjuje funkcije općine, grada i kantona. Svi obrasci su zakonito dostupni privatnim firmama za podršku građanima i strancima."
+ },
+ {
+  "#B&H TUZLANSKA REGIJA  ": "Brčko distrikt",
+  "Column2": "Brčko distrikt BiH",
+  "Column3": "Brčko",
+  "Column4": "N\/A",
+  "Column5": "Odjeljenje za javni registar Brčko",
+  "Column6": "https:\/\/www.bdcentral.net\/index.php\/ba\/odjeljenja\/javni-registar",
+  "Column7": "https:\/\/www.bdcentral.net\/index.php\/ba\/odjeljenja\/javni-registar",
+  "Column8": "Aktivno",
+  "Column9": "Obrasci – izvod iz matičnih knjiga, prijava prebivališta i boravišta, prijava rođenja. Brčko distrikt objedinjuje funkcije općine, grada i kantona. Svi obrasci su zakonito dostupni privatnim firmama za podršku građanima i strancima."
+ },
+ {
+  "#B&H TUZLANSKA REGIJA  ": "Brčko distrikt",
+  "Column2": "Brčko distrikt BiH",
+  "Column3": "Brčko",
+  "Column4": "N\/A",
+  "Column5": "Odjeljenje za zdravstvo i ostale usluge Brčko",
+  "Column6": "https:\/\/www.bdcentral.net\/index.php\/ba\/odjeljenja\/zdravstvo-i-ostale-usluge",
+  "Column7": "https:\/\/www.bdcentral.net\/index.php\/ba\/odjeljenja\/zdravstvo-i-ostale-usluge",
+  "Column8": "Aktivno",
+  "Column9": "Obrasci – zdravstveno osiguranje, refundacija, ortopedska pomagala. Brčko distrikt objedinjuje funkcije općine, grada i kantona. Svi obrasci su zakonito dostupni privatnim firmama za podršku građanima i strancima."
+ },
+ {
+  "#B&H TUZLANSKA REGIJA  ": "Brčko distrikt",
+  "Column2": "Brčko distrikt BiH",
+  "Column3": "Brčko",
+  "Column4": "N\/A",
+  "Column5": "Odjeljenje za obrazovanje Brčko",
+  "Column6": "https:\/\/www.bdcentral.net\/index.php\/ba\/odjeljenja\/obrazovanje",
+  "Column7": "https:\/\/www.bdcentral.net\/index.php\/ba\/odjeljenja\/obrazovanje",
+  "Column8": "Aktivno",
+  "Column9": "Obrasci – stipendije, upis djece u školu, nostrifikacija. Brčko distrikt objedinjuje funkcije općine, grada i kantona. Svi obrasci su zakonito dostupni privatnim firmama za podršku građanima i strancima."
+ },
+ {
+  "#B&H TUZLANSKA REGIJA  ": "Brčko distrikt",
+  "Column2": "Brčko distrikt BiH",
+  "Column3": "Brčko",
+  "Column4": "N\/A",
+  "Column5": "Odjeljenje za prostorno planiranje i imovinsko-pravne poslove Brčko",
+  "Column6": "https:\/\/www.bdcentral.net\/index.php\/ba\/odjeljenja\/prostorno-planiranje",
+  "Column7": "https:\/\/www.bdcentral.net\/index.php\/ba\/odjeljenja\/prostorno-planiranje",
+  "Column8": "Aktivno",
+  "Column9": "Obrasci – lokacijska informacija, urbanistička saglasnost, građevinske dozvole. Brčko distrikt objedinjuje funkcije općine, grada i kantona. Svi obrasci su zakonito dostupni privatnim firmama za podršku građanima i strancima."
+ },
+ {
+  "#B&H TUZLANSKA REGIJA  ": "Brčko distrikt",
+  "Column2": "Brčko distrikt BiH",
+  "Column3": "Brčko",
+  "Column4": "N\/A",
+  "Column5": "Zavod zdravstvenog osiguranja Brčko",
+  "Column6": "https:\/\/fzobrcko.ba\/",
+  "Column7": "https:\/\/fzobrcko.ba\/obrasci",
+  "Column8": "Aktivno",
+  "Column9": "Obrasci – prijava na zdravstveno osiguranje, refundacije, izdavanje zdravstvenih knjižica. Brčko distrikt objedinjuje funkcije općine, grada i kantona. Svi obrasci su zakonito dostupni privatnim firmama za podršku građanima i strancima."
+ },
+ {
+  "#B&H TUZLANSKA REGIJA  ": "Republika Srpska ",
+  "Column2": "\/",
+  "Column3": "Doboj",
+  "Column4": "N\/A",
+  "Column5": "Gradska uprava Doboj",
+  "Column6": "https:\/\/doboj.gov.ba\/ (Oficijelna web stranica Grada Doboja)",
+  "Column7": "Nema mogućnost interakcije, potrebni dokumenti samo lično u zgradi Opštine",
+  "Column8": "AKTIVNO",
+  "Column9": "STABILNO",
+  "Column10": "Greška u JavaScript kodu: Nekompatibilnost ili bug: Problemi sa serverskom stranom (backend):.Neispravna baza podataka ili API poziv, Caching problemi: Browser cache, Problemi sa CMS-om (Content Management System), Sigurnosni problemi\/blokade:, Osvježite stranicu (hard refresh): Pokušajte pritisnuti Ctrl + F5 (Windows) ili Cmd + Shift + R (Mac) da osvježite stranicu i prisilite pretraživač da učita sve ispočetka."
+ },
+ {
+  "#B&H TUZLANSKA REGIJA  ": "Republika Srpska",
+  "Column4": "Opstina ",
+  "Column5": "Opština Teslić",
+  "Column6": "https:\/\/www.opstinateslic.com\/",
+  "Column7": "https:\/\/www.opstinateslic.com\/?s=Obrazac&post_type%5B%5D",
+  "Column8": "AKTIVNO",
+  "Column9": "STABILNO",
+  "Column10": "Zvanična web stranica Opštine Teslić je aktivna i stabilna. Jasno definisan odjeljak za obrasce i zahtjeve omogućava lagano preuzimanje. Svi obrasci su zakonski dozvoljeni za upotrebu. Nije potrebna posebna tražilica."
+ },
+ {
+  "#B&H TUZLANSKA REGIJA  ": "Republika Srpska",
+  "Column3": "Modriča",
+  "Column4": "N\/A",
+  "Column5": "Opština Modriča",
+  "Column6": "https:\/\/modrica.ba\/",
+  "Column7": "https:\/\/modrica.ba\/usluge\/obrasci\/",
+  "Column8": "AKTIVNO",
+  "Column9": "STABILNO",
+  "Column10": "Oficijelna web stranica Opštine Modriča je aktivna i stabilna, sa jasno definisanim odjeljkom za obrasce. Obrasci su zakonski dozvoljeni za upotrebu. Nije potrebna posebna tražilica."
+ },
+ {
+  "#B&H TUZLANSKA REGIJA  ": "Republika Srpska",
+  "Column3": "Derventa",
+  "Column4": "N\/A",
+  "Column5": "Opština Derventa",
+  "Column6": "https:\/\/derventa.ba\/",
+  "Column7": "https:\/\/derventa.ba\/usluge\/obrasci\/",
+  "Column8": "AKTIVNO",
+  "Column9": "STABILNO",
+  "Column10": "Oficijelna web stranica Opštine Derventa je aktivna i stabilna, sa jasno definisanim odjeljkom za obrasce. Obrasci su zakonski dozvoljeni za upotrebu. Nije potrebna posebna tražilica."
+ },
+ {
+  "#B&H TUZLANSKA REGIJA  ": "Republika Srpska",
+  "Column3": "Brod",
+  "Column4": "N\/A",
+  "Column5": "Opština Brod",
+  "Column6": "https:\/\/opstina-brod.net\/",
+  "Column7": "https:\/\/opstina-brod.net\/zahtjevi-i-obrasci\/",
+  "Column8": "AKTIVNO",
+  "Column9": "STABILNO",
+  "Column10": "Zvanična web stranica Opštine Brod je aktivna i stabilna, sa jasno definisanim odjeljkom za obrasce i zahtjeve. Obrasci su zakonski dozvoljeni za upotrebu. Nije potrebna posebna tražilica."
+ },
+ {
+  "#B&H TUZLANSKA REGIJA  ": "Republika Srpska",
+  "Column3": "N\/A",
+  "Column4": "Vukosavlje",
+  "Column5": "Opština Vukosavlje",
+  "Column6": "https:\/\/vukosavlje.org\/",
+  "Column7": "https:\/\/vukosavlje.gov.ba\/ba\/index.php\/vazni-dokumenti",
+  "Column8": "AKTIVNO",
+  "Column9": "STABILNO",
+  "Column10": "Zvanična web stranica Opštine Vukosavlje je aktivna i stabilna, sa jasno definisanim odjeljkom za obrasce. Obrasci su zakonski dozvoljeni za upotrebu. Nije potrebna posebna tražilica."
+ },
+ {
+  "#B&H TUZLANSKA REGIJA  ": "Republika Srpska",
+  "Column3": "N\/A",
+  "Column4": "Petrovo",
+  "Column5": "Opština Petrovo",
+  "Column6": "https:\/\/petrovo.ba\/",
+  "Column7": "https:\/\/opstinapetrovo.org\/zahtjevi-i-obrasci\/",
+  "Column8": "AKTIVNO",
+  "Column9": "STABILNO",
+  "Column10": "Zvanična web stranica Opštine Petrovo je aktivna i stabilna, sa jasno definisanim odjeljkom za obrasce i zahtjeve. Obrasci su zakonski dozvoljeni za upotrebu. Nije potrebna posebna tražilica."
+ },
+ {
+  "#B&H TUZLANSKA REGIJA  ": "Republika Srpska",
+  "Column3": "N\/A",
+  "Column4": "Šamac",
+  "Column5": "Opština Šamac",
+  "Column6": "https:\/\/opstinasamac.org\/",
+  "Column7": "https:\/\/eregistarsamac.com\/%D0%",
+  "Column8": "AKTIVNO",
+  "Column9": "STABILNO",
+  "Column10": "Zvanična web stranica Opštine Šamac je aktivna i stabilna, sa jasno definisanim odjeljkom za obrasce. Obrasci su zakonski dozvoljeni za upotrebu. Nije potrebna posebna tražilica."
+ },
+ {
+  "#B&H TUZLANSKA REGIJA  ": "Republika Srpska",
+  "Column3": "Modriča",
+  "Column4": "N\/A",
+  "Column5": "Opština Modriča",
+  "Column6": "Gradska uprava Modriča",
+  "Column7": "https:\/\/modrica.ba\/",
+  "Column8": "https:\/\/modrica.ba\/usluge\/obrasci\/",
+  "Column9": "AKTIVNO",
+  "Column10": "STABILNO",
+  "Column11": "Oficijelna web stranica Opštine Modriča je aktivna i stabilna, sa jasno definisanim odjeljkom za obrasce. Obrasci su zakonski dozvoljeni za upotrebu. Nije potrebna posebna tražilica."
+ },
+ {
+  "#B&H TUZLANSKA REGIJA  ": "Republika Srpska",
+  "Column3": "Derventa",
+  "Column4": "N\/A",
+  "Column5": "Opština Derventa",
+  "Column6": "Gradska uprava Derventa",
+  "Column7": "https:\/\/derventa.ba\/",
+  "Column8": "https:\/\/derventa.ba\/usluge\/obrasci\/",
+  "Column9": "AKTIVNO",
+  "Column10": "STABILNO",
+  "Column11": "Oficijelna web stranica Opštine Derventa je aktivna i stabilna, sa jasno definisanim odjeljkom za obrasce. Obrasci su zakonski dozvoljeni za upotrebu. Nije potrebna posebna tražilica."
+ },
+ {
+  "#B&H TUZLANSKA REGIJA  ": "Republika Srpska",
+  "Column3": "Brod",
+  "Column4": "N\/A",
+  "Column5": "Opština Brod",
+  "Column6": "Gradska uprava Brod",
+  "Column7": "https:\/\/opstina-brod.net\/",
+  "Column8": "https:\/\/opstina-brod.net\/zahtjevi-i-obrasci\/",
+  "Column9": "AKTIVNO",
+  "Column10": "STABILNO",
+  "Column11": "Zvanična web stranica Opštine Brod je aktivna i stabilna, sa jasno definisanim odjeljkom za obrasce i zahtjeve. Obrasci su zakonski dozvoljeni za upotrebu. Nije potrebna posebna tražilica."
+ },
+ {
+  "#B&H TUZLANSKA REGIJA  ": "Republika Srpska",
+  "Column3": "Vukosavlje",
+  "Column4": "N\/A",
+  "Column5": "Opština Vukosavlje",
+  "Column6": "Gradska uprava Vukosavlje",
+  "Column7": "https:\/\/vukosavlje.org\/",
+  "Column8": "https:\/\/vukosavlje.org\/obrasci\/",
+  "Column9": "AKTIVNO",
+  "Column10": "STABILNO",
+  "Column11": "Zvanična web stranica Opštine Vukosavlje je aktivna i stabilna, sa jasno definisanim odjeljkom za obrasce. Obrasci su zakonski dozvoljeni za upotrebu. Nije potrebna posebna tražilica."
+ },
+ {
+  "#B&H TUZLANSKA REGIJA  ": "Republika Srpska",
+  "Column3": "Petrovo",
+  "Column4": "N\/A",
+  "Column5": "Opština Petrovo",
+  "Column6": "Gradska uprava Petrovo",
+  "Column7": "https:\/\/opstinapetrovo.org\/",
+  "Column8": "https:\/\/opstinapetrovo.org\/zahtjevi-i-obrasci\/",
+  "Column9": "AKTIVNO",
+  "Column10": "STABILNO",
+  "Column11": "Zvanična web stranica Opštine Petrovo je aktivna i stabilna, sa jasno definisanim odjeljkom za obrasce i zahtjeve. Obrasci su zakonski dozvoljeni za upotrebu. Nije potrebna posebna tražilica."
+ },
+ {
+  "#B&H TUZLANSKA REGIJA  ": "Republika Srpska",
+  "Column3": "Šamac",
+  "Column4": "N\/A",
+  "Column5": "Opština Šamac",
+  "Column6": "Gradska uprava Šamac",
+  "Column7": "https:\/\/opstinasamac.org\/",
+  "Column8": "https:\/\/opstinasamac.org\/obrasci\/",
+  "Column9": "AKTIVNO",
+  "Column10": "STABILNO",
+  "Column11": "Zvanična web stranica Opštine Šamac je aktivna i stabilna, sa jasno definisanim odjeljkom za obrasce. Obrasci su zakonski dozvoljeni za upotrebu. Nije potrebna posebna tražilica."
+ },
+ {
+  "#B&H TUZLANSKA REGIJA  ": "Republika Srpska",
+  "Column3": "Bijeljina",
+  "Column4": "N\/A",
+  "Column5": "Gradska uprava Bijeljina",
+  "Column6": "https:\/\/bijeljina.org\/",
+  "Column7": "https:\/\/bijeljina.org\/lat\/zahtjevi-i-obrasci.html",
+  "Column8": "AKTIVNO",
+  "Column9": "STABILNO",
+  "Column10": "Zvanična web stranica Grada Bijeljina je aktivna i stabilna, sa jasno definisanim odjeljkom za obrasce i zahtjeve. Svi obrasci su zakonski dozvoljeni za upotrebu. Nije potrebna posebna tražilica."
+ },
+ {
+  "#B&H TUZLANSKA REGIJA  ": "Republika Srpska",
+  "Column3": "Ugljevik",
+  "Column4": "N\/A",
+  "Column5": "Opština Ugljevik",
+  "Column6": "Gradska uprava Ugljevik",
+  "Column7": "https:\/\/ugljevik.rs.ba\/",
+  "Column8": "https:\/\/ugljevik.rs.ba\/usluge\/obrasci\/",
+  "Column9": "AKTIVNO",
+  "Column10": "STABILNO",
+  "Column11": "Zvanična web stranica Opštine Ugljevik je aktivna i stabilna, sa jasno definisanim odjeljkom za obrasce. Obrasci su zakonski dozvoljeni za upotrebu. Nije potrebna posebna tražilica."
+ },
+ {
+  "#B&H TUZLANSKA REGIJA  ": "Republika Srpska",
+  "Column3": "Lopare",
+  "Column4": "N\/A",
+  "Column5": "Opština Lopare",
+  "Column6": "Gradska uprava Lopare",
+  "Column7": "https:\/\/lopare.rs.ba\/",
+  "Column8": "https:\/\/lopare.rs.ba\/zahtjevi-i-obrasci\/",
+  "Column9": "AKTIVNO",
+  "Column10": "STABILNO",
+  "Column11": "Zvanična web stranica Opštine Lopare je aktivna i stabilna, sa jasno definisanim odjeljkom za obrasce i zahtjeve. Obrasci su zakonski dozvoljeni za upotrebu. Nije potrebna posebna tražilica."
+ },
+ {
+  "#B&H TUZLANSKA REGIJA  ": "Republika Srpska",
+  "Column3": "Zvornik",
+  "Column4": "N\/A",
+  "Column5": "Opština Zvornik",
+  "Column6": "Gradska uprava Zvornik",
+  "Column7": "https:\/\/opstina-zvornik.org\/",
+  "Column8": "https:\/\/opstina-zvornik.org\/zahtjevi-i-obrasci\/",
+  "Column9": "AKTIVNO",
+  "Column10": "STABILNO",
+  "Column11": "Zvanična web stranica Opštine Zvornik je aktivna i stabilna, sa jasno definisanim odjeljkom za obrasce. Obrasci su zakonski dozvoljeni za upotrebu. Nije potrebna posebna tražilica."
+ },
+ {
+  "#B&H TUZLANSKA REGIJA  ": "Republika Srpska",
+  "Column3": "Šekovići",
+  "Column4": "N\/A",
+  "Column5": "Opština Šekovići",
+  "Column6": "Gradska uprava Šekovići",
+  "Column7": "https:\/\/sekovici.org\/",
+  "Column8": "https:\/\/sekovici.org\/zahtjevi-i-obrasci\/",
+  "Column9": "AKTIVNO",
+  "Column10": "STABILNO",
+  "Column11": "Zvanična web stranica Opštine Šekovići je aktivna i stabilna, sa jasno definisanim odjeljkom za obrasce i zahtjeve. Obrasci su zakonski dozvoljeni za upotrebu. Nije potrebna posebna tražilica."
+ },
+ {
+  "#B&H TUZLANSKA REGIJA  ": "Republika Srpska",
+  "Column3": "Osmaci",
+  "Column4": "N\/A",
+  "Column5": "Opština Osmaci",
+  "Column6": "Gradska uprava Osmaci",
+  "Column7": "https:\/\/osmaci.org\/",
+  "Column8": "https:\/\/osmaci.org\/obrasci\/",
+  "Column9": "AKTIVNO",
+  "Column10": "STABILNO",
+  "Column11": "Zvanična web stranica Opštine Osmaci je aktivna i stabilna, sa jasno definisanim odjeljkom za obrasce. Obrasci su zakonski dozvoljeni za upotrebu. Nije potrebna posebna tražilica."
+ },
+ {
+  "#B&H TUZLANSKA REGIJA  ": "Republika Srpska",
+  "Column3": "Zvornik",
+  "Column4": "N\/A",
+  "Column5": "Opština Zvornik",
+  "Column6": "Gradska uprava Zvornik",
+  "Column7": "https:\/\/opstina-zvornik.org\/",
+  "Column8": "https:\/\/opstina-zvornik.org\/zahtjevi-i-obrasci\/",
+  "Column9": "AKTIVNO",
+  "Column10": "STABILNO",
+  "Column11": "Zvanična web stranica Opštine Zvornik je aktivna i stabilna, sa jasno definisanim odjeljkom za obrasce. Obrasci su zakonski dozvoljeni za upotrebu. Nije potrebna posebna tražilica."
+ },
+ {
+  "#B&H TUZLANSKA REGIJA  ": "Republika Srpska",
+  "Column3": "Šekovići",
+  "Column4": "N\/A",
+  "Column5": "Opština Šekovići",
+  "Column6": "Gradska uprava Šekovići",
+  "Column7": "https:\/\/sekovici.org\/",
+  "Column8": "https:\/\/sekovici.org\/zahtjevi-i-obrasci\/",
+  "Column9": "AKTIVNO",
+  "Column10": "STABILNO",
+  "Column11": "Zvanična web stranica Opštine Šekovići je aktivna i stabilna, sa jasno definisanim odjeljkom za obrasce i zahtjeve. Obrasci su zakonski dozvoljeni za upotrebu. Nije potrebna posebna tražilica."
+ },
+ {
+  "#B&H TUZLANSKA REGIJA  ": "Republika Srpska",
+  "Column3": "Osmaci",
+  "Column4": "N\/A",
+  "Column5": "Opština Osmaci",
+  "Column6": "Gradska uprava Osmaci",
+  "Column7": "https:\/\/osmaci.org\/",
+  "Column8": "https:\/\/osmaci.org\/obrasci\/",
+  "Column9": "AKTIVNO",
+  "Column10": "STABILNO",
+  "Column11": "Zvanična web stranica Opštine Osmaci je aktivna i stabilna, sa jasno definisanim odjeljkom za obrasce. Obrasci su zakonski dozvoljeni za upotrebu. Nije potrebna posebna tražilica."
+ },
+ {
+  "#B&H TUZLANSKA REGIJA  ": "Republika Srpska",
+  "Column3": "Pale",
+  "Column4": "N\/A",
+  "Column5": "Opština Pale",
+  "Column6": "Gradska uprava Pale",
+  "Column7": "https:\/\/opstinapale.org\/",
+  "Column8": "https:\/\/opstinapale.org\/zahtjevi-i-obrasci\/",
+  "Column9": "AKTIVNO",
+  "Column10": "STABILNO",
+  "Column11": "Zvanična web stranica Opštine Pale je aktivna i stabilna, sa jasno označenim odjeljkom za obrasce. Obrasci su zakonski dozvoljeni. Nije potrebna posebna tražilica."
+ },
+ {
+  "#B&H TUZLANSKA REGIJA  ": "Republika Srpska",
+  "Column3": "Trnovo (RS)",
+  "Column4": "N\/A",
+  "Column5": "Opština Trnovo (RS)",
+  "Column6": "Gradska uprava Trnovo (RS)",
+  "Column7": "https:\/\/trnovo-rs.org\/",
+  "Column8": "https:\/\/trnovo-rs.org\/obrasci\/",
+  "Column9": "AKTIVNO",
+  "Column10": "STABILNO",
+  "Column11": "Zvanična web stranica Opštine Trnovo (RS) je aktivna i stabilna, sa jasno označenim odjeljkom za obrasce. Obrasci su zakonski dozvoljeni. Nije potrebna posebna tražilica."
+ },
+ {
+  "#B&H TUZLANSKA REGIJA  ": "Republika Srpska",
+  "Column3": "Istočni Stari Grad",
+  "Column4": "N\/A",
+  "Column5": "Opština Istočni Stari Grad",
+  "Column6": "Gradska uprava Istočni Stari Grad",
+  "Column7": "https:\/\/istocnistarigrad.org\/",
+  "Column8": "https:\/\/istocnistarigrad.org\/zahtjevi-i-obrasci\/",
+  "Column9": "AKTIVNO",
+  "Column10": "STABILNO",
+  "Column11": "Zvanična web stranica Opštine Istočni Stari Grad je aktivna i stabilna, sa jasno označenim odjeljkom za obrasce. Obrasci su zakonski dozvoljeni. Nije potrebna posebna tražilica."
+ },
+ {
+  "#B&H TUZLANSKA REGIJA  ": "Republika Srpska",
+  "Column3": "Sokolac",
+  "Column4": "N\/A",
+  "Column5": "Opština Sokolac",
+  "Column6": "Gradska uprava Sokolac",
+  "Column7": "https:\/\/opstinasokolac.net\/",
+  "Column8": "https:\/\/opstinasokolac.net\/obrasci-i-zahtjevi\/",
+  "Column9": "AKTIVNO",
+  "Column10": "STABILNO",
+  "Column11": "Zvanična web stranica Opštine Sokolac je aktivna i stabilna, sa jasno označenim odjeljkom za obrasce. Obrasci su zakonski dozvoljeni. Nije potrebna posebna tražilica."
+ },
+ {
+  "#B&H TUZLANSKA REGIJA  ": "Republika Srpska",
+  "Column3": "Petrovo",
+  "Column4": "N\/A",
+  "Column5": "Opština Petrovo",
+  "Column6": "Gradska uprava Petrovo",
+  "Column7": "https:\/\/opstinapetrovo.org\/",
+  "Column8": "https:\/\/opstinapetrovo.org\/zahtjevi-i-obrasci\/",
+  "Column9": "AKTIVNO",
+  "Column10": "STABILNO",
+  "Column11": "Zvanična web stranica Opštine Petrovo je aktivna i stabilna, sa jasno definisanim odjeljkom za obrasce i zahtjeve. Obrasci su zakonski dozvoljeni za upotrebu. Nije potrebna posebna tražilica."
+ },
+ {
+  "#B&H TUZLANSKA REGIJA  ": "Republika Srpska",
+  "Column3": "Šamac",
+  "Column4": "N\/A",
+  "Column5": "Opština Šamac",
+  "Column6": "Gradska uprava Šamac",
+  "Column7": "https:\/\/opstinasamac.org\/",
+  "Column8": "https:\/\/opstinasamac.org\/obrasci\/",
+  "Column9": "AKTIVNO",
+  "Column10": "STABILNO",
+  "Column11": "Zvanična web stranica Opštine Šamac je aktivna i stabilna, sa jasno definisanim odjeljkom za obrasce. Obrasci su zakonski dozvoljeni za upotrebu. Nije potrebna posebna tražilica."
+ }
+],
+"B&H TRAVNIČKA REGIJA":[
+ {
+  "B&H TRAVNIČKA REGIJA ": "Entitet",
+  "Column2": "Kanton\/Županija",
+  "Column3": "Grad",
+  "Column4": "Općina\/Opština",
+  "Column5": "URL glavna stranica",
+  "Column6": "URL dokumenti\/obrasci",
+  "Column7": "Status",
+  "Column8": "Ocjena stabilnosti",
+  "Column9": "KOMENTAR"
+ },
+ {
+  "B&H TRAVNIČKA REGIJA ": "Travnička regija",
+  "Column2": "FBiH",
+  "Column3": "Srednjobosanski kanton (SBK)",
+  "Column4": "Općina Travnik",
+  "Column5": "https:\/\/opcinatravnik.com.ba\/",
+  "Column6": "https:\/\/opcinatravnik.com.ba\/ba\/e-zahtjevi-online-zahtjevi",
+  "Column7": "Aktivno",
+  "Column8": "Stabilno",
+  "Column9": "Obrasci – urbanistička saglasnost, lokacijska informacija, izdavanje uvjerenja"
+ },
+ {
+  "B&H TRAVNIČKA REGIJA ": "Travnička regija",
+  "Column2": "FBiH",
+  "Column3": "Srednjobosanski kanton (SBK)",
+  "Column4": "Općina Bugojno",
+  "Column5": "opcina-bugojno.ba",
+  "Column6": "Op?ina Bugojno : Servis građana",
+  "Column7": "Aktivno",
+  "Column8": "Stabilno",
+  "Column9": "Obrasci – urbanizam, građevinske dozvole, matični uredi"
+ },
+ {
+  "B&H TRAVNIČKA REGIJA ": "Travnička regija",
+  "Column2": "FBiH",
+  "Column3": "Srednjobosanski kanton (SBK)",
+  "Column4": "Općina Gornji Vakuf-Uskoplje",
+  "Column5": "gvu.ba",
+  "Column6": "Općina Gornji Vakuf-Uskoplje",
+  "Column7": "Aktivno",
+  "Column8": "Stabilno",
+  "Column9": "E-Matičar omogućava online podnošenje zahtjeva za izdavanje i dostavu izvoda i uvjerenja"
+ },
+ {
+  "B&H TRAVNIČKA REGIJA ": "Travnička regija",
+  "Column2": "FBiH",
+  "Column3": "Srednjobosanski kanton (SBK)",
+  "Column4": "Općina Donji Vakuf",
+  "Column5": "donji-vakuf.ba",
+  "Column6": "donji-vakuf.ba",
+  "Column7": "Aktivno",
+  "Column8": "Stabilno",
+  "Column9": "Obrasci – urbanističke saglasnosti, izdavanje uvjerenja"
+ },
+ {
+  "B&H TRAVNIČKA REGIJA ": "Travnička regija",
+  "Column2": "FBiH",
+  "Column3": "Srednjobosanski kanton (SBK)",
+  "Column4": "Općina Novi Travnik",
+  "Column5": "ont.gov.ba",
+  "Column6": "ont.gov.ba",
+  "Column7": "Aktivno",
+  "Column8": "Stabilno",
+  "Column9": "Obrasci – zahtjevi za uvjerenja, urbanistička dokumentacija"
+ },
+ {
+  "B&H TRAVNIČKA REGIJA ": "Travnička regija",
+  "Column2": "FBiH",
+  "Column3": "Srednjobosanski kanton (SBK)",
+  "Column4": "Općina Vitez",
+  "Column5": "vitez.ba",
+  "Column6": "vitez.ba",
+  "Column7": "Aktivno",
+  "Column8": "Stabilno",
+  "Column9": "Obrasci – lokacijska informacija, urbanizam"
+ },
+ {
+  "B&H TRAVNIČKA REGIJA ": "Travnička regija",
+  "Column2": "FBiH",
+  "Column3": "Srednjobosanski kanton (SBK)",
+  "Column4": "Općina Busovača",
+  "Column5": "opcina-busovaca.com",
+  "Column6": "opcina-busovaca.com",
+  "Column7": "Aktivno",
+  "Column8": "Stabilno",
+  "Column9": "Obrasci – zahtjevi za uvjerenja, urbanizam"
+ },
+ {
+  "B&H TRAVNIČKA REGIJA ": "Travnička regija",
+  "Column2": "FBiH",
+  "Column3": "Srednjobosanski kanton (SBK)",
+  "Column4": "Općina Jajce",
+  "Column5": "opcina-jajce.ba",
+  "Column6": "opcina-jajce.ba",
+  "Column7": "Aktivno",
+  "Column8": "Nestabilno",
+  "Column9": "Website ne sadrži obrasce; zahtjevi isključivo lično u službama"
+ },
+ {
+  "B&H TRAVNIČKA REGIJA ": "Travnička regija",
+  "Column2": "FBiH",
+  "Column3": "Srednjobosanski kanton (SBK)",
+  "Column4": "Općina Kiseljak",
+  "Column5": "opcina-kiseljak.org",
+  "Column6": "opcina-kiseljak.org",
+  "Column7": "Aktivno",
+  "Column8": "Stabilno",
+  "Column9": "Obrasci – urbanistička saglasnost, izdavanje uvjerenja"
+ },
+ {
+  "B&H TRAVNIČKA REGIJA ": "Travnička regija",
+  "Column2": "FBiH",
+  "Column3": "Srednjobosanski kanton (SBK)",
+  "Column4": "Općina Kreševo",
+  "Column5": "kresevo.ba",
+  "Column6": "kresevo.ba",
+  "Column7": "Aktivno",
+  "Column8": "Stabilno",
+  "Column9": "Obrasci – izdavanje uvjerenja, urbanizam; dostava poštom s uračunatom poštarinom"
+ },
+ {
+  "B&H TRAVNIČKA REGIJA ": "Travnička regija",
+  "Column2": "FBiH",
+  "Column3": "Srednjobosanski kanton (SBK)",
+  "Column4": "Općina Fojnica",
+  "Column5": "fojnica.ba",
+  "Column6": "fojnica.ba",
+  "Column7": "Aktivno",
+  "Column8": "Stabilno",
+  "Column9": "Obrasci – urbanističke saglasnosti, izdavanje uvjerenja"
+ },
+ {
+  "B&H TRAVNIČKA REGIJA ": "Travnička regija",
+  "Column2": "FBiH",
+  "Column3": "Srednjobosanski kanton (SBK)",
+  "Column4": "Ministarstvo zdravstva SBK",
+  "Column5": "sbk-ksb.gov.ba",
+  "Column6": "sbk-ksb.gov.ba",
+  "Column7": "Aktivno",
+  "Column8": "Stabilno",
+  "Column9": "Obrasci – zdravstveno osiguranje, refundacije, ortopedska pomagala"
+ },
+ {
+  "B&H TRAVNIČKA REGIJA ": "Travnička regija",
+  "Column2": "FBiH",
+  "Column3": "Srednjobosanski kanton (SBK)",
+  "Column4": "Ministarstvo obrazovanja SBK",
+  "Column5": "sbk-ksb.gov.ba",
+  "Column6": "sbk-ksb.gov.ba",
+  "Column7": "Aktivno",
+  "Column8": "Stabilno",
+  "Column9": "Obrasci – stipendije, nostrifikacija, upis"
+ },
+ {
+  "B&H TRAVNIČKA REGIJA ": "Travnička regija",
+  "Column2": "FBiH",
+  "Column3": "Srednjobosanski kanton (SBK)",
+  "Column4": "Ministarstvo prostornog uređenja SBK",
+  "Column5": "sbk-ksb.gov.ba",
+  "Column6": "sbk-ksb.gov.ba",
+  "Column7": "Aktivno",
+  "Column8": "Stabilno",
+  "Column9": "Obrasci – lokacijska informacija, urbanističke saglasnosti, ekološke dozvole"
+ },
+ {
+  "B&H TRAVNIČKA REGIJA ": "Travnička regija",
+  "Column2": "FBiH",
+  "Column3": "Srednjobosanski kanton (SBK)",
+  "Column4": "Zavod zdravstvenog osiguranja SBK",
+  "Column5": "zzo-ksbsbk.com.ba",
+  "Column6": "zzo-ksbsbk.com.ba",
+  "Column7": "Aktivno",
+  "Column8": "Stabilno",
+  "Column9": "Obrasci – prijava na zdravstveno osiguranje, refundacije, ortopedska pomagala"
+ }
+],
+"B&H ZENIČKA REGIJA":[
+ {
+  "B&H   ZENIČKA REGIJA ": "Entitet",
+  "Column2": "Kanton\/Županija",
+  "Column3": "Grad",
+  "Column4": "Općina\/Opština",
+  "Column5": "Ministarstvo\/Zavod",
+  "Column6": "URL Glavna Stranica",
+  "Column7": "URL Dokumenti\/Obrasci",
+  "Column8": "Status",
+  "Column9": "Komentar"
+ },
+ {
+  "B&H   ZENIČKA REGIJA ": "FBiH",
+  "Column2": "Zeničko-dobojski kanton (ZDK)",
+  "Column3": "Zenica",
+  "Column4": "N\/A",
+  "Column5": "Gradska uprava Zenica",
+  "Column6": "https:\/\/zenica.ba\/",
+  "Column7": "https:\/\/zenica.ba\/e-registar-administrativnih-postupaka\/",
+  "Column8": "Aktivno",
+  "Column9": "PDF formular E-registar Administrativnih postupaka i E-Servis, razni administrativni formulari i obrasci."
+ },
+ {
+  "B&H   ZENIČKA REGIJA ": "FBiH",
+  "Column2": "Zeničko-dobojski kanton (ZDK)",
+  "Column3": "N\/A",
+  "Column4": "Usora",
+  "Column5": "Općina Usora",
+  "Column6": "http:\/\/www.usora.com\/",
+  "Column7": "http:\/\/www.usora.com\/dokumenti-i-obrasci\/",
+  "Column8": "Aktivno",
+  "Column9": "Prepoznati zvanični URL za općinu Usora. Potrebna provjera dostupnosti specifičnih obrazaca."
+ },
+ {
+  "B&H   ZENIČKA REGIJA ": "FBiH",
+  "Column2": "Zeničko-dobojski kanton (ZDK)",
+  "Column3": "Zenica",
+  "Column4": "N\/A",
+  "Column5": "Zavod zdravstvenog osiguranja ZDK",
+  "Column6": "https:\/\/www.zzozedo.ba\/",
+  "Column7": "https:\/\/www.zzozedo.ba\/index.php\/layout\/class-layout\/obrasci",
+  "Column8": "Aktivno",
+  "Column9": "PDF formular ZZO ZDK – pokriva najčešće zdravstvene zahtjeve i administrativne forme."
+ },
+ {
+  "B&H   ZENIČKA REGIJA ": "FBiH",
+  "Column2": "Zeničko-dobojski kanton (ZDK)",
+  "Column3": "Zenica",
+  "Column4": "N\/A",
+  "Column5": "Gradska uprava Zenica",
+  "Column6": "https:\/\/zenica.ba\/",
+  "Column7": "https:\/\/zenica.ba\/e-registar-administrativnih-postupaka\/",
+  "Column8": "Aktivno",
+  "Column9": "PDF formular E-registar Administrativnih postupaka i E-Servis, razni administrativni formulari i obrasci."
+ },
+ {
+  "B&H   ZENIČKA REGIJA ": "FBiH",
+  "Column2": "Zeničko-dobojski kanton (ZDK)",
+  "Column3": "N\/A",
+  "Column4": "Doboj-Jug",
+  "Column5": "Zavod zdravstvenog osiguranja ZDK",
+  "Column6": "https:\/\/www.zzozedo.ba\/",
+  "Column7": "https:\/\/www.zzozedo.ba\/index.php\/layout\/class-layout\/obrasci",
+  "Column8": "Aktivno",
+  "Column9": "PDF formular ZZO ZDK – pokriva najčešće zdravstvene zahtjeve i administrativne forme."
+ },
+ {
+  "B&H   ZENIČKA REGIJA ": "FBiH",
+  "Column2": "Zeničko-dobojski kanton (ZDK)",
+  "Column3": "N\/A",
+  "Column4": "Kakanj",
+  "Column5": "Zavod zdravstvenog osiguranja ZDK",
+  "Column6": "https:\/\/www.zzozedo.ba\/",
+  "Column7": "https:\/\/www.zzozedo.ba\/index.php\/layout\/class-layout\/obrasci",
+  "Column8": "Aktivno",
+  "Column9": "PDF formular ZZO ZDK - Zahtjev za refundiranje troškova liječenja van ZDK."
+ },
+ {
+  "B&H   ZENIČKA REGIJA ": "FBiH",
+  "Column2": "Zeničko-dobojski kanton (ZDK)",
+  "Column3": "N\/A",
+  "Column4": "Maglaj",
+  "Column5": "Zavod zdravstvenog osiguranja ZDK",
+  "Column6": "https:\/\/www.zzozedo.ba\/",
+  "Column7": "https:\/\/www.zzozedo.ba\/index.php\/layout\/class-layout\/obrasci",
+  "Column8": "Aktivno",
+  "Column9": "PDF formular ZZO ZDK - Zahtjev za odobravanje ortopedskih pomagala."
+ },
+ {
+  "B&H   ZENIČKA REGIJA ": "FBiH",
+  "Column2": "Zeničko-dobojski kanton (ZDK)",
+  "Column3": "N\/A",
+  "Column4": "Žepče",
+  "Column5": "Zavod zdravstvenog osiguranja ZDK",
+  "Column6": "https:\/\/www.zzozedo.ba\/",
+  "Column7": "https:\/\/www.zzozedo.ba\/index.php\/layout\/class-layout\/obrasci",
+  "Column8": "Aktivno",
+  "Column9": "PDF formular ZZO ZDK - Zahtjev za izdavanje uvjerenja."
+ },
+ {
+  "B&H   ZENIČKA REGIJA ": "FBiH",
+  "Column2": "Zeničko-dobojski kanton (ZDK)",
+  "Column3": "N\/A",
+  "Column4": "Tešanj",
+  "Column5": "Zavod zdravstvenog osiguranja ZDK",
+  "Column6": "https:\/\/www.zzozedo.ba\/",
+  "Column7": "https:\/\/www.zzozedo.ba\/index.php\/layout\/class-layout\/obrasci",
+  "Column8": "Aktivno",
+  "Column9": "PDF formular ZZO ZDK – pokriva najčešće zdravstvene zahtjeve i administrativne forme."
+ },
+ {
+  "B&H   ZENIČKA REGIJA ": "FBiH",
+  "Column2": "Zeničko-dobojski kanton (ZDK)",
+  "Column3": "N\/A",
+  "Column4": "Olovo",
+  "Column5": "Općina Olovo",
+  "Column6": "https:\/\/www.olovo.gov.ba\/",
+  "Column7": "https:\/\/www.olovo.gov.ba\/dokumenti\/",
+  "Column8": "Aktivno",
+  "Column9": "Prepoznati zvanični URL za općinu Olovo. Bit će potrebna dodatna istraživanja za specifične obrasce na portalu."
+ },
+ {
+  "B&H   ZENIČKA REGIJA ": "FBiH",
+  "Column2": "Zeničko-dobojski kanton (ZDK)",
+  "Column3": "N\/A",
+  "Column4": "Zavidovići",
+  "Column5": "Općina Zavidovići",
+  "Column6": "https:\/\/www.zavidovici.ba\/",
+  "Column7": "https:\/\/www.zavidovici.ba\/index.php\/obrasci-zahtjevi",
+  "Column8": "Aktivno",
+  "Column9": "Prepoznati zvanični URL za općinu Zavidovići sa dostupnim obrascima\/zahtjevima."
+ },
+ {
+  "B&H   ZENIČKA REGIJA ": "FBiH",
+  "Column2": "Zeničko-dobojski kanton (ZDK)",
+  "Column3": "N\/A",
+  "Column4": "Breza",
+  "Column5": "Općina Breza",
+  "Column6": "https:\/\/breza.gov.ba\/",
+  "Column7": "https:\/\/breza.gov.ba\/kategorija\/dokumenti\/",
+  "Column8": "Aktivno",
+  "Column9": "Prepoznati zvanični URL za općinu Breza sa dostupnim dokumentima."
+ },
+ {
+  "B&H   ZENIČKA REGIJA ": "FBiH",
+  "Column2": "Zeničko-dobojski kanton (ZDK)",
+  "Column3": "N\/A",
+  "Column4": "Visoko",
+  "Column5": "Gradska uprava Visoko",
+  "Column6": "https:\/\/www.visoko.gov.ba\/",
+  "Column7": "https:\/\/www.visoko.gov.ba\/kategorija\/obrasci\/",
+  "Column8": "Aktivno",
+  "Column9": "Prepoznati zvanični URL za grad Visoko sa dostupnim obrascima."
+ }
+]
+}
