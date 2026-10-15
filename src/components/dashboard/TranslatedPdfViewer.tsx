@@ -61,9 +61,22 @@ const TranslatedPdfViewer = ({
   };
 
   const handleDownload = () => {
+    const ALLOWED_HOSTS: string[] = []; // ACTION REQUIRED: Add your allowed hosts before merging
+    const isSafeExternalUrl = (url: string, allowedHosts: string[]) => {
+      if (!url) return false;
+      try {
+        const parsed = new URL(String(url).replace(/[\t\n\r]/g, ''));
+        if (parsed.protocol !== 'http:' && parsed.protocol !== 'https:') return false;
+        return allowedHosts.some(function (h) {
+          return parsed.hostname === h || parsed.hostname.endsWith('.' + h);
+        });
+      } catch (e) { return false; }
+    };
     if (currentUrl) {
       trackGA4Event('file_download', { file_name: documentName, language: selectedLang });
-      window.open(currentUrl, '_blank', 'noopener,noreferrer');
+      if (isSafeExternalUrl(currentUrl, ALLOWED_HOSTS)) {
+        window.open(currentUrl, '_blank', 'noopener,noreferrer');
+      }
     }
   };
 
