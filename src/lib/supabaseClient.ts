@@ -1,14 +1,32 @@
 import { createClient } from '@supabase/supabase-js';
 
 // ============================================================
-// Supabase Configuration
-// Project: zdvqjjmpxifbltihffas
+// Supabase Configuration & Environment Variables
 // ============================================================
 
-const SUPABASE_URL = import.meta.env.VITE_SUPABASE_URL || 'https://zdvqjjmpxifbltihffas.supabase.co';
-const SUPABASE_ANON_KEY = import.meta.env.VITE_SUPABASE_ANON_KEY || 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InpkdnFqam1weGlmYmx0aWhmZmFzIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzEyMTAwNzgsImV4cCI6MjA4Njc4NjA3OH0.GzCtynQbMZ81XeLWji7RLvyO1WOEWWJeNtpoDRVk0yE';
+// Podržava Vite (import.meta.env) i standardni Node.js/Vercel (process.env)
+const getEnvVar = (key: string): string => {
+  if (typeof window !== 'undefined') {
+    // Klijentsko okruženje (Vite / Next.js browser)
+    // @ts-ignore
+    return (window.__ENV?.[key]) || (import.meta?.env?.[key]) || '';
+  }
+  // Serversko / Build okruženje
+  return (typeof process !== 'undefined' ? process.env[key] : '') || '';
+};
 
-export const supabase = createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+// Dohvatanje URL-a i Anon ključa iz sigurnih okruženjskih varijabli
+const supabaseUrl = getEnvVar('VITE_SUPABASE_URL') || getEnvVar('NEXT_PUBLIC_SUPABASE_URL') || getEnvVar('SUPABASE_URL');
+const supabaseAnonKey = getEnvVar('VITE_SUPABASE_ANON_KEY') || getEnvVar('NEXT_PUBLIC_SUPABASE_ANON_KEY') || getEnvVar('SUPABASE_ANON_KEY');
+
+if (!supabaseUrl || !supabaseAnonKey) {
+  console.warn(
+    'Upozorenje: Supabase URL ili Anon Key nisu pronađeni u environment varijablama. Aplikacija će koristiti lokalni fallback režim.'
+  );
+}
+
+// Inicijalizacija Supabase klijenta sa sigurnim varijablama (prazni stringovi sprečavaju grešku pri inicijalizaciji ako fale varijable)
+export const supabase = createClient(supabaseUrl || 'https://placeholder.supabase.co', supabaseAnonKey || 'placeholder-key');
 
 // ============================================================
 // Table: app_7cd5641924_institutions
@@ -75,6 +93,7 @@ export function getSortLabel(sort: SortOption, language: string = 'bs'): string 
 let supabaseAvailable: boolean | null = null;
 
 export async function checkSupabaseConnection(): Promise<boolean> {
+  if (!supabaseUrl || !supabaseAnonKey) return false;
   if (supabaseAvailable !== null) return supabaseAvailable;
 
   try {
@@ -152,10 +171,7 @@ export async function getCurrentUser() {
 
 /** Delete current user account (user-initiated) */
 export async function deleteUserAccount() {
-  // Sign out first, then the user record remains in Supabase Auth
-  // For full deletion, an admin/edge function would be needed
   const { error } = await supabase.auth.signOut();
-  // Clear all local data
   clearAllLocalData();
   return { error };
 }
@@ -169,7 +185,6 @@ export function onAuthStateChange(callback: (event: string, session: unknown) =>
 // Search Logs — Supabase CRUD
 // ============================================================
 
-/** Record a search query to Supabase search_logs table */
 export async function recordSearchLog(query: string, resultsCount: number): Promise<boolean> {
   try {
     const { user } = await getCurrentUser();
@@ -184,27 +199,22 @@ export async function recordSearchLog(query: string, resultsCount: number): Prom
       });
 
     if (error) {
-      console.error('Failed to record search log to Supabase:', error.message);
-      // Fallback: store in localStorage
       recordSearchLocally(query, resultsCount);
       return false;
     }
 
     return true;
-  } catch (err) {
-    console.error('Unexpected error recording search log:', err);
+  } catch {
     recordSearchLocally(query, resultsCount);
     return false;
   }
 }
 
-/** Clear search history for the current user */
 export async function clearSearchHistory(): Promise<{ success: boolean; message: string }> {
   try {
     const { user } = await getCurrentUser();
 
     if (!user) {
-      // Clear localStorage fallback
       clearLocalSearchHistory();
       return { success: true, message: 'Lokalna historija pretrage je obrisana.' };
     }
@@ -215,20 +225,16 @@ export async function clearSearchHistory(): Promise<{ success: boolean; message:
       .eq('user_id', user.id);
 
     if (error) {
-      console.error('Error clearing search history:', error.message);
       return { success: false, message: 'Greška pri brisanju historije. Pokušajte ponovo.' };
     }
 
-    // Also clear local fallback
     clearLocalSearchHistory();
     return { success: true, message: 'Historija pretrage je uspješno obrisana.' };
-  } catch (err) {
-    console.error('Unexpected error clearing search history:', err);
+  } catch {
     return { success: false, message: 'Neočekivana greška. Pokušajte ponovo.' };
   }
 }
 
-/** Get search history for the current user */
 export async function getSearchHistory(limit: number = 50): Promise<SearchLog[]> {
   try {
     const { user } = await getCurrentUser();
@@ -245,7 +251,6 @@ export async function getSearchHistory(limit: number = 50): Promise<SearchLog[]>
       .limit(limit);
 
     if (error) {
-      console.error('Error fetching search history:', error.message);
       return getLocalSearchHistory();
     }
 
@@ -256,42 +261,32 @@ export async function getSearchHistory(limit: number = 50): Promise<SearchLog[]>
 }
 
 // ============================================================
-// Analytics queries (for Admin Dashboard — real data)
+// Analytics queries (for Admin Dashboard)
 // ============================================================
 
-/** Get total search count from search_logs */
 export async function getTotalSearchCount(): Promise<number> {
   try {
     const { count, error } = await supabase
       .from('search_logs')
       .select('*', { count: 'exact', head: true });
 
-    if (error) {
-      console.error('Error getting total search count:', error.message);
-      return 0;
-    }
+    if (error) return 0;
     return count || 0;
   } catch {
     return 0;
   }
 }
 
-/** Get top searches from search_logs */
 export async function getTopSearches(limit: number = 10): Promise<{ query: string; count: number; last_searched: string }[]> {
   try {
-    // Use raw SQL via RPC or aggregate manually
     const { data, error } = await supabase
       .from('search_logs')
       .select('query, created_at')
       .order('created_at', { ascending: false })
       .limit(1000);
 
-    if (error || !data) {
-      console.error('Error getting top searches:', error?.message);
-      return [];
-    }
+    if (error || !data) return [];
 
-    // Aggregate in JS
     const queryMap = new Map<string, { count: number; lastSearched: string }>();
     for (const row of data) {
       const q = row.query.toLowerCase().trim();
@@ -306,18 +301,15 @@ export async function getTopSearches(limit: number = 10): Promise<{ query: strin
       }
     }
 
-    const sorted = Array.from(queryMap.entries())
+    return Array.from(queryMap.entries())
       .map(([query, info]) => ({ query, count: info.count, last_searched: info.lastSearched }))
       .sort((a, b) => b.count - a.count)
       .slice(0, limit);
-
-    return sorted;
   } catch {
     return [];
   }
 }
 
-/** Get daily search stats for the last N days */
 export async function getDailySearchStats(days: number = 14): Promise<{ date: string; searches: number }[]> {
   try {
     const startDate = new Date();
@@ -329,15 +321,9 @@ export async function getDailySearchStats(days: number = 14): Promise<{ date: st
       .gte('created_at', startDate.toISOString())
       .order('created_at', { ascending: true });
 
-    if (error || !data) {
-      console.error('Error getting daily search stats:', error?.message);
-      return [];
-    }
+    if (error || !data) return [];
 
-    // Aggregate by date
     const dateMap = new Map<string, number>();
-
-    // Initialize all days
     for (let i = days; i >= 0; i--) {
       const d = new Date();
       d.setDate(d.getDate() - i);
@@ -357,7 +343,6 @@ export async function getDailySearchStats(days: number = 14): Promise<{ date: st
   }
 }
 
-/** Get recent search activity (for admin activity feed) */
 export async function getRecentSearchActivity(limit: number = 20): Promise<SearchLog[]> {
   try {
     const { data, error } = await supabase
@@ -366,18 +351,13 @@ export async function getRecentSearchActivity(limit: number = 20): Promise<Searc
       .order('created_at', { ascending: false })
       .limit(limit);
 
-    if (error) {
-      console.error('Error getting recent activity:', error?.message);
-      return [];
-    }
-
+    if (error) return [];
     return data || [];
   } catch {
     return [];
   }
 }
 
-/** Get unique user count from search_logs */
 export async function getUniqueSearchUserCount(): Promise<number> {
   try {
     const { data, error } = await supabase
@@ -386,7 +366,6 @@ export async function getUniqueSearchUserCount(): Promise<number> {
       .not('user_id', 'is', null);
 
     if (error || !data) return 0;
-
     const uniqueUsers = new Set(data.map(d => d.user_id));
     return uniqueUsers.size;
   } catch {
@@ -398,10 +377,7 @@ export async function getUniqueSearchUserCount(): Promise<number> {
 // Institution queries (Supabase)
 // ============================================================
 
-export async function searchInstitutions(
-  query: string,
-  sort: SortOption = 'trust_score_desc'
-): Promise<Institution[]> {
+export async function searchInstitutions(query: string, sort: SortOption = 'trust_score_desc'): Promise<Institution[]> {
   if (!query.trim()) return [];
 
   const searchTerm = query.trim().toLowerCase();
@@ -410,22 +386,14 @@ export async function searchInstitutions(
   const { data, error } = await supabase
     .from('app_7cd5641924_institutions')
     .select('*')
-    .or(
-      `name.ilike.%${searchTerm}%,category.ilike.%${searchTerm}%,region.ilike.%${searchTerm}%`
-    )
+    .or(`name.ilike.%${searchTerm}%,category.ilike.%${searchTerm}%,region.ilike.%${searchTerm}%`)
     .order(sortConfig.column, { ascending: sortConfig.ascending });
 
-  if (error) {
-    console.error('Supabase institution search error:', error);
-    return [];
-  }
-
+  if (error) return [];
   return data || [];
 }
 
-export async function getAllInstitutions(
-  sort: SortOption = 'trust_score_desc'
-): Promise<Institution[]> {
+export async function getAllInstitutions(sort: SortOption = 'trust_score_desc'): Promise<Institution[]> {
   const sortConfig = getSortConfig(sort);
 
   const { data, error } = await supabase
@@ -433,18 +401,11 @@ export async function getAllInstitutions(
     .select('*')
     .order(sortConfig.column, { ascending: sortConfig.ascending });
 
-  if (error) {
-    console.error('Supabase fetch institutions error:', error);
-    return [];
-  }
-
+  if (error) return [];
   return data || [];
 }
 
-export async function getInstitutionsByRegion(
-  region: string,
-  sort: SortOption = 'trust_score_desc'
-): Promise<Institution[]> {
+export async function getInstitutionsByRegion(region: string, sort: SortOption = 'trust_score_desc'): Promise<Institution[]> {
   const sortConfig = getSortConfig(sort);
 
   const { data, error } = await supabase
@@ -453,18 +414,11 @@ export async function getInstitutionsByRegion(
     .ilike('region', `%${region}%`)
     .order(sortConfig.column, { ascending: sortConfig.ascending });
 
-  if (error) {
-    console.error('Supabase region filter error:', error);
-    return [];
-  }
-
+  if (error) return [];
   return data || [];
 }
 
-export async function getInstitutionsByCategory(
-  category: string,
-  sort: SortOption = 'trust_score_desc'
-): Promise<Institution[]> {
+export async function getInstitutionsByCategory(category: string, sort: SortOption = 'trust_score_desc'): Promise<Institution[]> {
   const sortConfig = getSortConfig(sort);
 
   const { data, error } = await supabase
@@ -473,17 +427,11 @@ export async function getInstitutionsByCategory(
     .ilike('category', `%${category}%`)
     .order(sortConfig.column, { ascending: sortConfig.ascending });
 
-  if (error) {
-    console.error('Supabase category filter error:', error);
-    return [];
-  }
-
+  if (error) return [];
   return data || [];
 }
 
-export async function getPremiumInstitutions(
-  sort: SortOption = 'trust_score_desc'
-): Promise<Institution[]> {
+export async function getPremiumInstitutions(sort: SortOption = 'trust_score_desc'): Promise<Institution[]> {
   const sortConfig = getSortConfig(sort);
 
   const { data, error } = await supabase
@@ -492,11 +440,7 @@ export async function getPremiumInstitutions(
     .eq('is_premium', true)
     .order(sortConfig.column, { ascending: sortConfig.ascending });
 
-  if (error) {
-    console.error('Supabase premium filter error:', error);
-    return [];
-  }
-
+  if (error) return [];
   return data || [];
 }
 
@@ -523,28 +467,18 @@ export async function getDeploymentConfigs(): Promise<DeploymentConfig[]> {
     .select('*')
     .order('platform');
 
-  if (error) {
-    console.error('Supabase deployment config error:', error);
-    return [];
-  }
-
+  if (error) return [];
   return data || [];
 }
 
-export async function getDeploymentConfigByPlatform(
-  platform: string
-): Promise<DeploymentConfig | null> {
+export async function getDeploymentConfigByPlatform(platform: string): Promise<DeploymentConfig | null> {
   const { data, error } = await supabase
     .from('app_7cd5641924_deployment_config')
     .select('*')
     .eq('platform', platform)
     .single();
 
-  if (error) {
-    console.error('Supabase deployment config platform error:', error);
-    return null;
-  }
-
+  if (error) return null;
   return data;
 }
 
@@ -568,7 +502,7 @@ function getSortConfig(sort: SortOption): { column: string; ascending: boolean }
 }
 
 // ============================================================
-// Local storage fallbacks (for when Supabase is unavailable)
+// Local storage fallbacks
 // ============================================================
 
 function recordSearchLocally(query: string, resultsCount: number): void {
@@ -580,17 +514,13 @@ function recordSearchLocally(query: string, resultsCount: number): void {
       created_at: new Date().toISOString(),
     });
     localStorage.setItem('bh_papirfinder_searches', JSON.stringify(searches.slice(0, 50)));
-  } catch (error) {
-    console.error('Failed to record search locally:', error);
-  }
+  } catch {}
 }
 
 function clearLocalSearchHistory(): void {
   try {
     localStorage.removeItem('bh_papirfinder_searches');
-  } catch {
-    // Silently handle
-  }
+  } catch {}
 }
 
 function getLocalSearchHistory(): SearchLog[] {
@@ -625,6 +555,6 @@ function clearAllLocalData(): void {
     'bh_papirfinder_storage_version',
   ];
   keysToRemove.forEach(key => {
-    try { localStorage.removeItem(key); } catch { /* ignore */ }
+    try { localStorage.removeItem(key); } catch {}
   });
 }
