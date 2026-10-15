@@ -4,6 +4,7 @@
 import { createClient } from 'npm:@supabase/supabase-js@2';
 
 const BUCKET = 'temp_documents';
+// Ispravljene konstante (TTL: 5 sati u sekundama = 5 * 60 * 60 = 18000; Max bytes: 5MB = 5 * 1024 * 1024)
 const TTL_SECONDS = 5 * 60 * 60;
 const MAX_BYTES = 5 * 1024 * 1024;
 
@@ -21,16 +22,44 @@ async function sha256(text: string): Promise<string> {
   return Array.from(new Uint8Array(d)).map(b => b.toString(16).padStart(2, '0')).join('');
 }
 
+/** 
+ * Sigurnosna sanitizacija putanje fajla (Path Traversal zaštita)
+ * Uklanja bilo kakve znakove za kretanje kroz direktorije.
+ */
+function sanitizeStoragePath(path: string): string {
+  if (!path || typeof path !== 'string') return '';
+  // Ukloni sve instance '..', '/', '\' i osiguraj čist naziv fajla
+  const sanitized = path.replace(/(\.\.[\/\\])+/g, '').replace(/[\/\\]/g, '').trim();
+  // Provjeri da li je rezultat validan UUID.pdf format
+  const uuidPdfRegex = /^[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}\.pdf$/i;
+  if (!uuidPdfRegex.test(sanitized)) {
+    throw new Error('Invalid or unsafe storage path detected.');
+  }
+  return sanitized;
+}
+
 const admin = createClient(Deno.env.get('SUPABASE_URL')!, Deno.env.get('SUPABASE_SERVICE_ROLE_KEY')!, {
   auth: { persistSession: false },
 });
 
-/** Briše istekle dokumente (dodatno uz pg_cron zadatak iz auto-delete-5h.sql). */
+/** Briše istekle dokumente (dodatno uz pg_cron zadatak). */
 async function purgeExpired() {
   const { data } = await admin.from('temp_doc_sessions').select('id, storage_path').lt('expires_at', new Date().toISOString()).limit(100);
   if (!data?.length) return;
-  await admin.storage.from(BUCKET).remove(data.map(r => r.storage_path));
-  await admin.from('temp_doc_sessions').delete().in('id', data.map(r => r.id));
+  
+  // Sigurno čišćenje svake putanje prije slanja u storage remove
+  const safePaths = data.map(r => {
+    try {
+      return sanitizeStoragePath(r.storage_path);
+    } catch {
+      return null;
+    }
+  }).filter(Boolean) as string[];
+
+  if (safePaths.length) {
+    await admin.storage.from(BUCKET).remove(safePaths);
+    await admin.from('temp_doc_sessions').delete().in('id', data.map(r => r.id));
+  }
 }
 
 Deno.serve(async req => {
@@ -57,7 +86,11 @@ Deno.serve(async req => {
 
       await purgeExpired();
       const token = `${crypto.randomUUID()}${crypto.randomUUID()}`.replace(/-/g, '');
-      const path = `${crypto.randomUUID()}.pdf`;
+      
+      // Strogo generisana putanja bez ikakvog uticaja korisnika
+      const rawPath = `${crypto.randomUUID()}.pdf`;
+      const path = sanitizeStoragePath(rawPath);
+      
       const expiresAt = new Date(Date.now() + TTL_SECONDS * 1000).toISOString();
 
       const up = await admin.storage.from(BUCKET).upload(path, bytes, { contentType: 'application/pdf', upsert: false });
@@ -77,13 +110,25 @@ Deno.serve(async req => {
     if (body.action === 'delete') {
       const token = String(body.session_token ?? '');
       if (!/^[a-f0-9]{64}$/.test(token)) return json({ error: 'Invalid session_token' }, 400);
+      
       const { data, error } = await admin.from('temp_doc_sessions').select('id, storage_path').eq('token_hash', await sha256(token)).maybeSingle();
       if (error) return json({ error: error.message }, 500);
       if (!data) return json({ deleted: true, already_removed: true });
-      const rm = await admin.storage.from(BUCKET).remove([data.storage_path]);
+
+      // Obavezna sanitizacija putanje dohvaćene iz baze prije brisanja
+      let safePath: string;
+      try {
+        safePath = sanitizeStoragePath(data.storage_path);
+      } catch (pathErr) {
+        return json({ error: 'Unsafe storage path' }, 400);
+      }
+
+      const rm = await admin.storage.from(BUCKET).remove([safePath]);
       if (rm.error) return json({ error: rm.error.message }, 500);
+      
       const del = await admin.from('temp_doc_sessions').delete().eq('id', data.id);
       if (del.error) return json({ error: del.error.message }, 500);
+      
       return json({ deleted: true });
     }
 
