@@ -42,66 +42,6 @@ Password: UmmaIsak2013
 Admin Capabilities
 Platform Deployment:
 
-Deploy to www.bh-assistant.ba
-Publish to Google Play Store
-Publish to Apple App Store
-Manage app updates across all platforms
-Sponsor Management:
-
-Upload sponsor posters (PNG format)
-Add/remove sponsor links
-Manage homepage carousel
-Subscription Management:
-
-Configure pricing (10/50/60 BAM)
-Manage PayPal integration
-Monitor subscription status
-Security Configuration:
-
-Configure API keys
-Manage allowed domains
-Update environment variables
-Legal Compliance
-BH PapirFinder operates in accordance with the laws of the Federation of Bosnia and Herzegovina (FBiH) and Republika Srpska (RS):
-
-Law on Protection of Personal Data of BiH (aligned with GDPR)
-Consumer Protection Laws of FBiH and RS
-Law on Internal Payment System of FBiH
-Privacy & Data Protection
-What We DON'T Store:
-❌ PayPal payment information (processed directly by PayPal)
-❌ Credit card details
-❌ Personal identification data
-❌ Search queries (auto-deleted after 24 hours)
-What We Store Locally:
-✓ Trial start date (localStorage)
-✓ Subscription expiry date (localStorage)
-✓ Login code (localStorage, expires with subscription)
-✓ Email address (only for login code delivery)
-Automatic Data Deletion:
-Search queries: Deleted after 24 hours
-Login codes: Expire with subscription
-User sessions: Cleared after subscription ends
-Security & API Keys
-Environment Variables
-This project uses environment variables to manage API keys securely:
-
-Frontend Keys (Safe to expose):
-
-VITE_PUBLISHABLE_API_KEY: Publishable API key for client-side requests
-VITE_PAYPAL_CLIENT_ID: PayPal Client ID for payment UI
-Backend Keys (NEVER expose):
-
-API_SECRET_KEY: Secret key for server-side validation
-PAYPAL_SECRET: PayPal secret for backend payment processing
-Setup Instructions
-Copy .env.example to .env:
-
-cp .env.example .env
-Update the .env file with your actual keys (if different from defaults)
-
-IMPORTANT: Never commit .env file to version control. It's already in .gitignore.
-
 Features
 Free Trial: 10 days after installation
 Region-Based Access: Free access for ZDK (Zenica-Doboj Canton), paid for other regions
