@@ -96,6 +96,9 @@ async function fallbackLocalDownload(
  */
 export async function deletePdf(filePath: string): Promise<boolean> {
   try {
+    if (filePath.includes('..')) {
+      throw new Error('Invalid file path');
+    }
     const { error } = await supabase.storage
       .from(BUCKET_NAME)
       .remove([filePath]);
