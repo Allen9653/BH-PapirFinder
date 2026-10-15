@@ -83,8 +83,22 @@ const SavedDocumentsTable = () => {
     }
   };
 
+  const ALLOWED_HOSTS: string[] = []; // ACTION REQUIRED: Add your allowed hosts before merging
+
+  function isSafeExternalUrl(url: string, allowedHosts: string[]): boolean {
+    if (!url) return false;
+    try {
+      const parsed = new URL(String(url).replace(/[\t\n\r]/g, ''));
+      if (parsed.protocol !== 'http:' && parsed.protocol !== 'https:') return false;
+      return allowedHosts.some(function (h) {
+        return parsed.hostname === h || parsed.hostname.endsWith('.' + h);
+      });
+    } catch (e) { return false; }
+  }
+
   const handleDownload = (doc: SavedDocument) => {
     trackGA4Event('file_download', { file_name: doc.name, municipality: doc.municipality });
+    if (!isSafeExternalUrl(doc.file_url, ALLOWED_HOSTS)) return;
     window.open(doc.file_url, '_blank', 'noopener,noreferrer');
   };
 
