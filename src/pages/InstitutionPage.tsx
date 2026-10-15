@@ -36,7 +36,10 @@ const InstitutionPage = () => {
     return entry.forms.filter(f => !q || f.name.toLowerCase().includes(q) || f.category.toLowerCase().includes(q));
   }, [entry, filter]);
 
-  const openUrl = (url?: string) => url && window.open(url, '_blank', 'noopener,noreferrer');
+  const openUrl = (url?: string) => {
+    const safeUrl = safeHttpsUrl(url);
+    return safeUrl && window.open(safeUrl, '_blank', 'noopener,noreferrer');
+  };
 
   const share = async (f: DirectoryForm) => {
     const url = f.internal ? `${window.location.origin}/form/${f.id}` : f.url || window.location.href;
