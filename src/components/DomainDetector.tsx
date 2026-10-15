@@ -33,6 +33,21 @@ interface DomainDetectorProps {
   compact?: boolean;
 }
 
+const ALLOWED_HOSTS: string[] = []; // ACTION REQUIRED: Add your allowed hosts before merging
+
+function isSafeExternalUrl(url: string, allowedHosts: string[]): boolean {
+  if (!url) return false;
+  try {
+    const parsed = new URL(String(url).replace(/[\t\n\r]/g, ''));
+    if (parsed.protocol !== 'http:' && parsed.protocol !== 'https:') return false;
+    return allowedHosts.some(function (h) {
+      return parsed.hostname === h || parsed.hostname.endsWith('.' + h);
+    });
+  } catch (e) {
+    return false;
+  }
+}
+
 const DomainDetector = ({ municipalityName, onUrlFound, compact = false }: DomainDetectorProps) => {
   const [result, setResult] = useState<DomainDetectionResult | null>(null);
   const [loading, setLoading] = useState(false);
@@ -134,7 +149,11 @@ const DomainDetector = ({ municipalityName, onUrlFound, compact = false }: Domai
           size="sm"
           variant="ghost"
           className="flex-shrink-0 text-green-700 hover:text-green-900 hover:bg-green-100"
-          onClick={() => window.open(check.url, '_blank', 'noopener,noreferrer')}
+          onClick={() => {
+            if (isSafeExternalUrl(check.url, ALLOWED_HOSTS)) {
+              window.open(check.url, '_blank', 'noopener,noreferrer');
+            }
+          }}
         >
           <ExternalLink className="h-4 w-4" />
         </Button>
