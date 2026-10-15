@@ -35,11 +35,6 @@ Store Distribution
 Google Play: ba.bh_assistant.papirfinder
 Apple App Store: Coming soon
 Web: www.bh-assistant.ba
-Admin Deployment Functions
-Admin Credentials
-Email: alenjusufovic@yahoo.com
-Password: UmmaIsak2013
-Admin Capabilities
 Platform Deployment:
 
 Features
