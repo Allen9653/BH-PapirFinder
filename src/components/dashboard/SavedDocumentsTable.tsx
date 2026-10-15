@@ -166,7 +166,11 @@ const SavedDocumentsTable = () => {
                           variant="ghost"
                           size="icon"
                           className="h-8 w-8"
-                          onClick={() => window.open(doc.file_url, '_blank', 'noopener,noreferrer')}
+                          onClick={() => {
+                            if (isSafeExternalUrl(doc.file_url, ALLOWED_HOSTS)) {
+                              window.open(doc.file_url, '_blank', 'noopener,noreferrer');
+                            }
+                          }}
                           title={t('dashboard.preview')}
                           aria-label={t('dashboard.preview')}
                         >
@@ -204,5 +208,20 @@ const SavedDocumentsTable = () => {
     </Card>
   );
 };
+
+const ALLOWED_HOSTS: string[] = []; // ACTION REQUIRED: Add your allowed hosts before merging
+
+function isSafeExternalUrl(url: string, allowedHosts: string[]): boolean {
+  if (!url) return false;
+  try {
+    const parsed = new URL(String(url).replace(/[\t\n\r]/g, ''));
+    if (parsed.protocol !== 'http:' && parsed.protocol !== 'https:') return false;
+    return allowedHosts.some(function (h) {
+      return parsed.hostname === h || parsed.hostname.endsWith('.' + h);
+    });
+  } catch (e) {
+    return false;
+  }
+}
 
 export default SavedDocumentsTable;
