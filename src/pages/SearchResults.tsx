@@ -6,7 +6,6 @@ import { useNavigate, useSearchParams } from 'react-router-dom';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Alert, AlertDescription } from '@/components/ui/alert';
 import {
@@ -19,7 +18,6 @@ import {
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import {
   Search,
-  ArrowLeft,
   ExternalLink,
   FileText,
   MapPin,
@@ -29,11 +27,22 @@ import {
   Star,
   Database,
   Globe,
-  Download,
   Building2,
   GitCompareArrows,
   Filter,
+  Printer,
+  Download,
+  Radar,
+  Sparkles,
+  ChevronRight,
+  SlidersHorizontal,
 } from 'lucide-react';
+import Header from '@/components/Header';
+import Footer from '@/components/Footer';
+import UniversalBackButton from '@/components/UniversalBackButton';
+import PrintPreviewModal from '@/components/PrintPreviewModal';
+import { safeOpenExternal } from '@/lib/security';
+import { saveRecentSearch } from '@/lib/recent-searches';
 import { searchMunicipalities, UnifiedSearchResult } from '@/lib/municipalities-database-enhanced';
 import { hasAccess, recordSearch } from '@/lib/trial';
 import { getUserAccessLevel, getSubscriptionMessage } from '@/lib/access-control';
@@ -48,7 +57,6 @@ import DomainDetector from '@/components/DomainDetector';
 
 type FormMatch = { municipality: MunicipalityInfo; form: MunicipalityForm };
 
-/** Normalizuje naziv obrasca radi grupisanja sličnih obrazaca iz različitih općina. */
 function normalizeFormName(name: string): string {
   return name
     .toLowerCase()
@@ -63,7 +71,6 @@ function normalizeFormName(name: string): string {
     .substring(0, 40);
 }
 
-/** Pronalazi slične obrasce koji postoje u više općina (za tab usporedbe). */
 function findSimilarForms(
   query: string,
   municipalities: MunicipalityInfo[],
@@ -115,6 +122,7 @@ const SearchResults = () => {
   const [showAllForms, setShowAllForms] = useState(false);
   const [municipalityFilter, setMunicipalityFilter] = useState<string>('all');
   const [activeTab, setActiveTab] = useState<string>('results');
+  const [previewForm, setPreviewForm] = useState<FormMatch | null>(null);
   const accessLevel = getUserAccessLevel();
 
   const allMunicipalities = useMemo(() => getAllMunicipalities(), []);
@@ -131,6 +139,7 @@ const SearchResults = () => {
       setLoading(true);
       setErrorKey('');
       setShowAllForms(false);
+      saveRecentSearch(searchTerm.trim());
 
       try {
         const searchResults = await searchMunicipalities(searchTerm, sort);
@@ -185,17 +194,10 @@ const SearchResults = () => {
   );
 
   const getTrustScoreColor = (score: number): string => {
-    if (score >= 80) return 'text-green-600 bg-green-50 border-green-200';
-    if (score >= 60) return 'text-blue-600 bg-blue-50 border-blue-200';
-    if (score >= 40) return 'text-yellow-600 bg-yellow-50 border-yellow-200';
-    return 'text-gray-600 bg-gray-50 border-gray-200';
-  };
-
-  const getTrustScoreLabel = (score: number): string => {
-    if (score >= 80) return t('searchPage.trustHigh');
-    if (score >= 60) return t('searchPage.trustGood');
-    if (score >= 40) return t('searchPage.trustModerate');
-    return t('searchPage.trustBasic');
+    if (score >= 80) return 'text-[#5df0a8] bg-[#5df0a8]/10 border-[#5df0a8]/30';
+    if (score >= 60) return 'text-sky-400 bg-sky-500/10 border-sky-500/30';
+    if (score >= 40) return 'text-amber-400 bg-amber-500/10 border-amber-500/30';
+    return 'text-slate-400 bg-white/5 border-white/10';
   };
 
   const sortLabels: Record<SortOption, string> = {
@@ -206,54 +208,66 @@ const SearchResults = () => {
   };
 
   const totalResults = results.length + allFormResults.length;
-  const displayedForms = showAllForms ? filteredFormResults : filteredFormResults.slice(0, 8);
+  const displayedForms = showAllForms ? filteredFormResults : filteredFormResults.slice(0, 10);
   const uniqueMunicipalityCount = new Set(allFormResults.map((r) => r.municipality.slug)).size;
 
   return (
-    <div className="min-h-screen bg-gray-50">
-      {/* Zaglavlje sa pretragom */}
-      <div className="bg-gradient-to-r from-[#003D7A] to-[#00A651] text-white py-8">
-        <div className="container px-4">
-          <Button
-            variant="ghost"
-            className="text-white hover:bg-white/10 mb-4"
-            onClick={() => navigate('/')}
-          >
-            <ArrowLeft className="h-4 w-4 mr-2 flex-shrink-0" />
-            <span className="truncate">{t('searchPage.backHome')}</span>
-          </Button>
+    <div className="min-h-screen flex flex-col text-slate-100 selection:bg-[#5df0a8]/30 selection:text-white">
+      <Header />
 
-          <div className="max-w-2xl mx-auto mb-3"><InstitutionAutocomplete /></div>
-          <form onSubmit={handleSearch} className="max-w-2xl">
-            <div className="flex gap-2">
-              <Input
-                type="text"
-                placeholder={t('search.placeholder')}
-                value={searchQuery}
-                onChange={(e) => setSearchQuery(e.target.value)}
-                className="flex-1 h-12 bg-white text-gray-900"
-              />
-              <Button type="submit" size="lg" className="h-12 bg-[#00A651] hover:bg-[#008F45]">
-                <Search className="h-5 w-5" />
+      {/* DISCOVERY CONSOLE HEADER */}
+      <div className="border-b border-white/10 bg-[#070b1a]/90 backdrop-blur-2xl py-8 relative overflow-hidden">
+        <div className="container max-w-6xl px-4 mx-auto relative z-10">
+          <div className="flex items-center justify-between gap-4 mb-5">
+            <UniversalBackButton variant="command" />
+            <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-mono text-[#5df0a8] bg-[#5df0a8]/10 border border-[#5df0a8]/30">
+              <Radar className="w-3.5 h-3.5 animate-pulse" />
+              <span>RADAR SEARCH ENGINE • BIH</span>
+            </div>
+          </div>
+
+          <div className="max-w-3xl mb-3">
+            <InstitutionAutocomplete />
+          </div>
+
+          {/* Search Form */}
+          <form onSubmit={handleSearch} className="max-w-3xl">
+            <div className="flex gap-2 p-1.5 rounded-2xl bg-[#0b142d]/80 border border-white/15 backdrop-blur-xl shadow-[0_8px_32px_rgba(0,0,0,0.5)]">
+              <div className="flex-1 relative flex items-center pl-3">
+                <Search className="w-5 h-5 text-[#5df0a8] mr-2 shrink-0" />
+                <Input
+                  type="text"
+                  placeholder="Pretraži obrasce po nazivu, općini, kantonu ili ustanovi..."
+                  value={searchQuery}
+                  onChange={(e) => setSearchQuery(e.target.value)}
+                  className="flex-1 h-11 bg-transparent border-0 text-white placeholder:text-slate-400 focus-visible:ring-0 text-sm sm:text-base"
+                />
+              </div>
+              <Button
+                type="submit"
+                className="h-11 px-6 bg-[#5df0a8] hover:bg-[#4de69c] text-[#04060f] font-bold rounded-xl shadow-[0_0_15px_rgba(93,240,168,0.3)] shrink-0"
+              >
+                <Search className="h-4 w-4 mr-1.5" />
+                Pretraži
               </Button>
             </div>
           </form>
         </div>
       </div>
 
-      {/* Obavještenje o nivou pristupa */}
+      {/* Subscription Alert if limited */}
       {!accessLevel.isAdmin && !accessLevel.hasSubscription && (
-        <div className="bg-yellow-50 border-b border-yellow-200 py-3">
-          <div className="container px-4">
-            <Alert className="bg-transparent border-0 p-0">
-              <AlertDescription className="text-yellow-900 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
-                <span className="flex items-start sm:items-center gap-2">
-                  <Lock className="h-4 w-4 mt-0.5 sm:mt-0 flex-shrink-0" />
-                  <span className="break-words">{getSubscriptionMessage(language)}</span>
+        <div className="bg-amber-500/10 border-b border-amber-500/20 py-3 backdrop-blur-md">
+          <div className="container max-w-6xl px-4 mx-auto">
+            <Alert className="bg-transparent border-0 p-0 text-amber-300">
+              <AlertDescription className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 text-xs sm:text-sm">
+                <span className="flex items-center gap-2">
+                  <Lock className="h-4 w-4 text-amber-400 shrink-0" />
+                  <span>{getSubscriptionMessage(language)}</span>
                 </span>
                 <Button
                   size="sm"
-                  className="bg-[#003D7A] hover:bg-[#002A5A] text-white flex-shrink-0"
+                  className="bg-[#5df0a8] hover:bg-[#4de69c] text-[#04060f] font-bold shrink-0 text-xs shadow-md"
                   onClick={() => navigate('/subscription')}
                 >
                   {t('searchPage.subscribeCta')}
@@ -264,84 +278,104 @@ const SearchResults = () => {
         </div>
       )}
 
-      <div className="container px-4 py-8">
+      {/* Main Results Body */}
+      <div className="container max-w-6xl px-4 py-8 mx-auto flex-1">
         {loading ? (
-          <div className="text-center py-12">
-            <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-[#003D7A] mx-auto" />
-            <p className="mt-4 text-gray-600">{t('searchPage.searching')}</p>
+          <div className="text-center py-20">
+            <div className="relative w-16 h-16 mx-auto mb-4">
+              <div className="absolute inset-0 rounded-full border-2 border-[#5df0a8]/20 animate-ping" />
+              <div className="animate-spin rounded-full h-16 w-16 border-2 border-transparent border-t-[#5df0a8]" />
+              <Radar className="w-6 h-6 text-[#5df0a8] absolute inset-0 m-auto" />
+            </div>
+            <p className="text-slate-300 font-mono text-sm tracking-wide">
+              Skeniranje registara općina i institucija...
+            </p>
           </div>
         ) : errorKey ? (
-          <Card className="text-center py-12">
-            <CardContent>
-              <FileText className="h-16 w-16 text-gray-400 mx-auto mb-4" />
-              <h3 className="text-xl font-semibold text-gray-700 mb-2 break-words">
-                {t(errorKey)}
-              </h3>
-              <p className="text-gray-600 mt-4 break-words">
-                {t('searchPage.tryOtherTermOrSupport')}
-              </p>
-            </CardContent>
-          </Card>
+          <div className="glass-panel text-center py-16 px-6 rounded-2xl max-w-xl mx-auto">
+            <FileText className="h-14 w-14 text-slate-500 mx-auto mb-4" />
+            <h3 className="text-lg font-bold text-white mb-2">{t(errorKey)}</h3>
+            <p className="text-slate-400 text-sm mb-6">{t('searchPage.tryOtherTermOrSupport')}</p>
+            <Button
+              onClick={() => {
+                setSearchQuery('');
+                navigate('/search');
+              }}
+              variant="outline"
+              className="border-white/10 text-slate-200"
+            >
+              Resetuj pretragu
+            </Button>
+          </div>
         ) : totalResults === 0 ? (
-          <Card className="text-center py-12">
-            <CardContent>
-              <FileText className="h-16 w-16 text-gray-400 mx-auto mb-4" />
-              <h3 className="text-xl font-semibold text-gray-700 mb-2">
-                {t('searchPage.noResultsTitle')}
-              </h3>
-              <p className="text-gray-600 break-words">{t('searchPage.tryOtherTerm')}</p>
-            </CardContent>
-          </Card>
+          <div className="glass-panel text-center py-16 px-6 rounded-2xl max-w-xl mx-auto">
+            <FileText className="h-14 w-14 text-slate-500 mx-auto mb-4" />
+            <h3 className="text-lg font-bold text-white mb-2">{t('searchPage.noResultsTitle')}</h3>
+            <p className="text-slate-400 text-sm mb-6">{t('searchPage.tryOtherTerm')}</p>
+            <Button
+              onClick={() => navigate('/generator')}
+              className="bg-[#5df0a8] text-[#04060f] font-bold text-xs"
+            >
+              Otvori generator općih obrazaca
+            </Button>
+          </div>
         ) : (
           <>
-            <div className="mb-6">
-              <h2 className="text-xl sm:text-2xl font-bold text-[#003D7A] break-words">
-                {t('searchPage.resultsForQuery', { query })}
-              </h2>
-              <p className="text-gray-600 mt-1 break-words">
-                {t('searchPage.foundResults', { count: totalResults })}
-                {allFormResults.length > 0 && (
-                  <span className="ml-2 text-xs text-green-600">
-                    <FileText className="h-3 w-3 inline mr-1" />
-                    {t('searchPage.formsFromMunicipalities', {
-                      forms: allFormResults.length,
-                      municipalities: uniqueMunicipalityCount,
-                    })}
-                  </span>
-                )}
-              </p>
+            {/* Header info */}
+            <div className="mb-6 flex flex-col md:flex-row md:items-end justify-between gap-4">
+              <div>
+                <h2 className="text-xl sm:text-2xl font-bold text-white">
+                  Rezultati za: <span className="text-[#5df0a8]">&ldquo;{query}&rdquo;</span>
+                </h2>
+                <p className="text-slate-400 text-xs sm:text-sm mt-1">
+                  Pronađeno <strong>{totalResults}</strong> zapisa
+                  {allFormResults.length > 0 && (
+                    <span className="ml-2 text-[#5df0a8]">
+                      • {allFormResults.length} formulara u {uniqueMunicipalityCount} općina
+                    </span>
+                  )}
+                </p>
+              </div>
+
+              {/* Tabs trigger */}
+              <Tabs value={activeTab} onValueChange={setActiveTab} className="w-auto">
+                <TabsList className="bg-[#0b142d] border border-white/10">
+                  <TabsTrigger
+                    value="results"
+                    className="data-[state=active]:bg-[#5df0a8] data-[state=active]:text-[#04060f] text-xs font-semibold"
+                  >
+                    <Search className="h-3.5 w-3.5 mr-1.5" />
+                    {t('searchPage.tabResults')} ({totalResults})
+                  </TabsTrigger>
+                  <TabsTrigger
+                    value="compare"
+                    className="data-[state=active]:bg-[#5df0a8] data-[state=active]:text-[#04060f] text-xs font-semibold"
+                  >
+                    <GitCompareArrows className="h-3.5 w-3.5 mr-1.5" />
+                    {t('searchPage.tabCompare')}
+                    {comparisonData.length > 0 && (
+                      <span className="ml-1.5 px-1.5 py-0.2 rounded-full text-[10px] bg-white/20">
+                        {comparisonData.length}
+                      </span>
+                    )}
+                  </TabsTrigger>
+                </TabsList>
+              </Tabs>
             </div>
 
-            <Tabs value={activeTab} onValueChange={setActiveTab} className="mb-6">
-              <TabsList className="grid w-full max-w-md grid-cols-2">
-                <TabsTrigger value="results" className="flex items-center gap-2">
-                  <Search className="h-4 w-4 flex-shrink-0" />
-                  <span className="truncate">{t('searchPage.tabResults')}</span>
-                </TabsTrigger>
-                <TabsTrigger value="compare" className="flex items-center gap-1.5">
-                  <GitCompareArrows className="h-4 w-4 flex-shrink-0" />
-                  <span className="truncate">{t('searchPage.tabCompare')}</span>
-                  {comparisonData.length > 0 && (
-                    <Badge variant="secondary" className="text-xs flex-shrink-0">
-                      {comparisonData.length}
-                    </Badge>
-                  )}
-                </TabsTrigger>
-              </TabsList>
-
-              {/* Tab: rezultati */}
-              <TabsContent value="results" className="mt-6">
-                <div className="flex flex-col sm:flex-row sm:items-center gap-3 mb-6 p-4 bg-white rounded-lg border">
-                  <div className="flex items-center gap-2 flex-1 min-w-0">
-                    <Filter className="h-4 w-4 text-gray-500 flex-shrink-0" />
+            {/* TAB: RESULTS */}
+            {activeTab === 'results' && (
+              <div>
+                {/* Filter & Sort Bar */}
+                <div className="glass-panel p-4 rounded-xl mb-6 flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-3">
+                  <div className="flex items-center gap-2 flex-1">
+                    <Filter className="h-4 w-4 text-[#5df0a8] shrink-0" />
                     <Select value={municipalityFilter} onValueChange={setMunicipalityFilter}>
-                      <SelectTrigger className="w-full sm:w-[240px]">
-                        <SelectValue placeholder={t('searchPage.filterByMunicipality')} />
+                      <SelectTrigger className="w-full sm:w-[260px] h-9 text-xs bg-white/5 border-white/10 text-white">
+                        <SelectValue placeholder="Filtriraj po općini" />
                       </SelectTrigger>
-                      <SelectContent>
-                        <SelectItem value="all">
-                          {t('searchPage.allMunicipalitiesCount', { count: allFormResults.length })}
-                        </SelectItem>
+                      <SelectContent className="bg-[#0b142d] border-white/10 text-slate-200">
+                        <SelectItem value="all">Sve općine ({allFormResults.length})</SelectItem>
                         {allMunicipalities.map((m) => {
                           const count = allFormResults.filter(
                             (r) => r.municipality.slug === m.slug,
@@ -349,7 +383,7 @@ const SearchResults = () => {
                           if (count === 0) return null;
                           return (
                             <SelectItem key={m.slug} value={m.slug}>
-                              {t('searchPage.municipalityFormsCount', { name: m.name, count })}
+                              {m.name} ({count})
                             </SelectItem>
                           );
                         })}
@@ -357,19 +391,17 @@ const SearchResults = () => {
                     </Select>
                   </div>
 
-                  <div className="flex items-center gap-2 min-w-0">
-                    <ArrowUpDown className="h-4 w-4 text-gray-500 flex-shrink-0" />
+                  <div className="flex items-center gap-2">
+                    <ArrowUpDown className="h-4 w-4 text-slate-400 shrink-0" />
                     <Select
                       value={sortOption}
-                      onValueChange={(value) => setSortOption(value as SortOption)}
+                      onValueChange={(val) => setSortOption(val as SortOption)}
                     >
-                      <SelectTrigger className="w-full sm:w-[220px]">
-                        <SelectValue placeholder={t('searchPage.sortBy')} />
+                      <SelectTrigger className="w-full sm:w-[220px] h-9 text-xs bg-white/5 border-white/10 text-white">
+                        <SelectValue />
                       </SelectTrigger>
-                      <SelectContent>
-                        <SelectItem value="trust_score_desc">
-                          {sortLabels.trust_score_desc}
-                        </SelectItem>
+                      <SelectContent className="bg-[#0b142d] border-white/10 text-slate-200">
+                        <SelectItem value="trust_score_desc">{sortLabels.trust_score_desc}</SelectItem>
                         <SelectItem value="trust_score_asc">{sortLabels.trust_score_asc}</SelectItem>
                         <SelectItem value="name_asc">{sortLabels.name_asc}</SelectItem>
                         <SelectItem value="name_desc">{sortLabels.name_desc}</SelectItem>
@@ -378,353 +410,291 @@ const SearchResults = () => {
                   </div>
                 </div>
 
-                {/* Pojedinačni obrasci */}
+                {/* Individual Forms List (Glass Cards) */}
                 {filteredFormResults.length > 0 && (
-                  <div className="mb-8">
-                    <h3 className="text-lg font-semibold text-[#003D7A] flex flex-wrap items-center gap-2 mb-4">
-                      <Building2 className="h-5 w-5 flex-shrink-0" />
-                      <span className="break-words">{t('searchPage.formsHeading')}</span>
-                      {municipalityFilter !== 'all' && (
-                        <span className="text-gray-500 font-normal break-words">
-                          — {allMunicipalities.find((m) => m.slug === municipalityFilter)?.name}
+                  <div className="mb-10">
+                    <div className="flex items-center justify-between mb-4">
+                      <h3 className="text-base sm:text-lg font-bold text-white flex items-center gap-2">
+                        <FileText className="w-4 h-4 text-[#5df0a8]" />
+                        <span>Službeni Obrasci & Formular</span>
+                        <span className="text-xs font-mono px-2 py-0.5 rounded-full bg-[#5df0a8]/20 text-[#5df0a8]">
+                          {filteredFormResults.length}
                         </span>
-                      )}
-                      <Badge className="bg-[#00A651] text-white flex-shrink-0">
-                        {filteredFormResults.length}
-                      </Badge>
-                    </h3>
+                      </h3>
+                    </div>
 
-                    <div className="grid gap-2">
+                    <div className="grid gap-3">
                       {displayedForms.map(({ municipality, form }) => (
-                        <Card
+                        <div
                           key={`${municipality.slug}-${form.id}`}
-                          className="hover:shadow-md transition-shadow border-l-4 border-l-[#00A651]"
+                          className="glass-panel p-4 rounded-xl hover:border-[#5df0a8]/40 hover:bg-[#0c1635] transition-all flex flex-col sm:flex-row sm:items-center justify-between gap-4 group"
                         >
-                          <CardContent className="py-3 px-4 sm:px-5">
-                            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
-                              <div className="flex-1 min-w-0">
-                                <p className="font-medium text-gray-800 text-sm leading-relaxed break-words">
-                                  {form.name}
-                                </p>
-                                <div className="flex items-center gap-2 mt-1 flex-wrap">
-                                  <span className="text-xs text-gray-500">
-                                    PDF •{' '}
-                                    {form.sizeKB ? `${form.sizeKB} KB` : t('common.notAvailable')}
-                                  </span>
-                                  <Badge variant="outline" className="text-xs">
-                                    {form.category}
-                                  </Badge>
-                                  <Badge
-                                    variant="secondary"
-                                    className="text-xs bg-[#003D7A]/10 text-[#003D7A]"
-                                  >
-                                    {municipality.name}
-                                  </Badge>
-                                </div>
-                              </div>
-                              <div className="flex items-center gap-2 flex-shrink-0">
-                                <Button
-                                  size="sm"
-                                  variant="outline"
-                                  className="border-[#003D7A] text-[#003D7A] hidden sm:flex"
-                                  onClick={() => navigate(`/form/${form.id}`)}
-                                >
-                                  <FileText className="h-4 w-4 mr-1 flex-shrink-0" />
-                                  {t('searchPage.details')}
-                                </Button>
-                                <Button
-                                  size="sm"
-                                  className="bg-[#003D7A] hover:bg-[#002A5A]"
-                                  onClick={() => window.open(form.pdfUrl, '_blank', 'noopener,noreferrer')}
-                                >
-                                  <Download className="h-4 w-4 mr-1 flex-shrink-0" />
-                                  {t('common.download')}
-                                </Button>
-                              </div>
+                          <div className="flex-1 min-w-0">
+                            <div className="flex items-center gap-2 flex-wrap mb-1">
+                              <span className="text-[10px] font-mono uppercase px-2 py-0.5 rounded bg-white/5 text-slate-300 border border-white/10">
+                                {form.category}
+                              </span>
+                              <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-[#5df0a8]/10 text-[#5df0a8] border border-[#5df0a8]/20">
+                                {municipality.name} ({municipality.cantonShort})
+                              </span>
+                              {form.sizeKB && (
+                                <span className="text-[10px] text-slate-400 font-mono">
+                                  {form.sizeKB} KB PDF
+                                </span>
+                              )}
                             </div>
-                          </CardContent>
-                        </Card>
+                            <h4
+                              onClick={() => navigate(`/form/${form.id}`)}
+                              className="text-sm sm:text-base font-semibold text-white group-hover:text-[#5df0a8] transition-colors cursor-pointer"
+                            >
+                              {form.name}
+                            </h4>
+                          </div>
+
+                          <div className="flex items-center gap-2 shrink-0">
+                            <Button
+                              size="sm"
+                              variant="ghost"
+                              className="h-8 px-2.5 text-xs text-slate-300 hover:text-[#5df0a8] hover:bg-white/5"
+                              onClick={() => setPreviewForm({ municipality, form })}
+                              title="Print Preview na papiru"
+                            >
+                              <Printer className="h-3.5 w-3.5 mr-1" />
+                              <span className="hidden sm:inline">Print Preview</span>
+                            </Button>
+
+                            <Button
+                              size="sm"
+                              variant="outline"
+                              className="h-8 px-3 text-xs border-white/10 bg-white/5 text-slate-200 hover:bg-white/10"
+                              onClick={() => navigate(`/form/${form.id}`)}
+                            >
+                              Detalji
+                            </Button>
+
+                            <Button
+                              size="sm"
+                              className="h-8 px-3.5 text-xs bg-[#5df0a8] hover:bg-[#4be096] text-[#04060f] font-bold shadow-[0_0_12px_rgba(93,240,168,0.3)]"
+                              onClick={() => safeOpenExternal(form.pdfUrl)}
+                            >
+                              <Download className="h-3.5 w-3.5 mr-1" />
+                              Preuzmi
+                            </Button>
+                          </div>
+                        </div>
                       ))}
                     </div>
 
-                    {filteredFormResults.length > 8 && !showAllForms && (
+                    {filteredFormResults.length > 10 && !showAllForms && (
                       <Button
                         variant="ghost"
-                        className="mt-3 text-[#003D7A] hover:bg-[#003D7A]/5 w-full"
+                        className="mt-4 text-[#5df0a8] hover:bg-white/5 w-full text-xs font-mono"
                         onClick={() => setShowAllForms(true)}
                       >
-                        {t('searchPage.showMoreForms', { count: filteredFormResults.length - 8 })}
+                        Prikaži preostalih {filteredFormResults.length - 10} obrazaca ↓
                       </Button>
                     )}
 
-                    {showAllForms && filteredFormResults.length > 8 && (
+                    {showAllForms && filteredFormResults.length > 10 && (
                       <Button
                         variant="ghost"
-                        className="mt-3 text-gray-500 hover:bg-gray-100 w-full"
+                        className="mt-4 text-slate-400 hover:bg-white/5 w-full text-xs font-mono"
                         onClick={() => setShowAllForms(false)}
                       >
-                        {t('common.showLess')}
+                        Prikaži manje ↑
                       </Button>
                     )}
                   </div>
                 )}
 
-                {/* Općine i institucije */}
+                {/* Municipalities & Institutions section */}
                 {results.length > 0 && (
-                  <>
-                    {filteredFormResults.length > 0 && (
-                      <h3 className="text-lg font-semibold text-[#003D7A] mb-4 flex items-center gap-2">
-                        <MapPin className="h-5 w-5 flex-shrink-0" />
-                        <span className="break-words">{t('searchPage.municipalitiesHeading')}</span>
-                      </h3>
-                    )}
-                    <div className="grid gap-4">
-                      {results.map((result) => (
-                        <Card key={result.id} className="hover:shadow-lg transition-shadow">
-                          <CardHeader>
-                            <div className="flex flex-col sm:flex-row items-start justify-between gap-3">
+                  <div>
+                    <h3 className="text-base sm:text-lg font-bold text-white flex items-center gap-2 mb-4">
+                      <Building2 className="w-4 h-4 text-[#5df0a8]" />
+                      <span>Općinski & Institucionalni Registri</span>
+                      <span className="text-xs font-mono px-2 py-0.5 rounded-full bg-[#5df0a8]/20 text-[#5df0a8]">
+                        {results.length}
+                      </span>
+                    </h3>
+
+                    <div className="grid gap-3">
+                      {results.map((result) => {
+                        const websiteUrl = getOfficialWebsite(result.slug);
+                        return (
+                          <div
+                            key={result.id}
+                            className="glass-panel p-5 rounded-2xl hover:border-[#5df0a8]/40 transition-all"
+                          >
+                            <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
                               <div className="flex-1 min-w-0">
-                                <CardTitle className="text-lg sm:text-xl text-[#003D7A] mb-2 flex flex-wrap items-center gap-2">
-                                  <MapPin className="h-5 w-5 flex-shrink-0" />
-                                  <span className="break-words">{result.name}</span>
+                                <div className="flex items-center gap-2 flex-wrap mb-1.5">
+                                  <h4 className="text-base sm:text-lg font-bold text-white">
+                                    {result.name}
+                                  </h4>
                                   {result.is_premium && (
-                                    <Badge className="bg-amber-500 text-white text-xs">
-                                      <Star className="h-3 w-3 mr-1 flex-shrink-0" />
-                                      {t('searchPage.premium')}
+                                    <Badge className="bg-amber-400/20 text-amber-300 border border-amber-400/30 text-[10px]">
+                                      <Star className="h-3 w-3 mr-1" /> Verified
                                     </Badge>
                                   )}
-                                </CardTitle>
-                                <CardDescription className="flex flex-wrap gap-2">
-                                  {result.canton && (
-                                    <Badge variant="outline">{result.canton}</Badge>
-                                  )}
-                                  {result.region && !result.canton && (
-                                    <Badge variant="outline">{result.region}</Badge>
-                                  )}
-                                  {result.entity && (
-                                    <Badge variant="outline">{result.entity}</Badge>
-                                  )}
-                                </CardDescription>
-                              </div>
+                                  <span
+                                    className={`text-[10px] font-mono px-2 py-0.5 rounded border ${getTrustScoreColor(
+                                      result.trust_score,
+                                    )}`}
+                                  >
+                                    Trust Score: {result.trust_score}%
+                                  </span>
+                                </div>
 
-                              <div
-                                className={`flex flex-col items-center px-3 py-2 rounded-lg border flex-shrink-0 ${getTrustScoreColor(
-                                  result.trust_score,
-                                )}`}
-                              >
-                                <Shield className="h-4 w-4 mb-1" />
-                                <span className="text-lg font-bold">{result.trust_score}</span>
-                                <span className="text-xs whitespace-nowrap">
-                                  {getTrustScoreLabel(result.trust_score)}
-                                </span>
-                              </div>
-                            </div>
-                          </CardHeader>
-                          <CardContent>
-                            {result.description && (
-                              <p className="text-gray-600 text-sm mb-3 break-words">
-                                {result.description}
-                              </p>
-                            )}
-
-                            {result.categories && result.categories.length > 0 && (
-                              <div className="space-y-2 mb-4">
-                                <h4 className="font-semibold text-gray-700 text-sm">
-                                  {t('searchPage.availableFormsLabel')}:
-                                </h4>
-                                <div className="flex flex-wrap gap-2">
-                                  {result.categories.map((category: string, idx: number) => (
-                                    <Badge key={idx} className="bg-[#00A651] text-white">
-                                      {category}
-                                    </Badge>
-                                  ))}
+                                <div className="flex items-center gap-2 text-xs text-slate-400 flex-wrap">
+                                  {result.canton && <span>{result.canton}</span>}
+                                  {result.entity && <span>• {result.entity}</span>}
                                 </div>
                               </div>
-                            )}
 
-                            <div className="mt-4 flex items-center gap-3 flex-wrap">
-                              {!accessLevel.canViewFormUrls ? null : getOfficialWebsite(result.name) ? (
-                                <Button asChild className="bg-[#003D7A] hover:bg-[#002A5A] text-white">
-                                  <a href={getOfficialWebsite(result.name)} target="_blank" rel="noopener noreferrer">
-                                    <ExternalLink className="h-4 w-4 mr-2 flex-shrink-0" />
-                                    {t('searchPage.visitWebsite')}
-                                  </a>
-                                </Button>
-                              ) : null}
-                              {accessLevel.canViewFormUrls ? null : (
-                                <Button
-                                  variant="outline"
-                                  className="border-[#003D7A] text-[#003D7A]"
-                                  onClick={() => navigate('/subscription')}
-                                >
-                                  <Lock className="h-4 w-4 mr-2 flex-shrink-0" />
-                                  {t('searchPage.subscribeForUrl')}
-                                </Button>
-                              )}
-
-                              {allMunicipalities.some(
-                                (m) =>
-                                  m.name.toLowerCase().includes(result.name.toLowerCase()) ||
-                                  result.name.toLowerCase().includes(m.slug),
-                              ) && (
-                                <Button
-                                  variant="outline"
-                                  size="sm"
-                                  className="border-[#00A651] text-[#00A651] hover:bg-[#00A651]/5"
-                                  onClick={() => {
-                                    const match = allMunicipalities.find(
-                                      (m) =>
-                                        m.name.toLowerCase().includes(result.name.toLowerCase()) ||
-                                        result.name.toLowerCase().includes(m.slug),
-                                    );
-                                    if (match) navigate(`/municipality/${match.slug}`);
-                                  }}
-                                >
-                                  <FileText className="h-4 w-4 mr-2 flex-shrink-0" />
-                                  {t('searchPage.viewForms')}
-                                </Button>
-                              )}
-
-                              {accessLevel.canViewFormUrls && (
-                                <Button
-                                  variant="outline"
-                                  size="sm"
-                                  onClick={() => toggleDetector(result.id)}
-                                  className="border-[#003D7A]/50 text-[#003D7A] hover:bg-[#003D7A]/5"
-                                >
-                                  <Globe className="h-4 w-4 mr-2 flex-shrink-0" />
-                                  {expandedDetector === result.id
-                                    ? t('searchPage.closeDetector')
-                                    : t('searchPage.detectDomains')}
-                                </Button>
-                              )}
-
-                              <span className="text-xs text-gray-400 flex items-center gap-1">
-                                <Database className="h-3 w-3 flex-shrink-0" />
-                                {result.source === 'supabase'
-                                  ? t('forms.liveDatabase')
-                                  : t('searchPage.localDatabase')}
-                              </span>
-                            </div>
-
-                            {expandedDetector === result.id && (
-                              <div className="mt-4">
-                                <DomainDetector
-                                  municipalityName={result.name}
-                                  onUrlFound={(url) => {
-                                    console.log(`Found domain for ${result.name}: ${url}`);
-                                  }}
-                                />
-                              </div>
-                            )}
-                          </CardContent>
-                        </Card>
-                      ))}
-                    </div>
-                  </>
-                )}
-              </TabsContent>
-
-              {/* Tab: usporedba općina */}
-              <TabsContent value="compare" className="mt-6">
-                {comparisonData.length === 0 ? (
-                  <Card className="text-center py-12">
-                    <CardContent>
-                      <GitCompareArrows className="h-16 w-16 text-gray-300 mx-auto mb-4" />
-                      <h3 className="text-xl font-semibold text-gray-700 mb-2 break-words">
-                        {t('searchPage.noComparisonTitle')}
-                      </h3>
-                      <p className="text-gray-500 max-w-md mx-auto break-words">
-                        {t('searchPage.noComparisonHint')}
-                      </p>
-                    </CardContent>
-                  </Card>
-                ) : (
-                  <div className="space-y-6">
-                    <div className="p-4 bg-blue-50 border border-blue-200 rounded-lg">
-                      <p className="text-sm text-blue-800 flex items-start gap-2 break-words">
-                        <GitCompareArrows className="h-4 w-4 mt-0.5 flex-shrink-0" />
-                        {t('searchPage.comparisonIntro', { count: comparisonData.length })}
-                      </p>
-                    </div>
-
-                    {comparisonData.map((group, groupIdx) => (
-                      <Card key={groupIdx} className="overflow-hidden">
-                        <CardHeader className="bg-gradient-to-r from-[#003D7A]/5 to-[#00A651]/5 pb-3">
-                          <CardTitle className="text-base text-[#003D7A] flex items-center gap-2">
-                            <FileText className="h-4 w-4 flex-shrink-0" />
-                            <span className="break-words">
-                              {t('searchPage.similarFormVersions', { count: group.matches.length })}
-                            </span>
-                          </CardTitle>
-                          <CardDescription className="text-xs break-words">
-                            {t('searchPage.availableIn', {
-                              list: [
-                                ...new Set(group.matches.map((m) => m.municipality.name)),
-                              ].join(', '),
-                            })}
-                          </CardDescription>
-                        </CardHeader>
-                        <CardContent className="p-0">
-                          <div className="divide-y">
-                            {group.matches.map((match, matchIdx) => (
-                              <div
-                                key={matchIdx}
-                                className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 p-4 hover:bg-gray-50 transition-colors"
-                              >
-                                <div className="flex-1 min-w-0">
-                                  <p className="text-sm font-medium text-gray-800 leading-relaxed break-words">
-                                    {match.form.name}
-                                  </p>
-                                  <div className="flex items-center gap-2 mt-1 flex-wrap">
-                                    <Badge
-                                      variant="secondary"
-                                      className="text-xs bg-[#003D7A]/10 text-[#003D7A]"
-                                    >
-                                      <Building2 className="h-3 w-3 mr-1 flex-shrink-0" />
-                                      {match.municipality.name}
-                                    </Badge>
-                                    <Badge variant="outline" className="text-xs">
-                                      {match.form.category}
-                                    </Badge>
-                                    {match.form.sizeKB && (
-                                      <span className="text-xs text-gray-400">
-                                        {match.form.sizeKB} KB
-                                      </span>
-                                    )}
-                                  </div>
-                                </div>
-                                <div className="flex items-center gap-2 flex-shrink-0">
+                              <div className="flex items-center gap-2 shrink-0">
+                                {websiteUrl && (
                                   <Button
                                     size="sm"
                                     variant="outline"
-                                    className="border-[#003D7A] text-[#003D7A] hidden sm:flex"
-                                    onClick={() => navigate(`/form/${match.form.id}`)}
+                                    className="h-8 text-xs border-white/10 bg-white/5 text-slate-200 hover:bg-white/10"
+                                    onClick={() => safeOpenExternal(websiteUrl)}
                                   >
-                                    {t('searchPage.details')}
+                                    <ExternalLink className="h-3.5 w-3.5 mr-1" />
+                                    Web
                                   </Button>
-                                  <Button
-                                    size="sm"
-                                    className="bg-[#00A651] hover:bg-[#008F45]"
-                                    onClick={() => window.open(match.form.pdfUrl, '_blank', 'noopener,noreferrer')}
-                                  >
-                                    <Download className="h-4 w-4 mr-1 flex-shrink-0" />
-                                    PDF
-                                  </Button>
-                                </div>
+                                )}
+
+                                <Button
+                                  size="sm"
+                                  className="h-8 text-xs bg-[#5df0a8]/20 hover:bg-[#5df0a8]/30 text-[#5df0a8] border border-[#5df0a8]/40"
+                                  onClick={() => navigate(`/municipality/${result.slug}`)}
+                                >
+                                  Otvori Registar
+                                  <ChevronRight className="h-3.5 w-3.5 ml-1" />
+                                </Button>
                               </div>
-                            ))}
+                            </div>
+
+                            {/* Domain detector trigger */}
+                            <div className="mt-3 pt-3 border-t border-white/5 flex items-center justify-between text-xs">
+                              <span className="text-slate-400">
+                                Službena domena: <code className="text-slate-200">{result.domain || 'U registru'}</code>
+                              </span>
+                              <button
+                                type="button"
+                                onClick={() => toggleDetector(result.id)}
+                                className="text-[#5df0a8] hover:underline"
+                              >
+                                {expandedDetector === result.id ? 'Sakrij detalje' : 'Provjeri domenu'}
+                              </button>
+                            </div>
+
+                            {expandedDetector === result.id && (
+                              <div className="mt-3 pt-3 border-t border-white/10">
+                                <DomainDetector
+                                  domain={result.domain || ''}
+                                  entity={result.entity}
+                                  canton={result.canton}
+                                />
+                              </div>
+                            )}
                           </div>
-                        </CardContent>
-                      </Card>
-                    ))}
+                        );
+                      })}
+                    </div>
                   </div>
                 )}
-              </TabsContent>
-            </Tabs>
+              </div>
+            )}
+
+            {/* TAB: COMPARE */}
+            {activeTab === 'compare' && (
+              <div className="space-y-4">
+                <div className="glass-panel p-5 rounded-2xl mb-6">
+                  <h3 className="text-base font-bold text-white mb-1 flex items-center gap-2">
+                    <GitCompareArrows className="w-4 h-4 text-[#5df0a8]" />
+                    Međuopćinska Usporedba Formulara
+                  </h3>
+                  <p className="text-xs text-slate-400">
+                    Uporedite zahtjeve i potrebnu dokumentaciju za istu vrstu postupka između različitih općina u BiH.
+                  </p>
+                </div>
+
+                {comparisonData.length === 0 ? (
+                  <div className="glass-panel text-center py-12 px-4 rounded-xl text-slate-400 text-sm">
+                    Nema sličnih obrazaca u više općina za ovaj upit.
+                  </div>
+                ) : (
+                  comparisonData.map((group) => (
+                    <div key={group.keyword} className="glass-panel p-5 rounded-2xl">
+                      <div className="flex items-center justify-between mb-4">
+                        <h4 className="font-bold text-white capitalize text-sm sm:text-base">
+                          {group.keyword}
+                        </h4>
+                        <span className="text-xs font-mono px-2 py-0.5 rounded bg-[#5df0a8]/20 text-[#5df0a8]">
+                          {group.matches.length} općina
+                        </span>
+                      </div>
+
+                      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
+                        {group.matches.map((item) => (
+                          <div
+                            key={`${item.municipality.slug}-${item.form.id}`}
+                            className="p-3.5 rounded-xl bg-white/5 border border-white/10 hover:border-[#5df0a8]/30 transition-all flex flex-col justify-between"
+                          >
+                            <div>
+                              <span className="text-[10px] font-mono text-[#5df0a8]">
+                                {item.municipality.name}
+                              </span>
+                              <p className="text-xs font-semibold text-white mt-1 line-clamp-2">
+                                {item.form.name}
+                              </p>
+                            </div>
+                            <div className="flex items-center justify-between mt-3 pt-2 border-t border-white/5">
+                              <span className="text-[10px] text-slate-400">
+                                {item.form.sizeKB ? `${item.form.sizeKB} KB` : 'PDF'}
+                              </span>
+                              <Button
+                                size="sm"
+                                variant="ghost"
+                                className="h-6 text-[10px] text-[#5df0a8] hover:bg-white/5 p-1"
+                                onClick={() => navigate(`/form/${item.form.id}`)}
+                              >
+                                Pregledaj
+                              </Button>
+                            </div>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  ))
+                )}
+              </div>
+            )}
           </>
         )}
       </div>
+
+      {/* Modal za Print Preview obrazaca */}
+      {previewForm && (
+        <PrintPreviewModal
+          open={!!previewForm}
+          onOpenChange={(open) => {
+            if (!open) setPreviewForm(null);
+          }}
+          formId={previewForm.form.id}
+          displayName={previewForm.form.name}
+          originalName={previewForm.form.name}
+          category={previewForm.form.category}
+          municipalityName={previewForm.municipality.name}
+          cantonShort={previewForm.municipality.cantonShort}
+          sizeKB={previewForm.form.sizeKB}
+          fileUrl={previewForm.form.pdfUrl}
+        />
+      )}
+
+      <Footer />
     </div>
   );
 };

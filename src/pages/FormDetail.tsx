@@ -21,6 +21,9 @@ import {
   Globe,
   WifiOff,
   CloudDownload,
+  Star,
+  FileDown,
+  Loader2,
 } from 'lucide-react';
 import { getFormById, MunicipalityForm, MunicipalityInfo } from '@/data/municipality-registry';
 import {
@@ -32,9 +35,17 @@ import {
 import { latinToCyrillic } from '@/lib/cyrillic-converter';
 import { canAccessUrls } from '@/lib/access-control';
 import { isUrlCached, cachePdfUrl } from '@/lib/offline-cache';
+import { safeOpenExternal } from '@/lib/security';
+import { exportDirectFallbackPdf } from '@/lib/pdf-export-service';
 import FormFillerAssistant from '@/components/FormFillerAssistant';
 import ReportBrokenLink from '@/components/ReportBrokenLink';
+import DocumentRatingSystem from '@/components/DocumentRatingSystem';
+import PrintFriendlyFormView from '@/components/PrintFriendlyFormView';
+import PrintPreviewModal from '@/components/PrintPreviewModal';
+import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import UniversalBackButton from '@/components/UniversalBackButton';
+import { toast } from 'sonner';
 
 const FormDetail = () => {
   const { language } = useLanguage();
@@ -42,6 +53,9 @@ const FormDetail = () => {
   const { formId } = useParams<{ formId: string }>();
   const [searchParams] = useSearchParams();
   const initialTab = searchParams.get('tab') || 'preview';
+  const [isPrintMode, setIsPrintMode] = useState(searchParams.get('mode') === 'print');
+  const [showPrintPreview, setShowPrintPreview] = useState(false);
+  const [isDownloadingPdf, setIsDownloadingPdf] = useState(false);
   const [form, setForm] = useState<MunicipalityForm | null>(null);
   const [municipality, setMunicipality] = useState<MunicipalityInfo | null>(null);
   const [supabaseDoc, setSupabaseDoc] = useState<DokumentWithInstitucija | null>(null);
@@ -178,18 +192,33 @@ const FormDetail = () => {
 
   const handleDownload = () => {
     if (fileUrl && hasAccess) {
-      window.open(fileUrl, '_blank', 'noopener,noreferrer');
+      safeOpenExternal(fileUrl);
     }
   };
 
   const handlePrint = () => {
-    if (fileUrl && hasAccess) {
-      const printWindow = window.open(fileUrl, '_blank');
-      if (printWindow) {
-        printWindow.addEventListener('load', () => {
-          printWindow.print();
-        });
+    setIsPrintMode(true);
+  };
+
+  const handleDownloadPdfLocally = () => {
+    setIsDownloadingPdf(true);
+    try {
+      const success = exportDirectFallbackPdf({
+        formName: displayName,
+        municipalityName,
+        category,
+        description: description || undefined,
+      });
+      if (success) {
+        toast.success(language === 'en' ? 'PDF generated and downloaded successfully!' : 'Obrazac je uspješno generisan i preuzet kao PDF!');
+      } else {
+        toast.error('Greška pri snimanju PDF-a.');
       }
+    } catch (err) {
+      console.error('PDF export error:', err);
+      toast.error('Došlo je do greške pri generisanju PDF-a.');
+    } finally {
+      setIsDownloadingPdf(false);
     }
   };
 
@@ -282,30 +311,48 @@ const FormDetail = () => {
     );
   }
 
+  // Print-Friendly Mode view
+  if (isPrintMode) {
+    return (
+      <PrintFriendlyFormView
+        formId={formId || ''}
+        displayName={displayName}
+        originalName={originalName}
+        category={category}
+        municipalityName={municipalityName}
+        cantonShort={cantonShort}
+        sizeKB={sizeKB}
+        description={description}
+        fileUrl={fileUrl}
+        onExit={() => setIsPrintMode(false)}
+      />
+    );
+  }
+
   // Google Docs Viewer for PDF preview (works with HTTPS PDFs via file_url)
   const previewUrl = `https://docs.google.com/gview?url=${encodeURIComponent(fileUrl)}&embedded=true`;
 
   return (
-    <div className="min-h-screen bg-gray-50 flex flex-col">
-      {/* Header */}
-      <div className="bg-gradient-to-r from-[#003D7A] to-[#00A651] text-white py-6">
-        <div className="container px-4">
-          <Button
-            variant="ghost"
-            className="text-white hover:bg-white/10 mb-3"
-            onClick={() => navigate(-1)}
-          >
-            <ArrowLeft className="h-4 w-4 mr-2" />
-            {language === 'en' ? 'Back' : language === 'de' ? 'Zurück' : language === 'tr' ? 'Geri' : 'Nazad'}
-          </Button>
+    <div className="min-h-screen flex flex-col text-slate-100 selection:bg-[#5df0a8]/30 selection:text-white">
+      <Header />
 
-          <h1 className="text-xl md:text-2xl font-bold leading-tight mb-2">
+      {/* Header */}
+      <div className="border-b border-white/10 bg-[#070b1a]/90 backdrop-blur-2xl py-8 relative">
+        <div className="container max-w-5xl px-4 mx-auto">
+          <div className="flex items-center justify-between gap-4 mb-4">
+            <UniversalBackButton variant="command" />
+            <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-mono text-[#5df0a8] bg-[#5df0a8]/10 border border-[#5df0a8]/30">
+              <span>ADMINISTRATIVNI DOKUMENT</span>
+            </div>
+          </div>
+
+          <h1 className="text-xl md:text-2xl font-bold leading-tight mb-2 text-white">
             {displayName}
           </h1>
 
           {/* Show original name if translated */}
           {displayName !== originalName && (
-            <p className="text-white/60 text-sm italic mb-2">{originalName}</p>
+            <p className="text-slate-400 text-sm italic mb-2">{originalName}</p>
           )}
 
           <div className="flex flex-wrap items-center gap-3">
@@ -318,6 +365,14 @@ const FormDetail = () => {
             <Badge variant="outline" className="border-white/50 text-white text-xs">
               {language === 'bs-Cyrl' ? latinToCyrillic(municipalityName) : municipalityName}
             </Badge>
+            <button
+              type="button"
+              onClick={() => setActiveTab('reviews')}
+              className="inline-flex items-center gap-1.5 bg-amber-400/20 hover:bg-amber-400/30 text-amber-200 border border-amber-300/30 px-3 py-1 rounded-full text-xs font-semibold cursor-pointer transition-colors"
+            >
+              <Star className="h-3.5 w-3.5 fill-amber-300 text-amber-300" />
+              <span>Ocjene & Tačnost obrasca</span>
+            </button>
             {dataSource === 'supabase' && (
               <Badge className="bg-white/10 text-white/80 border-white/20 text-xs">
                 <Database className="h-3 w-3 mr-1" />
@@ -335,8 +390,8 @@ const FormDetail = () => {
       </div>
 
       {/* Action Bar */}
-      <div className="bg-white border-b shadow-sm sticky top-0 z-10">
-        <div className="container px-4 py-3 flex flex-wrap gap-2">
+      <div className="bg-white border-b shadow-sm sticky top-0 z-10 no-print">
+        <div className="container px-4 py-3 flex flex-wrap gap-2 items-center">
           <Button
             size="sm"
             className="bg-[#003D7A] hover:bg-[#002A5A]"
@@ -347,14 +402,52 @@ const FormDetail = () => {
             {language === 'en' ? 'Download' : language === 'de' ? 'Herunterladen' : language === 'tr' ? 'İndir' : 'Preuzmi'}
           </Button>
 
+          {/* Download as PDF locally using jspdf & html2canvas */}
+          <Button
+            size="sm"
+            onClick={handleDownloadPdfLocally}
+            disabled={isDownloadingPdf}
+            className="bg-emerald-600 hover:bg-emerald-700 text-white font-medium shadow-sm"
+          >
+            {isDownloadingPdf ? (
+              <Loader2 className="h-4 w-4 mr-1 animate-spin" />
+            ) : (
+              <FileDown className="h-4 w-4 mr-1" />
+            )}
+            Preuzmi kao PDF
+          </Button>
+
+          {/* Print Preview Modal Trigger */}
           <Button
             size="sm"
             variant="outline"
-            onClick={handlePrint}
-            disabled={!hasAccess}
+            className="border-blue-600 text-blue-700 hover:bg-blue-50 font-medium"
+            onClick={() => setShowPrintPreview(true)}
           >
-            <Printer className="h-4 w-4 mr-1" />
-            {language === 'en' ? 'Print' : language === 'de' ? 'Drucken' : language === 'tr' ? 'Yazdır' : 'Ispis'}
+            <Eye className="h-4 w-4 mr-1 text-blue-600" />
+            Print Preview
+          </Button>
+
+          {/* Print-Friendly Mode Trigger */}
+          <Button
+            size="sm"
+            variant="outline"
+            className="border-slate-300 text-slate-800 hover:bg-slate-100 font-medium"
+            onClick={handlePrint}
+          >
+            <Printer className="h-4 w-4 mr-1 text-[#003D7A]" />
+            Print-Friendly ispis
+          </Button>
+
+          {/* Reviews shortcut */}
+          <Button
+            size="sm"
+            variant="outline"
+            className="border-amber-300 text-amber-800 bg-amber-50/50 hover:bg-amber-100"
+            onClick={() => setActiveTab('reviews')}
+          >
+            <Star className="h-4 w-4 mr-1 fill-amber-400 text-amber-500" />
+            {language === 'en' ? 'Reviews' : 'Ocjene & Tačnost'}
           </Button>
 
           {/* Share button — uses navigator.share() with file_url */}
@@ -413,7 +506,7 @@ const FormDetail = () => {
             <Button
               size="sm"
               variant="outline"
-              onClick={() => window.open(fileUrl, '_blank', 'noopener,noreferrer')}
+              onClick={() => safeOpenExternal(fileUrl)}
             >
               <ExternalLink className="h-4 w-4 mr-1" />
               {language === 'en' ? 'Open original' : language === 'de' ? 'Original öffnen' : language === 'tr' ? 'Orijinali aç' : 'Otvori original'}
@@ -436,18 +529,26 @@ const FormDetail = () => {
       {/* Main content with Tabs */}
       <div className="flex-1 container px-4 py-6">
         <Tabs value={activeTab} onValueChange={setActiveTab}>
-          <TabsList className="grid w-full max-w-lg grid-cols-3 mb-6">
+          <TabsList className="grid w-full max-w-xl grid-cols-4 mb-6">
             <TabsTrigger value="preview" className="flex items-center gap-1">
               <Eye className="h-4 w-4" />
-              {language === 'en' ? 'Preview' : language === 'de' ? 'Vorschau' : language === 'tr' ? 'Önizleme' : 'Pregled'}
+              <span className="hidden sm:inline">{language === 'en' ? 'Preview' : language === 'de' ? 'Vorschau' : language === 'tr' ? 'Önizleme' : 'Pregled'}</span>
+              <span className="sm:hidden">Pregled</span>
             </TabsTrigger>
             <TabsTrigger value="details" className="flex items-center gap-1">
               <FileText className="h-4 w-4" />
-              {language === 'en' ? 'Details' : language === 'de' ? 'Details' : language === 'tr' ? 'Detaylar' : 'Detalji'}
+              <span className="hidden sm:inline">{language === 'en' ? 'Details' : language === 'de' ? 'Details' : language === 'tr' ? 'Detaylar' : 'Detalji'}</span>
+              <span className="sm:hidden">Detalji</span>
+            </TabsTrigger>
+            <TabsTrigger value="reviews" className="flex items-center gap-1">
+              <Star className="h-4 w-4 fill-amber-400 text-amber-500" />
+              <span className="hidden sm:inline">{language === 'en' ? 'Reviews' : 'Ocjene'}</span>
+              <span className="sm:hidden">Ocjene</span>
             </TabsTrigger>
             <TabsTrigger value="translations" className="flex items-center gap-1">
               <Languages className="h-4 w-4" />
-              {language === 'en' ? 'Translate' : language === 'de' ? 'Übersetzen' : language === 'tr' ? 'Çevir' : 'Prevedi'}
+              <span className="hidden sm:inline">{language === 'en' ? 'Translate' : language === 'de' ? 'Übersetzen' : language === 'tr' ? 'Çevir' : 'Prevedi'}</span>
+              <span className="sm:hidden">Prevedi</span>
               {translations.length > 0 && (
                 <Badge variant="secondary" className="ml-1 text-xs h-5 w-5 p-0 flex items-center justify-center">
                   {translations.length}
@@ -566,7 +667,7 @@ const FormDetail = () => {
             </Card>
 
             {/* Share link for app */}
-            <Card>
+            <Card className="mb-6">
               <CardContent className="py-4">
                 <p className="text-sm text-gray-500 mb-2 flex items-center gap-1">
                   <Share2 className="h-3 w-3" />
@@ -586,6 +687,22 @@ const FormDetail = () => {
                 </div>
               </CardContent>
             </Card>
+
+            {/* Embedded Star Ratings & Reviews inside Details */}
+            <DocumentRatingSystem
+              formId={formId || ''}
+              formName={originalName}
+              municipalityName={municipalityName}
+            />
+          </TabsContent>
+
+          {/* Reviews & Ratings Tab */}
+          <TabsContent value="reviews">
+            <DocumentRatingSystem
+              formId={formId || ''}
+              formName={originalName}
+              municipalityName={municipalityName}
+            />
           </TabsContent>
 
           {/* Translations Tab */}
@@ -668,6 +785,21 @@ const FormDetail = () => {
           />
         </div>
       </div>
+
+      {/* Print Preview Modal */}
+      <PrintPreviewModal
+        open={showPrintPreview}
+        onOpenChange={setShowPrintPreview}
+        formId={formId || ''}
+        displayName={displayName}
+        originalName={originalName}
+        category={category}
+        municipalityName={municipalityName}
+        cantonShort={cantonShort}
+        sizeKB={sizeKB}
+        description={description}
+        fileUrl={fileUrl}
+      />
 
       <Footer />
     </div>

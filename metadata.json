@@ -1,6 +1,6 @@
 {
   "name": "BH-PapirFinder",
-  "description": "Imported from GitHub: Allen9653/BH-PapirFinder",
+  "description": "BH PapirFinder – Centralna platforma za administrativne obrasce i formulare u Bosni i Hercegovini",
   "capabilities": [
     "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
   ]

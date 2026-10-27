@@ -33,6 +33,9 @@ import { Checkbox } from '@/components/ui/checkbox';
 import { useToast } from '@/hooks/use-toast';
 import { buildPdf, pdfBlob } from '@/lib/client-pdf';
 import { deleteTempDoc, TempDocSession, uploadTempDoc } from '@/lib/temp-doc-service';
+import Header from '@/components/Header';
+import Footer from '@/components/Footer';
+import UniversalBackButton from '@/components/UniversalBackButton';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
@@ -383,62 +386,69 @@ export default function GeneratorPage() {
   };
 
   return (
-    <div className="min-h-screen bg-slate-900 text-slate-100 pb-20">
+    <div className="min-h-screen flex flex-col text-slate-100 selection:bg-[#5df0a8]/30 selection:text-white">
+      <Header />
+
       {/* Hero Header */}
-      <section className="relative overflow-hidden pt-12 pb-10 px-4 border-b border-slate-800 bg-gradient-to-b from-slate-950 via-slate-900 to-slate-900">
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[650px] h-[320px] bg-gradient-to-tr from-blue-600/15 via-cyan-500/10 to-indigo-600/15 blur-[130px] rounded-full pointer-events-none" />
-        <div className="max-w-6xl mx-auto relative text-center">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-950/80 border border-blue-800/80 text-xs font-semibold text-cyan-300 mb-4 shadow-sm">
-            <Landmark className="w-4 h-4 text-amber-400" />
-            <span>Pravni Dokumentacioni Centar Bosne i Hercegovine</span>
+      <section className="relative overflow-hidden pt-8 pb-10 px-4 border-b border-white/10 bg-[#070b1a]/85 backdrop-blur-2xl">
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[320px] bg-gradient-to-tr from-[#5df0a8]/10 via-sky-500/10 to-indigo-600/10 blur-[130px] rounded-full pointer-events-none" />
+        <div className="max-w-6xl mx-auto relative">
+          <div className="flex items-center justify-between gap-4 mb-5">
+            <UniversalBackButton variant="command" />
+            <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#5df0a8]/10 border border-[#5df0a8]/30 text-xs font-mono text-[#5df0a8]">
+              <Sparkles className="w-3.5 h-3.5" />
+              <span>SMART DOCUMENT STUDIO • BIH</span>
+            </div>
           </div>
 
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-black tracking-tight mb-4 text-white">
-            Centralni Generator Zvaničnih Obrazaca BiH
-          </h1>
-          <p className="text-sm sm:text-base text-slate-300 max-w-3xl mx-auto mb-6">
-            Digitalizacija, popunjavanje i generisanje službenih poreznih i radnih obrazaca za sve tri pravne teritorije:
-            <strong className="text-cyan-300"> Federaciju BiH (FBiH)</strong>,
-            <strong className="text-amber-300"> Republiku Srpsku (RS - ćirilica/latinica)</strong> i
-            <strong className="text-emerald-300"> Brčko Distrikt BiH</strong>.
-          </p>
+          <div className="text-center">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-black tracking-tight mb-3 text-white">
+              Centralni Generator Zvaničnih Obrazaca BiH
+            </h1>
+            <p className="text-sm sm:text-base text-slate-300 max-w-3xl mx-auto mb-6">
+              Digitalizacija, automatska validacija JMBG/JIB i generisanje službenih poreznih i radnih obrazaca za sve tri pravne teritorije:
+              <strong className="text-sky-300"> Federaciju BiH (FBiH)</strong>,
+              <strong className="text-amber-300"> Republiku Srpsku (RS - ćirilica/latinica)</strong> i
+              <strong className="text-[#5df0a8]"> Brčko Distrikt BiH</strong>.
+            </p>
 
-          {/* Mode Switcher Tabs */}
-          <div className="inline-flex p-1.5 rounded-xl bg-slate-950/90 border border-slate-800 shadow-xl max-w-xl mx-auto">
-            <button
-              type="button"
-              onClick={() => setMode('premium_js')}
-              className={`flex items-center gap-2 px-5 py-2.5 rounded-lg text-xs sm:text-sm font-bold transition-all ${
-                mode === 'premium_js'
-                  ? 'bg-gradient-to-r from-blue-600 to-indigo-600 text-white shadow-md'
-                  : 'text-slate-400 hover:text-slate-200'
-              }`}
-            >
-              <FileCheck2 className="w-4 h-4 text-amber-300" />
-              <span>8 Premium JS Obrazaca (BiH)</span>
-              <span className="px-1.5 py-0.5 rounded text-[10px] bg-amber-400/20 text-amber-300 border border-amber-400/30">
-                PRO
-              </span>
-            </button>
+            {/* Mode Switcher Tabs */}
+            <div className="inline-flex p-1.5 rounded-2xl bg-[#0b142d]/90 border border-white/15 shadow-2xl max-w-xl mx-auto backdrop-blur-xl">
+              <button
+                type="button"
+                onClick={() => setMode('premium_js')}
+                className={`flex items-center gap-2 px-5 py-2.5 rounded-xl text-xs sm:text-sm font-bold transition-all ${
+                  mode === 'premium_js'
+                    ? 'bg-[#5df0a8] text-[#04060f] shadow-[0_0_15px_rgba(93,240,168,0.35)]'
+                    : 'text-slate-300 hover:text-white hover:bg-white/5'
+                }`}
+              >
+                <FileCheck2 className="w-4 h-4" />
+                <span>8 Premium JS Obrazaca (BiH)</span>
+                <span className="px-1.5 py-0.5 rounded text-[10px] bg-white/20 font-mono">
+                  PRO
+                </span>
+              </button>
 
-            <button
-              type="button"
-              onClick={() => setMode('general_templates')}
-              className={`flex items-center gap-2 px-5 py-2.5 rounded-lg text-xs sm:text-sm font-bold transition-all ${
-                mode === 'general_templates'
-                  ? 'bg-gradient-to-r from-blue-600 to-indigo-600 text-white shadow-md'
-                  : 'text-slate-400 hover:text-slate-200'
-              }`}
-            >
-              <FileText className="w-4 h-4 text-cyan-300" />
-              <span>Opšti Pravni Šabloni</span>
-            </button>
+              <button
+                type="button"
+                onClick={() => setMode('general_templates')}
+                className={`flex items-center gap-2 px-5 py-2.5 rounded-xl text-xs sm:text-sm font-bold transition-all ${
+                  mode === 'general_templates'
+                    ? 'bg-[#5df0a8] text-[#04060f] shadow-[0_0_15px_rgba(93,240,168,0.35)]'
+                    : 'text-slate-300 hover:text-white hover:bg-white/5'
+                }`}
+              >
+                <FileText className="w-4 h-4" />
+                <span>Opšti Pravni Šabloni</span>
+              </button>
+            </div>
           </div>
         </div>
       </section>
 
       {/* Main Workspace */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 py-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 py-8 flex-1 w-full">
         {/* Notice alert */}
         {notice && (
           <div
@@ -994,6 +1004,7 @@ export default function GeneratorPage() {
           </div>
         )}
       </div>
+      <Footer />
     </div>
   );
 }

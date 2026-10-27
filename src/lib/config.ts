@@ -9,10 +9,14 @@ export const config = {
   // PayPal account
   paypalAccount: 'alenjusufovic@yahoo.com',
   
-  // Allowed domains for API requests
+  // Allowed domains for API requests and origin checks
   allowedDomains: [
+    'papir-finder.com',
+    'www.papir-finder.com',
     'bh-papirfinder.ba',
     'www.bh-papirfinder.ba',
+    'bhpapirfinder.ba',
+    'www.bhpapirfinder.ba',
     'localhost',
     '127.0.0.1',
   ],
@@ -45,7 +49,13 @@ export const config = {
 export function validateDomain(): boolean {
   if (typeof window === 'undefined') return true; // Server-side
   
-  const hostname = window.location.hostname;
+  const hostname = window.location.hostname.toLowerCase();
+  
+  // Vercel deployment preview domains and cloud run preview
+  if (hostname.endsWith('.vercel.app') || hostname.endsWith('.run.app')) {
+    return true;
+  }
+
   return config.allowedDomains.some(domain => 
     hostname === domain || hostname.endsWith(`.${domain}`)
   );

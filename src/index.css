@@ -78,15 +78,15 @@
 
     --border: 217.2 32.6% 17.5%;
     --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --ring: 153 82% 65%;
+    --sidebar-background: 228 58% 5%;
+    --sidebar-foreground: 210 40% 98%;
+    --sidebar-primary: 153 82% 65%;
+    --sidebar-primary-foreground: 228 58% 5%;
+    --sidebar-accent: 224 45% 12%;
+    --sidebar-accent-foreground: 210 40% 98%;
+    --sidebar-border: 224 35% 15%;
+    --sidebar-ring: 153 82% 65%;
   }
 }
 
@@ -95,7 +95,111 @@
     @apply border-border;
   }
 
+  html {
+    color-scheme: dark;
+    background-color: #04060f;
+  }
+
   body {
-    @apply bg-background text-foreground;
+    background-color: transparent;
+    color: #f1f5f9;
+    min-height: 100vh;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
   }
 }
+
+/* Ascend Deep Space Glassmorphism Utilities */
+.glass-panel {
+  background: rgba(7, 11, 25, 0.78);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.45);
+}
+
+.glass-panel-glow {
+  background: rgba(8, 14, 32, 0.82);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(93, 240, 168, 0.28);
+  box-shadow: 0 0 30px -5px rgba(93, 240, 168, 0.15), 0 12px 40px 0 rgba(0, 0, 0, 0.55);
+}
+
+.glass-input {
+  background: rgba(11, 18, 38, 0.7);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: #f8fafc;
+  transition: all 0.2s ease-in-out;
+}
+.glass-input:focus {
+  border-color: #5df0a8;
+  box-shadow: 0 0 15px rgba(93, 240, 168, 0.25);
+  outline: none;
+}
+
+/* Subtle radar sweep animation */
+@keyframes radarSweep {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.animate-radar-sweep {
+  animation: radarSweep 10s linear infinite;
+}
+
+@keyframes pulseGlow {
+  0%, 100% {
+    opacity: 0.4;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.9;
+    transform: scale(1.08);
+  }
+}
+.animate-pulse-glow {
+  animation: pulseGlow 3s ease-in-out infinite;
+}
+
+
+/* Print Optimization */
+@media print {
+  @page {
+    margin: 1.2cm;
+    size: A4 portrait;
+  }
+
+  html, body {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+    font-size: 11pt !important;
+  }
+
+  /* Hide UI elements from print */
+  .no-print,
+  header,
+  footer,
+  nav,
+  aside,
+  .floating-chatbot,
+  [data-radix-portal],
+  .sonner-toaster,
+  #chatbot-widget,
+  .sticky,
+  button:not(.print-include) {
+    display: none !important;
+  }
+
+  /* Prevent page breaks inside cards */
+  article,
+  table,
+  .print-avoid-break {
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
+  }
+}
+

@@ -2,57 +2,47 @@ import { supabase, signInUser, signOutUser, getCurrentUser } from './supabaseCli
 import { addAuditLogEntry } from './audit';
 
 // ============================================================
-// Admin Authentication & Configuration via Environment Variables
+// Admin Authentication via Supabase Auth
+// Admin is identified by email role check
 // ============================================================
 
-// Čitanje admin email adresa iz okruženjskih varijabli (podijeljenih zarezom)
-const getAdminEmailsFromEnv = (): string[] => {
-  const envVar = 
-    (typeof window !== 'undefined' ? (window as any).__ENV?.VITE_ADMIN_EMAILS || (import.meta as any)?.env?.VITE_ADMIN_EMAILS) : 
-    (typeof process !== 'undefined' ? process.env.VITE_ADMIN_EMAILS || process.env.ADMIN_EMAILS : '');
-
-  if (!envVar) return [];
-  return envVar.split(',').map((email: string) => email.trim().toLowerCase()).filter(Boolean);
-};
-
-// Fallback na prazan niz ako varijable nisu postavljene (sprečava curenje privatnih podataka u kod)
-const ADMIN_EMAILS: string[] = getAdminEmailsFromEnv();
+const ADMIN_EMAILS = ['alenjusufovic@yahoo.com'];
 
 /**
  * Check if a given email is an admin email.
  */
 export function isAdminEmail(email: string): boolean {
-  if (!email) return false;
-  // Ako u .env fajlu nisu definisani admini, nijedan email nema automatski admin prava
-  if (ADMIN_EMAILS.length === 0) return false;
   return ADMIN_EMAILS.includes(email.toLowerCase());
 }
 
 /**
  * Login admin via Supabase Auth.
+ * Falls back to localStorage flag for offline/compatibility.
  */
 export async function loginAdmin(email: string, password: string): Promise<{ success: boolean; error?: string }> {
   try {
-    // Sigurnosna provjera prije slanja zahtjeva
-    if (!isAdminEmail(email)) {
+    const trimmedEmail = email.trim().toLowerCase();
+    if (!isAdminEmail(trimmedEmail)) {
+      addAuditLogEntry(trimmedEmail || 'unknown', 'Unauthorized Admin Login Attempt', 'Email is not in admin whitelist', 'security');
       return { success: false, error: 'Ovaj nalog nema administratorske privilegije.' };
     }
 
-    const { data, error } = await signInUser(email, password);
+    // Authenticate via Supabase Auth server-side verification
+    const { data, error } = await signInUser(trimmedEmail, password);
 
     if (error) {
-      addAuditLogEntry(email || 'unknown', 'Failed Login Attempt', error.message, 'security');
-      return { success: false, error: error.message };
+      addAuditLogEntry(trimmedEmail, 'Failed Admin Login Attempt', error.message, 'security');
+      return { success: false, error: 'Neispravna lozinka ili email adresa.' };
     }
 
     if (data.user && isAdminEmail(data.user.email || '')) {
       localStorage.setItem('bh_papirfinder_admin', 'true');
-      localStorage.setItem('bh_papirfinder_admin_email', data.user.email || email);
-      addAuditLogEntry(email, 'Admin Login', 'Admin logged in via Supabase Auth', 'security');
+      localStorage.setItem('bh_papirfinder_admin_email', data.user.email || trimmedEmail);
+      addAuditLogEntry(trimmedEmail, 'Admin Login', 'Admin logged in via Supabase Auth', 'security');
       return { success: true };
     }
 
-    // Korisnik je autentifikovan ali nije admin
+    // User authenticated but is not an authorized admin
     await signOutUser();
     return { success: false, error: 'Ovaj nalog nema administratorske privilegije.' };
   } catch (err) {
@@ -63,10 +53,13 @@ export async function loginAdmin(email: string, password: string): Promise<{ suc
 
 /**
  * Check if admin is currently logged in.
+ * Validates both the admin flag and that the stored email is in the admin whitelist.
  */
 export function isAdminLoggedIn(): boolean {
   try {
-    return localStorage.getItem('bh_papirfinder_admin') === 'true';
+    const isAdmin = localStorage.getItem('bh_papirfinder_admin') === 'true';
+    const email = localStorage.getItem('bh_papirfinder_admin_email') || '';
+    return isAdmin && isAdminEmail(email);
   } catch {
     return false;
   }
@@ -85,6 +78,7 @@ export async function verifyAdminSession(): Promise<boolean> {
       return true;
     }
 
+    // If Supabase has no session but local flag is set, allow for legacy
     const adminEmail = localStorage.getItem('bh_papirfinder_admin_email');
     if (adminEmail && isAdminEmail(adminEmail)) {
       return true;
@@ -92,6 +86,7 @@ export async function verifyAdminSession(): Promise<boolean> {
 
     return false;
   } catch {
+    // Fallback to local check
     return localStorage.getItem('bh_papirfinder_admin') === 'true';
   }
 }
@@ -100,30 +95,29 @@ export async function verifyAdminSession(): Promise<boolean> {
  * Get the admin email.
  */
 export function getAdminEmail(): string {
-  return localStorage.getItem('bh_papirfinder_admin_email') || ADMIN_EMAILS[0] || 'admin@bh-papirfinder.ba';
+  return localStorage.getItem('bh_papirfinder_admin_email') || ADMIN_EMAILS[0];
 }
 
 /**
  * Logout admin. Signs out from Supabase and clears local flags.
  */
 export async function logoutAdmin(): Promise<void> {
-  const currentAdmin = getAdminEmail();
   try {
     await signOutUser();
   } catch {
-    // Nastavi sa čišćenjem lokalnih podataka čak i ako Supabase odjava ne uspije
+    // Continue with local cleanup even if Supabase signout fails
   }
   try {
     localStorage.removeItem('bh_papirfinder_admin');
     localStorage.removeItem('bh_papirfinder_admin_email');
-    addAuditLogEntry(currentAdmin, 'Admin Logout', 'Admin logged out', 'security');
+    addAuditLogEntry(ADMIN_EMAILS[0], 'Admin Logout', 'Admin logged out', 'security');
   } catch (error) {
     console.error('Logout error:', error);
   }
 }
 
 // ============================================================
-// Sponsor management (localStorage)
+// Sponsor management (localStorage — can be migrated later)
 // ============================================================
 
 export interface Sponsor {

@@ -2,7 +2,6 @@ import React, { useState, useEffect, useCallback } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { Button } from '@/components/ui/button';
-import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Alert, AlertDescription } from '@/components/ui/alert';
 import {
@@ -23,12 +22,16 @@ import {
   Lock,
   Zap,
   TrendingUp,
+  ShieldCheck,
+  Radio,
+  CheckCircle2,
 } from 'lucide-react';
 import { getUserAccount, upgradeToPaid } from '@/lib/trial';
 import { activateProSubscription } from '@/lib/subscription';
 import { config } from '@/lib/config';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import UniversalBackButton from '@/components/UniversalBackButton';
 
 declare global {
   interface Window {
@@ -74,12 +77,12 @@ const Subscription: React.FC = () => {
       id: 'freemium',
       name: 'Freemium (Besplatno)',
       badge: 'Uvijek dostupno',
-      badgeColor: 'bg-slate-100 text-slate-700 border-slate-300',
+      badgeColor: 'bg-white/10 text-slate-300 border-white/10',
       monthlyPrice: '0',
       annualPrice: '0',
       annualTotal: '0',
       description: 'Za građane kojima je potrebna povremena pretraga i preuzimanje osnovnih obrazaca.',
-      icon: <FileText className="h-6 w-6 text-slate-600" />,
+      icon: <FileText className="h-6 w-6 text-slate-400" />,
       targetAudience: 'Svi građani Bosne i Hercegovine',
       isFree: true,
       paypalAmountMonthly: '0',
@@ -104,13 +107,13 @@ const Subscription: React.FC = () => {
       id: 'gradjanski-pro',
       name: 'Građanski PRO',
       badge: 'Najpopularniji izbor',
-      badgeColor: 'bg-emerald-500 text-white border-emerald-600',
+      badgeColor: 'bg-[#5df0a8]/20 text-[#5df0a8] border-[#5df0a8]/40',
       monthlyPrice: '9.90',
       annualPrice: '6.58',
       annualTotal: '79',
       popular: true,
       description: 'Potpuni paket za građane i preduzetnike koji žele uštedjeti sate čekanja na šalterima.',
-      icon: <Sparkles className="h-6 w-6 text-emerald-600" />,
+      icon: <Sparkles className="h-6 w-6 text-[#5df0a8]" />,
       targetAudience: 'Građani, vlasnici obrta i freelanceri',
       paypalAmountMonthly: '9.90',
       paypalAmountAnnual: '79.00',
@@ -132,12 +135,12 @@ const Subscription: React.FC = () => {
       id: 'dijaspora-vip',
       name: 'Dijaspora VIP',
       badge: 'Za državljane u dijaspori',
-      badgeColor: 'bg-blue-600 text-white border-blue-700',
+      badgeColor: 'bg-sky-500/20 text-sky-400 border-sky-500/30',
       monthlyPrice: '19.90',
       annualPrice: '12.42',
       annualTotal: '149',
       description: 'Specijalizovan za bh. dijasporu u Njemačkoj, Austriji, Švicarskoj, SAD i svijetu.',
-      icon: <Globe className="h-6 w-6 text-blue-600" />,
+      icon: <Globe className="h-6 w-6 text-sky-400" />,
       targetAudience: 'Državljani BiH u dijaspori i povratnici',
       paypalAmountMonthly: '19.90',
       paypalAmountAnnual: '149.00',
@@ -157,12 +160,12 @@ const Subscription: React.FC = () => {
       id: 'poslovni-pro',
       name: 'Poslovni / Knjigovodstvo',
       badge: 'Za firme i agencije',
-      badgeColor: 'bg-indigo-600 text-white border-indigo-700',
+      badgeColor: 'bg-amber-500/20 text-amber-300 border-amber-500/30',
       monthlyPrice: '39.90',
       annualPrice: '29.08',
       annualTotal: '349',
       description: 'Za knjigovodstvene agencije, advokatske kancelarije i preduzeća sa više zaposlenih.',
-      icon: <Briefcase className="h-6 w-6 text-indigo-600" />,
+      icon: <Briefcase className="h-6 w-6 text-amber-400" />,
       targetAudience: 'Knjigovođe, pravnici i poslodavci',
       paypalAmountMonthly: '39.90',
       paypalAmountAnnual: '349.00',
@@ -205,7 +208,6 @@ const Subscription: React.FC = () => {
 
     container.innerHTML = '';
     const rawAmount = billingCycle === 'annual' ? plan.paypalAmountAnnual : plan.paypalAmountMonthly;
-    // Approximate BAM to EUR (1 EUR ~ 1.95583 BAM)
     const eurAmount = (parseFloat(rawAmount) / 1.95583).toFixed(2);
 
     try {
@@ -232,7 +234,7 @@ const Subscription: React.FC = () => {
         },
         onApprove: async (_data: unknown, actions: { order: { capture: () => Promise<{ id: string }> } }) => {
           try {
-            const order = await actions.order.capture();
+            await actions.order.capture();
             const months = billingCycle === 'annual' ? 12 : 1;
             const expiry = new Date();
             expiry.setMonth(expiry.getMonth() + months);
@@ -244,7 +246,7 @@ const Subscription: React.FC = () => {
 
             setPaymentSuccess(true);
             setActivatedPlanName(plan.name);
-          } catch (err) {
+          } catch {
             setPaymentError('Plaćanje nije uspjelo. Pokušajte ponovo.');
           }
         },
@@ -285,38 +287,42 @@ const Subscription: React.FC = () => {
     }
   };
 
-  const handleSelectFreemium = () => {
-    navigate('/search');
-  };
-
   return (
-    <div className="min-h-screen flex flex-col bg-slate-50">
+    <div className="min-h-screen flex flex-col text-slate-100 selection:bg-[#5df0a8]/30 selection:text-white">
       <Header />
 
-      <main className="flex-1 py-12">
-        <div className="container px-4 max-w-6xl mx-auto">
-          {/* Page Top Heading */}
-          <div className="text-center max-w-3xl mx-auto mb-10">
-            <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-[#003D7A]/10 text-[#003D7A] border border-[#003D7A]/20 mb-3">
-              <Zap className="h-3.5 w-3.5 text-[#003D7A]" />
-              Freemium & Premium Model za Građane i Privredu
+      <main className="flex-1 py-12 px-4">
+        <div className="container max-w-6xl mx-auto">
+          {/* Top Bar with Universal Back Button */}
+          <div className="flex items-center justify-between gap-4 mb-8">
+            <UniversalBackButton variant="command" />
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#5df0a8]/10 border border-[#5df0a8]/30 text-xs font-mono text-[#5df0a8]">
+              <Radio className="w-3.5 h-3.5 animate-pulse" />
+              <span>PREMIUM PLANOVI • BYPASS REDOVA</span>
             </div>
-            <h1 className="text-3xl sm:text-4xl md:text-5xl font-black text-slate-900 tracking-tight">
-              Odaberite paket prilagođen vašim potrebama
+          </div>
+
+          {/* Heading */}
+          <div className="text-center max-w-3xl mx-auto mb-10">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-black text-white tracking-tight leading-tight">
+              Investirajte u svoje vrijeme.{' '}
+              <span className="bg-gradient-to-r from-[#5df0a8] via-emerald-300 to-sky-400 bg-clip-text text-transparent">
+                Zaobiđite šaltere.
+              </span>
             </h1>
-            <p className="text-base sm:text-lg text-slate-600 mt-3">
-              Koristite besplatni Freemium pristup za osnovne potrebe, ili pređite na Premium za automatsko popunjavanje obrazaca, neograničeni AI asistent i izbjegavanje šaltera.
+            <p className="text-base sm:text-lg text-slate-300 mt-4 leading-relaxed">
+              Pristupite neograničenom automatskom popunjavanju, verifikovanim poreznim obrascima za FBiH, RS i Brčko, te višekorisničkim radnim tokovima.
             </p>
 
             {/* Billing Cycle Switcher */}
-            <div className="inline-flex items-center bg-slate-200/80 p-1 rounded-full mt-6 shadow-inner">
+            <div className="inline-flex items-center bg-[#070b1a]/90 p-1.5 rounded-full mt-8 border border-white/10 shadow-xl backdrop-blur-xl">
               <button
                 type="button"
                 onClick={() => setBillingCycle('monthly')}
-                className={`px-5 py-2 rounded-full text-xs sm:text-sm font-bold transition-all ${
+                className={`px-5 py-2 rounded-full text-xs sm:text-sm font-semibold transition-all ${
                   billingCycle === 'monthly'
-                    ? 'bg-white text-slate-900 shadow'
-                    : 'text-slate-600 hover:text-slate-900'
+                    ? 'bg-[#5df0a8] text-[#04060f] font-bold shadow-[0_0_15px_rgba(93,240,168,0.3)]'
+                    : 'text-slate-400 hover:text-white'
                 }`}
               >
                 Mjesečno plaćanje
@@ -324,330 +330,176 @@ const Subscription: React.FC = () => {
               <button
                 type="button"
                 onClick={() => setBillingCycle('annual')}
-                className={`px-5 py-2 rounded-full text-xs sm:text-sm font-bold transition-all flex items-center gap-1.5 ${
+                className={`px-5 py-2 rounded-full text-xs sm:text-sm font-semibold transition-all flex items-center gap-1.5 ${
                   billingCycle === 'annual'
-                    ? 'bg-[#003D7A] text-white shadow'
-                    : 'text-slate-600 hover:text-slate-900'
+                    ? 'bg-[#5df0a8] text-[#04060f] font-bold shadow-[0_0_15px_rgba(93,240,168,0.3)]'
+                    : 'text-slate-400 hover:text-white'
                 }`}
               >
-                Godišnje
-                <span className="bg-emerald-500 text-white text-[10px] font-extrabold px-1.5 py-0.5 rounded-full">
-                  Uštedite 35%
+                <span>Godišnje plaćanje</span>
+                <span className="px-1.5 py-0.5 rounded text-[10px] bg-amber-400/20 text-amber-300 border border-amber-400/30">
+                  Ušteda 33%
                 </span>
               </button>
             </div>
           </div>
 
-          {/* Success Banner */}
+          {/* Payment Success Alert */}
           {paymentSuccess && (
-            <Alert className="mb-8 border-emerald-500 bg-emerald-50 text-emerald-900 shadow-md">
-              <Check className="h-5 w-5 text-emerald-600" />
-              <AlertDescription className="text-sm font-medium">
-                Čestitamo! Vaš paket <strong>{activatedPlanName}</strong> je uspješno aktiviran. Sada imate neograničen pristup svim funkcijama.
-                <Button
-                  size="sm"
-                  onClick={() => navigate('/generator')}
-                  className="ml-4 bg-emerald-600 hover:bg-emerald-700 text-white"
-                >
-                  Otvori Generator Obrazaca
-                </Button>
-              </AlertDescription>
-            </Alert>
+            <div className="glass-panel-glow p-6 rounded-2xl mb-8 border-[#5df0a8] text-center max-w-xl mx-auto animate-in fade-in zoom-in-95">
+              <CheckCircle2 className="w-12 h-12 text-[#5df0a8] mx-auto mb-3" />
+              <h3 className="text-xl font-bold text-white mb-1">
+                Čestitamo! Vaš paket &ldquo;{activatedPlanName}&rdquo; je aktiviran!
+              </h3>
+              <p className="text-slate-300 text-sm mb-6">
+                Sve administrativne funkcije i neograničeno popunjavanje su odmah otključani za vaš račun.
+              </p>
+              <Button
+                onClick={() => navigate('/generator')}
+                className="bg-[#5df0a8] text-[#04060f] font-bold text-xs px-6"
+              >
+                Otvori Generator Obrazaca →
+              </Button>
+            </div>
           )}
 
-          {/* Error Banner */}
           {paymentError && (
-            <Alert className="mb-8 border-red-500 bg-red-50 text-red-900">
-              <X className="h-5 w-5 text-red-600" />
-              <AlertDescription className="text-sm font-medium">
-                {paymentError}
-              </AlertDescription>
+            <Alert className="mb-6 bg-rose-500/10 border-rose-500/30 text-rose-300 max-w-xl mx-auto">
+              <AlertDescription>{paymentError}</AlertDescription>
             </Alert>
           )}
 
           {/* 4 Pricing Cards Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
             {plans.map((plan) => {
-              const priceDisplay = billingCycle === 'annual' ? plan.annualPrice : plan.monthlyPrice;
+              const price = billingCycle === 'annual' ? plan.annualPrice : plan.monthlyPrice;
+              const isSelected = selectedPlan === plan.id;
 
               return (
-                <Card
+                <div
                   key={plan.id}
-                  className={`flex flex-col relative transition-all duration-300 ${
+                  className={`rounded-2xl p-6 transition-all relative flex flex-col justify-between ${
                     plan.popular
-                      ? 'border-2 border-emerald-500 shadow-xl bg-white scale-[1.02] z-10 ring-4 ring-emerald-500/10'
-                      : 'border border-slate-200 shadow-sm hover:shadow-md bg-white'
+                      ? 'glass-panel-glow border-[#5df0a8]/60 shadow-[0_0_35px_rgba(93,240,168,0.18)] scale-[1.02]'
+                      : 'glass-panel hover:border-white/20'
                   }`}
                 >
-                  {plan.badge && (
-                    <div className="absolute -top-3.5 left-1/2 transform -translate-x-1/2">
-                      <span className={`text-[11px] font-bold px-3 py-1 rounded-full shadow-sm border ${plan.badgeColor}`}>
-                        {plan.badge}
-                      </span>
+                  {plan.popular && (
+                    <div className="absolute -top-3 left-1/2 -translate-x-1/2 px-3 py-0.5 rounded-full bg-[#5df0a8] text-[#04060f] text-[10px] font-mono font-extrabold uppercase tracking-wider shadow-md">
+                      PREPORUČENI PAKET
                     </div>
                   )}
 
-                  <CardHeader className="pt-7 pb-4 text-center border-b border-slate-100">
-                    <div className="mx-auto mb-2 w-12 h-12 rounded-2xl bg-slate-100 flex items-center justify-center">
-                      {plan.icon}
-                    </div>
-                    <CardTitle className="text-lg font-bold text-slate-900">
-                      {plan.name}
-                    </CardTitle>
-                    <CardDescription className="text-xs text-slate-500 min-h-[32px] mt-1">
-                      {plan.description}
-                    </CardDescription>
-
-                    <div className="mt-4">
-                      <div className="flex items-baseline justify-center gap-1">
-                        <span className="text-3xl sm:text-4xl font-black text-slate-900">
-                          {priceDisplay}
-                        </span>
-                        <span className="text-sm font-bold text-slate-600">
-                          {plan.isFree ? '' : 'KM'}
-                        </span>
-                        <span className="text-xs text-slate-500">
-                          {plan.isFree ? '' : '/ mj.'}
-                        </span>
+                  <div>
+                    {/* Header */}
+                    <div className="flex items-center justify-between gap-2 mb-4">
+                      <div className="w-10 h-10 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center">
+                        {plan.icon}
                       </div>
-                      {!plan.isFree && billingCycle === 'annual' && (
-                        <p className="text-[11px] text-emerald-600 font-semibold mt-1">
-                          Naplaćuje se {plan.annualTotal} KM godišnje
-                        </p>
-                      )}
-                      {plan.isFree && (
-                        <p className="text-[11px] text-slate-500 font-semibold mt-1">
-                          Bez potrebe za unosom kartice
-                        </p>
+                      {plan.badge && (
+                        <span className={`text-[10px] font-mono px-2 py-0.5 rounded-full border ${plan.badgeColor}`}>
+                          {plan.badge}
+                        </span>
                       )}
                     </div>
-                  </CardHeader>
 
-                  <CardContent className="p-5 flex-1 flex flex-col justify-between">
-                    <div>
-                      <div className="text-[11px] font-bold uppercase tracking-wider text-slate-400 mb-3">
-                        Uključene mogućnosti:
+                    <h3 className="text-lg font-bold text-white mb-1">{plan.name}</h3>
+                    <p className="text-xs text-slate-400 mb-4 min-h-[36px]">{plan.description}</p>
+
+                    {/* Price */}
+                    <div className="mb-6 pb-5 border-b border-white/10">
+                      <div className="flex items-baseline gap-1">
+                        <span className="text-3xl sm:text-4xl font-extrabold text-white font-mono">
+                          {price}
+                        </span>
+                        <span className="text-xs text-slate-400 font-mono">KM / mjesečno</span>
                       </div>
-                      <ul className="space-y-2.5 mb-6 text-xs text-slate-700">
-                        {plan.features.map((feat, idx) => (
-                          <li key={idx} className="flex items-start gap-2">
-                            <Check className="h-4 w-4 text-emerald-600 shrink-0 mt-0.5" />
-                            <span>{feat}</span>
-                          </li>
-                        ))}
-                        {plan.notIncluded && plan.notIncluded.map((notFeat, idx) => (
-                          <li key={`not-${idx}`} className="flex items-start gap-2 text-slate-400">
-                            <X className="h-4 w-4 text-slate-300 shrink-0 mt-0.5" />
-                            <span className="line-through">{notFeat}</span>
-                          </li>
-                        ))}
-                      </ul>
+                      {billingCycle === 'annual' && !plan.isFree && (
+                        <span className="text-[11px] text-[#5df0a8] font-mono block mt-1">
+                          Naplaćuje se godišnje ({plan.annualTotal} KM)
+                        </span>
+                      )}
                     </div>
 
-                    <div className="pt-4 border-t border-slate-100">
-                      {plan.isFree ? (
+                    {/* Features List */}
+                    <ul className="space-y-2.5 mb-6 text-xs text-slate-300">
+                      {plan.features.map((feat, i) => (
+                        <li key={i} className="flex items-start gap-2">
+                          <Check className="h-4 w-4 text-[#5df0a8] shrink-0 mt-0.5" />
+                          <span>{feat}</span>
+                        </li>
+                      ))}
+                      {plan.notIncluded?.map((feat, i) => (
+                        <li key={i} className="flex items-start gap-2 text-slate-500">
+                          <X className="h-4 w-4 text-slate-600 shrink-0 mt-0.5" />
+                          <span>{feat}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+
+                  {/* Action / Checkout Trigger */}
+                  <div>
+                    {plan.isFree ? (
+                      <Button
+                        variant="outline"
+                        className="w-full border-white/10 bg-white/5 hover:bg-white/10 text-white text-xs font-semibold"
+                        onClick={() => navigate('/search')}
+                      >
+                        Nastavi sa Freemium pristupom
+                      </Button>
+                    ) : (
+                      <div className="space-y-2">
                         <Button
-                          variant="outline"
-                          onClick={handleSelectFreemium}
-                          className="w-full text-xs font-bold border-slate-300 text-slate-700 hover:bg-slate-50"
-                        >
-                          Nastavi Besplatno
-                        </Button>
-                      ) : selectedPlan === plan.id ? (
-                        <div className="space-y-2">
-                          <div id={`paypal-button-${plan.id}`} className="min-h-[44px]">
-                            {!paypalLoaded && (
-                              <p className="text-xs text-center text-slate-400">Učitavanje PayPal-a...</p>
-                            )}
-                          </div>
-                          <Button
-                            variant="secondary"
-                            size="sm"
-                            onClick={() => handleInstantSimulateActivation(plan)}
-                            disabled={activatingDirect}
-                            className="w-full text-[11px] bg-slate-100 hover:bg-slate-200 text-slate-700"
-                          >
-                            {activatingDirect ? 'Aktivacija...' : '⚡ Testna / Instant aktivacija'}
-                          </Button>
-                          <Button
-                            variant="ghost"
-                            size="sm"
-                            onClick={() => setSelectedPlan(null)}
-                            className="w-full text-xs text-slate-500"
-                          >
-                            Otkaži odabir
-                          </Button>
-                        </div>
-                      ) : (
-                        <Button
-                          onClick={() => setSelectedPlan(plan.id)}
-                          className={`w-full text-xs font-bold ${
+                          onClick={() => setSelectedPlan(isSelected ? null : plan.id)}
+                          className={`w-full text-xs font-bold transition-all ${
                             plan.popular
-                              ? 'bg-emerald-600 hover:bg-emerald-700 text-white shadow-md'
-                              : 'bg-[#003D7A] hover:bg-[#002D5A] text-white'
+                              ? 'bg-[#5df0a8] hover:bg-[#4de69c] text-[#04060f] shadow-[0_0_15px_rgba(93,240,168,0.3)]'
+                              : 'bg-white/10 hover:bg-white/15 text-white'
                           }`}
                         >
-                          <CreditCard className="h-3.5 w-3.5 mr-1.5" />
-                          Odaberi {plan.name}
+                          {isSelected ? 'Sakrij opcije plaćanja' : 'Odaberi ovaj paket'}
                         </Button>
-                      )}
-                    </div>
-                  </CardContent>
-                </Card>
+
+                        {/* PayPal Container */}
+                        {isSelected && (
+                          <div className="p-3 rounded-xl bg-black/60 border border-white/10 mt-3 space-y-2">
+                            <div id={`paypal-button-${plan.id}`} className="min-h-[44px]" />
+                            <Button
+                              size="sm"
+                              variant="ghost"
+                              disabled={activatingDirect}
+                              onClick={() => handleInstantSimulateActivation(plan)}
+                              className="w-full text-[11px] text-slate-400 hover:text-white"
+                            >
+                              {activatingDirect ? 'Aktivacija...' : 'Direktna aktivacija (Test & Demo mod)'}
+                            </Button>
+                          </div>
+                        )}
+                      </div>
+                    )}
+                  </div>
+                </div>
               );
             })}
           </div>
 
-          {/* In-Depth Feature Comparison Table */}
-          <div className="bg-white rounded-2xl border border-slate-200 shadow-sm p-6 sm:p-8 mb-16">
-            <div className="text-center max-w-2xl mx-auto mb-8">
-              <h2 className="text-2xl font-bold text-slate-900">
-                Detaljno poređenje: Freemium vs Premium
-              </h2>
-              <p className="text-sm text-slate-600 mt-1">
-                Pregled mogućnosti po nivoima pretplate i servisima
-              </p>
+          {/* Security & Guarantee Trust Banner */}
+          <div className="glass-panel p-6 rounded-2xl max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 text-center text-xs text-slate-300">
+            <div className="flex flex-col items-center">
+              <ShieldCheck className="w-6 h-6 text-[#5df0a8] mb-2" />
+              <strong className="text-white text-sm">100% In-Memory Sigurnost</strong>
+              <p className="text-slate-400 mt-1">Vaši lični podaci i JMBG ne pohranjuju se na baze podataka.</p>
             </div>
-
-            <div className="overflow-x-auto">
-              <table className="w-full text-xs text-left">
-                <thead>
-                  <tr className="border-b border-slate-200 bg-slate-50">
-                    <th className="p-3 font-bold text-slate-900 w-2/5">Funkcija / Mogućnost</th>
-                    <th className="p-3 font-bold text-slate-700 text-center">Freemium</th>
-                    <th className="p-3 font-bold text-emerald-700 text-center bg-emerald-50/50">Građanski PRO</th>
-                    <th className="p-3 font-bold text-blue-700 text-center">Dijaspora VIP</th>
-                    <th className="p-3 font-bold text-indigo-700 text-center">Poslovni PRO</th>
-                  </tr>
-                </thead>
-                <tbody className="divide-y divide-slate-100">
-                  <tr>
-                    <td className="p-3 font-medium text-slate-800">Pretraga 160+ općina i institucija</td>
-                    <td className="p-3 text-center text-emerald-600 font-bold">✓ Da</td>
-                    <td className="p-3 text-center text-emerald-600 font-bold bg-emerald-50/30">✓ Da</td>
-                    <td className="p-3 text-center text-emerald-600 font-bold">✓ Da</td>
-                    <td className="p-3 text-center text-emerald-600 font-bold">✓ Da</td>
-                  </tr>
-                  <tr>
-                    <td className="p-3 font-medium text-slate-800">Preuzimanje javnih PDF obrazaca</td>
-                    <td className="p-3 text-center text-emerald-600 font-bold">✓ Da</td>
-                    <td className="p-3 text-center text-emerald-600 font-bold bg-emerald-50/30">✓ Da</td>
-                    <td className="p-3 text-center text-emerald-600 font-bold">✓ Da</td>
-                    <td className="p-3 text-center text-emerald-600 font-bold">✓ Da</td>
-                  </tr>
-                  <tr>
-                    <td className="p-3 font-medium text-slate-800">8 Poreskih generatora (JS 3100, PD 3100, MIP-1023)</td>
-                    <td className="p-3 text-center text-slate-400">1 obrazac / mj.</td>
-                    <td className="p-3 text-center text-emerald-600 font-bold bg-emerald-50/30">✓ Neograničeno</td>
-                    <td className="p-3 text-center text-emerald-600 font-bold">✓ Neograničeno</td>
-                    <td className="p-3 text-center text-emerald-600 font-bold">✓ Neograničeno</td>
-                  </tr>
-                  <tr>
-                    <td className="p-3 font-medium text-slate-800">AI Form Filler sa provjerom JMBG i IBAN</td>
-                    <td className="p-3 text-center text-slate-400">1 upit</td>
-                    <td className="p-3 text-center text-emerald-600 font-bold bg-emerald-50/30">✓ Neograničeno</td>
-                    <td className="p-3 text-center text-emerald-600 font-bold">✓ Neograničeno</td>
-                    <td className="p-3 text-center text-emerald-600 font-bold">✓ Neograničeno</td>
-                  </tr>
-                  <tr>
-                    <td className="p-3 font-medium text-slate-800">Smart Studio: Transliteracija Latinica ↔ Ćirilica</td>
-                    <td className="p-3 text-center text-slate-400">1 tekst</td>
-                    <td className="p-3 text-center text-emerald-600 font-bold bg-emerald-50/30">✓ Neograničeno</td>
-                    <td className="p-3 text-center text-emerald-600 font-bold">✓ Neograničeno</td>
-                    <td className="p-3 text-center text-emerald-600 font-bold">✓ Neograničeno</td>
-                  </tr>
-                  <tr>
-                    <td className="p-3 font-medium text-slate-800">Prevod obrazaca na EN, DE i TR jezik</td>
-                    <td className="p-3 text-center text-slate-300">✗</td>
-                    <td className="p-3 text-center text-emerald-600 font-bold bg-emerald-50/30">✓ Da</td>
-                    <td className="p-3 text-center text-emerald-600 font-bold">✓ Da</td>
-                    <td className="p-3 text-center text-emerald-600 font-bold">✓ Da</td>
-                  </tr>
-                  <tr>
-                    <td className="p-3 font-medium text-slate-800">Offline PWA keširanje dokumenata na telefonu</td>
-                    <td className="p-3 text-center text-slate-300">✗</td>
-                    <td className="p-3 text-center text-emerald-600 font-bold bg-emerald-50/30">✓ Da</td>
-                    <td className="p-3 text-center text-emerald-600 font-bold">✓ Da</td>
-                    <td className="p-3 text-center text-emerald-600 font-bold">✓ Da</td>
-                  </tr>
-                  <tr>
-                    <td className="p-3 font-medium text-slate-800">Specijalizovani vodiči za dijasporu (Državljanstvo, CIPS)</td>
-                    <td className="p-3 text-center text-slate-300">✗</td>
-                    <td className="p-3 text-center text-slate-400">Osnovno</td>
-                    <td className="p-3 text-center text-emerald-600 font-bold">✓ VIP Vodiči</td>
-                    <td className="p-3 text-center text-emerald-600 font-bold">✓ VIP Vodiči</td>
-                  </tr>
-                  <tr>
-                    <td className="p-3 font-medium text-slate-800">Broj istovremenih korisnika</td>
-                    <td className="p-3 text-center text-slate-600">1</td>
-                    <td className="p-3 text-center text-slate-600 bg-emerald-50/30">1</td>
-                    <td className="p-3 text-center text-slate-600">1</td>
-                    <td className="p-3 text-center text-indigo-700 font-bold">Do 5 operatera</td>
-                  </tr>
-                  <tr>
-                    <td className="p-3 font-medium text-slate-800">R1 Račun za pravna lica</td>
-                    <td className="p-3 text-center text-slate-300">✗</td>
-                    <td className="p-3 text-center text-slate-300 bg-emerald-50/30">✗</td>
-                    <td className="p-3 text-center text-slate-300">✗</td>
-                    <td className="p-3 text-center text-indigo-700 font-bold">✓ Da (R1 PDV)</td>
-                  </tr>
-                </tbody>
-              </table>
+            <div className="flex flex-col items-center">
+              <Clock className="w-6 h-6 text-sky-400 mb-2" />
+              <strong className="text-white text-sm">Bez ugovorne obaveze</strong>
+              <p className="text-slate-400 mt-1">Otkazivanje pretplate jednim klikom u bilo kojem trenutku.</p>
             </div>
-          </div>
-
-          {/* Value / ROI Calculator & Benefits */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
-            <Card className="border-slate-200 p-6 bg-gradient-to-br from-white to-blue-50/30 shadow-sm">
-              <div className="w-10 h-10 rounded-xl bg-blue-100 flex items-center justify-center text-blue-700 mb-4">
-                <Clock className="w-5 h-5" />
-              </div>
-              <h3 className="font-bold text-slate-900 text-base mb-2">Ušteda od 4 do 6 sati</h3>
-              <p className="text-xs text-slate-600 leading-relaxed">
-                Umjesto višesatnog čekanja pred općinskim šalterima i ponovnog dolaska zbog pogrešno popunjenog obrasca, sve generišete i provjeravate od kuće za 3 minute.
-              </p>
-            </Card>
-
-            <Card className="border-slate-200 p-6 bg-gradient-to-br from-white to-emerald-50/30 shadow-sm">
-              <div className="w-10 h-10 rounded-xl bg-emerald-100 flex items-center justify-center text-emerald-700 mb-4">
-                <TrendingUp className="w-5 h-5" />
-              </div>
-              <h3 className="font-bold text-slate-900 text-base mb-2">Finansijska ušteda</h3>
-              <p className="text-xs text-slate-600 leading-relaxed">
-                Izbjegnite troškove prevoza, parkinga i plaćanja posredničkih agencija za proste administrativne obrasce koji vas mogu koštati između 50 i 150 KM po predmetu.
-              </p>
-            </Card>
-
-            <Card className="border-slate-200 p-6 bg-gradient-to-br from-white to-amber-50/30 shadow-sm">
-              <div className="w-10 h-10 rounded-xl bg-amber-100 flex items-center justify-center text-amber-700 mb-4">
-                <Lock className="w-5 h-5" />
-              </div>
-              <h3 className="font-bold text-slate-900 text-base mb-2">100% Privatnost i JMBG Zaštita</h3>
-              <p className="text-xs text-slate-600 leading-relaxed">
-                Aplikacija koristi In-Memory arhitekturu. Vaš JMBG, lični podaci i podaci o radnicima obrađuju se lokalno u vašem pregledniku i ne pohranjuju se na udaljene servere.
-              </p>
-            </Card>
-          </div>
-
-          {/* FAQ section */}
-          <div className="bg-slate-100/80 rounded-2xl p-6 sm:p-8 max-w-3xl mx-auto">
-            <h3 className="text-lg font-bold text-slate-900 mb-4 flex items-center gap-2">
-              <HelpCircle className="w-5 h-5 text-[#003D7A]" />
-              Često postavljana pitanja o pretplati
-            </h3>
-            <div className="space-y-4 text-xs text-slate-700">
-              <div>
-                <strong className="block text-slate-900 mb-1">Mogu li koristiti aplikaciju potpuno besplatno?</strong>
-                Da! Freemium paket je trajno besplatan i omogućava pretragu svih 160+ općina u BiH i preuzimanje javnih obrazaca bez ikakvog unosa kartice.
-              </div>
-              <div>
-                <strong className="block text-slate-900 mb-1">Mogu li otkazati pretplatu u bilo kojem trenutku?</strong>
-                Apsolutno. Nema ugovorne obaveze. Možete otkazati pretplatu jednim klikom u vašem profilu ili putem PayPal računa.
-              </div>
-              <div>
-                <strong className="block text-slate-900 mb-1">Koji načini plaćanja su podržani?</strong>
-                Podržane su sve kreditne i debitne kartice (Visa, Mastercard, Maestro) putem zaštićenog PayPal gateway-a, kao i direktna uplata na račun za pravna lica (R1 faktura).
-              </div>
+            <div className="flex flex-col items-center">
+              <CreditCard className="w-6 h-6 text-amber-400 mb-2" />
+              <strong className="text-white text-sm">Fiskalni R1 Račun</strong>
+              <p className="text-slate-400 mt-1">Dostupan za sva pravna lica i obrte registrovane u BiH.</p>
             </div>
           </div>
         </div>

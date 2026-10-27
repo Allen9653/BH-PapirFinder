@@ -13,10 +13,7 @@
 
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="robots" content="index, follow" />
-  <link rel="canonical" href="https://bhpapirfinder.ba" />
-  <link rel="icon" href="/icon-192x192.png" type="image/png" />
-  
+  <link rel="icon" href="/icon-192x192.png" type="image/png">
   <title>BH PapirFinder - Dokumenti i Forme</title>
   <meta name="description" content="Pronađite besplatne vladine obrasce i dokumente u BiH." />
   <meta name="author" content="BH PapirFinder" />
@@ -25,20 +22,22 @@
   <link rel="manifest" href="/manifest.json" />
 
   <!-- Apple iOS PWA Meta Tags -->
-  <meta name="apple-mobile-web-app-capable" content="yes" />
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-  <meta name="apple-mobile-web-app-title" content="PapirFinder" />
-  <link rel="apple-touch-icon" sizes="192x192" href="/icon-192x192.png" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="PapirFinder">
+  <link rel="apple-touch-icon" href="/icon-192x192.png">
 
   <!-- Theme Color -->
-  <meta name="theme-color" content="#003D7A" />
+  <meta name="theme-color" content="#003D7A">
 
-  <!-- Open Graph / Facebook -->
-  <meta property="og:site_name" content="BH PapirFinder" />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://bhpapirfinder.ba" />
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://www.papir-finder.com/" />
+
+  <!-- Open Graph -->
   <meta property="og:title" content="BH PapirFinder - Dokumenti i Forme" />
   <meta property="og:description" content="Pronađite besplatne vladine obrasce i dokumente u BiH." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.papir-finder.com/" />
   <meta property="og:image" content="https://mgx-backend-cdn.metadl.com/generate/images/446618/2026-04-05/ccde22a1-a117-4e5c-bff0-3983a1c1c21c.png" />
 
   <!-- Twitter Card -->
@@ -46,46 +45,23 @@
   <meta name="twitter:title" content="BH PapirFinder - Dokumenti i Forme" />
   <meta name="twitter:description" content="Pronađite besplatne vladine obrasce i dokumente u BiH." />
   <meta name="twitter:image" content="https://mgx-backend-cdn.metadl.com/generate/images/446618/2026-04-05/ccde22a1-a117-4e5c-bff0-3983a1c1c21c.png" />
-
-  <!-- Structured Data (Schema.org) -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "B&H Assistant d.o.o.",
-    "alternateName": "BH PapirFinder",
-    "url": "https://bhpapirfinder.ba",
-    "email": "info@bh-assistant.ba",
-    "telephone": "+387 62 580 207",
-    "taxID": "4219296620005",
-    "sameAs": [
-      "https://www.bh-assistant.ba"
-    ],
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Bulevar Ezhera Eze Arnautovića 8",
-      "postalCode": "72000",
-      "addressLocality": "Zenica",
-      "addressCountry": "BA"
-    }
-  }
-  </script>
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "B&H Assistant d.o.o.", "alternateName": "BH PapirFinder", "url": "https://www.papir-finder.com", "email": "info@bh-assistant.ba", "telephone": "+387 62 580 207", "taxID": "4219296620005", "sameAs": ["https://www.bh-assistant.ba", "https://bhpapirfinder.ba"], "address": {"@type": "PostalAddress", "streetAddress": "Bulevar Ezhera Eze Arnautovića 8", "postalCode": "72000", "addressLocality": "Zenica", "addressCountry": "BA"}}</script>
 </head>
 
 <body>
   <div id="root"></div>
   <script type="module" src="/src/main.tsx"></script>
-
+  
   <!-- Service Worker Registration -->
   <script>
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', () => {
         navigator.serviceWorker.register('/sw.js')
           .then((registration) => {
-            console.log('Service Worker uspješno registrovan:', registration);
+            console.log('Service Worker registered successfully:', registration);
           })
           .catch((error) => {
-            console.log('Greška pri registraciji Service Workera:', error);
+            console.log('Service Worker registration failed:', error);
           });
       });
     }

@@ -203,10 +203,10 @@ export default function FAQ() {
               <button
                 type="button"
                 onClick={() => setActiveCategory('all')}
-                className={`px-3 py-1.5 rounded-lg text-xs font-medium transition-all ${
+                className={`px-3 py-1.5 rounded-lg text-xs font-semibold transition-all ${
                   activeCategory === 'all'
-                    ? 'bg-amber-400 text-slate-950 font-semibold shadow-sm'
-                    : 'bg-white/10 text-white hover:bg-white/20'
+                    ? 'bg-[#5df0a8] text-[#04060f] shadow-[0_0_12px_rgba(93,240,168,0.3)]'
+                    : 'bg-white/5 text-slate-300 hover:text-white hover:bg-white/10'
                 }`}
               >
                 Sva pitanja ({FAQ_DATA.length})
@@ -214,34 +214,34 @@ export default function FAQ() {
               <button
                 type="button"
                 onClick={() => setActiveCategory('legal')}
-                className={`inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-medium transition-all ${
+                className={`inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-semibold transition-all ${
                   activeCategory === 'legal'
-                    ? 'bg-amber-400 text-slate-950 font-semibold shadow-sm'
-                    : 'bg-white/10 text-white hover:bg-white/20'
+                    ? 'bg-[#5df0a8] text-[#04060f] shadow-[0_0_12px_rgba(93,240,168,0.3)]'
+                    : 'bg-white/5 text-slate-300 hover:text-white hover:bg-white/10'
                 }`}
               >
                 <Scale className="w-3.5 h-3.5" />
-                O platformi i pravnoj valjanosti (3)
+                Pravna valjanost (3)
               </button>
               <button
                 type="button"
                 onClick={() => setActiveCategory('security')}
-                className={`inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-medium transition-all ${
+                className={`inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-semibold transition-all ${
                   activeCategory === 'security'
-                    ? 'bg-amber-400 text-slate-950 font-semibold shadow-sm'
-                    : 'bg-white/10 text-white hover:bg-white/20'
+                    ? 'bg-[#5df0a8] text-[#04060f] shadow-[0_0_12px_rgba(93,240,168,0.3)]'
+                    : 'bg-white/5 text-slate-300 hover:text-white hover:bg-white/10'
                 }`}
               >
                 <ShieldCheck className="w-3.5 h-3.5" />
-                Sigurnost podataka i privatnost (3)
+                Sigurnost i privatnost (3)
               </button>
               <button
                 type="button"
                 onClick={() => setActiveCategory('technical')}
-                className={`inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-medium transition-all ${
+                className={`inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-semibold transition-all ${
                   activeCategory === 'technical'
-                    ? 'bg-amber-400 text-slate-950 font-semibold shadow-sm'
-                    : 'bg-white/10 text-white hover:bg-white/20'
+                    ? 'bg-[#5df0a8] text-[#04060f] shadow-[0_0_12px_rgba(93,240,168,0.3)]'
+                    : 'bg-white/5 text-slate-300 hover:text-white hover:bg-white/10'
                 }`}
               >
                 <Wrench className="w-3.5 h-3.5" />
@@ -253,52 +253,52 @@ export default function FAQ() {
 
         {/* Quick Highlights Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-          <div className="p-4 rounded-xl bg-white border border-slate-200/80 shadow-sm flex items-start gap-3">
-            <div className="w-10 h-10 rounded-lg bg-emerald-50 text-emerald-600 flex items-center justify-center shrink-0">
+          <div className="glass-panel p-5 rounded-2xl flex items-start gap-3.5">
+            <div className="w-10 h-10 rounded-xl bg-[#5df0a8]/10 text-[#5df0a8] border border-[#5df0a8]/30 flex items-center justify-center shrink-0">
               <CheckCircle2 className="w-5 h-5" />
             </div>
             <div>
-              <h4 className="text-sm font-bold text-slate-900">100% Zvanični Formati</h4>
-              <p className="text-xs text-slate-600 mt-0.5">
+              <h4 className="text-sm font-bold text-white">100% Zvanični Formati</h4>
+              <p className="text-xs text-slate-400 mt-1 leading-relaxed">
                 Obrasci za FBiH, RS i Brčko usklađeni sa propisima nadležnih poreznih uprava.
               </p>
             </div>
           </div>
 
-          <div className="p-4 rounded-xl bg-white border border-slate-200/80 shadow-sm flex items-start gap-3">
-            <div className="w-10 h-10 rounded-lg bg-blue-50 text-blue-600 flex items-center justify-center shrink-0">
+          <div className="glass-panel p-5 rounded-2xl flex items-start gap-3.5">
+            <div className="w-10 h-10 rounded-xl bg-sky-500/10 text-sky-400 border border-sky-500/30 flex items-center justify-center shrink-0">
               <Clock className="w-5 h-5" />
             </div>
             <div>
-              <h4 className="text-sm font-bold text-slate-900">Privatnost i 5h Pravilo</h4>
-              <p className="text-xs text-slate-600 mt-0.5">
-                In-memory klijentska obrada; privremeni linkovi se trajno brišu nakon 5 sati.
+              <h4 className="text-sm font-bold text-white">Privatnost i 5h Pravilo</h4>
+              <p className="text-xs text-slate-400 mt-1 leading-relaxed">
+                In-memory obrada; privremeni linkovi se trajno brišu nakon 5 sati.
               </p>
             </div>
           </div>
 
-          <div className="p-4 rounded-xl bg-white border border-slate-200/80 shadow-sm flex items-start gap-3">
-            <div className="w-10 h-10 rounded-lg bg-amber-50 text-amber-600 flex items-center justify-center shrink-0">
+          <div className="glass-panel p-5 rounded-2xl flex items-start gap-3.5">
+            <div className="w-10 h-10 rounded-xl bg-amber-500/10 text-amber-400 border border-amber-500/30 flex items-center justify-center shrink-0">
               <FileText className="w-5 h-5" />
             </div>
             <div>
-              <h4 className="text-sm font-bold text-slate-900">Latinica i Ćirilica</h4>
-              <p className="text-xs text-slate-600 mt-0.5">
+              <h4 className="text-sm font-bold text-white">Latinica i Ćirilica</h4>
+              <p className="text-xs text-slate-400 mt-1 leading-relaxed">
                 Puna ravnopravnost pisama uz podršku za zvanične obrasce Poreske uprave RS.
               </p>
             </div>
           </div>
         </div>
 
-        {/* FAQ Accordion List */}
-        <div className="bg-white rounded-2xl border border-slate-200/80 shadow-sm p-4 md:p-6 space-y-4">
+        {/* FAQ Accordion List with Frosted Glass styling */}
+        <div className="glass-panel rounded-2xl p-4 md:p-6 space-y-4">
           {filteredItems.length === 0 ? (
             <div className="text-center py-12">
-              <p className="text-slate-500 font-medium">Nema rezultata za odabrani pojam pretrage.</p>
+              <p className="text-slate-400 font-medium text-sm">Nema rezultata za odabrani pojam pretrage.</p>
               <Button
                 variant="outline"
                 size="sm"
-                className="mt-3"
+                className="mt-3 border-white/10 text-slate-200"
                 onClick={() => {
                   setSearchQuery('');
                   setActiveCategory('all');
@@ -315,16 +315,16 @@ export default function FAQ() {
                   <AccordionItem
                     key={item.id}
                     value={item.id}
-                    className="border border-slate-100 rounded-xl px-4 py-1 data-[state=open]:bg-slate-50/60 transition-colors"
+                    className="border border-white/10 rounded-xl px-4 py-1 data-[state=open]:bg-white/5 data-[state=open]:border-[#5df0a8]/30 transition-all"
                   >
-                    <AccordionTrigger className="text-left font-semibold text-slate-900 hover:text-blue-900 text-sm md:text-base py-3">
+                    <AccordionTrigger className="text-left font-semibold text-white hover:text-[#5df0a8] text-sm md:text-base py-3.5">
                       <div className="flex items-center gap-3 pr-2">
-                        <div className="w-8 h-8 rounded-lg bg-blue-50 text-blue-700 flex items-center justify-center shrink-0">
+                        <div className="w-8 h-8 rounded-lg bg-white/5 border border-white/10 text-[#5df0a8] flex items-center justify-center shrink-0">
                           <Icon className="w-4 h-4" />
                         </div>
                         <div className="flex-1">
                           <div className="flex items-center gap-2 mb-1">
-                            <Badge variant="secondary" className="text-[10px] py-0 px-2 font-medium bg-slate-100 text-slate-700">
+                            <Badge variant="outline" className="text-[10px] py-0 px-2 font-mono text-slate-400 border-white/10">
                               {item.badge}
                             </Badge>
                           </div>
@@ -332,7 +332,7 @@ export default function FAQ() {
                         </div>
                       </div>
                     </AccordionTrigger>
-                    <AccordionContent className="text-slate-700 text-sm leading-relaxed pl-11 pt-1 pb-4">
+                    <AccordionContent className="text-slate-300 text-sm leading-relaxed pl-11 pt-1 pb-4">
                       {item.answer}
                     </AccordionContent>
                   </AccordionItem>
@@ -343,27 +343,27 @@ export default function FAQ() {
         </div>
 
         {/* Call to action: Generator & 8 JS Forms */}
-        <div className="rounded-2xl border border-blue-200 bg-gradient-to-br from-blue-50 to-indigo-50 p-6 md:p-8 flex flex-col md:flex-row items-center justify-between gap-6 shadow-sm">
+        <div className="glass-panel-glow rounded-3xl p-6 md:p-8 flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="space-y-2">
-            <span className="text-xs font-bold uppercase tracking-wider text-blue-700">
-              Isprobajte u praksi
+            <span className="text-xs font-mono font-bold uppercase tracking-wider text-[#5df0a8]">
+              Automatsko popunjavanje
             </span>
-            <h3 className="text-lg md:text-xl font-bold text-slate-900">
+            <h3 className="text-lg md:text-xl font-bold text-white">
               Generišite zvanične JS obrasce za prijavu radnika u nekoliko klikova
             </h3>
-            <p className="text-sm text-slate-600 max-w-xl">
+            <p className="text-sm text-slate-300 max-w-xl">
               Isprobajte centralni generator za FBiH (JS 3100, 3110, 3120), Republiku Srpsku (PD 3100, 3110, 3120 sa ćiriličnim ispisom) i Brčko Distrikt (MIP-1023 i JS-BD).
             </p>
           </div>
           <div className="flex flex-col sm:flex-row gap-3 shrink-0">
             <Link to="/generator">
-              <Button className="bg-[#003D7A] hover:bg-[#002B5C] text-white shadow-md flex items-center gap-2">
+              <Button className="bg-[#5df0a8] hover:bg-[#4ae098] text-[#04060f] font-bold shadow-[0_0_15px_rgba(93,240,168,0.3)] flex items-center gap-2">
                 Otvori Generator
                 <ArrowRight className="w-4 h-4" />
               </Button>
             </Link>
             <Link to="/subscription">
-              <Button variant="outline" className="border-blue-300 text-blue-900 hover:bg-blue-100/50">
+              <Button variant="outline" className="border-white/10 bg-white/5 hover:bg-white/10 text-white">
                 Pregled Paketa
               </Button>
             </Link>

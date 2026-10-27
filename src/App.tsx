@@ -32,6 +32,7 @@ import AuditLog from './pages/AuditLog';
 import DeleteAccount from './pages/DeleteAccount';
 import Dashboard from './pages/Dashboard';
 import AIChatbot from './components/AIChatbot';
+import InteractiveGlobeCanvas from './components/InteractiveGlobeCanvas';
 
 const queryClient = new QueryClient();
 
@@ -40,6 +41,8 @@ const App = () => (
     <QueryClientProvider client={queryClient}>
       <LanguageProvider>
         <TooltipProvider>
+          {/* Global WebGL Interactive 3D Earth Globe Canvas Background */}
+          <InteractiveGlobeCanvas />
           <Toaster />
           <BrowserRouter>
             {/* Subscription Expiry Notification Banner */}

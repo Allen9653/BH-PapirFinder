@@ -22,7 +22,9 @@ import {
   Pencil,
   Languages,
   Printer,
+  Star,
 } from 'lucide-react';
+import { safeOpenExternal } from '@/lib/security';
 import {
   getMunicipalityBySlug,
   getAllMunicipalities,
@@ -463,6 +465,14 @@ const MunicipalityForms = () => {
                               <Badge variant="outline" className="text-xs">
                                 {localizeDbText(form.category)}
                               </Badge>
+                              <span
+                                className="inline-flex items-center gap-1 text-xs font-semibold text-amber-800 bg-amber-50 px-2 py-0.5 rounded border border-amber-200 cursor-pointer hover:bg-amber-100 transition-colors"
+                                onClick={() => navigate(`/form/${form.id}?tab=reviews`)}
+                                title="Pogledaj ocjene i tačnost ovog obrasca"
+                              >
+                                <Star className="h-3 w-3 fill-amber-400 text-amber-500" />
+                                4.8 ★
+                              </span>
                               {form.source === 'supabase' && (
                                 <Badge variant="secondary" className="text-xs">
                                   <Database className="h-3 w-3 mr-1 flex-shrink-0" />
@@ -501,7 +511,7 @@ const MunicipalityForms = () => {
                               className="bg-[#003D7A] hover:bg-[#002A5A]"
                               onClick={() => {
                                 if (hasAccess) {
-                                  window.open(form.pdfUrl, '_blank', 'noopener,noreferrer');
+                                  safeOpenExternal(form.pdfUrl);
                                 } else {
                                   navigate('/subscription');
                                 }
@@ -509,6 +519,17 @@ const MunicipalityForms = () => {
                             >
                               <Download className="h-4 w-4 mr-1 flex-shrink-0" />
                               {t('common.download')}
+                            </Button>
+
+                            {/* Print-Friendly Mode navigation */}
+                            <Button
+                              size="sm"
+                              variant="outline"
+                              className="border-slate-300 text-slate-800 hover:bg-slate-100"
+                              onClick={() => navigate(`/form/${form.id}?mode=print`)}
+                            >
+                              <Printer className="h-4 w-4 mr-1 flex-shrink-0 text-[#003D7A]" />
+                              {t('common.print')}
                             </Button>
 
                             <Button
@@ -525,31 +546,10 @@ const MunicipalityForms = () => {
                               size="sm"
                               variant="outline"
                               className="border-amber-600 text-amber-700 hover:bg-amber-50"
-                              onClick={() => navigate(`/form/${form.id}?mode=edit`)}
+                              onClick={() => navigate(`/form/${form.id}?tab=reviews`)}
                             >
-                              <Pencil className="h-4 w-4 mr-1 flex-shrink-0" />
-                              {t('common.edit')}
-                            </Button>
-
-                            <Button
-                              size="sm"
-                              variant="outline"
-                              className="hidden sm:flex"
-                              onClick={() => {
-                                if (hasAccess) {
-                                  const printWindow = window.open(form.pdfUrl, '_blank');
-                                  if (printWindow) {
-                                    printWindow.addEventListener('load', () => {
-                                      printWindow.print();
-                                    });
-                                  }
-                                } else {
-                                  navigate('/subscription');
-                                }
-                              }}
-                            >
-                              <Printer className="h-4 w-4 mr-1 flex-shrink-0" />
-                              {t('common.print')}
+                              <Star className="h-4 w-4 mr-1 flex-shrink-0 fill-amber-400 text-amber-500" />
+                              Ocjene
                             </Button>
 
                             <Button

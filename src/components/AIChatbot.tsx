@@ -233,7 +233,7 @@ const AIChatbot: React.FC = () => {
     return (
       <button
         onClick={() => setIsOpen(true)}
-        className="fixed bottom-6 right-6 bg-blue-600 hover:bg-blue-700 text-white rounded-full p-4 shadow-xl transition-all duration-300 hover:scale-110 animate-pulse hover:animate-none"
+        className="no-print floating-chatbot fixed bottom-6 right-6 bg-blue-600 hover:bg-blue-700 text-white rounded-full p-4 shadow-xl transition-all duration-300 hover:scale-110 animate-pulse hover:animate-none"
         style={{ zIndex: 99999 }}
         aria-label="Open AI Assistant"
         title="AI Asistent"
@@ -245,7 +245,7 @@ const AIChatbot: React.FC = () => {
 
   return (
     <div
-      className="fixed bottom-6 right-6 w-[380px] h-[560px] bg-white rounded-2xl shadow-2xl border border-gray-200 flex flex-col overflow-hidden"
+      className="no-print floating-chatbot fixed bottom-6 right-6 w-[380px] h-[560px] bg-white rounded-2xl shadow-2xl border border-gray-200 flex flex-col overflow-hidden"
       style={{ zIndex: 99999 }}
     >
       {/* Header */}
