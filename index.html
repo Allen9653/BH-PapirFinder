@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="bs">
+<html lang="bs" class="dark">
 
 <head>
   <!-- Google tag (gtag.js) -->
@@ -27,8 +27,8 @@
   <meta name="apple-mobile-web-app-title" content="PapirFinder">
   <link rel="apple-touch-icon" href="/icon-192x192.png">
 
-  <!-- Theme Color -->
-  <meta name="theme-color" content="#003D7A">
+  <!-- Theme Color: Deep obsidian matching space SaaS aesthetic -->
+  <meta name="theme-color" content="#04060f">
 
   <!-- Canonical URL -->
   <link rel="canonical" href="https://www.papir-finder.com/" />
@@ -48,20 +48,32 @@
   <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "B&H Assistant d.o.o.", "alternateName": "BH PapirFinder", "url": "https://www.papir-finder.com", "email": "info@bh-assistant.ba", "telephone": "+387 62 580 207", "taxID": "4219296620005", "sameAs": ["https://www.bh-assistant.ba", "https://bhpapirfinder.ba"], "address": {"@type": "PostalAddress", "streetAddress": "Bulevar Ezhera Eze Arnautovića 8", "postalCode": "72000", "addressLocality": "Zenica", "addressCountry": "BA"}}</script>
 </head>
 
-<body>
+<body class="bg-[#04060f] text-slate-100 min-h-screen">
   <div id="root"></div>
   <script type="module" src="/src/main.tsx"></script>
   
-  <!-- Service Worker Registration -->
+  <!-- Service Worker Registration & Live Update Handler -->
   <script>
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', () => {
         navigator.serviceWorker.register('/sw.js')
           .then((registration) => {
-            console.log('Service Worker registered successfully:', registration);
+            // Proactively check for newer versions
+            registration.update();
+            registration.addEventListener('updatefound', () => {
+              const installingWorker = registration.installing;
+              if (installingWorker) {
+                installingWorker.addEventListener('statechange', () => {
+                  if (installingWorker.state === 'installed' && navigator.serviceWorker.controller) {
+                    console.log('[SW] New version available, reloading for latest design...');
+                    window.location.reload();
+                  }
+                });
+              }
+            });
           })
           .catch((error) => {
-            console.log('Service Worker registration failed:', error);
+            console.warn('[SW] Registration notice:', error);
           });
       });
     }

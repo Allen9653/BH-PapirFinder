@@ -1,4 +1,4 @@
-const CACHE_NAME = 'bh-papirfinder-v2';
+const CACHE_NAME = 'bh-papirfinder-v4-cinematic-space';
 const PDF_CACHE_NAME = 'bh-papirfinder-pdfs-v1';
 
 const urlsToCache = [
@@ -11,7 +11,7 @@ const urlsToCache = [
 const PDF_PATTERNS = ['.pdf', '.PDF'];
 const PDF_CONTENT_TYPES = ['application/pdf'];
 
-// Install event - cache essential files
+// Install event - cache essential files & activate immediately
 self.addEventListener('install', (event) => {
   event.waitUntil(
     caches.open(CACHE_NAME).then((cache) => {
@@ -21,7 +21,7 @@ self.addEventListener('install', (event) => {
   self.skipWaiting();
 });
 
-// Activate event - clean up old caches
+// Activate event - clean up all old caches
 self.addEventListener('activate', (event) => {
   const validCaches = [CACHE_NAME, PDF_CACHE_NAME];
   event.waitUntil(
@@ -29,13 +29,13 @@ self.addEventListener('activate', (event) => {
       return Promise.all(
         cacheNames.map((cacheName) => {
           if (!validCaches.includes(cacheName)) {
+            console.log('[SW] Deleting old cache:', cacheName);
             return caches.delete(cacheName);
           }
         })
       );
-    })
+    }).then(() => self.clients.claim())
   );
-  self.clients.claim();
 });
 
 // Check if a URL is a PDF
@@ -44,8 +44,7 @@ function isPdfRequest(url) {
   return PDF_PATTERNS.some((ext) => pathname.endsWith(ext));
 }
 
-// Fetch event - serve from cache, fallback to network
-// PDFs are cached in a separate cache for offline access
+// Fetch event - REAL network-first for pages and assets, fallback to cache
 self.addEventListener('fetch', (event) => {
   const requestUrl = event.request.url;
 
@@ -55,34 +54,30 @@ self.addEventListener('fetch', (event) => {
     return;
   }
 
-  // Handle regular requests with network-first, cache-fallback strategy
+  // Network-First strategy: fetch fresh content from network, update cache, fallback to cache if offline
   event.respondWith(
-    caches.match(event.request).then((response) => {
-      if (response) {
-        return response;
-      }
-
-      const fetchRequest = event.request.clone();
-
-      return fetch(fetchRequest).then((response) => {
-        if (!response || response.status !== 200 || response.type !== 'basic') {
-          return response;
+    fetch(event.request)
+      .then((networkResponse) => {
+        if (networkResponse && networkResponse.status === 200 && networkResponse.type === 'basic') {
+          const responseToCache = networkResponse.clone();
+          caches.open(CACHE_NAME).then((cache) => {
+            cache.put(event.request, responseToCache);
+          });
         }
-
-        const responseToCache = response.clone();
-        caches.open(CACHE_NAME).then((cache) => {
-          cache.put(event.request, responseToCache);
+        return networkResponse;
+      })
+      .catch(() => {
+        // Fallback to cache if network fails (offline mode)
+        return caches.match(event.request).then((cachedResponse) => {
+          if (cachedResponse) {
+            return cachedResponse;
+          }
+          if (event.request.mode === 'navigate') {
+            return caches.match('/index.html');
+          }
+          return new Response('Offline', { status: 503, statusText: 'Service Unavailable' });
         });
-
-        return response;
-      }).catch(() => {
-        // Offline fallback for navigation requests
-        if (event.request.mode === 'navigate') {
-          return caches.match('/index.html');
-        }
-        return new Response('Offline', { status: 503, statusText: 'Service Unavailable' });
-      });
-    })
+      })
   );
 });
 

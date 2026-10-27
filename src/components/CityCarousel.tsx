@@ -10,8 +10,8 @@ interface CitySlide {
 const cities: CitySlide[] = [
   {
     name: 'Mostar',
-    image: '/assets/mostar-city.png',
-    alt: 'Stari grad Mostar',
+    image: 'https://images.unsplash.com/photo-1565008447742-97f6f38c985c?w=600&h=400&fit=crop&q=80',
+    alt: 'Stari most u Mostaru',
   },
   {
     name: 'Sarajevo',
@@ -20,8 +20,8 @@ const cities: CitySlide[] = [
   },
   {
     name: 'Jajce',
-    image: '/assets/jajce-city.png',
-    alt: 'Grad Jajce',
+    image: 'https://images.unsplash.com/photo-1542314831-c6a4d2729906?w=600&h=400&fit=crop&q=80',
+    alt: 'Vodopad i stari grad Jajce',
   },
   {
     name: 'Banja Luka',
@@ -35,8 +35,8 @@ const cities: CitySlide[] = [
   },
   {
     name: 'Zenica',
-    image: '/assets/zenica-city.png',
-    alt: 'Grad Zenica',
+    image: 'https://images.unsplash.com/photo-1477959858617-67f30bc75b82?w=600&h=400&fit=crop&q=80',
+    alt: 'Panorama grada Zenica',
   },
 ];
 

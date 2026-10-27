@@ -8,7 +8,7 @@ import { createClient } from '@supabase/supabase-js';
 const getEnvVar = (key: string): string => {
   if (typeof window !== 'undefined') {
     // Klijentsko okruženje (Vite / Next.js browser)
-    // @ts-ignore
+    // @ts-expect-error window.__ENV runtime fallback
     return (window.__ENV?.[key]) || (import.meta?.env?.[key]) || '';
   }
   // Serversko / Build okruženje
@@ -514,13 +514,17 @@ function recordSearchLocally(query: string, resultsCount: number): void {
       created_at: new Date().toISOString(),
     });
     localStorage.setItem('bh_papirfinder_searches', JSON.stringify(searches.slice(0, 50)));
-  } catch {}
+  } catch {
+    // Silently ignore storage quota errors
+  }
 }
 
 function clearLocalSearchHistory(): void {
   try {
     localStorage.removeItem('bh_papirfinder_searches');
-  } catch {}
+  } catch {
+    // Silently ignore storage errors
+  }
 }
 
 function getLocalSearchHistory(): SearchLog[] {
@@ -555,6 +559,10 @@ function clearAllLocalData(): void {
     'bh_papirfinder_storage_version',
   ];
   keysToRemove.forEach(key => {
-    try { localStorage.removeItem(key); } catch {}
+    try {
+      localStorage.removeItem(key);
+    } catch {
+      // Ignore key removal failure
+    }
   });
 }
