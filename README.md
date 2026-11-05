@@ -42,8 +42,8 @@ Free Trial: 10 days after installation
 Region-Based Access: Free access for ZDK (Zenica-Doboj Canton), paid for other regions
 Multilingual Support: Bosnian (Latin), Serbian (Cyrillic), English, Turkish, German
 Subscription Plans:
-10 BAM for 5 days
-50 BAM for 30 days
+5 BAM for 5 days
+10 BAM for 30 days
 60 BAM for 12 months
 Document Features: Download, translate, share, print
 Admin Panel: Manage sponsors and application content
