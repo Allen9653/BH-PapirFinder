@@ -174,6 +174,7 @@ for (const source of updatedGovernmentFormSources) {
     formsCount: forms.length,
     forms,
     categories: source.categories,
+    notice: source.notice,
   });
 }
 

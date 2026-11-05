@@ -153,6 +153,37 @@ export const entityInstitutions: Institution[] = [
 // BRČKO DISTRIKT
 // ============================================================
 
+const brckoPoliceFormLinks: Array<[string, string, string, string]> = [
+  ['pbd-01', 'Obrazac prijave nestanka putne isprave', 'Lične isprave', 'https://policijabdbih.gov.ba/images/dokumenti/obrasci/jop/Prijava-nestanka-putne-isprave.pdf'],
+  ['pbd-02', 'Zahtjev za davanje podataka iz prekršajne evidencije', 'Prekršajna evidencija', 'https://policijabdbih.gov.ba/images/dokumenti/obrasci/jop/Zahtjev-za-davanje-podataka-iz-PE-lat.pdf'],
+  ['pbd-03', 'Zahtjev za izdavanje uvjerenja o nekažnjavanju', 'Uvjerenja', 'https://policijabdbih.gov.ba/images/dokumenti/obrasci/jkp/Obrazac-za-uvjerenje-latinica-novo.pdf'],
+  ['pbd-04', 'Zahtjev za izdavanje službene zabilješke', 'Uvjerenja', 'https://policijabdbih.gov.ba/images/dokumenti/obrasci/jsp/ZAHTJEV-izdavanje-sl-zabiljeske-lat.pdf'],
+  ['pbd-05', 'Zahtjev za rasknjižavanje kazne', 'Prekršajna evidencija', 'https://policijabdbih.gov.ba/images/dokumenti/obrasci/jsp/Zahtjev-za-rasknjizavanje-kazne-lat.pdf'],
+  ['pbd-06', 'Zahtjev za izdavanje odobrenja za obavljanje prometa na malo sa pirotehničkim sredstvima', 'Pirotehnika', 'https://policijabdbih.gov.ba/images/dokumenti/obrasci/jafk/Zahtjev-obavljanje-prometa-na-malo-pirotehnika26.pdf'],
+  ['pbd-07', 'Zahtjev za izdavanje odobrenja za nabavku pirotehničkih sredstava', 'Pirotehnika', 'https://policijabdbih.gov.ba/images/dokumenti/obrasci/jafk/Zahtjev-odobrenja-nabavku-pirotehnickih-sredstava-u-objektu26.pdf'],
+  ['pbd-08', 'Zahtjev za izdavanje odobrenja za izvođenje vatrometa', 'Pirotehnika', 'https://policijabdbih.gov.ba/images/dokumenti/obrasci/jafk/Zahtjev-izdavanje-odobrenja-izvodenje-vatrometa26.pdf'],
+  ['pbd-09', 'Zahtjev za pohađanje obuke za sticanje certifikata za obavljanje poslova privatne detektivske djelatnosti', 'Agencije za zaštitu', 'https://policijabdbih.gov.ba/images/dokumenti/obrasci/jafk/Zahtjev-certifikat-detektiv26.pdf'],
+  ['pbd-10', 'Zahtjev za izdavanje ovlaštenja za obavljanje poslova fizičke - tehničke zaštite', 'Agencije za zaštitu', 'https://policijabdbih.gov.ba/images/dokumenti/obrasci/jafk/Ovlastenje-za-rad-zastita26.pdf'],
+  ['pbd-11', 'Zahtjev za izdavanje legitimacije-iskaznice pripadniku obezbjeđenja', 'Agencije za zaštitu', 'https://policijabdbih.gov.ba/images/dokumenti/obrasci/jafk/Obrazac-legitimacija-obezbjedjenje26.pdf'],
+  ['pbd-12', 'Zahtjev za izdavanje odobrenja za rad Agencije', 'Agencije za zaštitu', 'https://policijabdbih.gov.ba/images/dokumenti/obrasci/jafk/Zahtjev-odobrenje-za-rad-Agencije26.pdf'],
+  ['pbd-13', 'Zahtjev za pregled poslovnih prostorija Agencije radi utvrđivanja propisanih uslova', 'Agencije za zaštitu', 'https://policijabdbih.gov.ba/images/dokumenti/obrasci/jafk/Obrazac-sjediste-agencije26.pdf'],
+  ['pbd-14', 'Zahtjev za posebno odobrenje za pratnju i osiguranje transporta novca i vrijednosnih predmeta', 'Agencije za zaštitu', 'https://policijabdbih.gov.ba/images/dokumenti/obrasci/jafk/Obrazac-transport-novca26.pdf'],
+  ['pbd-15', 'Zahtjev za odobrenje za prikupljanje dobrovoljnih priloga', 'Javni red', 'https://policijabdbih.gov.ba/images/dokumenti/obrasci/jafk/Zahtjev-prikupljanje-priloga26.pdf'],
+  ['pbd-16', 'Zahtjev za odobrenje za prikupljanje dobrovoljnih priloga (organizacija)', 'Javni red', 'https://policijabdbih.gov.ba/images/dokumenti/obrasci/jafk/Zahtjev-prikupljanje-priloga-organizacija26.pdf'],
+  ['pbd-17', 'Zahtjev za odobrenje kretanja teretnih vozila', 'Saobraćaj', 'https://policijabdbih.gov.ba/images/dokumenti/obrasci/jafk/Zahtjev-kretanje-teretnih-vozila26.pdf'],
+  ['pbd-18', 'Zahtjev za odobrenje privremene zabrane saobraćaja', 'Saobraćaj', 'https://policijabdbih.gov.ba/images/dokumenti/obrasci/jafk/Zahtjev-privremena-zabrana-saobracaja26.pdf'],
+  ['pbd-19', 'Zahtjev za odobrenje privremene zabrane saobraćaja (priredba i takmičenje)', 'Saobraćaj', 'https://policijabdbih.gov.ba/images/dokumenti/obrasci/jafk/Zahtjev-zabrana-saobracaja-priredba-takmicenje26.pdf'],
+  ['pbd-20', 'Zahtjev za odobrenje za nabavku oružja', 'Oružje', 'https://policijabdbih.gov.ba/images/dokumenti/obrasci/jafk/Zahtjev-nabavka-oruzja26.pdf'],
+  ['pbd-21', 'Zahtjev za odobrenje za nabavku municije', 'Oružje', 'https://policijabdbih.gov.ba/images/dokumenti/obrasci/jafk/Zahtjev-nabavka-municije26.pdf'],
+  ['pbd-22', 'Zahtjev za odobrenje nošenja ličnog naoružanja', 'Oružje', 'https://policijabdbih.gov.ba/images/dokumenti/obrasci/jafk/Zahtjev-odobrenje-nosenje-naoruzanja26.pdf'],
+  ['pbd-23', 'Zahtjev za dozvolu nošenja ličnog naoružanja', 'Oružje', 'https://policijabdbih.gov.ba/images/dokumenti/obrasci/jafk/Zahtjev-dozvola-nosenje-naoruzanja26.pdf'],
+  ['pbd-24', 'Zahtjev za produženje oružnog lista', 'Oružje', 'https://policijabdbih.gov.ba/images/dokumenti/obrasci/jafk/Zahtjev-produzenje-oruznoglista26.pdf'],
+  ['pbd-25', 'Zahtjev za registraciju oružja i izdavanje oružnog lista', 'Oružje', 'https://policijabdbih.gov.ba/images/dokumenti/obrasci/jafk/Zahtjev-registracija-izdavanje-oruznoglista26.pdf'],
+  ['pbd-26', 'Zahtjev za zamjenu oštećenog ili izgubljenog oružnog lista i preregistraciju', 'Oružje', 'https://policijabdbih.gov.ba/images/dokumenti/obrasci/jafk/Zahtjev-zamjena-oruznoglista-preregistracija26.pdf'],
+  ['pbd-27', 'Zahtjev za zamjenu ili produženje važenja oružnog lista', 'Oružje', 'https://policijabdbih.gov.ba/images/dokumenti/obrasci/jafk/Zahtjev-zamjena-oruznoglista26.pdf'],
+  ['pbd-28', 'Zahtjev za izdavanje potvrde', 'Potvrde', 'https://policijabdbih.gov.ba/images/dokumenti/obrasci/okc/ZAHTJEV-za-izdavanje-potvrde-lat.pdf'],
+];
+
 export const brckoInstitutions: Institution[] = [
   {
     id: 'vlada-bd',
@@ -175,11 +206,30 @@ export const brckoInstitutions: Institution[] = [
     level: 'district',
     category: 'Sigurnost',
     description: 'Policijske usluge i prijave u Brčko Distriktu',
-    website: 'https://www.policijabdbih.gov.ba',
+    website: 'https://policijabdbih.gov.ba',
     keywords: ['policija', 'Brčko', 'prijava', 'sigurnost', 'saobraćaj'],
+    forms: brckoPoliceFormLinks.map(([id, name, category, fileUrl]) => ({
+      id,
+      name,
+      description: name,
+      category,
+      fileUrl,
+      keywords: ['policija', 'Brčko', name.toLocaleLowerCase('bs-BA')],
+    })),
+  },
+  {
+    id: 'skupstina-brcko',
+    name: 'Skupština Brčko distrikta BiH',
+    shortName: 'Skupština BD',
+    level: 'district',
+    category: 'Javna uprava',
+    description: 'Službene informacije, važni dokumenti i javni konkursi Skupštine Brčko distrikta BiH',
+    website: 'https://skupstinabd.ba/index.php/sr/',
+    keywords: ['Skupština Brčko', 'važni dokumenti', 'javni konkursi', 'pristup informacijama'],
     forms: [
-      { id: 'pbd-1', name: 'Prijava prebivališta u BD', description: 'Prijava/odjava prebivališta u Brčko Distriktu', category: 'Prebivalište', keywords: ['prebivalište', 'Brčko', 'prijava'] },
-      { id: 'pbd-2', name: 'Zahtjev za odobrenje javnog skupa', description: 'Prijava javnog okupljanja u BD', category: 'Javni red', keywords: ['javni skup', 'okupljanje', 'Brčko'] },
+      { id: 'skupstina-bd-documents', name: 'Važni dokumenti', description: 'Važni dokumenti Skupštine Brčko distrikta BiH', category: 'Dokumenti', fileUrl: 'https://skupstinabd.ba/index.php/ba/vazni-dokumenti.html', keywords: ['dokumenti', 'akti', 'Skupština BD'] },
+      { id: 'skupstina-bd-contests', name: 'Javni konkursi', description: 'Javni konkursi Skupštine Brčko distrikta BiH', category: 'Javni konkursi', fileUrl: 'https://skupstinabd.ba/index.php/ba/javni-konkursi.html', keywords: ['javni konkurs', 'oglas', 'zapošljavanje'] },
+      { id: 'skupstina-bd-info-access', name: 'Pristup informacijama', description: 'Informacije o pristupu informacijama Skupštine Brčko distrikta BiH', category: 'Pristup informacijama', fileUrl: 'https://skupstinabd.ba/index.php/ba/pristup-informacijama/linkovi.html', keywords: ['pristup informacijama', 'informacije', 'zahtjev'] },
     ],
   },
 ];

@@ -45,10 +45,21 @@ export const municipalitiesDatabase: MunicipalityData[] = [
     canton: 'Kanton Sarajevo (KS)',
     entity: 'FBiH',
     urls: [
-      
       {
         main: 'https://starigrad.ba/',
         description: 'Službeni portal Općine Stari Grad Sarajevo'
+      },
+      {
+        forms: 'https://starigrad.ba/e-formulari/',
+        description: 'e-Formulari Općine Stari Grad Sarajevo'
+      },
+      {
+        main: 'https://starigrad.ba/javni-pozivi-konkursi-i-oglasi/',
+        description: 'Javni pozivi, konkursi i oglasi'
+      },
+      {
+        main: 'https://starigrad.ba/baza-podataka-nvo/',
+        description: 'Baza podataka nevladinih organizacija'
       }
     ],
     categories: ['Matični uredi', 'E-uprava', 'Uvjerenja', 'Građanska stanja'],
@@ -82,6 +93,10 @@ export const municipalitiesDatabase: MunicipalityData[] = [
       {
         main: 'https://opcinailidza.ba/',
         description: 'Službeni portal Općine Ilidža'
+      },
+      {
+        forms: 'https://opcinailidza.ba/e-formulari/',
+        description: 'e-Formulari Općine Ilidža'
       }
     ],
     categories: ['Urbanizam', 'Lokacijska informacija', 'Matični uredi', 'Uvjerenja'],
@@ -291,6 +306,15 @@ export const municipalitiesDatabase: MunicipalityData[] = [
       {
         main: 'https://zenica.ba/e-registar-administrativnih-postupaka/',
         description: 'E-registar Administrativnih postupaka'
+      },
+      {
+        main: 'https://zenica.ba/e-maticar/',
+        forms: 'https://zenica.ba/e-maticar/',
+        description: 'E-Matičar Grada Zenice'
+      },
+      {
+        main: 'https://zenica.ba/#e-servisi',
+        description: 'E-servisi Grada Zenice'
       }
     ],
     categories: ['Zdravstvo', 'E-uprava', 'Administrativni postupci'],
@@ -409,11 +433,21 @@ export const municipalitiesDatabase: MunicipalityData[] = [
     urls: [
       {
         main: 'https://zenica.ba/e-registar-administrativnih-postupaka/',
-        description: 'Obrasci – urbanizam, matični uredi, izdavanje uvjerenja'
+        forms: 'https://zenica.ba/e-registar-administrativnih-postupaka/',
+        description: 'E-registar administrativnih postupaka Grada Zenice'
+      },
+      {
+        main: 'https://zenica.ba/e-maticar/',
+        forms: 'https://zenica.ba/e-maticar/',
+        description: 'E-Matičar Grada Zenice'
+      },
+      {
+        main: 'https://zenica.ba/#e-servisi',
+        description: 'E-servisi Grada Zenice'
       }
     ],
-    categories: ['Urbanizam', 'Matični uredi', 'Uvjerenja'],
-    komentar: 'Sveobuhvatni gradski obrasci'
+    categories: ['Urbanizam', 'Matični uredi', 'Uvjerenja', 'E-uprava'],
+    komentar: 'Administrativni postupci, e-Matičar i e-servisi Grada Zenice'
   },
 
   // TUZLANSKI KANTON (TK)
@@ -428,18 +462,15 @@ export const municipalitiesDatabase: MunicipalityData[] = [
         description: 'Službena web-stranica Grada Tuzla'
       },
       {
-        main: 'https://www.ecitizen.ba/tuzla/eServices/eServicesSubcategory/2',
-        forms: 'https://www.ecitizen.ba/tuzla/eServices/eServicesSubcategory/2',
-        description: 'eCitizen – usluge Grada Tuzla, kategorija 2'
+        main: 'https://www.ecitizen.ba/tuzla/home',
+        forms: 'https://www.ecitizen.ba/tuzla/home',
+        description: 'eCitizen – elektronske usluge Grada Tuzla'
       }
     ],
     guidanceLinks: [
-      { label: 'eCitizen – usluge Grada Tuzla, kategorija 6', url: 'https://www.ecitizen.ba/tuzla/eServices/eServicesSubcategory/6' },
-      { label: 'eCitizen – usluge Grada Tuzla, kategorija 26', url: 'https://www.ecitizen.ba/tuzla/eServices/eServicesSubcategory/26' },
-      { label: 'eCitizen – usluge Grada Tuzla, kategorija 3', url: 'https://www.ecitizen.ba/tuzla/eServices/eServicesSubcategory/3' },
-      { label: 'eCitizen – usluge Grada Tuzla, kategorija 7', url: 'https://www.ecitizen.ba/tuzla/eServices/eServicesSubcategory/7' },
-      { label: 'eCitizen – usluge Grada Tuzla, kategorija 63', url: 'https://www.ecitizen.ba/tuzla/eServices/eServicesSubcategory/63' },
-      { label: 'eCitizen – usluge Grada Tuzla, kategorija 4', url: 'https://www.ecitizen.ba/tuzla/eServices/eServicesSubcategory/4' }
+      { label: 'ePortal – praćenje predmeta', url: 'https://eportal.tuzla.ba/Predmet' },
+      { label: 'e-Matičar Grada Tuzle', url: 'https://grad.tuzla.ba/e-maticar/' },
+      { label: 'e-Grunt', url: 'https://www.e-grunt.ba/' }
     ],
     categories: ['Opća uprava', 'Matični uredi', 'Uvjerenja'],
     komentar: 'Obrasci – zahtjev za uvjerenja, urbanizam, prijava boravka'
@@ -468,15 +499,16 @@ export const municipalitiesDatabase: MunicipalityData[] = [
     urls: [
       {
         main: 'https://banovici.gov.ba/zahtjevi/',
-        description: 'Obrasci – zahtjev za urbanističku saglasnost, lokacijsku informaciju, uvjerenja'
+        forms: 'https://banovici.gov.ba/zahtjevi/',
+        description: 'Zahtjevi i obrasci Općine Banovići'
       },
       {
         main: 'https://banovici.gov.ba/',
         description: 'Službena stranica Općine Banovići'
       }
     ],
-    categories: ['Urbanizam', 'Uvjerenja'],
-    komentar: 'Urbanistički obrasci i uvjerenja'
+    categories: ['Katastar', 'Urbanizam', 'Poljoprivreda', 'Matični uredi', 'Civilna zaštita', 'Uvjerenja'],
+    komentar: 'Službena stranica s više od 77 zahtjeva za katastar, urbanizam, poljoprivredu, matične knjige i civilnu zaštitu.'
   },
   {
     id: 'tk-celic',
@@ -628,11 +660,12 @@ export const municipalitiesDatabase: MunicipalityData[] = [
     urls: [
       {
         main: 'https://kladanj.ba/',
-        description: 'Službena web-stranica Općine Kladanj; digitalni obrasci trenutno nisu dostupni online'
+        description: 'Službena web-stranica Općine Kladanj'
       }
     ],
-    categories: [],
-    komentar: 'Digitalni obrasci trenutno nisu dostupni na e-Servisu. Korisnik može pripremiti e-mail zahtjev Službi za opću upravu.'
+    address: 'Kladanjske brigade br. 2, 75280 Kladanj',
+    categories: ['Matični uredi', 'Poticaji', 'Javni pozivi', 'Urbanizam', 'Privreda', 'Boračko-invalidska zaštita'],
+    komentar: 'Zahtjevi se predaju u fizičkoj šalter sali. Obrasci za matični ured, poticaje i javne pozive preuzimaju se iz pripadajućih sekcija zvanične stranice. Protokol: Kladanjske brigade br. 2, 75280 Kladanj.'
   },
   {
     id: 'tk-lukavac',
@@ -670,12 +703,16 @@ export const municipalitiesDatabase: MunicipalityData[] = [
     entity: 'FBiH',
     urls: [
       {
-        main: 'https://srebrenik.ba/obrasci/',
-        description: 'Obrasci – urbanistička saglasnost, lokacijska informacija, matični uredi'
+        main: 'https://www.srebrenik.ba/',
+        description: 'Službena web-stranica Općine Srebrenik'
+      },
+      {
+        forms: 'https://srebrenik.ba/e-uprava/',
+        description: 'e-Uprava i obrasci po nadležnim službama'
       }
     ],
-    categories: ['Urbanizam', 'Matični uredi'],
-    komentar: 'Urbanistička saglasnost i matični uredi'
+    categories: ['Prostorno uređenje', 'Civilna zaštita', 'Boračko-invalidska zaštita', 'Opća uprava', 'Poduzetništvo', 'Finansije', 'Katastar', 'Interna revizija'],
+    komentar: 'e-Uprava s obrascima Službe za prostorno uređenje i zaštitu okolice, civilnu zaštitu, boračko-invalidsku zaštitu i društvene djelatnosti, opću upravu, poduzetništvo, finansije i inspekcijski nadzor, geodetske i imovinsko-pravne poslove te internu reviziju.'
   },
   {
     id: 'tk-teocak',
@@ -893,10 +930,21 @@ export const municipalitiesDatabase: MunicipalityData[] = [
     canton: 'Srednjobosanski kanton (SBK)',
     entity: 'FBiH',
     urls: [
-      
+      {
+        main: 'https://novitravnik.gov.ba/',
+        description: 'Službena web-stranica Općine Novi Travnik'
+      },
+      {
+        forms: 'https://eregistar.gnt.gov.ba/administrativni-postupci/',
+        description: 'e-Registar administrativnih postupaka'
+      },
+      {
+        main: 'https://novitravnik.gov.ba/index.php/novosti/oglasi-i-natjecaji',
+        description: 'Oglasi i natječaji Općine Novi Travnik'
+      }
     ],
-    categories: ['Uvjerenja', 'Urbanizam'],
-    komentar: 'Uvjerenja i urbanistička dokumentacija'
+    categories: ['Uvjerenja', 'Urbanizam', 'Administrativni postupci', 'Javni oglasi'],
+    komentar: 'e-Registar administrativnih postupaka te oglasi i natječaji dostupni su na zvaničnim stranicama Općine.'
   },
   {
     id: 'sbk-vitez',
@@ -976,12 +1024,13 @@ export const municipalitiesDatabase: MunicipalityData[] = [
     entity: 'FBiH',
     urls: [
       {
-        main: 'https://www.mostar.ba/kategorija/sluzbeni-dokumenti/',
-        description: 'Obrasci – urbanizam, uvjerenja, matični uredi, socijalna zaštita'
+        main: 'https://csr-mostar.ba/zahtjevi-i-obrasci/',
+        forms: 'https://csr-mostar.ba/zahtjevi-i-obrasci/',
+        description: 'Zahtjevi i obrasci Centra za socijalni rad Grada Mostara'
       }
     ],
     categories: ['Urbanizam', 'Uvjerenja', 'Matični uredi', 'Socijalna zaštita'],
-    komentar: 'Obrasci – urbanizam, izdavanje uvjerenja, prijava boravka'
+    komentar: 'Direktni obrasci Centra za socijalni rad Mostar za dječiji doplatak, porodiljske naknade, medicinsko vještačenje, zdravstveno osiguranje, jednokratnu pomoć i socijalnu zaštitu.'
   },
   {
     id: 'hnk-capljina',
@@ -996,6 +1045,10 @@ export const municipalitiesDatabase: MunicipalityData[] = [
       {
         forms: 'https://capljina.ba/administrativni-postupci/',
         description: 'e-Registar administrativnih postupaka, obrazaca, potrebne dokumentacije i taksi'
+      },
+      {
+        main: 'https://capljina.ba/dokumenti/za-investitore/',
+        description: 'Dokumenti za investitore'
       }
     ],
     categories: ['Poslovi gradonačelnika', 'Proračun i financije', 'Opća uprava i zajednički poslovi'],
@@ -1054,10 +1107,16 @@ export const municipalitiesDatabase: MunicipalityData[] = [
     canton: 'Hercegovačko-neretvanski kanton (HNK)',
     entity: 'FBiH',
     urls: [
-      
+      { main: 'https://neum.ba/', description: 'Službena web-stranica Općine Neum' },
+      { forms: 'https://neum.ba/eDokumenti/sluzba-za-stambeno-komunalne-poslove-izgradnju-i-razvoj/', description: 'e-Dokumenti – stambeno-komunalni poslovi, izgradnja i razvoj' },
+      { forms: 'https://neum.ba/eDokumenti/sluzba-za-imovinsko-pravne-poslove-i-katastar-nekretnina/', description: 'e-Dokumenti – imovinsko-pravni poslovi i katastar nekretnina' },
+      { forms: 'https://neum.ba/eDokumenti/sluzba-za-financije-i-gospodarstvo/', description: 'e-Dokumenti – finansije i gospodarstvo' },
+      { forms: 'https://neum.ba/eDokumenti/sluzba-za-graditeljstvo-i-prostorno-uredenje/', description: 'e-Dokumenti – graditeljstvo i prostorno uređenje' },
+      { forms: 'https://neum.ba/eDokumenti/sluzba-za-opcu-upravu-i-drustvene-djelatnosti/', description: 'e-Dokumenti – opća uprava i društvene djelatnosti' },
+      { forms: 'https://neum.ba/eDokumenti/sluzba-za-civilnu-zastitu-i-vatrogastvo/', description: 'e-Dokumenti – civilna zaštita i vatrogastvo' }
     ],
-    categories: ['Uvjerenja', 'Urbanizam'],
-    komentar: 'Uvjerenja i urbanistička dokumentacija'
+    categories: ['Uvjerenja', 'Urbanizam', 'Katastar', 'Finansije', 'Opća uprava', 'Civilna zaštita'],
+    komentar: 'e-Dokumenti su organizovani po šest nadležnih općinskih službi.'
   },
   {
     id: 'hnk-prozor-rama',
@@ -1624,10 +1683,14 @@ export const municipalitiesDatabase: MunicipalityData[] = [
       {
         main: 'https://opstinains.net/',
         description: 'Službeni portal Opštine Istočno Novo Sarajevo'
+      },
+      {
+        forms: 'https://opstinains.net/lat/maticne-sluzbe/',
+        description: 'Informacije o matičnim službama'
       }
     ],
-    categories: ['Lokacijski uslovi', 'Urbanizam', 'Usluge i obrasci', 'Matični uredi'],
-    komentar: 'Zahtjev za izdavanje lokacijskih uslova'
+    categories: ['Matični uredi', 'Usluge i obrasci'],
+    komentar: 'Opština ne nudi e-verzije dokumenata na sajtu; dokumenti se izdaju na usmeni zahtjev u prostorijama Opštinske uprave.'
   },
   {
     id: 'rs-pale',
@@ -1835,10 +1898,18 @@ export const municipalitiesDatabase: MunicipalityData[] = [
     region: 'Foča regija',
     entity: 'RS',
     urls: [
-      
+      {
+        main: 'https://opstinarudo.com/',
+        description: 'Službena web-stranica Opštine Rudo'
+      },
+      {
+        main: 'https://opstinarudo.com/obrasci/',
+        forms: 'https://opstinarudo.com/obrasci/',
+        description: 'Zahtjevi i obrasci Opštine Rudo'
+      }
     ],
-    categories: ['Urbanizam', 'Građevinske dozvole', 'Matični uredi'],
-    komentar: 'Urbanizam i građevinske dozvole'
+    categories: ['Komunalna policija', 'Licenciranje autoprevoznika', 'Urbanizam', 'Boračko-invalidska zaštita', 'Matični uredi', 'Opšta uprava'],
+    komentar: 'Zvanična stranica objavljuje zahtjeve i obrasce za komunalnu policiju, licenciranje prevoznika, urbanizam, boračko-invalidsku zaštitu i matične urede.'
   },
   {
     id: 'rs-novo-gorazde',
