@@ -1,0 +1,4661 @@
+{
+  "generatedAt": "2026-11-05T19:08:46.204Z",
+  "filesScanned": 35,
+  "uniqueUrls": 968,
+  "networkCheckPerformed": true,
+  "validUrls": 968,
+  "totalInvalidUrls": 0,
+  "invalidUrls": [],
+  "duplicateUrlCount": 187,
+  "duplicateUrlWithinFileCount": 79,
+  "duplicateUrlsWithinFile": [
+    {
+      "url": "https://www.opstinabileca.ba/contacts/",
+      "occurrences": [
+        {
+          "institution": "Bileća",
+          "source": "src\\data\\municipalities-database.ts:1729"
+        }
+      ]
+    },
+    {
+      "url": "https://www.ecitizen.ba/bosanska_krupa/eServices",
+      "occurrences": [
+        {
+          "institution": "Bosanska Krupa",
+          "source": "src\\data\\verified-domains.ts:446"
+        }
+      ]
+    },
+    {
+      "url": "https://doboj.gov.ba/",
+      "occurrences": [
+        {
+          "institution": "Doboj",
+          "source": "src\\data\\doboj-forms.ts:19"
+        }
+      ]
+    },
+    {
+      "url": "https://doboj.gov.ba/dokumenti/%D0%B7%D0%B0%D1%85%D1%82%D1%98%D0%B5%D0%B2%D0%B8-%D0%B8-%D0%BE%D0%B1%D1%80%D0%B0%D1%81%D1%86%D0%B8/",
+      "occurrences": [
+        {
+          "institution": "Doboj",
+          "source": "src\\data\\doboj-forms.ts:20"
+        }
+      ]
+    },
+    {
+      "url": "https://www.fojnica.ba/v3/e-uprava/sluzba-za-opcu-upravu-obrasci",
+      "occurrences": [
+        {
+          "institution": "Fojnica",
+          "source": "src\\data\\fojnica-forms.ts:10"
+        }
+      ]
+    },
+    {
+      "url": "https://gorazde.ba/",
+      "occurrences": [
+        {
+          "institution": "Gorazde",
+          "source": "src\\data\\gorazde-forms.ts:16"
+        },
+        {
+          "institution": "Grad Goražde",
+          "source": "src\\data\\municipalities-database.ts:238"
+        }
+      ]
+    },
+    {
+      "url": "https://gorazde.ba/sluzba-za-finansije-trezor-i-privredu-elektronski-obrasci/",
+      "occurrences": [
+        {
+          "institution": "Gorazde",
+          "source": "src\\data\\gorazde-forms.ts:17"
+        },
+        {
+          "institution": "Gorazde",
+          "source": "src\\data\\gorazde-forms.ts:47"
+        },
+        {
+          "institution": "Grad Goražde",
+          "source": "src\\data\\municipalities-database.ts:226"
+        },
+        {
+          "institution": "Sarajevo Region",
+          "source": "src\\data\\sarajevo-region-forms.ts:65"
+        },
+        {
+          "institution": "Grad Goražde",
+          "source": "src\\data\\verified-domains.ts:991"
+        }
+      ]
+    },
+    {
+      "url": "https://gracanica.gov.ba/dokumenti/e-obrasci/",
+      "occurrences": [
+        {
+          "institution": "Gračanica",
+          "source": "src\\data\\municipalities-database.ts:580"
+        }
+      ]
+    },
+    {
+      "url": "https://gracanica.gov.ba/dijaspora-gracanice/",
+      "occurrences": [
+        {
+          "institution": "Gračanica",
+          "source": "src\\data\\municipalities-database.ts:594"
+        }
+      ]
+    },
+    {
+      "url": "https://www.ecitizen.ba/gracanica/home",
+      "occurrences": [
+        {
+          "institution": "Gračanica",
+          "source": "src\\data\\municipalities-database.ts:593"
+        }
+      ]
+    },
+    {
+      "url": "https://kakanj.gov.ba/",
+      "occurrences": [
+        {
+          "institution": "Kakanj",
+          "source": "src\\data\\kakanj-forms.ts:10"
+        }
+      ]
+    },
+    {
+      "url": "https://kakanj.gov.ba/v5/e-obrasci/",
+      "occurrences": [
+        {
+          "institution": "Kakanj",
+          "source": "src\\data\\kakanj-forms.ts:11"
+        },
+        {
+          "institution": "Općina Kakanj",
+          "source": "src\\data\\municipalities-database.ts:322"
+        },
+        {
+          "institution": "Općina Kakanj",
+          "source": "src\\data\\municipalities-database.ts:355"
+        },
+        {
+          "institution": "Općina Kakanj",
+          "source": "src\\data\\verified-domains.ts:204"
+        },
+        {
+          "institution": "Općina Kakanj",
+          "source": "src\\data\\verified-domains.ts:209"
+        }
+      ]
+    },
+    {
+      "url": "http://kakanj.gov.ba/v4/wp-content/uploads/2017/03/ZAHTJEV-ZA-PROMJENU-INVESTITORA-OK-O-4.2.-38.pdf",
+      "occurrences": [
+        {
+          "institution": "Kakanj",
+          "source": "src\\data\\kakanj-forms.ts:41"
+        }
+      ]
+    },
+    {
+      "url": "http://kakanj.gov.ba/v4/wp-content/uploads/2014/08/Zahtjev-za-izdavanje-odobrenja-za-obavljanje-djelatnosti-tehni%C4%8Dki-uslovi-PRAVNA-LICA.pdf",
+      "occurrences": [
+        {
+          "institution": "Kakanj",
+          "source": "src\\data\\kakanj-forms.ts:56"
+        }
+      ]
+    },
+    {
+      "url": "http://kakanj.gov.ba/v4/wp-content/uploads/2014/08/Zahtjev-za-izdavanje-odobrenja-za-obavljanje-djelatnosti-tehni%C4%8Dki-uslovi-FIZI%C4%8CKA-LICA-.pdf",
+      "occurrences": [
+        {
+          "institution": "Kakanj",
+          "source": "src\\data\\kakanj-forms.ts:71"
+        }
+      ]
+    },
+    {
+      "url": "https://kakanj.gov.ba/v5/wp-content/uploads/2023/08/Zahtjev-za-osnivanje-obrta-srodne-djelatnost-1.pdf",
+      "occurrences": [
+        {
+          "institution": "Kakanj",
+          "source": "src\\data\\kakanj-forms.ts:86"
+        }
+      ]
+    },
+    {
+      "url": "http://kakanj.gov.ba/v4/isoobrasci/OBRASCI-SLU%8eBA%20ZA%20PRIVREDU,URBANIZAM%20I%20ZA%8aTITU%20OKOLINE/Zahtjev_za_izdavanje_odobrenja_o_osnivanju_ugostiteljske_radnje.pdf",
+      "occurrences": [
+        {
+          "institution": "Kakanj",
+          "source": "src\\data\\kakanj-forms.ts:101"
+        }
+      ]
+    },
+    {
+      "url": "http://kakanj.gov.ba/v4/isoobrasci/OBRASCI-SLU%8eBA%20ZA%20PRIVREDU,URBANIZAM%20I%20ZA%8aTITU%20OKOLINE/Zahtjev_za_izmjenu_rje%9aenja_o_osnivanju_radnje_ili_obavljanju_djelatnosti.pdf",
+      "occurrences": [
+        {
+          "institution": "Kakanj",
+          "source": "src\\data\\kakanj-forms.ts:116"
+        }
+      ]
+    },
+    {
+      "url": "https://kalesija.ba/usluge/",
+      "occurrences": [
+        {
+          "institution": "Kalesija",
+          "source": "src\\data\\municipalities-database.ts:455"
+        }
+      ]
+    },
+    {
+      "url": "https://livno.ba/",
+      "occurrences": [
+        {
+          "institution": "Livno",
+          "source": "src\\data\\livno-forms.ts:10"
+        }
+      ]
+    },
+    {
+      "url": "https://livno.ba/za-gradane/dokumenti-i-obrasci/",
+      "occurrences": [
+        {
+          "institution": "Livno",
+          "source": "src\\data\\livno-forms.ts:11"
+        },
+        {
+          "institution": "Grad Livno",
+          "source": "src\\data\\municipalities-database.ts:1142"
+        },
+        {
+          "institution": "Grad Livno",
+          "source": "src\\data\\verified-domains.ts:803"
+        }
+      ]
+    },
+    {
+      "url": "https://www.centar.ba/e-uprava/elektronski-formulari",
+      "occurrences": [
+        {
+          "institution": "Sarajevo Region",
+          "source": "src\\data\\sarajevo-region-forms.ts:330"
+        },
+        {
+          "institution": "Sarajevo Region",
+          "source": "src\\data\\sarajevo-region-forms.ts:339"
+        },
+        {
+          "institution": "Sarajevo Region",
+          "source": "src\\data\\sarajevo-region-forms.ts:348"
+        },
+        {
+          "institution": "Sarajevo Region",
+          "source": "src\\data\\sarajevo-region-forms.ts:357"
+        },
+        {
+          "institution": "Sarajevo Region",
+          "source": "src\\data\\sarajevo-region-forms.ts:366"
+        },
+        {
+          "institution": "Sarajevo Region",
+          "source": "src\\data\\sarajevo-region-forms.ts:375"
+        },
+        {
+          "institution": "Sarajevo Region",
+          "source": "src\\data\\sarajevo-region-forms.ts:384"
+        },
+        {
+          "institution": "Sarajevo Region",
+          "source": "src\\data\\sarajevo-region-forms.ts:393"
+        },
+        {
+          "institution": "Sarajevo Region",
+          "source": "src\\data\\sarajevo-region-forms.ts:402"
+        },
+        {
+          "institution": "Sarajevo Region",
+          "source": "src\\data\\sarajevo-region-forms.ts:411"
+        },
+        {
+          "institution": "Centar Sarajevo",
+          "source": "src\\data\\verified-domains.ts:61"
+        }
+      ]
+    },
+    {
+      "url": "https://trnovo.ba/",
+      "occurrences": [
+        {
+          "institution": "Trnovo Fbih",
+          "source": "src\\data\\website-verification.ts:783"
+        }
+      ]
+    },
+    {
+      "url": "https://ilijas.ba/index.php/e-uprava",
+      "occurrences": [
+        {
+          "institution": "Ilijaš",
+          "source": "src\\data\\municipalities-database.ts:167"
+        },
+        {
+          "institution": "Sarajevo Region",
+          "source": "src\\data\\sarajevo-region-forms.ts:532"
+        },
+        {
+          "institution": "Sarajevo Region",
+          "source": "src\\data\\sarajevo-region-forms.ts:539"
+        },
+        {
+          "institution": "Sarajevo Region",
+          "source": "src\\data\\sarajevo-region-forms.ts:546"
+        }
+      ]
+    },
+    {
+      "url": "https://www.sarajevo.ba/bs/category/145/1",
+      "occurrences": [
+        {
+          "institution": "Sarajevo Region",
+          "source": "src\\data\\sarajevo-region-forms.ts:582"
+        }
+      ]
+    },
+    {
+      "url": "https://praca.ba/?s=Obrazac",
+      "occurrences": [
+        {
+          "institution": "Sarajevo Region",
+          "source": "src\\data\\sarajevo-region-forms.ts:101"
+        },
+        {
+          "institution": "Sarajevo Region",
+          "source": "src\\data\\sarajevo-region-forms.ts:108"
+        }
+      ]
+    },
+    {
+      "url": "https://foca-ustikolina.ba/",
+      "occurrences": [
+        {
+          "institution": "Foča-Ustikolina",
+          "source": "src\\data\\municipalities-database.ts:275"
+        }
+      ]
+    },
+    {
+      "url": "https://foca-ustikolina.ba/wp-content/uploads/2022/10/ZAHTJEV_urbanistickaSaglasnost.pdf",
+      "occurrences": [
+        {
+          "institution": "Sarajevo Region",
+          "source": "src\\data\\sarajevo-region-forms.ts:130"
+        }
+      ]
+    },
+    {
+      "url": "https://zenica.ba/e-registar-administrativnih-postupaka/",
+      "occurrences": [
+        {
+          "institution": "Grad Zenica",
+          "source": "src\\data\\municipalities-database.ts:411"
+        },
+        {
+          "institution": "Zenica",
+          "source": "src\\data\\verified-domains.ts:178"
+        }
+      ]
+    },
+    {
+      "url": "https://dobojjug.ba/pristup-informacijama/",
+      "occurrences": [
+        {
+          "institution": "Updated Government",
+          "source": "src\\data\\updated-government-forms.ts:108"
+        }
+      ]
+    },
+    {
+      "url": "https://www.ecitizen.ba/tuzla/eServices/eServicesSubcategory/2",
+      "occurrences": [
+        {
+          "institution": "Grad Tuzla",
+          "source": "src\\data\\municipalities-database.ts:432"
+        },
+        {
+          "institution": "Tuzla",
+          "source": "src\\data\\uploaded-institutions.ts:1015"
+        },
+        {
+          "institution": "Grad Tuzla",
+          "source": "src\\data\\verified-domains.ts:280"
+        }
+      ]
+    },
+    {
+      "url": "https://esalter.gradacac.ba/",
+      "occurrences": [
+        {
+          "institution": "Gradačac",
+          "source": "src\\data\\municipalities-database.ts:611"
+        }
+      ]
+    },
+    {
+      "url": "https://kladanj.ba/",
+      "occurrences": [
+        {
+          "institution": "Municipality Registry",
+          "source": "src\\data\\municipality-registry.ts:335"
+        }
+      ]
+    },
+    {
+      "url": "https://lukavac.ba/e-obrasci/",
+      "occurrences": [
+        {
+          "institution": "Municipality Registry",
+          "source": "src\\data\\municipality-registry.ts:253"
+        }
+      ]
+    },
+    {
+      "url": "https://www.ecitizen.ba/kljuc/home",
+      "occurrences": [
+        {
+          "institution": "Municipality Registry",
+          "source": "src\\data\\municipality-registry.ts:232"
+        }
+      ]
+    },
+    {
+      "url": "https://opcina-bugojno.ba/e-formulari/",
+      "occurrences": [
+        {
+          "institution": "Updated Government",
+          "source": "src\\data\\updated-government-forms.ts:37"
+        }
+      ]
+    },
+    {
+      "url": "https://donji-vakuf.ba/wp-content/uploads/2013/03/Formularzaprijemkodnacelnika.pdf",
+      "occurrences": [
+        {
+          "institution": "Updated Government",
+          "source": "src\\data\\updated-government-forms.ts:169"
+        }
+      ]
+    },
+    {
+      "url": "https://www.jablanica.ba/ba/download-zona/obrasci-i-zahtjevi.html",
+      "occurrences": [
+        {
+          "institution": "Jablanica",
+          "source": "src\\data\\municipalities-database.ts:1030"
+        }
+      ]
+    },
+    {
+      "url": "https://domaljevac.ba/wp-content/uploads/2025/02/zahtjev-za-upravni-postupak.pdf",
+      "occurrences": [
+        {
+          "institution": "Updated Government",
+          "source": "src\\data\\updated-government-forms.ts:120"
+        }
+      ]
+    },
+    {
+      "url": "https://www.opstinadrvar.net/",
+      "occurrences": [
+        {
+          "institution": "Drvar",
+          "source": "src\\data\\uploaded-institutions.ts:484"
+        }
+      ]
+    },
+    {
+      "url": "http://www.opstinadrvar.net/wp-content/uploads/2021/06/Zahtjev-ka-opstinskom-nacelniku.pdf",
+      "occurrences": [
+        {
+          "institution": "Updated Government",
+          "source": "src\\data\\updated-government-forms.ts:184"
+        },
+        {
+          "institution": "Drvar",
+          "source": "src\\data\\uploaded-institutions.ts:485"
+        }
+      ]
+    },
+    {
+      "url": "https://www.gradgradiska.com/zahtjev-za-prijem-kod-gradonacelnika/",
+      "occurrences": [
+        {
+          "institution": "Grad Gradiška",
+          "source": "src\\data\\municipalities-database.ts:1270"
+        }
+      ]
+    },
+    {
+      "url": "https://www.gradgradiska.com/izvod-iz-maticne-knjige-rodjenih-i-ili-uvjerenje-iz-knjige-drzavljana/",
+      "occurrences": [
+        {
+          "institution": "Grad Gradiška",
+          "source": "src\\data\\municipalities-database.ts:1287"
+        }
+      ]
+    },
+    {
+      "url": "https://www.gradgradiska.com/izvodi-iz-maticnih-knjiga-i-upisi-u-mk/izvod-iz-maticne-knjige-vjencanih/",
+      "occurrences": [
+        {
+          "institution": "Grad Gradiška",
+          "source": "src\\data\\municipalities-database.ts:1288"
+        }
+      ]
+    },
+    {
+      "url": "https://www.gradgradiska.com/izvodi-iz-maticnih-knjiga-i-upisi-u-mk/izvod-iz-maticne-knjige-umrlih/",
+      "occurrences": [
+        {
+          "institution": "Grad Gradiška",
+          "source": "src\\data\\municipalities-database.ts:1289"
+        }
+      ]
+    },
+    {
+      "url": "https://opstinakotorvaros.com/zahtjevi/",
+      "occurrences": [
+        {
+          "institution": "Municipality Registry",
+          "source": "src\\data\\municipality-registry.ts:274"
+        }
+      ]
+    },
+    {
+      "url": "https://eregistarsamac.com/%D0%B0%D0%B4%D0%BC%D0%B8%D0%BD%D0%B8%D1%81%D1%82%D1%80%D0%B0%D1%82%D0%B8%D0%B2%D0%BD%D0%B8-%D0%BF%D0%BE%D1%81%D1%82%D1%83%D0%BF%D1%86%D0%B8/",
+      "occurrences": [
+        {
+          "institution": "Updated Government",
+          "source": "src\\data\\updated-government-forms.ts:202"
+        }
+      ]
+    },
+    {
+      "url": "https://gradistocnosarajevo.net/dokumenti/",
+      "occurrences": [
+        {
+          "institution": "Sarajevo Region",
+          "source": "src\\data\\sarajevo-region-forms.ts:608"
+        },
+        {
+          "institution": "Sarajevo Region",
+          "source": "src\\data\\sarajevo-region-forms.ts:615"
+        }
+      ]
+    },
+    {
+      "url": "https://istocnailidza.net/?page_id=255",
+      "occurrences": [
+        {
+          "institution": "Istočna Ilidža",
+          "source": "src\\data\\municipalities-database.ts:1605"
+        },
+        {
+          "institution": "Sarajevo Region",
+          "source": "src\\data\\sarajevo-region-forms.ts:637"
+        }
+      ]
+    },
+    {
+      "url": "https://pale.rs.ba/",
+      "occurrences": [
+        {
+          "institution": "Pale Rs",
+          "source": "src\\data\\website-verification.ts:598"
+        }
+      ]
+    },
+    {
+      "url": "https://opstinasokolac.net/obrasci/",
+      "occurrences": [
+        {
+          "institution": "Sarajevo Region",
+          "source": "src\\data\\sarajevo-region-forms.ts:750"
+        },
+        {
+          "institution": "Sarajevo Region",
+          "source": "src\\data\\sarajevo-region-forms.ts:757"
+        },
+        {
+          "institution": "Sarajevo Region",
+          "source": "src\\data\\sarajevo-region-forms.ts:764"
+        }
+      ]
+    },
+    {
+      "url": "https://opstinasokolac.net/",
+      "occurrences": [
+        {
+          "institution": "Opština Sokolac",
+          "source": "src\\data\\uploaded-institutions.ts:294"
+        }
+      ]
+    },
+    {
+      "url": "https://opstinaljubinje.org/",
+      "occurrences": [
+        {
+          "institution": "Municipality Registry",
+          "source": "src\\data\\municipality-registry.ts:304"
+        }
+      ]
+    },
+    {
+      "url": "https://opstinaberkovici.com/home/",
+      "occurrences": [
+        {
+          "institution": "Berkovići",
+          "source": "src\\data\\uploaded-institutions.ts:664"
+        }
+      ]
+    },
+    {
+      "url": "https://foca.rs.ba/",
+      "occurrences": [
+        {
+          "institution": "Sarajevo Region",
+          "source": "src\\data\\sarajevo-region-forms.ts:784"
+        },
+        {
+          "institution": "Sarajevo Region",
+          "source": "src\\data\\sarajevo-region-forms.ts:790"
+        },
+        {
+          "institution": "Sarajevo Region",
+          "source": "src\\data\\sarajevo-region-forms.ts:797"
+        },
+        {
+          "institution": "Opština Foča (RS)",
+          "source": "src\\data\\uploaded-institutions.ts:237"
+        },
+        {
+          "institution": "Foca Rs",
+          "source": "src\\data\\website-verification.ts:574"
+        }
+      ]
+    },
+    {
+      "url": "https://hanpijesak.org/zahtjevi-i-obrasci/",
+      "occurrences": [
+        {
+          "institution": "Han Pijesak",
+          "source": "src\\data\\municipalities-database.ts:1868"
+        },
+        {
+          "institution": "Sarajevo Region",
+          "source": "src\\data\\sarajevo-region-forms.ts:1038"
+        },
+        {
+          "institution": "Sarajevo Region",
+          "source": "src\\data\\sarajevo-region-forms.ts:1045"
+        }
+      ]
+    },
+    {
+      "url": "https://opstinarudo.com/gradjevinske-dozvole/",
+      "occurrences": [
+        {
+          "institution": "Sarajevo Region",
+          "source": "src\\data\\sarajevo-region-forms.ts:988"
+        },
+        {
+          "institution": "Sarajevo Region",
+          "source": "src\\data\\sarajevo-region-forms.ts:995"
+        }
+      ]
+    },
+    {
+      "url": "https://www.bpkg.gov.ba/ministarstva/obrazovanje",
+      "occurrences": [
+        {
+          "institution": "Ministarstvo za obrazovanje BPK",
+          "source": "src\\data\\uploaded-institutions.ts:49"
+        }
+      ]
+    },
+    {
+      "url": "https://www.zzobpk.ba/",
+      "occurrences": [
+        {
+          "institution": "Zavod zdravstvenog osiguranja BPK",
+          "source": "src\\data\\uploaded-institutions.ts:69"
+        }
+      ]
+    },
+    {
+      "url": "https://www.mostar.ba/",
+      "occurrences": [
+        {
+          "institution": "Mostar",
+          "source": "src\\data\\website-verification.ts:269"
+        }
+      ]
+    },
+    {
+      "url": "https://zzo.ba/",
+      "occurrences": [
+        {
+          "institution": "Zavod zdravstvenog osiguranja HNK",
+          "source": "src\\data\\uploaded-institutions.ts:435"
+        }
+      ]
+    },
+    {
+      "url": "https://zzousk.ba/",
+      "occurrences": [
+        {
+          "institution": "Bosanski Petrovac",
+          "source": "src\\data\\uploaded-institutions.ts:693"
+        },
+        {
+          "institution": "Sanski Most",
+          "source": "src\\data\\uploaded-institutions.ts:733"
+        },
+        {
+          "institution": "Velika Kladuša",
+          "source": "src\\data\\uploaded-institutions.ts:743"
+        },
+        {
+          "institution": "Ministarstvo zdravstva, rada i socijalne politike USK",
+          "source": "src\\data\\uploaded-institutions.ts:753"
+        },
+        {
+          "institution": "Ministarstvo obrazovanja, nauke, kulture i sporta USK",
+          "source": "src\\data\\uploaded-institutions.ts:763"
+        },
+        {
+          "institution": "Ministarstvo za građenje, prostorno uređenje i zaštitu okoliša USK",
+          "source": "src\\data\\uploaded-institutions.ts:773"
+        },
+        {
+          "institution": "Zavod zdravstvenog osiguranja USK",
+          "source": "src\\data\\uploaded-institutions.ts:783"
+        },
+        {
+          "institution": "Zavod zdravstvenog osiguranja USK",
+          "source": "src\\data\\uploaded-institutions.ts:784"
+        }
+      ]
+    },
+    {
+      "url": "https://www.prijedorgrad.org/",
+      "occurrences": [
+        {
+          "institution": "Republika Srpska",
+          "source": "src\\data\\uploaded-institutions.ts:903"
+        }
+      ]
+    },
+    {
+      "url": "https://www.opstinaostraluka.org/",
+      "occurrences": [
+        {
+          "institution": "Republika Srpska",
+          "source": "src\\data\\uploaded-institutions.ts:923"
+        }
+      ]
+    },
+    {
+      "url": "https://www.zupanijaposavska.ba/ministarstva/ministarstvo-zdravstva-rada-i-socijalne-politike/",
+      "occurrences": [
+        {
+          "institution": "Ministarstvo zdravstva, rada i socijalne politike PK",
+          "source": "src\\data\\uploaded-institutions.ts:973"
+        }
+      ]
+    },
+    {
+      "url": "https://www.zupanijaposavska.ba/ministarstva/ministarstvo-prosvjete-znanosti-kulture-i-sporta/",
+      "occurrences": [
+        {
+          "institution": "Ministarstvo prosvjete, znanosti, kulture i športa PK",
+          "source": "src\\data\\uploaded-institutions.ts:983"
+        }
+      ]
+    },
+    {
+      "url": "https://mpuzotk.gov.ba/",
+      "occurrences": [
+        {
+          "institution": "Ministarstvo pravosuđa i uprave TK",
+          "source": "src\\data\\uploaded-institutions.ts:1143"
+        }
+      ]
+    },
+    {
+      "url": "https://mpsvtk.gov.ba/",
+      "occurrences": [
+        {
+          "institution": "Ministarstvo poljoprivrede, šumarstva i vodoprivrede TK",
+          "source": "src\\data\\uploaded-institutions.ts:1153"
+        }
+      ]
+    },
+    {
+      "url": "https://tk.gov.ba/",
+      "occurrences": [
+        {
+          "institution": "Ministarstvo prostornog uređenja i zaštite okoliša TK",
+          "source": "src\\data\\uploaded-institutions.ts:1163"
+        }
+      ]
+    },
+    {
+      "url": "https://www.zzzbrcko.org/",
+      "occurrences": [
+        {
+          "institution": "Brčko distrikt",
+          "source": "src\\data\\uploaded-institutions.ts:1173"
+        }
+      ]
+    },
+    {
+      "url": "https://opcinatravnik.com.ba/",
+      "occurrences": [
+        {
+          "institution": "Travnik",
+          "source": "src\\data\\website-verification.ts:771"
+        }
+      ]
+    },
+    {
+      "url": "https://ont.gov.ba/",
+      "occurrences": [
+        {
+          "institution": "Travnička regija",
+          "source": "src\\data\\uploaded-institutions.ts:1441"
+        }
+      ]
+    },
+    {
+      "url": "https://vitez.ba/",
+      "occurrences": [
+        {
+          "institution": "Travnička regija",
+          "source": "src\\data\\uploaded-institutions.ts:1451"
+        }
+      ]
+    },
+    {
+      "url": "https://opcina-jajce.ba/",
+      "occurrences": [
+        {
+          "institution": "Travnička regija",
+          "source": "src\\data\\uploaded-institutions.ts:1471"
+        }
+      ]
+    },
+    {
+      "url": "https://opcina-kiseljak.org/",
+      "occurrences": [
+        {
+          "institution": "Travnička regija",
+          "source": "src\\data\\uploaded-institutions.ts:1481"
+        }
+      ]
+    },
+    {
+      "url": "https://kresevo.ba/",
+      "occurrences": [
+        {
+          "institution": "Travnička regija",
+          "source": "src\\data\\uploaded-institutions.ts:1491"
+        }
+      ]
+    },
+    {
+      "url": "https://sbk-ksb.gov.ba/",
+      "occurrences": [
+        {
+          "institution": "Travnička regija",
+          "source": "src\\data\\uploaded-institutions.ts:1511"
+        }
+      ]
+    },
+    {
+      "url": "https://zzo-ksbsbk.com.ba/",
+      "occurrences": [
+        {
+          "institution": "Travnička regija",
+          "source": "src\\data\\uploaded-institutions.ts:1521"
+        }
+      ]
+    },
+    {
+      "url": "https://www.zzozedo.ba/",
+      "occurrences": [
+        {
+          "institution": "Doboj-Jug",
+          "source": "src\\data\\uploaded-institutions.ts:1560"
+        },
+        {
+          "institution": "Kakanj",
+          "source": "src\\data\\uploaded-institutions.ts:1570"
+        },
+        {
+          "institution": "Maglaj",
+          "source": "src\\data\\uploaded-institutions.ts:1580"
+        },
+        {
+          "institution": "Žepče",
+          "source": "src\\data\\uploaded-institutions.ts:1590"
+        },
+        {
+          "institution": "Tešanj",
+          "source": "src\\data\\uploaded-institutions.ts:1600"
+        }
+      ]
+    }
+  ],
+  "duplicateUrls": [
+    {
+      "url": "https://www.opstinabileca.ba/",
+      "occurrences": [
+        {
+          "institution": "Bileca",
+          "source": "src\\data\\bileca-forms.ts:10"
+        },
+        {
+          "institution": "Bileća",
+          "source": "src\\data\\municipalities-database.ts:1715"
+        },
+        {
+          "institution": "Bileća",
+          "source": "src\\data\\uploaded-institutions.ts:623"
+        },
+        {
+          "institution": "Bileca",
+          "source": "src\\data\\website-verification.ts:24"
+        }
+      ]
+    },
+    {
+      "url": "https://www.opstinabileca.ba/obrazci-gradjani/",
+      "occurrences": [
+        {
+          "institution": "Bileca",
+          "source": "src\\data\\bileca-forms.ts:11"
+        },
+        {
+          "institution": "Bileća",
+          "source": "src\\data\\municipalities-database.ts:1716"
+        },
+        {
+          "institution": "Bileća",
+          "source": "src\\data\\uploaded-institutions.ts:624"
+        },
+        {
+          "institution": "Opština Bileća",
+          "source": "src\\data\\verified-domains.ts:974"
+        }
+      ]
+    },
+    {
+      "url": "https://www.opstinabileca.ba/konkursi/",
+      "occurrences": [
+        {
+          "institution": "Bileca",
+          "source": "src\\data\\bileca-forms.ts:12"
+        },
+        {
+          "institution": "Bileća",
+          "source": "src\\data\\municipalities-database.ts:1720"
+        }
+      ]
+    },
+    {
+      "url": "https://www.opstinabileca.ba/contacts/",
+      "occurrences": [
+        {
+          "institution": "Bileca",
+          "source": "src\\data\\bileca-forms.ts:13"
+        },
+        {
+          "institution": "Bileća",
+          "source": "src\\data\\municipalities-database.ts:1724"
+        },
+        {
+          "institution": "Bileća",
+          "source": "src\\data\\municipalities-database.ts:1729"
+        }
+      ]
+    },
+    {
+      "url": "https://gradbosanskakrupa.ba/",
+      "occurrences": [
+        {
+          "institution": "Bosanska Krupa",
+          "source": "src\\data\\bosanska-krupa-forms.ts:10"
+        },
+        {
+          "institution": "Bosanska Krupa",
+          "source": "src\\data\\municipalities-database.ts:714"
+        },
+        {
+          "institution": "Bosanska Krupa",
+          "source": "src\\data\\uploaded-institutions.ts:683"
+        },
+        {
+          "institution": "Bosanska Krupa",
+          "source": "src\\data\\website-verification.ts:30"
+        }
+      ]
+    },
+    {
+      "url": "https://www.ecitizen.ba/bosanska_krupa/eServices",
+      "occurrences": [
+        {
+          "institution": "Bosanska Krupa",
+          "source": "src\\data\\bosanska-krupa-forms.ts:12"
+        },
+        {
+          "institution": "Bosanska Krupa",
+          "source": "src\\data\\municipalities-database.ts:718"
+        },
+        {
+          "institution": "Bosanska Krupa",
+          "source": "src\\data\\uploaded-institutions.ts:684"
+        },
+        {
+          "institution": "Bosanska Krupa",
+          "source": "src\\data\\verified-domains.ts:445"
+        },
+        {
+          "institution": "Bosanska Krupa",
+          "source": "src\\data\\verified-domains.ts:446"
+        }
+      ]
+    },
+    {
+      "url": "https://opstina-brod.net/",
+      "occurrences": [
+        {
+          "institution": "Brod",
+          "source": "src\\data\\brod-forms.ts:3"
+        },
+        {
+          "institution": "Republika Srpska",
+          "source": "src\\data\\uploaded-institutions.ts:1262"
+        },
+        {
+          "institution": "Brod",
+          "source": "src\\data\\website-verification.ts:72"
+        }
+      ]
+    },
+    {
+      "url": "https://opstina-brod.net/%D0%B2%D0%B0%D0%B6%D0%BD%D0%B8-%D0%B4%D0%BE%D0%BA%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D0%B8/#lat",
+      "occurrences": [
+        {
+          "institution": "Brod",
+          "source": "src\\data\\brod-forms.ts:4"
+        },
+        {
+          "institution": "Brod",
+          "source": "src\\data\\municipalities-database.ts:1455"
+        },
+        {
+          "institution": "Republika Srpska",
+          "source": "src\\data\\uploaded-institutions.ts:1263"
+        },
+        {
+          "institution": "Brod",
+          "source": "src\\data\\verified-domains.ts:962"
+        }
+      ]
+    },
+    {
+      "url": "https://opcina-busovaca.com/",
+      "occurrences": [
+        {
+          "institution": "Busovaca",
+          "source": "src\\data\\busovaca-forms.ts:3"
+        },
+        {
+          "institution": "Busovača",
+          "source": "src\\data\\municipalities-database.ts:923"
+        },
+        {
+          "institution": "Travnička regija",
+          "source": "src\\data\\uploaded-institutions.ts:1460"
+        },
+        {
+          "institution": "Busovaca",
+          "source": "src\\data\\website-verification.ts:84"
+        }
+      ]
+    },
+    {
+      "url": "https://opcina-busovaca.com/dokumenti/",
+      "occurrences": [
+        {
+          "institution": "Busovaca",
+          "source": "src\\data\\busovaca-forms.ts:4"
+        },
+        {
+          "institution": "Busovača",
+          "source": "src\\data\\municipalities-database.ts:919"
+        },
+        {
+          "institution": "Travnička regija",
+          "source": "src\\data\\uploaded-institutions.ts:1461"
+        },
+        {
+          "institution": "Busovača",
+          "source": "src\\data\\verified-domains.ts:602"
+        }
+      ]
+    },
+    {
+      "url": "https://capljina.ba/",
+      "occurrences": [
+        {
+          "institution": "Capljina",
+          "source": "src\\data\\capljina-forms.ts:3"
+        },
+        {
+          "institution": "Čapljina",
+          "source": "src\\data\\municipalities-database.ts:993"
+        },
+        {
+          "institution": "Općina Čapljina",
+          "source": "src\\data\\uploaded-institutions.ts:334"
+        },
+        {
+          "institution": "Capljina",
+          "source": "src\\data\\website-verification.ts:108"
+        }
+      ]
+    },
+    {
+      "url": "https://capljina.ba/administrativni-postupci/",
+      "occurrences": [
+        {
+          "institution": "Capljina",
+          "source": "src\\data\\capljina-forms.ts:4"
+        },
+        {
+          "institution": "Čapljina",
+          "source": "src\\data\\municipalities-database.ts:997"
+        },
+        {
+          "institution": "Općina Čapljina",
+          "source": "src\\data\\uploaded-institutions.ts:335"
+        },
+        {
+          "institution": "Čapljina",
+          "source": "src\\data\\verified-domains.ts:678"
+        }
+      ]
+    },
+    {
+      "url": "https://gradcazin.gov.ba/",
+      "occurrences": [
+        {
+          "institution": "Cazin",
+          "source": "src\\data\\cazin-forms.ts:3"
+        },
+        {
+          "institution": "Cazin",
+          "source": "src\\data\\municipalities-database.ts:768"
+        },
+        {
+          "institution": "Cazin",
+          "source": "src\\data\\uploaded-institutions.ts:713"
+        },
+        {
+          "institution": "Cazin",
+          "source": "src\\data\\website-verification.ts:96"
+        }
+      ]
+    },
+    {
+      "url": "https://gradcazin.gov.ba/dokumenti",
+      "occurrences": [
+        {
+          "institution": "Cazin",
+          "source": "src\\data\\cazin-forms.ts:4"
+        },
+        {
+          "institution": "Cazin",
+          "source": "src\\data\\municipalities-database.ts:772"
+        },
+        {
+          "institution": "Cazin",
+          "source": "src\\data\\uploaded-institutions.ts:714"
+        },
+        {
+          "institution": "Cazin",
+          "source": "src\\data\\verified-domains.ts:482"
+        }
+      ]
+    },
+    {
+      "url": "https://citluk.ba/",
+      "occurrences": [
+        {
+          "institution": "Citluk",
+          "source": "src\\data\\citluk-forms.ts:3"
+        },
+        {
+          "institution": "Općina Čitluk",
+          "source": "src\\data\\uploaded-institutions.ts:344"
+        },
+        {
+          "institution": "Citluk",
+          "source": "src\\data\\website-verification.ts:120"
+        }
+      ]
+    },
+    {
+      "url": "https://citluk.ba/zahtjevi/",
+      "occurrences": [
+        {
+          "institution": "Citluk",
+          "source": "src\\data\\citluk-forms.ts:4"
+        },
+        {
+          "institution": "Čitluk",
+          "source": "src\\data\\municipalities-database.ts:1011"
+        },
+        {
+          "institution": "Općina Čitluk",
+          "source": "src\\data\\uploaded-institutions.ts:345"
+        },
+        {
+          "institution": "Čitluk",
+          "source": "src\\data\\verified-domains.ts:690"
+        }
+      ]
+    },
+    {
+      "url": "https://doboj.gov.ba/",
+      "occurrences": [
+        {
+          "institution": "Doboj",
+          "source": "src\\data\\doboj-forms.ts:3"
+        },
+        {
+          "institution": "Doboj",
+          "source": "src\\data\\doboj-forms.ts:19"
+        },
+        {
+          "institution": "Grad Doboj",
+          "source": "src\\data\\municipalities-database.ts:1404"
+        },
+        {
+          "institution": "Municipality Registry",
+          "source": "src\\data\\municipality-registry.ts:348"
+        },
+        {
+          "institution": "Doboj",
+          "source": "src\\data\\website-verification.ts:245"
+        }
+      ]
+    },
+    {
+      "url": "https://doboj.gov.ba/dokumenti/%D0%B7%D0%B0%D1%85%D1%82%D1%98%D0%B5%D0%B2%D0%B8-%D0%B8-%D0%BE%D0%B1%D1%80%D0%B0%D1%81%D1%86%D0%B8/",
+      "occurrences": [
+        {
+          "institution": "Doboj",
+          "source": "src\\data\\doboj-forms.ts:4"
+        },
+        {
+          "institution": "Doboj",
+          "source": "src\\data\\doboj-forms.ts:20"
+        },
+        {
+          "institution": "Grad Doboj",
+          "source": "src\\data\\municipalities-database.ts:1400"
+        },
+        {
+          "institution": "Grad Doboj",
+          "source": "src\\data\\verified-domains.ts:949"
+        }
+      ]
+    },
+    {
+      "url": "https://www.fojnica.ba/v3/",
+      "occurrences": [
+        {
+          "institution": "Fojnica",
+          "source": "src\\data\\fojnica-forms.ts:3"
+        },
+        {
+          "institution": "Fojnica",
+          "source": "src\\data\\municipalities-database.ts:963"
+        },
+        {
+          "institution": "Fojnica",
+          "source": "src\\data\\uploaded-institutions.ts:1500"
+        },
+        {
+          "institution": "Fojnica",
+          "source": "src\\data\\website-verification.ts:186"
+        }
+      ]
+    },
+    {
+      "url": "https://www.fojnica.ba/v3/e-uprava/sluzba-za-opcu-upravu-obrasci",
+      "occurrences": [
+        {
+          "institution": "Fojnica",
+          "source": "src\\data\\fojnica-forms.ts:4"
+        },
+        {
+          "institution": "Fojnica",
+          "source": "src\\data\\fojnica-forms.ts:10"
+        },
+        {
+          "institution": "Fojnica",
+          "source": "src\\data\\municipalities-database.ts:959"
+        },
+        {
+          "institution": "Fojnica",
+          "source": "src\\data\\uploaded-institutions.ts:1501"
+        },
+        {
+          "institution": "Fojnica",
+          "source": "src\\data\\verified-domains.ts:649"
+        }
+      ]
+    },
+    {
+      "url": "https://gorazde.ba/",
+      "occurrences": [
+        {
+          "institution": "Gorazde",
+          "source": "src\\data\\gorazde-forms.ts:3"
+        },
+        {
+          "institution": "Gorazde",
+          "source": "src\\data\\gorazde-forms.ts:16"
+        },
+        {
+          "institution": "Grad Goražde",
+          "source": "src\\data\\municipalities-database.ts:209"
+        },
+        {
+          "institution": "Grad Goražde",
+          "source": "src\\data\\municipalities-database.ts:238"
+        },
+        {
+          "institution": "Sarajevo Region",
+          "source": "src\\data\\sarajevo-region-forms.ts:37"
+        },
+        {
+          "institution": "Goražde",
+          "source": "src\\data\\uploaded-institutions.ts:8"
+        },
+        {
+          "institution": "Gorazde",
+          "source": "src\\data\\website-verification.ts:204"
+        }
+      ]
+    },
+    {
+      "url": "https://gorazde.ba/sluzba-za-finansije-trezor-i-privredu-elektronski-obrasci/",
+      "occurrences": [
+        {
+          "institution": "Gorazde",
+          "source": "src\\data\\gorazde-forms.ts:4"
+        },
+        {
+          "institution": "Gorazde",
+          "source": "src\\data\\gorazde-forms.ts:17"
+        },
+        {
+          "institution": "Gorazde",
+          "source": "src\\data\\gorazde-forms.ts:47"
+        },
+        {
+          "institution": "Grad Goražde",
+          "source": "src\\data\\municipalities-database.ts:214"
+        },
+        {
+          "institution": "Grad Goražde",
+          "source": "src\\data\\municipalities-database.ts:226"
+        },
+        {
+          "institution": "Sarajevo Region",
+          "source": "src\\data\\sarajevo-region-forms.ts:38"
+        },
+        {
+          "institution": "Sarajevo Region",
+          "source": "src\\data\\sarajevo-region-forms.ts:65"
+        },
+        {
+          "institution": "Goražde",
+          "source": "src\\data\\uploaded-institutions.ts:9"
+        },
+        {
+          "institution": "Grad Goražde",
+          "source": "src\\data\\verified-domains.ts:990"
+        },
+        {
+          "institution": "Grad Goražde",
+          "source": "src\\data\\verified-domains.ts:991"
+        }
+      ]
+    },
+    {
+      "url": "https://gorazde.ba/sluzba-za-prostorno-uredjenje-stambeno-komunalne-poslove-i-raseljena-lica-elektronski-obrasci/",
+      "occurrences": [
+        {
+          "institution": "Gorazde",
+          "source": "src\\data\\gorazde-forms.ts:23"
+        },
+        {
+          "institution": "Grad Goražde",
+          "source": "src\\data\\municipalities-database.ts:213"
+        },
+        {
+          "institution": "Sarajevo Region",
+          "source": "src\\data\\sarajevo-region-forms.ts:44"
+        }
+      ]
+    },
+    {
+      "url": "https://gorazde.ba/sluzba-za-inspekcijske-poslove-elektronski-obrasci/",
+      "occurrences": [
+        {
+          "institution": "Gorazde",
+          "source": "src\\data\\gorazde-forms.ts:31"
+        },
+        {
+          "institution": "Grad Goražde",
+          "source": "src\\data\\municipalities-database.ts:218"
+        },
+        {
+          "institution": "Sarajevo Region",
+          "source": "src\\data\\sarajevo-region-forms.ts:51"
+        }
+      ]
+    },
+    {
+      "url": "https://gorazde.ba/sluzba-za-geodetske-imovinsko-pravne-poslove-i-katastar-nekretnina/",
+      "occurrences": [
+        {
+          "institution": "Gorazde",
+          "source": "src\\data\\gorazde-forms.ts:39"
+        },
+        {
+          "institution": "Grad Goražde",
+          "source": "src\\data\\municipalities-database.ts:222"
+        },
+        {
+          "institution": "Sarajevo Region",
+          "source": "src\\data\\sarajevo-region-forms.ts:58"
+        }
+      ]
+    },
+    {
+      "url": "https://gorazde.ba/sluzba-za-boracko-invalidsku-i-socijalnu-zastitu-elektronski-obrasci/",
+      "occurrences": [
+        {
+          "institution": "Gorazde",
+          "source": "src\\data\\gorazde-forms.ts:55"
+        },
+        {
+          "institution": "Grad Goražde",
+          "source": "src\\data\\municipalities-database.ts:230"
+        },
+        {
+          "institution": "Sarajevo Region",
+          "source": "src\\data\\sarajevo-region-forms.ts:72"
+        }
+      ]
+    },
+    {
+      "url": "https://gorazde.ba/sluzba-za-civilnu-zastitu-i-mjesne-zajednice-elektronski-obrasci/",
+      "occurrences": [
+        {
+          "institution": "Gorazde",
+          "source": "src\\data\\gorazde-forms.ts:63"
+        },
+        {
+          "institution": "Grad Goražde",
+          "source": "src\\data\\municipalities-database.ts:234"
+        },
+        {
+          "institution": "Sarajevo Region",
+          "source": "src\\data\\sarajevo-region-forms.ts:79"
+        }
+      ]
+    },
+    {
+      "url": "https://www.gvu.ba/",
+      "occurrences": [
+        {
+          "institution": "Gornji Vakuf",
+          "source": "src\\data\\gornji-vakuf-forms.ts:3"
+        },
+        {
+          "institution": "Gornji Vakuf-Uskoplje",
+          "source": "src\\data\\uploaded-institutions.ts:1420"
+        },
+        {
+          "institution": "Gornji Vakuf Uskoplje",
+          "source": "src\\data\\website-verification.ts:210"
+        }
+      ]
+    },
+    {
+      "url": "https://www.gvu.ba/e-maticar",
+      "occurrences": [
+        {
+          "institution": "Gornji Vakuf",
+          "source": "src\\data\\gornji-vakuf-forms.ts:4"
+        },
+        {
+          "institution": "Gornji Vakuf-Uskoplje",
+          "source": "src\\data\\uploaded-institutions.ts:1421"
+        },
+        {
+          "institution": "Gornji Vakuf-Uskoplje",
+          "source": "src\\data\\verified-domains.ts:555"
+        }
+      ]
+    },
+    {
+      "url": "https://www.gvu.ba/registar-dijaspore",
+      "occurrences": [
+        {
+          "institution": "Gornji Vakuf",
+          "source": "src\\data\\gornji-vakuf-forms.ts:5"
+        },
+        {
+          "institution": "Gornji Vakuf-Uskoplje",
+          "source": "src\\data\\municipalities-database.ts:867"
+        }
+      ]
+    },
+    {
+      "url": "https://ecitizen.ba/gornji_vakuf_uskoplje/home",
+      "occurrences": [
+        {
+          "institution": "Gornji Vakuf",
+          "source": "src\\data\\gornji-vakuf-forms.ts:6"
+        },
+        {
+          "institution": "Gornji Vakuf-Uskoplje",
+          "source": "src\\data\\verified-domains.ts:556"
+        }
+      ]
+    },
+    {
+      "url": "https://gracanica.gov.ba/",
+      "occurrences": [
+        {
+          "institution": "Gracanica",
+          "source": "src\\data\\gracanica-forms.ts:3"
+        },
+        {
+          "institution": "Gračanica",
+          "source": "src\\data\\municipalities-database.ts:575"
+        },
+        {
+          "institution": "Municipality Registry",
+          "source": "src\\data\\municipality-registry.ts:106"
+        },
+        {
+          "institution": "Gračanica",
+          "source": "src\\data\\uploaded-institutions.ts:1062"
+        },
+        {
+          "institution": "Gracanica",
+          "source": "src\\data\\website-verification.ts:216"
+        }
+      ]
+    },
+    {
+      "url": "https://gracanica.gov.ba/dokumenti/e-obrasci/",
+      "occurrences": [
+        {
+          "institution": "Gracanica",
+          "source": "src\\data\\gracanica-forms.ts:4"
+        },
+        {
+          "institution": "Gračanica",
+          "source": "src\\data\\municipalities-database.ts:579"
+        },
+        {
+          "institution": "Gračanica",
+          "source": "src\\data\\municipalities-database.ts:580"
+        },
+        {
+          "institution": "Gračanica",
+          "source": "src\\data\\uploaded-institutions.ts:1063"
+        },
+        {
+          "institution": "Gračanica",
+          "source": "src\\data\\verified-domains.ts:338"
+        }
+      ]
+    },
+    {
+      "url": "https://gracanica.gov.ba/dijaspora-gracanice/",
+      "occurrences": [
+        {
+          "institution": "Gracanica",
+          "source": "src\\data\\gracanica-forms.ts:5"
+        },
+        {
+          "institution": "Gračanica",
+          "source": "src\\data\\municipalities-database.ts:588"
+        },
+        {
+          "institution": "Gračanica",
+          "source": "src\\data\\municipalities-database.ts:594"
+        }
+      ]
+    },
+    {
+      "url": "https://www.ecitizen.ba/gracanica/home",
+      "occurrences": [
+        {
+          "institution": "Gracanica",
+          "source": "src\\data\\gracanica-forms.ts:6"
+        },
+        {
+          "institution": "Gračanica",
+          "source": "src\\data\\municipalities-database.ts:584"
+        },
+        {
+          "institution": "Gračanica",
+          "source": "src\\data\\municipalities-database.ts:593"
+        }
+      ]
+    },
+    {
+      "url": "https://grude.info/",
+      "occurrences": [
+        {
+          "institution": "Grude",
+          "source": "src\\data\\grude-forms.ts:3"
+        },
+        {
+          "institution": "Grude",
+          "source": "src\\data\\uploaded-institutions.ts:553"
+        },
+        {
+          "institution": "Grude",
+          "source": "src\\data\\website-verification.ts:550"
+        }
+      ]
+    },
+    {
+      "url": "https://grude.info/opcinska-uprava/opcinske-sluzbe/sluzba-za-opcu-upravu-branitelje-iz-domovinskog-rata-i-drustvene-djelatnosti/?search=&from=01.01.2000&to=31.12.2100#",
+      "occurrences": [
+        {
+          "institution": "Grude",
+          "source": "src\\data\\grude-forms.ts:5"
+        },
+        {
+          "institution": "Općina Grude",
+          "source": "src\\data\\verified-domains.ts:897"
+        }
+      ]
+    },
+    {
+      "url": "https://grude.info/opcinska-uprava/opcinske-sluzbe/sluzba-za-opcu-upravu-branitelje-iz-domovinskog-rata-i-drustvene-djelatnosti/?search=&from=01.01.2000&to=31.12.2100#zahtjevi",
+      "occurrences": [
+        {
+          "institution": "Grude",
+          "source": "src\\data\\grude-forms.ts:7"
+        },
+        {
+          "institution": "Grude",
+          "source": "src\\data\\uploaded-institutions.ts:554"
+        }
+      ]
+    },
+    {
+      "url": "https://www.iddeea.gov.ba/",
+      "occurrences": [
+        {
+          "institution": "Institution News",
+          "source": "src\\data\\institution-news.ts:45"
+        },
+        {
+          "institution": "IDDEEA",
+          "source": "src\\lib\\institutions-database.ts:39"
+        }
+      ]
+    },
+    {
+      "url": "https://www.pufbih.ba/",
+      "occurrences": [
+        {
+          "institution": "Institution News",
+          "source": "src\\data\\institution-news.ts:70"
+        },
+        {
+          "institution": "Porezna Uprava Federacije Bih",
+          "source": "src\\data\\website-verification.ts:663"
+        },
+        {
+          "institution": "PUFBiH",
+          "source": "src\\lib\\institutions-database.ts:110"
+        }
+      ]
+    },
+    {
+      "url": "https://www.poreskaupravars.org/",
+      "occurrences": [
+        {
+          "institution": "Institution News",
+          "source": "src\\data\\institution-news.ts:120"
+        },
+        {
+          "institution": "Poreska Uprava Republike Srpske",
+          "source": "src\\data\\website-verification.ts:657"
+        },
+        {
+          "institution": "PURS",
+          "source": "src\\lib\\institutions-database.ts:126"
+        }
+      ]
+    },
+    {
+      "url": "https://vlada.ks.gov.ba/",
+      "occurrences": [
+        {
+          "institution": "Institution News",
+          "source": "src\\data\\institution-news.ts:145"
+        },
+        {
+          "institution": "Kanton Sarajevo",
+          "source": "src\\data\\website-verification.ts:401"
+        }
+      ]
+    },
+    {
+      "url": "https://kakanj.gov.ba/",
+      "occurrences": [
+        {
+          "institution": "Kakanj",
+          "source": "src\\data\\kakanj-forms.ts:3"
+        },
+        {
+          "institution": "Kakanj",
+          "source": "src\\data\\kakanj-forms.ts:10"
+        },
+        {
+          "institution": "Općina Kakanj",
+          "source": "src\\data\\municipalities-database.ts:350"
+        },
+        {
+          "institution": "Kakanj",
+          "source": "src\\data\\website-verification.ts:383"
+        }
+      ]
+    },
+    {
+      "url": "https://kakanj.gov.ba/v5/e-obrasci/",
+      "occurrences": [
+        {
+          "institution": "Kakanj",
+          "source": "src\\data\\kakanj-forms.ts:4"
+        },
+        {
+          "institution": "Kakanj",
+          "source": "src\\data\\kakanj-forms.ts:11"
+        },
+        {
+          "institution": "Općina Kakanj",
+          "source": "src\\data\\municipalities-database.ts:321"
+        },
+        {
+          "institution": "Općina Kakanj",
+          "source": "src\\data\\municipalities-database.ts:322"
+        },
+        {
+          "institution": "Općina Kakanj",
+          "source": "src\\data\\municipalities-database.ts:355"
+        },
+        {
+          "institution": "Općina Kakanj",
+          "source": "src\\data\\verified-domains.ts:203"
+        },
+        {
+          "institution": "Općina Kakanj",
+          "source": "src\\data\\verified-domains.ts:204"
+        },
+        {
+          "institution": "Općina Kakanj",
+          "source": "src\\data\\verified-domains.ts:209"
+        }
+      ]
+    },
+    {
+      "url": "http://kakanj.gov.ba/v4/wp-content/uploads/2017/03/ZAHTJEV-ZA-PROMJENU-INVESTITORA-OK-O-4.2.-38.pdf",
+      "occurrences": [
+        {
+          "institution": "Kakanj",
+          "source": "src\\data\\kakanj-forms.ts:40"
+        },
+        {
+          "institution": "Kakanj",
+          "source": "src\\data\\kakanj-forms.ts:41"
+        },
+        {
+          "institution": "Općina Kakanj",
+          "source": "src\\data\\municipalities-database.ts:326"
+        }
+      ]
+    },
+    {
+      "url": "http://kakanj.gov.ba/v4/wp-content/uploads/2014/08/Zahtjev-za-izdavanje-odobrenja-za-obavljanje-djelatnosti-tehni%C4%8Dki-uslovi-PRAVNA-LICA.pdf",
+      "occurrences": [
+        {
+          "institution": "Kakanj",
+          "source": "src\\data\\kakanj-forms.ts:55"
+        },
+        {
+          "institution": "Kakanj",
+          "source": "src\\data\\kakanj-forms.ts:56"
+        },
+        {
+          "institution": "Općina Kakanj",
+          "source": "src\\data\\municipalities-database.ts:330"
+        }
+      ]
+    },
+    {
+      "url": "http://kakanj.gov.ba/v4/wp-content/uploads/2014/08/Zahtjev-za-izdavanje-odobrenja-za-obavljanje-djelatnosti-tehni%C4%8Dki-uslovi-FIZI%C4%8CKA-LICA-.pdf",
+      "occurrences": [
+        {
+          "institution": "Kakanj",
+          "source": "src\\data\\kakanj-forms.ts:70"
+        },
+        {
+          "institution": "Kakanj",
+          "source": "src\\data\\kakanj-forms.ts:71"
+        },
+        {
+          "institution": "Općina Kakanj",
+          "source": "src\\data\\municipalities-database.ts:334"
+        }
+      ]
+    },
+    {
+      "url": "https://kakanj.gov.ba/v5/wp-content/uploads/2023/08/Zahtjev-za-osnivanje-obrta-srodne-djelatnost-1.pdf",
+      "occurrences": [
+        {
+          "institution": "Kakanj",
+          "source": "src\\data\\kakanj-forms.ts:85"
+        },
+        {
+          "institution": "Kakanj",
+          "source": "src\\data\\kakanj-forms.ts:86"
+        },
+        {
+          "institution": "Općina Kakanj",
+          "source": "src\\data\\municipalities-database.ts:338"
+        }
+      ]
+    },
+    {
+      "url": "http://kakanj.gov.ba/v4/isoobrasci/OBRASCI-SLU%8eBA%20ZA%20PRIVREDU,URBANIZAM%20I%20ZA%8aTITU%20OKOLINE/Zahtjev_za_izdavanje_odobrenja_o_osnivanju_ugostiteljske_radnje.pdf",
+      "occurrences": [
+        {
+          "institution": "Kakanj",
+          "source": "src\\data\\kakanj-forms.ts:100"
+        },
+        {
+          "institution": "Kakanj",
+          "source": "src\\data\\kakanj-forms.ts:101"
+        },
+        {
+          "institution": "Općina Kakanj",
+          "source": "src\\data\\municipalities-database.ts:342"
+        }
+      ]
+    },
+    {
+      "url": "http://kakanj.gov.ba/v4/isoobrasci/OBRASCI-SLU%8eBA%20ZA%20PRIVREDU,URBANIZAM%20I%20ZA%8aTITU%20OKOLINE/Zahtjev_za_izmjenu_rje%9aenja_o_osnivanju_radnje_ili_obavljanju_djelatnosti.pdf",
+      "occurrences": [
+        {
+          "institution": "Kakanj",
+          "source": "src\\data\\kakanj-forms.ts:115"
+        },
+        {
+          "institution": "Kakanj",
+          "source": "src\\data\\kakanj-forms.ts:116"
+        },
+        {
+          "institution": "Općina Kakanj",
+          "source": "src\\data\\municipalities-database.ts:346"
+        }
+      ]
+    },
+    {
+      "url": "https://kalesija.ba/",
+      "occurrences": [
+        {
+          "institution": "Kalesija",
+          "source": "src\\data\\kalesija-forms.ts:3"
+        },
+        {
+          "institution": "Kalesija",
+          "source": "src\\data\\uploaded-institutions.ts:1022"
+        },
+        {
+          "institution": "Kalesija",
+          "source": "src\\data\\website-verification.ts:389"
+        }
+      ]
+    },
+    {
+      "url": "https://kalesija.ba/usluge/",
+      "occurrences": [
+        {
+          "institution": "Kalesija",
+          "source": "src\\data\\kalesija-forms.ts:4"
+        },
+        {
+          "institution": "Kalesija",
+          "source": "src\\data\\municipalities-database.ts:454"
+        },
+        {
+          "institution": "Kalesija",
+          "source": "src\\data\\municipalities-database.ts:455"
+        },
+        {
+          "institution": "Kalesija",
+          "source": "src\\data\\uploaded-institutions.ts:1023"
+        },
+        {
+          "institution": "Kalesija",
+          "source": "src\\data\\verified-domains.ts:292"
+        }
+      ]
+    },
+    {
+      "url": "https://fbihvlada.gov.ba/",
+      "occurrences": [
+        {
+          "institution": "Legal Sources",
+          "source": "src\\data\\legal-sources.ts:12"
+        },
+        {
+          "institution": "Federacija Bosne I Hercegovine",
+          "source": "src\\data\\website-verification.ts:168"
+        }
+      ]
+    },
+    {
+      "url": "https://livno.ba/",
+      "occurrences": [
+        {
+          "institution": "Livno",
+          "source": "src\\data\\livno-forms.ts:3"
+        },
+        {
+          "institution": "Livno",
+          "source": "src\\data\\livno-forms.ts:10"
+        },
+        {
+          "institution": "Grad Livno",
+          "source": "src\\data\\municipalities-database.ts:1132"
+        },
+        {
+          "institution": "Livno",
+          "source": "src\\data\\uploaded-institutions.ts:444"
+        },
+        {
+          "institution": "Livno",
+          "source": "src\\data\\website-verification.ts:257"
+        }
+      ]
+    },
+    {
+      "url": "https://livno.ba/za-gradane/dokumenti-i-obrasci/",
+      "occurrences": [
+        {
+          "institution": "Livno",
+          "source": "src\\data\\livno-forms.ts:4"
+        },
+        {
+          "institution": "Livno",
+          "source": "src\\data\\livno-forms.ts:11"
+        },
+        {
+          "institution": "Grad Livno",
+          "source": "src\\data\\municipalities-database.ts:1133"
+        },
+        {
+          "institution": "Grad Livno",
+          "source": "src\\data\\municipalities-database.ts:1142"
+        },
+        {
+          "institution": "Grad Livno",
+          "source": "src\\data\\verified-domains.ts:798"
+        },
+        {
+          "institution": "Grad Livno",
+          "source": "src\\data\\verified-domains.ts:803"
+        }
+      ]
+    },
+    {
+      "url": "https://opstinalopare.com/",
+      "occurrences": [
+        {
+          "institution": "Lopare",
+          "source": "src\\data\\lopare-forms.ts:3"
+        },
+        {
+          "institution": "Lopare",
+          "source": "src\\data\\municipalities-database.ts:1533"
+        },
+        {
+          "institution": "Lopare",
+          "source": "src\\data\\uploaded-institutions.ts:1330"
+        }
+      ]
+    },
+    {
+      "url": "https://starigrad.ba/",
+      "occurrences": [
+        {
+          "institution": "Stari Grad Sarajevo",
+          "source": "src\\data\\municipalities-database.ts:50"
+        },
+        {
+          "institution": "Sarajevo Region",
+          "source": "src\\data\\sarajevo-region-forms.ts:238"
+        },
+        {
+          "institution": "Stari Grad Sarajevo",
+          "source": "src\\data\\uploaded-institutions.ts:78"
+        },
+        {
+          "institution": "Stari Grad",
+          "source": "src\\data\\website-verification.ts:717"
+        }
+      ]
+    },
+    {
+      "url": "https://www.centar.ba/",
+      "occurrences": [
+        {
+          "institution": "Centar Sarajevo",
+          "source": "src\\data\\municipalities-database.ts:64"
+        },
+        {
+          "institution": "Sarajevo Region",
+          "source": "src\\data\\sarajevo-region-forms.ts:256"
+        },
+        {
+          "institution": "Centar Sarajevo",
+          "source": "src\\data\\uploaded-institutions.ts:88"
+        },
+        {
+          "institution": "Centar",
+          "source": "src\\data\\website-verification.ts:102"
+        }
+      ]
+    },
+    {
+      "url": "https://www.centar.ba/e-uprava/elektronski-formulari",
+      "occurrences": [
+        {
+          "institution": "Centar Sarajevo",
+          "source": "src\\data\\municipalities-database.ts:68"
+        },
+        {
+          "institution": "Sarajevo Region",
+          "source": "src\\data\\sarajevo-region-forms.ts:257"
+        },
+        {
+          "institution": "Sarajevo Region",
+          "source": "src\\data\\sarajevo-region-forms.ts:330"
+        },
+        {
+          "institution": "Sarajevo Region",
+          "source": "src\\data\\sarajevo-region-forms.ts:339"
+        },
+        {
+          "institution": "Sarajevo Region",
+          "source": "src\\data\\sarajevo-region-forms.ts:348"
+        },
+        {
+          "institution": "Sarajevo Region",
+          "source": "src\\data\\sarajevo-region-forms.ts:357"
+        },
+        {
+          "institution": "Sarajevo Region",
+          "source": "src\\data\\sarajevo-region-forms.ts:366"
+        },
+        {
+          "institution": "Sarajevo Region",
+          "source": "src\\data\\sarajevo-region-forms.ts:375"
+        },
+        {
+          "institution": "Sarajevo Region",
+          "source": "src\\data\\sarajevo-region-forms.ts:384"
+        },
+        {
+          "institution": "Sarajevo Region",
+          "source": "src\\data\\sarajevo-region-forms.ts:393"
+        },
+        {
+          "institution": "Sarajevo Region",
+          "source": "src\\data\\sarajevo-region-forms.ts:402"
+        },
+        {
+          "institution": "Sarajevo Region",
+          "source": "src\\data\\sarajevo-region-forms.ts:411"
+        },
+        {
+          "institution": "Centar Sarajevo",
+          "source": "src\\data\\uploaded-institutions.ts:89"
+        },
+        {
+          "institution": "Centar Sarajevo",
+          "source": "src\\data\\verified-domains.ts:60"
+        },
+        {
+          "institution": "Centar Sarajevo",
+          "source": "src\\data\\verified-domains.ts:61"
+        }
+      ]
+    },
+    {
+      "url": "https://opcinailidza.ba/",
+      "occurrences": [
+        {
+          "institution": "Ilidža",
+          "source": "src\\data\\municipalities-database.ts:83"
+        },
+        {
+          "institution": "Sarajevo Region",
+          "source": "src\\data\\sarajevo-region-forms.ts:424"
+        },
+        {
+          "institution": "Općina Ilidža",
+          "source": "src\\data\\uploaded-institutions.ts:98"
+        },
+        {
+          "institution": "Ilidza",
+          "source": "src\\data\\website-verification.ts:335"
+        }
+      ]
+    },
+    {
+      "url": "https://novigradsarajevo.ba/",
+      "occurrences": [
+        {
+          "institution": "Novi Grad Sarajevo",
+          "source": "src\\data\\municipalities-database.ts:98"
+        },
+        {
+          "institution": "Sarajevo Region",
+          "source": "src\\data\\sarajevo-region-forms.ts:442"
+        },
+        {
+          "institution": "Novi Grad Sarajevo",
+          "source": "src\\data\\uploaded-institutions.ts:108"
+        },
+        {
+          "institution": "Novi Grad Sarajevo",
+          "source": "src\\data\\website-verification.ts:520"
+        }
+      ]
+    },
+    {
+      "url": "https://novosarajevo.ba/",
+      "occurrences": [
+        {
+          "institution": "Novo Sarajevo",
+          "source": "src\\data\\municipalities-database.ts:113"
+        },
+        {
+          "institution": "Sarajevo Region",
+          "source": "src\\data\\sarajevo-region-forms.ts:460"
+        },
+        {
+          "institution": "Novo Sarajevo",
+          "source": "src\\data\\uploaded-institutions.ts:118"
+        },
+        {
+          "institution": "Novo Sarajevo",
+          "source": "src\\data\\website-verification.ts:532"
+        }
+      ]
+    },
+    {
+      "url": "https://hadzici.ba/",
+      "occurrences": [
+        {
+          "institution": "Hadžići",
+          "source": "src\\data\\municipalities-database.ts:137"
+        },
+        {
+          "institution": "Sarajevo Region",
+          "source": "src\\data\\sarajevo-region-forms.ts:495"
+        },
+        {
+          "institution": "Hadžići",
+          "source": "src\\data\\uploaded-institutions.ts:137"
+        },
+        {
+          "institution": "Hadzici",
+          "source": "src\\data\\website-verification.ts:323"
+        }
+      ]
+    },
+    {
+      "url": "https://trnovo.ba/",
+      "occurrences": [
+        {
+          "institution": "Trnovo (FBiH)",
+          "source": "src\\data\\municipalities-database.ts:152"
+        },
+        {
+          "institution": "Sarajevo Region",
+          "source": "src\\data\\sarajevo-region-forms.ts:508"
+        },
+        {
+          "institution": "Trnovo (FBiH)",
+          "source": "src\\data\\uploaded-institutions.ts:146"
+        },
+        {
+          "institution": "Trnovo",
+          "source": "src\\data\\website-verification.ts:777"
+        },
+        {
+          "institution": "Trnovo Fbih",
+          "source": "src\\data\\website-verification.ts:783"
+        }
+      ]
+    },
+    {
+      "url": "https://ilijas.ba/index.php/e-uprava",
+      "occurrences": [
+        {
+          "institution": "Ilijaš",
+          "source": "src\\data\\municipalities-database.ts:166"
+        },
+        {
+          "institution": "Ilijaš",
+          "source": "src\\data\\municipalities-database.ts:167"
+        },
+        {
+          "institution": "Sarajevo Region",
+          "source": "src\\data\\sarajevo-region-forms.ts:526"
+        },
+        {
+          "institution": "Sarajevo Region",
+          "source": "src\\data\\sarajevo-region-forms.ts:532"
+        },
+        {
+          "institution": "Sarajevo Region",
+          "source": "src\\data\\sarajevo-region-forms.ts:539"
+        },
+        {
+          "institution": "Sarajevo Region",
+          "source": "src\\data\\sarajevo-region-forms.ts:546"
+        },
+        {
+          "institution": "Ilijaš",
+          "source": "src\\data\\uploaded-institutions.ts:157"
+        },
+        {
+          "institution": "Ilijaš",
+          "source": "src\\data\\verified-domains.ts:147"
+        }
+      ]
+    },
+    {
+      "url": "https://ilijas.ba/",
+      "occurrences": [
+        {
+          "institution": "Ilijaš",
+          "source": "src\\data\\municipalities-database.ts:171"
+        },
+        {
+          "institution": "Sarajevo Region",
+          "source": "src\\data\\sarajevo-region-forms.ts:525"
+        },
+        {
+          "institution": "Ilijaš",
+          "source": "src\\data\\uploaded-institutions.ts:156"
+        },
+        {
+          "institution": "Ilijas",
+          "source": "src\\data\\website-verification.ts:341"
+        }
+      ]
+    },
+    {
+      "url": "https://ecitizen.ba/ilijas/home",
+      "occurrences": [
+        {
+          "institution": "Ilijaš",
+          "source": "src\\data\\municipalities-database.ts:176"
+        },
+        {
+          "institution": "Sarajevo Region",
+          "source": "src\\data\\sarajevo-region-forms.ts:553"
+        }
+      ]
+    },
+    {
+      "url": "https://eregistar.ilijas.ba/",
+      "occurrences": [
+        {
+          "institution": "Ilijaš",
+          "source": "src\\data\\municipalities-database.ts:177"
+        },
+        {
+          "institution": "Sarajevo Region",
+          "source": "src\\data\\sarajevo-region-forms.ts:560"
+        }
+      ]
+    },
+    {
+      "url": "https://www.sarajevo.ba/bs/category/145/1",
+      "occurrences": [
+        {
+          "institution": "Grad Sarajevo",
+          "source": "src\\data\\municipalities-database.ts:189"
+        },
+        {
+          "institution": "Sarajevo Region",
+          "source": "src\\data\\sarajevo-region-forms.ts:576"
+        },
+        {
+          "institution": "Sarajevo Region",
+          "source": "src\\data\\sarajevo-region-forms.ts:582"
+        },
+        {
+          "institution": "Grad Sarajevo",
+          "source": "src\\data\\verified-domains.ts:160"
+        }
+      ]
+    },
+    {
+      "url": "https://www.sarajevo.ba/",
+      "occurrences": [
+        {
+          "institution": "Grad Sarajevo",
+          "source": "src\\data\\municipalities-database.ts:193"
+        },
+        {
+          "institution": "Sarajevo Region",
+          "source": "src\\data\\sarajevo-region-forms.ts:575"
+        },
+        {
+          "institution": "Sarajevo",
+          "source": "src\\data\\website-verification.ts:281"
+        }
+      ]
+    },
+    {
+      "url": "https://praca.ba/?s=Obrazac",
+      "occurrences": [
+        {
+          "institution": "Pale-Prača",
+          "source": "src\\data\\municipalities-database.ts:252"
+        },
+        {
+          "institution": "Sarajevo Region",
+          "source": "src\\data\\sarajevo-region-forms.ts:95"
+        },
+        {
+          "institution": "Sarajevo Region",
+          "source": "src\\data\\sarajevo-region-forms.ts:101"
+        },
+        {
+          "institution": "Sarajevo Region",
+          "source": "src\\data\\sarajevo-region-forms.ts:108"
+        },
+        {
+          "institution": "Pale-Prača",
+          "source": "src\\data\\uploaded-institutions.ts:19"
+        },
+        {
+          "institution": "Općina Pale-Prača",
+          "source": "src\\data\\verified-domains.ts:1003"
+        }
+      ]
+    },
+    {
+      "url": "https://praca.ba/",
+      "occurrences": [
+        {
+          "institution": "Pale-Prača",
+          "source": "src\\data\\municipalities-database.ts:256"
+        },
+        {
+          "institution": "Sarajevo Region",
+          "source": "src\\data\\sarajevo-region-forms.ts:94"
+        },
+        {
+          "institution": "Pale-Prača",
+          "source": "src\\data\\uploaded-institutions.ts:18"
+        },
+        {
+          "institution": "Pale Praca",
+          "source": "src\\data\\website-verification.ts:639"
+        }
+      ]
+    },
+    {
+      "url": "https://foca-ustikolina.ba/",
+      "occurrences": [
+        {
+          "institution": "Foča-Ustikolina",
+          "source": "src\\data\\municipalities-database.ts:270"
+        },
+        {
+          "institution": "Foča-Ustikolina",
+          "source": "src\\data\\municipalities-database.ts:275"
+        },
+        {
+          "institution": "Sarajevo Region",
+          "source": "src\\data\\sarajevo-region-forms.ts:123"
+        },
+        {
+          "institution": "Foča-Ustikolina",
+          "source": "src\\data\\uploaded-institutions.ts:28"
+        },
+        {
+          "institution": "Foca Ustikolina",
+          "source": "src\\data\\website-verification.ts:180"
+        }
+      ]
+    },
+    {
+      "url": "https://foca-ustikolina.ba/wp-content/uploads/2022/10/ZAHTJEV_urbanistickaSaglasnost.pdf",
+      "occurrences": [
+        {
+          "institution": "Foča-Ustikolina",
+          "source": "src\\data\\municipalities-database.ts:271"
+        },
+        {
+          "institution": "Sarajevo Region",
+          "source": "src\\data\\sarajevo-region-forms.ts:124"
+        },
+        {
+          "institution": "Sarajevo Region",
+          "source": "src\\data\\sarajevo-region-forms.ts:130"
+        },
+        {
+          "institution": "Foča-Ustikolina",
+          "source": "src\\data\\uploaded-institutions.ts:29"
+        },
+        {
+          "institution": "Općina Foča-Ustikolina",
+          "source": "src\\data\\verified-domains.ts:1015"
+        }
+      ]
+    },
+    {
+      "url": "https://zenica.ba/e-registar-administrativnih-postupaka/",
+      "occurrences": [
+        {
+          "institution": "Zenica",
+          "source": "src\\data\\municipalities-database.ts:292"
+        },
+        {
+          "institution": "Grad Zenica",
+          "source": "src\\data\\municipalities-database.ts:411"
+        },
+        {
+          "institution": "Zenica",
+          "source": "src\\data\\uploaded-institutions.ts:1531"
+        },
+        {
+          "institution": "Zenica",
+          "source": "src\\data\\verified-domains.ts:177"
+        },
+        {
+          "institution": "Zenica",
+          "source": "src\\data\\verified-domains.ts:178"
+        }
+      ]
+    },
+    {
+      "url": "https://dobojjug.ba/",
+      "occurrences": [
+        {
+          "institution": "Doboj-Jug",
+          "source": "src\\data\\municipalities-database.ts:306"
+        },
+        {
+          "institution": "Updated Government",
+          "source": "src\\data\\updated-government-forms.ts:105"
+        }
+      ]
+    },
+    {
+      "url": "https://dobojjug.ba/pristup-informacijama/",
+      "occurrences": [
+        {
+          "institution": "Doboj-Jug",
+          "source": "src\\data\\municipalities-database.ts:307"
+        },
+        {
+          "institution": "Updated Government",
+          "source": "src\\data\\updated-government-forms.ts:106"
+        },
+        {
+          "institution": "Updated Government",
+          "source": "src\\data\\updated-government-forms.ts:108"
+        },
+        {
+          "institution": "Doboj-Jug",
+          "source": "src\\data\\verified-domains.ts:190"
+        }
+      ]
+    },
+    {
+      "url": "https://olovo.gov.ba/?lsvrdocumentcat=elektronski-formulari",
+      "occurrences": [
+        {
+          "institution": "Olovo",
+          "source": "src\\data\\municipalities-database.ts:397"
+        },
+        {
+          "institution": "Municipality Registry",
+          "source": "src\\data\\municipality-registry.ts:90"
+        },
+        {
+          "institution": "Olovo",
+          "source": "src\\data\\olovo-forms.ts:3"
+        },
+        {
+          "institution": "Olovo",
+          "source": "src\\data\\verified-domains.ts:249"
+        }
+      ]
+    },
+    {
+      "url": "https://grad.tuzla.ba/",
+      "occurrences": [
+        {
+          "institution": "Grad Tuzla",
+          "source": "src\\data\\municipalities-database.ts:427"
+        },
+        {
+          "institution": "Tuzla",
+          "source": "src\\data\\uploaded-institutions.ts:1012"
+        },
+        {
+          "institution": "Tuzla",
+          "source": "src\\data\\website-verification.ts:299"
+        }
+      ]
+    },
+    {
+      "url": "https://www.ecitizen.ba/tuzla/eServices/eServicesSubcategory/2",
+      "occurrences": [
+        {
+          "institution": "Grad Tuzla",
+          "source": "src\\data\\municipalities-database.ts:431"
+        },
+        {
+          "institution": "Grad Tuzla",
+          "source": "src\\data\\municipalities-database.ts:432"
+        },
+        {
+          "institution": "Republika Srpska",
+          "source": "src\\data\\uploaded-institutions.ts:833"
+        },
+        {
+          "institution": "Tuzla",
+          "source": "src\\data\\uploaded-institutions.ts:1015"
+        },
+        {
+          "institution": "Grad Tuzla",
+          "source": "src\\data\\verified-domains.ts:279"
+        },
+        {
+          "institution": "Grad Tuzla",
+          "source": "src\\data\\verified-domains.ts:280"
+        }
+      ]
+    },
+    {
+      "url": "https://banovici.gov.ba/zahtjevi/",
+      "occurrences": [
+        {
+          "institution": "Banovići",
+          "source": "src\\data\\municipalities-database.ts:470"
+        },
+        {
+          "institution": "Banovići",
+          "source": "src\\data\\uploaded-institutions.ts:1033"
+        },
+        {
+          "institution": "Banovići",
+          "source": "src\\data\\verified-domains.ts:304"
+        }
+      ]
+    },
+    {
+      "url": "https://banovici.gov.ba/",
+      "occurrences": [
+        {
+          "institution": "Banovići",
+          "source": "src\\data\\municipalities-database.ts:474"
+        },
+        {
+          "institution": "Banovići",
+          "source": "src\\data\\uploaded-institutions.ts:1032"
+        },
+        {
+          "institution": "Banovici",
+          "source": "src\\data\\website-verification.ts:12"
+        }
+      ]
+    },
+    {
+      "url": "https://opcinacelic.ba/",
+      "occurrences": [
+        {
+          "institution": "Čelić",
+          "source": "src\\data\\municipalities-database.ts:488"
+        },
+        {
+          "institution": "Čelić",
+          "source": "src\\data\\uploaded-institutions.ts:1042"
+        },
+        {
+          "institution": "Celic",
+          "source": "src\\data\\website-verification.ts:114"
+        }
+      ]
+    },
+    {
+      "url": "https://opcinadobojistok.ba/",
+      "occurrences": [
+        {
+          "institution": "Doboj Istok",
+          "source": "src\\data\\municipalities-database.ts:506"
+        },
+        {
+          "institution": "Updated Government",
+          "source": "src\\data\\updated-government-forms.ts:45"
+        },
+        {
+          "institution": "Doboj Istok",
+          "source": "src\\data\\uploaded-institutions.ts:1052"
+        },
+        {
+          "institution": "Doboj Istok",
+          "source": "src\\data\\website-verification.ts:132"
+        }
+      ]
+    },
+    {
+      "url": "https://opcinadobojistok.ba/formulari-sluzbe-za-poduzetnistvo/",
+      "occurrences": [
+        {
+          "institution": "Doboj Istok",
+          "source": "src\\data\\municipalities-database.ts:507"
+        },
+        {
+          "institution": "Updated Government",
+          "source": "src\\data\\updated-government-forms.ts:46"
+        },
+        {
+          "institution": "Doboj Istok",
+          "source": "src\\data\\uploaded-institutions.ts:1053"
+        },
+        {
+          "institution": "Doboj Istok",
+          "source": "src\\data\\verified-domains.ts:326"
+        }
+      ]
+    },
+    {
+      "url": "https://gradacac.ba/",
+      "occurrences": [
+        {
+          "institution": "Gradačac",
+          "source": "src\\data\\municipalities-database.ts:606"
+        },
+        {
+          "institution": "Gradačac",
+          "source": "src\\data\\uploaded-institutions.ts:1072"
+        },
+        {
+          "institution": "Gradacac",
+          "source": "src\\data\\website-verification.ts:311"
+        }
+      ]
+    },
+    {
+      "url": "https://esalter.gradacac.ba/",
+      "occurrences": [
+        {
+          "institution": "Gradačac",
+          "source": "src\\data\\municipalities-database.ts:610"
+        },
+        {
+          "institution": "Gradačac",
+          "source": "src\\data\\municipalities-database.ts:611"
+        },
+        {
+          "institution": "Gradačac",
+          "source": "src\\data\\uploaded-institutions.ts:1073"
+        },
+        {
+          "institution": "Gradačac",
+          "source": "src\\data\\verified-domains.ts:350"
+        }
+      ]
+    },
+    {
+      "url": "https://kladanj.ba/",
+      "occurrences": [
+        {
+          "institution": "Kladanj",
+          "source": "src\\data\\municipalities-database.ts:630"
+        },
+        {
+          "institution": "Municipality Registry",
+          "source": "src\\data\\municipality-registry.ts:334"
+        },
+        {
+          "institution": "Municipality Registry",
+          "source": "src\\data\\municipality-registry.ts:335"
+        },
+        {
+          "institution": "Kladanj",
+          "source": "src\\data\\uploaded-institutions.ts:1082"
+        },
+        {
+          "institution": "Kladanj",
+          "source": "src\\data\\website-verification.ts:413"
+        }
+      ]
+    },
+    {
+      "url": "https://lukavac.ba/",
+      "occurrences": [
+        {
+          "institution": "Lukavac",
+          "source": "src\\data\\municipalities-database.ts:644"
+        },
+        {
+          "institution": "Municipality Registry",
+          "source": "src\\data\\municipality-registry.ts:247"
+        },
+        {
+          "institution": "Lukavac",
+          "source": "src\\data\\uploaded-institutions.ts:1092"
+        },
+        {
+          "institution": "Lukavac",
+          "source": "src\\data\\website-verification.ts:472"
+        }
+      ]
+    },
+    {
+      "url": "https://lukavac.ba/e-obrasci/",
+      "occurrences": [
+        {
+          "institution": "Lukavac",
+          "source": "src\\data\\municipalities-database.ts:648"
+        },
+        {
+          "institution": "Municipality Registry",
+          "source": "src\\data\\municipality-registry.ts:248"
+        },
+        {
+          "institution": "Municipality Registry",
+          "source": "src\\data\\municipality-registry.ts:253"
+        },
+        {
+          "institution": "Lukavac",
+          "source": "src\\data\\uploaded-institutions.ts:1093"
+        },
+        {
+          "institution": "Lukavac",
+          "source": "src\\data\\verified-domains.ts:373"
+        }
+      ]
+    },
+    {
+      "url": "https://srebrenik.ba/obrasci/",
+      "occurrences": [
+        {
+          "institution": "Srebrenik",
+          "source": "src\\data\\municipalities-database.ts:673"
+        },
+        {
+          "institution": "Srebrenik",
+          "source": "src\\data\\verified-domains.ts:395"
+        }
+      ]
+    },
+    {
+      "url": "https://www.bihac.org/dokumenti/21",
+      "occurrences": [
+        {
+          "institution": "Grad Bihać",
+          "source": "src\\data\\municipalities-database.ts:700"
+        },
+        {
+          "institution": "Grad Bihać",
+          "source": "src\\data\\verified-domains.ts:433"
+        }
+      ]
+    },
+    {
+      "url": "https://opcinabuzim.ba/",
+      "occurrences": [
+        {
+          "institution": "Bužim",
+          "source": "src\\data\\municipalities-database.ts:732"
+        },
+        {
+          "institution": "Bužim",
+          "source": "src\\data\\uploaded-institutions.ts:703"
+        },
+        {
+          "institution": "Buzim",
+          "source": "src\\data\\website-verification.ts:90"
+        }
+      ]
+    },
+    {
+      "url": "https://opcina-kljuc.ba/",
+      "occurrences": [
+        {
+          "institution": "Ključ",
+          "source": "src\\data\\municipalities-database.ts:786"
+        },
+        {
+          "institution": "Municipality Registry",
+          "source": "src\\data\\municipality-registry.ts:226"
+        },
+        {
+          "institution": "Ključ",
+          "source": "src\\data\\uploaded-institutions.ts:723"
+        },
+        {
+          "institution": "Kljuc",
+          "source": "src\\data\\website-verification.ts:419"
+        }
+      ]
+    },
+    {
+      "url": "https://www.ecitizen.ba/kljuc/home",
+      "occurrences": [
+        {
+          "institution": "Ključ",
+          "source": "src\\data\\municipalities-database.ts:790"
+        },
+        {
+          "institution": "Municipality Registry",
+          "source": "src\\data\\municipality-registry.ts:227"
+        },
+        {
+          "institution": "Municipality Registry",
+          "source": "src\\data\\municipality-registry.ts:232"
+        },
+        {
+          "institution": "Ključ",
+          "source": "src\\data\\uploaded-institutions.ts:724"
+        },
+        {
+          "institution": "Ključ",
+          "source": "src\\data\\verified-domains.ts:494"
+        }
+      ]
+    },
+    {
+      "url": "https://velikakladusa.gov.ba/e-obrasci/",
+      "occurrences": [
+        {
+          "institution": "Velika Kladuša",
+          "source": "src\\data\\municipalities-database.ts:815"
+        },
+        {
+          "institution": "Velika Kladuša",
+          "source": "src\\data\\verified-domains.ts:516"
+        }
+      ]
+    },
+    {
+      "url": "https://opcina-bugojno.ba/",
+      "occurrences": [
+        {
+          "institution": "Bugojno",
+          "source": "src\\data\\municipalities-database.ts:842"
+        },
+        {
+          "institution": "Updated Government",
+          "source": "src\\data\\updated-government-forms.ts:34"
+        },
+        {
+          "institution": "Bugojno",
+          "source": "src\\data\\uploaded-institutions.ts:1410"
+        },
+        {
+          "institution": "Bugojno",
+          "source": "src\\data\\website-verification.ts:78"
+        }
+      ]
+    },
+    {
+      "url": "https://opcina-bugojno.ba/e-formulari/",
+      "occurrences": [
+        {
+          "institution": "Bugojno",
+          "source": "src\\data\\municipalities-database.ts:843"
+        },
+        {
+          "institution": "Updated Government",
+          "source": "src\\data\\updated-government-forms.ts:35"
+        },
+        {
+          "institution": "Updated Government",
+          "source": "src\\data\\updated-government-forms.ts:37"
+        },
+        {
+          "institution": "Bugojno",
+          "source": "src\\data\\uploaded-institutions.ts:1411"
+        },
+        {
+          "institution": "Bugojno",
+          "source": "src\\data\\verified-domains.ts:542"
+        }
+      ]
+    },
+    {
+      "url": "https://donji-vakuf.ba/",
+      "occurrences": [
+        {
+          "institution": "Donji Vakuf",
+          "source": "src\\data\\municipalities-database.ts:882"
+        },
+        {
+          "institution": "Updated Government",
+          "source": "src\\data\\updated-government-forms.ts:165"
+        },
+        {
+          "institution": "Donji Vakuf",
+          "source": "src\\data\\uploaded-institutions.ts:1430"
+        },
+        {
+          "institution": "Donji Vakuf",
+          "source": "src\\data\\website-verification.ts:150"
+        }
+      ]
+    },
+    {
+      "url": "https://donji-vakuf.ba/wp-content/uploads/2013/03/Formularzaprijemkodnacelnika.pdf",
+      "occurrences": [
+        {
+          "institution": "Donji Vakuf",
+          "source": "src\\data\\municipalities-database.ts:883"
+        },
+        {
+          "institution": "Updated Government",
+          "source": "src\\data\\updated-government-forms.ts:166"
+        },
+        {
+          "institution": "Updated Government",
+          "source": "src\\data\\updated-government-forms.ts:169"
+        },
+        {
+          "institution": "Donji Vakuf",
+          "source": "src\\data\\uploaded-institutions.ts:1431"
+        },
+        {
+          "institution": "Donji Vakuf",
+          "source": "src\\data\\verified-domains.ts:568"
+        }
+      ]
+    },
+    {
+      "url": "https://www.mostar.ba/kategorija/sluzbeni-dokumenti/",
+      "occurrences": [
+        {
+          "institution": "Grad Mostar",
+          "source": "src\\data\\municipalities-database.ts:979"
+        },
+        {
+          "institution": "Grad Mostar",
+          "source": "src\\data\\verified-domains.ts:665"
+        }
+      ]
+    },
+    {
+      "url": "https://www.jablanica.ba/",
+      "occurrences": [
+        {
+          "institution": "Jablanica",
+          "source": "src\\data\\municipalities-database.ts:1025"
+        },
+        {
+          "institution": "Općina Jablanica",
+          "source": "src\\data\\uploaded-institutions.ts:354"
+        }
+      ]
+    },
+    {
+      "url": "https://www.jablanica.ba/ba/download-zona/obrasci-i-zahtjevi.html",
+      "occurrences": [
+        {
+          "institution": "Jablanica",
+          "source": "src\\data\\municipalities-database.ts:1029"
+        },
+        {
+          "institution": "Jablanica",
+          "source": "src\\data\\municipalities-database.ts:1030"
+        },
+        {
+          "institution": "Općina Jablanica",
+          "source": "src\\data\\uploaded-institutions.ts:355"
+        },
+        {
+          "institution": "Jablanica",
+          "source": "src\\data\\verified-domains.ts:701"
+        }
+      ]
+    },
+    {
+      "url": "https://www.konjic.ba/ba/uprava/opcinske-sluzbe/prospekti-sluzbi.html",
+      "occurrences": [
+        {
+          "institution": "Konjic",
+          "source": "src\\data\\municipalities-database.ts:1044"
+        },
+        {
+          "institution": "Municipality Registry",
+          "source": "src\\data\\municipality-registry.ts:186"
+        },
+        {
+          "institution": "Općina Konjic",
+          "source": "src\\data\\uploaded-institutions.ts:365"
+        },
+        {
+          "institution": "Konjic",
+          "source": "src\\data\\verified-domains.ts:712"
+        }
+      ]
+    },
+    {
+      "url": "https://domaljevac.ba/",
+      "occurrences": [
+        {
+          "institution": "Domaljevac-Šamac",
+          "source": "src\\data\\municipalities-database.ts:1115"
+        },
+        {
+          "institution": "Updated Government",
+          "source": "src\\data\\updated-government-forms.ts:116"
+        },
+        {
+          "institution": "Domaljevac-Šamac",
+          "source": "src\\data\\uploaded-institutions.ts:962"
+        }
+      ]
+    },
+    {
+      "url": "https://domaljevac.ba/wp-content/uploads/2025/02/zahtjev-za-upravni-postupak.pdf",
+      "occurrences": [
+        {
+          "institution": "Domaljevac-Šamac",
+          "source": "src\\data\\municipalities-database.ts:1116"
+        },
+        {
+          "institution": "Updated Government",
+          "source": "src\\data\\updated-government-forms.ts:117"
+        },
+        {
+          "institution": "Updated Government",
+          "source": "src\\data\\updated-government-forms.ts:120"
+        },
+        {
+          "institution": "Domaljevac-Šamac",
+          "source": "src\\data\\uploaded-institutions.ts:963"
+        },
+        {
+          "institution": "Domaljevac-Šamac",
+          "source": "src\\data\\verified-domains.ts:782"
+        }
+      ]
+    },
+    {
+      "url": "https://livno.ba/za-gradane/maticni-ured/",
+      "occurrences": [
+        {
+          "institution": "Grad Livno",
+          "source": "src\\data\\municipalities-database.ts:1137"
+        },
+        {
+          "institution": "Municipality Registry",
+          "source": "src\\data\\municipality-registry.ts:411"
+        },
+        {
+          "institution": "Livno",
+          "source": "src\\data\\uploaded-institutions.ts:445"
+        }
+      ]
+    },
+    {
+      "url": "https://www.opstinadrvar.net/",
+      "occurrences": [
+        {
+          "institution": "Drvar",
+          "source": "src\\data\\municipalities-database.ts:1162"
+        },
+        {
+          "institution": "Updated Government",
+          "source": "src\\data\\updated-government-forms.ts:180"
+        },
+        {
+          "institution": "Drvar",
+          "source": "src\\data\\uploaded-institutions.ts:474"
+        },
+        {
+          "institution": "Drvar",
+          "source": "src\\data\\uploaded-institutions.ts:484"
+        }
+      ]
+    },
+    {
+      "url": "http://www.opstinadrvar.net/wp-content/uploads/2021/06/Zahtjev-ka-opstinskom-nacelniku.pdf",
+      "occurrences": [
+        {
+          "institution": "Drvar",
+          "source": "src\\data\\municipalities-database.ts:1163"
+        },
+        {
+          "institution": "Updated Government",
+          "source": "src\\data\\updated-government-forms.ts:181"
+        },
+        {
+          "institution": "Updated Government",
+          "source": "src\\data\\updated-government-forms.ts:184"
+        },
+        {
+          "institution": "Drvar",
+          "source": "src\\data\\uploaded-institutions.ts:475"
+        },
+        {
+          "institution": "Drvar",
+          "source": "src\\data\\uploaded-institutions.ts:485"
+        },
+        {
+          "institution": "Drvar",
+          "source": "src\\data\\verified-domains.ts:821"
+        }
+      ]
+    },
+    {
+      "url": "https://banjaluka.rs.ba/obrasci/",
+      "occurrences": [
+        {
+          "institution": "Grad Banja Luka",
+          "source": "src\\data\\municipalities-database.ts:1240"
+        },
+        {
+          "institution": "Grad Banja Luka",
+          "source": "src\\data\\verified-domains.ts:925"
+        }
+      ]
+    },
+    {
+      "url": "https://www.gradgradiska.com/",
+      "occurrences": [
+        {
+          "institution": "Grad Gradiška",
+          "source": "src\\data\\municipalities-database.ts:1265"
+        },
+        {
+          "institution": "Gradiška",
+          "source": "src\\data\\uploaded-institutions.ts:793"
+        },
+        {
+          "institution": "Gradiska",
+          "source": "src\\data\\website-verification.ts:317"
+        }
+      ]
+    },
+    {
+      "url": "https://www.gradgradiska.com/zahtjev-za-prijem-kod-gradonacelnika/",
+      "occurrences": [
+        {
+          "institution": "Grad Gradiška",
+          "source": "src\\data\\municipalities-database.ts:1269"
+        },
+        {
+          "institution": "Grad Gradiška",
+          "source": "src\\data\\municipalities-database.ts:1270"
+        },
+        {
+          "institution": "Gradiška",
+          "source": "src\\data\\uploaded-institutions.ts:794"
+        },
+        {
+          "institution": "Grad Gradiška",
+          "source": "src\\data\\verified-domains.ts:937"
+        }
+      ]
+    },
+    {
+      "url": "https://www.gradgradiska.com/izvod-iz-maticne-knjige-rodjenih-i-ili-uvjerenje-iz-knjige-drzavljana/",
+      "occurrences": [
+        {
+          "institution": "Grad Gradiška",
+          "source": "src\\data\\municipalities-database.ts:1274"
+        },
+        {
+          "institution": "Grad Gradiška",
+          "source": "src\\data\\municipalities-database.ts:1287"
+        }
+      ]
+    },
+    {
+      "url": "https://www.gradgradiska.com/izvodi-iz-maticnih-knjiga-i-upisi-u-mk/izvod-iz-maticne-knjige-vjencanih/",
+      "occurrences": [
+        {
+          "institution": "Grad Gradiška",
+          "source": "src\\data\\municipalities-database.ts:1278"
+        },
+        {
+          "institution": "Grad Gradiška",
+          "source": "src\\data\\municipalities-database.ts:1288"
+        }
+      ]
+    },
+    {
+      "url": "https://www.gradgradiska.com/izvodi-iz-maticnih-knjiga-i-upisi-u-mk/izvod-iz-maticne-knjige-umrlih/",
+      "occurrences": [
+        {
+          "institution": "Grad Gradiška",
+          "source": "src\\data\\municipalities-database.ts:1282"
+        },
+        {
+          "institution": "Grad Gradiška",
+          "source": "src\\data\\municipalities-database.ts:1289"
+        }
+      ]
+    },
+    {
+      "url": "https://opstinakotorvaros.com/",
+      "occurrences": [
+        {
+          "institution": "Kotor Varoš",
+          "source": "src\\data\\municipalities-database.ts:1312"
+        },
+        {
+          "institution": "Municipality Registry",
+          "source": "src\\data\\municipality-registry.ts:268"
+        },
+        {
+          "institution": "Kotor Varoš",
+          "source": "src\\data\\uploaded-institutions.ts:842"
+        }
+      ]
+    },
+    {
+      "url": "https://opstinakotorvaros.com/zahtjevi/",
+      "occurrences": [
+        {
+          "institution": "Kotor Varoš",
+          "source": "src\\data\\municipalities-database.ts:1316"
+        },
+        {
+          "institution": "Municipality Registry",
+          "source": "src\\data\\municipality-registry.ts:269"
+        },
+        {
+          "institution": "Municipality Registry",
+          "source": "src\\data\\municipality-registry.ts:274"
+        },
+        {
+          "institution": "Kotor Varoš",
+          "source": "src\\data\\uploaded-institutions.ts:843"
+        }
+      ]
+    },
+    {
+      "url": "https://derventa.ba/usluge/obrasci/",
+      "occurrences": [
+        {
+          "institution": "Derventa",
+          "source": "src\\data\\municipalities-database.ts:1440"
+        },
+        {
+          "institution": "Republika Srpska",
+          "source": "src\\data\\uploaded-institutions.ts:1253"
+        }
+      ]
+    },
+    {
+      "url": "https://opstinasamac.org/",
+      "occurrences": [
+        {
+          "institution": "Šamac",
+          "source": "src\\data\\municipalities-database.ts:1491"
+        },
+        {
+          "institution": "Updated Government",
+          "source": "src\\data\\updated-government-forms.ts:198"
+        },
+        {
+          "institution": "Šamac",
+          "source": "src\\data\\uploaded-institutions.ts:1292"
+        },
+        {
+          "institution": "Samac",
+          "source": "src\\data\\website-verification.ts:729"
+        }
+      ]
+    },
+    {
+      "url": "https://eregistarsamac.com/%D0%B0%D0%B4%D0%BC%D0%B8%D0%BD%D0%B8%D1%81%D1%82%D1%80%D0%B0%D1%82%D0%B8%D0%B2%D0%BD%D0%B8-%D0%BF%D0%BE%D1%81%D1%82%D1%83%D0%BF%D1%86%D0%B8/",
+      "occurrences": [
+        {
+          "institution": "Šamac",
+          "source": "src\\data\\municipalities-database.ts:1492"
+        },
+        {
+          "institution": "Updated Government",
+          "source": "src\\data\\updated-government-forms.ts:199"
+        },
+        {
+          "institution": "Updated Government",
+          "source": "src\\data\\updated-government-forms.ts:202"
+        },
+        {
+          "institution": "Šamac",
+          "source": "src\\data\\uploaded-institutions.ts:1293"
+        }
+      ]
+    },
+    {
+      "url": "https://www.gradbijeljina.org/sr/1649.izvod-iz-maticne-knjige-umrlih.html",
+      "occurrences": [
+        {
+          "institution": "Grad Bijeljina",
+          "source": "src\\data\\municipalities-database.ts:1508"
+        },
+        {
+          "institution": "Updated Government",
+          "source": "src\\data\\updated-government-forms.ts:22"
+        }
+      ]
+    },
+    {
+      "url": "https://gradistocnosarajevo.net/dokumenti/",
+      "occurrences": [
+        {
+          "institution": "Grad Istočno Sarajevo",
+          "source": "src\\data\\municipalities-database.ts:1582"
+        },
+        {
+          "institution": "Sarajevo Region",
+          "source": "src\\data\\sarajevo-region-forms.ts:602"
+        },
+        {
+          "institution": "Sarajevo Region",
+          "source": "src\\data\\sarajevo-region-forms.ts:608"
+        },
+        {
+          "institution": "Sarajevo Region",
+          "source": "src\\data\\sarajevo-region-forms.ts:615"
+        },
+        {
+          "institution": "Grad Istočno Sarajevo",
+          "source": "src\\data\\uploaded-institutions.ts:167"
+        },
+        {
+          "institution": "Grad Istočno Sarajevo",
+          "source": "src\\data\\verified-domains.ts:1031"
+        }
+      ]
+    },
+    {
+      "url": "https://gradistocnosarajevo.net/",
+      "occurrences": [
+        {
+          "institution": "Grad Istočno Sarajevo",
+          "source": "src\\data\\municipalities-database.ts:1586"
+        },
+        {
+          "institution": "Sarajevo Region",
+          "source": "src\\data\\sarajevo-region-forms.ts:601"
+        },
+        {
+          "institution": "Grad Istočno Sarajevo",
+          "source": "src\\data\\uploaded-institutions.ts:166"
+        },
+        {
+          "institution": "Istocno Sarajevo",
+          "source": "src\\data\\website-verification.ts:251"
+        }
+      ]
+    },
+    {
+      "url": "https://istocnailidza.net/",
+      "occurrences": [
+        {
+          "institution": "Istočna Ilidža",
+          "source": "src\\data\\municipalities-database.ts:1600"
+        },
+        {
+          "institution": "Sarajevo Region",
+          "source": "src\\data\\sarajevo-region-forms.ts:630"
+        },
+        {
+          "institution": "Istočna Ilidža",
+          "source": "src\\data\\uploaded-institutions.ts:176"
+        },
+        {
+          "institution": "Istocna Ilidza",
+          "source": "src\\data\\website-verification.ts:347"
+        }
+      ]
+    },
+    {
+      "url": "https://istocnailidza.net/?page_id=255",
+      "occurrences": [
+        {
+          "institution": "Istočna Ilidža",
+          "source": "src\\data\\municipalities-database.ts:1604"
+        },
+        {
+          "institution": "Istočna Ilidža",
+          "source": "src\\data\\municipalities-database.ts:1605"
+        },
+        {
+          "institution": "Sarajevo Region",
+          "source": "src\\data\\sarajevo-region-forms.ts:631"
+        },
+        {
+          "institution": "Sarajevo Region",
+          "source": "src\\data\\sarajevo-region-forms.ts:637"
+        },
+        {
+          "institution": "Istočna Ilidža",
+          "source": "src\\data\\uploaded-institutions.ts:177"
+        },
+        {
+          "institution": "Istočna Ilidža",
+          "source": "src\\data\\verified-domains.ts:1043"
+        }
+      ]
+    },
+    {
+      "url": "https://istocnailidza.net/?page_id=420",
+      "occurrences": [
+        {
+          "institution": "Istočna Ilidža",
+          "source": "src\\data\\municipalities-database.ts:1610"
+        },
+        {
+          "institution": "Sarajevo Region",
+          "source": "src\\data\\sarajevo-region-forms.ts:644"
+        }
+      ]
+    },
+    {
+      "url": "https://istocnailidza.net/?page_id=307",
+      "occurrences": [
+        {
+          "institution": "Istočna Ilidža",
+          "source": "src\\data\\municipalities-database.ts:1611"
+        },
+        {
+          "institution": "Sarajevo Region",
+          "source": "src\\data\\sarajevo-region-forms.ts:651"
+        }
+      ]
+    },
+    {
+      "url": "https://istocnailidza.net/?page_id=222",
+      "occurrences": [
+        {
+          "institution": "Istočna Ilidža",
+          "source": "src\\data\\municipalities-database.ts:1612"
+        },
+        {
+          "institution": "Sarajevo Region",
+          "source": "src\\data\\sarajevo-region-forms.ts:658"
+        }
+      ]
+    },
+    {
+      "url": "https://opstinains.net/",
+      "occurrences": [
+        {
+          "institution": "Istočno Novo Sarajevo",
+          "source": "src\\data\\municipalities-database.ts:1625"
+        },
+        {
+          "institution": "Sarajevo Region",
+          "source": "src\\data\\sarajevo-region-forms.ts:673"
+        },
+        {
+          "institution": "Istočno Novo Sarajevo",
+          "source": "src\\data\\uploaded-institutions.ts:186"
+        },
+        {
+          "institution": "Istocno Novo Sarajevo",
+          "source": "src\\data\\website-verification.ts:365"
+        }
+      ]
+    },
+    {
+      "url": "https://pale.rs.ba/",
+      "occurrences": [
+        {
+          "institution": "Pale (RS)",
+          "source": "src\\data\\municipalities-database.ts:1640"
+        },
+        {
+          "institution": "Sarajevo Region",
+          "source": "src\\data\\sarajevo-region-forms.ts:691"
+        },
+        {
+          "institution": "Pale (RS)",
+          "source": "src\\data\\uploaded-institutions.ts:196"
+        },
+        {
+          "institution": "Pale",
+          "source": "src\\data\\website-verification.ts:592"
+        },
+        {
+          "institution": "Pale Rs",
+          "source": "src\\data\\website-verification.ts:598"
+        }
+      ]
+    },
+    {
+      "url": "https://trnovo-rs.com/",
+      "occurrences": [
+        {
+          "institution": "Trnovo (RS)",
+          "source": "src\\data\\municipalities-database.ts:1655"
+        },
+        {
+          "institution": "Sarajevo Region",
+          "source": "src\\data\\sarajevo-region-forms.ts:709"
+        },
+        {
+          "institution": "Trnovo (RS)",
+          "source": "src\\data\\uploaded-institutions.ts:206"
+        },
+        {
+          "institution": "Trnovo Rs",
+          "source": "src\\data\\website-verification.ts:789"
+        }
+      ]
+    },
+    {
+      "url": "https://opstinaisg.net/",
+      "occurrences": [
+        {
+          "institution": "Istočni Stari Grad",
+          "source": "src\\data\\municipalities-database.ts:1670"
+        },
+        {
+          "institution": "Sarajevo Region",
+          "source": "src\\data\\sarajevo-region-forms.ts:726"
+        },
+        {
+          "institution": "Istočni Stari Grad",
+          "source": "src\\data\\uploaded-institutions.ts:216"
+        },
+        {
+          "institution": "Istocni Stari Grad",
+          "source": "src\\data\\website-verification.ts:359"
+        }
+      ]
+    },
+    {
+      "url": "https://opstinasokolac.net/obrasci/",
+      "occurrences": [
+        {
+          "institution": "Sokolac",
+          "source": "src\\data\\municipalities-database.ts:1684"
+        },
+        {
+          "institution": "Sarajevo Region",
+          "source": "src\\data\\sarajevo-region-forms.ts:744"
+        },
+        {
+          "institution": "Sarajevo Region",
+          "source": "src\\data\\sarajevo-region-forms.ts:750"
+        },
+        {
+          "institution": "Sarajevo Region",
+          "source": "src\\data\\sarajevo-region-forms.ts:757"
+        },
+        {
+          "institution": "Sarajevo Region",
+          "source": "src\\data\\sarajevo-region-forms.ts:764"
+        },
+        {
+          "institution": "Sokolac",
+          "source": "src\\data\\uploaded-institutions.ts:227"
+        },
+        {
+          "institution": "Sokolac",
+          "source": "src\\data\\verified-domains.ts:1103"
+        }
+      ]
+    },
+    {
+      "url": "https://opstinasokolac.net/",
+      "occurrences": [
+        {
+          "institution": "Sokolac",
+          "source": "src\\data\\municipalities-database.ts:1688"
+        },
+        {
+          "institution": "Sarajevo Region",
+          "source": "src\\data\\sarajevo-region-forms.ts:743"
+        },
+        {
+          "institution": "Sokolac",
+          "source": "src\\data\\uploaded-institutions.ts:226"
+        },
+        {
+          "institution": "Opština Sokolac",
+          "source": "src\\data\\uploaded-institutions.ts:294"
+        },
+        {
+          "institution": "Sokolac",
+          "source": "src\\data\\website-verification.ts:615"
+        }
+      ]
+    },
+    {
+      "url": "https://gacko-rs.info/obrasci/",
+      "occurrences": [
+        {
+          "institution": "Gacko",
+          "source": "src\\data\\municipalities-database.ts:1741"
+        },
+        {
+          "institution": "Gacko",
+          "source": "src\\data\\uploaded-institutions.ts:634"
+        }
+      ]
+    },
+    {
+      "url": "https://opstinaljubinje.org/",
+      "occurrences": [
+        {
+          "institution": "Ljubinje",
+          "source": "src\\data\\municipalities-database.ts:1766"
+        },
+        {
+          "institution": "Municipality Registry",
+          "source": "src\\data\\municipality-registry.ts:303"
+        },
+        {
+          "institution": "Municipality Registry",
+          "source": "src\\data\\municipality-registry.ts:304"
+        },
+        {
+          "institution": "Ljubinje",
+          "source": "src\\data\\website-verification.ts:478"
+        }
+      ]
+    },
+    {
+      "url": "https://opstinaberkovici.com/home/",
+      "occurrences": [
+        {
+          "institution": "Berkovići",
+          "source": "src\\data\\municipalities-database.ts:1786"
+        },
+        {
+          "institution": "Berkovići",
+          "source": "src\\data\\uploaded-institutions.ts:663"
+        },
+        {
+          "institution": "Berkovići",
+          "source": "src\\data\\uploaded-institutions.ts:664"
+        },
+        {
+          "institution": "Berkovici",
+          "source": "src\\data\\website-verification.ts:18"
+        }
+      ]
+    },
+    {
+      "url": "https://foca.rs.ba/",
+      "occurrences": [
+        {
+          "institution": "Foča",
+          "source": "src\\data\\municipalities-database.ts:1811"
+        },
+        {
+          "institution": "Sarajevo Region",
+          "source": "src\\data\\sarajevo-region-forms.ts:783"
+        },
+        {
+          "institution": "Sarajevo Region",
+          "source": "src\\data\\sarajevo-region-forms.ts:784"
+        },
+        {
+          "institution": "Sarajevo Region",
+          "source": "src\\data\\sarajevo-region-forms.ts:790"
+        },
+        {
+          "institution": "Sarajevo Region",
+          "source": "src\\data\\sarajevo-region-forms.ts:797"
+        },
+        {
+          "institution": "Opština Foča (RS)",
+          "source": "src\\data\\uploaded-institutions.ts:236"
+        },
+        {
+          "institution": "Opština Foča (RS)",
+          "source": "src\\data\\uploaded-institutions.ts:237"
+        },
+        {
+          "institution": "Foča (RS)",
+          "source": "src\\data\\verified-domains.ts:1119"
+        },
+        {
+          "institution": "Foca",
+          "source": "src\\data\\website-verification.ts:568"
+        },
+        {
+          "institution": "Foca Rs",
+          "source": "src\\data\\website-verification.ts:574"
+        }
+      ]
+    },
+    {
+      "url": "https://opstinacajnice.rs.ba/%d0%be%d0%b1%d1%80%d0%b0%d1%81%d1%86%d0%b8-%d0%be%d0%bf%d1%88%d1%82%d0%b8%d0%bd%d0%b0-%d1%87%d0%b0%d1%98%d0%bd%d0%b8%d1%87%d0%b5/",
+      "occurrences": [
+        {
+          "institution": "Čajniče",
+          "source": "src\\data\\municipalities-database.ts:1825"
+        },
+        {
+          "institution": "Sarajevo Region",
+          "source": "src\\data\\sarajevo-region-forms.ts:822"
+        },
+        {
+          "institution": "Opština Čajniče",
+          "source": "src\\data\\uploaded-institutions.ts:247"
+        },
+        {
+          "institution": "Čajniče",
+          "source": "src\\data\\verified-domains.ts:1131"
+        }
+      ]
+    },
+    {
+      "url": "https://hanpijesak.org/",
+      "occurrences": [
+        {
+          "institution": "Han Pijesak",
+          "source": "src\\data\\municipalities-database.ts:1863"
+        },
+        {
+          "institution": "Sarajevo Region",
+          "source": "src\\data\\sarajevo-region-forms.ts:1031"
+        },
+        {
+          "institution": "Opština Han Pijesak",
+          "source": "src\\data\\uploaded-institutions.ts:276"
+        },
+        {
+          "institution": "Han Pijesak",
+          "source": "src\\data\\website-verification.ts:580"
+        }
+      ]
+    },
+    {
+      "url": "https://hanpijesak.org/zahtjevi-i-obrasci/",
+      "occurrences": [
+        {
+          "institution": "Han Pijesak",
+          "source": "src\\data\\municipalities-database.ts:1867"
+        },
+        {
+          "institution": "Han Pijesak",
+          "source": "src\\data\\municipalities-database.ts:1868"
+        },
+        {
+          "institution": "Sarajevo Region",
+          "source": "src\\data\\sarajevo-region-forms.ts:1032"
+        },
+        {
+          "institution": "Sarajevo Region",
+          "source": "src\\data\\sarajevo-region-forms.ts:1038"
+        },
+        {
+          "institution": "Sarajevo Region",
+          "source": "src\\data\\sarajevo-region-forms.ts:1045"
+        },
+        {
+          "institution": "Opština Han Pijesak",
+          "source": "src\\data\\uploaded-institutions.ts:277"
+        },
+        {
+          "institution": "Han Pijesak",
+          "source": "src\\data\\verified-domains.ts:1171"
+        }
+      ]
+    },
+    {
+      "url": "https://bdcentral.net/obrasci/",
+      "occurrences": [
+        {
+          "institution": "Brčko Distrikt BiH",
+          "source": "src\\data\\municipalities-database.ts:1894"
+        },
+        {
+          "institution": "Brčko Distrikt BiH",
+          "source": "src\\data\\verified-domains.ts:1197"
+        }
+      ]
+    },
+    {
+      "url": "https://sanskimost.gov.ba/",
+      "occurrences": [
+        {
+          "institution": "Općina Sanski Most",
+          "source": "src\\data\\sanski-most-forms.ts:3"
+        },
+        {
+          "institution": "Sanski Most",
+          "source": "src\\data\\website-verification.ts:693"
+        }
+      ]
+    },
+    {
+      "url": "https://opstinacajnice.rs.ba/",
+      "occurrences": [
+        {
+          "institution": "Sarajevo Region",
+          "source": "src\\data\\sarajevo-region-forms.ts:821"
+        },
+        {
+          "institution": "Opština Čajniče",
+          "source": "src\\data\\uploaded-institutions.ts:246"
+        },
+        {
+          "institution": "Cajnice",
+          "source": "src\\data\\website-verification.ts:562"
+        }
+      ]
+    },
+    {
+      "url": "https://opstinarudo.com/",
+      "occurrences": [
+        {
+          "institution": "Sarajevo Region",
+          "source": "src\\data\\sarajevo-region-forms.ts:981"
+        },
+        {
+          "institution": "Opština Rudo",
+          "source": "src\\data\\uploaded-institutions.ts:256"
+        },
+        {
+          "institution": "Rudo",
+          "source": "src\\data\\website-verification.ts:609"
+        }
+      ]
+    },
+    {
+      "url": "https://opstinarudo.com/gradjevinske-dozvole/",
+      "occurrences": [
+        {
+          "institution": "Sarajevo Region",
+          "source": "src\\data\\sarajevo-region-forms.ts:982"
+        },
+        {
+          "institution": "Sarajevo Region",
+          "source": "src\\data\\sarajevo-region-forms.ts:988"
+        },
+        {
+          "institution": "Sarajevo Region",
+          "source": "src\\data\\sarajevo-region-forms.ts:995"
+        },
+        {
+          "institution": "Opština Rudo",
+          "source": "src\\data\\uploaded-institutions.ts:257"
+        },
+        {
+          "institution": "Rudo",
+          "source": "src\\data\\verified-domains.ts:1143"
+        }
+      ]
+    },
+    {
+      "url": "https://novogorazde.rs.ba/",
+      "occurrences": [
+        {
+          "institution": "Sarajevo Region",
+          "source": "src\\data\\sarajevo-region-forms.ts:1010"
+        },
+        {
+          "institution": "Opština Novo Goražde",
+          "source": "src\\data\\uploaded-institutions.ts:266"
+        },
+        {
+          "institution": "Novo Gorazde",
+          "source": "src\\data\\website-verification.ts:586"
+        }
+      ]
+    },
+    {
+      "url": "https://www.bpkg.gov.ba/ministarstva/obrazovanje",
+      "occurrences": [
+        {
+          "institution": "Ministarstvo za obrazovanje BPK",
+          "source": "src\\data\\uploaded-institutions.ts:48"
+        },
+        {
+          "institution": "Ministarstvo za obrazovanje BPK",
+          "source": "src\\data\\uploaded-institutions.ts:49"
+        }
+      ]
+    },
+    {
+      "url": "https://www.zzobpk.ba/",
+      "occurrences": [
+        {
+          "institution": "Zavod zdravstvenog osiguranja BPK",
+          "source": "src\\data\\uploaded-institutions.ts:68"
+        },
+        {
+          "institution": "Zavod zdravstvenog osiguranja BPK",
+          "source": "src\\data\\uploaded-institutions.ts:69"
+        }
+      ]
+    },
+    {
+      "url": "https://www.mostar.ba/",
+      "occurrences": [
+        {
+          "institution": "Grad",
+          "source": "src\\data\\uploaded-institutions.ts:324"
+        },
+        {
+          "institution": "Grad",
+          "source": "src\\data\\website-verification.ts:222"
+        },
+        {
+          "institution": "Mostar",
+          "source": "src\\data\\website-verification.ts:269"
+        }
+      ]
+    },
+    {
+      "url": "https://stolac.gov.ba/",
+      "occurrences": [
+        {
+          "institution": "Općina Stolac",
+          "source": "src\\data\\uploaded-institutions.ts:394"
+        },
+        {
+          "institution": "Stolac",
+          "source": "src\\data\\website-verification.ts:723"
+        }
+      ]
+    },
+    {
+      "url": "https://zzo.ba/",
+      "occurrences": [
+        {
+          "institution": "Zavod zdravstvenog osiguranja HNK",
+          "source": "src\\data\\uploaded-institutions.ts:434"
+        },
+        {
+          "institution": "Zavod zdravstvenog osiguranja HNK",
+          "source": "src\\data\\uploaded-institutions.ts:435"
+        }
+      ]
+    },
+    {
+      "url": "https://www.opcinakupres.ba/",
+      "occurrences": [
+        {
+          "institution": "Glamoč",
+          "source": "src\\data\\uploaded-institutions.ts:504"
+        },
+        {
+          "institution": "Glamoc",
+          "source": "src\\data\\website-verification.ts:198"
+        }
+      ]
+    },
+    {
+      "url": "https://www.sirokibrijeg.ba/index.php/dokumenti/obrasci",
+      "occurrences": [
+        {
+          "institution": "Široki Brijeg",
+          "source": "src\\data\\uploaded-institutions.ts:534"
+        },
+        {
+          "institution": "Grad Široki Brijeg",
+          "source": "src\\data\\verified-domains.ts:873"
+        }
+      ]
+    },
+    {
+      "url": "https://www.vladazzh.com/",
+      "occurrences": [
+        {
+          "institution": "Ministarstvo prostornog uređenja, graditeljstva i zaštite okoliša ZHK",
+          "source": "src\\data\\uploaded-institutions.ts:593"
+        },
+        {
+          "institution": "Zapadnohercegovacki Kanton",
+          "source": "src\\data\\website-verification.ts:854"
+        }
+      ]
+    },
+    {
+      "url": "https://zzozzh.com/obrasci/",
+      "occurrences": [
+        {
+          "institution": "Zavod zdravstvenog osiguranja ZHK",
+          "source": "src\\data\\uploaded-institutions.ts:604"
+        },
+        {
+          "institution": "Brčko Distrikt BiH",
+          "source": "src\\data\\verified-domains.ts:1240"
+        }
+      ]
+    },
+    {
+      "url": "https://gacko-rs.info/",
+      "occurrences": [
+        {
+          "institution": "Gacko",
+          "source": "src\\data\\uploaded-institutions.ts:633"
+        },
+        {
+          "institution": "Gacko",
+          "source": "src\\data\\website-verification.ts:192"
+        }
+      ]
+    },
+    {
+      "url": "https://opstinanevesinje.rs.ba/",
+      "occurrences": [
+        {
+          "institution": "Nevesinje",
+          "source": "src\\data\\uploaded-institutions.ts:643"
+        },
+        {
+          "institution": "Nevesinje",
+          "source": "src\\data\\website-verification.ts:508"
+        }
+      ]
+    },
+    {
+      "url": "https://zzousk.ba/",
+      "occurrences": [
+        {
+          "institution": "Bihać",
+          "source": "src\\data\\uploaded-institutions.ts:673"
+        },
+        {
+          "institution": "Bosanski Petrovac",
+          "source": "src\\data\\uploaded-institutions.ts:693"
+        },
+        {
+          "institution": "Sanski Most",
+          "source": "src\\data\\uploaded-institutions.ts:733"
+        },
+        {
+          "institution": "Velika Kladuša",
+          "source": "src\\data\\uploaded-institutions.ts:743"
+        },
+        {
+          "institution": "Ministarstvo zdravstva, rada i socijalne politike USK",
+          "source": "src\\data\\uploaded-institutions.ts:753"
+        },
+        {
+          "institution": "Ministarstvo obrazovanja, nauke, kulture i sporta USK",
+          "source": "src\\data\\uploaded-institutions.ts:763"
+        },
+        {
+          "institution": "Ministarstvo za građenje, prostorno uređenje i zaštitu okoliša USK",
+          "source": "src\\data\\uploaded-institutions.ts:773"
+        },
+        {
+          "institution": "Zavod zdravstvenog osiguranja USK",
+          "source": "src\\data\\uploaded-institutions.ts:783"
+        },
+        {
+          "institution": "Zavod zdravstvenog osiguranja USK",
+          "source": "src\\data\\uploaded-institutions.ts:784"
+        }
+      ]
+    },
+    {
+      "url": "https://www.prijedorgrad.org/",
+      "occurrences": [
+        {
+          "institution": "Republika Srpska",
+          "source": "src\\data\\uploaded-institutions.ts:902"
+        },
+        {
+          "institution": "Republika Srpska",
+          "source": "src\\data\\uploaded-institutions.ts:903"
+        },
+        {
+          "institution": "Prijedor",
+          "source": "src\\data\\website-verification.ts:275"
+        }
+      ]
+    },
+    {
+      "url": "https://www.opstina-novigrad.com/",
+      "occurrences": [
+        {
+          "institution": "Republika Srpska",
+          "source": "src\\data\\uploaded-institutions.ts:912"
+        },
+        {
+          "institution": "Novi Grad",
+          "source": "src\\data\\website-verification.ts:514"
+        }
+      ]
+    },
+    {
+      "url": "https://www.opstinaostraluka.org/",
+      "occurrences": [
+        {
+          "institution": "Republika Srpska",
+          "source": "src\\data\\uploaded-institutions.ts:922"
+        },
+        {
+          "institution": "Republika Srpska",
+          "source": "src\\data\\uploaded-institutions.ts:923"
+        },
+        {
+          "institution": "Ostra Luka",
+          "source": "src\\data\\website-verification.ts:633"
+        }
+      ]
+    },
+    {
+      "url": "https://orasje.ba/",
+      "occurrences": [
+        {
+          "institution": "Orašje",
+          "source": "src\\data\\uploaded-institutions.ts:942"
+        },
+        {
+          "institution": "Orasje",
+          "source": "src\\data\\website-verification.ts:621"
+        }
+      ]
+    },
+    {
+      "url": "https://odzak.ba/",
+      "occurrences": [
+        {
+          "institution": "Odžak",
+          "source": "src\\data\\uploaded-institutions.ts:952"
+        },
+        {
+          "institution": "Odzak",
+          "source": "src\\data\\website-verification.ts:538"
+        }
+      ]
+    },
+    {
+      "url": "https://www.zupanijaposavska.ba/ministarstva/ministarstvo-zdravstva-rada-i-socijalne-politike/",
+      "occurrences": [
+        {
+          "institution": "Ministarstvo zdravstva, rada i socijalne politike PK",
+          "source": "src\\data\\uploaded-institutions.ts:972"
+        },
+        {
+          "institution": "Ministarstvo zdravstva, rada i socijalne politike PK",
+          "source": "src\\data\\uploaded-institutions.ts:973"
+        }
+      ]
+    },
+    {
+      "url": "https://www.zupanijaposavska.ba/ministarstva/ministarstvo-prosvjete-znanosti-kulture-i-sporta/",
+      "occurrences": [
+        {
+          "institution": "Ministarstvo prosvjete, znanosti, kulture i športa PK",
+          "source": "src\\data\\uploaded-institutions.ts:982"
+        },
+        {
+          "institution": "Ministarstvo prosvjete, znanosti, kulture i športa PK",
+          "source": "src\\data\\uploaded-institutions.ts:983"
+        }
+      ]
+    },
+    {
+      "url": "https://zzotk.ba/obrasci/",
+      "occurrences": [
+        {
+          "institution": "Zavod zdravstvenog osiguranja TK",
+          "source": "src\\data\\uploaded-institutions.ts:1133"
+        },
+        {
+          "institution": "Brčko Distrikt BiH",
+          "source": "src\\data\\verified-domains.ts:1251"
+        }
+      ]
+    },
+    {
+      "url": "https://mpuzotk.gov.ba/",
+      "occurrences": [
+        {
+          "institution": "Ministarstvo pravosuđa i uprave TK",
+          "source": "src\\data\\uploaded-institutions.ts:1142"
+        },
+        {
+          "institution": "Ministarstvo pravosuđa i uprave TK",
+          "source": "src\\data\\uploaded-institutions.ts:1143"
+        }
+      ]
+    },
+    {
+      "url": "https://mpsvtk.gov.ba/",
+      "occurrences": [
+        {
+          "institution": "Ministarstvo poljoprivrede, šumarstva i vodoprivrede TK",
+          "source": "src\\data\\uploaded-institutions.ts:1152"
+        },
+        {
+          "institution": "Ministarstvo poljoprivrede, šumarstva i vodoprivrede TK",
+          "source": "src\\data\\uploaded-institutions.ts:1153"
+        }
+      ]
+    },
+    {
+      "url": "https://tk.gov.ba/",
+      "occurrences": [
+        {
+          "institution": "Ministarstvo prostornog uređenja i zaštite okoliša TK",
+          "source": "src\\data\\uploaded-institutions.ts:1162"
+        },
+        {
+          "institution": "Ministarstvo prostornog uređenja i zaštite okoliša TK",
+          "source": "src\\data\\uploaded-institutions.ts:1163"
+        },
+        {
+          "institution": "Tuzlanski Kanton",
+          "source": "src\\data\\website-verification.ts:795"
+        }
+      ]
+    },
+    {
+      "url": "https://www.zzzbrcko.org/",
+      "occurrences": [
+        {
+          "institution": "Brčko distrikt",
+          "source": "src\\data\\uploaded-institutions.ts:1172"
+        },
+        {
+          "institution": "Brčko distrikt",
+          "source": "src\\data\\uploaded-institutions.ts:1173"
+        }
+      ]
+    },
+    {
+      "url": "https://modrica.ba/",
+      "occurrences": [
+        {
+          "institution": "Republika Srpska",
+          "source": "src\\data\\uploaded-institutions.ts:1242"
+        },
+        {
+          "institution": "Modrica",
+          "source": "src\\data\\website-verification.ts:490"
+        }
+      ]
+    },
+    {
+      "url": "https://opstina-zvornik.org/",
+      "occurrences": [
+        {
+          "institution": "Republika Srpska",
+          "source": "src\\data\\uploaded-institutions.ts:1340"
+        },
+        {
+          "institution": "Zvornik",
+          "source": "src\\data\\website-verification.ts:878"
+        }
+      ]
+    },
+    {
+      "url": "https://sekovici.org/",
+      "occurrences": [
+        {
+          "institution": "Republika Srpska",
+          "source": "src\\data\\uploaded-institutions.ts:1350"
+        },
+        {
+          "institution": "Sekovici",
+          "source": "src\\data\\website-verification.ts:735"
+        }
+      ]
+    },
+    {
+      "url": "https://osmaci.org/",
+      "occurrences": [
+        {
+          "institution": "Republika Srpska",
+          "source": "src\\data\\uploaded-institutions.ts:1360"
+        },
+        {
+          "institution": "Osmaci",
+          "source": "src\\data\\website-verification.ts:627"
+        }
+      ]
+    },
+    {
+      "url": "https://opcinatravnik.com.ba/",
+      "occurrences": [
+        {
+          "institution": "Travnička regija",
+          "source": "src\\data\\uploaded-institutions.ts:1400"
+        },
+        {
+          "institution": "Travnicka Regija",
+          "source": "src\\data\\website-verification.ts:765"
+        },
+        {
+          "institution": "Travnik",
+          "source": "src\\data\\website-verification.ts:771"
+        }
+      ]
+    },
+    {
+      "url": "https://ont.gov.ba/",
+      "occurrences": [
+        {
+          "institution": "Travnička regija",
+          "source": "src\\data\\uploaded-institutions.ts:1440"
+        },
+        {
+          "institution": "Travnička regija",
+          "source": "src\\data\\uploaded-institutions.ts:1441"
+        },
+        {
+          "institution": "Novi Travnik",
+          "source": "src\\data\\website-verification.ts:526"
+        }
+      ]
+    },
+    {
+      "url": "https://vitez.ba/",
+      "occurrences": [
+        {
+          "institution": "Travnička regija",
+          "source": "src\\data\\uploaded-institutions.ts:1450"
+        },
+        {
+          "institution": "Travnička regija",
+          "source": "src\\data\\uploaded-institutions.ts:1451"
+        }
+      ]
+    },
+    {
+      "url": "https://opcina-jajce.ba/",
+      "occurrences": [
+        {
+          "institution": "Travnička regija",
+          "source": "src\\data\\uploaded-institutions.ts:1470"
+        },
+        {
+          "institution": "Travnička regija",
+          "source": "src\\data\\uploaded-institutions.ts:1471"
+        },
+        {
+          "institution": "Jajce",
+          "source": "src\\data\\website-verification.ts:377"
+        }
+      ]
+    },
+    {
+      "url": "https://opcina-kiseljak.org/",
+      "occurrences": [
+        {
+          "institution": "Travnička regija",
+          "source": "src\\data\\uploaded-institutions.ts:1480"
+        },
+        {
+          "institution": "Travnička regija",
+          "source": "src\\data\\uploaded-institutions.ts:1481"
+        },
+        {
+          "institution": "Kiseljak",
+          "source": "src\\data\\website-verification.ts:407"
+        }
+      ]
+    },
+    {
+      "url": "https://kresevo.ba/",
+      "occurrences": [
+        {
+          "institution": "Travnička regija",
+          "source": "src\\data\\uploaded-institutions.ts:1490"
+        },
+        {
+          "institution": "Travnička regija",
+          "source": "src\\data\\uploaded-institutions.ts:1491"
+        },
+        {
+          "institution": "Kresevo",
+          "source": "src\\data\\website-verification.ts:449"
+        }
+      ]
+    },
+    {
+      "url": "https://sbk-ksb.gov.ba/",
+      "occurrences": [
+        {
+          "institution": "Travnička regija",
+          "source": "src\\data\\uploaded-institutions.ts:1510"
+        },
+        {
+          "institution": "Travnička regija",
+          "source": "src\\data\\uploaded-institutions.ts:1511"
+        },
+        {
+          "institution": "Srednjobosanski Kanton",
+          "source": "src\\data\\website-verification.ts:711"
+        }
+      ]
+    },
+    {
+      "url": "https://zzo-ksbsbk.com.ba/",
+      "occurrences": [
+        {
+          "institution": "Travnička regija",
+          "source": "src\\data\\uploaded-institutions.ts:1520"
+        },
+        {
+          "institution": "Travnička regija",
+          "source": "src\\data\\uploaded-institutions.ts:1521"
+        }
+      ]
+    },
+    {
+      "url": "https://www.usora.com/",
+      "occurrences": [
+        {
+          "institution": "Usora",
+          "source": "src\\data\\uploaded-institutions.ts:1540"
+        },
+        {
+          "institution": "Usora",
+          "source": "src\\data\\website-verification.ts:813"
+        }
+      ]
+    },
+    {
+      "url": "https://www.zzozedo.ba/",
+      "occurrences": [
+        {
+          "institution": "Zenica",
+          "source": "src\\data\\uploaded-institutions.ts:1550"
+        },
+        {
+          "institution": "Doboj-Jug",
+          "source": "src\\data\\uploaded-institutions.ts:1560"
+        },
+        {
+          "institution": "Kakanj",
+          "source": "src\\data\\uploaded-institutions.ts:1570"
+        },
+        {
+          "institution": "Maglaj",
+          "source": "src\\data\\uploaded-institutions.ts:1580"
+        },
+        {
+          "institution": "Žepče",
+          "source": "src\\data\\uploaded-institutions.ts:1590"
+        },
+        {
+          "institution": "Tešanj",
+          "source": "src\\data\\uploaded-institutions.ts:1600"
+        }
+      ]
+    },
+    {
+      "url": "https://breza.gov.ba/",
+      "occurrences": [
+        {
+          "institution": "Breza",
+          "source": "src\\data\\uploaded-institutions.ts:1630"
+        },
+        {
+          "institution": "Breza",
+          "source": "src\\data\\website-verification.ts:66"
+        }
+      ]
+    },
+    {
+      "url": "https://www.visoko.gov.ba/",
+      "occurrences": [
+        {
+          "institution": "Visoko",
+          "source": "src\\data\\uploaded-institutions.ts:1640"
+        },
+        {
+          "institution": "Visoko",
+          "source": "src\\data\\website-verification.ts:825"
+        }
+      ]
+    }
+  ],
+  "duplicateRecords": [
+    {
+      "file": "src\\data\\uploaded-institutions.ts",
+      "field": "website",
+      "value": "https://opstinasokolac.net/",
+      "occurrences": [
+        {
+          "value": "https://opstinasokolac.net/",
+          "label": "Sokolac",
+          "source": "src\\data\\uploaded-institutions.ts:222"
+        },
+        {
+          "value": "https://opstinasokolac.net/",
+          "label": "Opština Sokolac",
+          "source": "src\\data\\uploaded-institutions.ts:290"
+        }
+      ]
+    },
+    {
+      "file": "src\\data\\uploaded-institutions.ts",
+      "field": "website",
+      "value": "https://www.opstinadrvar.net/",
+      "occurrences": [
+        {
+          "value": "https://www.opstinadrvar.net/",
+          "label": "Drvar",
+          "source": "src\\data\\uploaded-institutions.ts:470"
+        },
+        {
+          "value": "https://www.opstinadrvar.net/",
+          "label": "Drvar",
+          "source": "src\\data\\uploaded-institutions.ts:480"
+        }
+      ]
+    },
+    {
+      "file": "src\\data\\uploaded-institutions.ts",
+      "field": "website",
+      "value": "https://zzousk.ba/",
+      "occurrences": [
+        {
+          "value": "https://zzousk.ba/",
+          "label": "Bihać",
+          "source": "src\\data\\uploaded-institutions.ts:669"
+        },
+        {
+          "value": "https://zzousk.ba/",
+          "label": "Bosanski Petrovac",
+          "source": "src\\data\\uploaded-institutions.ts:689"
+        },
+        {
+          "value": "https://zzousk.ba/",
+          "label": "Sanski Most",
+          "source": "src\\data\\uploaded-institutions.ts:729"
+        },
+        {
+          "value": "https://zzousk.ba/",
+          "label": "Velika Kladuša",
+          "source": "src\\data\\uploaded-institutions.ts:739"
+        },
+        {
+          "value": "https://zzousk.ba/",
+          "label": "Ministarstvo zdravstva, rada i socijalne politike USK",
+          "source": "src\\data\\uploaded-institutions.ts:749"
+        },
+        {
+          "value": "https://zzousk.ba/",
+          "label": "Ministarstvo obrazovanja, nauke, kulture i sporta USK",
+          "source": "src\\data\\uploaded-institutions.ts:759"
+        },
+        {
+          "value": "https://zzousk.ba/",
+          "label": "Ministarstvo za građenje, prostorno uređenje i zaštitu okoliša USK",
+          "source": "src\\data\\uploaded-institutions.ts:769"
+        },
+        {
+          "value": "https://zzousk.ba/",
+          "label": "Zavod zdravstvenog osiguranja USK",
+          "source": "src\\data\\uploaded-institutions.ts:779"
+        }
+      ]
+    },
+    {
+      "file": "src\\data\\uploaded-institutions.ts",
+      "field": "website",
+      "value": "https://www.zzozedo.ba/",
+      "occurrences": [
+        {
+          "value": "https://www.zzozedo.ba/",
+          "label": "Zenica",
+          "source": "src\\data\\uploaded-institutions.ts:1546"
+        },
+        {
+          "value": "https://www.zzozedo.ba/",
+          "label": "Doboj-Jug",
+          "source": "src\\data\\uploaded-institutions.ts:1556"
+        },
+        {
+          "value": "https://www.zzozedo.ba/",
+          "label": "Kakanj",
+          "source": "src\\data\\uploaded-institutions.ts:1566"
+        },
+        {
+          "value": "https://www.zzozedo.ba/",
+          "label": "Maglaj",
+          "source": "src\\data\\uploaded-institutions.ts:1576"
+        },
+        {
+          "value": "https://www.zzozedo.ba/",
+          "label": "Žepče",
+          "source": "src\\data\\uploaded-institutions.ts:1586"
+        },
+        {
+          "value": "https://www.zzozedo.ba/",
+          "label": "Tešanj",
+          "source": "src\\data\\uploaded-institutions.ts:1596"
+        }
+      ]
+    }
+  ],
+  "malformedUrlCount": 0,
+  "malformedUrls": [],
+  "syntaxErrors": [],
+  "institutions": []
+}

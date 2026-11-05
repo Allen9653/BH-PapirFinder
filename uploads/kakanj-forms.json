@@ -1,0 +1,581 @@
+{
+  "municipality": "Kakanj",
+  "canton": "Zeničko-dobojski kanton",
+  "website": "https://kakanj.gov.ba/v5/e-obrasci/",
+  "categories": {
+    "Služba za privredu, urbanizam i zaštitu okoline": [
+      {
+        "name": "Zahtjev za promjenu investitora",
+        "url": "http://kakanj.gov.ba/v4/wp-content/uploads/2017/03/ZAHTJEV-ZA-PROMJENU-INVESTITORA-OK-O-4.2.-38.pdf"
+      },
+      {
+        "name": "Zahtjev za izdavanje odobrenja za obavljanje djelatnosti – tehnički uslovi – (pravna lica)",
+        "url": "http://kakanj.gov.ba/v4/wp-content/uploads/2014/08/Zahtjev-za-izdavanje-odobrenja-za-obavljanje-djelatnosti-tehni%C4%8Dki-uslovi-PRAVNA-LICA.pdf"
+      },
+      {
+        "name": "Zahtjev za izdavanje odobrenja za obavljanje djelatnosti – tehnički uslovi – (fizička lica)",
+        "url": "http://kakanj.gov.ba/v4/wp-content/uploads/2014/08/Zahtjev-za-izdavanje-odobrenja-za-obavljanje-djelatnosti-tehni%C4%8Dki-uslovi-FIZI%C4%8CKA-LICA-.pdf"
+      },
+      {
+        "name": "Zahtjev za osnivanje obrta/srodne djelatnosti",
+        "url": "https://kakanj.gov.ba/v5/wp-content/uploads/2023/08/Zahtjev-za-osnivanje-obrta-srodne-djelatnost-1.pdf"
+      },
+      {
+        "name": "Zahtjev za izdavanje odobrenja o osnivanju ugostiteljske radnje",
+        "url": "http://kakanj.gov.ba/v4/isoobrasci/OBRASCI-SLU%8eBA%20ZA%20PRIVREDU,URBANIZAM%20I%20ZA%8aTITU%20OKOLINE/Zahtjev_za_izdavanje_odobrenja_o_osnivanju_ugostiteljske_radnje.pdf"
+      },
+      {
+        "name": "Zahtjev za izdavanje odobrenja o osnivanju trgovačke radnje",
+        "url": "http://kakanj.gov.ba/v4/wp-content/uploads/2014/08/Zahtjev-za-izdavanje-odobrenja-o-osnivanju-trgova%C4%8Dke-radnje.pdf"
+      },
+      {
+        "name": "Zahtjev za izmjenu rješenja o osnivanju radnje ili obavljanju djelatnosti",
+        "url": "http://kakanj.gov.ba/v4/isoobrasci/OBRASCI-SLU%8eBA%20ZA%20PRIVREDU,URBANIZAM%20I%20ZA%8aTITU%20OKOLINE/Zahtjev_za_izmjenu_rje%9aenja_o_osnivanju_radnje_ili_obavljanju_djelatnosti.pdf"
+      },
+      {
+        "name": "Zahtjev za izdavanje odobrenja o obavljanju djelatnosti prevoza stvari za vlastite potrebe",
+        "url": "https://kakanj.gov.ba/v5/wp-content/uploads/2024/10/Zahtjev_za_izdavanje_odobrenja_o_obavljanju_djelatnosti_prijevoza_stvari_za_vlastite_potrebe.docx.pdf"
+      },
+      {
+        "name": "Zahtjev za izdavanje odobrenja dopunske djelatnosti",
+        "url": "http://kakanj.gov.ba/v4/isoobrasci/OBRASCI-SLU%8eBA%20ZA%20PRIVREDU,URBANIZAM%20I%20ZA%8aTITU%20OKOLINE/Zahtjev_za_izdavanje_odobrenja_dopunske_djelatnosti.pdf"
+      },
+      {
+        "name": "Zahtjev za izdavanje odobrenja za obavljanje trgovine na malo izvan prodavnice",
+        "url": "http://kakanj.gov.ba/v4/wp-content/uploads/2014/08/Zahtjev_za_izdavanje_odobrenja_za_prodaju_vanposlovnih_prostorija-2.pdf"
+      },
+      {
+        "name": "Zahtjev za izdavanje odobrenja za obavljanje javnog prevoza kao samostalne djelatnosti",
+        "url": "http://kakanj.gov.ba/v4/isoobrasci/OBRASCI-SLU%8eBA%20ZA%20PRIVREDU,URBANIZAM%20I%20ZA%8aTITU%20OKOLINE/Zahtjev_za_izdavanje_odobrenja_za_obavljanje_javnog_prijevoza_kao_samostalne_djelatnosti.pdf"
+      },
+      {
+        "name": "Zahtjev za izdavanje uvjerenja o ispunjavanju uslova za dodjelu dopunske oznake",
+        "url": "https://kakanj.gov.ba/v5/wp-content/uploads/2021/05/Zahtjev_za_izdavanje_Uvjerenja_o_ispunjavanju_uvjeta_za_dodjelu_dopunske_oznake.pdf"
+      },
+      {
+        "name": "Zahtjev za izdavanje dopunskih taksi oznaka za taksi vozilo",
+        "url": "https://kakanj.gov.ba/v5/wp-content/uploads/2020/12/Zahtjev-za-izdavanje-dopunskih-taksi-oznaka-za-taksivozilo-NOVO-1.pdf"
+      },
+      {
+        "name": "Zahtjev za izdavanje uvjerenja o izdatim dopunskim oznakama",
+        "url": "https://kakanj.gov.ba/v5/wp-content/uploads/2022/05/Zahtjev-za-izdavanje-Uvjerenja-o-izdatim-dopunskim-oznakama-1.pdf"
+      },
+      {
+        "name": "Zahtjev za izdavanje uvjerenja o obavljanju poljoprivredne djelatnosti",
+        "url": "https://kakanj.gov.ba/v5/wp-content/uploads/2023/01/Zahtjev-za-izdavanje-uvjerenja-o-obavljanju-poljoprivredne-djelatnosti.pdf"
+      },
+      {
+        "name": "Zahtjev za povrat uplaćene takse",
+        "url": "http://kakanj.gov.ba/v4/isoobrasci/OBRASCI-SLU%8eBA%20ZA%20PRIVREDU,URBANIZAM%20I%20ZA%8aTITU%20OKOLINE/Zahtjev_sa_povrat_upla%e6ene_takse.pdf"
+      },
+      {
+        "name": "Zahtjev za izlazak na lice mjesta stručne komisije",
+        "url": "http://kakanj.gov.ba/v4/isoobrasci/OBRASCI-SLU%8eBA%20ZA%20PRIVREDU,URBANIZAM%20I%20ZA%8aTITU%20OKOLINE/Zahtjev_za_izlazak_na_lice_mjesta_stru%e8ne_komisije.pdf"
+      },
+      {
+        "name": "Zahtjev za izdavanje odobrenja za rad u izdvojenom poslovnom prostoru",
+        "url": "http://kakanj.gov.ba/v4/isoobrasci/OBRASCI-SLU%8eBA%20ZA%20PRIVREDU,URBANIZAM%20I%20ZA%8aTITU%20OKOLINE/Zahtjev_za_izdavanje_odobrenja_za_rad_u_izdvojenom_poslovnom_prostoru.pdf"
+      },
+      {
+        "name": "Zahtjev za donošenje odobrenja za vanredni prevoz",
+        "url": "http://kakanj.gov.ba/v4/isoobrasci/OBRASCI-SLU%8eBA%20ZA%20PRIVREDU,URBANIZAM%20I%20ZA%8aTITU%20OKOLINE/Zahtjev_za_dono%9aenje_odobrenja_za_vanredni_prijevoz.pdf"
+      },
+      {
+        "name": "Zahtjev za najavu rada po privremenoj odjavi",
+        "url": "http://kakanj.gov.ba/v4/isoobrasci/OBRASCI-SLU%8eBA%20ZA%20PRIVREDU,URBANIZAM%20I%20ZA%8aTITU%20OKOLINE/Zahtjev_za_najavu_rada_po_privremenoj_odjavi.pdf"
+      },
+      {
+        "name": "Zahtjev za privremenu odjavu rada",
+        "url": "http://kakanj.gov.ba/v4/isoobrasci/OBRASCI-SLU%8eBA%20ZA%20PRIVREDU,URBANIZAM%20I%20ZA%8aTITU%20OKOLINE/Zahtjev_za_privremenu_odjavu_rada.pdf"
+      },
+      {
+        "name": "Zahtjev za izmjenu rješenja",
+        "url": "http://kakanj.gov.ba/v4/wp-content/uploads/2014/08/Zahtjev-za-izmjenu-rje%C5%A1enja.pdf"
+      },
+      {
+        "name": "Zahtjev o stalnom prestanku rada",
+        "url": "http://kakanj.gov.ba/v4/wp-content/uploads/2014/08/Zahtjev-o-stalnom-prestanku-rada.pdf"
+      },
+      {
+        "name": "Zahtjev za izdavanje uvjerenja o registrovanoj-neregistrovanoj djelatnosti",
+        "url": "http://kakanj.gov.ba/v4/wp-content/uploads/2014/08/Zahtjev-za-izdavanje-uvjerenja-o-registrovanojneregistrovanoj-djelatnosti.pdf"
+      },
+      {
+        "name": "Zahtjev za upis u registar poljoprivrednih gazdinstava i registar klijenata",
+        "url": "http://kakanj.gov.ba/v4/wp-content/uploads/2014/08/zahtjev-za-upis-u-registar-poljoprivrednihgazdinstava-i-registar-klijenata.pdf"
+      },
+      {
+        "name": "Zahtjev za izdavanje odobrenja za održavanje javnog skupa",
+        "url": "http://kakanj.gov.ba/v4/wp-content/uploads/2014/08/Zahtjev-za-izdavanje-odobrenja-za-odr%C5%BEavanje-javnog-skupa.pdf"
+      },
+      {
+        "name": "Zahtjev za izdavanje odobrenja za prekopavanje javne površine",
+        "url": "http://kakanj.gov.ba/v4/wp-content/uploads/2014/08/Zahtjev-za-izdavanje-odobrenja-za-prekopavanje-javne-povr%C5%A1ine.pdf"
+      },
+      {
+        "name": "Zahtjev za izdavanje vodne saglasnosti",
+        "url": "https://kakanj.gov.ba/v5/wp-content/uploads/2022/03/zahtjev-za-izdavanje-vodne-saglasnosti-OPCINA-KAKANJ-2.pdf"
+      },
+      {
+        "name": "Zahtjev za izdavanje vodne dozvole",
+        "url": "https://kakanj.gov.ba/v5/wp-content/uploads/2022/03/zahtjev-za-izdavanje-vodne-dozvole-OPCINA-KAKANJ-2.pdf"
+      },
+      {
+        "name": "Zahtjev za izdavanje prethodne vodne saglasnosti",
+        "url": "https://kakanj.gov.ba/v5/wp-content/uploads/2022/03/zahtjev-za-izdavanje-prethodne-vodne-saglasnosti-OPCINA-KAKANJ-2.pdf"
+      },
+      {
+        "name": "Zahtjev za produženje vodne dozvole",
+        "url": "https://kakanj.gov.ba/v5/wp-content/uploads/2022/03/zahtjev-za-izdavanje-produ%C5%BEenje-vodne-dozvole-OPCINA-KAKANJ-2.pdf"
+      },
+      {
+        "name": "Zahtjev za izmjenu vodnog akta",
+        "url": "https://kakanj.gov.ba/v5/wp-content/uploads/2022/03/zahtjev-za-izmjenu-vodnog-akta-OPCINA-KAKANJ-2.pdf"
+      },
+      {
+        "name": "Zahtjev za utvrđivanje granica zona sanitarne zaštite i zaštitnih mjera",
+        "url": "https://kakanj.gov.ba/v5/wp-content/uploads/2022/03/zahtjev-za-utvr%C4%91ivanje-granica-zona-sanitarne-za%C5%A1tite-i-za%C5%A1titnih-mjera-za-izvori%C5%A1ta-OPCINA-KAKANJ-2.pdf"
+      },
+      {
+        "name": "Zahtjev za izdavanje rješenja kojim se odobrava izvođenje radova u pojasu javne površine ceste",
+        "url": "https://kakanj.gov.ba/v5/wp-content/uploads/2019/10/Zahtjev-za-izdavanje-Rje%C5%A1enja-kojim-se-odobrava-izvo%C4%91enje-radova-u-za%C5%A1titnom-cestovnom-pojasu-converted.pdf"
+      },
+      {
+        "name": "Zahtjev za izdavanje rješenja za privremeno korištenje zemljišta u cestovnom pojasu",
+        "url": "http://kakanj.gov.ba/v4/wp-content/uploads/2014/08/ZAHTJEV-ZA-IZDAVANJE-RJE%C5%A0ENJA-ZA-PRIVREMNO-KORI%C5%A0TENJE-ZEMLJI%C5%A0TA-U-CESTOVNOM-POJASU.pdf"
+      },
+      {
+        "name": "Zahtjev za utvrđivanje faktičkog stanja objekta",
+        "url": "http://kakanj.gov.ba/v4/wp-content/uploads/2014/08/zahtjev-za-utvr%C4%91ivanje-fakti%C4%8Dkog-stanja-objekta.pdf"
+      },
+      {
+        "name": "Zahtjev za izdavanje rješenja za izgradnju priključka na cestu",
+        "url": "http://kakanj.gov.ba/v4/wp-content/uploads/2014/08/ZAHTJEV-ZA-IZDAVANJE-RJE%C5%A0ENJA-ZA-IZGRADNJU-PRIKLJU%C4%8CKA-NA-CESTU-OK-O-4.2.-29-1.pdf"
+      },
+      {
+        "name": "Zahtjev za produženje važenja rješenja o urbanističkoj saglasnosti ili odobrenja za građenje",
+        "url": "http://kakanj.gov.ba/v4/wp-content/uploads/2014/08/ZAHTJEV-ZA-PRODU%C5%BDENJE-VA%C5%BDENJA-RJE%C5%A0ENJA-O-URBANISTI%C4%8CKOJ-SAGLASNOSTI-ILI-ODOBRENJA-ZA-GRA%C4%90ENJE-OK-O-4.2.-37-1.pdf"
+      },
+      {
+        "name": "Zahtjev za izdavanje rješenja o privremenom zauzimanju javne površine – fizička lica",
+        "url": "http://kakanj.gov.ba/v4/wp-content/uploads/2014/08/9-F-Zahtjev-za-izdavanje-rje%C5%A1enja-o-privremenom-zauzimanju-javne-povr%C5%A1ine-PDF.pdf"
+      },
+      {
+        "name": "Zahtjev za izdavanje rješenja o privremenom zauzimanju javne površine – pravna lica",
+        "url": "http://kakanj.gov.ba/v4/wp-content/uploads/2014/08/9-P-Zahtjev-za-izdavanje-rje%C5%A1enja-o-privremenom-zauzimanju-javne-povr%C5%A1ine-PDF.pdf"
+      },
+      {
+        "name": "Upit o mogućnosti gradnje – fizička lica",
+        "url": "http://kakanj.gov.ba/v4/wp-content/uploads/2014/08/8-F-Zahtjev-za-upit-o-mogu%C4%87no%C5%A1%C4%87u-gradnje-PDF.pdf"
+      },
+      {
+        "name": "Upit o mogućnosti gradnje – pravna lica",
+        "url": "http://kakanj.gov.ba/v4/wp-content/uploads/2014/08/8-P-Zahtjev-za-upit-o-mogu%C4%87no%C5%A1%C4%87u-gradnje-PDF.pdf"
+      },
+      {
+        "name": "Zahtjev za izdavanje uvjerenja o postojanju odobrenja za građenje",
+        "url": "http://kakanj.gov.ba/v4/wp-content/uploads/2014/08/ZAHTJEV-ZA-IZDAVANJE-UVJERENJA-O-POSTOJANJU-ODOBRENJA-ZA-OK-O-4.2.-32-1.pdf"
+      },
+      {
+        "name": "Zahtjev za izdavanje rješenja o urbanističkoj saglasnosti – fizička lica",
+        "url": "http://kakanj.gov.ba/v4/wp-content/uploads/2014/08/2-F-Zahtjev-za-izdavanje-urbanisti%C4%8Dke-saglasnosti-PDF.pdf"
+      },
+      {
+        "name": "Zahtjev za izdavanje rješenja o urbanističkoj saglasnosti – pravna lica",
+        "url": "http://kakanj.gov.ba/v4/wp-content/uploads/2014/08/2-P-Zahtjev-za-izdavanje-urbanisti%C4%8Dke-saglasnosti-PDF.pdf"
+      },
+      {
+        "name": "Zahtjev za izdavanje odobrenja za građenje – fizička lica",
+        "url": "http://kakanj.gov.ba/v4/wp-content/uploads/2014/08/3-F-Zahtjev-za-izdavanje-odobrenja-za-gra%C4%91enje-PDF.pdf"
+      },
+      {
+        "name": "Zahtjev za izdavanje odobrenja za građenje – pravna lica",
+        "url": "http://kakanj.gov.ba/v4/wp-content/uploads/2014/08/3-P-Zahtjev-za-izdavanje-odobrenja-za-gra%C4%91enje-PDF.pdf"
+      },
+      {
+        "name": "Zahtjev za tehnički prijem objekta i izdavanje odobrenja za upotrebu objekta",
+        "url": "https://kakanj.gov.ba/v5/wp-content/uploads/2021/05/Zahtjev-za-tehni%C4%8Dki-prijem-objekata-i-izdavanje-odobrenja-za-upotrebu-objekta.pdf"
+      },
+      {
+        "name": "Zahtjev za izdavanje poljoprivredne saglasnosti",
+        "url": "http://kakanj.gov.ba/v4/wp-content/uploads/2014/08/ZAHTJEV-ZA-IZDAVANJE-POLJOPRIVREDNE-SAGLASNOSTI-OK-O-4.2.-44-1.pdf"
+      },
+      {
+        "name": "Zahtjev za trajnu promjenu kulture zemljišta",
+        "url": "http://kakanj.gov.ba/v4/wp-content/uploads/2014/08/Zahtjev-un.pdf"
+      },
+      {
+        "name": "Zahtjev za izdavanje uvjerenja o činjenicama iz službene evidencije",
+        "url": "http://kakanj.gov.ba/v4/wp-content/uploads/2014/08/ZAHTJEV-ZA-IZDAVANJE-UVJERENJA-O-%C4%8CINJENICAMA-IZ-SLU%C5%BDBENE-EVIDENCIJE-OK-O-4.2.-30.pdf"
+      },
+      {
+        "name": "Zahtjev za izdavanje rješenja o lokacijskoj informaciji – fizička lica",
+        "url": "http://kakanj.gov.ba/v4/wp-content/uploads/2014/08/1-F-Zahtjev-za-izdavanje-lokacijske-informacije-PDF.pdf"
+      },
+      {
+        "name": "Zahtjev za izdavanje rješenja o lokacijskoj informaciji – pravna lica",
+        "url": "http://kakanj.gov.ba/v4/wp-content/uploads/2014/08/1-P-Zahtjev-za-izdavanje-lokacijske-informacije-PDF.pdf"
+      },
+      {
+        "name": "Zahtjev za izdavanje odobrenja za upotrebu – fizička lica",
+        "url": "http://kakanj.gov.ba/v4/wp-content/uploads/2014/08/4-F-Zahtjev-za-izdavanje-odobrenja-za-upotrebu-PDF.pdf"
+      },
+      {
+        "name": "Zahtjev za izdavanje odobrenja za upotrebu – pravna lica",
+        "url": "http://kakanj.gov.ba/v4/wp-content/uploads/2014/08/4-P-Zahtjev-za-izdavanje-odobrenja-za-upotrebu-PDF.pdf"
+      },
+      {
+        "name": "Zahtjev za izdavanje uvjerenja o cjelovitosti – fizička lica",
+        "url": "http://kakanj.gov.ba/v4/wp-content/uploads/2014/08/5-F-Zahtjev-za-izdavanje-uvjerenja-o-cjelovitosti-PDF.pdf"
+      },
+      {
+        "name": "Zahtjev za izdavanje uvjerenja o cjelovitosti – pravna lica",
+        "url": "http://kakanj.gov.ba/v4/wp-content/uploads/2014/08/5-P-Zahtjev-za-izdavanje-uvjerenja-o-cjelovitosti-PDF.pdf"
+      },
+      {
+        "name": "Zahtjev za izdavanje uvjerenja – faktičko stanje objekta – fizička lica",
+        "url": "http://kakanj.gov.ba/v4/wp-content/uploads/2014/08/6-F-Zahtjev-za-izdavanje-uvjerenja-fakti%C4%8Dko-stanje-objekta-PDF.pdf"
+      },
+      {
+        "name": "Zahtjev za izdavanje uvjerenja – faktičko stanje objekta – pravna lica",
+        "url": "http://kakanj.gov.ba/v4/wp-content/uploads/2014/08/6-P-Zahtjev-za-izdavanje-uvjerenja-fakti%C4%8Dko-stanje-objekta-PDF.pdf"
+      },
+      {
+        "name": "Zahtjev za davanje klauzule pravosnažnosti – fizička lica",
+        "url": "http://kakanj.gov.ba/v4/wp-content/uploads/2014/08/10-F-Zahtjev-za-klauzulu-pravosna%C5%BEnosti-PDF.pdf"
+      },
+      {
+        "name": "Zahtjev za davanje klauzule pravosnažnosti – pravna lica",
+        "url": "http://kakanj.gov.ba/v4/wp-content/uploads/2014/08/10-P-Zahtjev-za-klauzulu-pravosna%C5%BEnosti-PDF.pdf"
+      },
+      {
+        "name": "Zahtjev za izdavanje odobrenja za uklanjanje građevine – fizička lica",
+        "url": "http://kakanj.gov.ba/v4/wp-content/uploads/2014/08/11-F-Zahtjev-za-izdavanje-rje%C5%A1enja-o-uklanjanju-gra%C4%91evine-PDF.pdf"
+      },
+      {
+        "name": "Zahtjev za izdavanje odobrenja za uklanjanje građevine – pravna lica",
+        "url": "http://kakanj.gov.ba/v4/wp-content/uploads/2014/08/11-P-Zahtjev-za-izdavanje-rje%C5%A1enja-o-uklanjanju-gra%C4%91evine-PDF.pdf"
+      },
+      {
+        "name": "Prijava građenja – fizička lica",
+        "url": "http://kakanj.gov.ba/v4/wp-content/uploads/2014/08/12-F-prijava-gra%C4%91enja-PDF.pdf"
+      },
+      {
+        "name": "Prijava građenja – pravna lica",
+        "url": "http://kakanj.gov.ba/v4/wp-content/uploads/2014/08/12-P-prijava-gra%C4%91enja-PDF.pdf"
+      },
+      {
+        "name": "Zahtjev za izmjenu i/ili dopunu odobrenja za građenje – fizička lica",
+        "url": "http://kakanj.gov.ba/v4/wp-content/uploads/2014/08/13-F-Zahtjev-za-izmjenu-odobrenja-za-gra%C4%91enje-PDF.pdf"
+      },
+      {
+        "name": "Zahtjev za izmjenu i/ili dopunu odobrenja za građenje – pravna lica",
+        "url": "http://kakanj.gov.ba/v4/wp-content/uploads/2014/08/13-P-Zahtjev-za-izmjenu-odobrenja-za-gra%C4%91enje-PDF.pdf"
+      },
+      {
+        "name": "Zahtjev za izdavanje Rješenja kojim se odobrava privremena obustava saobraćaja",
+        "url": "https://kakanj.gov.ba/v5/wp-content/uploads/2019/11/zahtjev-za-obustavu.pdf"
+      },
+      {
+        "name": "Izjava o ispunjavanju minimalnih tehničkih i drugih uslova za obavljanje obrtničkih i srodnih djelatnosti",
+        "url": "https://kakanj.gov.ba/v5/wp-content/uploads/2022/09/Zahtjev-o-ispunjavanju-minimalnih-tehni%C4%8Dkih-i-drugih-uslova-za-obavljanje-obrtni%C4%8Dkih-i-srodnih-djelatnosti.pdf"
+      },
+      {
+        "name": "Zahtjev za odobravanje i dodjelu podsticajnih sredstava za razvoj poduzetništva i obrta za 2025. godinu",
+        "url": "https://kakanj.gov.ba/v5/wp-content/uploads/2025/03/ZAHTJEV-REFUNDACIJA-2025.pdf"
+      },
+      {
+        "name": "Zahtjev za izdavanje odobrenja za prekopavanje javne površine ceste",
+        "url": "https://kakanj.gov.ba/v5/wp-content/uploads/2021/04/Zahtjev-za-izdavanje-odobrenja-za-prekopavanje-javne-povr%C5%A1ine-ceste.pdf"
+      },
+      {
+        "name": "Izjava trgovine",
+        "url": "https://kakanj.gov.ba/v5/wp-content/uploads/2025/04/Izjava-trgovina.pdf"
+      },
+      {
+        "name": "Zahtjev za izdavanje rješenja kojim se odobrava prodaja putem akvizitera velikih trgovačkih kuća",
+        "url": "https://kakanj.gov.ba/v5/wp-content/uploads/2021/10/Zahtjev-za-izdavanje-rje%C5%A1enja-kojim-se-odobrava-prodaja-putem-akvizitera-velikih-trgova%C4%8Dkih-ku%C4%87a-po-javnim-ustanovama-i-ostalim-firmama-kao-i-prezentacija-proizvoda.pdf"
+      },
+      {
+        "name": "Zahtjev za utvrđivanje ispunjenosti minimalnih uvjeta za ugostiteljske objekte u domaćinstvu",
+        "url": "https://kakanj.gov.ba/v5/wp-content/uploads/2022/05/Zahtjev-za-utvr%C4%91ivanje-ispunjenosti-minimalnih-uvjeta-razvrstavanje-i-kategorizaciju-ugostiteljskih-objekata-u-doma%C4%87instvu.pdf"
+      },
+      {
+        "name": "Zahtjev za izdavanje saglasnosti na projektnu dokumentaciju – elektroenergetski objekti",
+        "url": "https://kakanj.gov.ba/v5/wp-content/uploads/2022/12/Elektroenergetski-objekti-zahtjev-sa-tarifikom.pdf"
+      }
+    ],
+    "Služba za imovinsko pravne, geodetske poslove i katastar nekretnina": [
+      {
+        "name": "Zahtjev za utvrđivanje prava vlasništva",
+        "url": "http://kakanj.gov.ba/v4/wp-content/uploads/2014/08/Zahtjev-za-utvr%C4%91ivanje-prava-vlasni%C5%A1tva.pdf"
+      },
+      {
+        "name": "Zahtjev za utvrđivanje prava korištenja",
+        "url": "http://kakanj.gov.ba/v4/wp-content/uploads/2014/08/Zahtjev-za-utvr%C4%91ivanje-prava-kori%C5%A1tenja.pdf"
+      },
+      {
+        "name": "Zahtjev za eksproprijaciju",
+        "url": "http://kakanj.gov.ba/v4/wp-content/uploads/2014/08/Zahtjev-za-eksproprijaciju.pdf"
+      },
+      {
+        "name": "Zahtjev za deeksproprijaciju",
+        "url": "http://kakanj.gov.ba/v4/wp-content/uploads/2014/08/Zahtjev-za-deeksproprijaciju.pdf"
+      },
+      {
+        "name": "Zahtjev za dodjelu gradskog građevinskog zemljišta",
+        "url": "http://kakanj.gov.ba/v4/wp-content/uploads/2014/08/Zahtjev-za-dodjelu-gradskog-gra%C4%91evinskog-zemlji%C5%A1ta.pdf"
+      },
+      {
+        "name": "Zahtjev za povrat zemljišta",
+        "url": "http://kakanj.gov.ba/v4/wp-content/uploads/2014/08/Zahtjev-za-povrat-zemlji%C5%A1ta.pdf"
+      },
+      {
+        "name": "Zahtjev za uzurpaciju",
+        "url": "http://kakanj.gov.ba/v4/wp-content/uploads/2014/08/Zahtjev-za-uzurpaciju.pdf"
+      },
+      {
+        "name": "Zahtjev za izdavanje uvjerenja o činjenicama iz službene evidencije",
+        "url": "http://kakanj.gov.ba/v4/wp-content/uploads/2014/08/Zahtjev-za-izdavanje-uvjerenja-o-%C4%8Dinjenicama-iz-slu%C5%BEbene-evidencije.pdf"
+      },
+      {
+        "name": "Zahtjev za izdavanje kopije katastarskog plana",
+        "url": "http://kakanj.gov.ba/v4/wp-content/uploads/2014/08/Zahtjev-za-izdavanje-kopije-katastarskog-plana.pdf"
+      },
+      {
+        "name": "Zahtjev za identifikaciju parcele",
+        "url": "http://kakanj.gov.ba/v4/wp-content/uploads/2014/08/Zahtjev-za-identifikaciju-parcele.pdf"
+      },
+      {
+        "name": "Zahtjev za cijepanje parcele",
+        "url": "http://kakanj.gov.ba/v4/wp-content/uploads/2014/08/Zahtjev-za-cijepanje-parcele.pdf"
+      },
+      {
+        "name": "Zahtjev za spajanje parcela",
+        "url": "http://kakanj.gov.ba/v4/wp-content/uploads/2014/08/Zahtjev-za-spajanje-parcela.pdf"
+      },
+      {
+        "name": "Zahtjev za provođenje promjena u katastru",
+        "url": "http://kakanj.gov.ba/v4/wp-content/uploads/2014/08/Zahtjev-za-provo%C4%91enje-promjena-u-katastru.pdf"
+      },
+      {
+        "name": "Zahtjev za izdavanje posjedovnog lista",
+        "url": "http://kakanj.gov.ba/v4/wp-content/uploads/2014/08/Zahtjev-za-izdavanje-posjedovnog-lista.pdf"
+      },
+      {
+        "name": "Zahtjev za povrat uplaćene takse",
+        "url": "http://kakanj.gov.ba/v4/wp-content/uploads/2014/08/Zahtjev-za-povrat-upla%C4%87ene-takse-imovinsko.pdf"
+      },
+      {
+        "name": "Zahtjev za izdavanje uvjerenja iz katastra",
+        "url": "http://kakanj.gov.ba/v4/wp-content/uploads/2014/08/Zahtjev-za-izdavanje-uvjerenja-iz-katastra.pdf"
+      }
+    ],
+    "Služba za opću upravu, radne i zajedničke poslove, lokalnu samoupravu i mjesne zajednice": [
+      {
+        "name": "Zahtjev za izdavanje izvoda iz matične knjige rođenih",
+        "url": "http://kakanj.gov.ba/v4/isoobrasci/OBRASCI-SLU%8eBA%20ZA%20OP%c6U%20UPRAVU/ZAHTJEV_ZA_IZDAVANJE_IZVODA_IZ_MATI%c8NE_KNJIGE_RO%d0ENIH.pdf"
+      },
+      {
+        "name": "Zahtjev za izdavanje uvjerenja o državljanstvu",
+        "url": "http://kakanj.gov.ba/v4/isoobrasci/OBRASCI-SLU%8eBA%20ZA%20OP%c6U%20UPRAVU/ZAHTJEV_ZA_IZDAVANJE_UVJERENJA_O_DR%8eAVLJANSTVU.pdf"
+      },
+      {
+        "name": "Zahtjev za izdavanje izvoda iz matične knjige vjenčanih",
+        "url": "http://kakanj.gov.ba/v4/isoobrasci/OBRASCI-SLU%8eBA%20ZA%20OP%c6U%20UPRAVU/ZAHTJEV_ZA_IZDAVANJE_IZVODA_IZ_MATI%c8NE_KNJIGE_VJEN%c8ANIH.pdf"
+      },
+      {
+        "name": "Zahtjev za izdavanje izvoda iz matičnih knjiga (zajednički)",
+        "url": "http://kakanj.gov.ba/v4/isoobrasci/OBRASCI-SLU%8eBA%20ZA%20OP%c6U%20UPRAVU/ZAHTJEV_ZA_IZDAVANJE_IZVODA__IZ_MATI%c8NIH_KNJIGA-zajedni%e8ki.pdf"
+      },
+      {
+        "name": "Zahtjev za izdavanje izvoda iz matične knjige umrlih",
+        "url": "http://kakanj.gov.ba/v4/isoobrasci/OBRASCI-SLU%8eBA%20ZA%20OP%c6U%20UPRAVU/ZAHTJEV_ZA_IZDAVANJE_IZVODA_IZ_MATI%c8NE_KNJIGE_UMRLIH.pdf"
+      },
+      {
+        "name": "Zahtjev za ispravku podataka u matičnim knjigama",
+        "url": "http://kakanj.gov.ba/v4/isoobrasci/OBRASCI-SLU%8eBA%20ZA%20OP%c6U%20UPRAVU/Prijava_(zahtjev)_za_ispravak-promjenu_podataka_u_mati%e8noj_knjizi.pdf"
+      },
+      {
+        "name": "Zahtjev za naknadni upis u matičnu knjigu rođenih",
+        "url": "http://kakanj.gov.ba/v4/wp-content/uploads/2014/08/1Prijava-zahtjev-za-upis-u-mati%C4%8Dnu-knjigu-ro%C4%91enih.pdf"
+      },
+      {
+        "name": "Prijava (zahtjev) za upis u matičnu knjigu rođenih podataka djeteta",
+        "url": "http://kakanj.gov.ba/v4/wp-content/uploads/2014/08/2Prijava-zahtjev-za-upis-ro%C4%91enja-djeteta-u-mati%C4%8Dnu-knjigu-ro%C4%91enih.pdf"
+      },
+      {
+        "name": "Zahtjev za naknadni upis u matičnu knjigu umrlih",
+        "url": "http://kakanj.gov.ba/v4/isoobrasci/OBRASCI-SLU%8eBA%20ZA%20OP%c6U%20UPRAVU/ZAHTJEV_ZA_NAKNADNI_UPIS_U_MATI%c8NU_KNJIGU_DR%8eAVLJANA.pdf"
+      },
+      {
+        "name": "Prijava za naknadni upis neupisanih podataka u matičnoj knjizi",
+        "url": "http://kakanj.gov.ba/v4/wp-content/uploads/2014/08/Prijava-zahtjev-za-dopunu-podataka-u-mati%C4%8Dnoj-knjizi.pdf"
+      },
+      {
+        "name": "Prijava za naknadni upis činjenice nacionalnosti u MKR",
+        "url": "http://kakanj.gov.ba/v4/wp-content/uploads/2014/08/Prijava-zahtjev-za-UPIS-NACIONALNOSTI-podataka-u-mati%C4%8Dnoj-knjizi.pdf"
+      },
+      {
+        "name": "Prijava (zahtjev) za upis činjenice državljanstva u MKR",
+        "url": "http://kakanj.gov.ba/v4/wp-content/uploads/2014/08/Prijava-zahtjev-za-upis-%C4%8Dinjenice-dr%C5%BEavljanstva-u-MKR-ih.pdf"
+      },
+      {
+        "name": "Zahtjev za upis podataka u matičnu knjigu umrlih",
+        "url": "http://kakanj.gov.ba/v4/wp-content/uploads/2014/08/Prijava-zahtjev-za-upis-podataka-MKU-ih.pdf"
+      },
+      {
+        "name": "Prijava za zaključenje braka",
+        "url": "https://kakanj.gov.ba/v5/wp-content/uploads/2019/04/Prijava-za-zaklju%C4%8Denje-braka.pdf"
+      },
+      {
+        "name": "Zahtjev za sklapanje braka u roku kraćem od 30 dana iz opravdanih razloga",
+        "url": "http://kakanj.gov.ba/v4/wp-content/uploads/2014/08/Zahtjev-za-sklapanje-braka-u-roku-kra%C4%87em-od-tridesetdana-iz-opravdanih-razloga.pdf"
+      },
+      {
+        "name": "Zahtjev za upis vjenčanja u matičnu knjigu vjenčanih",
+        "url": "http://kakanj.gov.ba/v4/wp-content/uploads/2014/08/Prijava-zahtjev-za-upis-vjen%C4%8Danja-u-MKV-ih.pdf"
+      },
+      {
+        "name": "Prijava (zahtjev) za vraćanje prezimena prije zaključenja braka",
+        "url": "http://kakanj.gov.ba/v4/wp-content/uploads/2014/08/Prijava-zahtjev-za-vra%C4%8Danje-prezimena-nakon-razvoda.pdf"
+      },
+      {
+        "name": "Kućna lista",
+        "url": "https://kakanj.gov.ba/v5/wp-content/uploads/2019/10/Ku%C4%87na-lista.pdf"
+      },
+      {
+        "name": "Kućna lista sa svjedocima",
+        "url": "https://kakanj.gov.ba/v5/wp-content/uploads/2019/11/Ku%C4%87na-lista-sa-svjedocima.pdf"
+      },
+      {
+        "name": "Izjava",
+        "url": "https://kakanj.gov.ba/v5/wp-content/uploads/2019/10/Izjava.pdf"
+      },
+      {
+        "name": "Izjava sa svjedocima",
+        "url": "https://kakanj.gov.ba/v5/wp-content/uploads/2019/11/izjava-sa-Svjedocima.pdf"
+      },
+      {
+        "name": "Izjava o životu",
+        "url": "https://kakanj.gov.ba/v5/wp-content/uploads/2019/10/3-izjava-o-%C5%BEivotu.pdf"
+      },
+      {
+        "name": "Punomoć",
+        "url": "https://kakanj.gov.ba/v5/wp-content/uploads/2019/10/Punomo%C4%87-1-1.pdf"
+      },
+      {
+        "name": "Punomoć sa 2 svjedoka",
+        "url": "https://kakanj.gov.ba/v5/wp-content/uploads/2019/11/XY.pdf"
+      },
+      {
+        "name": "Pritužba-preporuka",
+        "url": "http://kakanj.gov.ba/v4/wp-content/uploads/2014/08/PRITU%C5%BDBA-PREPORUKA.pdf"
+      },
+      {
+        "name": "Zahtjev za ovjeru potpisa van zgrade općine",
+        "url": "http://kakanj.gov.ba/v4/wp-content/uploads/2014/08/ZAHTJEV-ZA-OVJERU-POTPISA-VAN-ZGRADE-OP%C4%86INE.pdf"
+      },
+      {
+        "name": "Zahtjev za korištenje arhive iz ranijih godina",
+        "url": "http://kakanj.gov.ba/v4/wp-content/uploads/2014/08/ZAHTJEV-ZA-KORI%C5%A0TENJE-ARHIVE-IZ-RANIJIH-GODINA.pdf"
+      },
+      {
+        "name": "Ugovor o kupoprodaji",
+        "url": "http://kakanj.gov.ba/v4/wp-content/uploads/2014/08/kupoprodajni-ugovor.pdf"
+      },
+      {
+        "name": "Zahtjev za povrat uplaćene takse",
+        "url": "https://kakanj.gov.ba/v5/wp-content/uploads/2020/12/zahtjev-opca.pdf"
+      }
+    ],
+    "Služba za društvene djelatnosti, boračka pitanja, raseljena lica, izbjeglice i povratnike": [
+      {
+        "name": "Zahtjev za jednokratnu novčanu pomoć",
+        "url": "https://kakanj.gov.ba/v5/wp-content/uploads/2020/01/Zahtjev-za-jednokratnu-nov%C4%8Danu-pomo%C4%87.pdf"
+      },
+      {
+        "name": "Zahtjev za dodjelu stipendije",
+        "url": "https://kakanj.gov.ba/v5/wp-content/uploads/2020/01/Zahtjev-za-dodjelu-stipendije.pdf"
+      },
+      {
+        "name": "Zahtjev za naknadu troškova dženaze/sahrane",
+        "url": "https://kakanj.gov.ba/v5/wp-content/uploads/2020/01/Zahtjev-za-naknadu-tro%C5%A1kova-d%C5%BEenaze-sahrane.pdf"
+      },
+      {
+        "name": "Zahtjev za naknadu troškova prevoza učenika",
+        "url": "https://kakanj.gov.ba/v5/wp-content/uploads/2020/01/Zahtjev-za-naknadu-tro%C5%A1kova-prevoza-u%C4%8Denika.pdf"
+      },
+      {
+        "name": "Zahtjev za utvrđivanje statusa civilne žrtve rata",
+        "url": "https://kakanj.gov.ba/v5/wp-content/uploads/2020/01/Zahtjev-za-utvr%C4%91ivanje-statusa-civilne-%C5%BErtve-rata.pdf"
+      },
+      {
+        "name": "Zahtjev za ostvarivanje prava na ličnu invalidninu",
+        "url": "https://kakanj.gov.ba/v5/wp-content/uploads/2020/01/Zahtjev-za-ostvarivanje-prava-na-li%C4%8Dnu-invalidninu.pdf"
+      },
+      {
+        "name": "Zahtjev za ostvarivanje prava na porodičnu invalidninu",
+        "url": "https://kakanj.gov.ba/v5/wp-content/uploads/2020/01/Zahtjev-za-ostvarivanje-prava-na-porodi%C4%8Dnu-invalidninu.pdf"
+      },
+      {
+        "name": "Zahtjev za ostvarivanje prava na dodatak za njegu i pomoć od drugog lica",
+        "url": "https://kakanj.gov.ba/v5/wp-content/uploads/2020/01/Zahtjev-za-ostvarivanje-prava-na-dodatak-za-njegu.pdf"
+      },
+      {
+        "name": "Zahtjev za ostvarivanje prava na ortopedski dodatak",
+        "url": "https://kakanj.gov.ba/v5/wp-content/uploads/2020/01/Zahtjev-za-ostvarivanje-prava-na-ortopedski-dodatak.pdf"
+      },
+      {
+        "name": "Zahtjev za ostvarivanje prava na mjesečni novčani dodatak",
+        "url": "https://kakanj.gov.ba/v5/wp-content/uploads/2020/01/Zahtjev-za-ostvarivanje-prava-na-mjese%C4%8Dni-nov%C4%8Dani-dodatak.pdf"
+      },
+      {
+        "name": "Zahtjev za saniranje ratom oštećenih stambenih objekata",
+        "url": "https://kakanj.gov.ba/v5/wp-content/uploads/2020/01/Zahtjev-za-saniranje-ratom-o%C5%A1te%C4%87enih-stambenih-objekata.pdf"
+      },
+      {
+        "name": "Zahtjev za ostvarivanje prava na zdravstvenu zaštitu",
+        "url": "https://kakanj.gov.ba/v5/wp-content/uploads/2020/01/Zahtjev-za-ostvarivanje-prava-na-zdravstvenu-za%C5%A1titu.pdf"
+      }
+    ],
+    "Služba civilne zaštite": [
+      {
+        "name": "Zahtjev za procjenu štete od prirodne nesreće",
+        "url": "https://kakanj.gov.ba/v5/wp-content/uploads/2020/01/Zahtjev-za-procjenu-%C5%A1tete-od-prirodne-nesre%C4%87e.pdf"
+      },
+      {
+        "name": "Zahtjev za izdavanje uvjerenja o elementarnoj nepogodi",
+        "url": "https://kakanj.gov.ba/v5/wp-content/uploads/2020/01/Zahtjev-za-izdavanje-uvjerenja-o-elementarnoj-nepogodi.pdf"
+      },
+      {
+        "name": "Zahtjev za saniranje štete od elementarne nepogode",
+        "url": "https://kakanj.gov.ba/v5/wp-content/uploads/2020/01/Zahtjev-za-saniranje-%C5%A1tete-od-elementarne-nepogode.pdf"
+      },
+      {
+        "name": "Zahtjev za jednokratnu novčanu pomoć – elementarna nepogoda",
+        "url": "https://kakanj.gov.ba/v5/wp-content/uploads/2020/01/Zahtjev-za-jednokratnu-nov%C4%8Danu-pomo%C4%87-elementarna-nepogoda.pdf"
+      }
+    ],
+    "Stručna služba za poslove Općinskog vijeća": [
+      {
+        "name": "Zahtjev za pristup informacijama",
+        "url": "https://kakanj.gov.ba/v5/wp-content/uploads/2020/01/Zahtjev-za-pristup-informacijama.pdf"
+      },
+      {
+        "name": "Zahtjev za uvid u zapisnik sa sjednice Općinskog vijeća",
+        "url": "https://kakanj.gov.ba/v5/wp-content/uploads/2020/01/Zahtjev-za-uvid-u-zapisnik-sa-sjednice-OV.pdf"
+      }
+    ],
+    "Stručna služba za poslove Općinskog načelnika": [
+      {
+        "name": "Zahtjev za prijem kod Općinskog načelnika",
+        "url": "https://kakanj.gov.ba/v5/wp-content/uploads/2020/01/Zahtjev-za-prijem-kod-Op%C4%87inskog-na%C4%8Delnika.pdf"
+      },
+      {
+        "name": "Zahtjev za sponzorstvo/donaciju",
+        "url": "https://kakanj.gov.ba/v5/wp-content/uploads/2020/01/Zahtjev-za-sponzorstvo-donaciju.pdf"
+      }
+    ]
+  }
+}

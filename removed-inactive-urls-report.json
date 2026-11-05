@@ -1,0 +1,5075 @@
+{
+  "generatedAt": "2026-11-05T18:49:41.901Z",
+  "baselineAudit": "invalid-urls-report.json (2026-11-05)",
+  "note": "Lists URLs flagged by the baseline audit and subsequent refreshes, with error reason and source file. Timeouts and server errors can be transient; verify before restoring any removed link. Some legacy institution labels are generic, so source paths are included for traceability.",
+  "flaggedUrlCount": 254,
+  "affectedOccurrenceCount": 378,
+  "editedFiles": {
+    "src/data/livno-forms.ts": 14,
+    "src/data/municipalities-database.ts": 57,
+    "src/data/sarajevo-region-forms.ts": 42,
+    "src/data/uploaded-institutions.ts": 80,
+    "src/data/verified-domains.ts": 37,
+    "src/data/olovo-forms.ts": 48,
+    "src/data/sanski-most-forms.ts": 4,
+    "src/data/updated-government-forms.ts": 13,
+    "src/data/website-verification.ts": 1,
+    "src/lib/institutions-database.ts": 1
+  },
+  "affectedInstitutions": [
+    {
+      "institution": "?eli?",
+      "removedUrls": [
+        {
+          "url": "https://impakt.ba/gdje-radimo/opcina-celic/javni-poziv-za-ucesce-u-impakt-inkubatoru-poslovnih-ideja-celic-2/",
+          "error": "Timeout",
+          "sources": [
+            "src\\data\\municipalities-database.ts"
+          ]
+        }
+      ]
+    },
+    {
+      "institution": "?ipovo",
+      "removedUrls": [
+        {
+          "url": "https://sipovo.org/",
+          "error": "ENOTFOUND: getaddrinfo ENOTFOUND sipovo.org",
+          "sources": [
+            "src\\data\\uploaded-institutions.ts:881"
+          ]
+        }
+      ]
+    },
+    {
+      "institution": "APIF",
+      "removedUrls": [
+        {
+          "url": "https://www.apif.net/",
+          "error": "ERR_SSL_DH_KEY_TOO_SMALL: F8150000:error:0A00018A:SSL routines:tls_process_ske_dhe:dh key too small:openssl\\ssl\\statem\\statem_clnt.c:2354:\n",
+          "sources": [
+            "src\\lib\\institutions-database.ts:214"
+          ]
+        }
+      ]
+    },
+    {
+      "institution": "Bileca",
+      "removedUrls": [
+        {
+          "url": "https://www.opstinabileca.ba/zahtjev-za-izlazak-sluzbenog-lica-radi-ovjere-potpisa/",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\bileca-forms.ts:24"
+          ]
+        },
+        {
+          "url": "https://www.opstinabileca.ba/zahtjev-za-pristup-informacijama/",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\bileca-forms.ts:30"
+          ]
+        },
+        {
+          "url": "https://www.opstinabileca.ba/zahtjev-arhiva/",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\bileca-forms.ts:36"
+          ]
+        },
+        {
+          "url": "https://www.opstinabileca.ba/zahtjev-za-promjenu-imena-prezimena/",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\bileca-forms.ts:42"
+          ]
+        },
+        {
+          "url": "https://www.opstinabileca.ba/zahtjev-za-donosenje-rjesenja-za-ispravku-podataka-u-mk/",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\bileca-forms.ts:48"
+          ]
+        },
+        {
+          "url": "https://www.opstinabileca.ba/zahtjev-za-naknadni-upis-rodenja-mkr/",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\bileca-forms.ts:54"
+          ]
+        },
+        {
+          "url": "https://www.opstinabileca.ba/zahtjev-za-naknadni-upis-drzavljanstva/",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\bileca-forms.ts:60"
+          ]
+        },
+        {
+          "url": "https://www.opstinabileca.ba/zahtjev-za-naknadni-upis/",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\bileca-forms.ts:66"
+          ]
+        },
+        {
+          "url": "https://www.opstinabileca.ba/zahtjev-za-izdavanje-uvjerenja-boracko-invalidska-zastita/",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\bileca-forms.ts:72"
+          ]
+        },
+        {
+          "url": "https://www.opstinabileca.ba/zahtjev-za-priznavanje-statusa-borca-i-categorizacije/",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\bileca-forms.ts:78"
+          ]
+        },
+        {
+          "url": "https://www.opstinabileca.ba/zahtjev-za-priznavanje-naknade-po-osnovu-odlikovanja/",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\bileca-forms.ts:84"
+          ]
+        },
+        {
+          "url": "https://www.opstinabileca.ba/zahtjev-za-ostvarivanje-prava-na-boracki-dodatak/",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\bileca-forms.ts:90"
+          ]
+        },
+        {
+          "url": "https://www.opstinabileca.ba/zahtjev-za-preseljenje-spica/",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\bileca-forms.ts:96"
+          ]
+        }
+      ]
+    },
+    {
+      "institution": "Brčko distrikt",
+      "removedUrls": [
+        {
+          "url": "https://www.bdcentral.net/index.php/ba/odjeljenja/javni-registar",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\uploaded-institutions.ts:1188",
+            "src\\data\\uploaded-institutions.ts:1189"
+          ]
+        },
+        {
+          "url": "https://www.bdcentral.net/index.php/ba/odjeljenja/zdravstvo-i-ostale-usluge",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\uploaded-institutions.ts:1198",
+            "src\\data\\uploaded-institutions.ts:1199"
+          ]
+        },
+        {
+          "url": "https://www.bdcentral.net/index.php/ba/odjeljenja/obrazovanje",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\uploaded-institutions.ts:1208",
+            "src\\data\\uploaded-institutions.ts:1209"
+          ]
+        },
+        {
+          "url": "https://www.bdcentral.net/index.php/ba/odjeljenja/prostorno-planiranje",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\uploaded-institutions.ts:1218",
+            "src\\data\\uploaded-institutions.ts:1219"
+          ]
+        }
+      ]
+    },
+    {
+      "institution": "Brčko Distrikt BiH",
+      "removedUrls": [
+        {
+          "url": "https://www.zzozedo.ba/index.php/layout/class-layout/obrasci",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\uploaded-institutions.ts:1559",
+            "src\\data\\uploaded-institutions.ts:1569",
+            "src\\data\\uploaded-institutions.ts:1579",
+            "src\\data\\uploaded-institutions.ts:1589",
+            "src\\data\\uploaded-institutions.ts:1599",
+            "src\\data\\uploaded-institutions.ts:1609",
+            "src\\data\\verified-domains.ts:1230"
+          ]
+        },
+        {
+          "url": "https://zzohnk.ba/obrasci/",
+          "error": "ENOTFOUND: getaddrinfo ENOTFOUND zzohnk.ba",
+          "sources": [
+            "src\\data\\verified-domains.ts:1263"
+          ]
+        },
+        {
+          "url": "https://zzousk.ba/obrasci/",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\verified-domains.ts:1273"
+          ]
+        },
+        {
+          "url": "https://zzosbk.ba/obrasci/",
+          "error": "ENOTFOUND: getaddrinfo ENOTFOUND zzosbk.ba",
+          "sources": [
+            "src\\data\\verified-domains.ts:1283"
+          ]
+        },
+        {
+          "url": "https://zzopk.ba/obrasci/",
+          "error": "ENOTFOUND: getaddrinfo ENOTFOUND zzopk.ba",
+          "sources": [
+            "src\\data\\verified-domains.ts:1293"
+          ]
+        }
+      ]
+    },
+    {
+      "institution": "Čelić",
+      "removedUrls": [
+        {
+          "url": "https://celic.ba/obrasci",
+          "error": "ENOTFOUND: getaddrinfo ENOTFOUND celic.ba",
+          "sources": [
+            "src\\data\\municipalities-database.ts:546"
+          ]
+        },
+        {
+          "url": "https://opcinacelic.ba/sluzbeni-glasnici",
+          "error": "Timeout",
+          "sources": [
+            "src\\data\\municipalities-database.ts:550"
+          ]
+        }
+      ]
+    },
+    {
+      "institution": "Doboj-Jug",
+      "removedUrls": [
+        {
+          "url": "https://www.zzozedo.ba/index.php/layout/class-layout/obrasci",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\uploaded-institutions.ts:1559",
+            "src\\data\\uploaded-institutions.ts:1569",
+            "src\\data\\uploaded-institutions.ts:1579",
+            "src\\data\\uploaded-institutions.ts:1589",
+            "src\\data\\uploaded-institutions.ts:1599",
+            "src\\data\\uploaded-institutions.ts:1609",
+            "src\\data\\verified-domains.ts:1230"
+          ]
+        }
+      ]
+    },
+    {
+      "institution": "Dostupni obrasci: urbanizam, prijava prebivališta, uvjerenja.",
+      "removedUrls": [
+        {
+          "url": "https://trnovo-rs.org/",
+          "error": "ENOTFOUND: getaddrinfo ENOTFOUND trnovo-rs.org",
+          "sources": [
+            "src\\data\\uploaded-institutions.ts:318",
+            "src\\data\\uploaded-institutions.ts:1388"
+          ]
+        },
+        {
+          "url": "https://trnovo-rs.org/obrasci/",
+          "error": "ENOTFOUND: getaddrinfo ENOTFOUND trnovo-rs.org",
+          "sources": [
+            "src\\data\\uploaded-institutions.ts:319",
+            "src\\data\\uploaded-institutions.ts:1389"
+          ]
+        }
+      ]
+    },
+    {
+      "institution": "Gracanica",
+      "removedUrls": [
+        {
+          "url": "https://gracanica.gov.ba/download/zahtjev-za-izdavanje-izvoda-iz-maticne-knjige-rodjenih/",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\gracanica-forms.ts:55"
+          ]
+        },
+        {
+          "url": "https://gracanica.gov.ba/download/zahtjev-za-izdavanje-izvoda-iz-maticne-knjige-vjencanih/",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\gracanica-forms.ts:62"
+          ]
+        },
+        {
+          "url": "https://gracanica.gov.ba/download/zahtjev-za-izdavanje-izvoda-iz-maticne-knjige-umrlih/",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\gracanica-forms.ts:69"
+          ]
+        },
+        {
+          "url": "https://gracanica.gov.ba/download/zahtjev-za-izdavanje-uvjerenja-o-drzavljanstvu/",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\gracanica-forms.ts:76"
+          ]
+        },
+        {
+          "url": "https://gracanica.gov.ba/download/zahtjev-za-izdavanje-uvjerenja-iz-maticne-knjige-rodjenih/",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\gracanica-forms.ts:83"
+          ]
+        },
+        {
+          "url": "https://gracanica.gov.ba/download/zahtjev-za-izdavanje-uvjerenja-iz-maticne-knjige-vjencanih/",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\gracanica-forms.ts:90"
+          ]
+        },
+        {
+          "url": "https://gracanica.gov.ba/download/zahtjev-za-izdavanje-uvjerenja-iz-maticne-knjige-umrlih/",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\gracanica-forms.ts:97"
+          ]
+        },
+        {
+          "url": "https://gracanica.gov.ba/download/zahtjev-za-upis-u-maticnu-knjigu-rodjenih/",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\gracanica-forms.ts:104"
+          ]
+        },
+        {
+          "url": "https://gracanica.gov.ba/download/zahtjev-za-upis-u-maticnu-knjigu-umrlih/",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\gracanica-forms.ts:111"
+          ]
+        },
+        {
+          "url": "https://gracanica.gov.ba/download/zahtjev-za-ispravku-podataka-u-maticnoj-knjizi-rodjenih/",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\gracanica-forms.ts:118"
+          ]
+        },
+        {
+          "url": "https://gracanica.gov.ba/download/zahtjev-za-ispravku-podataka-u-maticnoj-knjizi-vjencanih/",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\gracanica-forms.ts:125"
+          ]
+        },
+        {
+          "url": "https://gracanica.gov.ba/download/zahtjev-za-ispravku-podataka-u-maticnoj-knjizi-umrlih/",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\gracanica-forms.ts:132"
+          ]
+        },
+        {
+          "url": "https://gracanica.gov.ba/download/zahtjev-za-naknadni-upis-u-maticnu-knjigu-rodjenih/",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\gracanica-forms.ts:139"
+          ]
+        },
+        {
+          "url": "https://gracanica.gov.ba/download/zahtjev-za-naknadni-upis-u-maticnu-knjigu-umrlih/",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\gracanica-forms.ts:146"
+          ]
+        },
+        {
+          "url": "https://gracanica.gov.ba/download/zahtjev-za-promjenu-licnog-imena/",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\gracanica-forms.ts:153"
+          ]
+        },
+        {
+          "url": "https://gracanica.gov.ba/download/zahtjev-za-sklapanje-braka/",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\gracanica-forms.ts:160"
+          ]
+        },
+        {
+          "url": "https://gracanica.gov.ba/download/zahtjev-za-prijavu-prebivalista-boravista/",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\gracanica-forms.ts:167"
+          ]
+        },
+        {
+          "url": "https://gracanica.gov.ba/download/zahtjev-za-odjavu-prebivalista-boravista/",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\gracanica-forms.ts:174"
+          ]
+        },
+        {
+          "url": "https://gracanica.gov.ba/download/zahtjev-za-izdavanje-uvjerenja-o-prebivalistu-boravistu/",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\gracanica-forms.ts:181"
+          ]
+        },
+        {
+          "url": "https://gracanica.gov.ba/download/zahtjev-za-izdavanje-uvjerenja-o-kretanju/",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\gracanica-forms.ts:188"
+          ]
+        },
+        {
+          "url": "https://gracanica.gov.ba/download/zahtjev-za-ovjeru-potpisa-rukopisa-i-prepisa/",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\gracanica-forms.ts:195"
+          ]
+        },
+        {
+          "url": "https://gracanica.gov.ba/download/zahtjev-za-izdavanje-uvjerenja-o-nekaznjavanju/",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\gracanica-forms.ts:202"
+          ]
+        },
+        {
+          "url": "https://gracanica.gov.ba/download/zahtjev-za-izdavanje-uvjerenja-da-se-ne-vodi-krivicni-postupak/",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\gracanica-forms.ts:209"
+          ]
+        },
+        {
+          "url": "https://gracanica.gov.ba/download/zahtjev-za-izdavanje-uvjerenja-o-porodicnom-stanju/",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\gracanica-forms.ts:216"
+          ]
+        },
+        {
+          "url": "https://gracanica.gov.ba/download/zahtjev-za-izdavanje-uvjerenja-o-slobodnom-bracnom-stanju/",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\gracanica-forms.ts:223"
+          ]
+        },
+        {
+          "url": "https://gracanica.gov.ba/download/zahtjev-za-izdavanje-uvjerenja-o-zivotu/",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\gracanica-forms.ts:230"
+          ]
+        },
+        {
+          "url": "https://gracanica.gov.ba/download/zahtjev-za-ostvarivanje-prava-na-djeciji-dodatak/",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\gracanica-forms.ts:237"
+          ]
+        },
+        {
+          "url": "https://gracanica.gov.ba/download/zahtjev-za-ostvarivanje-prava-na-stalnu-novcanu-pomoc/",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\gracanica-forms.ts:244"
+          ]
+        },
+        {
+          "url": "https://gracanica.gov.ba/download/zahtjev-za-ostvarivanje-prava-na-jednokratnu-novcanu-pomoc/",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\gracanica-forms.ts:251"
+          ]
+        },
+        {
+          "url": "https://gracanica.gov.ba/download/zahtjev-za-ostvarivanje-prava-na-dodatak-za-njegu-i-pomoc-od-strane-drugog-lica/",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\gracanica-forms.ts:258"
+          ]
+        },
+        {
+          "url": "https://gracanica.gov.ba/download/zahtjev-za-ostvarivanje-prava-na-naknadu-umjesto-place-zeni-majci-u-radnom-odnosu/",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\gracanica-forms.ts:265"
+          ]
+        },
+        {
+          "url": "https://gracanica.gov.ba/download/zahtjev-za-ostvarivanje-prava-na-novcanu-pomoc-zeni-majci-koja-nije-u-radnom-odnosu/",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\gracanica-forms.ts:272"
+          ]
+        },
+        {
+          "url": "https://gracanica.gov.ba/download/zahtjev-za-ostvarivanje-prava-na-smjestaj-u-ustanovu-socijalne-zastite/",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\gracanica-forms.ts:279"
+          ]
+        },
+        {
+          "url": "https://gracanica.gov.ba/download/zahtjev-za-ostvarivanje-prava-na-zdravstvenu-zastitu/",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\gracanica-forms.ts:286"
+          ]
+        },
+        {
+          "url": "https://gracanica.gov.ba/download/zahtjev-za-utvrdivanje-statusa-borca/",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\gracanica-forms.ts:293"
+          ]
+        },
+        {
+          "url": "https://gracanica.gov.ba/download/zahtjev-za-utvrdivanje-statusa-clana-porodice-sehida-poginulog-borca/",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\gracanica-forms.ts:300"
+          ]
+        },
+        {
+          "url": "https://gracanica.gov.ba/download/zahtjev-za-utvrdivanje-statusa-ratnog-vojnog-invalida/",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\gracanica-forms.ts:307"
+          ]
+        },
+        {
+          "url": "https://gracanica.gov.ba/download/zahtjev-za-ostvarivanje-prava-na-licnu-invalidninu/",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\gracanica-forms.ts:314"
+          ]
+        },
+        {
+          "url": "https://gracanica.gov.ba/download/zahtjev-za-ostvarivanje-prava-na-porodicnu-invalidninu/",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\gracanica-forms.ts:321"
+          ]
+        },
+        {
+          "url": "https://gracanica.gov.ba/download/zahtjev-za-ostvarivanje-prava-na-ortopedski-dodatak/",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\gracanica-forms.ts:328"
+          ]
+        },
+        {
+          "url": "https://gracanica.gov.ba/download/zahtjev-za-ostvarivanje-prava-na-mjesecni-boracki-dodatak/",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\gracanica-forms.ts:335"
+          ]
+        },
+        {
+          "url": "https://gracanica.gov.ba/download/zahtjev-za-ostvarivanje-prava-na-egzistencijalnu-naknadu/",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\gracanica-forms.ts:342"
+          ]
+        },
+        {
+          "url": "https://gracanica.gov.ba/download/zahtjev-za-ostvarivanje-prava-na-troskove-dzenaze-sahrane/",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\gracanica-forms.ts:349"
+          ]
+        },
+        {
+          "url": "https://gracanica.gov.ba/download/zahtjev-za-ostvarivanje-prava-na-banjsko-klimatsko-lijecenje/",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\gracanica-forms.ts:356"
+          ]
+        },
+        {
+          "url": "https://gracanica.gov.ba/download/zahtjev-za-izdavanje-legitimacije-ratnog-vojnog-invalida/",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\gracanica-forms.ts:363"
+          ]
+        },
+        {
+          "url": "https://gracanica.gov.ba/download/zahtjev-za-izdavanje-legitimacije-clana-porodice-sehida-poginulog-borca/",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\gracanica-forms.ts:370"
+          ]
+        },
+        {
+          "url": "https://gracanica.gov.ba/download/zahtjev-za-izdavanje-uvjerenja-o-pripadnosti-oruzanim-snagama/",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\gracanica-forms.ts:377"
+          ]
+        },
+        {
+          "url": "https://gracanica.gov.ba/download/zahtjev-za-izdavanje-uvjerenja-o-okolnostima-pogibije-ranjavanja-nestanka/",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\gracanica-forms.ts:384"
+          ]
+        },
+        {
+          "url": "https://gracanica.gov.ba/download/opci-zahtjev-sluzbe-za-upravu/",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\gracanica-forms.ts:391"
+          ]
+        },
+        {
+          "url": "https://gracanica.gov.ba/download/zahtjev-za-izdavanje-uvjerenja-o-cinjenicama-o-kojima-se-vodi-sluzbena-evidencija/",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\gracanica-forms.ts:398"
+          ]
+        },
+        {
+          "url": "https://gracanica.gov.ba/download/zahtjev-za-izdavanje-uvjerenja-o-cinjenicama-o-kojima-se-ne-vodi-sluzbena-evidencija/",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\gracanica-forms.ts:405"
+          ]
+        },
+        {
+          "url": "https://gracanica.gov.ba/download/zahtjev-za-pristup-informacijama/",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\gracanica-forms.ts:412"
+          ]
+        },
+        {
+          "url": "https://gracanica.gov.ba/download/zahtjev-za-upis-u-biracki-spisak/",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\gracanica-forms.ts:419"
+          ]
+        }
+      ]
+    },
+    {
+      "institution": "Grad",
+      "removedUrls": [
+        {
+          "url": "https://www.mostar.ba/dokumenti-gradani/",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\uploaded-institutions.ts:329"
+          ]
+        },
+        {
+          "url": "https://livno.ba/zahtjevi-i-obrasci",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\uploaded-institutions.ts:458"
+          ]
+        }
+      ]
+    },
+    {
+      "institution": "Grad Banja Luka",
+      "removedUrls": [
+        {
+          "url": "https://www.banjaluka.rs.ba/gradska-uprava/e-uprava/",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\verified-domains.ts:926"
+          ]
+        }
+      ]
+    },
+    {
+      "institution": "Grad Bijeljina",
+      "removedUrls": [
+        {
+          "url": "https://www.gradbijeljina.org/",
+          "error": "Timeout",
+          "sources": [
+            "src\\data\\municipalities-database.ts",
+            "src\\data\\updated-government-forms.ts",
+            "src\\data\\uploaded-institutions.ts",
+            "src\\data\\website-verification.ts"
+          ]
+        },
+        {
+          "url": "https://www.gradbijeljina.org/sr/1647.izvod-iz-maticne-knjige-rodenih.html",
+          "error": "Timeout",
+          "sources": [
+            "src\\data\\municipalities-database.ts",
+            "src\\data\\updated-government-forms.ts",
+            "src\\data\\uploaded-institutions.ts"
+          ]
+        },
+        {
+          "url": "https://www.gradbijeljina.org/sr/1651.pracenje-statusa-predmeta.html",
+          "error": "Timeout",
+          "sources": [
+            "src\\data\\updated-government-forms.ts"
+          ]
+        },
+        {
+          "url": "https://www.gradbijeljina.org/sr/1563.ekoloske-dozvole.html",
+          "error": "Timeout",
+          "sources": [
+            "src\\data\\updated-government-forms.ts"
+          ]
+        }
+      ]
+    },
+    {
+      "institution": "Grad Ljubuški",
+      "removedUrls": [
+        {
+          "url": "https://ljubuski.ba/obrasci/",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\municipalities-database.ts:1289"
+          ]
+        },
+        {
+          "url": "https://www.ljubuski.ba/zahtjevi-i-obrasci/",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\uploaded-institutions.ts:549",
+            "src\\data\\verified-domains.ts:885"
+          ]
+        },
+        {
+          "url": "https://ljubuski.ba/gradska-uprava/",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\verified-domains.ts:886"
+          ]
+        }
+      ]
+    },
+    {
+      "institution": "Grad Prijedor",
+      "removedUrls": [
+        {
+          "url": "https://prijedor.org/obrasci/",
+          "error": "ENOTFOUND: getaddrinfo ENOTFOUND prijedor.org",
+          "sources": [
+            "src\\data\\municipalities-database.ts:1485"
+          ]
+        }
+      ]
+    },
+    {
+      "institution": "Grad Široki Brijeg",
+      "removedUrls": [
+        {
+          "url": "https://siroki-brijeg.ba/obrasci/",
+          "error": "ENOTFOUND: getaddrinfo ENOTFOUND siroki-brijeg.ba",
+          "sources": [
+            "src\\data\\municipalities-database.ts:1275"
+          ]
+        }
+      ]
+    },
+    {
+      "institution": "Grad Trebinje",
+      "removedUrls": [
+        {
+          "url": "https://trebinje.rs.ba/obrasci-i-zahtjevi/",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\municipalities-database.ts:1870",
+            "src\\data\\uploaded-institutions.ts:619"
+          ]
+        }
+      ]
+    },
+    {
+      "institution": "Had?i?i",
+      "removedUrls": [
+        {
+          "url": "https://hadzici.ba/e-uprava",
+          "error": "HTTP 500 Internal Server Error",
+          "sources": [
+            "src\\data\\municipalities-database.ts",
+            "src\\data\\sarajevo-region-forms.ts",
+            "src\\data\\uploaded-institutions.ts",
+            "src\\data\\verified-domains.ts"
+          ]
+        }
+      ]
+    },
+    {
+      "institution": "Ilidža",
+      "removedUrls": [
+        {
+          "url": "https://opcinailidza.ba/obrasci",
+          "error": "HTTP 500 Internal Server Error",
+          "sources": [
+            "src\\data\\municipalities-database.ts:85",
+            "src\\data\\sarajevo-region-forms.ts:443",
+            "src\\data\\sarajevo-region-forms.ts:449",
+            "src\\data\\sarajevo-region-forms.ts:456",
+            "src\\data\\sarajevo-region-forms.ts:463",
+            "src\\data\\uploaded-institutions.ts:99",
+            "src\\data\\verified-domains.ts:74"
+          ]
+        }
+      ]
+    },
+    {
+      "institution": "Istočni Stari Grad",
+      "removedUrls": [
+        {
+          "url": "https://opstinaisg.net/dokumenti/",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\municipalities-database.ts:1832",
+            "src\\data\\sarajevo-region-forms.ts:894",
+            "src\\data\\sarajevo-region-forms.ts:900",
+            "src\\data\\sarajevo-region-forms.ts:907",
+            "src\\data\\uploaded-institutions.ts:219",
+            "src\\data\\verified-domains.ts:1091"
+          ]
+        }
+      ]
+    },
+    {
+      "institution": "Istočno Novo Sarajevo",
+      "removedUrls": [
+        {
+          "url": "https://opstinains.net/usluge/obrasci/",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\municipalities-database.ts:1778",
+            "src\\data\\sarajevo-region-forms.ts:793",
+            "src\\data\\sarajevo-region-forms.ts:799",
+            "src\\data\\sarajevo-region-forms.ts:806",
+            "src\\data\\sarajevo-region-forms.ts:813",
+            "src\\data\\uploaded-institutions.ts:189",
+            "src\\data\\verified-domains.ts:1055"
+          ]
+        }
+      ]
+    },
+    {
+      "institution": "Kakanj",
+      "removedUrls": [
+        {
+          "url": "https://www.zzozedo.ba/index.php/layout/class-layout/obrasci",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\uploaded-institutions.ts:1559",
+            "src\\data\\uploaded-institutions.ts:1569",
+            "src\\data\\uploaded-institutions.ts:1579",
+            "src\\data\\uploaded-institutions.ts:1589",
+            "src\\data\\uploaded-institutions.ts:1599",
+            "src\\data\\uploaded-institutions.ts:1609",
+            "src\\data\\verified-domains.ts:1230"
+          ]
+        }
+      ]
+    },
+    {
+      "institution": "Kalesija",
+      "removedUrls": [
+        {
+          "url": "https://kalesija.ba/lokacijska-informacija/",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\municipalities-database.ts:502"
+          ]
+        },
+        {
+          "url": "https://kalesija.ba/uvjerenje-urbanizam/",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\municipalities-database.ts:506"
+          ]
+        }
+      ]
+    },
+    {
+      "institution": "Kiseljak",
+      "removedUrls": [
+        {
+          "url": "https://kiseljak.ba/obrasci/",
+          "error": "ENOTFOUND: getaddrinfo ENOTFOUND kiseljak.ba",
+          "sources": [
+            "src\\data\\municipalities-database.ts:1009",
+            "src\\data\\verified-domains.ts:626"
+          ]
+        }
+      ]
+    },
+    {
+      "institution": "Kneževo (Skender Vakuf)",
+      "removedUrls": [
+        {
+          "url": "https://knezevo.org/obrasci/",
+          "error": "ENOTFOUND: getaddrinfo ENOTFOUND knezevo.org",
+          "sources": [
+            "src\\data\\municipalities-database.ts:1441"
+          ]
+        }
+      ]
+    },
+    {
+      "institution": "Kozarska Dubica",
+      "removedUrls": [
+        {
+          "url": "https://kozarska-dubica.com/obrasci/",
+          "error": "ENOTFOUND: getaddrinfo ENOTFOUND kozarska-dubica.com",
+          "sources": [
+            "src\\data\\municipalities-database.ts:1499"
+          ]
+        }
+      ]
+    },
+    {
+      "institution": "Kreševo",
+      "removedUrls": [
+        {
+          "url": "https://kresevo.ba/obrasci/",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\municipalities-database.ts:1023",
+            "src\\data\\verified-domains.ts:637"
+          ]
+        }
+      ]
+    },
+    {
+      "institution": "Kupres",
+      "removedUrls": [
+        {
+          "url": "https://www.vladahbz.com/ministarstvo-rada-zdravstva-socijalne-skrbi-i-prognanih-dokumenti/",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\uploaded-institutions.ts:519"
+          ]
+        }
+      ]
+    },
+    {
+      "institution": "Laktasi",
+      "removedUrls": [
+        {
+          "url": "https://laktasi.org/",
+          "error": "HTTP 403 Forbidden",
+          "sources": [
+            "src\\data\\website-verification.ts:462"
+          ]
+        }
+      ]
+    },
+    {
+      "institution": "Laktaši",
+      "removedUrls": [
+        {
+          "url": "https://laktasi.org/obrasci/",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\municipalities-database.ts:1359"
+          ]
+        }
+      ]
+    },
+    {
+      "institution": "Livno",
+      "removedUrls": [
+        {
+          "url": "https://livno.ba/za-gradane/dokumenti-i-obrasci/obrazac-gradjevna-dozvola.pdf",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\livno-forms.ts:40",
+            "src\\data\\livno-forms.ts:41"
+          ]
+        },
+        {
+          "url": "https://livno.ba/za-gradane/dokumenti-i-obrasci/zahtjev-lokacijska-informacija.pdf",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\livno-forms.ts:55",
+            "src\\data\\livno-forms.ts:56"
+          ]
+        },
+        {
+          "url": "https://livno.ba/za-gradane/dokumenti-i-obrasci/zahtjev-upotrebna-dozvola.pdf",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\livno-forms.ts:70",
+            "src\\data\\livno-forms.ts:71"
+          ]
+        },
+        {
+          "url": "https://livno.ba/za-gradane/dokumenti-i-obrasci/zahtjev-komunalni-prikljucak.pdf",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\livno-forms.ts:85",
+            "src\\data\\livno-forms.ts:86"
+          ]
+        },
+        {
+          "url": "https://livno.ba/za-gradane/dokumenti-i-obrasci/zahtjev-javna-povrsina.pdf",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\livno-forms.ts:100",
+            "src\\data\\livno-forms.ts:101"
+          ]
+        },
+        {
+          "url": "https://livno.ba/za-gradane/dokumenti-i-obrasci/obrazac-osnivanje-obrta.pdf",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\livno-forms.ts:119",
+            "src\\data\\livno-forms.ts:120"
+          ]
+        },
+        {
+          "url": "https://livno.ba/za-gradane/dokumenti-i-obrasci/zahtjev-prestanak-obrta.pdf",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\livno-forms.ts:134",
+            "src\\data\\livno-forms.ts:135"
+          ]
+        },
+        {
+          "url": "https://livno.ba/za-gradane/dokumenti-i-obrasci/zahtjev-posjedovni-list.pdf",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\livno-forms.ts:149",
+            "src\\data\\livno-forms.ts:150"
+          ]
+        },
+        {
+          "url": "https://livno.ba/za-gradane/dokumenti-i-obrasci/zahtjev-maticna-knjiga-rodjeni.pdf",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\livno-forms.ts:168",
+            "src\\data\\livno-forms.ts:169"
+          ]
+        },
+        {
+          "url": "https://livno.ba/za-gradane/dokumenti-i-obrasci/zahtjev-uvjerenje-drzavljanstvo.pdf",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\livno-forms.ts:183",
+            "src\\data\\livno-forms.ts:184"
+          ]
+        },
+        {
+          "url": "https://livno.ba/za-gradane/dokumenti-i-obrasci/obrazac-kucna-lista.pdf",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\livno-forms.ts:198",
+            "src\\data\\livno-forms.ts:199"
+          ]
+        },
+        {
+          "url": "https://livno.ba/za-gradane/dokumenti-i-obrasci/prijava-studentska-stipendija.pdf",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\livno-forms.ts:213",
+            "src\\data\\livno-forms.ts:214"
+          ]
+        },
+        {
+          "url": "https://livno.ba/za-gradane/dokumenti-i-obrasci/zahtjev-pomoc-branitelji.pdf",
+          "error": "Timeout",
+          "sources": [
+            "src\\data\\livno-forms.ts:232",
+            "src\\data\\livno-forms.ts:233"
+          ]
+        },
+        {
+          "url": "https://livno.ba/za-gradane/dokumenti-i-obrasci/prijava-komunalna-naknada.pdf",
+          "error": "Timeout",
+          "sources": [
+            "src\\data\\livno-forms.ts:247",
+            "src\\data\\livno-forms.ts:248"
+          ]
+        }
+      ]
+    },
+    {
+      "institution": "Ljubuški",
+      "removedUrls": [
+        {
+          "url": "https://www.ljubuski.ba/zahtjevi-i-obrasci/",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\uploaded-institutions.ts:549",
+            "src\\data\\verified-domains.ts:885"
+          ]
+        }
+      ]
+    },
+    {
+      "institution": "Maglaj",
+      "removedUrls": [
+        {
+          "url": "https://maglaj.ba/pdf-formular-zzo-zdk/",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\municipalities-database.ts:398",
+            "src\\data\\verified-domains.ts:217"
+          ]
+        },
+        {
+          "url": "https://www.zzozedo.ba/index.php/layout/class-layout/obrasci",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\uploaded-institutions.ts:1559",
+            "src\\data\\uploaded-institutions.ts:1569",
+            "src\\data\\uploaded-institutions.ts:1579",
+            "src\\data\\uploaded-institutions.ts:1589",
+            "src\\data\\uploaded-institutions.ts:1599",
+            "src\\data\\uploaded-institutions.ts:1609",
+            "src\\data\\verified-domains.ts:1230"
+          ]
+        }
+      ]
+    },
+    {
+      "institution": "Ministarstvo obrazovanja HNK",
+      "removedUrls": [
+        {
+          "url": "https://www.vlada-hnz-k.ba/ministarstva/ministarstvo-prosvjete-znanosti-kulture-i-sporta",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\uploaded-institutions.ts:418",
+            "src\\data\\uploaded-institutions.ts:419"
+          ]
+        }
+      ]
+    },
+    {
+      "institution": "Ministarstvo obrazovanja, nauke, kulture i sporta USK",
+      "removedUrls": [
+        {
+          "url": "https://www.vladausk.ba/ministarstva/ministarstvo-obrazovanja-nauke-kulture-i-sporta",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\uploaded-institutions.ts:769"
+          ]
+        }
+      ]
+    },
+    {
+      "institution": "Ministarstvo obrazovanja, znanosti, kulture i športa ZHK",
+      "removedUrls": [
+        {
+          "url": "https://www.vladazzh.com/ministarstva/obrazovanje-znanost-kultura-i-sport/",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\uploaded-institutions.ts:588",
+            "src\\data\\uploaded-institutions.ts:589"
+          ]
+        }
+      ]
+    },
+    {
+      "institution": "Ministarstvo prostornog uređenja HNK",
+      "removedUrls": [
+        {
+          "url": "https://www.vlada-hnz-k.ba/ministarstva/ministarstvo-prostornog-uredenja-gradjenja-i-zastite-okoline",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\uploaded-institutions.ts:428",
+            "src\\data\\uploaded-institutions.ts:429"
+          ]
+        }
+      ]
+    },
+    {
+      "institution": "Ministarstvo za građenje, prostorno uređenje i zaštitu okoliša USK",
+      "removedUrls": [
+        {
+          "url": "https://www.vladausk.ba/ministarstva/ministarstvo-za-gradjenje-prostorno-uredenje-i-zastitu-okoline",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\uploaded-institutions.ts:779"
+          ]
+        }
+      ]
+    },
+    {
+      "institution": "Ministarstvo za socijalnu politiku, zdravstvo BPK",
+      "removedUrls": [
+        {
+          "url": "https://www.bpkg.gov.ba/ministarstva/zdravstvo",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\uploaded-institutions.ts:38",
+            "src\\data\\uploaded-institutions.ts:39"
+          ]
+        }
+      ]
+    },
+    {
+      "institution": "Ministarstvo za urbanizam BPK",
+      "removedUrls": [
+        {
+          "url": "https://www.bpkg.gov.ba/ministarstva/urbanizam",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\uploaded-institutions.ts:58",
+            "src\\data\\uploaded-institutions.ts:59"
+          ]
+        }
+      ]
+    },
+    {
+      "institution": "Ministarstvo zdravstva HNK",
+      "removedUrls": [
+        {
+          "url": "https://www.vlada-hnz-k.ba/ministarstva/ministarstvo-zdravstva-rada-i-socijalne-zastite",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\uploaded-institutions.ts:408",
+            "src\\data\\uploaded-institutions.ts:409"
+          ]
+        }
+      ]
+    },
+    {
+      "institution": "Modriča",
+      "removedUrls": [
+        {
+          "url": "https://modrica.ba/usluge/obrasci/",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\municipalities-database.ts:1561",
+            "src\\data\\uploaded-institutions.ts:1249"
+          ]
+        }
+      ]
+    },
+    {
+      "institution": "Mrkonjić Grad",
+      "removedUrls": [
+        {
+          "url": "https://mrkonjicgrad.org/obrasci/",
+          "error": "ENOTFOUND: getaddrinfo ENOTFOUND mrkonjicgrad.org",
+          "sources": [
+            "src\\data\\municipalities-database.ts:1455"
+          ]
+        }
+      ]
+    },
+    {
+      "institution": "Neum",
+      "removedUrls": [
+        {
+          "url": "https://neum.ba/obrasci/",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\municipalities-database.ts:1136",
+            "src\\data\\verified-domains.ts:723"
+          ]
+        }
+      ]
+    },
+    {
+      "institution": "Nevesinje",
+      "removedUrls": [
+        {
+          "url": "https://opstinanevesinje.rs.ba/zahtjevi-i-obrasci/",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\municipalities-database.ts:1916",
+            "src\\data\\uploaded-institutions.ts:649"
+          ]
+        }
+      ]
+    },
+    {
+      "institution": "Novi Grad (Bosanski Novi)",
+      "removedUrls": [
+        {
+          "url": "https://novi-grad.org/obrasci/",
+          "error": "ENOTFOUND: getaddrinfo ENOTFOUND novi-grad.org",
+          "sources": [
+            "src\\data\\municipalities-database.ts:1469"
+          ]
+        }
+      ]
+    },
+    {
+      "institution": "Novi Grad Sarajevo",
+      "removedUrls": [
+        {
+          "url": "https://novigradsarajevo.ba/e-uprava",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\municipalities-database.ts:103",
+            "src\\data\\sarajevo-region-forms.ts:479",
+            "src\\data\\sarajevo-region-forms.ts:485",
+            "src\\data\\sarajevo-region-forms.ts:492",
+            "src\\data\\sarajevo-region-forms.ts:499",
+            "src\\data\\uploaded-institutions.ts:109",
+            "src\\data\\verified-domains.ts:87"
+          ]
+        }
+      ]
+    },
+    {
+      "institution": "Novi Travnik",
+      "removedUrls": [
+        {
+          "url": "https://novi-travnik.ba/obrasci/",
+          "error": "ENOTFOUND: getaddrinfo ENOTFOUND novi-travnik.ba",
+          "sources": [
+            "src\\data\\municipalities-database.ts:963",
+            "src\\data\\verified-domains.ts:580"
+          ]
+        }
+      ]
+    },
+    {
+      "institution": "Novo Goražde",
+      "removedUrls": [
+        {
+          "url": "https://novogorazde.rs.ba/zahtjevi-i-obrasci/",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\municipalities-database.ts:2017"
+          ]
+        },
+        {
+          "url": "https://novogorazde.net/dokumenti/",
+          "error": "ENOTFOUND: getaddrinfo ENOTFOUND novogorazde.net",
+          "sources": [
+            "src\\data\\sarajevo-region-forms.ts:1204",
+            "src\\data\\sarajevo-region-forms.ts:1210",
+            "src\\data\\sarajevo-region-forms.ts:1217",
+            "src\\data\\uploaded-institutions.ts:269",
+            "src\\data\\verified-domains.ts:1155"
+          ]
+        }
+      ]
+    },
+    {
+      "institution": "Novo Sarajevo",
+      "removedUrls": [
+        {
+          "url": "https://novosarajevo.ba/e-uprava/obrasci/",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\municipalities-database.ts:121",
+            "src\\data\\sarajevo-region-forms.ts:515",
+            "src\\data\\sarajevo-region-forms.ts:521",
+            "src\\data\\sarajevo-region-forms.ts:528",
+            "src\\data\\sarajevo-region-forms.ts:535",
+            "src\\data\\uploaded-institutions.ts:119",
+            "src\\data\\verified-domains.ts:100"
+          ]
+        }
+      ]
+    },
+    {
+      "institution": "Odžak",
+      "removedUrls": [
+        {
+          "url": "https://odzak.ba/obrasci/",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\municipalities-database.ts:1194",
+            "src\\data\\verified-domains.ts:771"
+          ]
+        },
+        {
+          "url": "https://odzak.ba/zahtjevi-i-obrasci/",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\uploaded-institutions.ts:959"
+          ]
+        }
+      ]
+    },
+    {
+      "institution": "Olovo",
+      "removedUrls": [
+        {
+          "url": "https://olovo.gov.ba/wp-content/uploads/2016/12/Zahtjev-za-izdavanje-uvjerenja-o-%C4%8Dinjenicama-o-kojima-se-vodi-slu%C5%BEbena-evidencija.pdf",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\olovo-forms.ts:23"
+          ]
+        },
+        {
+          "url": "https://olovo.gov.ba/wp-content/uploads/2016/12/Zahtjev-za-izdavanje-uvjerenja-o-%C4%8Dinjenicama-o-kojima-se-ne-vodi-slu%C5%BEbena-evidencija.pdf",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\olovo-forms.ts:30"
+          ]
+        },
+        {
+          "url": "https://olovo.gov.ba/wp-content/uploads/2016/12/Zahtjev-za-izdavanje-rje%C5%A1enja-o-utvr%C4%91ivanju-prava-vlasni%C5%A1tva.pdf",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\olovo-forms.ts:51"
+          ]
+        },
+        {
+          "url": "https://olovo.gov.ba/wp-content/uploads/2016/12/Zahtjev-za-izdavanje-rje%C5%A1enja-o-izvedenom-stanju-objekta.pdf",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\olovo-forms.ts:58"
+          ]
+        },
+        {
+          "url": "https://olovo.gov.ba/wp-content/uploads/2016/12/Zahtjev-za-izdavanje-rje%C5%A1enja-o-dodjeli-gradskog-gra%C4%91evinskog-zemlji%C5%A1ta.pdf",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\olovo-forms.ts:65"
+          ]
+        },
+        {
+          "url": "https://olovo.gov.ba/wp-content/uploads/2016/12/Zahtjev-za-izdavanje-lokacijske-informacije.pdf",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\olovo-forms.ts:72"
+          ]
+        },
+        {
+          "url": "https://olovo.gov.ba/wp-content/uploads/2016/12/Zahtjev-za-izdavanje-jednokratne-nov%C4%8Dane-pomo%C4%87i.pdf",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\olovo-forms.ts:79"
+          ]
+        },
+        {
+          "url": "https://olovo.gov.ba/wp-content/uploads/2016/12/Zahtjev-za-izdavanje-gra%C4%91evinske-dozvole.pdf",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\olovo-forms.ts:86"
+          ]
+        },
+        {
+          "url": "https://olovo.gov.ba/wp-content/uploads/2016/12/Zahtjev-za-izdavanje-ekolo%C5%A1ke-dozvole.pdf",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\olovo-forms.ts:93"
+          ]
+        },
+        {
+          "url": "https://olovo.gov.ba/wp-content/uploads/2016/12/Zahtjev-za-izdavanje-dozvole-za-gradnju-za-objekte-privremenog-karaktera.pdf",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\olovo-forms.ts:100"
+          ]
+        },
+        {
+          "url": "https://olovo.gov.ba/wp-content/uploads/2016/12/Zahtjev-za-naknadu-umjesto-pla%C4%87e-%C5%BEeni-majci-u-radnom-odnosu.pdf",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\olovo-forms.ts:107"
+          ]
+        },
+        {
+          "url": "https://olovo.gov.ba/wp-content/uploads/2016/12/Zahtjev-za-naknadu-umjesto-pla%C4%87e-%C5%BEeni-majci-u-radnom-odnosu-za-blizance.pdf",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\olovo-forms.ts:114"
+          ]
+        },
+        {
+          "url": "https://olovo.gov.ba/wp-content/uploads/2016/12/Zahtjev-za-nov%C4%8Danu-pomo%C4%87-%C5%BEeni-majci-koja-nije-u-radnom-odnosu.pdf",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\olovo-forms.ts:121"
+          ]
+        },
+        {
+          "url": "https://olovo.gov.ba/wp-content/uploads/2016/12/Zahtjev-za-nov%C4%8Danu-pomo%C4%87-%C5%BEeni-majci-koja-nije-u-radnom-odnosu-za-blizance.pdf",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\olovo-forms.ts:128"
+          ]
+        },
+        {
+          "url": "https://olovo.gov.ba/wp-content/uploads/2016/12/Zahtjev-za-ostvarivanje-prava-na-dje%C4%8Diji-dodatak.pdf",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\olovo-forms.ts:135"
+          ]
+        },
+        {
+          "url": "https://olovo.gov.ba/wp-content/uploads/2016/12/Zahtjev-za-ostvarivanje-prava-na-pomo%C4%87-u-prehrani-djeteta-do-%C5%A1est-mjeseci.pdf",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\olovo-forms.ts:142"
+          ]
+        },
+        {
+          "url": "https://olovo.gov.ba/wp-content/uploads/2016/12/Zahtjev-za-ostvarivanje-prava-na-stalnu-nov%C4%8Danu-pomo%C4%87.pdf",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\olovo-forms.ts:149"
+          ]
+        },
+        {
+          "url": "https://olovo.gov.ba/wp-content/uploads/2016/12/Zahtjev-za-ostvarivanje-prava-na-dodatak-za-njegu-i-pomo%C4%87-od-strane-drugog-lica.pdf",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\olovo-forms.ts:156"
+          ]
+        },
+        {
+          "url": "https://olovo.gov.ba/wp-content/uploads/2016/12/Zahtjev-za-pokretanje-postupka-eksproprijacije.pdf",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\olovo-forms.ts:167"
+          ]
+        },
+        {
+          "url": "https://olovo.gov.ba/wp-content/uploads/2016/12/Zahtjev-za-pokretanje-postupka-deeksproprijacije.pdf",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\olovo-forms.ts:174"
+          ]
+        },
+        {
+          "url": "https://olovo.gov.ba/wp-content/uploads/2016/12/Zahtjev-za-pokretanje-postupka-uzurpacije.pdf",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\olovo-forms.ts:181"
+          ]
+        },
+        {
+          "url": "https://olovo.gov.ba/wp-content/uploads/2016/12/Zahtjev-za-pokretanje-postupka-arondacije.pdf",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\olovo-forms.ts:188"
+          ]
+        },
+        {
+          "url": "https://olovo.gov.ba/wp-content/uploads/2016/12/Zahtjev-za-pokretanje-postupka-komasacije.pdf",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\olovo-forms.ts:195"
+          ]
+        },
+        {
+          "url": "https://olovo.gov.ba/wp-content/uploads/2016/12/Zahtjev-za-obnovu-premjera.pdf",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\olovo-forms.ts:202"
+          ]
+        },
+        {
+          "url": "https://olovo.gov.ba/wp-content/uploads/2016/12/Zahtjev-za-odr%C5%BEavanje-premjera.pdf",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\olovo-forms.ts:209"
+          ]
+        },
+        {
+          "url": "https://olovo.gov.ba/wp-content/uploads/2016/12/Zahtjev-za-kori%C5%A1tenje-javne-povr%C5%A1ine.pdf",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\olovo-forms.ts:223"
+          ]
+        },
+        {
+          "url": "https://olovo.gov.ba/wp-content/uploads/2016/12/Zahtjev-za-izdavanje-prepisa-katastarskog-plana.pdf",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\olovo-forms.ts:230"
+          ]
+        },
+        {
+          "url": "https://olovo.gov.ba/wp-content/uploads/2016/12/Zahtjev-za-izdavanje-kopije-katastarskog-plana.pdf",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\olovo-forms.ts:237"
+          ]
+        },
+        {
+          "url": "https://olovo.gov.ba/wp-content/uploads/2016/12/Zahtjev-za-izdavanje-posjedovnog-lista.pdf",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\olovo-forms.ts:244"
+          ]
+        },
+        {
+          "url": "https://olovo.gov.ba/wp-content/uploads/2016/12/Zahtjev-za-identifikaciju-parcele.pdf",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\olovo-forms.ts:251"
+          ]
+        },
+        {
+          "url": "https://olovo.gov.ba/wp-content/uploads/2016/12/Zahtjev-za-cijepanje-parcele.pdf",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\olovo-forms.ts:258"
+          ]
+        },
+        {
+          "url": "https://olovo.gov.ba/wp-content/uploads/2016/12/Zahtjev-za-spajanje-parcele.pdf",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\olovo-forms.ts:265"
+          ]
+        },
+        {
+          "url": "https://olovo.gov.ba/wp-content/uploads/2016/12/Zahtjev-za-promjenu-kulture.pdf",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\olovo-forms.ts:272"
+          ]
+        },
+        {
+          "url": "https://olovo.gov.ba/wp-content/uploads/2016/12/Zahtjev-za-upis-objekta.pdf",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\olovo-forms.ts:279"
+          ]
+        },
+        {
+          "url": "https://olovo.gov.ba/wp-content/uploads/2016/12/Zahtjev-za-provo%C4%91enje-promjena-u-katastru.pdf",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\olovo-forms.ts:286"
+          ]
+        },
+        {
+          "url": "https://olovo.gov.ba/wp-content/uploads/2016/12/Zahtjev-za-uvid-u-katastarsku-dokumentaciju.pdf",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\olovo-forms.ts:293"
+          ]
+        },
+        {
+          "url": "https://olovo.gov.ba/wp-content/uploads/2016/12/Zahtjev-za-izdavanje-prepisa-posjedovnog-lista.pdf",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\olovo-forms.ts:300"
+          ]
+        },
+        {
+          "url": "https://olovo.gov.ba/wp-content/uploads/2016/12/Zahtjev-za-ostvarivanje-prava-na-ortopedska-i-druga-pomagala.pdf",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\olovo-forms.ts:455"
+          ]
+        },
+        {
+          "url": "https://olovo.gov.ba/wp-content/uploads/2016/12/Zahtjev-za-ostvarivanje-prava-na-osposobljavanje-za-%C5%BEivot-i-rad.pdf",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\olovo-forms.ts:462"
+          ]
+        },
+        {
+          "url": "https://olovo.gov.ba/wp-content/uploads/2016/12/Zahtjev-za-ostvarivanje-prava-na-smje%C5%A1taj-u-drugu-porodicu.pdf",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\olovo-forms.ts:469"
+          ]
+        },
+        {
+          "url": "https://olovo.gov.ba/wp-content/uploads/2016/12/Zahtjev-za-ostvarivanje-prava-na-smje%C5%A1taj-u-ustanovu-socijalne-za%C5%A1tite.pdf",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\olovo-forms.ts:476"
+          ]
+        },
+        {
+          "url": "https://olovo.gov.ba/wp-content/uploads/2016/12/Zahtjev-za-ostvarivanje-prava-na-pomo%C4%87-i-njegu-u-ku%C4%87i.pdf",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\olovo-forms.ts:483"
+          ]
+        },
+        {
+          "url": "https://olovo.gov.ba/wp-content/uploads/2016/12/Zahtjev-za-ostvarivanje-prava-na-jednokratnu-nov%C4%8Danu-pomo%C4%87.pdf",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\olovo-forms.ts:490"
+          ]
+        },
+        {
+          "url": "https://olovo.gov.ba/wp-content/uploads/2016/12/Zahtjev-za-ostvarivanje-prava-na-subvenciju-tro%C5%A1kova-boravka-djece-u-pred%C5%A1kolskim-ustanovama.pdf",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\olovo-forms.ts:497"
+          ]
+        },
+        {
+          "url": "https://olovo.gov.ba/wp-content/uploads/2016/12/Zahtjev-za-ostvarivanje-prava-na-zdravstvenu-za%C5%A1titu.pdf",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\olovo-forms.ts:504"
+          ]
+        },
+        {
+          "url": "https://olovo.gov.ba/wp-content/uploads/2016/12/Zahtjev-za-ostvarivanje-prava-na-pogrebne-tro%C5%A1kove.pdf",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\olovo-forms.ts:511"
+          ]
+        },
+        {
+          "url": "https://olovo.gov.ba/wp-content/uploads/2016/12/Zahtjev-za-ostvarivanje-prava-na-privremeni-smje%C5%A1taj-u-prihvatili%C5%A1te.pdf",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\olovo-forms.ts:518"
+          ]
+        },
+        {
+          "url": "https://olovo.gov.ba/wp-content/uploads/2016/12/Zahtjev-za-ostvarivanje-prava-na-besplatnu-pravnu-pomo%C4%87.pdf",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\olovo-forms.ts:525"
+          ]
+        },
+        {
+          "url": "https://www.olovo.gov.ba/dokumenti/",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\uploaded-institutions.ts:1619"
+          ]
+        }
+      ]
+    },
+    {
+      "institution": "Općina Ilidža",
+      "removedUrls": [
+        {
+          "url": "https://opcinailidza.ba/obrasci",
+          "error": "HTTP 500 Internal Server Error",
+          "sources": [
+            "src\\data\\municipalities-database.ts:85",
+            "src\\data\\sarajevo-region-forms.ts:443",
+            "src\\data\\sarajevo-region-forms.ts:449",
+            "src\\data\\sarajevo-region-forms.ts:456",
+            "src\\data\\sarajevo-region-forms.ts:463",
+            "src\\data\\uploaded-institutions.ts:99",
+            "src\\data\\verified-domains.ts:74"
+          ]
+        }
+      ]
+    },
+    {
+      "institution": "Općina Posušje",
+      "removedUrls": [
+        {
+          "url": "https://www.opcina-posusje.ba/dokumenti/obrasci/",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\uploaded-institutions.ts:569",
+            "src\\data\\verified-domains.ts:909"
+          ]
+        }
+      ]
+    },
+    {
+      "institution": "Općina Sanski Most",
+      "removedUrls": [
+        {
+          "url": "https://sanskimost.gov.ba/javni-poziv-za-dodjelu-poticajnih-sredstava-za-podrsku-biznis-idejama-mladih-for-2026-09-09-2026/",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\sanski-most-forms.ts:15"
+          ]
+        },
+        {
+          "url": "https://sanskimost.gov.ba/wp-content/uploads/prijavni-obrazac.pdf",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\sanski-most-forms.ts:21"
+          ]
+        },
+        {
+          "url": "https://sanskimost.gov.ba/wp-content/uploads/uputstvo.pdf",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\sanski-most-forms.ts:27"
+          ]
+        },
+        {
+          "url": "https://sanskimost.gov.ba/wp-content/uploads/biznis-plan.docx",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\sanski-most-forms.ts:33"
+          ]
+        }
+      ]
+    },
+    {
+      "institution": "Opština Novo Goražde",
+      "removedUrls": [
+        {
+          "url": "https://novogorazde.net/dokumenti/",
+          "error": "ENOTFOUND: getaddrinfo ENOTFOUND novogorazde.net",
+          "sources": [
+            "src\\data\\sarajevo-region-forms.ts:1204",
+            "src\\data\\sarajevo-region-forms.ts:1210",
+            "src\\data\\sarajevo-region-forms.ts:1217",
+            "src\\data\\uploaded-institutions.ts:269",
+            "src\\data\\verified-domains.ts:1155"
+          ]
+        }
+      ]
+    },
+    {
+      "institution": "Opština Pale",
+      "removedUrls": [
+        {
+          "url": "https://opstinapale.org/",
+          "error": "ENOTFOUND: getaddrinfo ENOTFOUND opstinapale.org",
+          "sources": [
+            "src\\data\\uploaded-institutions.ts:308",
+            "src\\data\\uploaded-institutions.ts:1378"
+          ]
+        },
+        {
+          "url": "https://opstinapale.org/zahtjevi-i-obrasci/",
+          "error": "ENOTFOUND: getaddrinfo ENOTFOUND opstinapale.org",
+          "sources": [
+            "src\\data\\uploaded-institutions.ts:309",
+            "src\\data\\uploaded-institutions.ts:1379"
+          ]
+        }
+      ]
+    },
+    {
+      "institution": "Orašje",
+      "removedUrls": [
+        {
+          "url": "https://orasje.ba/obrasci/",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\municipalities-database.ts:1180",
+            "src\\data\\verified-domains.ts:760"
+          ]
+        }
+      ]
+    },
+    {
+      "institution": "Osmaci",
+      "removedUrls": [
+        {
+          "url": "https://osmaci.org/obrasci/",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\municipalities-database.ts:1720",
+            "src\\data\\uploaded-institutions.ts:1369"
+          ]
+        }
+      ]
+    },
+    {
+      "institution": "Oštra Luka",
+      "removedUrls": [
+        {
+          "url": "https://ostra-luka.org/obrasci/",
+          "error": "ENOTFOUND: getaddrinfo ENOTFOUND ostra-luka.org",
+          "sources": [
+            "src\\data\\municipalities-database.ts:1513"
+          ]
+        }
+      ]
+    },
+    {
+      "institution": "Pale (RS)",
+      "removedUrls": [
+        {
+          "url": "https://pale.rs.ba/dokumenti-i-obrasci/",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\municipalities-database.ts:1796",
+            "src\\data\\sarajevo-region-forms.ts:829",
+            "src\\data\\sarajevo-region-forms.ts:835",
+            "src\\data\\sarajevo-region-forms.ts:842",
+            "src\\data\\sarajevo-region-forms.ts:849",
+            "src\\data\\uploaded-institutions.ts:199",
+            "src\\data\\verified-domains.ts:1067"
+          ]
+        }
+      ]
+    },
+    {
+      "institution": "Petrovo",
+      "removedUrls": [
+        {
+          "url": "https://opstinapetrovo.org/zahtjevi-i-obrasci/",
+          "error": "ENOTFOUND: getaddrinfo ENOTFOUND opstinapetrovo.org",
+          "sources": [
+            "src\\data\\municipalities-database.ts:1618",
+            "src\\data\\uploaded-institutions.ts:1289",
+            "src\\data\\uploaded-institutions.ts:1309"
+          ]
+        }
+      ]
+    },
+    {
+      "institution": "Posušje",
+      "removedUrls": [
+        {
+          "url": "https://posusje.ba/obrasci/",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\municipalities-database.ts:1327"
+          ]
+        },
+        {
+          "url": "https://www.opcina-posusje.ba/dokumenti/obrasci/",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\uploaded-institutions.ts:569",
+            "src\\data\\verified-domains.ts:909"
+          ]
+        }
+      ]
+    },
+    {
+      "institution": "Prnjavor",
+      "removedUrls": [
+        {
+          "url": "https://prnjavor.org/obrasci/",
+          "error": "ENOTFOUND: getaddrinfo ENOTFOUND prnjavor.org",
+          "sources": [
+            "src\\data\\municipalities-database.ts:1409"
+          ]
+        }
+      ]
+    },
+    {
+      "institution": "Prozor-Rama",
+      "removedUrls": [
+        {
+          "url": "https://prozor-rama.ba/obrasci/",
+          "error": "ENOTFOUND: getaddrinfo ENOTFOUND prozor-rama.ba",
+          "sources": [
+            "src\\data\\municipalities-database.ts:1150",
+            "src\\data\\verified-domains.ts:734"
+          ]
+        }
+      ]
+    },
+    {
+      "institution": "Republika Srpska",
+      "removedUrls": [
+        {
+          "url": "https://modrica.ba/usluge/obrasci/",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\municipalities-database.ts:1561",
+            "src\\data\\uploaded-institutions.ts:1249"
+          ]
+        },
+        {
+          "url": "https://opstinapetrovo.org/zahtjevi-i-obrasci/",
+          "error": "ENOTFOUND: getaddrinfo ENOTFOUND opstinapetrovo.org",
+          "sources": [
+            "src\\data\\municipalities-database.ts:1618",
+            "src\\data\\uploaded-institutions.ts:1289",
+            "src\\data\\uploaded-institutions.ts:1309"
+          ]
+        },
+        {
+          "url": "https://ugljevik.rs.ba/usluge/obrasci/",
+          "error": "ENOTFOUND: getaddrinfo ENOTFOUND ugljevik.rs.ba",
+          "sources": [
+            "src\\data\\municipalities-database.ts:1664",
+            "src\\data\\uploaded-institutions.ts:1329"
+          ]
+        },
+        {
+          "url": "https://opstina-zvornik.org/zahtjevi-i-obrasci/",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\municipalities-database.ts:1692",
+            "src\\data\\uploaded-institutions.ts:1349"
+          ]
+        },
+        {
+          "url": "https://sekovici.org/zahtjevi-i-obrasci/",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\municipalities-database.ts:1706",
+            "src\\data\\uploaded-institutions.ts:1359"
+          ]
+        },
+        {
+          "url": "https://osmaci.org/obrasci/",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\municipalities-database.ts:1720",
+            "src\\data\\uploaded-institutions.ts:1369"
+          ]
+        },
+        {
+          "url": "https://opstinapale.org/",
+          "error": "ENOTFOUND: getaddrinfo ENOTFOUND opstinapale.org",
+          "sources": [
+            "src\\data\\uploaded-institutions.ts:308",
+            "src\\data\\uploaded-institutions.ts:1378"
+          ]
+        },
+        {
+          "url": "https://opstinapale.org/zahtjevi-i-obrasci/",
+          "error": "ENOTFOUND: getaddrinfo ENOTFOUND opstinapale.org",
+          "sources": [
+            "src\\data\\uploaded-institutions.ts:309",
+            "src\\data\\uploaded-institutions.ts:1379"
+          ]
+        },
+        {
+          "url": "https://trnovo-rs.org/",
+          "error": "ENOTFOUND: getaddrinfo ENOTFOUND trnovo-rs.org",
+          "sources": [
+            "src\\data\\uploaded-institutions.ts:318",
+            "src\\data\\uploaded-institutions.ts:1388"
+          ]
+        },
+        {
+          "url": "https://trnovo-rs.org/obrasci/",
+          "error": "ENOTFOUND: getaddrinfo ENOTFOUND trnovo-rs.org",
+          "sources": [
+            "src\\data\\uploaded-institutions.ts:319",
+            "src\\data\\uploaded-institutions.ts:1389"
+          ]
+        },
+        {
+          "url": "https://opstinaprnjavor.net/obrasci-i-zahtjevi/",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\uploaded-institutions.ts:819"
+          ]
+        },
+        {
+          "url": "https://opstinaknezevo.org/%d0%b7%d0%b0%d1%85%d1%82%d1%98%d0%b5%d0%b2%d0%b8-%d0%b8-%d0%be%d0%b1%d1%80%d0%b0%d1%81%d1%86%d0%b8/",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\uploaded-institutions.ts:858"
+          ]
+        },
+        {
+          "url": "https://sipovo.org/zahtjevi-i-obrasci/",
+          "error": "ENOTFOUND: getaddrinfo ENOTFOUND sipovo.org",
+          "sources": [
+            "src\\data\\uploaded-institutions.ts:878"
+          ]
+        },
+        {
+          "url": "https://sipovo.org/",
+          "error": "ENOTFOUND: getaddrinfo ENOTFOUND sipovo.org",
+          "sources": [
+            "src\\data\\uploaded-institutions.ts:881"
+          ]
+        },
+        {
+          "url": "https://www.banjaluka.rs.ba/gradska-uprava/obrasci-i-zahtjevi/",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\uploaded-institutions.ts:899"
+          ]
+        },
+        {
+          "url": "https://opstina-novigrad.rs.ba/obrasci-i-zahtjevi/",
+          "error": "ENOTFOUND: getaddrinfo ENOTFOUND opstina-novigrad.rs.ba",
+          "sources": [
+            "src\\data\\uploaded-institutions.ts:919"
+          ]
+        },
+        {
+          "url": "https://vukosavlje.org/",
+          "error": "ENOTFOUND: getaddrinfo ENOTFOUND vukosavlje.org",
+          "sources": [
+            "src\\data\\uploaded-institutions.ts:1278"
+          ]
+        },
+        {
+          "url": "https://opstinapetrovo.org/",
+          "error": "ENOTFOUND: getaddrinfo ENOTFOUND opstinapetrovo.org",
+          "sources": [
+            "src\\data\\uploaded-institutions.ts:1308"
+          ]
+        },
+        {
+          "url": "https://ugljevik.rs.ba/",
+          "error": "ENOTFOUND: getaddrinfo ENOTFOUND ugljevik.rs.ba",
+          "sources": [
+            "src\\data\\uploaded-institutions.ts:1328"
+          ]
+        },
+        {
+          "url": "https://istocnistarigrad.org/",
+          "error": "ENOTFOUND: getaddrinfo ENOTFOUND istocnistarigrad.org",
+          "sources": [
+            "src\\data\\uploaded-institutions.ts:1398"
+          ]
+        },
+        {
+          "url": "https://istocnistarigrad.org/zahtjevi-i-obrasci/",
+          "error": "ENOTFOUND: getaddrinfo ENOTFOUND istocnistarigrad.org",
+          "sources": [
+            "src\\data\\uploaded-institutions.ts:1399"
+          ]
+        }
+      ]
+    },
+    {
+      "institution": "Rogatica",
+      "removedUrls": [
+        {
+          "url": "https://rogatica.rs.ba/zahtjevi-i-obrasci/",
+          "error": "ENOTFOUND: getaddrinfo ENOTFOUND rogatica.rs.ba",
+          "sources": [
+            "src\\data\\municipalities-database.ts:2052"
+          ]
+        }
+      ]
+    },
+    {
+      "institution": "Rudo",
+      "removedUrls": [
+        {
+          "url": "https://rudo.rs.ba/zahtjevi-i-obrasci/",
+          "error": "ENOTFOUND: getaddrinfo ENOTFOUND rudo.rs.ba",
+          "sources": [
+            "src\\data\\municipalities-database.ts:2003"
+          ]
+        }
+      ]
+    },
+    {
+      "institution": "Sanski Most",
+      "removedUrls": [
+        {
+          "url": "https://sanski-most.ba/obrasci/",
+          "error": "EAI_AGAIN: getaddrinfo EAI_AGAIN sanski-most.ba",
+          "sources": [
+            "src\\data\\municipalities-database.ts:864",
+            "src\\data\\verified-domains.ts:505"
+          ]
+        },
+        {
+          "url": "https://www.sanskimost.gov.ba/index.php/exploer/opcinske-sluzbe",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\uploaded-institutions.ts:739"
+          ]
+        }
+      ]
+    },
+    {
+      "institution": "Sapna",
+      "removedUrls": [
+        {
+          "url": "https://opcina-sapna.ba/dokumenti/",
+          "error": "ENOTFOUND: getaddrinfo ENOTFOUND opcina-sapna.ba",
+          "sources": [
+            "src\\data\\municipalities-database.ts:716",
+            "src\\data\\uploaded-institutions.ts:1109",
+            "src\\data\\verified-domains.ts:384"
+          ]
+        },
+        {
+          "url": "https://opcina-sapna.ba/",
+          "error": "ENOTFOUND: getaddrinfo ENOTFOUND opcina-sapna.ba",
+          "sources": [
+            "src\\data\\uploaded-institutions.ts:1108"
+          ]
+        }
+      ]
+    },
+    {
+      "institution": "Sarajevo Region",
+      "removedUrls": [
+        {
+          "url": "https://starigrad.ba/v2/e_uprava.php",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\municipalities-database.ts:49",
+            "src\\data\\sarajevo-region-forms.ts:239",
+            "src\\data\\sarajevo-region-forms.ts:245",
+            "src\\data\\sarajevo-region-forms.ts:252",
+            "src\\data\\sarajevo-region-forms.ts:259",
+            "src\\data\\uploaded-institutions.ts:79",
+            "src\\data\\verified-domains.ts:47"
+          ]
+        },
+        {
+          "url": "https://opcinailidza.ba/obrasci",
+          "error": "HTTP 500 Internal Server Error",
+          "sources": [
+            "src\\data\\municipalities-database.ts:85",
+            "src\\data\\sarajevo-region-forms.ts:443",
+            "src\\data\\sarajevo-region-forms.ts:449",
+            "src\\data\\sarajevo-region-forms.ts:456",
+            "src\\data\\sarajevo-region-forms.ts:463",
+            "src\\data\\uploaded-institutions.ts:99",
+            "src\\data\\verified-domains.ts:74"
+          ]
+        },
+        {
+          "url": "https://novigradsarajevo.ba/e-uprava",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\municipalities-database.ts:103",
+            "src\\data\\sarajevo-region-forms.ts:479",
+            "src\\data\\sarajevo-region-forms.ts:485",
+            "src\\data\\sarajevo-region-forms.ts:492",
+            "src\\data\\sarajevo-region-forms.ts:499",
+            "src\\data\\uploaded-institutions.ts:109",
+            "src\\data\\verified-domains.ts:87"
+          ]
+        },
+        {
+          "url": "https://novosarajevo.ba/e-uprava/obrasci/",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\municipalities-database.ts:121",
+            "src\\data\\sarajevo-region-forms.ts:515",
+            "src\\data\\sarajevo-region-forms.ts:521",
+            "src\\data\\sarajevo-region-forms.ts:528",
+            "src\\data\\sarajevo-region-forms.ts:535",
+            "src\\data\\uploaded-institutions.ts:119",
+            "src\\data\\verified-domains.ts:100"
+          ]
+        },
+        {
+          "url": "https://vogosca.ba/e-uprava/obrasci/",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\municipalities-database.ts:139",
+            "src\\data\\sarajevo-region-forms.ts:551",
+            "src\\data\\sarajevo-region-forms.ts:557",
+            "src\\data\\sarajevo-region-forms.ts:564",
+            "src\\data\\sarajevo-region-forms.ts:571",
+            "src\\data\\uploaded-institutions.ts:129",
+            "src\\data\\verified-domains.ts:112"
+          ]
+        },
+        {
+          "url": "https://trnovo.ba/dokumenti/obrasci/",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\municipalities-database.ts:175",
+            "src\\data\\sarajevo-region-forms.ts:616",
+            "src\\data\\sarajevo-region-forms.ts:622",
+            "src\\data\\sarajevo-region-forms.ts:629",
+            "src\\data\\uploaded-institutions.ts:149",
+            "src\\data\\verified-domains.ts:136"
+          ]
+        },
+        {
+          "url": "https://opstinains.net/usluge/obrasci/",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\municipalities-database.ts:1778",
+            "src\\data\\sarajevo-region-forms.ts:793",
+            "src\\data\\sarajevo-region-forms.ts:799",
+            "src\\data\\sarajevo-region-forms.ts:806",
+            "src\\data\\sarajevo-region-forms.ts:813",
+            "src\\data\\uploaded-institutions.ts:189",
+            "src\\data\\verified-domains.ts:1055"
+          ]
+        },
+        {
+          "url": "https://pale.rs.ba/dokumenti-i-obrasci/",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\municipalities-database.ts:1796",
+            "src\\data\\sarajevo-region-forms.ts:829",
+            "src\\data\\sarajevo-region-forms.ts:835",
+            "src\\data\\sarajevo-region-forms.ts:842",
+            "src\\data\\sarajevo-region-forms.ts:849",
+            "src\\data\\uploaded-institutions.ts:199",
+            "src\\data\\verified-domains.ts:1067"
+          ]
+        },
+        {
+          "url": "https://trnovo-rs.com/dokumenti/",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\municipalities-database.ts:1814",
+            "src\\data\\sarajevo-region-forms.ts:865",
+            "src\\data\\sarajevo-region-forms.ts:871",
+            "src\\data\\sarajevo-region-forms.ts:878",
+            "src\\data\\uploaded-institutions.ts:209",
+            "src\\data\\verified-domains.ts:1079"
+          ]
+        },
+        {
+          "url": "https://opstinaisg.net/dokumenti/",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\municipalities-database.ts:1832",
+            "src\\data\\sarajevo-region-forms.ts:894",
+            "src\\data\\sarajevo-region-forms.ts:900",
+            "src\\data\\sarajevo-region-forms.ts:907",
+            "src\\data\\uploaded-institutions.ts:219",
+            "src\\data\\verified-domains.ts:1091"
+          ]
+        },
+        {
+          "url": "https://eu4agri.ba/wp-content/uploads/2020/08/EU4Agri-Kalendar-objava-javnih-poziva.pdf",
+          "error": "ERR_TLS_CERT_ALTNAME_INVALID: Hostname/IP does not match certificate's altnames: Host: eu4agri.ba. is not in the cert's altnames: DNS:*.arisenergy.ba, DNS:arisenergy.ba",
+          "sources": [
+            "src\\data\\sarajevo-region-forms.ts:991"
+          ]
+        },
+        {
+          "url": "https://opstinacajnice.rs.ba/wp-content/uploads/2025/03/%D0%9E%D0%B1%D1%80%D0%B0%D0%B7%D0%B0%D1%86_%D0%B7%D0%B0%D1%85%D1%82%D0%B5%D0%B2%D0%B0_%D0%B7%D0%B0_%D0%B4%D0%BE%D0%B4%D1%98%D0%B5%D0%BB%D1%83_%D1%98%D0%B5%D0%B4%D0%BD%D0%BE%D0%BA%D1%80%D0%B0%D1%82%D0%BD%D0%B8%D1%85_%D0%BF%D0%BE%D0%BC%D0%BE%D1%9B%D0%B8.pdf",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\sarajevo-region-forms.ts:1030"
+          ]
+        },
+        {
+          "url": "https://novogorazde.net/dokumenti/",
+          "error": "ENOTFOUND: getaddrinfo ENOTFOUND novogorazde.net",
+          "sources": [
+            "src\\data\\sarajevo-region-forms.ts:1204",
+            "src\\data\\sarajevo-region-forms.ts:1210",
+            "src\\data\\sarajevo-region-forms.ts:1217",
+            "src\\data\\uploaded-institutions.ts:269",
+            "src\\data\\verified-domains.ts:1155"
+          ]
+        }
+      ]
+    },
+    {
+      "institution": "Stari Grad Sarajevo",
+      "removedUrls": [
+        {
+          "url": "https://starigrad.ba/v2/e_uprava.php",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\municipalities-database.ts:49",
+            "src\\data\\sarajevo-region-forms.ts:239",
+            "src\\data\\sarajevo-region-forms.ts:245",
+            "src\\data\\sarajevo-region-forms.ts:252",
+            "src\\data\\sarajevo-region-forms.ts:259",
+            "src\\data\\uploaded-institutions.ts:79",
+            "src\\data\\verified-domains.ts:47"
+          ]
+        }
+      ]
+    },
+    {
+      "institution": "Stolac",
+      "removedUrls": [
+        {
+          "url": "https://stolac.ba/obrasci/",
+          "error": "HTTP 500 Internal Server Error",
+          "sources": [
+            "src\\data\\municipalities-database.ts:1164",
+            "src\\data\\verified-domains.ts:745"
+          ]
+        }
+      ]
+    },
+    {
+      "institution": "Šekovići",
+      "removedUrls": [
+        {
+          "url": "https://sekovici.org/zahtjevi-i-obrasci/",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\municipalities-database.ts:1706",
+            "src\\data\\uploaded-institutions.ts:1359"
+          ]
+        }
+      ]
+    },
+    {
+      "institution": "Teočak",
+      "removedUrls": [
+        {
+          "url": "https://teocak.ba/obrasci/",
+          "error": "ENOTFOUND: getaddrinfo ENOTFOUND teocak.ba",
+          "sources": [
+            "src\\data\\municipalities-database.ts:744",
+            "src\\data\\verified-domains.ts:406"
+          ]
+        }
+      ]
+    },
+    {
+      "institution": "Teslić",
+      "removedUrls": [
+        {
+          "url": "https://teslic.rs.ba/zahtjevi-i-obrasci/",
+          "error": "EAI_AGAIN: getaddrinfo EAI_AGAIN teslic.rs.ba",
+          "sources": [
+            "src\\data\\municipalities-database.ts:1547"
+          ]
+        }
+      ]
+    },
+    {
+      "institution": "Tešanj",
+      "removedUrls": [
+        {
+          "url": "https://tesanj.ba/pdf-formular-zzo-zdk/",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\municipalities-database.ts:426",
+            "src\\data\\verified-domains.ts:239"
+          ]
+        },
+        {
+          "url": "https://www.zzozedo.ba/index.php/layout/class-layout/obrasci",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\uploaded-institutions.ts:1559",
+            "src\\data\\uploaded-institutions.ts:1569",
+            "src\\data\\uploaded-institutions.ts:1579",
+            "src\\data\\uploaded-institutions.ts:1589",
+            "src\\data\\uploaded-institutions.ts:1599",
+            "src\\data\\uploaded-institutions.ts:1609",
+            "src\\data\\verified-domains.ts:1230"
+          ]
+        }
+      ]
+    },
+    {
+      "institution": "Tomislavgrad",
+      "removedUrls": [
+        {
+          "url": "https://tomislavgrad.ba/obrasci/",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\municipalities-database.ts:1244",
+            "src\\data\\verified-domains.ts:810"
+          ]
+        }
+      ]
+    },
+    {
+      "institution": "Travnik",
+      "removedUrls": [
+        {
+          "url": "https://travnik.ba/obrasci/",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\municipalities-database.ts:894",
+            "src\\data\\verified-domains.ts:531"
+          ]
+        }
+      ]
+    },
+    {
+      "institution": "Trnovo (FBiH)",
+      "removedUrls": [
+        {
+          "url": "https://trnovo.ba/dokumenti/obrasci/",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\municipalities-database.ts:175",
+            "src\\data\\sarajevo-region-forms.ts:616",
+            "src\\data\\sarajevo-region-forms.ts:622",
+            "src\\data\\sarajevo-region-forms.ts:629",
+            "src\\data\\uploaded-institutions.ts:149",
+            "src\\data\\verified-domains.ts:136"
+          ]
+        }
+      ]
+    },
+    {
+      "institution": "Trnovo (RS)",
+      "removedUrls": [
+        {
+          "url": "https://trnovo-rs.com/dokumenti/",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\municipalities-database.ts:1814",
+            "src\\data\\sarajevo-region-forms.ts:865",
+            "src\\data\\sarajevo-region-forms.ts:871",
+            "src\\data\\sarajevo-region-forms.ts:878",
+            "src\\data\\uploaded-institutions.ts:209",
+            "src\\data\\verified-domains.ts:1079"
+          ]
+        }
+      ]
+    },
+    {
+      "institution": "Ugljevik",
+      "removedUrls": [
+        {
+          "url": "https://ugljevik.rs.ba/usluge/obrasci/",
+          "error": "ENOTFOUND: getaddrinfo ENOTFOUND ugljevik.rs.ba",
+          "sources": [
+            "src\\data\\municipalities-database.ts:1664",
+            "src\\data\\uploaded-institutions.ts:1329"
+          ]
+        }
+      ]
+    },
+    {
+      "institution": "Updated Government",
+      "removedUrls": [
+        {
+          "url": "https://opcinadobojistok.ba/wp-content/uploads/2018/12/osmi-mart-produ%C5%BEeni-rad.doc",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\updated-government-forms.ts:59"
+          ]
+        },
+        {
+          "url": "https://opcinadobojistok.ba/wp-content/uploads/2018/12/ovjera-cjenovnika-i-normativa-utro%C5%A1ka.doc",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\updated-government-forms.ts:60"
+          ]
+        },
+        {
+          "url": "https://opcinadobojistok.ba/wp-content/uploads/2018/12/petv.-%C5%A1umsk.-zemlj..doc",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\updated-government-forms.ts:62"
+          ]
+        },
+        {
+          "url": "https://opcinadobojistok.ba/wp-content/uploads/2018/12/potvrda-za-statisti%C4%8Dki-zavod-id-i-statisti%C4%8Dki-broj.doc",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\updated-government-forms.ts:65"
+          ]
+        },
+        {
+          "url": "https://opcinadobojistok.ba/wp-content/uploads/2018/12/produ%C5%BEeni-rad.doc",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\updated-government-forms.ts:71"
+          ]
+        },
+        {
+          "url": "https://opcinadobojistok.ba/wp-content/uploads/2018/12/p%C5%A1enica-i-ra%C5%BE-federalni.doc",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\updated-government-forms.ts:72"
+          ]
+        },
+        {
+          "url": "https://opcinadobojistok.ba/wp-content/uploads/2018/12/sje%C4%8Da-drveta.doc",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\updated-government-forms.ts:74"
+          ]
+        },
+        {
+          "url": "https://opcinadobojistok.ba/wp-content/uploads/2018/12/taksi-stajali%C5%A1te.doc",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\updated-government-forms.ts:75"
+          ]
+        },
+        {
+          "url": "https://opcinadobojistok.ba/wp-content/uploads/2018/12/uvjerenje-da-se-bavi-poljoprivrednom-djelatno%C5%A1%C4%87u.doc",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\updated-government-forms.ts:80"
+          ]
+        },
+        {
+          "url": "https://opcinadobojistok.ba/wp-content/uploads/2018/12/zamjena-ku%C4%87na-radinost.doc",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\updated-government-forms.ts:86"
+          ]
+        },
+        {
+          "url": "https://opcinadobojistok.ba/wp-content/uploads/2018/12/zamjena-rje%C5%A1enja-trgovina.doc",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\updated-government-forms.ts:89"
+          ]
+        },
+        {
+          "url": "https://opcinadobojistok.ba/wp-content/uploads/2018/12/zamjena-rje%C5%A1enja-ugostiteljstvo.doc",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\updated-government-forms.ts:90"
+          ]
+        },
+        {
+          "url": "https://opcinadobojistok.ba/wp-content/uploads/2018/12/ku%C4%87na-radinost.doc",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\updated-government-forms.ts:97"
+          ]
+        }
+      ]
+    },
+    {
+      "institution": "Usora",
+      "removedUrls": [
+        {
+          "url": "https://www.usora.com/dokumenti-i-obrasci/",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\uploaded-institutions.ts:1549"
+          ]
+        }
+      ]
+    },
+    {
+      "institution": "Velika Kladuša",
+      "removedUrls": [
+        {
+          "url": "https://velikakladusa.gov.ba/dokumenti-i-obrasci/",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\uploaded-institutions.ts:749"
+          ]
+        }
+      ]
+    },
+    {
+      "institution": "Visoko",
+      "removedUrls": [
+        {
+          "url": "https://www.visoko.gov.ba/kategorija/obrasci/",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\uploaded-institutions.ts:1649"
+          ]
+        }
+      ]
+    },
+    {
+      "institution": "Vitez",
+      "removedUrls": [
+        {
+          "url": "https://vitez.ba/obrasci/",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\municipalities-database.ts:977",
+            "src\\data\\verified-domains.ts:591"
+          ]
+        }
+      ]
+    },
+    {
+      "institution": "Vogošća",
+      "removedUrls": [
+        {
+          "url": "https://vogosca.ba/e-uprava/obrasci/",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\municipalities-database.ts:139",
+            "src\\data\\sarajevo-region-forms.ts:551",
+            "src\\data\\sarajevo-region-forms.ts:557",
+            "src\\data\\sarajevo-region-forms.ts:564",
+            "src\\data\\sarajevo-region-forms.ts:571",
+            "src\\data\\uploaded-institutions.ts:129",
+            "src\\data\\verified-domains.ts:112"
+          ]
+        }
+      ]
+    },
+    {
+      "institution": "Vukosavlje",
+      "removedUrls": [
+        {
+          "url": "https://vukosavlje.org/obrasci/",
+          "error": "ENOTFOUND: getaddrinfo ENOTFOUND vukosavlje.org",
+          "sources": [
+            "src\\data\\municipalities-database.ts:1604"
+          ]
+        }
+      ]
+    },
+    {
+      "institution": "Zavidovići",
+      "removedUrls": [
+        {
+          "url": "https://www.zavidovici.ba/index.php/obrasci-zahtjevi",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\uploaded-institutions.ts:1629"
+          ]
+        }
+      ]
+    },
+    {
+      "institution": "Zavod zdravstvenog osiguranja K10",
+      "removedUrls": [
+        {
+          "url": "https://www.zzohbz.ba/dokumenti-3/tiskanice-zahtjevi-i-izjave/",
+          "error": "HTTP 503 Service Unavailable",
+          "sources": [
+            "src\\data\\uploaded-institutions.ts"
+          ]
+        }
+      ]
+    },
+    {
+      "institution": "Zenica",
+      "removedUrls": [
+        {
+          "url": "https://zenica.ba/pdf-formular-zzo-zdk/",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\municipalities-database.ts:318"
+          ]
+        },
+        {
+          "url": "https://zenica.ba/e-servis/",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\municipalities-database.ts:326"
+          ]
+        },
+        {
+          "url": "https://www.zzozedo.ba/index.php/layout/class-layout/obrasci",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\uploaded-institutions.ts:1559",
+            "src\\data\\uploaded-institutions.ts:1569",
+            "src\\data\\uploaded-institutions.ts:1579",
+            "src\\data\\uploaded-institutions.ts:1589",
+            "src\\data\\uploaded-institutions.ts:1599",
+            "src\\data\\uploaded-institutions.ts:1609",
+            "src\\data\\verified-domains.ts:1230"
+          ]
+        }
+      ]
+    },
+    {
+      "institution": "Zvornik",
+      "removedUrls": [
+        {
+          "url": "https://opstina-zvornik.org/zahtjevi-i-obrasci/",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\municipalities-database.ts:1692",
+            "src\\data\\uploaded-institutions.ts:1349"
+          ]
+        }
+      ]
+    },
+    {
+      "institution": "Žepče",
+      "removedUrls": [
+        {
+          "url": "https://zepce.ba/pdf-formular-zzo-zdk/",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\municipalities-database.ts:412",
+            "src\\data\\verified-domains.ts:228"
+          ]
+        },
+        {
+          "url": "https://www.zzozedo.ba/index.php/layout/class-layout/obrasci",
+          "error": "HTTP 404 Not Found",
+          "sources": [
+            "src\\data\\uploaded-institutions.ts:1559",
+            "src\\data\\uploaded-institutions.ts:1569",
+            "src\\data\\uploaded-institutions.ts:1579",
+            "src\\data\\uploaded-institutions.ts:1589",
+            "src\\data\\uploaded-institutions.ts:1599",
+            "src\\data\\uploaded-institutions.ts:1609",
+            "src\\data\\verified-domains.ts:1230"
+          ]
+        }
+      ]
+    }
+  ],
+  "removedUrlOccurrences": [
+    {
+      "url": "https://livno.ba/za-gradane/dokumenti-i-obrasci/obrazac-gradjevna-dozvola.pdf",
+      "error": "HTTP 404 Not Found",
+      "institution": "Livno",
+      "source": "src\\data\\livno-forms.ts:41",
+      "action": "removed document or link record with failed URL"
+    },
+    {
+      "url": "https://livno.ba/za-gradane/dokumenti-i-obrasci/zahtjev-lokacijska-informacija.pdf",
+      "error": "HTTP 404 Not Found",
+      "institution": "Livno",
+      "source": "src\\data\\livno-forms.ts:56",
+      "action": "removed document or link record with failed URL"
+    },
+    {
+      "url": "https://livno.ba/za-gradane/dokumenti-i-obrasci/zahtjev-upotrebna-dozvola.pdf",
+      "error": "HTTP 404 Not Found",
+      "institution": "Livno",
+      "source": "src\\data\\livno-forms.ts:71",
+      "action": "removed document or link record with failed URL"
+    },
+    {
+      "url": "https://livno.ba/za-gradane/dokumenti-i-obrasci/zahtjev-komunalni-prikljucak.pdf",
+      "error": "HTTP 404 Not Found",
+      "institution": "Livno",
+      "source": "src\\data\\livno-forms.ts:86",
+      "action": "removed document or link record with failed URL"
+    },
+    {
+      "url": "https://livno.ba/za-gradane/dokumenti-i-obrasci/zahtjev-javna-povrsina.pdf",
+      "error": "HTTP 404 Not Found",
+      "institution": "Livno",
+      "source": "src\\data\\livno-forms.ts:101",
+      "action": "removed document or link record with failed URL"
+    },
+    {
+      "url": "https://livno.ba/za-gradane/dokumenti-i-obrasci/obrazac-osnivanje-obrta.pdf",
+      "error": "HTTP 404 Not Found",
+      "institution": "Livno",
+      "source": "src\\data\\livno-forms.ts:120",
+      "action": "removed document or link record with failed URL"
+    },
+    {
+      "url": "https://livno.ba/za-gradane/dokumenti-i-obrasci/zahtjev-prestanak-obrta.pdf",
+      "error": "HTTP 404 Not Found",
+      "institution": "Livno",
+      "source": "src\\data\\livno-forms.ts:135",
+      "action": "removed document or link record with failed URL"
+    },
+    {
+      "url": "https://livno.ba/za-gradane/dokumenti-i-obrasci/zahtjev-posjedovni-list.pdf",
+      "error": "HTTP 404 Not Found",
+      "institution": "Livno",
+      "source": "src\\data\\livno-forms.ts:150",
+      "action": "removed document or link record with failed URL"
+    },
+    {
+      "url": "https://livno.ba/za-gradane/dokumenti-i-obrasci/zahtjev-maticna-knjiga-rodjeni.pdf",
+      "error": "HTTP 404 Not Found",
+      "institution": "Livno",
+      "source": "src\\data\\livno-forms.ts:169",
+      "action": "removed document or link record with failed URL"
+    },
+    {
+      "url": "https://livno.ba/za-gradane/dokumenti-i-obrasci/zahtjev-uvjerenje-drzavljanstvo.pdf",
+      "error": "HTTP 404 Not Found",
+      "institution": "Livno",
+      "source": "src\\data\\livno-forms.ts:184",
+      "action": "removed document or link record with failed URL"
+    },
+    {
+      "url": "https://livno.ba/za-gradane/dokumenti-i-obrasci/obrazac-kucna-lista.pdf",
+      "error": "HTTP 404 Not Found",
+      "institution": "Livno",
+      "source": "src\\data\\livno-forms.ts:199",
+      "action": "removed document or link record with failed URL"
+    },
+    {
+      "url": "https://livno.ba/za-gradane/dokumenti-i-obrasci/prijava-studentska-stipendija.pdf",
+      "error": "HTTP 404 Not Found",
+      "institution": "Livno",
+      "source": "src\\data\\livno-forms.ts:214",
+      "action": "removed document or link record with failed URL"
+    },
+    {
+      "url": "https://livno.ba/za-gradane/dokumenti-i-obrasci/zahtjev-pomoc-branitelji.pdf",
+      "error": "Timeout",
+      "institution": "Livno",
+      "source": "src\\data\\livno-forms.ts:233",
+      "action": "removed document or link record with failed URL"
+    },
+    {
+      "url": "https://livno.ba/za-gradane/dokumenti-i-obrasci/prijava-komunalna-naknada.pdf",
+      "error": "Timeout",
+      "institution": "Livno",
+      "source": "src\\data\\livno-forms.ts:248",
+      "action": "removed document or link record with failed URL"
+    },
+    {
+      "url": "https://starigrad.ba/v2/e_uprava.php",
+      "error": "HTTP 404 Not Found",
+      "institution": "Stari Grad Sarajevo",
+      "source": "src\\data\\municipalities-database.ts:49",
+      "action": "removed document or link record with failed URL"
+    },
+    {
+      "url": "https://opcinailidza.ba/obrasci",
+      "error": "HTTP 500 Internal Server Error",
+      "institution": "Ilidža",
+      "source": "src\\data\\municipalities-database.ts:85",
+      "action": "removed document or link record with failed URL"
+    },
+    {
+      "url": "https://novigradsarajevo.ba/e-uprava",
+      "error": "HTTP 404 Not Found",
+      "institution": "Novi Grad Sarajevo",
+      "source": "src\\data\\municipalities-database.ts:103",
+      "action": "removed document or link record with failed URL"
+    },
+    {
+      "url": "https://novosarajevo.ba/e-uprava/obrasci/",
+      "error": "HTTP 404 Not Found",
+      "institution": "Novo Sarajevo",
+      "source": "src\\data\\municipalities-database.ts:121",
+      "action": "removed document or link record with failed URL"
+    },
+    {
+      "url": "https://vogosca.ba/e-uprava/obrasci/",
+      "error": "HTTP 404 Not Found",
+      "institution": "Vogošća",
+      "source": "src\\data\\municipalities-database.ts:139",
+      "action": "removed document or link record with failed URL"
+    },
+    {
+      "url": "https://trnovo.ba/dokumenti/obrasci/",
+      "error": "HTTP 404 Not Found",
+      "institution": "Trnovo (FBiH)",
+      "source": "src\\data\\municipalities-database.ts:175",
+      "action": "removed document or link record with failed URL"
+    },
+    {
+      "url": "https://zenica.ba/pdf-formular-zzo-zdk/",
+      "error": "HTTP 404 Not Found",
+      "institution": "Zenica",
+      "source": "src\\data\\municipalities-database.ts:318",
+      "action": "removed document or link record with failed URL"
+    },
+    {
+      "url": "https://zenica.ba/e-servis/",
+      "error": "HTTP 404 Not Found",
+      "institution": "Zenica",
+      "source": "src\\data\\municipalities-database.ts:326",
+      "action": "removed document or link record with failed URL"
+    },
+    {
+      "url": "https://maglaj.ba/pdf-formular-zzo-zdk/",
+      "error": "HTTP 404 Not Found",
+      "institution": "Maglaj",
+      "source": "src\\data\\municipalities-database.ts:398",
+      "action": "removed document or link record with failed URL"
+    },
+    {
+      "url": "https://zepce.ba/pdf-formular-zzo-zdk/",
+      "error": "HTTP 404 Not Found",
+      "institution": "Žepče",
+      "source": "src\\data\\municipalities-database.ts:412",
+      "action": "removed document or link record with failed URL"
+    },
+    {
+      "url": "https://tesanj.ba/pdf-formular-zzo-zdk/",
+      "error": "HTTP 404 Not Found",
+      "institution": "Tešanj",
+      "source": "src\\data\\municipalities-database.ts:426",
+      "action": "removed document or link record with failed URL"
+    },
+    {
+      "url": "https://kalesija.ba/lokacijska-informacija/",
+      "error": "HTTP 404 Not Found",
+      "institution": "Kalesija",
+      "source": "src\\data\\municipalities-database.ts:502",
+      "action": "removed document or link record with failed URL"
+    },
+    {
+      "url": "https://kalesija.ba/uvjerenje-urbanizam/",
+      "error": "HTTP 404 Not Found",
+      "institution": "Kalesija",
+      "source": "src\\data\\municipalities-database.ts:506",
+      "action": "removed document or link record with failed URL"
+    },
+    {
+      "url": "https://celic.ba/obrasci",
+      "error": "ENOTFOUND: getaddrinfo ENOTFOUND celic.ba",
+      "institution": "Čelić",
+      "source": "src\\data\\municipalities-database.ts:546",
+      "action": "removed document or link record with failed URL"
+    },
+    {
+      "url": "https://opcinacelic.ba/sluzbeni-glasnici",
+      "error": "Timeout",
+      "institution": "Čelić",
+      "source": "src\\data\\municipalities-database.ts:550",
+      "action": "removed document or link record with failed URL"
+    },
+    {
+      "url": "https://opcina-sapna.ba/dokumenti/",
+      "error": "ENOTFOUND: getaddrinfo ENOTFOUND opcina-sapna.ba",
+      "institution": "Sapna",
+      "source": "src\\data\\municipalities-database.ts:716",
+      "action": "removed document or link record with failed URL"
+    },
+    {
+      "url": "https://teocak.ba/obrasci/",
+      "error": "ENOTFOUND: getaddrinfo ENOTFOUND teocak.ba",
+      "institution": "Teočak",
+      "source": "src\\data\\municipalities-database.ts:744",
+      "action": "removed document or link record with failed URL"
+    },
+    {
+      "url": "https://sanski-most.ba/obrasci/",
+      "error": "EAI_AGAIN: getaddrinfo EAI_AGAIN sanski-most.ba",
+      "institution": "Sanski Most",
+      "source": "src\\data\\municipalities-database.ts:864",
+      "action": "removed document or link record with failed URL"
+    },
+    {
+      "url": "https://travnik.ba/obrasci/",
+      "error": "HTTP 404 Not Found",
+      "institution": "Travnik",
+      "source": "src\\data\\municipalities-database.ts:894",
+      "action": "removed document or link record with failed URL"
+    },
+    {
+      "url": "https://novi-travnik.ba/obrasci/",
+      "error": "ENOTFOUND: getaddrinfo ENOTFOUND novi-travnik.ba",
+      "institution": "Novi Travnik",
+      "source": "src\\data\\municipalities-database.ts:963",
+      "action": "removed document or link record with failed URL"
+    },
+    {
+      "url": "https://vitez.ba/obrasci/",
+      "error": "HTTP 404 Not Found",
+      "institution": "Vitez",
+      "source": "src\\data\\municipalities-database.ts:977",
+      "action": "removed document or link record with failed URL"
+    },
+    {
+      "url": "https://kiseljak.ba/obrasci/",
+      "error": "ENOTFOUND: getaddrinfo ENOTFOUND kiseljak.ba",
+      "institution": "Kiseljak",
+      "source": "src\\data\\municipalities-database.ts:1009",
+      "action": "removed document or link record with failed URL"
+    },
+    {
+      "url": "https://kresevo.ba/obrasci/",
+      "error": "HTTP 404 Not Found",
+      "institution": "Kreševo",
+      "source": "src\\data\\municipalities-database.ts:1023",
+      "action": "removed document or link record with failed URL"
+    },
+    {
+      "url": "https://neum.ba/obrasci/",
+      "error": "HTTP 404 Not Found",
+      "institution": "Neum",
+      "source": "src\\data\\municipalities-database.ts:1136",
+      "action": "removed document or link record with failed URL"
+    },
+    {
+      "url": "https://prozor-rama.ba/obrasci/",
+      "error": "ENOTFOUND: getaddrinfo ENOTFOUND prozor-rama.ba",
+      "institution": "Prozor-Rama",
+      "source": "src\\data\\municipalities-database.ts:1150",
+      "action": "removed document or link record with failed URL"
+    },
+    {
+      "url": "https://stolac.ba/obrasci/",
+      "error": "HTTP 500 Internal Server Error",
+      "institution": "Stolac",
+      "source": "src\\data\\municipalities-database.ts:1164",
+      "action": "removed document or link record with failed URL"
+    },
+    {
+      "url": "https://orasje.ba/obrasci/",
+      "error": "HTTP 404 Not Found",
+      "institution": "Orašje",
+      "source": "src\\data\\municipalities-database.ts:1180",
+      "action": "removed document or link record with failed URL"
+    },
+    {
+      "url": "https://odzak.ba/obrasci/",
+      "error": "HTTP 404 Not Found",
+      "institution": "Odžak",
+      "source": "src\\data\\municipalities-database.ts:1194",
+      "action": "removed document or link record with failed URL"
+    },
+    {
+      "url": "https://tomislavgrad.ba/obrasci/",
+      "error": "HTTP 404 Not Found",
+      "institution": "Tomislavgrad",
+      "source": "src\\data\\municipalities-database.ts:1244",
+      "action": "removed document or link record with failed URL"
+    },
+    {
+      "url": "https://siroki-brijeg.ba/obrasci/",
+      "error": "ENOTFOUND: getaddrinfo ENOTFOUND siroki-brijeg.ba",
+      "institution": "Grad Široki Brijeg",
+      "source": "src\\data\\municipalities-database.ts:1275",
+      "action": "removed document or link record with failed URL"
+    },
+    {
+      "url": "https://ljubuski.ba/obrasci/",
+      "error": "HTTP 404 Not Found",
+      "institution": "Grad Ljubuški",
+      "source": "src\\data\\municipalities-database.ts:1289",
+      "action": "removed document or link record with failed URL"
+    },
+    {
+      "url": "https://posusje.ba/obrasci/",
+      "error": "HTTP 404 Not Found",
+      "institution": "Posušje",
+      "source": "src\\data\\municipalities-database.ts:1327",
+      "action": "removed document or link record with failed URL"
+    },
+    {
+      "url": "https://laktasi.org/obrasci/",
+      "error": "HTTP 404 Not Found",
+      "institution": "Laktaši",
+      "source": "src\\data\\municipalities-database.ts:1359",
+      "action": "removed document or link record with failed URL"
+    },
+    {
+      "url": "https://prnjavor.org/obrasci/",
+      "error": "ENOTFOUND: getaddrinfo ENOTFOUND prnjavor.org",
+      "institution": "Prnjavor",
+      "source": "src\\data\\municipalities-database.ts:1409",
+      "action": "removed document or link record with failed URL"
+    },
+    {
+      "url": "https://knezevo.org/obrasci/",
+      "error": "ENOTFOUND: getaddrinfo ENOTFOUND knezevo.org",
+      "institution": "Kneževo (Skender Vakuf)",
+      "source": "src\\data\\municipalities-database.ts:1441",
+      "action": "removed document or link record with failed URL"
+    },
+    {
+      "url": "https://mrkonjicgrad.org/obrasci/",
+      "error": "ENOTFOUND: getaddrinfo ENOTFOUND mrkonjicgrad.org",
+      "institution": "Mrkonjić Grad",
+      "source": "src\\data\\municipalities-database.ts:1455",
+      "action": "removed document or link record with failed URL"
+    },
+    {
+      "url": "https://novi-grad.org/obrasci/",
+      "error": "ENOTFOUND: getaddrinfo ENOTFOUND novi-grad.org",
+      "institution": "Novi Grad (Bosanski Novi)",
+      "source": "src\\data\\municipalities-database.ts:1469",
+      "action": "removed document or link record with failed URL"
+    },
+    {
+      "url": "https://prijedor.org/obrasci/",
+      "error": "ENOTFOUND: getaddrinfo ENOTFOUND prijedor.org",
+      "institution": "Grad Prijedor",
+      "source": "src\\data\\municipalities-database.ts:1485",
+      "action": "removed document or link record with failed URL"
+    },
+    {
+      "url": "https://kozarska-dubica.com/obrasci/",
+      "error": "ENOTFOUND: getaddrinfo ENOTFOUND kozarska-dubica.com",
+      "institution": "Kozarska Dubica",
+      "source": "src\\data\\municipalities-database.ts:1499",
+      "action": "removed document or link record with failed URL"
+    },
+    {
+      "url": "https://ostra-luka.org/obrasci/",
+      "error": "ENOTFOUND: getaddrinfo ENOTFOUND ostra-luka.org",
+      "institution": "Oštra Luka",
+      "source": "src\\data\\municipalities-database.ts:1513",
+      "action": "removed document or link record with failed URL"
+    },
+    {
+      "url": "https://teslic.rs.ba/zahtjevi-i-obrasci/",
+      "error": "EAI_AGAIN: getaddrinfo EAI_AGAIN teslic.rs.ba",
+      "institution": "Teslić",
+      "source": "src\\data\\municipalities-database.ts:1547",
+      "action": "removed document or link record with failed URL"
+    },
+    {
+      "url": "https://modrica.ba/usluge/obrasci/",
+      "error": "HTTP 404 Not Found",
+      "institution": "Modriča",
+      "source": "src\\data\\municipalities-database.ts:1561",
+      "action": "removed document or link record with failed URL"
+    },
+    {
+      "url": "https://vukosavlje.org/obrasci/",
+      "error": "ENOTFOUND: getaddrinfo ENOTFOUND vukosavlje.org",
+      "institution": "Vukosavlje",
+      "source": "src\\data\\municipalities-database.ts:1604",
+      "action": "removed document or link record with failed URL"
+    },
+    {
+      "url": "https://opstinapetrovo.org/zahtjevi-i-obrasci/",
+      "error": "ENOTFOUND: getaddrinfo ENOTFOUND opstinapetrovo.org",
+      "institution": "Petrovo",
+      "source": "src\\data\\municipalities-database.ts:1618",
+      "action": "removed document or link record with failed URL"
+    },
+    {
+      "url": "https://ugljevik.rs.ba/usluge/obrasci/",
+      "error": "ENOTFOUND: getaddrinfo ENOTFOUND ugljevik.rs.ba",
+      "institution": "Ugljevik",
+      "source": "src\\data\\municipalities-database.ts:1664",
+      "action": "removed document or link record with failed URL"
+    },
+    {
+      "url": "https://opstina-zvornik.org/zahtjevi-i-obrasci/",
+      "error": "HTTP 404 Not Found",
+      "institution": "Zvornik",
+      "source": "src\\data\\municipalities-database.ts:1692",
+      "action": "removed document or link record with failed URL"
+    },
+    {
+      "url": "https://sekovici.org/zahtjevi-i-obrasci/",
+      "error": "HTTP 404 Not Found",
+      "institution": "Šekovići",
+      "source": "src\\data\\municipalities-database.ts:1706",
+      "action": "removed document or link record with failed URL"
+    },
+    {
+      "url": "https://osmaci.org/obrasci/",
+      "error": "HTTP 404 Not Found",
+      "institution": "Osmaci",
+      "source": "src\\data\\municipalities-database.ts:1720",
+      "action": "removed document or link record with failed URL"
+    },
+    {
+      "url": "https://opstinains.net/usluge/obrasci/",
+      "error": "HTTP 404 Not Found",
+      "institution": "Istočno Novo Sarajevo",
+      "source": "src\\data\\municipalities-database.ts:1778",
+      "action": "removed document or link record with failed URL"
+    },
+    {
+      "url": "https://pale.rs.ba/dokumenti-i-obrasci/",
+      "error": "HTTP 404 Not Found",
+      "institution": "Pale (RS)",
+      "source": "src\\data\\municipalities-database.ts:1796",
+      "action": "removed document or link record with failed URL"
+    },
+    {
+      "url": "https://trnovo-rs.com/dokumenti/",
+      "error": "HTTP 404 Not Found",
+      "institution": "Trnovo (RS)",
+      "source": "src\\data\\municipalities-database.ts:1814",
+      "action": "removed document or link record with failed URL"
+    },
+    {
+      "url": "https://opstinaisg.net/dokumenti/",
+      "error": "HTTP 404 Not Found",
+      "institution": "Istočni Stari Grad",
+      "source": "src\\data\\municipalities-database.ts:1832",
+      "action": "removed document or link record with failed URL"
+    },
+    {
+      "url": "https://trebinje.rs.ba/obrasci-i-zahtjevi/",
+      "error": "HTTP 404 Not Found",
+      "institution": "Grad Trebinje",
+      "source": "src\\data\\municipalities-database.ts:1870",
+      "action": "removed document or link record with failed URL"
+    },
+    {
+      "url": "https://opstinanevesinje.rs.ba/zahtjevi-i-obrasci/",
+      "error": "HTTP 404 Not Found",
+      "institution": "Nevesinje",
+      "source": "src\\data\\municipalities-database.ts:1916",
+      "action": "removed document or link record with failed URL"
+    },
+    {
+      "url": "https://rudo.rs.ba/zahtjevi-i-obrasci/",
+      "error": "ENOTFOUND: getaddrinfo ENOTFOUND rudo.rs.ba",
+      "institution": "Rudo",
+      "source": "src\\data\\municipalities-database.ts:2003",
+      "action": "removed document or link record with failed URL"
+    },
+    {
+      "url": "https://novogorazde.rs.ba/zahtjevi-i-obrasci/",
+      "error": "HTTP 404 Not Found",
+      "institution": "Novo Goražde",
+      "source": "src\\data\\municipalities-database.ts:2017",
+      "action": "removed document or link record with failed URL"
+    },
+    {
+      "url": "https://rogatica.rs.ba/zahtjevi-i-obrasci/",
+      "error": "ENOTFOUND: getaddrinfo ENOTFOUND rogatica.rs.ba",
+      "institution": "Rogatica",
+      "source": "src\\data\\municipalities-database.ts:2052",
+      "action": "removed document or link record with failed URL"
+    },
+    {
+      "url": "https://starigrad.ba/v2/e_uprava.php",
+      "error": "HTTP 404 Not Found",
+      "institution": "Sarajevo Region",
+      "source": "src\\data\\sarajevo-region-forms.ts:259",
+      "action": "removed failed formsUrl field"
+    },
+    {
+      "url": "https://starigrad.ba/v2/e_uprava.php",
+      "error": "HTTP 404 Not Found",
+      "institution": "Sarajevo Region",
+      "source": "src\\data\\sarajevo-region-forms.ts:259",
+      "action": "removed document or link record with failed URL"
+    },
+    {
+      "url": "https://starigrad.ba/v2/e_uprava.php",
+      "error": "HTTP 404 Not Found",
+      "institution": "Sarajevo Region",
+      "source": "src\\data\\sarajevo-region-forms.ts:259",
+      "action": "removed document or link record with failed URL"
+    },
+    {
+      "url": "https://starigrad.ba/v2/e_uprava.php",
+      "error": "HTTP 404 Not Found",
+      "institution": "Sarajevo Region",
+      "source": "src\\data\\sarajevo-region-forms.ts:259",
+      "action": "removed document or link record with failed URL"
+    },
+    {
+      "url": "https://opcinailidza.ba/obrasci",
+      "error": "HTTP 500 Internal Server Error",
+      "institution": "Sarajevo Region",
+      "source": "src\\data\\sarajevo-region-forms.ts:463",
+      "action": "removed failed formsUrl field"
+    },
+    {
+      "url": "https://opcinailidza.ba/obrasci",
+      "error": "HTTP 500 Internal Server Error",
+      "institution": "Sarajevo Region",
+      "source": "src\\data\\sarajevo-region-forms.ts:463",
+      "action": "removed document or link record with failed URL"
+    },
+    {
+      "url": "https://opcinailidza.ba/obrasci",
+      "error": "HTTP 500 Internal Server Error",
+      "institution": "Sarajevo Region",
+      "source": "src\\data\\sarajevo-region-forms.ts:463",
+      "action": "removed document or link record with failed URL"
+    },
+    {
+      "url": "https://opcinailidza.ba/obrasci",
+      "error": "HTTP 500 Internal Server Error",
+      "institution": "Sarajevo Region",
+      "source": "src\\data\\sarajevo-region-forms.ts:463",
+      "action": "removed document or link record with failed URL"
+    },
+    {
+      "url": "https://novigradsarajevo.ba/e-uprava",
+      "error": "HTTP 404 Not Found",
+      "institution": "Sarajevo Region",
+      "source": "src\\data\\sarajevo-region-forms.ts:499",
+      "action": "removed failed formsUrl field"
+    },
+    {
+      "url": "https://novigradsarajevo.ba/e-uprava",
+      "error": "HTTP 404 Not Found",
+      "institution": "Sarajevo Region",
+      "source": "src\\data\\sarajevo-region-forms.ts:499",
+      "action": "removed document or link record with failed URL"
+    },
+    {
+      "url": "https://novigradsarajevo.ba/e-uprava",
+      "error": "HTTP 404 Not Found",
+      "institution": "Sarajevo Region",
+      "source": "src\\data\\sarajevo-region-forms.ts:499",
+      "action": "removed document or link record with failed URL"
+    },
+    {
+      "url": "https://novigradsarajevo.ba/e-uprava",
+      "error": "HTTP 404 Not Found",
+      "institution": "Sarajevo Region",
+      "source": "src\\data\\sarajevo-region-forms.ts:499",
+      "action": "removed document or link record with failed URL"
+    },
+    {
+      "url": "https://novosarajevo.ba/e-uprava/obrasci/",
+      "error": "HTTP 404 Not Found",
+      "institution": "Sarajevo Region",
+      "source": "src\\data\\sarajevo-region-forms.ts:535",
+      "action": "removed failed formsUrl field"
+    },
+    {
+      "url": "https://novosarajevo.ba/e-uprava/obrasci/",
+      "error": "HTTP 404 Not Found",
+      "institution": "Sarajevo Region",
+      "source": "src\\data\\sarajevo-region-forms.ts:535",
+      "action": "removed document or link record with failed URL"
+    },
+    {
+      "url": "https://novosarajevo.ba/e-uprava/obrasci/",
+      "error": "HTTP 404 Not Found",
+      "institution": "Sarajevo Region",
+      "source": "src\\data\\sarajevo-region-forms.ts:535",
+      "action": "removed document or link record with failed URL"
+    },
+    {
+      "url": "https://novosarajevo.ba/e-uprava/obrasci/",
+      "error": "HTTP 404 Not Found",
+      "institution": "Sarajevo Region",
+      "source": "src\\data\\sarajevo-region-forms.ts:535",
+      "action": "removed document or link record with failed URL"
+    },
+    {
+      "url": "https://vogosca.ba/e-uprava/obrasci/",
+      "error": "HTTP 404 Not Found",
+      "institution": "Sarajevo Region",
+      "source": "src\\data\\sarajevo-region-forms.ts:571",
+      "action": "removed failed formsUrl field"
+    },
+    {
+      "url": "https://vogosca.ba/e-uprava/obrasci/",
+      "error": "HTTP 404 Not Found",
+      "institution": "Sarajevo Region",
+      "source": "src\\data\\sarajevo-region-forms.ts:571",
+      "action": "removed document or link record with failed URL"
+    },
+    {
+      "url": "https://vogosca.ba/e-uprava/obrasci/",
+      "error": "HTTP 404 Not Found",
+      "institution": "Sarajevo Region",
+      "source": "src\\data\\sarajevo-region-forms.ts:571",
+      "action": "removed document or link record with failed URL"
+    },
+    {
+      "url": "https://vogosca.ba/e-uprava/obrasci/",
+      "error": "HTTP 404 Not Found",
+      "institution": "Sarajevo Region",
+      "source": "src\\data\\sarajevo-region-forms.ts:571",
+      "action": "removed document or link record with failed URL"
+    },
+    {
+      "url": "https://trnovo.ba/dokumenti/obrasci/",
+      "error": "HTTP 404 Not Found",
+      "institution": "Sarajevo Region",
+      "source": "src\\data\\sarajevo-region-forms.ts:629",
+      "action": "removed failed formsUrl field"
+    },
+    {
+      "url": "https://trnovo.ba/dokumenti/obrasci/",
+      "error": "HTTP 404 Not Found",
+      "institution": "Sarajevo Region",
+      "source": "src\\data\\sarajevo-region-forms.ts:629",
+      "action": "removed document or link record with failed URL"
+    },
+    {
+      "url": "https://trnovo.ba/dokumenti/obrasci/",
+      "error": "HTTP 404 Not Found",
+      "institution": "Sarajevo Region",
+      "source": "src\\data\\sarajevo-region-forms.ts:629",
+      "action": "removed document or link record with failed URL"
+    },
+    {
+      "url": "https://opstinains.net/usluge/obrasci/",
+      "error": "HTTP 404 Not Found",
+      "institution": "Sarajevo Region",
+      "source": "src\\data\\sarajevo-region-forms.ts:813",
+      "action": "removed failed formsUrl field"
+    },
+    {
+      "url": "https://opstinains.net/usluge/obrasci/",
+      "error": "HTTP 404 Not Found",
+      "institution": "Sarajevo Region",
+      "source": "src\\data\\sarajevo-region-forms.ts:813",
+      "action": "removed document or link record with failed URL"
+    },
+    {
+      "url": "https://opstinains.net/usluge/obrasci/",
+      "error": "HTTP 404 Not Found",
+      "institution": "Sarajevo Region",
+      "source": "src\\data\\sarajevo-region-forms.ts:813",
+      "action": "removed document or link record with failed URL"
+    },
+    {
+      "url": "https://opstinains.net/usluge/obrasci/",
+      "error": "HTTP 404 Not Found",
+      "institution": "Sarajevo Region",
+      "source": "src\\data\\sarajevo-region-forms.ts:813",
+      "action": "removed document or link record with failed URL"
+    },
+    {
+      "url": "https://pale.rs.ba/dokumenti-i-obrasci/",
+      "error": "HTTP 404 Not Found",
+      "institution": "Sarajevo Region",
+      "source": "src\\data\\sarajevo-region-forms.ts:849",
+      "action": "removed failed formsUrl field"
+    },
+    {
+      "url": "https://pale.rs.ba/dokumenti-i-obrasci/",
+      "error": "HTTP 404 Not Found",
+      "institution": "Sarajevo Region",
+      "source": "src\\data\\sarajevo-region-forms.ts:849",
+      "action": "removed document or link record with failed URL"
+    },
+    {
+      "url": "https://pale.rs.ba/dokumenti-i-obrasci/",
+      "error": "HTTP 404 Not Found",
+      "institution": "Sarajevo Region",
+      "source": "src\\data\\sarajevo-region-forms.ts:849",
+      "action": "removed document or link record with failed URL"
+    },
+    {
+      "url": "https://pale.rs.ba/dokumenti-i-obrasci/",
+      "error": "HTTP 404 Not Found",
+      "institution": "Sarajevo Region",
+      "source": "src\\data\\sarajevo-region-forms.ts:849",
+      "action": "removed document or link record with failed URL"
+    },
+    {
+      "url": "https://trnovo-rs.com/dokumenti/",
+      "error": "HTTP 404 Not Found",
+      "institution": "Sarajevo Region",
+      "source": "src\\data\\sarajevo-region-forms.ts:878",
+      "action": "removed failed formsUrl field"
+    },
+    {
+      "url": "https://trnovo-rs.com/dokumenti/",
+      "error": "HTTP 404 Not Found",
+      "institution": "Sarajevo Region",
+      "source": "src\\data\\sarajevo-region-forms.ts:878",
+      "action": "removed document or link record with failed URL"
+    },
+    {
+      "url": "https://trnovo-rs.com/dokumenti/",
+      "error": "HTTP 404 Not Found",
+      "institution": "Sarajevo Region",
+      "source": "src\\data\\sarajevo-region-forms.ts:878",
+      "action": "removed document or link record with failed URL"
+    },
+    {
+      "url": "https://opstinaisg.net/dokumenti/",
+      "error": "HTTP 404 Not Found",
+      "institution": "Sarajevo Region",
+      "source": "src\\data\\sarajevo-region-forms.ts:907",
+      "action": "removed failed formsUrl field"
+    },
+    {
+      "url": "https://opstinaisg.net/dokumenti/",
+      "error": "HTTP 404 Not Found",
+      "institution": "Sarajevo Region",
+      "source": "src\\data\\sarajevo-region-forms.ts:907",
+      "action": "removed document or link record with failed URL"
+    },
+    {
+      "url": "https://opstinaisg.net/dokumenti/",
+      "error": "HTTP 404 Not Found",
+      "institution": "Sarajevo Region",
+      "source": "src\\data\\sarajevo-region-forms.ts:907",
+      "action": "removed document or link record with failed URL"
+    },
+    {
+      "url": "https://eu4agri.ba/wp-content/uploads/2020/08/EU4Agri-Kalendar-objava-javnih-poziva.pdf",
+      "error": "ERR_TLS_CERT_ALTNAME_INVALID: Hostname/IP does not match certificate's altnames: Host: eu4agri.ba. is not in the cert's altnames: DNS:*.arisenergy.ba, DNS:arisenergy.ba",
+      "institution": "Sarajevo Region",
+      "source": "src\\data\\sarajevo-region-forms.ts:991",
+      "action": "removed document or link record with failed URL"
+    },
+    {
+      "url": "https://opstinacajnice.rs.ba/wp-content/uploads/2025/03/%D0%9E%D0%B1%D1%80%D0%B0%D0%B7%D0%B0%D1%86_%D0%B7%D0%B0%D1%85%D1%82%D0%B5%D0%B2%D0%B0_%D0%B7%D0%B0_%D0%B4%D0%BE%D0%B4%D1%98%D0%B5%D0%BB%D1%83_%D1%98%D0%B5%D0%B4%D0%BD%D0%BE%D0%BA%D1%80%D0%B0%D1%82%D0%BD%D0%B8%D1%85_%D0%BF%D0%BE%D0%BC%D0%BE%D1%9B%D0%B8.pdf",
+      "error": "HTTP 404 Not Found",
+      "institution": "Sarajevo Region",
+      "source": "src\\data\\sarajevo-region-forms.ts:1030",
+      "action": "removed document or link record with failed URL"
+    },
+    {
+      "url": "https://novogorazde.net/dokumenti/",
+      "error": "ENOTFOUND: getaddrinfo ENOTFOUND novogorazde.net",
+      "institution": "Sarajevo Region",
+      "source": "src\\data\\sarajevo-region-forms.ts:1217",
+      "action": "removed failed formsUrl field"
+    },
+    {
+      "url": "https://novogorazde.net/dokumenti/",
+      "error": "ENOTFOUND: getaddrinfo ENOTFOUND novogorazde.net",
+      "institution": "Sarajevo Region",
+      "source": "src\\data\\sarajevo-region-forms.ts:1217",
+      "action": "removed document or link record with failed URL"
+    },
+    {
+      "url": "https://novogorazde.net/dokumenti/",
+      "error": "ENOTFOUND: getaddrinfo ENOTFOUND novogorazde.net",
+      "institution": "Sarajevo Region",
+      "source": "src\\data\\sarajevo-region-forms.ts:1217",
+      "action": "removed document or link record with failed URL"
+    },
+    {
+      "url": "https://www.bpkg.gov.ba/ministarstva/zdravstvo",
+      "error": "HTTP 404 Not Found",
+      "institution": "Ministarstvo za socijalnu politiku, zdravstvo BPK",
+      "source": "src\\data\\uploaded-institutions.ts:39",
+      "action": "removed failed website field"
+    },
+    {
+      "url": "https://www.bpkg.gov.ba/ministarstva/zdravstvo",
+      "error": "HTTP 404 Not Found",
+      "institution": "Ministarstvo za socijalnu politiku, zdravstvo BPK",
+      "source": "src\\data\\uploaded-institutions.ts:39",
+      "action": "removed failed formsUrl field"
+    },
+    {
+      "url": "https://www.bpkg.gov.ba/ministarstva/urbanizam",
+      "error": "HTTP 404 Not Found",
+      "institution": "Ministarstvo za urbanizam BPK",
+      "source": "src\\data\\uploaded-institutions.ts:59",
+      "action": "removed failed website field"
+    },
+    {
+      "url": "https://www.bpkg.gov.ba/ministarstva/urbanizam",
+      "error": "HTTP 404 Not Found",
+      "institution": "Ministarstvo za urbanizam BPK",
+      "source": "src\\data\\uploaded-institutions.ts:59",
+      "action": "removed failed formsUrl field"
+    },
+    {
+      "url": "https://starigrad.ba/v2/e_uprava.php",
+      "error": "HTTP 404 Not Found",
+      "institution": "Stari Grad Sarajevo",
+      "source": "src\\data\\uploaded-institutions.ts:79",
+      "action": "removed failed formsUrl field"
+    },
+    {
+      "url": "https://opcinailidza.ba/obrasci",
+      "error": "HTTP 500 Internal Server Error",
+      "institution": "Općina Ilidža",
+      "source": "src\\data\\uploaded-institutions.ts:99",
+      "action": "removed failed formsUrl field"
+    },
+    {
+      "url": "https://novigradsarajevo.ba/e-uprava",
+      "error": "HTTP 404 Not Found",
+      "institution": "Novi Grad Sarajevo",
+      "source": "src\\data\\uploaded-institutions.ts:109",
+      "action": "removed failed formsUrl field"
+    },
+    {
+      "url": "https://novosarajevo.ba/e-uprava/obrasci/",
+      "error": "HTTP 404 Not Found",
+      "institution": "Novo Sarajevo",
+      "source": "src\\data\\uploaded-institutions.ts:119",
+      "action": "removed failed formsUrl field"
+    },
+    {
+      "url": "https://vogosca.ba/e-uprava/obrasci/",
+      "error": "HTTP 404 Not Found",
+      "institution": "Vogošća",
+      "source": "src\\data\\uploaded-institutions.ts:129",
+      "action": "removed failed formsUrl field"
+    },
+    {
+      "url": "https://trnovo.ba/dokumenti/obrasci/",
+      "error": "HTTP 404 Not Found",
+      "institution": "Trnovo (FBiH)",
+      "source": "src\\data\\uploaded-institutions.ts:149",
+      "action": "removed failed formsUrl field"
+    },
+    {
+      "url": "https://opstinains.net/usluge/obrasci/",
+      "error": "HTTP 404 Not Found",
+      "institution": "Istočno Novo Sarajevo",
+      "source": "src\\data\\uploaded-institutions.ts:189",
+      "action": "removed failed formsUrl field"
+    },
+    {
+      "url": "https://pale.rs.ba/dokumenti-i-obrasci/",
+      "error": "HTTP 404 Not Found",
+      "institution": "Pale (RS)",
+      "source": "src\\data\\uploaded-institutions.ts:199",
+      "action": "removed failed formsUrl field"
+    },
+    {
+      "url": "https://trnovo-rs.com/dokumenti/",
+      "error": "HTTP 404 Not Found",
+      "institution": "Trnovo (RS)",
+      "source": "src\\data\\uploaded-institutions.ts:209",
+      "action": "removed failed formsUrl field"
+    },
+    {
+      "url": "https://opstinaisg.net/dokumenti/",
+      "error": "HTTP 404 Not Found",
+      "institution": "Istočni Stari Grad",
+      "source": "src\\data\\uploaded-institutions.ts:219",
+      "action": "removed failed formsUrl field"
+    },
+    {
+      "url": "https://novogorazde.net/dokumenti/",
+      "error": "ENOTFOUND: getaddrinfo ENOTFOUND novogorazde.net",
+      "institution": "Opština Novo Goražde",
+      "source": "src\\data\\uploaded-institutions.ts:269",
+      "action": "removed failed formsUrl field"
+    },
+    {
+      "url": "https://opstinapale.org/",
+      "error": "ENOTFOUND: getaddrinfo ENOTFOUND opstinapale.org",
+      "institution": "Republika Srpska",
+      "source": "src\\data\\uploaded-institutions.ts:1378",
+      "action": "removed failed website field"
+    },
+    {
+      "url": "https://opstinapale.org/zahtjevi-i-obrasci/",
+      "error": "ENOTFOUND: getaddrinfo ENOTFOUND opstinapale.org",
+      "institution": "Republika Srpska",
+      "source": "src\\data\\uploaded-institutions.ts:1379",
+      "action": "removed failed formsUrl field"
+    },
+    {
+      "url": "https://trnovo-rs.org/",
+      "error": "ENOTFOUND: getaddrinfo ENOTFOUND trnovo-rs.org",
+      "institution": "Republika Srpska",
+      "source": "src\\data\\uploaded-institutions.ts:1388",
+      "action": "removed failed website field"
+    },
+    {
+      "url": "https://trnovo-rs.org/obrasci/",
+      "error": "ENOTFOUND: getaddrinfo ENOTFOUND trnovo-rs.org",
+      "institution": "Republika Srpska",
+      "source": "src\\data\\uploaded-institutions.ts:1389",
+      "action": "removed failed formsUrl field"
+    },
+    {
+      "url": "https://www.mostar.ba/dokumenti-gradani/",
+      "error": "HTTP 404 Not Found",
+      "institution": "Grad",
+      "source": "src\\data\\uploaded-institutions.ts:329",
+      "action": "removed failed formsUrl field"
+    },
+    {
+      "url": "https://www.vlada-hnz-k.ba/ministarstva/ministarstvo-zdravstva-rada-i-socijalne-zastite",
+      "error": "HTTP 404 Not Found",
+      "institution": "Ministarstvo zdravstva HNK",
+      "source": "src\\data\\uploaded-institutions.ts:409",
+      "action": "removed failed website field"
+    },
+    {
+      "url": "https://www.vlada-hnz-k.ba/ministarstva/ministarstvo-zdravstva-rada-i-socijalne-zastite",
+      "error": "HTTP 404 Not Found",
+      "institution": "Ministarstvo zdravstva HNK",
+      "source": "src\\data\\uploaded-institutions.ts:409",
+      "action": "removed failed formsUrl field"
+    },
+    {
+      "url": "https://www.vlada-hnz-k.ba/ministarstva/ministarstvo-prosvjete-znanosti-kulture-i-sporta",
+      "error": "HTTP 404 Not Found",
+      "institution": "Ministarstvo obrazovanja HNK",
+      "source": "src\\data\\uploaded-institutions.ts:419",
+      "action": "removed failed website field"
+    },
+    {
+      "url": "https://www.vlada-hnz-k.ba/ministarstva/ministarstvo-prosvjete-znanosti-kulture-i-sporta",
+      "error": "HTTP 404 Not Found",
+      "institution": "Ministarstvo obrazovanja HNK",
+      "source": "src\\data\\uploaded-institutions.ts:419",
+      "action": "removed failed formsUrl field"
+    },
+    {
+      "url": "https://www.vlada-hnz-k.ba/ministarstva/ministarstvo-prostornog-uredenja-gradjenja-i-zastite-okoline",
+      "error": "HTTP 404 Not Found",
+      "institution": "Ministarstvo prostornog uređenja HNK",
+      "source": "src\\data\\uploaded-institutions.ts:429",
+      "action": "removed failed website field"
+    },
+    {
+      "url": "https://www.vlada-hnz-k.ba/ministarstva/ministarstvo-prostornog-uredenja-gradjenja-i-zastite-okoline",
+      "error": "HTTP 404 Not Found",
+      "institution": "Ministarstvo prostornog uređenja HNK",
+      "source": "src\\data\\uploaded-institutions.ts:429",
+      "action": "removed failed formsUrl field"
+    },
+    {
+      "url": "https://livno.ba/zahtjevi-i-obrasci",
+      "error": "HTTP 404 Not Found",
+      "institution": "Grad",
+      "source": "src\\data\\uploaded-institutions.ts:458",
+      "action": "removed failed website field"
+    },
+    {
+      "url": "https://www.vladahbz.com/ministarstvo-rada-zdravstva-socijalne-skrbi-i-prognanih-dokumenti/",
+      "error": "HTTP 404 Not Found",
+      "institution": "Kupres",
+      "source": "src\\data\\uploaded-institutions.ts:519",
+      "action": "removed failed formsUrl field"
+    },
+    {
+      "url": "https://www.ljubuski.ba/zahtjevi-i-obrasci/",
+      "error": "HTTP 404 Not Found",
+      "institution": "Ljubuški",
+      "source": "src\\data\\uploaded-institutions.ts:549",
+      "action": "removed failed formsUrl field"
+    },
+    {
+      "url": "https://www.opcina-posusje.ba/dokumenti/obrasci/",
+      "error": "HTTP 404 Not Found",
+      "institution": "Posušje",
+      "source": "src\\data\\uploaded-institutions.ts:569",
+      "action": "removed failed formsUrl field"
+    },
+    {
+      "url": "https://www.vladazzh.com/ministarstva/obrazovanje-znanost-kultura-i-sport/",
+      "error": "HTTP 404 Not Found",
+      "institution": "Ministarstvo obrazovanja, znanosti, kulture i športa ZHK",
+      "source": "src\\data\\uploaded-institutions.ts:589",
+      "action": "removed failed website field"
+    },
+    {
+      "url": "https://www.vladazzh.com/ministarstva/obrazovanje-znanost-kultura-i-sport/",
+      "error": "HTTP 404 Not Found",
+      "institution": "Ministarstvo obrazovanja, znanosti, kulture i športa ZHK",
+      "source": "src\\data\\uploaded-institutions.ts:589",
+      "action": "removed failed formsUrl field"
+    },
+    {
+      "url": "https://trebinje.rs.ba/obrasci-i-zahtjevi/",
+      "error": "HTTP 404 Not Found",
+      "institution": "Grad Trebinje",
+      "source": "src\\data\\uploaded-institutions.ts:619",
+      "action": "removed failed formsUrl field"
+    },
+    {
+      "url": "https://opstinanevesinje.rs.ba/zahtjevi-i-obrasci/",
+      "error": "HTTP 404 Not Found",
+      "institution": "Nevesinje",
+      "source": "src\\data\\uploaded-institutions.ts:649",
+      "action": "removed failed formsUrl field"
+    },
+    {
+      "url": "https://www.sanskimost.gov.ba/index.php/exploer/opcinske-sluzbe",
+      "error": "HTTP 404 Not Found",
+      "institution": "Sanski Most",
+      "source": "src\\data\\uploaded-institutions.ts:739",
+      "action": "removed failed formsUrl field"
+    },
+    {
+      "url": "https://velikakladusa.gov.ba/dokumenti-i-obrasci/",
+      "error": "HTTP 404 Not Found",
+      "institution": "Velika Kladuša",
+      "source": "src\\data\\uploaded-institutions.ts:749",
+      "action": "removed failed formsUrl field"
+    },
+    {
+      "url": "https://www.vladausk.ba/ministarstva/ministarstvo-obrazovanja-nauke-kulture-i-sporta",
+      "error": "HTTP 404 Not Found",
+      "institution": "Ministarstvo obrazovanja, nauke, kulture i sporta USK",
+      "source": "src\\data\\uploaded-institutions.ts:769",
+      "action": "removed failed formsUrl field"
+    },
+    {
+      "url": "https://www.vladausk.ba/ministarstva/ministarstvo-za-gradjenje-prostorno-uredenje-i-zastitu-okoline",
+      "error": "HTTP 404 Not Found",
+      "institution": "Ministarstvo za građenje, prostorno uređenje i zaštitu okoliša USK",
+      "source": "src\\data\\uploaded-institutions.ts:779",
+      "action": "removed failed formsUrl field"
+    },
+    {
+      "url": "https://opstinaprnjavor.net/obrasci-i-zahtjevi/",
+      "error": "HTTP 404 Not Found",
+      "institution": "Republika Srpska",
+      "source": "src\\data\\uploaded-institutions.ts:819",
+      "action": "removed failed formsUrl field"
+    },
+    {
+      "url": "https://opstinaknezevo.org/%d0%b7%d0%b0%d1%85%d1%82%d1%98%d0%b5%d0%b2%d0%b8-%d0%b8-%d0%be%d0%b1%d1%80%d0%b0%d1%81%d1%86%d0%b8/",
+      "error": "HTTP 404 Not Found",
+      "institution": "Republika Srpska",
+      "source": "src\\data\\uploaded-institutions.ts:858",
+      "action": "removed failed website field"
+    },
+    {
+      "url": "https://sipovo.org/zahtjevi-i-obrasci/",
+      "error": "ENOTFOUND: getaddrinfo ENOTFOUND sipovo.org",
+      "institution": "Republika Srpska",
+      "source": "src\\data\\uploaded-institutions.ts:878",
+      "action": "removed failed website field"
+    },
+    {
+      "url": "https://www.banjaluka.rs.ba/gradska-uprava/obrasci-i-zahtjevi/",
+      "error": "HTTP 404 Not Found",
+      "institution": "Republika Srpska",
+      "source": "src\\data\\uploaded-institutions.ts:899",
+      "action": "removed failed formsUrl field"
+    },
+    {
+      "url": "https://opstina-novigrad.rs.ba/obrasci-i-zahtjevi/",
+      "error": "ENOTFOUND: getaddrinfo ENOTFOUND opstina-novigrad.rs.ba",
+      "institution": "Republika Srpska",
+      "source": "src\\data\\uploaded-institutions.ts:919",
+      "action": "removed failed formsUrl field"
+    },
+    {
+      "url": "https://odzak.ba/zahtjevi-i-obrasci/",
+      "error": "HTTP 404 Not Found",
+      "institution": "Odžak",
+      "source": "src\\data\\uploaded-institutions.ts:959",
+      "action": "removed failed formsUrl field"
+    },
+    {
+      "url": "https://opcina-sapna.ba/",
+      "error": "ENOTFOUND: getaddrinfo ENOTFOUND opcina-sapna.ba",
+      "institution": "Sapna",
+      "source": "src\\data\\uploaded-institutions.ts:1108",
+      "action": "removed failed website field"
+    },
+    {
+      "url": "https://opcina-sapna.ba/dokumenti/",
+      "error": "ENOTFOUND: getaddrinfo ENOTFOUND opcina-sapna.ba",
+      "institution": "Sapna",
+      "source": "src\\data\\uploaded-institutions.ts:1109",
+      "action": "removed failed formsUrl field"
+    },
+    {
+      "url": "https://www.bdcentral.net/index.php/ba/odjeljenja/javni-registar",
+      "error": "HTTP 404 Not Found",
+      "institution": "Brčko distrikt",
+      "source": "src\\data\\uploaded-institutions.ts:1189",
+      "action": "removed failed website field"
+    },
+    {
+      "url": "https://www.bdcentral.net/index.php/ba/odjeljenja/javni-registar",
+      "error": "HTTP 404 Not Found",
+      "institution": "Brčko distrikt",
+      "source": "src\\data\\uploaded-institutions.ts:1189",
+      "action": "removed failed formsUrl field"
+    },
+    {
+      "url": "https://www.bdcentral.net/index.php/ba/odjeljenja/zdravstvo-i-ostale-usluge",
+      "error": "HTTP 404 Not Found",
+      "institution": "Brčko distrikt",
+      "source": "src\\data\\uploaded-institutions.ts:1199",
+      "action": "removed failed website field"
+    },
+    {
+      "url": "https://www.bdcentral.net/index.php/ba/odjeljenja/zdravstvo-i-ostale-usluge",
+      "error": "HTTP 404 Not Found",
+      "institution": "Brčko distrikt",
+      "source": "src\\data\\uploaded-institutions.ts:1199",
+      "action": "removed failed formsUrl field"
+    },
+    {
+      "url": "https://www.bdcentral.net/index.php/ba/odjeljenja/obrazovanje",
+      "error": "HTTP 404 Not Found",
+      "institution": "Brčko distrikt",
+      "source": "src\\data\\uploaded-institutions.ts:1209",
+      "action": "removed failed website field"
+    },
+    {
+      "url": "https://www.bdcentral.net/index.php/ba/odjeljenja/obrazovanje",
+      "error": "HTTP 404 Not Found",
+      "institution": "Brčko distrikt",
+      "source": "src\\data\\uploaded-institutions.ts:1209",
+      "action": "removed failed formsUrl field"
+    },
+    {
+      "url": "https://www.bdcentral.net/index.php/ba/odjeljenja/prostorno-planiranje",
+      "error": "HTTP 404 Not Found",
+      "institution": "Brčko distrikt",
+      "source": "src\\data\\uploaded-institutions.ts:1219",
+      "action": "removed failed website field"
+    },
+    {
+      "url": "https://www.bdcentral.net/index.php/ba/odjeljenja/prostorno-planiranje",
+      "error": "HTTP 404 Not Found",
+      "institution": "Brčko distrikt",
+      "source": "src\\data\\uploaded-institutions.ts:1219",
+      "action": "removed failed formsUrl field"
+    },
+    {
+      "url": "https://modrica.ba/usluge/obrasci/",
+      "error": "HTTP 404 Not Found",
+      "institution": "Republika Srpska",
+      "source": "src\\data\\uploaded-institutions.ts:1249",
+      "action": "removed failed formsUrl field"
+    },
+    {
+      "url": "https://vukosavlje.org/",
+      "error": "ENOTFOUND: getaddrinfo ENOTFOUND vukosavlje.org",
+      "institution": "Republika Srpska",
+      "source": "src\\data\\uploaded-institutions.ts:1278",
+      "action": "removed failed website field"
+    },
+    {
+      "url": "https://opstinapetrovo.org/zahtjevi-i-obrasci/",
+      "error": "ENOTFOUND: getaddrinfo ENOTFOUND opstinapetrovo.org",
+      "institution": "Republika Srpska",
+      "source": "src\\data\\uploaded-institutions.ts:1309",
+      "action": "removed failed formsUrl field"
+    },
+    {
+      "url": "https://opstinapetrovo.org/",
+      "error": "ENOTFOUND: getaddrinfo ENOTFOUND opstinapetrovo.org",
+      "institution": "Republika Srpska",
+      "source": "src\\data\\uploaded-institutions.ts:1308",
+      "action": "removed failed website field"
+    },
+    {
+      "url": "https://opstinapetrovo.org/zahtjevi-i-obrasci/",
+      "error": "ENOTFOUND: getaddrinfo ENOTFOUND opstinapetrovo.org",
+      "institution": "Republika Srpska",
+      "source": "src\\data\\uploaded-institutions.ts:1309",
+      "action": "removed failed formsUrl field"
+    },
+    {
+      "url": "https://ugljevik.rs.ba/",
+      "error": "ENOTFOUND: getaddrinfo ENOTFOUND ugljevik.rs.ba",
+      "institution": "Republika Srpska",
+      "source": "src\\data\\uploaded-institutions.ts:1328",
+      "action": "removed failed website field"
+    },
+    {
+      "url": "https://ugljevik.rs.ba/usluge/obrasci/",
+      "error": "ENOTFOUND: getaddrinfo ENOTFOUND ugljevik.rs.ba",
+      "institution": "Republika Srpska",
+      "source": "src\\data\\uploaded-institutions.ts:1329",
+      "action": "removed failed formsUrl field"
+    },
+    {
+      "url": "https://opstina-zvornik.org/zahtjevi-i-obrasci/",
+      "error": "HTTP 404 Not Found",
+      "institution": "Republika Srpska",
+      "source": "src\\data\\uploaded-institutions.ts:1349",
+      "action": "removed failed formsUrl field"
+    },
+    {
+      "url": "https://sekovici.org/zahtjevi-i-obrasci/",
+      "error": "HTTP 404 Not Found",
+      "institution": "Republika Srpska",
+      "source": "src\\data\\uploaded-institutions.ts:1359",
+      "action": "removed failed formsUrl field"
+    },
+    {
+      "url": "https://osmaci.org/obrasci/",
+      "error": "HTTP 404 Not Found",
+      "institution": "Republika Srpska",
+      "source": "src\\data\\uploaded-institutions.ts:1369",
+      "action": "removed failed formsUrl field"
+    },
+    {
+      "url": "https://opstinapale.org/",
+      "error": "ENOTFOUND: getaddrinfo ENOTFOUND opstinapale.org",
+      "institution": "Republika Srpska",
+      "source": "src\\data\\uploaded-institutions.ts:1378",
+      "action": "removed failed website field"
+    },
+    {
+      "url": "https://opstinapale.org/zahtjevi-i-obrasci/",
+      "error": "ENOTFOUND: getaddrinfo ENOTFOUND opstinapale.org",
+      "institution": "Republika Srpska",
+      "source": "src\\data\\uploaded-institutions.ts:1379",
+      "action": "removed failed formsUrl field"
+    },
+    {
+      "url": "https://trnovo-rs.org/",
+      "error": "ENOTFOUND: getaddrinfo ENOTFOUND trnovo-rs.org",
+      "institution": "Republika Srpska",
+      "source": "src\\data\\uploaded-institutions.ts:1388",
+      "action": "removed failed website field"
+    },
+    {
+      "url": "https://trnovo-rs.org/obrasci/",
+      "error": "ENOTFOUND: getaddrinfo ENOTFOUND trnovo-rs.org",
+      "institution": "Republika Srpska",
+      "source": "src\\data\\uploaded-institutions.ts:1389",
+      "action": "removed failed formsUrl field"
+    },
+    {
+      "url": "https://istocnistarigrad.org/",
+      "error": "ENOTFOUND: getaddrinfo ENOTFOUND istocnistarigrad.org",
+      "institution": "Republika Srpska",
+      "source": "src\\data\\uploaded-institutions.ts:1398",
+      "action": "removed failed website field"
+    },
+    {
+      "url": "https://istocnistarigrad.org/zahtjevi-i-obrasci/",
+      "error": "ENOTFOUND: getaddrinfo ENOTFOUND istocnistarigrad.org",
+      "institution": "Republika Srpska",
+      "source": "src\\data\\uploaded-institutions.ts:1399",
+      "action": "removed failed formsUrl field"
+    },
+    {
+      "url": "https://www.usora.com/dokumenti-i-obrasci/",
+      "error": "HTTP 404 Not Found",
+      "institution": "Usora",
+      "source": "src\\data\\uploaded-institutions.ts:1549",
+      "action": "removed failed formsUrl field"
+    },
+    {
+      "url": "https://www.zzozedo.ba/index.php/layout/class-layout/obrasci",
+      "error": "HTTP 404 Not Found",
+      "institution": "Tešanj",
+      "source": "src\\data\\uploaded-institutions.ts:1609",
+      "action": "removed failed formsUrl field"
+    },
+    {
+      "url": "https://www.zzozedo.ba/index.php/layout/class-layout/obrasci",
+      "error": "HTTP 404 Not Found",
+      "institution": "Tešanj",
+      "source": "src\\data\\uploaded-institutions.ts:1609",
+      "action": "removed failed formsUrl field"
+    },
+    {
+      "url": "https://www.zzozedo.ba/index.php/layout/class-layout/obrasci",
+      "error": "HTTP 404 Not Found",
+      "institution": "Tešanj",
+      "source": "src\\data\\uploaded-institutions.ts:1609",
+      "action": "removed failed formsUrl field"
+    },
+    {
+      "url": "https://www.zzozedo.ba/index.php/layout/class-layout/obrasci",
+      "error": "HTTP 404 Not Found",
+      "institution": "Tešanj",
+      "source": "src\\data\\uploaded-institutions.ts:1609",
+      "action": "removed failed formsUrl field"
+    },
+    {
+      "url": "https://www.zzozedo.ba/index.php/layout/class-layout/obrasci",
+      "error": "HTTP 404 Not Found",
+      "institution": "Tešanj",
+      "source": "src\\data\\uploaded-institutions.ts:1609",
+      "action": "removed failed formsUrl field"
+    },
+    {
+      "url": "https://www.zzozedo.ba/index.php/layout/class-layout/obrasci",
+      "error": "HTTP 404 Not Found",
+      "institution": "Tešanj",
+      "source": "src\\data\\uploaded-institutions.ts:1609",
+      "action": "removed failed formsUrl field"
+    },
+    {
+      "url": "https://www.olovo.gov.ba/dokumenti/",
+      "error": "HTTP 404 Not Found",
+      "institution": "Olovo",
+      "source": "src\\data\\uploaded-institutions.ts:1619",
+      "action": "removed failed formsUrl field"
+    },
+    {
+      "url": "https://www.zavidovici.ba/index.php/obrasci-zahtjevi",
+      "error": "HTTP 404 Not Found",
+      "institution": "Zavidovići",
+      "source": "src\\data\\uploaded-institutions.ts:1629",
+      "action": "removed failed formsUrl field"
+    },
+    {
+      "url": "https://www.visoko.gov.ba/kategorija/obrasci/",
+      "error": "HTTP 404 Not Found",
+      "institution": "Visoko",
+      "source": "src\\data\\uploaded-institutions.ts:1649",
+      "action": "removed failed formsUrl field"
+    },
+    {
+      "url": "https://starigrad.ba/v2/e_uprava.php",
+      "error": "HTTP 404 Not Found",
+      "institution": "Stari Grad Sarajevo",
+      "source": "src\\data\\verified-domains.ts:47",
+      "action": "removed failed forms_url field"
+    },
+    {
+      "url": "https://opcinailidza.ba/obrasci",
+      "error": "HTTP 500 Internal Server Error",
+      "institution": "Ilidža",
+      "source": "src\\data\\verified-domains.ts:74",
+      "action": "removed failed forms_url field"
+    },
+    {
+      "url": "https://novigradsarajevo.ba/e-uprava",
+      "error": "HTTP 404 Not Found",
+      "institution": "Novi Grad Sarajevo",
+      "source": "src\\data\\verified-domains.ts:87",
+      "action": "removed failed forms_url field"
+    },
+    {
+      "url": "https://novosarajevo.ba/e-uprava/obrasci/",
+      "error": "HTTP 404 Not Found",
+      "institution": "Novo Sarajevo",
+      "source": "src\\data\\verified-domains.ts:100",
+      "action": "removed failed forms_url field"
+    },
+    {
+      "url": "https://vogosca.ba/e-uprava/obrasci/",
+      "error": "HTTP 404 Not Found",
+      "institution": "Vogošća",
+      "source": "src\\data\\verified-domains.ts:112",
+      "action": "removed failed forms_url field"
+    },
+    {
+      "url": "https://trnovo.ba/dokumenti/obrasci/",
+      "error": "HTTP 404 Not Found",
+      "institution": "Trnovo (FBiH)",
+      "source": "src\\data\\verified-domains.ts:136",
+      "action": "removed failed forms_url field"
+    },
+    {
+      "url": "https://maglaj.ba/pdf-formular-zzo-zdk/",
+      "error": "HTTP 404 Not Found",
+      "institution": "Maglaj",
+      "source": "src\\data\\verified-domains.ts:217",
+      "action": "removed failed forms_url field"
+    },
+    {
+      "url": "https://zepce.ba/pdf-formular-zzo-zdk/",
+      "error": "HTTP 404 Not Found",
+      "institution": "Žepče",
+      "source": "src\\data\\verified-domains.ts:228",
+      "action": "removed failed forms_url field"
+    },
+    {
+      "url": "https://tesanj.ba/pdf-formular-zzo-zdk/",
+      "error": "HTTP 404 Not Found",
+      "institution": "Tešanj",
+      "source": "src\\data\\verified-domains.ts:239",
+      "action": "removed failed forms_url field"
+    },
+    {
+      "url": "https://opcina-sapna.ba/dokumenti/",
+      "error": "ENOTFOUND: getaddrinfo ENOTFOUND opcina-sapna.ba",
+      "institution": "Sapna",
+      "source": "src\\data\\verified-domains.ts:384",
+      "action": "removed failed forms_url field"
+    },
+    {
+      "url": "https://teocak.ba/obrasci/",
+      "error": "ENOTFOUND: getaddrinfo ENOTFOUND teocak.ba",
+      "institution": "Teočak",
+      "source": "src\\data\\verified-domains.ts:406",
+      "action": "removed failed forms_url field"
+    },
+    {
+      "url": "https://sanski-most.ba/obrasci/",
+      "error": "EAI_AGAIN: getaddrinfo EAI_AGAIN sanski-most.ba",
+      "institution": "Sanski Most",
+      "source": "src\\data\\verified-domains.ts:505",
+      "action": "removed failed forms_url field"
+    },
+    {
+      "url": "https://travnik.ba/obrasci/",
+      "error": "HTTP 404 Not Found",
+      "institution": "Travnik",
+      "source": "src\\data\\verified-domains.ts:531",
+      "action": "removed failed forms_url field"
+    },
+    {
+      "url": "https://novi-travnik.ba/obrasci/",
+      "error": "ENOTFOUND: getaddrinfo ENOTFOUND novi-travnik.ba",
+      "institution": "Novi Travnik",
+      "source": "src\\data\\verified-domains.ts:580",
+      "action": "removed failed forms_url field"
+    },
+    {
+      "url": "https://vitez.ba/obrasci/",
+      "error": "HTTP 404 Not Found",
+      "institution": "Vitez",
+      "source": "src\\data\\verified-domains.ts:591",
+      "action": "removed failed forms_url field"
+    },
+    {
+      "url": "https://kiseljak.ba/obrasci/",
+      "error": "ENOTFOUND: getaddrinfo ENOTFOUND kiseljak.ba",
+      "institution": "Kiseljak",
+      "source": "src\\data\\verified-domains.ts:626",
+      "action": "removed failed forms_url field"
+    },
+    {
+      "url": "https://kresevo.ba/obrasci/",
+      "error": "HTTP 404 Not Found",
+      "institution": "Kreševo",
+      "source": "src\\data\\verified-domains.ts:637",
+      "action": "removed failed forms_url field"
+    },
+    {
+      "url": "https://neum.ba/obrasci/",
+      "error": "HTTP 404 Not Found",
+      "institution": "Neum",
+      "source": "src\\data\\verified-domains.ts:723",
+      "action": "removed failed forms_url field"
+    },
+    {
+      "url": "https://prozor-rama.ba/obrasci/",
+      "error": "ENOTFOUND: getaddrinfo ENOTFOUND prozor-rama.ba",
+      "institution": "Prozor-Rama",
+      "source": "src\\data\\verified-domains.ts:734",
+      "action": "removed failed forms_url field"
+    },
+    {
+      "url": "https://stolac.ba/obrasci/",
+      "error": "HTTP 500 Internal Server Error",
+      "institution": "Stolac",
+      "source": "src\\data\\verified-domains.ts:745",
+      "action": "removed failed forms_url field"
+    },
+    {
+      "url": "https://orasje.ba/obrasci/",
+      "error": "HTTP 404 Not Found",
+      "institution": "Orašje",
+      "source": "src\\data\\verified-domains.ts:760",
+      "action": "removed failed forms_url field"
+    },
+    {
+      "url": "https://odzak.ba/obrasci/",
+      "error": "HTTP 404 Not Found",
+      "institution": "Odžak",
+      "source": "src\\data\\verified-domains.ts:771",
+      "action": "removed failed forms_url field"
+    },
+    {
+      "url": "https://tomislavgrad.ba/obrasci/",
+      "error": "HTTP 404 Not Found",
+      "institution": "Tomislavgrad",
+      "source": "src\\data\\verified-domains.ts:810",
+      "action": "removed failed forms_url field"
+    },
+    {
+      "url": "https://www.ljubuski.ba/zahtjevi-i-obrasci/",
+      "error": "HTTP 404 Not Found",
+      "institution": "Grad Ljubuški",
+      "source": "src\\data\\verified-domains.ts:885",
+      "action": "removed failed forms_url field"
+    },
+    {
+      "url": "https://ljubuski.ba/gradska-uprava/",
+      "error": "HTTP 404 Not Found",
+      "institution": "Grad Ljubuški",
+      "source": "src\\data\\verified-domains.ts:886",
+      "action": "removed failed e_government_link field"
+    },
+    {
+      "url": "https://www.opcina-posusje.ba/dokumenti/obrasci/",
+      "error": "HTTP 404 Not Found",
+      "institution": "Općina Posušje",
+      "source": "src\\data\\verified-domains.ts:909",
+      "action": "removed failed forms_url field"
+    },
+    {
+      "url": "https://www.banjaluka.rs.ba/gradska-uprava/e-uprava/",
+      "error": "HTTP 404 Not Found",
+      "institution": "Grad Banja Luka",
+      "source": "src\\data\\verified-domains.ts:926",
+      "action": "removed failed e_government_link field"
+    },
+    {
+      "url": "https://opstinains.net/usluge/obrasci/",
+      "error": "HTTP 404 Not Found",
+      "institution": "Istočno Novo Sarajevo",
+      "source": "src\\data\\verified-domains.ts:1055",
+      "action": "removed failed forms_url field"
+    },
+    {
+      "url": "https://pale.rs.ba/dokumenti-i-obrasci/",
+      "error": "HTTP 404 Not Found",
+      "institution": "Pale (RS)",
+      "source": "src\\data\\verified-domains.ts:1067",
+      "action": "removed failed forms_url field"
+    },
+    {
+      "url": "https://trnovo-rs.com/dokumenti/",
+      "error": "HTTP 404 Not Found",
+      "institution": "Trnovo (RS)",
+      "source": "src\\data\\verified-domains.ts:1079",
+      "action": "removed failed forms_url field"
+    },
+    {
+      "url": "https://opstinaisg.net/dokumenti/",
+      "error": "HTTP 404 Not Found",
+      "institution": "Istočni Stari Grad",
+      "source": "src\\data\\verified-domains.ts:1091",
+      "action": "removed failed forms_url field"
+    },
+    {
+      "url": "https://novogorazde.net/dokumenti/",
+      "error": "ENOTFOUND: getaddrinfo ENOTFOUND novogorazde.net",
+      "institution": "Novo Goražde",
+      "source": "src\\data\\verified-domains.ts:1155",
+      "action": "removed failed forms_url field"
+    },
+    {
+      "url": "https://www.zzozedo.ba/index.php/layout/class-layout/obrasci",
+      "error": "HTTP 404 Not Found",
+      "institution": "Brčko Distrikt BiH",
+      "source": "src\\data\\verified-domains.ts:1230",
+      "action": "removed failed forms_url field"
+    },
+    {
+      "url": "https://zzohnk.ba/obrasci/",
+      "error": "ENOTFOUND: getaddrinfo ENOTFOUND zzohnk.ba",
+      "institution": "Brčko Distrikt BiH",
+      "source": "src\\data\\verified-domains.ts:1263",
+      "action": "removed failed forms_url field"
+    },
+    {
+      "url": "https://zzousk.ba/obrasci/",
+      "error": "HTTP 404 Not Found",
+      "institution": "Brčko Distrikt BiH",
+      "source": "src\\data\\verified-domains.ts:1273",
+      "action": "removed failed forms_url field"
+    },
+    {
+      "url": "https://zzosbk.ba/obrasci/",
+      "error": "ENOTFOUND: getaddrinfo ENOTFOUND zzosbk.ba",
+      "institution": "Brčko Distrikt BiH",
+      "source": "src\\data\\verified-domains.ts:1283",
+      "action": "removed failed forms_url field"
+    },
+    {
+      "url": "https://zzopk.ba/obrasci/",
+      "error": "ENOTFOUND: getaddrinfo ENOTFOUND zzopk.ba",
+      "institution": "Brčko Distrikt BiH",
+      "source": "src\\data\\verified-domains.ts:1293",
+      "action": "removed failed forms_url field"
+    },
+    {
+      "url": "https://olovo.gov.ba/wp-content/uploads/2016/12/Zahtjev-za-izdavanje-uvjerenja-o-%C4%8Dinjenicama-o-kojima-se-vodi-slu%C5%BEbena-evidencija.pdf",
+      "error": "HTTP 404 Not Found",
+      "institution": "Olovo",
+      "source": "src\\data\\olovo-forms.ts:23",
+      "action": "removed document or link record with failed URL"
+    },
+    {
+      "url": "https://olovo.gov.ba/wp-content/uploads/2016/12/Zahtjev-za-izdavanje-uvjerenja-o-%C4%8Dinjenicama-o-kojima-se-ne-vodi-slu%C5%BEbena-evidencija.pdf",
+      "error": "HTTP 404 Not Found",
+      "institution": "Olovo",
+      "source": "src\\data\\olovo-forms.ts:30",
+      "action": "removed document or link record with failed URL"
+    },
+    {
+      "url": "https://olovo.gov.ba/wp-content/uploads/2016/12/Zahtjev-za-izdavanje-rje%C5%A1enja-o-utvr%C4%91ivanju-prava-vlasni%C5%A1tva.pdf",
+      "error": "HTTP 404 Not Found",
+      "institution": "Olovo",
+      "source": "src\\data\\olovo-forms.ts:51",
+      "action": "removed document or link record with failed URL"
+    },
+    {
+      "url": "https://olovo.gov.ba/wp-content/uploads/2016/12/Zahtjev-za-izdavanje-rje%C5%A1enja-o-izvedenom-stanju-objekta.pdf",
+      "error": "HTTP 404 Not Found",
+      "institution": "Olovo",
+      "source": "src\\data\\olovo-forms.ts:58",
+      "action": "removed document or link record with failed URL"
+    },
+    {
+      "url": "https://olovo.gov.ba/wp-content/uploads/2016/12/Zahtjev-za-izdavanje-rje%C5%A1enja-o-dodjeli-gradskog-gra%C4%91evinskog-zemlji%C5%A1ta.pdf",
+      "error": "HTTP 404 Not Found",
+      "institution": "Olovo",
+      "source": "src\\data\\olovo-forms.ts:65",
+      "action": "removed document or link record with failed URL"
+    },
+    {
+      "url": "https://olovo.gov.ba/wp-content/uploads/2016/12/Zahtjev-za-izdavanje-lokacijske-informacije.pdf",
+      "error": "HTTP 404 Not Found",
+      "institution": "Olovo",
+      "source": "src\\data\\olovo-forms.ts:72",
+      "action": "removed document or link record with failed URL"
+    },
+    {
+      "url": "https://olovo.gov.ba/wp-content/uploads/2016/12/Zahtjev-za-izdavanje-jednokratne-nov%C4%8Dane-pomo%C4%87i.pdf",
+      "error": "HTTP 404 Not Found",
+      "institution": "Olovo",
+      "source": "src\\data\\olovo-forms.ts:79",
+      "action": "removed document or link record with failed URL"
+    },
+    {
+      "url": "https://olovo.gov.ba/wp-content/uploads/2016/12/Zahtjev-za-izdavanje-gra%C4%91evinske-dozvole.pdf",
+      "error": "HTTP 404 Not Found",
+      "institution": "Olovo",
+      "source": "src\\data\\olovo-forms.ts:86",
+      "action": "removed document or link record with failed URL"
+    },
+    {
+      "url": "https://olovo.gov.ba/wp-content/uploads/2016/12/Zahtjev-za-izdavanje-ekolo%C5%A1ke-dozvole.pdf",
+      "error": "HTTP 404 Not Found",
+      "institution": "Olovo",
+      "source": "src\\data\\olovo-forms.ts:93",
+      "action": "removed document or link record with failed URL"
+    },
+    {
+      "url": "https://olovo.gov.ba/wp-content/uploads/2016/12/Zahtjev-za-izdavanje-dozvole-za-gradnju-za-objekte-privremenog-karaktera.pdf",
+      "error": "HTTP 404 Not Found",
+      "institution": "Olovo",
+      "source": "src\\data\\olovo-forms.ts:100",
+      "action": "removed document or link record with failed URL"
+    },
+    {
+      "url": "https://olovo.gov.ba/wp-content/uploads/2016/12/Zahtjev-za-naknadu-umjesto-pla%C4%87e-%C5%BEeni-majci-u-radnom-odnosu.pdf",
+      "error": "HTTP 404 Not Found",
+      "institution": "Olovo",
+      "source": "src\\data\\olovo-forms.ts:107",
+      "action": "removed document or link record with failed URL"
+    },
+    {
+      "url": "https://olovo.gov.ba/wp-content/uploads/2016/12/Zahtjev-za-naknadu-umjesto-pla%C4%87e-%C5%BEeni-majci-u-radnom-odnosu-za-blizance.pdf",
+      "error": "HTTP 404 Not Found",
+      "institution": "Olovo",
+      "source": "src\\data\\olovo-forms.ts:114",
+      "action": "removed document or link record with failed URL"
+    },
+    {
+      "url": "https://olovo.gov.ba/wp-content/uploads/2016/12/Zahtjev-za-nov%C4%8Danu-pomo%C4%87-%C5%BEeni-majci-koja-nije-u-radnom-odnosu.pdf",
+      "error": "HTTP 404 Not Found",
+      "institution": "Olovo",
+      "source": "src\\data\\olovo-forms.ts:121",
+      "action": "removed document or link record with failed URL"
+    },
+    {
+      "url": "https://olovo.gov.ba/wp-content/uploads/2016/12/Zahtjev-za-nov%C4%8Danu-pomo%C4%87-%C5%BEeni-majci-koja-nije-u-radnom-odnosu-za-blizance.pdf",
+      "error": "HTTP 404 Not Found",
+      "institution": "Olovo",
+      "source": "src\\data\\olovo-forms.ts:128",
+      "action": "removed document or link record with failed URL"
+    },
+    {
+      "url": "https://olovo.gov.ba/wp-content/uploads/2016/12/Zahtjev-za-ostvarivanje-prava-na-dje%C4%8Diji-dodatak.pdf",
+      "error": "HTTP 404 Not Found",
+      "institution": "Olovo",
+      "source": "src\\data\\olovo-forms.ts:135",
+      "action": "removed document or link record with failed URL"
+    },
+    {
+      "url": "https://olovo.gov.ba/wp-content/uploads/2016/12/Zahtjev-za-ostvarivanje-prava-na-pomo%C4%87-u-prehrani-djeteta-do-%C5%A1est-mjeseci.pdf",
+      "error": "HTTP 404 Not Found",
+      "institution": "Olovo",
+      "source": "src\\data\\olovo-forms.ts:142",
+      "action": "removed document or link record with failed URL"
+    },
+    {
+      "url": "https://olovo.gov.ba/wp-content/uploads/2016/12/Zahtjev-za-ostvarivanje-prava-na-stalnu-nov%C4%8Danu-pomo%C4%87.pdf",
+      "error": "HTTP 404 Not Found",
+      "institution": "Olovo",
+      "source": "src\\data\\olovo-forms.ts:149",
+      "action": "removed document or link record with failed URL"
+    },
+    {
+      "url": "https://olovo.gov.ba/wp-content/uploads/2016/12/Zahtjev-za-ostvarivanje-prava-na-dodatak-za-njegu-i-pomo%C4%87-od-strane-drugog-lica.pdf",
+      "error": "HTTP 404 Not Found",
+      "institution": "Olovo",
+      "source": "src\\data\\olovo-forms.ts:156",
+      "action": "removed document or link record with failed URL"
+    },
+    {
+      "url": "https://olovo.gov.ba/wp-content/uploads/2016/12/Zahtjev-za-pokretanje-postupka-eksproprijacije.pdf",
+      "error": "HTTP 404 Not Found",
+      "institution": "Olovo",
+      "source": "src\\data\\olovo-forms.ts:167",
+      "action": "removed document or link record with failed URL"
+    },
+    {
+      "url": "https://olovo.gov.ba/wp-content/uploads/2016/12/Zahtjev-za-pokretanje-postupka-deeksproprijacije.pdf",
+      "error": "HTTP 404 Not Found",
+      "institution": "Olovo",
+      "source": "src\\data\\olovo-forms.ts:174",
+      "action": "removed document or link record with failed URL"
+    },
+    {
+      "url": "https://olovo.gov.ba/wp-content/uploads/2016/12/Zahtjev-za-pokretanje-postupka-uzurpacije.pdf",
+      "error": "HTTP 404 Not Found",
+      "institution": "Olovo",
+      "source": "src\\data\\olovo-forms.ts:181",
+      "action": "removed document or link record with failed URL"
+    },
+    {
+      "url": "https://olovo.gov.ba/wp-content/uploads/2016/12/Zahtjev-za-pokretanje-postupka-arondacije.pdf",
+      "error": "HTTP 404 Not Found",
+      "institution": "Olovo",
+      "source": "src\\data\\olovo-forms.ts:188",
+      "action": "removed document or link record with failed URL"
+    },
+    {
+      "url": "https://olovo.gov.ba/wp-content/uploads/2016/12/Zahtjev-za-pokretanje-postupka-komasacije.pdf",
+      "error": "HTTP 404 Not Found",
+      "institution": "Olovo",
+      "source": "src\\data\\olovo-forms.ts:195",
+      "action": "removed document or link record with failed URL"
+    },
+    {
+      "url": "https://olovo.gov.ba/wp-content/uploads/2016/12/Zahtjev-za-obnovu-premjera.pdf",
+      "error": "HTTP 404 Not Found",
+      "institution": "Olovo",
+      "source": "src\\data\\olovo-forms.ts:202",
+      "action": "removed document or link record with failed URL"
+    },
+    {
+      "url": "https://olovo.gov.ba/wp-content/uploads/2016/12/Zahtjev-za-odr%C5%BEavanje-premjera.pdf",
+      "error": "HTTP 404 Not Found",
+      "institution": "Olovo",
+      "source": "src\\data\\olovo-forms.ts:209",
+      "action": "removed document or link record with failed URL"
+    },
+    {
+      "url": "https://olovo.gov.ba/wp-content/uploads/2016/12/Zahtjev-za-kori%C5%A1tenje-javne-povr%C5%A1ine.pdf",
+      "error": "HTTP 404 Not Found",
+      "institution": "Olovo",
+      "source": "src\\data\\olovo-forms.ts:223",
+      "action": "removed document or link record with failed URL"
+    },
+    {
+      "url": "https://olovo.gov.ba/wp-content/uploads/2016/12/Zahtjev-za-izdavanje-prepisa-katastarskog-plana.pdf",
+      "error": "HTTP 404 Not Found",
+      "institution": "Olovo",
+      "source": "src\\data\\olovo-forms.ts:230",
+      "action": "removed document or link record with failed URL"
+    },
+    {
+      "url": "https://olovo.gov.ba/wp-content/uploads/2016/12/Zahtjev-za-izdavanje-kopije-katastarskog-plana.pdf",
+      "error": "HTTP 404 Not Found",
+      "institution": "Olovo",
+      "source": "src\\data\\olovo-forms.ts:237",
+      "action": "removed document or link record with failed URL"
+    },
+    {
+      "url": "https://olovo.gov.ba/wp-content/uploads/2016/12/Zahtjev-za-izdavanje-posjedovnog-lista.pdf",
+      "error": "HTTP 404 Not Found",
+      "institution": "Olovo",
+      "source": "src\\data\\olovo-forms.ts:244",
+      "action": "removed document or link record with failed URL"
+    },
+    {
+      "url": "https://olovo.gov.ba/wp-content/uploads/2016/12/Zahtjev-za-identifikaciju-parcele.pdf",
+      "error": "HTTP 404 Not Found",
+      "institution": "Olovo",
+      "source": "src\\data\\olovo-forms.ts:251",
+      "action": "removed document or link record with failed URL"
+    },
+    {
+      "url": "https://olovo.gov.ba/wp-content/uploads/2016/12/Zahtjev-za-cijepanje-parcele.pdf",
+      "error": "HTTP 404 Not Found",
+      "institution": "Olovo",
+      "source": "src\\data\\olovo-forms.ts:258",
+      "action": "removed document or link record with failed URL"
+    },
+    {
+      "url": "https://olovo.gov.ba/wp-content/uploads/2016/12/Zahtjev-za-spajanje-parcele.pdf",
+      "error": "HTTP 404 Not Found",
+      "institution": "Olovo",
+      "source": "src\\data\\olovo-forms.ts:265",
+      "action": "removed document or link record with failed URL"
+    },
+    {
+      "url": "https://olovo.gov.ba/wp-content/uploads/2016/12/Zahtjev-za-promjenu-kulture.pdf",
+      "error": "HTTP 404 Not Found",
+      "institution": "Olovo",
+      "source": "src\\data\\olovo-forms.ts:272",
+      "action": "removed document or link record with failed URL"
+    },
+    {
+      "url": "https://olovo.gov.ba/wp-content/uploads/2016/12/Zahtjev-za-upis-objekta.pdf",
+      "error": "HTTP 404 Not Found",
+      "institution": "Olovo",
+      "source": "src\\data\\olovo-forms.ts:279",
+      "action": "removed document or link record with failed URL"
+    },
+    {
+      "url": "https://olovo.gov.ba/wp-content/uploads/2016/12/Zahtjev-za-provo%C4%91enje-promjena-u-katastru.pdf",
+      "error": "HTTP 404 Not Found",
+      "institution": "Olovo",
+      "source": "src\\data\\olovo-forms.ts:286",
+      "action": "removed document or link record with failed URL"
+    },
+    {
+      "url": "https://olovo.gov.ba/wp-content/uploads/2016/12/Zahtjev-za-uvid-u-katastarsku-dokumentaciju.pdf",
+      "error": "HTTP 404 Not Found",
+      "institution": "Olovo",
+      "source": "src\\data\\olovo-forms.ts:293",
+      "action": "removed document or link record with failed URL"
+    },
+    {
+      "url": "https://olovo.gov.ba/wp-content/uploads/2016/12/Zahtjev-za-izdavanje-prepisa-posjedovnog-lista.pdf",
+      "error": "HTTP 404 Not Found",
+      "institution": "Olovo",
+      "source": "src\\data\\olovo-forms.ts:300",
+      "action": "removed document or link record with failed URL"
+    },
+    {
+      "url": "https://olovo.gov.ba/wp-content/uploads/2016/12/Zahtjev-za-ostvarivanje-prava-na-ortopedska-i-druga-pomagala.pdf",
+      "error": "HTTP 404 Not Found",
+      "institution": "Olovo",
+      "source": "src\\data\\olovo-forms.ts:455",
+      "action": "removed document or link record with failed URL"
+    },
+    {
+      "url": "https://olovo.gov.ba/wp-content/uploads/2016/12/Zahtjev-za-ostvarivanje-prava-na-osposobljavanje-za-%C5%BEivot-i-rad.pdf",
+      "error": "HTTP 404 Not Found",
+      "institution": "Olovo",
+      "source": "src\\data\\olovo-forms.ts:462",
+      "action": "removed document or link record with failed URL"
+    },
+    {
+      "url": "https://olovo.gov.ba/wp-content/uploads/2016/12/Zahtjev-za-ostvarivanje-prava-na-smje%C5%A1taj-u-drugu-porodicu.pdf",
+      "error": "HTTP 404 Not Found",
+      "institution": "Olovo",
+      "source": "src\\data\\olovo-forms.ts:469",
+      "action": "removed document or link record with failed URL"
+    },
+    {
+      "url": "https://olovo.gov.ba/wp-content/uploads/2016/12/Zahtjev-za-ostvarivanje-prava-na-smje%C5%A1taj-u-ustanovu-socijalne-za%C5%A1tite.pdf",
+      "error": "HTTP 404 Not Found",
+      "institution": "Olovo",
+      "source": "src\\data\\olovo-forms.ts:476",
+      "action": "removed document or link record with failed URL"
+    },
+    {
+      "url": "https://olovo.gov.ba/wp-content/uploads/2016/12/Zahtjev-za-ostvarivanje-prava-na-pomo%C4%87-i-njegu-u-ku%C4%87i.pdf",
+      "error": "HTTP 404 Not Found",
+      "institution": "Olovo",
+      "source": "src\\data\\olovo-forms.ts:483",
+      "action": "removed document or link record with failed URL"
+    },
+    {
+      "url": "https://olovo.gov.ba/wp-content/uploads/2016/12/Zahtjev-za-ostvarivanje-prava-na-jednokratnu-nov%C4%8Danu-pomo%C4%87.pdf",
+      "error": "HTTP 404 Not Found",
+      "institution": "Olovo",
+      "source": "src\\data\\olovo-forms.ts:490",
+      "action": "removed document or link record with failed URL"
+    },
+    {
+      "url": "https://olovo.gov.ba/wp-content/uploads/2016/12/Zahtjev-za-ostvarivanje-prava-na-subvenciju-tro%C5%A1kova-boravka-djece-u-pred%C5%A1kolskim-ustanovama.pdf",
+      "error": "HTTP 404 Not Found",
+      "institution": "Olovo",
+      "source": "src\\data\\olovo-forms.ts:497",
+      "action": "removed document or link record with failed URL"
+    },
+    {
+      "url": "https://olovo.gov.ba/wp-content/uploads/2016/12/Zahtjev-za-ostvarivanje-prava-na-zdravstvenu-za%C5%A1titu.pdf",
+      "error": "HTTP 404 Not Found",
+      "institution": "Olovo",
+      "source": "src\\data\\olovo-forms.ts:504",
+      "action": "removed document or link record with failed URL"
+    },
+    {
+      "url": "https://olovo.gov.ba/wp-content/uploads/2016/12/Zahtjev-za-ostvarivanje-prava-na-pogrebne-tro%C5%A1kove.pdf",
+      "error": "HTTP 404 Not Found",
+      "institution": "Olovo",
+      "source": "src\\data\\olovo-forms.ts:511",
+      "action": "removed document or link record with failed URL"
+    },
+    {
+      "url": "https://olovo.gov.ba/wp-content/uploads/2016/12/Zahtjev-za-ostvarivanje-prava-na-privremeni-smje%C5%A1taj-u-prihvatili%C5%A1te.pdf",
+      "error": "HTTP 404 Not Found",
+      "institution": "Olovo",
+      "source": "src\\data\\olovo-forms.ts:518",
+      "action": "removed document or link record with failed URL"
+    },
+    {
+      "url": "https://olovo.gov.ba/wp-content/uploads/2016/12/Zahtjev-za-ostvarivanje-prava-na-besplatnu-pravnu-pomo%C4%87.pdf",
+      "error": "HTTP 404 Not Found",
+      "institution": "Olovo",
+      "source": "src\\data\\olovo-forms.ts:525",
+      "action": "removed document or link record with failed URL"
+    },
+    {
+      "url": "https://sanskimost.gov.ba/javni-poziv-za-dodjelu-poticajnih-sredstava-za-podrsku-biznis-idejama-mladih-for-2026-09-09-2026/",
+      "error": "HTTP 404 Not Found",
+      "institution": "Općina Sanski Most",
+      "source": "src\\data\\sanski-most-forms.ts:15",
+      "action": "removed document or link record with failed URL"
+    },
+    {
+      "url": "https://sanskimost.gov.ba/wp-content/uploads/prijavni-obrazac.pdf",
+      "error": "HTTP 404 Not Found",
+      "institution": "Općina Sanski Most",
+      "source": "src\\data\\sanski-most-forms.ts:21",
+      "action": "removed document or link record with failed URL"
+    },
+    {
+      "url": "https://sanskimost.gov.ba/wp-content/uploads/uputstvo.pdf",
+      "error": "HTTP 404 Not Found",
+      "institution": "Općina Sanski Most",
+      "source": "src\\data\\sanski-most-forms.ts:27",
+      "action": "removed document or link record with failed URL"
+    },
+    {
+      "url": "https://sanskimost.gov.ba/wp-content/uploads/biznis-plan.docx",
+      "error": "HTTP 404 Not Found",
+      "institution": "Općina Sanski Most",
+      "source": "src\\data\\sanski-most-forms.ts:33",
+      "action": "removed document or link record with failed URL"
+    },
+    {
+      "url": "https://opcinadobojistok.ba/wp-content/uploads/2018/12/osmi-mart-produ%C5%BEeni-rad.doc",
+      "error": "HTTP 404 Not Found",
+      "institution": "Updated Government",
+      "source": "src\\data\\updated-government-forms.ts:59",
+      "action": "removed failed URL from URL list"
+    },
+    {
+      "url": "https://opcinadobojistok.ba/wp-content/uploads/2018/12/ovjera-cjenovnika-i-normativa-utro%C5%A1ka.doc",
+      "error": "HTTP 404 Not Found",
+      "institution": "Updated Government",
+      "source": "src\\data\\updated-government-forms.ts:60",
+      "action": "removed failed URL from URL list"
+    },
+    {
+      "url": "https://opcinadobojistok.ba/wp-content/uploads/2018/12/petv.-%C5%A1umsk.-zemlj..doc",
+      "error": "HTTP 404 Not Found",
+      "institution": "Updated Government",
+      "source": "src\\data\\updated-government-forms.ts:62",
+      "action": "removed failed URL from URL list"
+    },
+    {
+      "url": "https://opcinadobojistok.ba/wp-content/uploads/2018/12/potvrda-za-statisti%C4%8Dki-zavod-id-i-statisti%C4%8Dki-broj.doc",
+      "error": "HTTP 404 Not Found",
+      "institution": "Updated Government",
+      "source": "src\\data\\updated-government-forms.ts:65",
+      "action": "removed failed URL from URL list"
+    },
+    {
+      "url": "https://opcinadobojistok.ba/wp-content/uploads/2018/12/produ%C5%BEeni-rad.doc",
+      "error": "HTTP 404 Not Found",
+      "institution": "Updated Government",
+      "source": "src\\data\\updated-government-forms.ts:71",
+      "action": "removed failed URL from URL list"
+    },
+    {
+      "url": "https://opcinadobojistok.ba/wp-content/uploads/2018/12/p%C5%A1enica-i-ra%C5%BE-federalni.doc",
+      "error": "HTTP 404 Not Found",
+      "institution": "Updated Government",
+      "source": "src\\data\\updated-government-forms.ts:72",
+      "action": "removed failed URL from URL list"
+    },
+    {
+      "url": "https://opcinadobojistok.ba/wp-content/uploads/2018/12/sje%C4%8Da-drveta.doc",
+      "error": "HTTP 404 Not Found",
+      "institution": "Updated Government",
+      "source": "src\\data\\updated-government-forms.ts:74",
+      "action": "removed failed URL from URL list"
+    },
+    {
+      "url": "https://opcinadobojistok.ba/wp-content/uploads/2018/12/taksi-stajali%C5%A1te.doc",
+      "error": "HTTP 404 Not Found",
+      "institution": "Updated Government",
+      "source": "src\\data\\updated-government-forms.ts:75",
+      "action": "removed failed URL from URL list"
+    },
+    {
+      "url": "https://opcinadobojistok.ba/wp-content/uploads/2018/12/uvjerenje-da-se-bavi-poljoprivrednom-djelatno%C5%A1%C4%87u.doc",
+      "error": "HTTP 404 Not Found",
+      "institution": "Updated Government",
+      "source": "src\\data\\updated-government-forms.ts:80",
+      "action": "removed failed URL from URL list"
+    },
+    {
+      "url": "https://opcinadobojistok.ba/wp-content/uploads/2018/12/zamjena-ku%C4%87na-radinost.doc",
+      "error": "HTTP 404 Not Found",
+      "institution": "Updated Government",
+      "source": "src\\data\\updated-government-forms.ts:86",
+      "action": "removed failed URL from URL list"
+    },
+    {
+      "url": "https://opcinadobojistok.ba/wp-content/uploads/2018/12/zamjena-rje%C5%A1enja-trgovina.doc",
+      "error": "HTTP 404 Not Found",
+      "institution": "Updated Government",
+      "source": "src\\data\\updated-government-forms.ts:89",
+      "action": "removed failed URL from URL list"
+    },
+    {
+      "url": "https://opcinadobojistok.ba/wp-content/uploads/2018/12/zamjena-rje%C5%A1enja-ugostiteljstvo.doc",
+      "error": "HTTP 404 Not Found",
+      "institution": "Updated Government",
+      "source": "src\\data\\updated-government-forms.ts:90",
+      "action": "removed failed URL from URL list"
+    },
+    {
+      "url": "https://opcinadobojistok.ba/wp-content/uploads/2018/12/ku%C4%87na-radinost.doc",
+      "error": "HTTP 404 Not Found",
+      "institution": "Updated Government",
+      "source": "src\\data\\updated-government-forms.ts:97",
+      "action": "removed failed URL from URL list"
+    },
+    {
+      "url": "https://laktasi.org/",
+      "error": "HTTP 403 Forbidden",
+      "institution": "Laktasi",
+      "source": "src\\data\\website-verification.ts:462",
+      "action": "removed failed url field"
+    },
+    {
+      "url": "https://www.apif.net/",
+      "error": "ERR_SSL_DH_KEY_TOO_SMALL: F8150000:error:0A00018A:SSL routines:tls_process_ske_dhe:dh key too small:openssl\\ssl\\statem\\statem_clnt.c:2354:\n",
+      "institution": "APIF",
+      "source": "src\\lib\\institutions-database.ts:214",
+      "action": "removed failed website field"
+    }
+  ],
+  "additionalFreshFailuresRemoved": [
+    {
+      "url": "https://sipovo.org/",
+      "error": "ENOTFOUND: getaddrinfo ENOTFOUND sipovo.org",
+      "institution": "?ipovo",
+      "sources": [
+        "src\\data\\uploaded-institutions.ts"
+      ],
+      "action": "Removed failed website URL, corrected the institution name, and marked online service status as counter."
+    },
+    {
+      "url": "https://vogosca.ba/",
+      "error": "Timeout",
+      "institution": "Vogo??a",
+      "sources": [
+        "src\\data\\municipalities-database.ts",
+        "src\\data\\sarajevo-region-forms.ts",
+        "src\\data\\uploaded-institutions.ts",
+        "src\\data\\website-verification.ts"
+      ],
+      "action": "Removed the timed-out website URL from all records and changed the municipality to counter/unverified."
+    },
+    {
+      "url": "https://rogatica.ba/",
+      "error": "Timeout",
+      "institution": "Rogatica",
+      "sources": [
+        "src\\data\\sarajevo-region-forms.ts",
+        "src\\data\\uploaded-institutions.ts",
+        "src\\data\\website-verification.ts"
+      ],
+      "action": "Removed the timed-out website URL from all records and changed the municipality to counter/unverified."
+    },
+    {
+      "url": "https://rogatica.ba/dokumenti/obrasci/",
+      "error": "Timeout",
+      "institution": "Rogatica",
+      "sources": [
+        "src\\data\\sarajevo-region-forms.ts",
+        "src\\data\\uploaded-institutions.ts",
+        "src\\data\\verified-domains.ts"
+      ],
+      "action": "Removed the timed-out forms portal and its form entries."
+    },
+    {
+      "url": "https://srbac-rs.com/",
+      "error": "Timeout",
+      "institution": "Srbac",
+      "sources": [
+        "src\\data\\uploaded-institutions.ts"
+      ],
+      "action": "Removed the timed-out official website URL; retained the working eCitizen forms portal."
+    },
+    {
+      "url": "https://archive.org/details/js-3100-prijava-promjena-odjava-osiguranja",
+      "error": "Timeout",
+      "institution": "Premium Js",
+      "sources": [
+        "src\\data\\premium-js-forms.ts"
+      ],
+      "action": "Removed the timed-out archive.org link; the generated form remains available and the original-source CTA is hidden when no verified URL exists."
+    },
+    {
+      "url": "https://archive.org/details/js-3110-dobrovoljno-penzijsko-i-zdravstveno-osiguranje_202610",
+      "error": "Timeout",
+      "institution": "Premium Js",
+      "sources": [
+        "src\\data\\premium-js-forms.ts"
+      ],
+      "action": "Removed the timed-out archive.org link; the generated form remains available and the original-source CTA is hidden when no verified URL exists."
+    },
+    {
+      "url": "https://archive.org/details/js-3120-prijava-odjava-lica-osiguranih-u-odredjenim-okolnostima",
+      "error": "Timeout",
+      "institution": "Premium Js",
+      "sources": [
+        "src\\data\\premium-js-forms.ts"
+      ],
+      "action": "Removed the timed-out archive.org link; the generated form remains available and the original-source CTA is hidden when no verified URL exists."
+    },
+    {
+      "url": "https://archive.org/details/pd-3100-prijava-odjava-uplate-doprinosa-rs-bi-h",
+      "error": "Timeout",
+      "institution": "Premium Js",
+      "sources": [
+        "src\\data\\premium-js-forms.ts"
+      ],
+      "action": "Removed the timed-out archive.org link; the generated form remains available and the original-source CTA is hidden when no verified URL exists."
+    },
+    {
+      "url": "https://archive.org/details/pd-3110-prijava-promjena-odjava-individualne-uplate-doprinosa-rs-bi-h",
+      "error": "Timeout",
+      "institution": "Premium Js",
+      "sources": [
+        "src\\data\\premium-js-forms.ts"
+      ],
+      "action": "Removed the timed-out archive.org link; the generated form remains available and the original-source CTA is hidden when no verified URL exists."
+    },
+    {
+      "url": "https://archive.org/details/pd-3120-prijava-odjava-uplate-doprinosa-u-odredenim-okolnostima-rs-bi-h",
+      "error": "Timeout",
+      "institution": "Premium Js",
+      "sources": [
+        "src\\data\\premium-js-forms.ts"
+      ],
+      "action": "Removed the timed-out archive.org link; the generated form remains available and the original-source CTA is hidden when no verified URL exists."
+    },
+    {
+      "url": "https://archive.org/details/mip-1023-distrikt-brcko",
+      "error": "Timeout",
+      "institution": "Premium Js",
+      "sources": [
+        "src\\data\\premium-js-forms.ts"
+      ],
+      "action": "Removed the timed-out archive.org link; the generated form remains available and the original-source CTA is hidden when no verified URL exists."
+    },
+    {
+      "url": "https://hadzici.ba/e-uprava",
+      "error": "HTTP 500 Internal Server Error",
+      "institution": "Had?i?i",
+      "sources": [
+        "src\\data\\municipalities-database.ts",
+        "src\\data\\sarajevo-region-forms.ts",
+        "src\\data\\uploaded-institutions.ts",
+        "src\\data\\verified-domains.ts"
+      ],
+      "action": "Removed the URL flagged in the refreshed audit; retained other verified links and metadata where available."
+    },
+    {
+      "url": "https://impakt.ba/gdje-radimo/opcina-celic/javni-poziv-za-ucesce-u-impakt-inkubatoru-poslovnih-ideja-celic-2/",
+      "error": "Timeout",
+      "institution": "?eli?",
+      "sources": [
+        "src\\data\\municipalities-database.ts"
+      ],
+      "action": "Removed the URL flagged in the refreshed audit; retained other verified links and metadata where available."
+    },
+    {
+      "url": "https://www.gradbijeljina.org/",
+      "error": "Timeout",
+      "institution": "Grad Bijeljina",
+      "sources": [
+        "src\\data\\municipalities-database.ts",
+        "src\\data\\updated-government-forms.ts",
+        "src\\data\\uploaded-institutions.ts",
+        "src\\data\\website-verification.ts"
+      ],
+      "action": "Removed the URL flagged in the refreshed audit; retained other verified links and metadata where available."
+    },
+    {
+      "url": "https://www.gradbijeljina.org/sr/1647.izvod-iz-maticne-knjige-rodenih.html",
+      "error": "Timeout",
+      "institution": "Grad Bijeljina",
+      "sources": [
+        "src\\data\\municipalities-database.ts",
+        "src\\data\\updated-government-forms.ts",
+        "src\\data\\uploaded-institutions.ts"
+      ],
+      "action": "Removed the URL flagged in the refreshed audit; retained other verified links and metadata where available."
+    },
+    {
+      "url": "https://www.gradbijeljina.org/sr/1651.pracenje-statusa-predmeta.html",
+      "error": "Timeout",
+      "institution": "Grad Bijeljina",
+      "sources": [
+        "src\\data\\updated-government-forms.ts"
+      ],
+      "action": "Removed the URL flagged in the refreshed audit; retained other verified links and metadata where available."
+    },
+    {
+      "url": "https://www.gradbijeljina.org/sr/1563.ekoloske-dozvole.html",
+      "error": "Timeout",
+      "institution": "Grad Bijeljina",
+      "sources": [
+        "src\\data\\updated-government-forms.ts"
+      ],
+      "action": "Removed the URL flagged in the refreshed audit; retained other verified links and metadata where available."
+    },
+    {
+      "url": "https://www.zzohbz.ba/dokumenti-3/tiskanice-zahtjevi-i-izjave/",
+      "error": "HTTP 503 Service Unavailable",
+      "institution": "Zavod zdravstvenog osiguranja K10",
+      "sources": [
+        "src\\data\\uploaded-institutions.ts"
+      ],
+      "action": "Removed the URL flagged in the refreshed audit; retained the verified official website."
+    }
+  ],
+  "latestPostCleanupAudit": {
+    "generatedAt": "2026-11-05T19:08:46.204Z",
+    "filesScanned": 35,
+    "uniqueUrls": 968,
+    "validUrls": 968,
+    "invalidUrls": 0,
+    "malformedUrls": 0,
+    "syntaxErrors": 0,
+    "duplicateUrlCount": 187,
+    "duplicateUrlWithinFileCount": 79,
+    "potentialDuplicateRecords": 4
+  }
+}

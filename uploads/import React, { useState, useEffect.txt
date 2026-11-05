@@ -1,0 +1,381 @@
+import React, { useState, useEffect } from 'react';
+import { supabase } from '@/integrations/supabase/client';
+import { 
+  Building2, 
+  Stamp, 
+  SearchCheck, 
+  Receipt, 
+  Gift, 
+  Download, 
+  Share2, 
+  Mail, 
+  CheckCircle2, 
+  Sparkles, 
+  FileCheck2,
+  Globe2,
+  ArrowRight,
+  Printer
+} from 'lucide-react';
+
+interface Template {
+  id: string;
+  slug: string;
+  title_bs: string;
+  title_sr: string;
+  title_hr: string;
+  description_bs: string;
+  icon_name: string;
+  form_fields: Array<{ id: string; label: string; type: string; required: boolean }>;
+  template_text: any;
+}
+
+export const GeneratorPage = () => {
+  const [templates, setTemplates] = useState<Template[]>([]);
+  const [selectedTemplate, setSelectedTemplate] = useState<Template | null>(null);
+  const [formData, setFormData] = useState<Record<string, string>>({});
+  const [language, setLanguage] = useState<'bs' | 'sr_cyr' | 'hr'>('bs');
+  const [generatedText, setGeneratedText] = useState<string>('');
+  const [emailTo, setEmailTo] = useState<string>('');
+  const [showEmailInput, setShowEmailInput] = useState<boolean>(false);
+
+  useEffect(() => {
+    fetchTemplates();
+  }, []);
+
+  const fetchTemplates = async () => {
+    const { data, error } = await supabase
+      .from('text_document_templates')
+      .select('*')
+      .order('created_at', { ascending: true });
+
+    if (data && data.length > 0) {
+      setTemplates(data);
+      setSelectedTemplate(data[0]);
+    }
+  };
+
+  const handleInputChange = (fieldId: string, value: string) => {
+    setFormData((prev) => ({ ...prev, [fieldId]: value }));
+  };
+
+  const generateDocument = () => {
+    if (!selectedTemplate) return;
+    const templateObj = selectedTemplate.template_text[language] || selectedTemplate.template_text['bs'];
+    let text = `${templateObj.title}\n\n${templateObj.legal_basis}\n\n${templateObj.body}`;
+
+    Object.keys(formData).forEach((key) => {
+      const regex = new RegExp(`{{${key}}}`, 'g');
+      text = text.replace(regex, formData[key] || `[${key}]`);
+    });
+
+    setGeneratedText(text);
+  };
+
+  // Moderni IT/Fluid vizuelni simbola sa gradijentima i sjenkama za svaku karticu
+  const renderDocumentSymbol = (slug: string) => {
+    switch (slug) {
+      case 'ugovor-o-zakupu':
+        return (
+          <div className="w-16 h-16 rounded-2xl bg-gradient-to-tr from-blue-600 via-indigo-500 to-cyan-400 p-0.5 shadow-lg shadow-blue-500/20 group-hover:scale-105 transition-transform duration-300">
+            <div className="w-full h-full bg-slate-900 rounded-[14px] flex items-center justify-center">
+              <Building2 className="w-8 h-8 text-cyan-300 drop-shadow-[0_0_8px_rgba(34,211,238,0.5)]" />
+            </div>
+          </div>
+        );
+      case 'opsta-punomoc':
+        return (
+          <div className="w-16 h-16 rounded-2xl bg-gradient-to-tr from-amber-500 via-orange-500 to-yellow-300 p-0.5 shadow-lg shadow-amber-500/20 group-hover:scale-105 transition-transform duration-300">
+            <div className="w-full h-full bg-slate-900 rounded-[14px] flex items-center justify-center">
+              <Stamp className="w-8 h-8 text-amber-300 drop-shadow-[0_0_8px_rgba(252,211,77,0.5)]" />
+            </div>
+          </div>
+        );
+      case 'zahtjev-pristup-informacijama':
+        return (
+          <div className="w-16 h-16 rounded-2xl bg-gradient-to-tr from-emerald-500 via-teal-500 to-cyan-300 p-0.5 shadow-lg shadow-emerald-500/20 group-hover:scale-105 transition-transform duration-300">
+            <div className="w-full h-full bg-slate-900 rounded-[14px] flex items-center justify-center">
+              <SearchCheck className="w-8 h-8 text-emerald-300 drop-shadow-[0_0_8px_rgba(110,231,183,0.5)]" />
+            </div>
+          </div>
+        );
+      case 'faktura-racun':
+        return (
+          <div className="w-16 h-16 rounded-2xl bg-gradient-to-tr from-purple-600 via-violet-500 to-pink-400 p-0.5 shadow-lg shadow-purple-500/20 group-hover:scale-105 transition-transform duration-300">
+            <div className="w-full h-full bg-slate-900 rounded-[14px] flex items-center justify-center">
+              <Receipt className="w-8 h-8 text-pink-300 drop-shadow-[0_0_8px_rgba(244,114,182,0.5)]" />
+            </div>
+          </div>
+        );
+      case 'ugovor-o-poklonu':
+        return (
+          <div className="w-16 h-16 rounded-2xl bg-gradient-to-tr from-rose-500 via-pink-500 to-red-400 p-0.5 shadow-lg shadow-rose-500/20 group-hover:scale-105 transition-transform duration-300">
+            <div className="w-full h-full bg-slate-900 rounded-[14px] flex items-center justify-center">
+              <Gift className="w-8 h-8 text-rose-300 drop-shadow-[0_0_8px_rgba(253,164,175,0.5)]" />
+            </div>
+          </div>
+        );
+      default:
+        return (
+          <div className="w-16 h-16 rounded-2xl bg-gradient-to-tr from-gray-600 to-gray-400 p-0.5">
+            <div className="w-full h-full bg-slate-900 rounded-[14px] flex items-center justify-center">
+              <FileCheck2 className="w-8 h-8 text-gray-300" />
+            </div>
+          </div>
+        );
+    }
+  };
+
+  return (
+    <div className="min-h-screen bg-slate-950 text-slate-100 font-sans flex flex-col justify-between selection:bg-cyan-500 selection:text-slate-950">
+      <div>
+        {/* TOP HEADER */}
+        <header className="border-b border-slate-800 bg-slate-900/80 backdrop-blur-md sticky top-0 z-50 px-6 py-4 flex items-center justify-between">
+          <div className="flex items-center gap-3">
+            <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-cyan-500 to-blue-600 flex items-center justify-center shadow-md shadow-cyan-500/20">
+              <Sparkles className="w-5 h-5 text-slate-950 font-bold" />
+            </div>
+            <div>
+              <span className="font-black text-xl tracking-tight bg-gradient-to-r from-white via-slate-200 to-cyan-400 bg-clip-text text-transparent">
+                BH PAPIRFINDER
+              </span>
+              <span className="ml-2 text-xs px-2 py-0.5 rounded-full bg-cyan-500/10 text-cyan-400 border border-cyan-500/20 font-semibold uppercase tracking-wider">
+                Generator
+              </span>
+            </div>
+          </div>
+          <nav className="hidden md:flex items-center gap-6 text-sm font-medium text-slate-300">
+            <a href="/" className="hover:text-cyan-400 transition">Početna</a>
+            <a href="#generator-form" className="text-cyan-400 font-semibold">Generator Dokumenata</a>
+            <a href="/institucije" className="hover:text-cyan-400 transition">Institucije</a>
+          </nav>
+        </header>
+
+        {/* HERO SECTION */}
+        <section className="relative overflow-hidden pt-20 pb-16 px-6 text-center border-b border-slate-800/80">
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[300px] bg-gradient-to-tr from-cyan-500/20 to-blue-600/10 blur-[120px] rounded-full pointer-events-none" />
+          
+          <div className="max-w-4xl mx-auto relative z-10">
+            <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-slate-900 border border-slate-800 text-xs font-medium text-cyan-400 mb-6">
+              <Sparkles className="w-3.5 h-3.5" />
+              <span>Pravno usklađeni šabloni (ZOO FBiH / RS)</span>
+            </div>
+            <h1 className="text-4xl sm:text-5xl md:text-6xl font-black tracking-tight mb-6 leading-tight">
+              Instant pravni dokumenti <br />
+              <span className="bg-gradient-to-r from-cyan-400 via-blue-400 to-indigo-400 bg-clip-text text-transparent">
+                bez pravnih grešaka i čekanja.
+              </span>
+            </h1>
+            <p className="text-lg text-slate-400 max-w-2xl mx-auto mb-10 leading-relaxed">
+              Unesite podatke, izaberite jezik i pismo, te preuzmite terminološki tačan i spreman dokument za notarizaciju, opštinu ili poslovanje.
+            </p>
+            <div className="flex flex-wrap items-center justify-center gap-4">
+              <a
+                href="#carousel-selection"
+                className="px-8 py-4 rounded-xl bg-gradient-to-r from-cyan-500 to-blue-600 text-slate-950 font-bold hover:brightness-110 transition shadow-lg shadow-cyan-500/25 flex items-center gap-2"
+              >
+                <span>Generiši dokument odmah</span>
+                <ArrowRight className="w-5 h-5" />
+              </a>
+            </div>
+          </div>
+        </section>
+
+        {/* CAROUSEL SECTION */}
+        <section id="carousel-selection" className="py-12 px-6 max-w-7xl mx-auto">
+          <div className="flex items-center justify-between mb-8">
+            <div>
+              <h2 className="text-2xl font-bold text-white">Izaberite dokument</h2>
+              <p className="text-sm text-slate-400">Izaberite jedan od 5 besplatnih Freemium urneka</p>
+            </div>
+          </div>
+
+          <div className="flex gap-5 overflow-x-auto pb-6 pt-2 scrollbar-thin scrollbar-thumb-slate-800">
+            {templates.map((tpl) => {
+              const isSelected = selectedTemplate?.id === tpl.id;
+              return (
+                <div
+                  key={tpl.id}
+                  onClick={() => {
+                    setSelectedTemplate(tpl);
+                    setGeneratedText('');
+                    setFormData({});
+                  }}
+                  className={`group relative min-w-[260px] p-6 rounded-2xl border transition-all duration-300 cursor-pointer flex flex-col justify-between ${
+                    isSelected
+                      ? 'bg-slate-900 border-cyan-500 shadow-xl shadow-cyan-500/10'
+                      : 'bg-slate-900/50 border-slate-800 hover:border-slate-700 hover:bg-slate-900'
+                  }`}
+                >
+                  <div className="flex items-start justify-between mb-6">
+                    {renderDocumentSymbol(tpl.slug)}
+                    <span className="text-[10px] font-bold px-2 py-1 rounded-md bg-cyan-500/10 text-cyan-400 border border-cyan-500/20 uppercase tracking-widest">
+                      Freemium
+                    </span>
+                  </div>
+                  <div>
+                    <h3 className="font-bold text-lg text-white mb-2 group-hover:text-cyan-400 transition">
+                      {tpl.title_bs}
+                    </h3>
+                    <p className="text-xs text-slate-400 line-clamp-2">
+                      {tpl.description_bs}
+                    </p>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        </section>
+
+        {/* DYNAMIC FORM & PREVIEW SECTION */}
+        {selectedTemplate && (
+          <section id="generator-form" className="py-12 px-6 max-w-7xl mx-auto grid lg:grid-cols-12 gap-8">
+            {/* INPUT FORM */}
+            <div className="lg:col-span-5 bg-slate-900/90 border border-slate-800 p-8 rounded-3xl backdrop-blur-sm">
+              <div className="flex items-center justify-between mb-6 pb-4 border-b border-slate-800">
+                <h3 className="text-xl font-bold text-white flex items-center gap-2">
+                  <span className="w-7 h-7 rounded-lg bg-cyan-500/10 text-cyan-400 text-sm flex items-center justify-center font-bold">1</span>
+                  Unos podataka
+                </h3>
+                <div className="flex items-center gap-2">
+                  <Globe2 className="w-4 h-4 text-slate-400" />
+                  <select
+                    value={language}
+                    onChange={(e: any) => setLanguage(e.target.value)}
+                    className="bg-slate-950 border border-slate-800 text-xs text-slate-200 rounded-lg px-3 py-1.5 focus:outline-none focus:border-cyan-500"
+                  >
+                    <option value="bs">Bosanski (Latinica)</option>
+                    <option value="sr_cyr">Srpski (Ćirilica)</option>
+                    <option value="hr">Hrvatski (Latinica)</option>
+                  </select>
+                </div>
+              </div>
+
+              <div className="space-y-4">
+                {selectedTemplate.form_fields.map((field) => (
+                  <div key={field.id}>
+                    <label className="block text-xs font-semibold text-slate-300 mb-1.5 uppercase tracking-wider">
+                      {field.label} {field.required && <span className="text-cyan-400">*</span>}
+                    </label>
+                    {field.type === 'textarea' ? (
+                      <textarea
+                        rows={3}
+                        value={formData[field.id] || ''}
+                        onChange={(e) => handleInputChange(field.id, e.target.value)}
+                        placeholder="Unesite detaljne informacije..."
+                        className="w-full bg-slate-950 border border-slate-800 text-sm text-slate-100 rounded-xl p-3 focus:outline-none focus:border-cyan-500 transition placeholder:text-slate-600"
+                      />
+                    ) : (
+                      <input
+                        type="text"
+                        value={formData[field.id] || ''}
+                        onChange={(e) => handleInputChange(field.id, e.target.value)}
+                        placeholder="Unesite podatak..."
+                        className="w-full bg-slate-950 border border-slate-800 text-sm text-slate-100 rounded-xl p-3 focus:outline-none focus:border-cyan-500 transition placeholder:text-slate-600"
+                      />
+                    )}
+                  </div>
+                ))}
+
+                <button
+                  onClick={generateDocument}
+                  className="w-full mt-6 py-4 rounded-xl bg-gradient-to-r from-cyan-500 to-blue-600 text-slate-950 font-bold hover:brightness-110 transition shadow-lg shadow-cyan-500/20 flex items-center justify-center gap-2"
+                >
+                  <CheckCircle2 className="w-5 h-5" />
+                  <span>Kreiraj dokument</span>
+                </button>
+              </div>
+            </div>
+
+            {/* LIVE PREVIEW & ACTIONS */}
+            <div className="lg:col-span-7 bg-slate-900/90 border border-slate-800 p-8 rounded-3xl flex flex-col justify-between backdrop-blur-sm">
+              <div>
+                <div className="flex items-center justify-between mb-6 pb-4 border-b border-slate-800">
+                  <h3 className="text-xl font-bold text-white flex items-center gap-2">
+                    <span className="w-7 h-7 rounded-lg bg-blue-500/10 text-blue-400 text-sm flex items-center justify-center font-bold">2</span>
+                    Pregled dokumenta
+                  </h3>
+                </div>
+
+                <div className="bg-slate-950 border border-slate-800/80 p-8 rounded-2xl min-h-[360px] font-mono text-sm text-slate-200 leading-relaxed whitespace-pre-line overflow-y-auto max-h-[500px]">
+                  {generatedText ? (
+                    generatedText
+                  ) : (
+                    <div className="h-full flex flex-col items-center justify-center text-center text-slate-600 py-16">
+                      <FileCheck2 className="w-12 h-12 mb-3 text-slate-700" />
+                      <p>Popunite polja sa lijeve strane i kliknite "Kreiraj dokument".</p>
+                    </div>
+                  )}
+                </div>
+              </div>
+
+              {/* ACTION BUTTONS */}
+              {generatedText && (
+                <div className="mt-6 pt-6 border-t border-slate-800 space-y-4">
+                  <div className="flex flex-wrap items-center gap-3">
+                    <button
+                      onClick={() => window.print()}
+                      className="flex-1 py-3 px-4 rounded-xl bg-cyan-500/10 hover:bg-cyan-500/20 text-cyan-400 border border-cyan-500/30 font-semibold transition flex items-center justify-center gap-2 text-sm"
+                    >
+                      <Printer className="w-4 h-4" />
+                      <span>Preuzmi / Štampaj PDF</span>
+                    </button>
+                    <button
+                      onClick={() => {
+                        navigator.clipboard.writeText(generatedText);
+                        alert('Tekst dokumenta je kopiran u međuspremnik!');
+                      }}
+                      className="py-3 px-4 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 font-semibold transition flex items-center gap-2 text-sm"
+                    >
+                      <Share2 className="w-4 h-4" />
+                      <span>Kopiraj</span>
+                    </button>
+                    <button
+                      onClick={() => setShowEmailInput(!showEmailInput)}
+                      className="py-3 px-4 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 font-semibold transition flex items-center gap-2 text-sm"
+                    >
+                      <Mail className="w-4 h-4" />
+                      <span>Pošalji Email</span>
+                    </button>
+                  </div>
+
+                  {showEmailInput && (
+                    <div className="flex gap-2 pt-2">
+                      <input
+                        type="email"
+                        placeholder="Unesite vaš e-mail..."
+                        value={emailTo}
+                        onChange={(e) => setEmailTo(e.target.value)}
+                        className="flex-1 bg-slate-950 border border-slate-800 text-xs text-slate-100 rounded-xl px-3 py-2 focus:outline-none focus:border-cyan-500"
+                      />
+                      <button
+                        onClick={() => {
+                          window.location.href = `mailto:${emailTo}?subject=Generisani Dokument - BH PapirFinder&body=${encodeURIComponent(generatedText)}`;
+                        }}
+                        className="px-4 py-2 bg-cyan-500 text-slate-950 text-xs font-bold rounded-xl hover:brightness-110"
+                      >
+                        Pošalji
+                      </button>
+                    </div>
+                  )}
+                </div>
+              )}
+            </div>
+          </section>
+        )}
+      </div>
+
+      {/* FOOTER PRAVNA NAPOMENA */}
+      <footer className="bg-slate-900 border-t border-slate-800/80 py-10 px-6 mt-20 text-xs text-slate-400 text-center">
+        <div className="max-w-4xl mx-auto space-y-3">
+          <p className="font-bold text-slate-300 uppercase tracking-widest text-[11px]">PRAVNA NAPOMENA</p>
+          <p className="leading-relaxed text-slate-400">
+            BH PAPIRFINDER GENERATOR pruža generičke pravne šablone. Preuzimanjem dokumenta preuzimate odgovornost za tačnost unesenih podataka. Dokument postaje pravno važeći tek nakon što se odštampa, svojeručno potpiše (i pečati, ukoliko je primjenjivo), te po potrebi ovjeri kod nadležnog organa (notar/opština).
+          </p>
+          <p className="text-slate-600 pt-4">© 2026 BH PapirFinder. Sva prava zadržana.</p>
+        </div>
+      </footer>
+    </div>
+  );
+};
+
+export default GeneratorPage;
