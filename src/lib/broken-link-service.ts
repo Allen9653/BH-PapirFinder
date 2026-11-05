@@ -39,7 +39,7 @@ const ANALYTICS_KEY = 'bh_papirfinder_report_analytics';
 const ADMIN_EMAILS_KEY = 'bh_papirfinder_admin_alert_emails';
 
 // Default admin emails for alerts
-const DEFAULT_ADMIN_EMAILS = ['admin@bhpapirfinder.ba'];
+const DEFAULT_ADMIN_EMAILS = ['alenjusufovic@yahoo.com', 'admin@bhpapirfinder.ba'];
 
 /**
  * Get all broken link reports from localStorage

@@ -51,6 +51,7 @@ import {
 import CrawlerEngineLab from '@/components/CrawlerEngineLab';
 import AdminPdfMetadataExtractor from '@/components/AdminPdfMetadataExtractor';
 import Footer from '@/components/Footer';
+import { isAdminLoggedIn } from '@/lib/auth';
 
 type ViewMode = 'list' | 'add-doc' | 'edit-doc' | 'add-inst' | 'translations' | 'batch-translate' | 'crawler-lab' | 'pdf-extractor';
 
@@ -64,6 +65,13 @@ const LANGUAGES = [
 const AdminDocuments = () => {
   const { language } = useLanguage();
   const navigate = useNavigate();
+
+  // Guard: Restrict access to authenticated admins only
+  useEffect(() => {
+    if (!isAdminLoggedIn()) {
+      navigate('/admin');
+    }
+  }, [navigate]);
 
   // Data state
   const [institucije, setInstitucije] = useState<Institucija[]>([]);
