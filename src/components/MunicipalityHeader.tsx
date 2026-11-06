@@ -1,3 +1,4 @@
+import { useParams } from 'react-router-dom';
 import MunicipalityCrest from '@/components/MunicipalityCrest';
 import { safeHttpsUrl } from '@/lib/institution-directory';
 import { ExternalLink, Globe } from 'lucide-react';
