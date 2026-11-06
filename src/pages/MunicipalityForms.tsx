@@ -42,6 +42,7 @@ import { canAccessUrls } from '@/lib/access-control';
 import ReportBrokenLink from '@/components/ReportBrokenLink';
 import Footer from '@/components/Footer';
 import Breadcrumbs from '@/components/Breadcrumbs';
+import MunicipalityHeader from '@/components/MunicipalityHeader';
 import TagNavigation, { matchesTagFilter } from '@/components/TagNavigation';
 import { toast } from 'sonner';
 import { saveDocumentLocally } from '@/lib/saved-documents';
@@ -402,6 +403,20 @@ const MunicipalityForms = () => {
           {cantonInfo && (
             <p className="text-white/60 text-sm mt-1 break-words">{localizeDbText(cantonInfo)}</p>
           )}
+
+          <MunicipalityHeader
+            municipality={{
+              name: municipalityName,
+              canton: municipality?.canton,
+              cantonShort: municipality?.cantonShort,
+              entity: municipality?.entity,
+              website: municipality?.website,
+              officialUrl: municipality?.officialUrl,
+              website_url: officialUrl,
+              slug: municipality?.slug || slug,
+              notice: municipality?.notice,
+            }}
+          />
 
           <div className="flex flex-wrap items-center gap-3 mt-4">
             {safeHttpsUrl(officialUrl) && (

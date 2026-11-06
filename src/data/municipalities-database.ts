@@ -1659,6 +1659,36 @@ export const municipalitiesDatabase: MunicipalityData[] = [
     categories: ['Urbanizam', 'Poljoprivreda', 'Registracije'],
     komentar: 'Urbanizam i poljoprivreda'
   },
+   {
+    id: 'rs-srbac',
+    name: 'Srbac',
+    region: 'Banjalučka regija',
+    entity: 'RS',
+    urls: [
+      {
+          main: 'https://srbac-rs.com/',
+          description: 'Službena web-stranica Opštine Srbac',
+        },
+      {
+          forms: 'https://invest.srbac-rs.com/wp-content/uploads/2026/09/%D0%97%D0%B0%D1%85%D1%82%D1%98%D0%B5%D0%B2-%D0%B7%D0%B0-%D0%B8%D0%B7%D0%B4%D0%B0%D0%B2%D0%B0%D1%9A%D0%B5-%D0%BE%D0%B4%D0%BE%D0%B1%D1%80%D0%B5%D1%9A%D0%B0-%D0%B7%D0%B0-%D0%B3%D1%80%D0%B0%D1%92%D0%B5%D1%9A%D0%B5.pdf',
+          description: 'Zahtjev za izdavanje odobrenja za građenje'
+      },
+      {
+          forms: 'https://invest.srbac-rs.com/wp-content/uploads/2026/09/%D0%97%D0%B0%D1%85%D1%82%D1%98%D0%B5%D0%B2-%D0%B7%D0%B0-%D0%B8%D0%B7%D0%B4%D0%B0%D0%B2%D0%B0%D1%9A%D0%B5-%D0%B8%D0%B7%D0%B2%D0%BE%D0%B4%D0%B0-%D0%B8%D0%B7-%D0%BF%D1%80%D0%BE%D1%81%D1%82%D0%BE%D1%80%D0%BD%D0%BE-%D0%BF%D0%BB%D0%B0%D0%BD%D1%81%D0%BA%D0%B5-%D0%B4%D0%BE%D0%BA%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D0%B0%D1%86%D0%B8%D1%98%D0%B5-1.pdf',
+          description: 'Zahtjev za izdavanje izvod iz prostorno-planske dokumentacije'
+      },
+      {
+          forms: 'https://invest.srbac-rs.com/wp-content/uploads/2021/11/6.-zahtjev-za-izdavanje-odobrenja-za-upotrebu-objekta.pdf',
+          description: 'Zahtjev za izdavanje odobrenja za upotrebu objekta'
+      },
+      {
+          forms: 'https://srbac-rs.com/%D0%BE%D0%B1%D1%80%D0%B0%D1%81%D1%86%D0%B8/',
+          description: 'Obrasci Opštine Srbac'
+      }
+    ],
+    categories: ['Građevinske dozvole', 'Upotrebna dozvola', 'Prostorno-planska dokumentacija'],
+    komentar: 'Dokumenti i obrasci Opštine Srbac dostupni na službenoj web-stranici'
+  },
   {
     id: 'rs-mrkonjic-grad',
     name: 'Mrkonjić Grad',
@@ -1666,16 +1696,32 @@ export const municipalitiesDatabase: MunicipalityData[] = [
     entity: 'RS',
     urls: [
       {
-          main: 'https://mrkonjic-grad.rs-opstina.org/',
+          main: 'https://www.mrkonjic-grad.rs.ba/',
           description: 'Službena web-stranica Mrkonjić Grad',
         },
       {
-          forms: 'https://mrkonjic-grad.rs-opstina.org/obrasci',
-          description: 'Obrazaci i dokumenti'
+          forms: 'https://www.mrkonjic-grad.rs.ba/lat/kategorije/1389/zahtjevi-obrasci',
+          description: 'Zahtjevi-obrasci Opštine Mrkonjić Grad'
+      },
+      {
+          forms: 'https://www.mrkonjic-grad.rs.ba/lat/kategorije/1469/-o---',
+          description: 'Obrazaci Opštine Mrkonjić Grad'
+      },
+      {
+          forms: 'https://cms.bitlab.host/api/data/92/documents/3027/predstavka-gra%C4%91ana-komunalna-policija-08-5.doc',
+          description: 'Predstavka građana - komunalna policija'
+      },
+      {
+          forms: 'https://cms.bitlab.host/api/data/92/documents/3752/Zahtjev%20za%20dodjelu%20sredstava%20za%20mlade%20bra%C4%8Dne%20parove%2004-86.docx',
+          description: 'Zahtjev za dodjelu sredstava za mlade bračne parove 04-86'
+      },
+      {
+          forms: 'https://www.mrkonjic-grad.rs.ba/lat/kategorije/1474/----',
+          description: 'Obrazaci Opštine Mrkonjić Grad'
       }
     ],
-    categories: ['Urbanizam', 'Uvjerenja'],
-    komentar: 'Obrasci na dnu naslovne stranice'
+    categories: ['Urbanizam', 'Uvjerenja', 'Komunalna policija', 'Mladi bračni parovi'],
+    komentar: 'Obrasci Opštine Mrkonjić Grad dostupni na službenoj web-stranici'
   },
   {
     id: 'rs-novi-grad',

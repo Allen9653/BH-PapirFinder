@@ -796,16 +796,16 @@ export const uploadedInstitutions: UploadedInstitution[] = [
   "note": "Službena stranica i ažurirani linkovi za prijem kod gradonačelnika te izvode iz matičnih knjiga.",
   "region": "B&H BOSANSKA KRAJINA"
  },
- {
-  "name": "Srbac",
-  "entity": null,
-  "canton": null,
-  "website": "https://gradlaktasi.com/",
-  "formsUrl": "https://gradlaktasi.com/",
-  "status": "active",
-  "note": "Zvanična web stranica Opštine Laktaši je aktivna i stabilna. Direktni linkovi za obrasce i zahtjeve vode na eCitizen platformu, što je uobičajena praksa i osigurava stabilan pristup. Nije potrebna posebna tražilica.",
-  "region": "B&H BOSANSKA KRAJINA"
- },
+  {
+   "name": "Srbac",
+   "entity": "RS",
+   "canton": "Banjalučka regija",
+   "website": "https://srbac-rs.com/",
+   "formsUrl": "https://srbac-rs.com/%D0%BE%D0%B1%D1%80%D0%B0%D1%81%D1%86%D0%B8/",
+   "status": "active",
+   "note": "Zvanična web stranica Opštine Srbac je aktivna. Obrasci su dostupni putem eCitizen platforme i direktno na web stranici opštine.",
+   "region": "B&H BOSANSKA KRAJINA"
+  },
  {
   "name": "Republika Srpska",
   "entity": null,
@@ -816,15 +816,16 @@ export const uploadedInstitutions: UploadedInstitution[] = [
   "note": "Zvanična web stranica Opštine Prnjavor je aktivna i stabilna, sa jasno označenim odjeljkom za obrasce i zahtjeve. Lako je pronaći potrebne dokumente. Nije potrebna posebna tražilica.",
   "region": "B&H BOSANSKA KRAJINA"
  },
- {
-  "name": "Republika Srpska",
-  "entity": null,
-  "canton": null,
-  "formsUrl": "https://ecitizen.ba/srbac/eServices",
-  "status": "active",
-  "note": "Službena web-stranica nije potvrđena; obrasci su dostupni putem eCitizen platforme.",
-  "region": "B&H BOSANSKA KRAJINA"
- },
+  {
+   "name": "Republika Srpska",
+   "entity": null,
+   "canton": null,
+   "website": "https://srbac-rs.com/",
+   "formsUrl": "https://ecitizen.ba/srbac/eServices",
+   "status": "active",
+   "note": "Službena web-stranica Opštine Srbac: https://srbac-rs.com/ ; obrasci su dostupni putem eCitizen platforme.",
+   "region": "B&H BOSANSKA KRAJINA"
+  },
  {
   "name": "Republika Srpska",
   "entity": null,
