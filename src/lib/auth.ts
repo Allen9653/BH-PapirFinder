@@ -4,6 +4,15 @@ import type { User } from '@supabase/supabase-js';
 
 let verifiedAdminEmail: string | null = null;
 
+/**
+ * The admin session lives only in module memory (verifiedAdminEmail) and is
+ * lost on every page reload. App bootstrap (src/main.tsx) calls
+ * verifyAdminSession() at startup so the in-memory flag is re-derived from
+ * the authenticated Supabase session. Any new consumer of isAdminLoggedIn()
+ * should assume this bootstrap refresh has run, and await
+ * verifyAdminSession() directly when it must be certain.
+ */
+
 function isAdminUser(user: User | null | undefined): user is User {
   return user?.app_metadata?.role === 'admin';
 }
@@ -106,7 +115,17 @@ export function getSponsors(): Sponsor[] {
     const stored = localStorage.getItem('bh_papirfinder_sponsors');
     if (!stored) return [];
     const parsed = JSON.parse(stored);
-    return Array.isArray(parsed) ? parsed : [];
+    if (!Array.isArray(parsed)) return [];
+    // Validate each entry's shape; drop malformed records so a corrupted
+    // localStorage value can't break sponsor rendering downstream.
+    return parsed.filter(
+      (item): item is Sponsor =>
+        typeof item === 'object' &&
+        item !== null &&
+        typeof (item as Partial<Sponsor>).id === 'string' &&
+        typeof (item as Partial<Sponsor>).imageUrl === 'string' &&
+        typeof (item as Partial<Sponsor>).active === 'boolean'
+    );
   } catch {
     localStorage.removeItem('bh_papirfinder_sponsors');
     return [];

@@ -1,0 +1,71 @@
+[
+  {
+    "id": "zenica",
+    "naziv": "Grad Zenica",
+    "kanton": "ZDK",
+    "zvucnik_url": "https://www.zvucnik.gov.ba/grad-zenica",
+    "dokumenti": [
+      {
+        "naziv": "Povijest grad Zenica",
+        "kategorija": "Historija",
+        "izravnim_url": "https://www.zvucnik.gov.ba/grad-zenica/povijest-grad-zenica"
+      },
+      {
+        "naziv": "Osnovni gradski plan",
+        "kategorija": "Planirajem",
+        "izravnim_url": "https://www.zvucnik.gov.ba/grad-zenica/osnovni-gradski-plan"
+      },
+      {
+        "naziv": "Kultura i muzeji",
+        "kategorija": "Muzeji",
+        "izravnim_url": "https://www.zvucnik.gov.ba/grad-zenica/kultura-i-muzeji"
+      }
+    ]
+  },
+  {
+    "id": "sarajevo-centar",
+    "naziv": "Sarajevo Centar",
+    "kanton": "ZDK",
+    "zvucnik_url": "https://www.zvucnik.gov.ba/sarajevo-centar",
+    "dokumenti": [
+      {
+        "naziv": "Sarajevo Centar plan",
+        "kategorija": "Planirajem",
+        "izravnim_url": "https://www.zvucnik.gov.ba/sarajevo-centar/sarajevo-centar-plan"
+      },
+      {
+        "naziv": "Sarajevo Centar zvucnik",
+        "kategorija": "Zvucnik",
+        "izravnim_url": "https://www.zvucnik.gov.ba/sarajevo-centar/sarajevo-centar-zvucnik"
+      },
+      {
+        "naziv": "Sarajevo Centar muzeji",
+        "kategorija": "Muzeji",
+        "izravnim_url": "https://www.zvucnik.gov.ba/sarajevo-centar/sarajevo-centar-muzeji"
+      }
+    ]
+  },
+  {
+    "id": "tuzla",
+    "naziv": "Tuzla",
+    "kanton": "ZDK",
+    "zvucnik_url": "https://www.zvucnik.gov.ba/tuzla",
+    "dokumenti": [
+      {
+        "naziv": "Tuzla plan",
+        "kategorija": "Planirajem",
+        "izravnim_url": "https://www.zvucnik.gov.ba/tuzla/tuzla-plan"
+      },
+      {
+        "naziv": "Tuzla zvucnik",
+        "kategorija": "Zvucnik",
+        "izravnim_url": "https://www.zvucnik.gov.ba/tuzla/tuzla-zvucnik"
+      },
+      {
+        "naziv": "Tuzla muzeji",
+        "kategorija": "Muzeji",
+        "izravnim_url": "https://www.zvucnik.gov.ba/tuzla/tuzla-muzeji"
+      }
+    ]
+  }
+]

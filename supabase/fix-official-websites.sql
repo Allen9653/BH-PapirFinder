@@ -148,7 +148,7 @@ UPDATE public.institucije SET official_url = 'https://velikakladusa.gov.ba' WHER
 UPDATE public.institutions SET website_url = 'https://www.visoko.gov.ba' WHERE institution_name = 'Općina Visoko' AND coalesce(website_url,'') NOT ILIKE 'https://www.visoko.gov.ba%';
 UPDATE public.institutions SET website_url = 'https://vitez.info' WHERE institution_name = 'Općina Vitez' AND coalesce(website_url,'') NOT ILIKE 'https://vitez.info%';
 UPDATE public.institucije SET official_url = 'https://vitez.info' WHERE slug = 'sbk-vitez' AND coalesce(official_url,'') NOT ILIKE 'https://vitez.info%';
-UPDATE public.institucije SET official_url = 'https://www.vladazzh.com' WHERE slug = 'zapadnohercegovacki-kanton' AND coalesce(official_url,'') NOT ILIKE 'https://www.vladazzh.com%';
+UPDATE public.institucije SET official_url = 'https://www.vladazzh.gov.ba' WHERE slug = 'zapadnohercegovacki-kanton' AND coalesce(official_url,'') NOT ILIKE 'https://www.vladazzh.gov.ba%';
 UPDATE public.institutions SET website_url = 'https://zavidovici.ba' WHERE institution_name = 'Općina Zavidovići' AND coalesce(website_url,'') NOT ILIKE 'https://zavidovici.ba%';
 UPDATE public.institutions SET website_url = 'https://www.zenica.ba' WHERE institution_name = 'Grad Zenica' AND coalesce(website_url,'') NOT ILIKE 'https://www.zenica.ba%';
 UPDATE public.institucije SET official_url = 'https://www.zenica.ba' WHERE slug = 'grad-zenica' AND coalesce(official_url,'') NOT ILIKE 'https://www.zenica.ba%';

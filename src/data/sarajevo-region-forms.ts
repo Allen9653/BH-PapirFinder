@@ -236,8 +236,9 @@ export const stariGradSarajevoConfig: SarajevoRegionMunicipalityConfig = {
   regionShort: 'KS',
   entity: 'Federacija BiH',
   officialWebsite: 'https://starigrad.ba/',
+  formsUrl: 'https://starigrad.ba/e-formulari/',
   
-  categories: ['Matični uredi', 'E-uprava', 'Građanska stanja', 'Urbanizam i građenje', 'Punomoći i izjave'],
+  categories: ['Matični uredi', 'E-uprava', 'Građanska stanja', 'Urbanizam i građenje', 'Punomoći i izjave', 'Javni pozivi', 'Nevladine organizacije'],
   forms: [
     
     

@@ -67,7 +67,7 @@ const SAMPLE_DOCUMENTS = [
     title: 'Zahtjev za registraciju samostalne privredne djelatnosti - obrta',
     municipality: 'Grad Sarajevo - Stari Grad',
     category: 'Privreda i obrt',
-    url: 'https://starigrad.ba/obrasci',
+    url: 'https://starigrad.ba/e-formulari/',
     notes: 'Služba za privredu i lokalni razvoj',
   },
   {

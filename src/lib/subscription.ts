@@ -37,6 +37,50 @@ const FREE_TIER_LIMITS = {
 } as const;
 
 // ============================================================
+// LocalStorage Account Storage (shared, validated)
+// ============================================================
+
+interface StoredAccount {
+  id: string;
+  status: string;
+  paidExpiryDate?: string;
+  trialExpiryDate?: string;
+}
+
+function isStoredAccount(value: unknown): value is StoredAccount {
+  if (typeof value !== 'object' || value === null) return false;
+  const v = value as Partial<StoredAccount>;
+  return typeof v.id === 'string' && typeof v.status === 'string';
+}
+
+/** Read and validate the stored user account; returns null if missing/invalid. */
+function readStoredAccount(): StoredAccount | null {
+  try {
+    const raw = localStorage.getItem('bh_papirfinder_user_account');
+    if (!raw) return null;
+    const parsed = JSON.parse(raw);
+    if (!isStoredAccount(parsed)) return null;
+    return parsed;
+  } catch {
+    return null;
+  }
+}
+
+/** Merge updates into the stored user account (ignored if absent/invalid). */
+function writeStoredAccount(updates: Partial<StoredAccount>): void {
+  try {
+    const account = readStoredAccount();
+    if (!account) return;
+    localStorage.setItem(
+      'bh_papirfinder_user_account',
+      JSON.stringify({ ...account, ...updates })
+    );
+  } catch {
+    // Silently fail
+  }
+}
+
+// ============================================================
 // Core: Get Subscription Profile from Supabase
 // ============================================================
 
@@ -51,42 +95,48 @@ export async function getSubscriptionProfile(): Promise<SubscriptionProfile | nu
       return getLocalSubscriptionProfile();
     }
 
-    const { data, error } = await supabase
-      .from('user_profiles')
-      .select('user_id, subscription_status, trial_ends_at, subscription_expires_at, ai_usage_count, studio_usage_count')
-      .eq('user_id', user.id)
-      .single();
-
-    if (error || !data) {
-      // Fallback to localStorage
-      return getLocalSubscriptionProfile();
-    }
-
-    const tier = calculateTier(
-      data.subscription_status,
-      data.trial_ends_at,
-      data.subscription_expires_at
-    );
-
-    return {
-      userId: data.user_id,
-      tier,
-      subscriptionStatus: data.subscription_status,
-      trialEndsAt: data.trial_ends_at,
-      subscriptionExpiresAt: data.subscription_expires_at,
-      aiUsageCount: data.ai_usage_count ?? 0,
-      studioUsageCount: data.studio_usage_count ?? 0,
-    };
+    const remote = await fetchRemoteSubscriptionProfile(user.id);
+    return remote ?? getLocalSubscriptionProfile();
   } catch {
     return getLocalSubscriptionProfile();
   }
 }
 
 /**
+ * Fetch the subscription profile for a Supabase user from user_profiles.
+ * Returns null when the row is missing or the query fails.
+ */
+async function fetchRemoteSubscriptionProfile(userId: string): Promise<SubscriptionProfile | null> {
+  const { data, error } = await supabase
+    .from('user_profiles')
+    .select('user_id, subscription_status, trial_ends_at, subscription_expires_at, ai_usage_count, studio_usage_count')
+    .eq('user_id', userId)
+    .single();
+
+  if (error || !data) return null;
+
+  const tier = calculateTier(
+    data.subscription_status,
+    data.trial_ends_at,
+    data.subscription_expires_at
+  );
+
+  return {
+    userId: data.user_id,
+    tier,
+    subscriptionStatus: data.subscription_status,
+    trialEndsAt: data.trial_ends_at,
+    subscriptionExpiresAt: data.subscription_expires_at,
+    aiUsageCount: data.ai_usage_count ?? 0,
+    studioUsageCount: data.studio_usage_count ?? 0,
+  };
+}
+
+/**
  * Fallback: derive subscription profile from localStorage account
  */
 function getLocalSubscriptionProfile(): SubscriptionProfile | null {
-  const account = getUserAccount();
+  const account = readStoredAccount();
   if (!account) return null;
 
   let tier: SubscriptionTier = 'free';
@@ -215,11 +265,25 @@ export async function trackFeatureUsage(
     });
 
     if (error) {
-      // If RPC doesn't exist, try direct update
+      // If RPC doesn't exist, fall back to read-modify-write update
       const column = feature === 'ai_assistant' ? 'ai_usage_count' : 'studio_usage_count';
+      const { data: current, error: fetchError } = await supabase
+        .from('user_profiles')
+        .select(column)
+        .eq('user_id', userId)
+        .single();
+
+      if (fetchError || !current) {
+        // Fallback: increment in localStorage
+        incrementLocalUsage(feature);
+        return true;
+      }
+
+      const currentCount = (current as Record<string, unknown>)[column];
+      const nextCount = typeof currentCount === 'number' ? currentCount + 1 : 1;
       const { error: updateError } = await supabase
         .from('user_profiles')
-        .update({ [column]: supabase.rpc('', {}) }) // Can't increment directly
+        .update({ [column]: nextCount })
         .eq('user_id', userId);
 
       if (updateError) {
@@ -292,17 +356,7 @@ export async function activateProSubscription(userId: string, months: number = 1
  * Update localStorage subscription data
  */
 function updateLocalSubscription(status: string, expiresAt: string): void {
-  try {
-    const raw = localStorage.getItem('bh_papirfinder_user_account');
-    if (raw) {
-      const account = JSON.parse(raw);
-      account.status = status;
-      account.paidExpiryDate = expiresAt;
-      localStorage.setItem('bh_papirfinder_user_account', JSON.stringify(account));
-    }
-  } catch {
-    // Silently fail
-  }
+  writeStoredAccount({ status, paidExpiryDate: expiresAt });
 }
 
 // ============================================================

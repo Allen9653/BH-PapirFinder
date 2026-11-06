@@ -73,11 +73,14 @@ export function isAllowedHost(hostname: string): boolean {
   // Direct match
   if (allowedHosts.includes(lower)) return true;
 
-  // Vercel deployment and preview URLs (*.vercel.app)
-  if (lower.endsWith('.vercel.app')) return true;
-
-  // Google Cloud preview run URLs
-  if (lower.endsWith('.run.app')) return true;
+  // Preview URLs are only trusted for KNOWN project subdomains. Wildcard
+  // suffix trust (any *.vercel.app / *.run.app) would allow an
+  // attacker-controlled subdomain to pass origin validation.
+  const knownPreviewProjects = [
+    'bh-papirfinder.vercel.app',
+    'bh-papirfinder.run.app',
+  ];
+  if (knownPreviewProjects.includes(lower)) return true;
 
   // Same host as current window
   if (typeof window !== 'undefined' && lower === window.location.hostname.toLowerCase()) {

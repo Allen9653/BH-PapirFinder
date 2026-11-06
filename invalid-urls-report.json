@@ -1,20 +1,776 @@
 {
-  "generatedAt": "2026-11-05T19:08:46.204Z",
+  "generatedAt": "2026-11-06T01:49:30.464Z",
   "filesScanned": 35,
-  "uniqueUrls": 968,
+  "uniqueUrls": 1256,
   "networkCheckPerformed": true,
-  "validUrls": 968,
-  "totalInvalidUrls": 0,
-  "invalidUrls": [],
-  "duplicateUrlCount": 187,
-  "duplicateUrlWithinFileCount": 79,
+  "validUrls": 1194,
+  "totalInvalidUrls": 62,
+  "invalidUrls": [
+    {
+      "url": "https://opcina-busovaca.com/",
+      "error": "Timeout",
+      "occurrences": [
+        {
+          "institution": "Busovaca",
+          "source": "src\\data\\busovaca-forms.ts:3"
+        },
+        {
+          "institution": "Busovača",
+          "source": "src\\data\\municipalities-database.ts:992"
+        },
+        {
+          "institution": "Travnička regija",
+          "source": "src\\data\\uploaded-institutions.ts:1460"
+        },
+        {
+          "institution": "Busovaca",
+          "source": "src\\data\\website-verification.ts:84"
+        }
+      ]
+    },
+    {
+      "url": "https://opcina-busovaca.com/dokumenti/",
+      "error": "Timeout",
+      "occurrences": [
+        {
+          "institution": "Busovaca",
+          "source": "src\\data\\busovaca-forms.ts:4"
+        },
+        {
+          "institution": "Busovača",
+          "source": "src\\data\\municipalities-database.ts:988"
+        },
+        {
+          "institution": "Travnička regija",
+          "source": "src\\data\\uploaded-institutions.ts:1461"
+        },
+        {
+          "institution": "Busovača",
+          "source": "src\\data\\verified-domains.ts:616"
+        }
+      ]
+    },
+    {
+      "url": "https://praca.ba/?s=Obrazac",
+      "error": "Timeout",
+      "occurrences": [
+        {
+          "institution": "Pale-Prača",
+          "source": "src\\data\\municipalities-database.ts:288"
+        },
+        {
+          "institution": "Sarajevo Region",
+          "source": "src\\data\\sarajevo-region-forms.ts:95"
+        },
+        {
+          "institution": "Sarajevo Region",
+          "source": "src\\data\\sarajevo-region-forms.ts:101"
+        },
+        {
+          "institution": "Sarajevo Region",
+          "source": "src\\data\\sarajevo-region-forms.ts:108"
+        },
+        {
+          "institution": "Pale-Prača",
+          "source": "src\\data\\uploaded-institutions.ts:19"
+        },
+        {
+          "institution": "Općina Pale-Prača",
+          "source": "src\\data\\verified-domains.ts:1018"
+        }
+      ]
+    },
+    {
+      "url": "https://praca.ba/",
+      "error": "Timeout",
+      "occurrences": [
+        {
+          "institution": "Pale-Prača",
+          "source": "src\\data\\municipalities-database.ts:292"
+        },
+        {
+          "institution": "Sarajevo Region",
+          "source": "src\\data\\sarajevo-region-forms.ts:94"
+        },
+        {
+          "institution": "Pale-Prača",
+          "source": "src\\data\\uploaded-institutions.ts:18"
+        },
+        {
+          "institution": "Pale Praca",
+          "source": "src\\data\\website-verification.ts:639"
+        }
+      ]
+    },
+    {
+      "url": "https://estipendije-gradacac.ba/",
+      "error": "Timeout",
+      "occurrences": [
+        {
+          "institution": "Gradačac",
+          "source": "src\\data\\municipalities-database.ts:669"
+        }
+      ]
+    },
+    {
+      "url": "https://prozor-rama.org/status-zahtjeva",
+      "error": "HTTP 404 Not Found",
+      "contentType": "text/html; charset=UTF-8",
+      "occurrences": [
+        {
+          "institution": "Prozor-Rama",
+          "source": "src\\data\\municipalities-database.ts:1174"
+        }
+      ]
+    },
+    {
+      "url": "https://eregistarsamac.com/%D0%B0%D0%B4%D0%BC%D0%B8%D0%BD%D0%B8%D1%81%D1%82%D1%80%D0%B0%D1%82%D0%B8%D0%B2%D0%BD%D0%B8-%D0%BF%D0%B0%D0%B5%D1%81%D1%82%D1%83%D0%BF%D1%86%D0%B8/",
+      "error": "HTTP 404 Not Found",
+      "contentType": "text/html; charset=UTF-8",
+      "occurrences": [
+        {
+          "institution": "Updated Government",
+          "source": "src\\data\\updated-government-forms.ts:199"
+        },
+        {
+          "institution": "Updated Government",
+          "source": "src\\data\\updated-government-forms.ts:202"
+        }
+      ]
+    },
+    {
+      "url": "https://eregistarsamac.com/%D1%80%D0%B5%D0%B3%D0%B8%D1%81%D1%82%D0%B0%D1%80/10-04-%d0%b7%d0%b0%d1%85%d1%82%d1%98%d0%b5%d0%b2-%d0%b7%d0%b0-%d0%b8%d0%bd%d1%81%d0%bf%d0%b5%d0%ba%d1%86%d0%b8%d1%98%d1%81%d0%ba%d0%b8-%d0%bd%d0%b0%d0%b4%d0%b7%D0%B0%D0%B5%D1%80/",
+      "error": "HTTP 404 Not Found",
+      "contentType": "text/html; charset=UTF-8",
+      "occurrences": [
+        {
+          "institution": "Updated Government",
+          "source": "src\\data\\updated-government-forms.ts:203"
+        }
+      ]
+    },
+    {
+      "url": "https://banovici.gov.ba/wp-content/uploads/2021/04/05-1.2-Zahtjev-za-ponistenje-pravnosnaznog-rjesenja-o-eksproprijaciji-nekretnina-deeksproprijacija.pdf",
+      "error": "HTTP 404 Not Found",
+      "contentType": "text/html; charset=UTF-8",
+      "occurrences": [
+        {
+          "institution": "Updated Government",
+          "source": "src\\data\\updated-government-forms.ts:284"
+        }
+      ]
+    },
+    {
+      "url": "https://banovici.gov.ba/wp-content/uploads/2021/04/06-1.13-Zahtjev-za-ostvarivanje-novcane-podrske-za-proizvodnju-u-zasticenom-prostoru-%E2%80%93-plastenici-staklenici.pdf",
+      "error": "HTTP 404 Not Found",
+      "contentType": "text/html; charset=UTF-8",
+      "occurrences": [
+        {
+          "institution": "Updated Government",
+          "source": "src\\data\\updated-government-forms.ts:326"
+        }
+      ]
+    },
+    {
+      "url": "https://banovici.gov.ba/wp-content/uploads/2021/04/06-1.21-Zahtjev-za-ostvarivanje-novcane-podrske-za-proizvodnju-stocnog-zita-kukuruz.pdf",
+      "error": "HTTP 404 Not Found",
+      "contentType": "text/html; charset=UTF-8",
+      "occurrences": [
+        {
+          "institution": "Updated Government",
+          "source": "src\\data\\updated-government-forms.ts:334"
+        }
+      ]
+    },
+    {
+      "url": "https://banovici.gov.ba/wp-content/uploads/2021/04/08-1.4-Zahtjev-za-ispravku-promjenu-podataka-u-maticnoj-knjizi.pdf",
+      "error": "HTTP 404 Not Found",
+      "contentType": "text/html; charset=UTF-8",
+      "occurrences": [
+        {
+          "institution": "Updated Government",
+          "source": "src\\data\\updated-government-forms.ts:340"
+        }
+      ]
+    },
+    {
+      "url": "https://banovici.gov.ba/wp-content/uploads/2021/04/08-1.5-Zahtjev-za-upis-rodjenja-u-maticnu-knjigu-rodjenih.pdf",
+      "error": "HTTP 404 Not Found",
+      "contentType": "text/html; charset=UTF-8",
+      "occurrences": [
+        {
+          "institution": "Updated Government",
+          "source": "src\\data\\updated-government-forms.ts:341"
+        }
+      ]
+    },
+    {
+      "url": "https://banovici.gov.ba/wp-content/uploads/2021/04/08-1.6-Zahtjev-za-upis-smrti-u-maticnu-knjigu-umrlih.pdf",
+      "error": "HTTP 404 Not Found",
+      "contentType": "text/html; charset=UTF-8",
+      "occurrences": [
+        {
+          "institution": "Updated Government",
+          "source": "src\\data\\updated-government-forms.ts:342"
+        }
+      ]
+    },
+    {
+      "url": "https://banovici.gov.ba/wp-content/uploads/2021/04/08-1.7-Zahtjev-za-upis-vjencanja-u-maticnu-knjigu-vjencanih.pdf",
+      "error": "HTTP 404 Not Found",
+      "contentType": "text/html; charset=UTF-8",
+      "occurrences": [
+        {
+          "institution": "Updated Government",
+          "source": "src\\data\\updated-government-forms.ts:343"
+        }
+      ]
+    },
+    {
+      "url": "https://banovici.gov.ba/wp-content/uploads/2021/04/08-2.8-Zahtjev-za-uskladivanje-priznavanje-prava-na-porodicnu-invalidninu-nakon-ostvarivanja-prava-na-PIOMIO-penziju.pdf",
+      "error": "HTTP 404 Not Found",
+      "contentType": "text/html; charset=UTF-8",
+      "occurrences": [
+        {
+          "institution": "Updated Government",
+          "source": "src\\data\\updated-government-forms.ts:352"
+        }
+      ]
+    },
+    {
+      "url": "https://banovici.gov.ba/wp-content/uploads/2021/04/10-1.2-Zahtjev-za-izdavanje-uvjerenja-o-pripadnosti-civilnoj-zastiti-u-preiodu-1992-1995.-godina.pdf",
+      "error": "HTTP 404 Not Found",
+      "contentType": "text/html; charset=UTF-8",
+      "occurrences": [
+        {
+          "institution": "Updated Government",
+          "source": "src\\data\\updated-government-forms.ts:365"
+        }
+      ]
+    },
+    {
+      "url": "https://www.opstinabileca.ba/wp-content/uploads/2021/03/%D0%97%D0%B0%D1%85%D1%82%D1%98%D0%B5%D0%B2-%D0%B7%D0%B0-%D0%B8%D0%B7%D0%BB%D0%B0%D0%B7%D0%B0%D0%BA-%D1%81%D0%BB%D1%83%D0%B6%D0%B1%D0%B5%D0%BD%D0%BE%D0%B3-%D0%BB%D0%B8%D1%86%D0%B0-%D1%80%D0%B0%D0%B4%D0%B8-%D0%B0%D0%B5%D0%B2%D1%98%D0%B5%D1%80%D0%B5-%D0%BF%D0%B0%D0%B5%D1%82%D0%BF%D0%B8%D1%81%D0%B0.pdf",
+      "error": "HTTP 404 Not Found",
+      "contentType": "text/html",
+      "occurrences": [
+        {
+          "institution": "Updated Government",
+          "source": "src\\data\\updated-government-forms.ts:441"
+        }
+      ]
+    },
+    {
+      "url": "https://www.opstinabileca.ba/wp-content/uploads/2021/03/%D0%97%D0%B0%D1%85%D1%82%D1%98%D0%B5%D0%B2-%D0%B7%D0%B0-%D0%BF%D1%80%D0%B8%D1%81%D1%82%D1%83%D0%BF-%D0%B8%D0%BD%D1%84%D0%B0%D0%B5%D1%80%D0%BC%D0%B0%D1%86%D0%B8%D1%98%D0%B0%D0%BC%D0%B0.pdf",
+      "error": "HTTP 404 Not Found",
+      "contentType": "text/html",
+      "occurrences": [
+        {
+          "institution": "Updated Government",
+          "source": "src\\data\\updated-government-forms.ts:442"
+        }
+      ]
+    },
+    {
+      "url": "https://www.opstinabileca.ba/wp-content/uploads/2021/03/%D0%97%D0%B0%D1%85%D1%82%D1%98%D0%B5%D0%B2-%D0%B7%D0%B0-%D0%BF%D1%80%D0%B0%D0%B5%D0%BC%D1%98%D0%B5%D0%BD%D1%83-%D0%B8%D0%BC%D0%B5%D0%BD%D0%B0%D0%BF%D1%80%D0%B5%D0%B7%D0%B8%D0%BC%D0%B5%D0%BD%D0%B0.pdf",
+      "error": "HTTP 404 Not Found",
+      "contentType": "text/html",
+      "occurrences": [
+        {
+          "institution": "Updated Government",
+          "source": "src\\data\\updated-government-forms.ts:444"
+        }
+      ]
+    },
+    {
+      "url": "https://www.opstinabileca.ba/wp-content/uploads/2021/03/%D0%97%D0%B0%D1%85%D1%82%D1%98%D0%B5%D0%B2-%D0%B7%D0%B0-%D0%B4%D0%B0%D0%B5%D0%BD%D0%B0%D0%B5%D1%88%D0%B5%D1%9A%D0%B5-%D1%80%D1%98%D0%B5%D1%88%D0%B5%D1%9A%D0%B0-%D0%B7%D0%B0-%D0%B8%D1%81%D0%BF%D1%80%D0%B0%D0%B2%D0%BA%D1%83-%D0%BF%D0%BE%D0%B4%D0%B0%D1%82%D0%B0%D0%BA%D0%B0-%D1%83-%D0%9C%D0%9A.pdf",
+      "error": "HTTP 404 Not Found",
+      "contentType": "text/html",
+      "occurrences": [
+        {
+          "institution": "Updated Government",
+          "source": "src\\data\\updated-government-forms.ts:445"
+        }
+      ]
+    },
+    {
+      "url": "https://www.opstinabileca.ba/wp-content/uploads/2021/03/%D0%97%D0%B0%D1%85%D1%82%D1%98%D0%B5%D0%B2-%D0%B7%D0%B0-%D0%B4%D0%B0%D0%B5%D0%BD%D0%B0%D0%B5%D1%88%D0%B5%D1%9A%D0%B5-%D1%80%D1%98%D0%B5%D1%88%D0%B5%D1%9A%D0%B0-%D0%B7%D0%B0-%D0%BD%D0%B0%D0%BA%D0%BD%D0%B0%D0%B4%D0%BD%D0%B8-%D1%83%D0%BF%D0%B8%D1%81-%D1%87%D0%B8%D1%9A%D0%B5%D0%BD%D0%B8%D1%86%D0%B5-%D1%80%D0%BE%D1%92%D0%B5%D1%9A%D0%B0-%D1%83-%D0%9C%D0%9A%D0%A0-%D0%BF%D1%80%D0%B5%D0%BC%D0%B0-%D1%83%D0%BF%D0%B8%D1%81%D1%83-%D1%83-%D0%9A%D1%9A%D0%B8%D0%B3%D1%83-%D0%B4%D1%80%D0%B6%D0%B0%D0%B2%D1%99%D0%B0%D0%BD%D0%B0.pdf",
+      "error": "HTTP 404 Not Found",
+      "contentType": "text/html",
+      "occurrences": [
+        {
+          "institution": "Updated Government",
+          "source": "src\\data\\updated-government-forms.ts:446"
+        }
+      ]
+    },
+    {
+      "url": "https://www.opstinabileca.ba/wp-content/uploads/2021/03/%D0%97%D0%B0%D1%85%D1%82%D1%98%D0%B5%D0%B2-%D0%B7%D0%B0-%D0%BF%D1%80%D0%B8%D0%B7%D0%BD%D0%B0%D0%B2%D0%B0%D1%9A%D0%B5-%D1%81%D1%82%D0%B0%D1%82%D1%83%D1%81%D0%B0-%D0%B1%D0%B0%D0%B5%D1%80%D1%86%D0%B0-%D0%B8-%D0%BA%D0%B0%D1%82%D0%B5%D0%B3%D0%B0%D0%B5%D1%80%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%98%D0%B5.pdf",
+      "error": "HTTP 404 Not Found",
+      "contentType": "text/html",
+      "occurrences": [
+        {
+          "institution": "Updated Government",
+          "source": "src\\data\\updated-government-forms.ts:447"
+        }
+      ]
+    },
+    {
+      "url": "https://www.opstinabileca.ba/wp-content/uploads/2021/03/%D0%97%D0%B0%D1%85%D1%82%D1%98%D0%B5%D0%B2-%D0%B7%D0%B0-%D0%B0%D0%B5%D1%81%D1%82%D0%B2%D0%B0%D1%80%D0%B8%D0%B2%D0%B0%D1%9A%D0%B5-%D0%BF%D1%80%D0%B0%D0%B2%D0%B0-%D0%BD%D0%B0-%D0%B1%D0%B0%D0%B5%D1%80%D0%B0%D1%87%D0%BA%D0%B8-%D0%B4%D0%BE%D0%B4%D0%B0%D1%82%D0%B0%D0%BA.pdf",
+      "error": "HTTP 404 Not Found",
+      "contentType": "text/html",
+      "occurrences": [
+        {
+          "institution": "Updated Government",
+          "source": "src\\data\\updated-government-forms.ts:449"
+        }
+      ]
+    },
+    {
+      "url": "https://opstinarudo.com/wp-content/uploads/2013/07/Zahtjev-za-obavljanje-promjenu-podataka-i-prestanak-obavljanja-zanatsko-preduzetnicke-djelatnosti.pdf",
+      "error": "HTTP 404 Not Found",
+      "contentType": "text/html",
+      "occurrences": [
+        {
+          "institution": "Updated Government",
+          "source": "src\\data\\updated-government-forms.ts:478"
+        }
+      ]
+    },
+    {
+      "url": "https://opstinarudo.com/wp-content/uploads/2013/07/Zahtjev-za-pripremne-radnje-zanatsko-preduzetnicke-djelatnosti.pdf",
+      "error": "HTTP 404 Not Found",
+      "contentType": "text/html",
+      "occurrences": [
+        {
+          "institution": "Updated Government",
+          "source": "src\\data\\updated-government-forms.ts:479"
+        }
+      ]
+    },
+    {
+      "url": "https://opstinarudo.com/wp-content/uploads/2013/07/Zahtjev-za-naknadu-po-odlikovanju-OBRAZAC.pdf",
+      "error": "HTTP 404 Not Found",
+      "contentType": "text/html",
+      "occurrences": [
+        {
+          "institution": "Updated Government",
+          "source": "src\\data\\updated-government-forms.ts:487"
+        }
+      ]
+    },
+    {
+      "url": "https://opstinarudo.com/wp-content/uploads/2013/06/Zahtjev-za-ostvarivanje-porodicne-invalidnine-iza-umrlog-vojnog-invalida.pdf",
+      "error": "HTTP 404 Not Found",
+      "contentType": "text/html",
+      "occurrences": [
+        {
+          "institution": "Updated Government",
+          "source": "src\\data\\updated-government-forms.ts:489"
+        }
+      ]
+    },
+    {
+      "url": "https://opstinarudo.com/wp-content/uploads/2026/06/Zahtjev-za-priznavanje-prava-na-boracki-dodatak.pdf",
+      "error": "HTTP 404 Not Found",
+      "contentType": "text/html",
+      "occurrences": [
+        {
+          "institution": "Updated Government",
+          "source": "src\\data\\updated-government-forms.ts:491"
+        }
+      ]
+    },
+    {
+      "url": "https://opstinarudo.com/wp-content/uploads/2013/07/Zahtjev-za-priznavanje-svojstva-i-kategorije-borca.pdf",
+      "error": "HTTP 404 Not Found",
+      "contentType": "text/html",
+      "occurrences": [
+        {
+          "institution": "Updated Government",
+          "source": "src\\data\\updated-government-forms.ts:494"
+        }
+      ]
+    },
+    {
+      "url": "https://opstinarudo.com/wp-content/uploads/2013/07/Zahtjev-za-priznavanje-svojstva-i-prava-RVI-OBRAZAC.pdf",
+      "error": "HTTP 404 Not Found",
+      "contentType": "text/html",
+      "occurrences": [
+        {
+          "institution": "Updated Government",
+          "source": "src\\data\\updated-government-forms.ts:495"
+        }
+      ]
+    },
+    {
+      "url": "https://opstinarudo.com/wp-content/uploads/2013/06/Zahtjev-za-troskove-sahrane-borca-I-II-kat-OBRAZAC.pdf",
+      "error": "HTTP 404 Not Found",
+      "contentType": "text/html",
+      "occurrences": [
+        {
+          "institution": "Updated Government",
+          "source": "src\\data\\updated-government-forms.ts:499"
+        }
+      ]
+    },
+    {
+      "url": "https://opstinarudo.com/wp-content/uploads/2013/06/Zahtjev-za-utvrdjivanje-novog-procenta-vojnog-invaliditeta.pdf",
+      "error": "HTTP 404 Not Found",
+      "contentType": "text/html",
+      "occurrences": [
+        {
+          "institution": "Updated Government",
+          "source": "src\\data\\updated-government-forms.ts:500"
+        }
+      ]
+    },
+    {
+      "url": "https://hanpijesak.org/wp-content/uploads/2017/03/%D0%97%D0%B0%D0%BF%D0%B8%D1%81%D0%BD%D0%B8%D0%BA-%D0%BE-%D0%BF%D1%80%D0%B8%D1%98%D0%B0%D0%B2%D0%B8-%D0%BD%D0%B0%D0%BC%D1%98%D0%B5%D1%80%D0%B5-%D0%B7%D0%B0-%D1%81%D1%82%D1%83%D0%BF%D0%B0%D1%9A%D0%B5-%D1%83-%D0%B1%D1%80%D0%B0%D0%BA.doc",
+      "error": "HTTP 404 Not Found",
+      "contentType": "text/html; charset=UTF-8",
+      "occurrences": [
+        {
+          "institution": "Updated Government",
+          "source": "src\\data\\updated-government-forms.ts:525"
+        }
+      ]
+    },
+    {
+      "url": "https://hanpijesak.org/wp-content/uploads/2017/03/%D0%9F%D1%80%D0%B8%D1%98%D0%B0%D0%B2%D0%B0-%D0%B7%D0%B0%D0%BA%D1%99%D1%83%D1%87%D0%B5%D1%9A%D0%B0-%D0%B1%D1%80%D0%B0%D0%BA%D0%B0.docx",
+      "error": "HTTP 404 Not Found",
+      "contentType": "text/html; charset=UTF-8",
+      "occurrences": [
+        {
+          "institution": "Updated Government",
+          "source": "src\\data\\updated-government-forms.ts:526"
+        }
+      ]
+    },
+    {
+      "url": "https://hanpijesak.org/wp-content/uploads/2017/03/%D0%9F%D1%80%D0%B8%D1%98%D0%B0%D0%B2%D0%B0-%D1%87%D0%B8%D1%9A%D0%B5%D0%BD%D0%B8%D1%86%D0%B5-%D1%81%D0%BC%D1%80%D1%82%D0%B8.doc",
+      "error": "HTTP 404 Not Found",
+      "contentType": "text/html; charset=UTF-8",
+      "occurrences": [
+        {
+          "institution": "Updated Government",
+          "source": "src\\data\\updated-government-forms.ts:528"
+        }
+      ]
+    },
+    {
+      "url": "https://hanpijesak.org/wp-content/uploads/2017/03/%D0%97%D0%B0%D1%85%D1%82%D1%98%D0%B5%D0%B2-%D0%B7%D0%B0-%D0%BE%D0%B4%D0%BE%D0%B1%D1%80%D0%B5%D1%9A%D0%B5-%D0%B7%D0%B0-%D0%B7%D0%B0%D0%BA%D1%99%D1%83%D1%87%D0%B5%D1%9A%D0%B5-%D0%B1%D1%80%D0%B0%D0%BA%D0%B0-%D0%BF%D0%BE-%D0%BF%D1%83%D0%BD%D0%BE%D0%BC%D0%BE%D1%9B%D0%BD%D0%B8%D0%BA%D1%83.docx",
+      "error": "HTTP 404 Not Found",
+      "contentType": "text/html; charset=UTF-8",
+      "occurrences": [
+        {
+          "institution": "Updated Government",
+          "source": "src\\data\\updated-government-forms.ts:529"
+        }
+      ]
+    },
+    {
+      "url": "https://hanpijesak.org/wp-content/uploads/2017/03/%D0%97%D0%B0%D1%85%D1%82%D1%98%D0%B5%D0%B2-%D0%B7%D0%B0-%D0%BE%D0%B4%D0%BE%D0%B1%D1%80%D0%B5%D1%9A%D0%B5-%D0%B7%D0%B0-%D0%B8%D0%B7%D0%BB%D0%B0%D0%B7%D0%B0%D0%BA-%D0%BC%D0%B0%D1%82%D0%B8%D1%87%D0%B0%D1%80%D0%B0-%D0%BD%D0%B0-%D1%82%D0%B5%D1%80%D0%B5%D0%BD-%D1%80%D0%B0%D0%B4%D0%B8-%D0%BE%D0%B1%D0%B0%D0%B2%D1%99%D0%B0%D1%9A%D0%B0-%D0%B2%D1%98%D0%B5%D0%BD%D1%87%D0%B0%D1%9A%D0%B0.doc",
+      "error": "HTTP 404 Not Found",
+      "contentType": "text/html; charset=UTF-8",
+      "occurrences": [
+        {
+          "institution": "Updated Government",
+          "source": "src\\data\\updated-government-forms.ts:530"
+        }
+      ]
+    },
+    {
+      "url": "https://hanpijesak.org/wp-content/uploads/2017/03/%D0%97%D0%B0%D1%85%D1%82%D1%98%D0%B5%D0%B2-%D0%B7%D0%B0-%D1%81%D0%B0%D1%81%D1%82%D0%B0%D0%B2%D1%99%D0%B0%D1%9A%D0%B5-%D1%81%D0%BC%D1%80%D1%82%D0%BE%D0%B2%D0%BD%D0%B8%D1%86%D0%B5-%D1%9B%D0%B8%D1%80%D0%B8%D0%BB%D0%B8%D1%86%D0%B0.doc",
+      "error": "HTTP 404 Not Found",
+      "contentType": "text/html; charset=UTF-8",
+      "occurrences": [
+        {
+          "institution": "Updated Government",
+          "source": "src\\data\\updated-government-forms.ts:533"
+        }
+      ]
+    },
+    {
+      "url": "https://hanpijesak.org/wp-content/uploads/2017/03/%D0%97%D0%B0%D1%85%D1%82%D1%98%D0%B5%D0%B2-%D0%B7%D0%B0-%D1%83%D0%BF%D0%B8%D1%81-%D1%83-%D0%9C%D0%9A%D0%A3-%D0%BD%D0%B0-%D0%BE%D1%81%D0%BD%D0%BE%D0%B2%D1%83-%D0%B8%D0%BD%D0%BE%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%BE%D0%B3-%D0%B8%D0%B7%D0%B2%D0%BE%D0%B4%D0%B0.doc",
+      "error": "HTTP 404 Not Found",
+      "contentType": "text/html; charset=UTF-8",
+      "occurrences": [
+        {
+          "institution": "Updated Government",
+          "source": "src\\data\\updated-government-forms.ts:535"
+        }
+      ]
+    },
+    {
+      "url": "https://hanpijesak.org/wp-content/uploads/2017/03/%D0%97%D0%B0%D1%85%D1%82%D1%98%D0%B5%D0%B2-%D0%B7%D0%B0-%D1%83%D0%BF%D0%B8%D1%81-%D1%87%D0%B8%D1%9A%D0%B5%D0%BD%D0%B8%D1%86%D0%B5-%D0%B4%D1%80%D0%B6%D0%B0%D0%B2%D1%99%D0%B0%D0%BD%D1%81%D1%82%D0%B2%D0%B0-%D1%83-%D0%BC%D0%B0%D1%82%D0%B8%D1%87%D0%BD%D1%83-%D0%BA%D1%9A%D0%B8%D0%B3%D1%83-%D1%80%D0%BE%D1%92%D0%B5%D0%BD%D0%B8%D1%85.doc",
+      "error": "HTTP 404 Not Found",
+      "contentType": "text/html; charset=UTF-8",
+      "occurrences": [
+        {
+          "institution": "Updated Government",
+          "source": "src\\data\\updated-government-forms.ts:538"
+        }
+      ]
+    },
+    {
+      "url": "https://hanpijesak.org/wp-content/uploads/2017/03/%D0%97%D0%B0%D1%85%D1%82%D1%98%D0%B5%D0%B2-%D0%B7%D0%B0-%D0%BD%D0%B0%D0%BA%D0%BD%D0%B0%D0%B4%D0%BD%D0%B8-%D1%83%D0%BF%D0%B8%D1%81-%D1%83-%D0%9C%D0%9A%D0%A0-1.docx",
+      "error": "HTTP 404 Not Found",
+      "contentType": "text/html; charset=UTF-8",
+      "occurrences": [
+        {
+          "institution": "Updated Government",
+          "source": "src\\data\\updated-government-forms.ts:540"
+        }
+      ]
+    },
+    {
+      "url": "https://hanpijesak.org/wp-content/uploads/2017/03/%D0%97%D0%B0%D1%85%D1%82%D1%98%D0%B5%D0%B2-%D0%B7%D0%B0-%D0%BD%D0%B0%D0%BA%D0%BD%D0%B0%D0%B4%D0%BD%D0%B8-%D1%83%D0%BF%D0%B8%D1%81-%D1%83-%D0%9C%D0%9A%D0%A0-2.docx",
+      "error": "HTTP 404 Not Found",
+      "contentType": "text/html; charset=UTF-8",
+      "occurrences": [
+        {
+          "institution": "Updated Government",
+          "source": "src\\data\\updated-government-forms.ts:541"
+        }
+      ]
+    },
+    {
+      "url": "https://hanpijesak.org/wp-content/uploads/2017/03/%D0%97%D0%B0%D1%85%D1%82%D1%98%D0%B5%D0%B2-%D0%B7%D0%B0-%D0%B8%D1%81%D0%BF%D1%80%D0%B0%D0%B2%D0%BA%D1%83-%D0%BF%D0%BE%D0%B3%D1%80%D0%B5%D1%88%D0%BD%D0%BE-%D0%B5%D0%B2%D0%B8%D0%B4%D0%B5%D0%BD%D1%82%D0%B8%D1%80%D0%B0%D0%BD%D0%B8%D1%85-%D0%BF%D0%BE%D0%B4%D0%B0%D1%82%D0%B0%D0%BA%D0%B0.docx",
+      "error": "HTTP 404 Not Found",
+      "contentType": "text/html; charset=UTF-8",
+      "occurrences": [
+        {
+          "institution": "Updated Government",
+          "source": "src\\data\\updated-government-forms.ts:542"
+        }
+      ]
+    },
+    {
+      "url": "https://hanpijesak.org/wp-content/uploads/2017/03/%D0%97%D0%B0%D1%85%D1%82%D1%98%D0%B5%D0%B2-%D0%B7%D0%B0-%D0%B8%D0%B7%D0%B4%D0%B0%D0%B2%D0%B0%D1%9A%D0%B5-%D0%B5%D0%BA%D0%BE%D0%BB%D0%BE%D1%88%D0%BA%D0%B5-%D0%B4%D0%BE%D0%B7%D0%B2%D0%BE%D0%BB%D0%B5.doc",
+      "error": "HTTP 404 Not Found",
+      "contentType": "text/html; charset=UTF-8",
+      "occurrences": [
+        {
+          "institution": "Updated Government",
+          "source": "src\\data\\updated-government-forms.ts:549"
+        }
+      ]
+    },
+    {
+      "url": "https://hanpijesak.org/wp-content/uploads/2017/03/%D0%97%D0%B0%D1%85%D1%82%D1%98%D0%B5%D0%B2-%D0%B7%D0%B0-%D0%BE%D0%B1%D0%BD%D0%B0%D0%B2%D1%99%D0%B0%D1%9A%D0%B5-%D0%B5%D0%BA%D0%BE%D0%BB%D0%BE%D1%88%D0%BA%D0%B5-%D0%B4%D0%BE%D0%B7%D0%B2%D0%BE%D0%BB%D0%B5-2017.doc",
+      "error": "HTTP 404 Not Found",
+      "contentType": "text/html; charset=UTF-8",
+      "occurrences": [
+        {
+          "institution": "Updated Government",
+          "source": "src\\data\\updated-government-forms.ts:550"
+        }
+      ]
+    },
+    {
+      "url": "https://hanpijesak.org/wp-content/uploads/2017/03/%D0%97%D0%B0%D1%85%D1%82%D1%98%D0%B5%D0%B2-%D0%B7%D0%B0-%D0%B8%D0%B7%D0%BB%D0%B0%D0%B7%D0%B0%D0%BA-%D0%B5%D0%BA%D0%BE%D0%BB%D0%BE%D1%88%D0%BA%D0%BE%D0%B3-%D0%B8%D0%BD%D1%81%D0%BF%D0%B5%D0%BA%D1%82%D0%BE%D1%80%D0%B0.docx",
+      "error": "HTTP 404 Not Found",
+      "contentType": "text/html; charset=UTF-8",
+      "occurrences": [
+        {
+          "institution": "Updated Government",
+          "source": "src\\data\\updated-government-forms.ts:551"
+        }
+      ]
+    },
+    {
+      "url": "https://hanpijesak.org/wp-content/uploads/2017/03/%D0%97%D0%B0%D1%85%D1%82%D1%98%D0%B5%D0%B2-%D0%B7%D0%B0-%D0%B8%D0%B7%D0%BB%D0%B0%D0%B7%D0%B0%D0%BA-%D0%B8%D0%BD%D1%81%D0%BF%D0%B5%D0%BA%D1%82%D0%BE%D1%80%D0%B0-%D0%B7%D0%B0-%D1%85%D1%80%D0%B0%D0%BD%D1%83-%D0%B8-%D0%B7%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BE%D0%B3.doc",
+      "error": "HTTP 404 Not Found",
+      "contentType": "text/html; charset=UTF-8",
+      "occurrences": [
+        {
+          "institution": "Updated Government",
+          "source": "src\\data\\updated-government-forms.ts:552"
+        }
+      ]
+    },
+    {
+      "url": "https://hanpijesak.org/wp-content/uploads/2017/03/%D0%97%D0%B0%D1%85%D1%82%D1%98%D0%B5%D0%B2-%D0%B7%D0%B0-%D0%B8%D0%B7%D0%BB%D0%B0%D0%B7%D0%B0%D0%BA-%D1%82%D1%80%D0%B6%D0%B8%D1%88%D0%BD%D0%BE%D0%B3-%D0%B8%D0%BD%D1%81%D0%BF%D0%B5%D0%BA%D1%82%D0%BE%D1%80%D0%B0.docx",
+      "error": "HTTP 404 Not Found",
+      "contentType": "text/html; charset=UTF-8",
+      "occurrences": [
+        {
+          "institution": "Updated Government",
+          "source": "src\\data\\updated-government-forms.ts:553"
+        }
+      ]
+    },
+    {
+      "url": "https://hanpijesak.org/wp-content/uploads/2017/03/%D0%97%D0%B0%D1%85%D1%82%D1%98%D0%B5%D0%B2-%D0%B7%D0%B0-%D0%B8%D0%B7%D0%BB%D0%B0%D0%B7%D0%B0%D0%BA-%D1%83%D1%80%D0%B1%D0%B0%D0%BD%D0%B8%D1%81%D1%82%D0%B8%D1%87%D0%BA%D0%BE-%D0%B3%D1%80%D0%B0%D1%92%D0%B5%D0%B2%D0%B8%D0%BD%D1%81%D0%BA%D0%BE%D0%B3-%D0%B8%D0%BD%D1%81%D0%BF%D0%B5%D0%BA%D1%82%D0%BE%D1%80%D0%B0.doc",
+      "error": "HTTP 404 Not Found",
+      "contentType": "text/html; charset=UTF-8",
+      "occurrences": [
+        {
+          "institution": "Updated Government",
+          "source": "src\\data\\updated-government-forms.ts:554"
+        }
+      ]
+    },
+    {
+      "url": "https://hanpijesak.org/wp-content/uploads/2017/03/%D0%97%D0%B0%D1%85%D1%82%D1%98%D0%B5%D0%B2-%D0%B7%D0%B0-%D0%B8%D0%B7%D0%BB%D0%B0%D0%B7%D0%B0%D0%BA-%D0%BA%D0%BE%D0%BC%D1%83%D0%BD%D0%B0%D0%BB%D0%BD%D0%BE%D1%98-%D0%BF%D0%BE%D0%BB%D0%B8%D1%86%D0%B8%D1%98%D0%B5.doc",
+      "error": "HTTP 404 Not Found",
+      "contentType": "text/html; charset=UTF-8",
+      "occurrences": [
+        {
+          "institution": "Updated Government",
+          "source": "src\\data\\updated-government-forms.ts:555"
+        }
+      ]
+    },
+    {
+      "url": "https://hanpijesak.org/wp-content/uploads/2017/03/%D0%97%D0%B0%D1%85%D1%82%D1%98%D0%B5%D0%B2-%D0%B7%D0%B0-%D0%B5%D0%BA%D1%81%D1%85%D1%83%D0%BC%D0%B0%D1%86%D0%B8%D1%98%D1%83-%D0%BF%D0%BE%D1%81%D0%BC%D1%80%D1%82%D0%BD%D0%B8%D1%85-%D0%BE%D1%81%D1%82%D0%B0%D1%82%D0%B0%D0%BA%D0%B0.doc",
+      "error": "HTTP 404 Not Found",
+      "contentType": "text/html; charset=UTF-8",
+      "occurrences": [
+        {
+          "institution": "Updated Government",
+          "source": "src\\data\\updated-government-forms.ts:556"
+        }
+      ]
+    },
+    {
+      "url": "https://hanpijesak.org/wp-content/uploads/2017/03/%D0%97%D0%B0%D1%85%D1%82%D1%98%D0%B5%D0%B2-%D0%B7%D0%B0-%D0%B8%D0%B7%D0%B4%D0%B0%D0%B2%D0%B0%D1%9A%D0%B5-%D0%BB%D0%B8%D1%86%D0%B5%D0%BD%D1%86%D0%B5-%D0%95-%D0%B7%D0%B0-%D0%BF%D1%80%D0%B5%D0%B2%D0%BE%D0%B7%D0%BD%D0%B8%D0%BA%D0%B0.doc",
+      "error": "HTTP 404 Not Found",
+      "contentType": "text/html; charset=UTF-8",
+      "occurrences": [
+        {
+          "institution": "Updated Government",
+          "source": "src\\data\\updated-government-forms.ts:559"
+        }
+      ]
+    },
+    {
+      "url": "https://hanpijesak.org/wp-content/uploads/2017/03/%D0%97%D0%B0%D1%85%D1%82%D1%98%D0%B5%D0%B2-%D0%B7%D0%B0-%D0%B8%D0%B7%D0%B4%D0%B0%D0%B2%D0%B0%D1%9A%D0%B5-%D0%BB%D0%B8%D1%86%D0%B5%D0%BD%D1%86%D0%B5-%D0%A6-%D0%B7%D0%B0-%D0%BF%D1%80%D0%B5%D0%B2%D0%BE%D0%B7%D0%BD%D0%B8%D0%BA%D0%B0.doc",
+      "error": "HTTP 404 Not Found",
+      "contentType": "text/html; charset=UTF-8",
+      "occurrences": [
+        {
+          "institution": "Updated Government",
+          "source": "src\\data\\updated-government-forms.ts:560"
+        }
+      ]
+    },
+    {
+      "url": "https://hanpijesak.org/wp-content/uploads/2017/03/%D0%97%D0%B0%D1%85%D1%82%D1%98%D0%B5%D0%B2-%D0%B7%D0%B0-%D0%B8%D0%B7%D0%B4%D0%B0%D0%B2%D0%B0%D1%9A%D0%B5-%D0%BE%D0%B4%D0%BE%D0%B1%D1%80%D0%B5%D1%9A%D0%B0-%D0%B7%D0%B0-%D0%BE%D0%B1%D0%B0%D0%B2%D1%99%D0%B0%D1%9A%D0%B5-%D0%BF%D1%80%D0%B5%D0%B2%D0%BE%D0%B7%D0%B0-%D0%B7%D0%B0-%D0%B2%D0%BB%D0%B0%D1%81%D1%82%D0%B8%D1%82%D0%B5-%D0%BF%D0%BE%D1%82%D1%80%D0%B5%D0%B1%D0%B5.doc",
+      "error": "HTTP 404 Not Found",
+      "contentType": "text/html; charset=UTF-8",
+      "occurrences": [
+        {
+          "institution": "Updated Government",
+          "source": "src\\data\\updated-government-forms.ts:561"
+        }
+      ]
+    },
+    {
+      "url": "https://hanpijesak.org/wp-content/uploads/2017/03/%D0%97%D0%B0%D1%85%D1%82%D1%98%D0%B5%D0%B2-%D0%B7%D0%B0-%D0%B8%D0%B7%D0%B4%D0%B0%D0%B2%D0%B0%D1%9A%D0%B5-%D1%80%D1%98%D0%B5%D1%88%D0%B5%D1%9A%D0%B0-%D0%BE-%D1%80%D0%B5%D0%B3%D0%B8%D1%81%D1%82%D1%80%D0%B0%D1%86%D0%B8%D1%98%D0%B8-%D1%82%D0%B5%D1%80%D0%B5%D1%82.-%D0%BC%D0%BE%D1%82%D0%BE%D1%80%D0%BD%D0%BE%D0%B3-%D0%B2%D0%BE%D0%B7%D0%B8%D0%BB%D0%B0-%D0%B8-%D0%BF%D1%80%D0%B8%D0%BA%D1%99%D1%83%D1%87%D0%BD%D0%BE%D0%B3-%D0%B2%D0%BE%D0%B7%D0%B8%D0%BB%D0%B0.doc",
+      "error": "HTTP 404 Not Found",
+      "contentType": "text/html; charset=UTF-8",
+      "occurrences": [
+        {
+          "institution": "Updated Government",
+          "source": "src\\data\\updated-government-forms.ts:562"
+        }
+      ]
+    },
+    {
+      "url": "https://hanpijesak.org/wp-content/uploads/2017/03/%D0%97%D0%B0%D1%85%D1%82%D1%98%D0%B5%D0%B2-%D0%B7%D0%B0-%D0%BE%D0%B4%D1%98%D0%B0%D0%B2%D1%83-%D0%A2%D0%9C%D0%92.odt",
+      "error": "HTTP 404 Not Found",
+      "contentType": "text/html; charset=UTF-8",
+      "occurrences": [
+        {
+          "institution": "Updated Government",
+          "source": "src\\data\\updated-government-forms.ts:563"
+        }
+      ]
+    },
+    {
+      "url": "https://hanpijesak.org/wp-content/uploads/2017/03/%D0%97%D0%B0%D1%85%D1%82%D1%98%D0%B5%D0%B2-%D0%B7%D0%B0-%D0%B8%D0%B7%D0%B4%D0%B0%D0%B2%D0%B0%D1%9A%D0%B5-%D1%83%D0%B2%D1%98%D0%B5%D1%80%D0%B5%D1%9A%D0%B5-%D0%B7%D0%B0-%D0%BA%D1%83%D1%9B%D0%BD%D0%B8-%D0%B1%D1%80%D0%BE%D1%98.doc",
+      "error": "HTTP 404 Not Found",
+      "contentType": "text/html; charset=UTF-8",
+      "occurrences": [
+        {
+          "institution": "Updated Government",
+          "source": "src\\data\\updated-government-forms.ts:568"
+        }
+      ]
+    },
+    {
+      "url": "https://hanpijesak.org/wp-content/uploads/2017/03/%D0%97%D0%B0%D1%85%D1%82%D1%98%D0%B5%D0%B2-%D0%B7%D0%B0-%D0%B8%D0%B7%D0%B4%D0%B0%D0%B2%D0%B0%D1%9A%D0%B5-%D1%83%D0%B2%D1%98%D0%B5%D1%80%D0%B5%D1%9A%D0%B0-%D0%B7%D0%B0-%D0%97%D0%A3%D0%9F.doc",
+      "error": "HTTP 404 Not Found",
+      "contentType": "text/html; charset=UTF-8",
+      "occurrences": [
+        {
+          "institution": "Updated Government",
+          "source": "src\\data\\updated-government-forms.ts:569"
+        }
+      ]
+    },
+    {
+      "url": "https://hanpijesak.org/wp-content/uploads/2017/03/%D0%9F%D1%80%D0%B8%D1%98%D0%B0%D0%B2%D0%B0-%D0%B8%D0%B7%D0%B2%D0%BE%D1%92%D0%B5%D1%9A%D0%B0-%D0%BC%D1%83%D0%B7%D0%B8%D0%BA%D0%B5-%D1%83%D0%B6%D0%B8%D0%B2%D0%BE-%D1%83-%D1%83%D0%B3%D0%BE%D1%81%D1%82%D0%B8%D1%82%D0%B5%D1%99%D1%81%D0%BA%D0%BE%D0%BC-%D0%BE%D0%B1%D1%98%D0%B5%D0%BA%D1%82%D1%83.doc",
+      "error": "HTTP 404 Not Found",
+      "contentType": "text/html; charset=UTF-8",
+      "occurrences": [
+        {
+          "institution": "Updated Government",
+          "source": "src\\data\\updated-government-forms.ts:575"
+        }
+      ]
+    },
+    {
+      "url": "https://hanpijesak.org/wp-content/uploads/2017/03/%D0%97%D0%B0%D1%85%D1%82%D1%98%D0%B5%D0%B2-%D0%B7%D0%B0-%D0%B8%D0%B7%D0%B4%D0%B0%D0%B2%D0%B0%D1%9A%D0%B5-%D0%BF%D0%BE%D1%99%D0%BE%D0%BF%D1%80%D0%B8%D0%B2%D1%80%D0%B5%D0%B4%D0%BD%D0%B5-%D1%81%D0%B0%D0%B3%D0%BB%D0%B0%D1%81%D0%BD%D0%BE%D1%81%D1%82%D0%B8.doc",
+      "error": "HTTP 404 Not Found",
+      "contentType": "text/html; charset=UTF-8",
+      "occurrences": [
+        {
+          "institution": "Updated Government",
+          "source": "src\\data\\updated-government-forms.ts:577"
+        }
+      ]
+    },
+    {
+      "url": "https://policijabdbih.gov.ba/images/dokumenti/obrasci/jafk/Zahtjev-zabrana-saobracaja-priredba-takmicenje26.pdf",
+      "error": "HTTP 404 Not Found",
+      "contentType": "text/html; charset=iso-8859-1",
+      "occurrences": [
+        {
+          "institution": "Uvjerenje o stažu osiguranja",
+          "source": "src\\lib\\institutions-database.ts:175"
+        }
+      ]
+    }
+  ],
+  "duplicateUrlCount": 220,
+  "duplicateUrlWithinFileCount": 97,
   "duplicateUrlsWithinFile": [
+    {
+      "url": "https://www.opstinabileca.ba/",
+      "occurrences": [
+        {
+          "institution": "Updated Government",
+          "source": "src\\data\\updated-government-forms.ts:439"
+        }
+      ]
+    },
+    {
+      "url": "https://www.opstinabileca.ba/obrazci-gradjani/",
+      "occurrences": [
+        {
+          "institution": "Updated Government",
+          "source": "src\\data\\updated-government-forms.ts:440"
+        }
+      ]
+    },
     {
       "url": "https://www.opstinabileca.ba/contacts/",
       "occurrences": [
         {
           "institution": "Bileća",
-          "source": "src\\data\\municipalities-database.ts:1729"
+          "source": "src\\data\\municipalities-database.ts:1844"
         }
       ]
     },
@@ -23,7 +779,7 @@
       "occurrences": [
         {
           "institution": "Bosanska Krupa",
-          "source": "src\\data\\verified-domains.ts:446"
+          "source": "src\\data\\verified-domains.ts:460"
         }
       ]
     },
@@ -63,7 +819,7 @@
         },
         {
           "institution": "Grad Goražde",
-          "source": "src\\data\\municipalities-database.ts:238"
+          "source": "src\\data\\municipalities-database.ts:274"
         }
       ]
     },
@@ -80,7 +836,7 @@
         },
         {
           "institution": "Grad Goražde",
-          "source": "src\\data\\municipalities-database.ts:226"
+          "source": "src\\data\\municipalities-database.ts:262"
         },
         {
           "institution": "Sarajevo Region",
@@ -88,7 +844,7 @@
         },
         {
           "institution": "Grad Goražde",
-          "source": "src\\data\\verified-domains.ts:991"
+          "source": "src\\data\\verified-domains.ts:1006"
         }
       ]
     },
@@ -97,7 +853,7 @@
       "occurrences": [
         {
           "institution": "Gračanica",
-          "source": "src\\data\\municipalities-database.ts:580"
+          "source": "src\\data\\municipalities-database.ts:633"
         }
       ]
     },
@@ -106,7 +862,7 @@
       "occurrences": [
         {
           "institution": "Gračanica",
-          "source": "src\\data\\municipalities-database.ts:594"
+          "source": "src\\data\\municipalities-database.ts:647"
         }
       ]
     },
@@ -115,7 +871,16 @@
       "occurrences": [
         {
           "institution": "Gračanica",
-          "source": "src\\data\\municipalities-database.ts:593"
+          "source": "src\\data\\municipalities-database.ts:646"
+        }
+      ]
+    },
+    {
+      "url": "https://vlada.ks.gov.ba/",
+      "occurrences": [
+        {
+          "institution": "Updated Government",
+          "source": "src\\data\\updated-government-forms.ts:594"
         }
       ]
     },
@@ -137,19 +902,19 @@
         },
         {
           "institution": "Općina Kakanj",
-          "source": "src\\data\\municipalities-database.ts:322"
+          "source": "src\\data\\municipalities-database.ts:367"
         },
         {
           "institution": "Općina Kakanj",
-          "source": "src\\data\\municipalities-database.ts:355"
+          "source": "src\\data\\municipalities-database.ts:400"
         },
         {
           "institution": "Općina Kakanj",
-          "source": "src\\data\\verified-domains.ts:204"
+          "source": "src\\data\\verified-domains.ts:218"
         },
         {
           "institution": "Općina Kakanj",
-          "source": "src\\data\\verified-domains.ts:209"
+          "source": "src\\data\\verified-domains.ts:223"
         }
       ]
     },
@@ -212,7 +977,7 @@
       "occurrences": [
         {
           "institution": "Kalesija",
-          "source": "src\\data\\municipalities-database.ts:455"
+          "source": "src\\data\\municipalities-database.ts:507"
         }
       ]
     },
@@ -234,11 +999,24 @@
         },
         {
           "institution": "Grad Livno",
-          "source": "src\\data\\municipalities-database.ts:1142"
+          "source": "src\\data\\municipalities-database.ts:1250"
         },
         {
           "institution": "Grad Livno",
-          "source": "src\\data\\verified-domains.ts:803"
+          "source": "src\\data\\verified-domains.ts:818"
+        }
+      ]
+    },
+    {
+      "url": "https://starigrad.ba/e-formulari/",
+      "occurrences": [
+        {
+          "institution": "Updated Government",
+          "source": "src\\data\\updated-government-forms.ts:217"
+        },
+        {
+          "institution": "Stari Grad Sarajevo",
+          "source": "src\\data\\verified-domains.ts:48"
         }
       ]
     },
@@ -247,47 +1025,56 @@
       "occurrences": [
         {
           "institution": "Sarajevo Region",
-          "source": "src\\data\\sarajevo-region-forms.ts:330"
+          "source": "src\\data\\sarajevo-region-forms.ts:331"
         },
         {
           "institution": "Sarajevo Region",
-          "source": "src\\data\\sarajevo-region-forms.ts:339"
+          "source": "src\\data\\sarajevo-region-forms.ts:340"
         },
         {
           "institution": "Sarajevo Region",
-          "source": "src\\data\\sarajevo-region-forms.ts:348"
+          "source": "src\\data\\sarajevo-region-forms.ts:349"
         },
         {
           "institution": "Sarajevo Region",
-          "source": "src\\data\\sarajevo-region-forms.ts:357"
+          "source": "src\\data\\sarajevo-region-forms.ts:358"
         },
         {
           "institution": "Sarajevo Region",
-          "source": "src\\data\\sarajevo-region-forms.ts:366"
+          "source": "src\\data\\sarajevo-region-forms.ts:367"
         },
         {
           "institution": "Sarajevo Region",
-          "source": "src\\data\\sarajevo-region-forms.ts:375"
+          "source": "src\\data\\sarajevo-region-forms.ts:376"
         },
         {
           "institution": "Sarajevo Region",
-          "source": "src\\data\\sarajevo-region-forms.ts:384"
+          "source": "src\\data\\sarajevo-region-forms.ts:385"
         },
         {
           "institution": "Sarajevo Region",
-          "source": "src\\data\\sarajevo-region-forms.ts:393"
+          "source": "src\\data\\sarajevo-region-forms.ts:394"
         },
         {
           "institution": "Sarajevo Region",
-          "source": "src\\data\\sarajevo-region-forms.ts:402"
+          "source": "src\\data\\sarajevo-region-forms.ts:403"
         },
         {
           "institution": "Sarajevo Region",
-          "source": "src\\data\\sarajevo-region-forms.ts:411"
+          "source": "src\\data\\sarajevo-region-forms.ts:412"
         },
         {
           "institution": "Centar Sarajevo",
-          "source": "src\\data\\verified-domains.ts:61"
+          "source": "src\\data\\verified-domains.ts:62"
+        }
+      ]
+    },
+    {
+      "url": "https://opcinailidza.ba/e-formulari/",
+      "occurrences": [
+        {
+          "institution": "Updated Government",
+          "source": "src\\data\\updated-government-forms.ts:231"
         }
       ]
     },
@@ -305,19 +1092,19 @@
       "occurrences": [
         {
           "institution": "Ilijaš",
-          "source": "src\\data\\municipalities-database.ts:167"
+          "source": "src\\data\\municipalities-database.ts:182"
         },
         {
           "institution": "Sarajevo Region",
-          "source": "src\\data\\sarajevo-region-forms.ts:532"
+          "source": "src\\data\\sarajevo-region-forms.ts:533"
         },
         {
           "institution": "Sarajevo Region",
-          "source": "src\\data\\sarajevo-region-forms.ts:539"
+          "source": "src\\data\\sarajevo-region-forms.ts:540"
         },
         {
           "institution": "Sarajevo Region",
-          "source": "src\\data\\sarajevo-region-forms.ts:546"
+          "source": "src\\data\\sarajevo-region-forms.ts:547"
         }
       ]
     },
@@ -326,7 +1113,20 @@
       "occurrences": [
         {
           "institution": "Sarajevo Region",
-          "source": "src\\data\\sarajevo-region-forms.ts:582"
+          "source": "src\\data\\sarajevo-region-forms.ts:583"
+        }
+      ]
+    },
+    {
+      "url": "https://mf.ks.gov.ba/preuzimanja/zahtjevi-i-obrasci",
+      "occurrences": [
+        {
+          "institution": "Vlada Kantona Sarajevo",
+          "source": "src\\data\\municipalities-database.ts:229"
+        },
+        {
+          "institution": "Updated Government",
+          "source": "src\\data\\updated-government-forms.ts:595"
         }
       ]
     },
@@ -348,7 +1148,7 @@
       "occurrences": [
         {
           "institution": "Foča-Ustikolina",
-          "source": "src\\data\\municipalities-database.ts:275"
+          "source": "src\\data\\municipalities-database.ts:311"
         }
       ]
     },
@@ -366,11 +1166,49 @@
       "occurrences": [
         {
           "institution": "Grad Zenica",
-          "source": "src\\data\\municipalities-database.ts:411"
+          "source": "src\\data\\municipalities-database.ts:456"
+        },
+        {
+          "institution": "Grad Zenica",
+          "source": "src\\data\\municipalities-database.ts:457"
+        },
+        {
+          "institution": "Updated Government",
+          "source": "src\\data\\updated-government-forms.ts:243"
         },
         {
           "institution": "Zenica",
-          "source": "src\\data\\verified-domains.ts:178"
+          "source": "src\\data\\uploaded-institutions.ts:1533"
+        },
+        {
+          "institution": "Zenica",
+          "source": "src\\data\\verified-domains.ts:192"
+        }
+      ]
+    },
+    {
+      "url": "https://zenica.ba/e-maticar/",
+      "occurrences": [
+        {
+          "institution": "Zenica",
+          "source": "src\\data\\municipalities-database.ts:333"
+        },
+        {
+          "institution": "Grad Zenica",
+          "source": "src\\data\\municipalities-database.ts:461"
+        },
+        {
+          "institution": "Grad Zenica",
+          "source": "src\\data\\municipalities-database.ts:462"
+        }
+      ]
+    },
+    {
+      "url": "https://zenica.ba/#e-servisi",
+      "occurrences": [
+        {
+          "institution": "Grad Zenica",
+          "source": "src\\data\\municipalities-database.ts:466"
         }
       ]
     },
@@ -379,24 +1217,29 @@
       "occurrences": [
         {
           "institution": "Updated Government",
-          "source": "src\\data\\updated-government-forms.ts:108"
+          "source": "src\\data\\updated-government-forms.ts:109"
         }
       ]
     },
     {
-      "url": "https://www.ecitizen.ba/tuzla/eServices/eServicesSubcategory/2",
+      "url": "https://www.ecitizen.ba/tuzla/eServices",
       "occurrences": [
         {
-          "institution": "Grad Tuzla",
-          "source": "src\\data\\municipalities-database.ts:432"
+          "institution": "Updated Government",
+          "source": "src\\data\\updated-government-forms.ts:379"
+        }
+      ]
+    },
+    {
+      "url": "https://banovici.gov.ba/zahtjevi/",
+      "occurrences": [
+        {
+          "institution": "Banovići",
+          "source": "src\\data\\municipalities-database.ts:523"
         },
         {
-          "institution": "Tuzla",
-          "source": "src\\data\\uploaded-institutions.ts:1015"
-        },
-        {
-          "institution": "Grad Tuzla",
-          "source": "src\\data\\verified-domains.ts:280"
+          "institution": "Updated Government",
+          "source": "src\\data\\updated-government-forms.ts:281"
         }
       ]
     },
@@ -405,7 +1248,7 @@
       "occurrences": [
         {
           "institution": "Gradačac",
-          "source": "src\\data\\municipalities-database.ts:611"
+          "source": "src\\data\\municipalities-database.ts:664"
         }
       ]
     },
@@ -414,7 +1257,15 @@
       "occurrences": [
         {
           "institution": "Municipality Registry",
-          "source": "src\\data\\municipality-registry.ts:335"
+          "source": "src\\data\\municipality-registry.ts:336"
+        },
+        {
+          "institution": "Updated Government",
+          "source": "src\\data\\updated-government-forms.ts:255"
+        },
+        {
+          "institution": "Updated Government",
+          "source": "src\\data\\updated-government-forms.ts:258"
         }
       ]
     },
@@ -423,7 +1274,16 @@
       "occurrences": [
         {
           "institution": "Municipality Registry",
-          "source": "src\\data\\municipality-registry.ts:253"
+          "source": "src\\data\\municipality-registry.ts:254"
+        }
+      ]
+    },
+    {
+      "url": "https://www.srebrenik.ba/e-uprava/",
+      "occurrences": [
+        {
+          "institution": "Updated Government",
+          "source": "src\\data\\updated-government-forms.ts:269"
         }
       ]
     },
@@ -432,7 +1292,7 @@
       "occurrences": [
         {
           "institution": "Municipality Registry",
-          "source": "src\\data\\municipality-registry.ts:232"
+          "source": "src\\data\\municipality-registry.ts:233"
         }
       ]
     },
@@ -441,16 +1301,25 @@
       "occurrences": [
         {
           "institution": "Updated Government",
-          "source": "src\\data\\updated-government-forms.ts:37"
+          "source": "src\\data\\updated-government-forms.ts:38"
         }
       ]
     },
     {
-      "url": "https://donji-vakuf.ba/wp-content/uploads/2013/03/Formularzaprijemkodnacelnika.pdf",
+      "url": "https://eregistar.gnt.gov.ba/administrativni-postupci/",
       "occurrences": [
         {
           "institution": "Updated Government",
-          "source": "src\\data\\updated-government-forms.ts:169"
+          "source": "src\\data\\updated-government-forms.ts:413"
+        }
+      ]
+    },
+    {
+      "url": "https://csr-mostar.ba/zahtjevi-i-obrasci/",
+      "occurrences": [
+        {
+          "institution": "Grad Mostar",
+          "source": "src\\data\\municipalities-database.ts:1049"
         }
       ]
     },
@@ -459,7 +1328,25 @@
       "occurrences": [
         {
           "institution": "Jablanica",
-          "source": "src\\data\\municipalities-database.ts:1030"
+          "source": "src\\data\\municipalities-database.ts:1104"
+        }
+      ]
+    },
+    {
+      "url": "https://neum.ba/eDokumenti/sluzba-za-stambeno-komunalne-poslove-izgradnju-i-razvoj/",
+      "occurrences": [
+        {
+          "institution": "Updated Government",
+          "source": "src\\data\\updated-government-forms.ts:395"
+        }
+      ]
+    },
+    {
+      "url": "https://prozor-rama.org/euprava/dokumenti/zahtjevi",
+      "occurrences": [
+        {
+          "institution": "Prozor-Rama",
+          "source": "src\\data\\municipalities-database.ts:1154"
         }
       ]
     },
@@ -468,7 +1355,7 @@
       "occurrences": [
         {
           "institution": "Updated Government",
-          "source": "src\\data\\updated-government-forms.ts:120"
+          "source": "src\\data\\updated-government-forms.ts:121"
         }
       ]
     },
@@ -499,7 +1386,7 @@
       "occurrences": [
         {
           "institution": "Grad Gradiška",
-          "source": "src\\data\\municipalities-database.ts:1270"
+          "source": "src\\data\\municipalities-database.ts:1378"
         }
       ]
     },
@@ -508,7 +1395,7 @@
       "occurrences": [
         {
           "institution": "Grad Gradiška",
-          "source": "src\\data\\municipalities-database.ts:1287"
+          "source": "src\\data\\municipalities-database.ts:1395"
         }
       ]
     },
@@ -517,7 +1404,7 @@
       "occurrences": [
         {
           "institution": "Grad Gradiška",
-          "source": "src\\data\\municipalities-database.ts:1288"
+          "source": "src\\data\\municipalities-database.ts:1396"
         }
       ]
     },
@@ -526,7 +1413,7 @@
       "occurrences": [
         {
           "institution": "Grad Gradiška",
-          "source": "src\\data\\municipalities-database.ts:1289"
+          "source": "src\\data\\municipalities-database.ts:1397"
         }
       ]
     },
@@ -535,16 +1422,7 @@
       "occurrences": [
         {
           "institution": "Municipality Registry",
-          "source": "src\\data\\municipality-registry.ts:274"
-        }
-      ]
-    },
-    {
-      "url": "https://eregistarsamac.com/%D0%B0%D0%B4%D0%BC%D0%B8%D0%BD%D0%B8%D1%81%D1%82%D1%80%D0%B0%D1%82%D0%B8%D0%B2%D0%BD%D0%B8-%D0%BF%D0%BE%D1%81%D1%82%D1%83%D0%BF%D1%86%D0%B8/",
-      "occurrences": [
-        {
-          "institution": "Updated Government",
-          "source": "src\\data\\updated-government-forms.ts:202"
+          "source": "src\\data\\municipality-registry.ts:275"
         }
       ]
     },
@@ -553,11 +1431,11 @@
       "occurrences": [
         {
           "institution": "Sarajevo Region",
-          "source": "src\\data\\sarajevo-region-forms.ts:608"
+          "source": "src\\data\\sarajevo-region-forms.ts:609"
         },
         {
           "institution": "Sarajevo Region",
-          "source": "src\\data\\sarajevo-region-forms.ts:615"
+          "source": "src\\data\\sarajevo-region-forms.ts:616"
         }
       ]
     },
@@ -566,11 +1444,20 @@
       "occurrences": [
         {
           "institution": "Istočna Ilidža",
-          "source": "src\\data\\municipalities-database.ts:1605"
+          "source": "src\\data\\municipalities-database.ts:1716"
         },
         {
           "institution": "Sarajevo Region",
-          "source": "src\\data\\sarajevo-region-forms.ts:637"
+          "source": "src\\data\\sarajevo-region-forms.ts:638"
+        }
+      ]
+    },
+    {
+      "url": "https://opstinains.net/lat/maticne-sluzbe/",
+      "occurrences": [
+        {
+          "institution": "Updated Government",
+          "source": "src\\data\\updated-government-forms.ts:427"
         }
       ]
     },
@@ -588,15 +1475,15 @@
       "occurrences": [
         {
           "institution": "Sarajevo Region",
-          "source": "src\\data\\sarajevo-region-forms.ts:750"
+          "source": "src\\data\\sarajevo-region-forms.ts:751"
         },
         {
           "institution": "Sarajevo Region",
-          "source": "src\\data\\sarajevo-region-forms.ts:757"
+          "source": "src\\data\\sarajevo-region-forms.ts:758"
         },
         {
           "institution": "Sarajevo Region",
-          "source": "src\\data\\sarajevo-region-forms.ts:764"
+          "source": "src\\data\\sarajevo-region-forms.ts:765"
         }
       ]
     },
@@ -614,7 +1501,7 @@
       "occurrences": [
         {
           "institution": "Municipality Registry",
-          "source": "src\\data\\municipality-registry.ts:304"
+          "source": "src\\data\\municipality-registry.ts:305"
         }
       ]
     },
@@ -632,15 +1519,15 @@
       "occurrences": [
         {
           "institution": "Sarajevo Region",
-          "source": "src\\data\\sarajevo-region-forms.ts:784"
+          "source": "src\\data\\sarajevo-region-forms.ts:785"
         },
         {
           "institution": "Sarajevo Region",
-          "source": "src\\data\\sarajevo-region-forms.ts:790"
+          "source": "src\\data\\sarajevo-region-forms.ts:791"
         },
         {
           "institution": "Sarajevo Region",
-          "source": "src\\data\\sarajevo-region-forms.ts:797"
+          "source": "src\\data\\sarajevo-region-forms.ts:798"
         },
         {
           "institution": "Opština Foča (RS)",
@@ -653,19 +1540,36 @@
       ]
     },
     {
+      "url": "https://opstinarudo.com/obrasci/",
+      "occurrences": [
+        {
+          "institution": "Rudo",
+          "source": "src\\data\\municipalities-database.ts:1959"
+        },
+        {
+          "institution": "Updated Government",
+          "source": "src\\data\\updated-government-forms.ts:462"
+        }
+      ]
+    },
+    {
       "url": "https://hanpijesak.org/zahtjevi-i-obrasci/",
       "occurrences": [
         {
           "institution": "Han Pijesak",
-          "source": "src\\data\\municipalities-database.ts:1868"
+          "source": "src\\data\\municipalities-database.ts:1991"
         },
         {
           "institution": "Sarajevo Region",
-          "source": "src\\data\\sarajevo-region-forms.ts:1038"
+          "source": "src\\data\\sarajevo-region-forms.ts:1039"
         },
         {
           "institution": "Sarajevo Region",
-          "source": "src\\data\\sarajevo-region-forms.ts:1045"
+          "source": "src\\data\\sarajevo-region-forms.ts:1046"
+        },
+        {
+          "institution": "Updated Government",
+          "source": "src\\data\\updated-government-forms.ts:520"
         }
       ]
     },
@@ -674,11 +1578,29 @@
       "occurrences": [
         {
           "institution": "Sarajevo Region",
-          "source": "src\\data\\sarajevo-region-forms.ts:988"
+          "source": "src\\data\\sarajevo-region-forms.ts:989"
         },
         {
           "institution": "Sarajevo Region",
-          "source": "src\\data\\sarajevo-region-forms.ts:995"
+          "source": "src\\data\\sarajevo-region-forms.ts:996"
+        }
+      ]
+    },
+    {
+      "url": "https://donji-vakuf.ba/2019/05/20/e-maticar/",
+      "occurrences": [
+        {
+          "institution": "Updated Government",
+          "source": "src\\data\\updated-government-forms.ts:170"
+        }
+      ]
+    },
+    {
+      "url": "https://eregistarsamac.com/%D0%B0%D0%B4%D0%BC%D0%B8%D0%BD%D0%B8%D1%81%D1%82%D1%80%D0%B0%D1%82%D0%B8%D0%B2%D0%BD%D0%B8-%D0%BF%D0%B0%D0%B5%D1%81%D1%82%D1%83%D0%BF%D1%86%D0%B8/",
+      "occurrences": [
+        {
+          "institution": "Updated Government",
+          "source": "src\\data\\updated-government-forms.ts:202"
         }
       ]
     },
@@ -756,11 +1678,29 @@
       ]
     },
     {
+      "url": "https://www.ecitizen.ba/tuzla/eServices/eServicesSubcategory/2",
+      "occurrences": [
+        {
+          "institution": "Tuzla",
+          "source": "src\\data\\uploaded-institutions.ts:1015"
+        }
+      ]
+    },
+    {
       "url": "https://www.prijedorgrad.org/",
       "occurrences": [
         {
           "institution": "Republika Srpska",
           "source": "src\\data\\uploaded-institutions.ts:903"
+        }
+      ]
+    },
+    {
+      "url": "https://www.euprava.opstina-novigrad.com/drustvene-djelatnosti/",
+      "occurrences": [
+        {
+          "institution": "Republika Srpska",
+          "source": "src\\data\\uploaded-institutions.ts:915"
         }
       ]
     },
@@ -935,7 +1875,15 @@
         },
         {
           "institution": "Bileća",
-          "source": "src\\data\\municipalities-database.ts:1715"
+          "source": "src\\data\\municipalities-database.ts:1830"
+        },
+        {
+          "institution": "Updated Government",
+          "source": "src\\data\\updated-government-forms.ts:435"
+        },
+        {
+          "institution": "Updated Government",
+          "source": "src\\data\\updated-government-forms.ts:439"
         },
         {
           "institution": "Bileća",
@@ -956,7 +1904,15 @@
         },
         {
           "institution": "Bileća",
-          "source": "src\\data\\municipalities-database.ts:1716"
+          "source": "src\\data\\municipalities-database.ts:1831"
+        },
+        {
+          "institution": "Updated Government",
+          "source": "src\\data\\updated-government-forms.ts:436"
+        },
+        {
+          "institution": "Updated Government",
+          "source": "src\\data\\updated-government-forms.ts:440"
         },
         {
           "institution": "Bileća",
@@ -964,7 +1920,7 @@
         },
         {
           "institution": "Opština Bileća",
-          "source": "src\\data\\verified-domains.ts:974"
+          "source": "src\\data\\verified-domains.ts:989"
         }
       ]
     },
@@ -977,7 +1933,7 @@
         },
         {
           "institution": "Bileća",
-          "source": "src\\data\\municipalities-database.ts:1720"
+          "source": "src\\data\\municipalities-database.ts:1835"
         }
       ]
     },
@@ -990,11 +1946,11 @@
         },
         {
           "institution": "Bileća",
-          "source": "src\\data\\municipalities-database.ts:1724"
+          "source": "src\\data\\municipalities-database.ts:1839"
         },
         {
           "institution": "Bileća",
-          "source": "src\\data\\municipalities-database.ts:1729"
+          "source": "src\\data\\municipalities-database.ts:1844"
         }
       ]
     },
@@ -1007,7 +1963,7 @@
         },
         {
           "institution": "Bosanska Krupa",
-          "source": "src\\data\\municipalities-database.ts:714"
+          "source": "src\\data\\municipalities-database.ts:772"
         },
         {
           "institution": "Bosanska Krupa",
@@ -1028,7 +1984,7 @@
         },
         {
           "institution": "Bosanska Krupa",
-          "source": "src\\data\\municipalities-database.ts:718"
+          "source": "src\\data\\municipalities-database.ts:776"
         },
         {
           "institution": "Bosanska Krupa",
@@ -1036,11 +1992,11 @@
         },
         {
           "institution": "Bosanska Krupa",
-          "source": "src\\data\\verified-domains.ts:445"
+          "source": "src\\data\\verified-domains.ts:459"
         },
         {
           "institution": "Bosanska Krupa",
-          "source": "src\\data\\verified-domains.ts:446"
+          "source": "src\\data\\verified-domains.ts:460"
         }
       ]
     },
@@ -1070,7 +2026,7 @@
         },
         {
           "institution": "Brod",
-          "source": "src\\data\\municipalities-database.ts:1455"
+          "source": "src\\data\\municipalities-database.ts:1563"
         },
         {
           "institution": "Republika Srpska",
@@ -1078,7 +2034,7 @@
         },
         {
           "institution": "Brod",
-          "source": "src\\data\\verified-domains.ts:962"
+          "source": "src\\data\\verified-domains.ts:977"
         }
       ]
     },
@@ -1091,7 +2047,7 @@
         },
         {
           "institution": "Busovača",
-          "source": "src\\data\\municipalities-database.ts:923"
+          "source": "src\\data\\municipalities-database.ts:992"
         },
         {
           "institution": "Travnička regija",
@@ -1112,7 +2068,7 @@
         },
         {
           "institution": "Busovača",
-          "source": "src\\data\\municipalities-database.ts:919"
+          "source": "src\\data\\municipalities-database.ts:988"
         },
         {
           "institution": "Travnička regija",
@@ -1120,7 +2076,7 @@
         },
         {
           "institution": "Busovača",
-          "source": "src\\data\\verified-domains.ts:602"
+          "source": "src\\data\\verified-domains.ts:616"
         }
       ]
     },
@@ -1133,7 +2089,7 @@
         },
         {
           "institution": "Čapljina",
-          "source": "src\\data\\municipalities-database.ts:993"
+          "source": "src\\data\\municipalities-database.ts:1063"
         },
         {
           "institution": "Općina Čapljina",
@@ -1154,7 +2110,7 @@
         },
         {
           "institution": "Čapljina",
-          "source": "src\\data\\municipalities-database.ts:997"
+          "source": "src\\data\\municipalities-database.ts:1067"
         },
         {
           "institution": "Općina Čapljina",
@@ -1162,7 +2118,7 @@
         },
         {
           "institution": "Čapljina",
-          "source": "src\\data\\verified-domains.ts:678"
+          "source": "src\\data\\verified-domains.ts:692"
         }
       ]
     },
@@ -1175,7 +2131,7 @@
         },
         {
           "institution": "Cazin",
-          "source": "src\\data\\municipalities-database.ts:768"
+          "source": "src\\data\\municipalities-database.ts:826"
         },
         {
           "institution": "Cazin",
@@ -1196,7 +2152,7 @@
         },
         {
           "institution": "Cazin",
-          "source": "src\\data\\municipalities-database.ts:772"
+          "source": "src\\data\\municipalities-database.ts:830"
         },
         {
           "institution": "Cazin",
@@ -1204,7 +2160,7 @@
         },
         {
           "institution": "Cazin",
-          "source": "src\\data\\verified-domains.ts:482"
+          "source": "src\\data\\verified-domains.ts:496"
         }
       ]
     },
@@ -1234,7 +2190,7 @@
         },
         {
           "institution": "Čitluk",
-          "source": "src\\data\\municipalities-database.ts:1011"
+          "source": "src\\data\\municipalities-database.ts:1085"
         },
         {
           "institution": "Općina Čitluk",
@@ -1242,7 +2198,7 @@
         },
         {
           "institution": "Čitluk",
-          "source": "src\\data\\verified-domains.ts:690"
+          "source": "src\\data\\verified-domains.ts:704"
         }
       ]
     },
@@ -1259,11 +2215,11 @@
         },
         {
           "institution": "Grad Doboj",
-          "source": "src\\data\\municipalities-database.ts:1404"
+          "source": "src\\data\\municipalities-database.ts:1512"
         },
         {
           "institution": "Municipality Registry",
-          "source": "src\\data\\municipality-registry.ts:348"
+          "source": "src\\data\\municipality-registry.ts:349"
         },
         {
           "institution": "Doboj",
@@ -1284,11 +2240,11 @@
         },
         {
           "institution": "Grad Doboj",
-          "source": "src\\data\\municipalities-database.ts:1400"
+          "source": "src\\data\\municipalities-database.ts:1508"
         },
         {
           "institution": "Grad Doboj",
-          "source": "src\\data\\verified-domains.ts:949"
+          "source": "src\\data\\verified-domains.ts:964"
         }
       ]
     },
@@ -1301,7 +2257,7 @@
         },
         {
           "institution": "Fojnica",
-          "source": "src\\data\\municipalities-database.ts:963"
+          "source": "src\\data\\municipalities-database.ts:1032"
         },
         {
           "institution": "Fojnica",
@@ -1326,7 +2282,7 @@
         },
         {
           "institution": "Fojnica",
-          "source": "src\\data\\municipalities-database.ts:959"
+          "source": "src\\data\\municipalities-database.ts:1028"
         },
         {
           "institution": "Fojnica",
@@ -1334,7 +2290,7 @@
         },
         {
           "institution": "Fojnica",
-          "source": "src\\data\\verified-domains.ts:649"
+          "source": "src\\data\\verified-domains.ts:663"
         }
       ]
     },
@@ -1351,11 +2307,11 @@
         },
         {
           "institution": "Grad Goražde",
-          "source": "src\\data\\municipalities-database.ts:209"
+          "source": "src\\data\\municipalities-database.ts:245"
         },
         {
           "institution": "Grad Goražde",
-          "source": "src\\data\\municipalities-database.ts:238"
+          "source": "src\\data\\municipalities-database.ts:274"
         },
         {
           "institution": "Sarajevo Region",
@@ -1388,11 +2344,11 @@
         },
         {
           "institution": "Grad Goražde",
-          "source": "src\\data\\municipalities-database.ts:214"
+          "source": "src\\data\\municipalities-database.ts:250"
         },
         {
           "institution": "Grad Goražde",
-          "source": "src\\data\\municipalities-database.ts:226"
+          "source": "src\\data\\municipalities-database.ts:262"
         },
         {
           "institution": "Sarajevo Region",
@@ -1408,11 +2364,11 @@
         },
         {
           "institution": "Grad Goražde",
-          "source": "src\\data\\verified-domains.ts:990"
+          "source": "src\\data\\verified-domains.ts:1005"
         },
         {
           "institution": "Grad Goražde",
-          "source": "src\\data\\verified-domains.ts:991"
+          "source": "src\\data\\verified-domains.ts:1006"
         }
       ]
     },
@@ -1425,7 +2381,7 @@
         },
         {
           "institution": "Grad Goražde",
-          "source": "src\\data\\municipalities-database.ts:213"
+          "source": "src\\data\\municipalities-database.ts:249"
         },
         {
           "institution": "Sarajevo Region",
@@ -1442,7 +2398,7 @@
         },
         {
           "institution": "Grad Goražde",
-          "source": "src\\data\\municipalities-database.ts:218"
+          "source": "src\\data\\municipalities-database.ts:254"
         },
         {
           "institution": "Sarajevo Region",
@@ -1459,7 +2415,7 @@
         },
         {
           "institution": "Grad Goražde",
-          "source": "src\\data\\municipalities-database.ts:222"
+          "source": "src\\data\\municipalities-database.ts:258"
         },
         {
           "institution": "Sarajevo Region",
@@ -1476,7 +2432,7 @@
         },
         {
           "institution": "Grad Goražde",
-          "source": "src\\data\\municipalities-database.ts:230"
+          "source": "src\\data\\municipalities-database.ts:266"
         },
         {
           "institution": "Sarajevo Region",
@@ -1493,7 +2449,7 @@
         },
         {
           "institution": "Grad Goražde",
-          "source": "src\\data\\municipalities-database.ts:234"
+          "source": "src\\data\\municipalities-database.ts:270"
         },
         {
           "institution": "Sarajevo Region",
@@ -1531,7 +2487,7 @@
         },
         {
           "institution": "Gornji Vakuf-Uskoplje",
-          "source": "src\\data\\verified-domains.ts:555"
+          "source": "src\\data\\verified-domains.ts:569"
         }
       ]
     },
@@ -1544,7 +2500,7 @@
         },
         {
           "institution": "Gornji Vakuf-Uskoplje",
-          "source": "src\\data\\municipalities-database.ts:867"
+          "source": "src\\data\\municipalities-database.ts:925"
         }
       ]
     },
@@ -1557,7 +2513,7 @@
         },
         {
           "institution": "Gornji Vakuf-Uskoplje",
-          "source": "src\\data\\verified-domains.ts:556"
+          "source": "src\\data\\verified-domains.ts:570"
         }
       ]
     },
@@ -1570,7 +2526,7 @@
         },
         {
           "institution": "Gračanica",
-          "source": "src\\data\\municipalities-database.ts:575"
+          "source": "src\\data\\municipalities-database.ts:628"
         },
         {
           "institution": "Municipality Registry",
@@ -1595,11 +2551,11 @@
         },
         {
           "institution": "Gračanica",
-          "source": "src\\data\\municipalities-database.ts:579"
+          "source": "src\\data\\municipalities-database.ts:632"
         },
         {
           "institution": "Gračanica",
-          "source": "src\\data\\municipalities-database.ts:580"
+          "source": "src\\data\\municipalities-database.ts:633"
         },
         {
           "institution": "Gračanica",
@@ -1607,7 +2563,7 @@
         },
         {
           "institution": "Gračanica",
-          "source": "src\\data\\verified-domains.ts:338"
+          "source": "src\\data\\verified-domains.ts:352"
         }
       ]
     },
@@ -1620,11 +2576,11 @@
         },
         {
           "institution": "Gračanica",
-          "source": "src\\data\\municipalities-database.ts:588"
+          "source": "src\\data\\municipalities-database.ts:641"
         },
         {
           "institution": "Gračanica",
-          "source": "src\\data\\municipalities-database.ts:594"
+          "source": "src\\data\\municipalities-database.ts:647"
         }
       ]
     },
@@ -1637,11 +2593,11 @@
         },
         {
           "institution": "Gračanica",
-          "source": "src\\data\\municipalities-database.ts:584"
+          "source": "src\\data\\municipalities-database.ts:637"
         },
         {
           "institution": "Gračanica",
-          "source": "src\\data\\municipalities-database.ts:593"
+          "source": "src\\data\\municipalities-database.ts:646"
         }
       ]
     },
@@ -1671,7 +2627,7 @@
         },
         {
           "institution": "Općina Grude",
-          "source": "src\\data\\verified-domains.ts:897"
+          "source": "src\\data\\verified-domains.ts:912"
         }
       ]
     },
@@ -1743,6 +2699,22 @@
           "source": "src\\data\\institution-news.ts:145"
         },
         {
+          "institution": "Vlada Kantona Sarajevo",
+          "source": "src\\data\\municipalities-database.ts:224"
+        },
+        {
+          "institution": "Updated Government",
+          "source": "src\\data\\updated-government-forms.ts:589"
+        },
+        {
+          "institution": "Updated Government",
+          "source": "src\\data\\updated-government-forms.ts:594"
+        },
+        {
+          "institution": "Vlada Kantona Sarajevo",
+          "source": "src\\data\\verified-domains.ts:174"
+        },
+        {
           "institution": "Kanton Sarajevo",
           "source": "src\\data\\website-verification.ts:401"
         }
@@ -1761,7 +2733,7 @@
         },
         {
           "institution": "Općina Kakanj",
-          "source": "src\\data\\municipalities-database.ts:350"
+          "source": "src\\data\\municipalities-database.ts:395"
         },
         {
           "institution": "Kakanj",
@@ -1782,27 +2754,27 @@
         },
         {
           "institution": "Općina Kakanj",
-          "source": "src\\data\\municipalities-database.ts:321"
+          "source": "src\\data\\municipalities-database.ts:366"
         },
         {
           "institution": "Općina Kakanj",
-          "source": "src\\data\\municipalities-database.ts:322"
+          "source": "src\\data\\municipalities-database.ts:367"
         },
         {
           "institution": "Općina Kakanj",
-          "source": "src\\data\\municipalities-database.ts:355"
+          "source": "src\\data\\municipalities-database.ts:400"
         },
         {
           "institution": "Općina Kakanj",
-          "source": "src\\data\\verified-domains.ts:203"
+          "source": "src\\data\\verified-domains.ts:217"
         },
         {
           "institution": "Općina Kakanj",
-          "source": "src\\data\\verified-domains.ts:204"
+          "source": "src\\data\\verified-domains.ts:218"
         },
         {
           "institution": "Općina Kakanj",
-          "source": "src\\data\\verified-domains.ts:209"
+          "source": "src\\data\\verified-domains.ts:223"
         }
       ]
     },
@@ -1819,7 +2791,7 @@
         },
         {
           "institution": "Općina Kakanj",
-          "source": "src\\data\\municipalities-database.ts:326"
+          "source": "src\\data\\municipalities-database.ts:371"
         }
       ]
     },
@@ -1836,7 +2808,7 @@
         },
         {
           "institution": "Općina Kakanj",
-          "source": "src\\data\\municipalities-database.ts:330"
+          "source": "src\\data\\municipalities-database.ts:375"
         }
       ]
     },
@@ -1853,7 +2825,7 @@
         },
         {
           "institution": "Općina Kakanj",
-          "source": "src\\data\\municipalities-database.ts:334"
+          "source": "src\\data\\municipalities-database.ts:379"
         }
       ]
     },
@@ -1870,7 +2842,7 @@
         },
         {
           "institution": "Općina Kakanj",
-          "source": "src\\data\\municipalities-database.ts:338"
+          "source": "src\\data\\municipalities-database.ts:383"
         }
       ]
     },
@@ -1887,7 +2859,7 @@
         },
         {
           "institution": "Općina Kakanj",
-          "source": "src\\data\\municipalities-database.ts:342"
+          "source": "src\\data\\municipalities-database.ts:387"
         }
       ]
     },
@@ -1904,7 +2876,7 @@
         },
         {
           "institution": "Općina Kakanj",
-          "source": "src\\data\\municipalities-database.ts:346"
+          "source": "src\\data\\municipalities-database.ts:391"
         }
       ]
     },
@@ -1934,11 +2906,11 @@
         },
         {
           "institution": "Kalesija",
-          "source": "src\\data\\municipalities-database.ts:454"
+          "source": "src\\data\\municipalities-database.ts:506"
         },
         {
           "institution": "Kalesija",
-          "source": "src\\data\\municipalities-database.ts:455"
+          "source": "src\\data\\municipalities-database.ts:507"
         },
         {
           "institution": "Kalesija",
@@ -1946,7 +2918,7 @@
         },
         {
           "institution": "Kalesija",
-          "source": "src\\data\\verified-domains.ts:292"
+          "source": "src\\data\\verified-domains.ts:306"
         }
       ]
     },
@@ -1976,7 +2948,7 @@
         },
         {
           "institution": "Grad Livno",
-          "source": "src\\data\\municipalities-database.ts:1132"
+          "source": "src\\data\\municipalities-database.ts:1240"
         },
         {
           "institution": "Livno",
@@ -2001,19 +2973,19 @@
         },
         {
           "institution": "Grad Livno",
-          "source": "src\\data\\municipalities-database.ts:1133"
+          "source": "src\\data\\municipalities-database.ts:1241"
         },
         {
           "institution": "Grad Livno",
-          "source": "src\\data\\municipalities-database.ts:1142"
+          "source": "src\\data\\municipalities-database.ts:1250"
         },
         {
           "institution": "Grad Livno",
-          "source": "src\\data\\verified-domains.ts:798"
+          "source": "src\\data\\verified-domains.ts:813"
         },
         {
           "institution": "Grad Livno",
-          "source": "src\\data\\verified-domains.ts:803"
+          "source": "src\\data\\verified-domains.ts:818"
         }
       ]
     },
@@ -2026,7 +2998,7 @@
         },
         {
           "institution": "Lopare",
-          "source": "src\\data\\municipalities-database.ts:1533"
+          "source": "src\\data\\municipalities-database.ts:1644"
         },
         {
           "institution": "Lopare",
@@ -2039,11 +3011,15 @@
       "occurrences": [
         {
           "institution": "Stari Grad Sarajevo",
-          "source": "src\\data\\municipalities-database.ts:50"
+          "source": "src\\data\\municipalities-database.ts:49"
         },
         {
           "institution": "Sarajevo Region",
           "source": "src\\data\\sarajevo-region-forms.ts:238"
+        },
+        {
+          "institution": "Updated Government",
+          "source": "src\\data\\updated-government-forms.ts:213"
         },
         {
           "institution": "Stari Grad Sarajevo",
@@ -2056,15 +3032,70 @@
       ]
     },
     {
+      "url": "https://starigrad.ba/e-formulari/",
+      "occurrences": [
+        {
+          "institution": "Stari Grad Sarajevo",
+          "source": "src\\data\\municipalities-database.ts:53"
+        },
+        {
+          "institution": "Sarajevo Region",
+          "source": "src\\data\\sarajevo-region-forms.ts:239"
+        },
+        {
+          "institution": "Updated Government",
+          "source": "src\\data\\updated-government-forms.ts:214"
+        },
+        {
+          "institution": "Updated Government",
+          "source": "src\\data\\updated-government-forms.ts:217"
+        },
+        {
+          "institution": "Stari Grad Sarajevo",
+          "source": "src\\data\\verified-domains.ts:47"
+        },
+        {
+          "institution": "Stari Grad Sarajevo",
+          "source": "src\\data\\verified-domains.ts:48"
+        }
+      ]
+    },
+    {
+      "url": "https://starigrad.ba/javni-pozivi-konkursi-i-oglasi/",
+      "occurrences": [
+        {
+          "institution": "Stari Grad Sarajevo",
+          "source": "src\\data\\municipalities-database.ts:57"
+        },
+        {
+          "institution": "Updated Government",
+          "source": "src\\data\\updated-government-forms.ts:218"
+        }
+      ]
+    },
+    {
+      "url": "https://starigrad.ba/baza-podataka-nvo/",
+      "occurrences": [
+        {
+          "institution": "Stari Grad Sarajevo",
+          "source": "src\\data\\municipalities-database.ts:61"
+        },
+        {
+          "institution": "Updated Government",
+          "source": "src\\data\\updated-government-forms.ts:219"
+        }
+      ]
+    },
+    {
       "url": "https://www.centar.ba/",
       "occurrences": [
         {
           "institution": "Centar Sarajevo",
-          "source": "src\\data\\municipalities-database.ts:64"
+          "source": "src\\data\\municipalities-database.ts:75"
         },
         {
           "institution": "Sarajevo Region",
-          "source": "src\\data\\sarajevo-region-forms.ts:256"
+          "source": "src\\data\\sarajevo-region-forms.ts:257"
         },
         {
           "institution": "Centar Sarajevo",
@@ -2081,51 +3112,51 @@
       "occurrences": [
         {
           "institution": "Centar Sarajevo",
-          "source": "src\\data\\municipalities-database.ts:68"
+          "source": "src\\data\\municipalities-database.ts:79"
         },
         {
           "institution": "Sarajevo Region",
-          "source": "src\\data\\sarajevo-region-forms.ts:257"
+          "source": "src\\data\\sarajevo-region-forms.ts:258"
         },
         {
           "institution": "Sarajevo Region",
-          "source": "src\\data\\sarajevo-region-forms.ts:330"
+          "source": "src\\data\\sarajevo-region-forms.ts:331"
         },
         {
           "institution": "Sarajevo Region",
-          "source": "src\\data\\sarajevo-region-forms.ts:339"
+          "source": "src\\data\\sarajevo-region-forms.ts:340"
         },
         {
           "institution": "Sarajevo Region",
-          "source": "src\\data\\sarajevo-region-forms.ts:348"
+          "source": "src\\data\\sarajevo-region-forms.ts:349"
         },
         {
           "institution": "Sarajevo Region",
-          "source": "src\\data\\sarajevo-region-forms.ts:357"
+          "source": "src\\data\\sarajevo-region-forms.ts:358"
         },
         {
           "institution": "Sarajevo Region",
-          "source": "src\\data\\sarajevo-region-forms.ts:366"
+          "source": "src\\data\\sarajevo-region-forms.ts:367"
         },
         {
           "institution": "Sarajevo Region",
-          "source": "src\\data\\sarajevo-region-forms.ts:375"
+          "source": "src\\data\\sarajevo-region-forms.ts:376"
         },
         {
           "institution": "Sarajevo Region",
-          "source": "src\\data\\sarajevo-region-forms.ts:384"
+          "source": "src\\data\\sarajevo-region-forms.ts:385"
         },
         {
           "institution": "Sarajevo Region",
-          "source": "src\\data\\sarajevo-region-forms.ts:393"
+          "source": "src\\data\\sarajevo-region-forms.ts:394"
         },
         {
           "institution": "Sarajevo Region",
-          "source": "src\\data\\sarajevo-region-forms.ts:402"
+          "source": "src\\data\\sarajevo-region-forms.ts:403"
         },
         {
           "institution": "Sarajevo Region",
-          "source": "src\\data\\sarajevo-region-forms.ts:411"
+          "source": "src\\data\\sarajevo-region-forms.ts:412"
         },
         {
           "institution": "Centar Sarajevo",
@@ -2133,11 +3164,11 @@
         },
         {
           "institution": "Centar Sarajevo",
-          "source": "src\\data\\verified-domains.ts:60"
+          "source": "src\\data\\verified-domains.ts:61"
         },
         {
           "institution": "Centar Sarajevo",
-          "source": "src\\data\\verified-domains.ts:61"
+          "source": "src\\data\\verified-domains.ts:62"
         }
       ]
     },
@@ -2146,11 +3177,15 @@
       "occurrences": [
         {
           "institution": "Ilidža",
-          "source": "src\\data\\municipalities-database.ts:83"
+          "source": "src\\data\\municipalities-database.ts:94"
         },
         {
           "institution": "Sarajevo Region",
-          "source": "src\\data\\sarajevo-region-forms.ts:424"
+          "source": "src\\data\\sarajevo-region-forms.ts:425"
+        },
+        {
+          "institution": "Updated Government",
+          "source": "src\\data\\updated-government-forms.ts:228"
         },
         {
           "institution": "Općina Ilidža",
@@ -2163,15 +3198,36 @@
       ]
     },
     {
+      "url": "https://opcinailidza.ba/e-formulari/",
+      "occurrences": [
+        {
+          "institution": "Ilidža",
+          "source": "src\\data\\municipalities-database.ts:98"
+        },
+        {
+          "institution": "Updated Government",
+          "source": "src\\data\\updated-government-forms.ts:229"
+        },
+        {
+          "institution": "Updated Government",
+          "source": "src\\data\\updated-government-forms.ts:231"
+        },
+        {
+          "institution": "Ilidža",
+          "source": "src\\data\\verified-domains.ts:75"
+        }
+      ]
+    },
+    {
       "url": "https://novigradsarajevo.ba/",
       "occurrences": [
         {
           "institution": "Novi Grad Sarajevo",
-          "source": "src\\data\\municipalities-database.ts:98"
+          "source": "src\\data\\municipalities-database.ts:113"
         },
         {
           "institution": "Sarajevo Region",
-          "source": "src\\data\\sarajevo-region-forms.ts:442"
+          "source": "src\\data\\sarajevo-region-forms.ts:443"
         },
         {
           "institution": "Novi Grad Sarajevo",
@@ -2188,11 +3244,11 @@
       "occurrences": [
         {
           "institution": "Novo Sarajevo",
-          "source": "src\\data\\municipalities-database.ts:113"
+          "source": "src\\data\\municipalities-database.ts:128"
         },
         {
           "institution": "Sarajevo Region",
-          "source": "src\\data\\sarajevo-region-forms.ts:460"
+          "source": "src\\data\\sarajevo-region-forms.ts:461"
         },
         {
           "institution": "Novo Sarajevo",
@@ -2209,11 +3265,11 @@
       "occurrences": [
         {
           "institution": "Hadžići",
-          "source": "src\\data\\municipalities-database.ts:137"
+          "source": "src\\data\\municipalities-database.ts:152"
         },
         {
           "institution": "Sarajevo Region",
-          "source": "src\\data\\sarajevo-region-forms.ts:495"
+          "source": "src\\data\\sarajevo-region-forms.ts:496"
         },
         {
           "institution": "Hadžići",
@@ -2230,11 +3286,11 @@
       "occurrences": [
         {
           "institution": "Trnovo (FBiH)",
-          "source": "src\\data\\municipalities-database.ts:152"
+          "source": "src\\data\\municipalities-database.ts:167"
         },
         {
           "institution": "Sarajevo Region",
-          "source": "src\\data\\sarajevo-region-forms.ts:508"
+          "source": "src\\data\\sarajevo-region-forms.ts:509"
         },
         {
           "institution": "Trnovo (FBiH)",
@@ -2255,27 +3311,27 @@
       "occurrences": [
         {
           "institution": "Ilijaš",
-          "source": "src\\data\\municipalities-database.ts:166"
+          "source": "src\\data\\municipalities-database.ts:181"
         },
         {
           "institution": "Ilijaš",
-          "source": "src\\data\\municipalities-database.ts:167"
+          "source": "src\\data\\municipalities-database.ts:182"
         },
         {
           "institution": "Sarajevo Region",
-          "source": "src\\data\\sarajevo-region-forms.ts:526"
+          "source": "src\\data\\sarajevo-region-forms.ts:527"
         },
         {
           "institution": "Sarajevo Region",
-          "source": "src\\data\\sarajevo-region-forms.ts:532"
+          "source": "src\\data\\sarajevo-region-forms.ts:533"
         },
         {
           "institution": "Sarajevo Region",
-          "source": "src\\data\\sarajevo-region-forms.ts:539"
+          "source": "src\\data\\sarajevo-region-forms.ts:540"
         },
         {
           "institution": "Sarajevo Region",
-          "source": "src\\data\\sarajevo-region-forms.ts:546"
+          "source": "src\\data\\sarajevo-region-forms.ts:547"
         },
         {
           "institution": "Ilijaš",
@@ -2283,7 +3339,7 @@
         },
         {
           "institution": "Ilijaš",
-          "source": "src\\data\\verified-domains.ts:147"
+          "source": "src\\data\\verified-domains.ts:148"
         }
       ]
     },
@@ -2292,11 +3348,11 @@
       "occurrences": [
         {
           "institution": "Ilijaš",
-          "source": "src\\data\\municipalities-database.ts:171"
+          "source": "src\\data\\municipalities-database.ts:186"
         },
         {
           "institution": "Sarajevo Region",
-          "source": "src\\data\\sarajevo-region-forms.ts:525"
+          "source": "src\\data\\sarajevo-region-forms.ts:526"
         },
         {
           "institution": "Ilijaš",
@@ -2313,11 +3369,11 @@
       "occurrences": [
         {
           "institution": "Ilijaš",
-          "source": "src\\data\\municipalities-database.ts:176"
+          "source": "src\\data\\municipalities-database.ts:191"
         },
         {
           "institution": "Sarajevo Region",
-          "source": "src\\data\\sarajevo-region-forms.ts:553"
+          "source": "src\\data\\sarajevo-region-forms.ts:554"
         }
       ]
     },
@@ -2326,11 +3382,11 @@
       "occurrences": [
         {
           "institution": "Ilijaš",
-          "source": "src\\data\\municipalities-database.ts:177"
+          "source": "src\\data\\municipalities-database.ts:192"
         },
         {
           "institution": "Sarajevo Region",
-          "source": "src\\data\\sarajevo-region-forms.ts:560"
+          "source": "src\\data\\sarajevo-region-forms.ts:561"
         }
       ]
     },
@@ -2339,19 +3395,19 @@
       "occurrences": [
         {
           "institution": "Grad Sarajevo",
-          "source": "src\\data\\municipalities-database.ts:189"
+          "source": "src\\data\\municipalities-database.ts:204"
         },
         {
           "institution": "Sarajevo Region",
-          "source": "src\\data\\sarajevo-region-forms.ts:576"
+          "source": "src\\data\\sarajevo-region-forms.ts:577"
         },
         {
           "institution": "Sarajevo Region",
-          "source": "src\\data\\sarajevo-region-forms.ts:582"
+          "source": "src\\data\\sarajevo-region-forms.ts:583"
         },
         {
           "institution": "Grad Sarajevo",
-          "source": "src\\data\\verified-domains.ts:160"
+          "source": "src\\data\\verified-domains.ts:161"
         }
       ]
     },
@@ -2360,11 +3416,11 @@
       "occurrences": [
         {
           "institution": "Grad Sarajevo",
-          "source": "src\\data\\municipalities-database.ts:193"
+          "source": "src\\data\\municipalities-database.ts:208"
         },
         {
           "institution": "Sarajevo Region",
-          "source": "src\\data\\sarajevo-region-forms.ts:575"
+          "source": "src\\data\\sarajevo-region-forms.ts:576"
         },
         {
           "institution": "Sarajevo",
@@ -2373,11 +3429,36 @@
       ]
     },
     {
+      "url": "https://mf.ks.gov.ba/preuzimanja/zahtjevi-i-obrasci",
+      "occurrences": [
+        {
+          "institution": "Vlada Kantona Sarajevo",
+          "source": "src\\data\\municipalities-database.ts:228"
+        },
+        {
+          "institution": "Vlada Kantona Sarajevo",
+          "source": "src\\data\\municipalities-database.ts:229"
+        },
+        {
+          "institution": "Updated Government",
+          "source": "src\\data\\updated-government-forms.ts:590"
+        },
+        {
+          "institution": "Updated Government",
+          "source": "src\\data\\updated-government-forms.ts:595"
+        },
+        {
+          "institution": "Vlada Kantona Sarajevo",
+          "source": "src\\data\\verified-domains.ts:173"
+        }
+      ]
+    },
+    {
       "url": "https://praca.ba/?s=Obrazac",
       "occurrences": [
         {
           "institution": "Pale-Prača",
-          "source": "src\\data\\municipalities-database.ts:252"
+          "source": "src\\data\\municipalities-database.ts:288"
         },
         {
           "institution": "Sarajevo Region",
@@ -2397,7 +3478,7 @@
         },
         {
           "institution": "Općina Pale-Prača",
-          "source": "src\\data\\verified-domains.ts:1003"
+          "source": "src\\data\\verified-domains.ts:1018"
         }
       ]
     },
@@ -2406,7 +3487,7 @@
       "occurrences": [
         {
           "institution": "Pale-Prača",
-          "source": "src\\data\\municipalities-database.ts:256"
+          "source": "src\\data\\municipalities-database.ts:292"
         },
         {
           "institution": "Sarajevo Region",
@@ -2427,11 +3508,11 @@
       "occurrences": [
         {
           "institution": "Foča-Ustikolina",
-          "source": "src\\data\\municipalities-database.ts:270"
+          "source": "src\\data\\municipalities-database.ts:306"
         },
         {
           "institution": "Foča-Ustikolina",
-          "source": "src\\data\\municipalities-database.ts:275"
+          "source": "src\\data\\municipalities-database.ts:311"
         },
         {
           "institution": "Sarajevo Region",
@@ -2452,7 +3533,7 @@
       "occurrences": [
         {
           "institution": "Foča-Ustikolina",
-          "source": "src\\data\\municipalities-database.ts:271"
+          "source": "src\\data\\municipalities-database.ts:307"
         },
         {
           "institution": "Sarajevo Region",
@@ -2468,7 +3549,7 @@
         },
         {
           "institution": "Općina Foča-Ustikolina",
-          "source": "src\\data\\verified-domains.ts:1015"
+          "source": "src\\data\\verified-domains.ts:1030"
         }
       ]
     },
@@ -2477,11 +3558,23 @@
       "occurrences": [
         {
           "institution": "Zenica",
-          "source": "src\\data\\municipalities-database.ts:292"
+          "source": "src\\data\\municipalities-database.ts:328"
         },
         {
           "institution": "Grad Zenica",
-          "source": "src\\data\\municipalities-database.ts:411"
+          "source": "src\\data\\municipalities-database.ts:456"
+        },
+        {
+          "institution": "Grad Zenica",
+          "source": "src\\data\\municipalities-database.ts:457"
+        },
+        {
+          "institution": "Updated Government",
+          "source": "src\\data\\updated-government-forms.ts:240"
+        },
+        {
+          "institution": "Updated Government",
+          "source": "src\\data\\updated-government-forms.ts:243"
         },
         {
           "institution": "Zenica",
@@ -2489,11 +3582,65 @@
         },
         {
           "institution": "Zenica",
-          "source": "src\\data\\verified-domains.ts:177"
+          "source": "src\\data\\uploaded-institutions.ts:1533"
         },
         {
           "institution": "Zenica",
-          "source": "src\\data\\verified-domains.ts:178"
+          "source": "src\\data\\verified-domains.ts:191"
+        },
+        {
+          "institution": "Zenica",
+          "source": "src\\data\\verified-domains.ts:192"
+        }
+      ]
+    },
+    {
+      "url": "https://zenica.ba/e-maticar/",
+      "occurrences": [
+        {
+          "institution": "Zenica",
+          "source": "src\\data\\municipalities-database.ts:332"
+        },
+        {
+          "institution": "Zenica",
+          "source": "src\\data\\municipalities-database.ts:333"
+        },
+        {
+          "institution": "Grad Zenica",
+          "source": "src\\data\\municipalities-database.ts:461"
+        },
+        {
+          "institution": "Grad Zenica",
+          "source": "src\\data\\municipalities-database.ts:462"
+        },
+        {
+          "institution": "Updated Government",
+          "source": "src\\data\\updated-government-forms.ts:244"
+        },
+        {
+          "institution": "Zenica",
+          "source": "src\\data\\uploaded-institutions.ts:1533"
+        }
+      ]
+    },
+    {
+      "url": "https://zenica.ba/#e-servisi",
+      "occurrences": [
+        {
+          "institution": "Zenica",
+          "source": "src\\data\\municipalities-database.ts:337"
+        },
+        {
+          "institution": "Grad Zenica",
+          "source": "src\\data\\municipalities-database.ts:466"
+        },
+        {
+          "institution": "Updated Government",
+          "source": "src\\data\\updated-government-forms.ts:245"
+        },
+        {
+          "institution": "Zenica",
+          "source": "src\\data\\uploaded-institutions.ts:1533"
         }
       ]
     },
@@ -2502,11 +3649,11 @@
       "occurrences": [
         {
           "institution": "Doboj-Jug",
-          "source": "src\\data\\municipalities-database.ts:306"
+          "source": "src\\data\\municipalities-database.ts:351"
         },
         {
           "institution": "Updated Government",
-          "source": "src\\data\\updated-government-forms.ts:105"
+          "source": "src\\data\\updated-government-forms.ts:106"
         }
       ]
     },
@@ -2515,19 +3662,19 @@
       "occurrences": [
         {
           "institution": "Doboj-Jug",
-          "source": "src\\data\\municipalities-database.ts:307"
+          "source": "src\\data\\municipalities-database.ts:352"
         },
         {
           "institution": "Updated Government",
-          "source": "src\\data\\updated-government-forms.ts:106"
+          "source": "src\\data\\updated-government-forms.ts:107"
         },
         {
           "institution": "Updated Government",
-          "source": "src\\data\\updated-government-forms.ts:108"
+          "source": "src\\data\\updated-government-forms.ts:109"
         },
         {
           "institution": "Doboj-Jug",
-          "source": "src\\data\\verified-domains.ts:190"
+          "source": "src\\data\\verified-domains.ts:204"
         }
       ]
     },
@@ -2536,7 +3683,7 @@
       "occurrences": [
         {
           "institution": "Olovo",
-          "source": "src\\data\\municipalities-database.ts:397"
+          "source": "src\\data\\municipalities-database.ts:442"
         },
         {
           "institution": "Municipality Registry",
@@ -2548,7 +3695,7 @@
         },
         {
           "institution": "Olovo",
-          "source": "src\\data\\verified-domains.ts:249"
+          "source": "src\\data\\verified-domains.ts:263"
         }
       ]
     },
@@ -2557,7 +3704,11 @@
       "occurrences": [
         {
           "institution": "Grad Tuzla",
-          "source": "src\\data\\municipalities-database.ts:427"
+          "source": "src\\data\\municipalities-database.ts:482"
+        },
+        {
+          "institution": "Updated Government",
+          "source": "src\\data\\updated-government-forms.ts:374"
         },
         {
           "institution": "Tuzla",
@@ -2570,31 +3721,79 @@
       ]
     },
     {
-      "url": "https://www.ecitizen.ba/tuzla/eServices/eServicesSubcategory/2",
+      "url": "https://www.ecitizen.ba/tuzla/home",
       "occurrences": [
         {
           "institution": "Grad Tuzla",
-          "source": "src\\data\\municipalities-database.ts:431"
+          "source": "src\\data\\municipalities-database.ts:486"
+        },
+        {
+          "institution": "Updated Government",
+          "source": "src\\data\\updated-government-forms.ts:378"
         },
         {
           "institution": "Grad Tuzla",
-          "source": "src\\data\\municipalities-database.ts:432"
+          "source": "src\\data\\verified-domains.ts:293"
+        }
+      ]
+    },
+    {
+      "url": "https://www.ecitizen.ba/tuzla/eServices",
+      "occurrences": [
+        {
+          "institution": "Grad Tuzla",
+          "source": "src\\data\\municipalities-database.ts:487"
         },
         {
-          "institution": "Republika Srpska",
-          "source": "src\\data\\uploaded-institutions.ts:833"
+          "institution": "Updated Government",
+          "source": "src\\data\\updated-government-forms.ts:375"
         },
         {
-          "institution": "Tuzla",
-          "source": "src\\data\\uploaded-institutions.ts:1015"
+          "institution": "Updated Government",
+          "source": "src\\data\\updated-government-forms.ts:379"
+        }
+      ]
+    },
+    {
+      "url": "https://eportal.tuzla.ba/Predmet",
+      "occurrences": [
+        {
+          "institution": "Grad Tuzla",
+          "source": "src\\data\\municipalities-database.ts:492"
+        },
+        {
+          "institution": "Updated Government",
+          "source": "src\\data\\updated-government-forms.ts:380"
         },
         {
           "institution": "Grad Tuzla",
-          "source": "src\\data\\verified-domains.ts:279"
-        },
+          "source": "src\\data\\verified-domains.ts:294"
+        }
+      ]
+    },
+    {
+      "url": "https://grad.tuzla.ba/e-maticar/",
+      "occurrences": [
         {
           "institution": "Grad Tuzla",
-          "source": "src\\data\\verified-domains.ts:280"
+          "source": "src\\data\\municipalities-database.ts:493"
+        },
+        {
+          "institution": "Updated Government",
+          "source": "src\\data\\updated-government-forms.ts:381"
+        }
+      ]
+    },
+    {
+      "url": "https://www.e-grunt.ba/",
+      "occurrences": [
+        {
+          "institution": "Grad Tuzla",
+          "source": "src\\data\\municipalities-database.ts:494"
+        },
+        {
+          "institution": "Updated Government",
+          "source": "src\\data\\updated-government-forms.ts:382"
         }
       ]
     },
@@ -2603,7 +3802,19 @@
       "occurrences": [
         {
           "institution": "Banovići",
-          "source": "src\\data\\municipalities-database.ts:470"
+          "source": "src\\data\\municipalities-database.ts:522"
+        },
+        {
+          "institution": "Banovići",
+          "source": "src\\data\\municipalities-database.ts:523"
+        },
+        {
+          "institution": "Updated Government",
+          "source": "src\\data\\updated-government-forms.ts:278"
+        },
+        {
+          "institution": "Updated Government",
+          "source": "src\\data\\updated-government-forms.ts:281"
         },
         {
           "institution": "Banovići",
@@ -2611,7 +3822,7 @@
         },
         {
           "institution": "Banovići",
-          "source": "src\\data\\verified-domains.ts:304"
+          "source": "src\\data\\verified-domains.ts:318"
         }
       ]
     },
@@ -2620,7 +3831,11 @@
       "occurrences": [
         {
           "institution": "Banovići",
-          "source": "src\\data\\municipalities-database.ts:474"
+          "source": "src\\data\\municipalities-database.ts:527"
+        },
+        {
+          "institution": "Updated Government",
+          "source": "src\\data\\updated-government-forms.ts:277"
         },
         {
           "institution": "Banovići",
@@ -2637,7 +3852,7 @@
       "occurrences": [
         {
           "institution": "Čelić",
-          "source": "src\\data\\municipalities-database.ts:488"
+          "source": "src\\data\\municipalities-database.ts:541"
         },
         {
           "institution": "Čelić",
@@ -2654,11 +3869,11 @@
       "occurrences": [
         {
           "institution": "Doboj Istok",
-          "source": "src\\data\\municipalities-database.ts:506"
+          "source": "src\\data\\municipalities-database.ts:559"
         },
         {
           "institution": "Updated Government",
-          "source": "src\\data\\updated-government-forms.ts:45"
+          "source": "src\\data\\updated-government-forms.ts:46"
         },
         {
           "institution": "Doboj Istok",
@@ -2675,11 +3890,11 @@
       "occurrences": [
         {
           "institution": "Doboj Istok",
-          "source": "src\\data\\municipalities-database.ts:507"
+          "source": "src\\data\\municipalities-database.ts:560"
         },
         {
           "institution": "Updated Government",
-          "source": "src\\data\\updated-government-forms.ts:46"
+          "source": "src\\data\\updated-government-forms.ts:47"
         },
         {
           "institution": "Doboj Istok",
@@ -2687,7 +3902,7 @@
         },
         {
           "institution": "Doboj Istok",
-          "source": "src\\data\\verified-domains.ts:326"
+          "source": "src\\data\\verified-domains.ts:340"
         }
       ]
     },
@@ -2696,7 +3911,7 @@
       "occurrences": [
         {
           "institution": "Gradačac",
-          "source": "src\\data\\municipalities-database.ts:606"
+          "source": "src\\data\\municipalities-database.ts:659"
         },
         {
           "institution": "Gradačac",
@@ -2713,11 +3928,11 @@
       "occurrences": [
         {
           "institution": "Gradačac",
-          "source": "src\\data\\municipalities-database.ts:610"
+          "source": "src\\data\\municipalities-database.ts:663"
         },
         {
           "institution": "Gradačac",
-          "source": "src\\data\\municipalities-database.ts:611"
+          "source": "src\\data\\municipalities-database.ts:664"
         },
         {
           "institution": "Gradačac",
@@ -2725,7 +3940,7 @@
         },
         {
           "institution": "Gradačac",
-          "source": "src\\data\\verified-domains.ts:350"
+          "source": "src\\data\\verified-domains.ts:364"
         }
       ]
     },
@@ -2734,15 +3949,27 @@
       "occurrences": [
         {
           "institution": "Kladanj",
-          "source": "src\\data\\municipalities-database.ts:630"
-        },
-        {
-          "institution": "Municipality Registry",
-          "source": "src\\data\\municipality-registry.ts:334"
+          "source": "src\\data\\municipalities-database.ts:683"
         },
         {
           "institution": "Municipality Registry",
           "source": "src\\data\\municipality-registry.ts:335"
+        },
+        {
+          "institution": "Municipality Registry",
+          "source": "src\\data\\municipality-registry.ts:336"
+        },
+        {
+          "institution": "Updated Government",
+          "source": "src\\data\\updated-government-forms.ts:254"
+        },
+        {
+          "institution": "Updated Government",
+          "source": "src\\data\\updated-government-forms.ts:255"
+        },
+        {
+          "institution": "Updated Government",
+          "source": "src\\data\\updated-government-forms.ts:258"
         },
         {
           "institution": "Kladanj",
@@ -2759,11 +3986,11 @@
       "occurrences": [
         {
           "institution": "Lukavac",
-          "source": "src\\data\\municipalities-database.ts:644"
+          "source": "src\\data\\municipalities-database.ts:698"
         },
         {
           "institution": "Municipality Registry",
-          "source": "src\\data\\municipality-registry.ts:247"
+          "source": "src\\data\\municipality-registry.ts:248"
         },
         {
           "institution": "Lukavac",
@@ -2780,15 +4007,15 @@
       "occurrences": [
         {
           "institution": "Lukavac",
-          "source": "src\\data\\municipalities-database.ts:648"
+          "source": "src\\data\\municipalities-database.ts:702"
         },
         {
           "institution": "Municipality Registry",
-          "source": "src\\data\\municipality-registry.ts:248"
+          "source": "src\\data\\municipality-registry.ts:249"
         },
         {
           "institution": "Municipality Registry",
-          "source": "src\\data\\municipality-registry.ts:253"
+          "source": "src\\data\\municipality-registry.ts:254"
         },
         {
           "institution": "Lukavac",
@@ -2796,20 +4023,49 @@
         },
         {
           "institution": "Lukavac",
-          "source": "src\\data\\verified-domains.ts:373"
+          "source": "src\\data\\verified-domains.ts:387"
         }
       ]
     },
     {
-      "url": "https://srebrenik.ba/obrasci/",
+      "url": "https://www.srebrenik.ba/",
       "occurrences": [
         {
           "institution": "Srebrenik",
-          "source": "src\\data\\municipalities-database.ts:673"
+          "source": "src\\data\\municipalities-database.ts:727"
+        },
+        {
+          "institution": "Updated Government",
+          "source": "src\\data\\updated-government-forms.ts:266"
         },
         {
           "institution": "Srebrenik",
-          "source": "src\\data\\verified-domains.ts:395"
+          "source": "src\\data\\uploaded-institutions.ts:1112"
+        }
+      ]
+    },
+    {
+      "url": "https://www.srebrenik.ba/e-uprava/",
+      "occurrences": [
+        {
+          "institution": "Srebrenik",
+          "source": "src\\data\\municipalities-database.ts:731"
+        },
+        {
+          "institution": "Updated Government",
+          "source": "src\\data\\updated-government-forms.ts:267"
+        },
+        {
+          "institution": "Updated Government",
+          "source": "src\\data\\updated-government-forms.ts:269"
+        },
+        {
+          "institution": "Srebrenik",
+          "source": "src\\data\\uploaded-institutions.ts:1113"
+        },
+        {
+          "institution": "Srebrenik",
+          "source": "src\\data\\verified-domains.ts:409"
         }
       ]
     },
@@ -2818,11 +4074,11 @@
       "occurrences": [
         {
           "institution": "Grad Bihać",
-          "source": "src\\data\\municipalities-database.ts:700"
+          "source": "src\\data\\municipalities-database.ts:758"
         },
         {
           "institution": "Grad Bihać",
-          "source": "src\\data\\verified-domains.ts:433"
+          "source": "src\\data\\verified-domains.ts:447"
         }
       ]
     },
@@ -2831,7 +4087,7 @@
       "occurrences": [
         {
           "institution": "Bužim",
-          "source": "src\\data\\municipalities-database.ts:732"
+          "source": "src\\data\\municipalities-database.ts:790"
         },
         {
           "institution": "Bužim",
@@ -2848,11 +4104,11 @@
       "occurrences": [
         {
           "institution": "Ključ",
-          "source": "src\\data\\municipalities-database.ts:786"
+          "source": "src\\data\\municipalities-database.ts:844"
         },
         {
           "institution": "Municipality Registry",
-          "source": "src\\data\\municipality-registry.ts:226"
+          "source": "src\\data\\municipality-registry.ts:227"
         },
         {
           "institution": "Ključ",
@@ -2869,15 +4125,15 @@
       "occurrences": [
         {
           "institution": "Ključ",
-          "source": "src\\data\\municipalities-database.ts:790"
+          "source": "src\\data\\municipalities-database.ts:848"
         },
         {
           "institution": "Municipality Registry",
-          "source": "src\\data\\municipality-registry.ts:227"
+          "source": "src\\data\\municipality-registry.ts:228"
         },
         {
           "institution": "Municipality Registry",
-          "source": "src\\data\\municipality-registry.ts:232"
+          "source": "src\\data\\municipality-registry.ts:233"
         },
         {
           "institution": "Ključ",
@@ -2885,7 +4141,7 @@
         },
         {
           "institution": "Ključ",
-          "source": "src\\data\\verified-domains.ts:494"
+          "source": "src\\data\\verified-domains.ts:508"
         }
       ]
     },
@@ -2894,11 +4150,11 @@
       "occurrences": [
         {
           "institution": "Velika Kladuša",
-          "source": "src\\data\\municipalities-database.ts:815"
+          "source": "src\\data\\municipalities-database.ts:873"
         },
         {
           "institution": "Velika Kladuša",
-          "source": "src\\data\\verified-domains.ts:516"
+          "source": "src\\data\\verified-domains.ts:530"
         }
       ]
     },
@@ -2907,11 +4163,11 @@
       "occurrences": [
         {
           "institution": "Bugojno",
-          "source": "src\\data\\municipalities-database.ts:842"
+          "source": "src\\data\\municipalities-database.ts:900"
         },
         {
           "institution": "Updated Government",
-          "source": "src\\data\\updated-government-forms.ts:34"
+          "source": "src\\data\\updated-government-forms.ts:35"
         },
         {
           "institution": "Bugojno",
@@ -2928,15 +4184,15 @@
       "occurrences": [
         {
           "institution": "Bugojno",
-          "source": "src\\data\\municipalities-database.ts:843"
+          "source": "src\\data\\municipalities-database.ts:901"
         },
         {
           "institution": "Updated Government",
-          "source": "src\\data\\updated-government-forms.ts:35"
+          "source": "src\\data\\updated-government-forms.ts:36"
         },
         {
           "institution": "Updated Government",
-          "source": "src\\data\\updated-government-forms.ts:37"
+          "source": "src\\data\\updated-government-forms.ts:38"
         },
         {
           "institution": "Bugojno",
@@ -2944,7 +4200,7 @@
         },
         {
           "institution": "Bugojno",
-          "source": "src\\data\\verified-domains.ts:542"
+          "source": "src\\data\\verified-domains.ts:556"
         }
       ]
     },
@@ -2953,15 +4209,19 @@
       "occurrences": [
         {
           "institution": "Donji Vakuf",
-          "source": "src\\data\\municipalities-database.ts:882"
+          "source": "src\\data\\municipalities-database.ts:940"
         },
         {
           "institution": "Updated Government",
-          "source": "src\\data\\updated-government-forms.ts:165"
+          "source": "src\\data\\updated-government-forms.ts:166"
         },
         {
           "institution": "Donji Vakuf",
           "source": "src\\data\\uploaded-institutions.ts:1430"
+        },
+        {
+          "institution": "Donji Vakuf",
+          "source": "src\\data\\verified-domains.ts:582"
         },
         {
           "institution": "Donji Vakuf",
@@ -2974,36 +4234,79 @@
       "occurrences": [
         {
           "institution": "Donji Vakuf",
-          "source": "src\\data\\municipalities-database.ts:883"
-        },
-        {
-          "institution": "Updated Government",
-          "source": "src\\data\\updated-government-forms.ts:166"
-        },
-        {
-          "institution": "Updated Government",
-          "source": "src\\data\\updated-government-forms.ts:169"
+          "source": "src\\data\\municipalities-database.ts:941"
         },
         {
           "institution": "Donji Vakuf",
           "source": "src\\data\\uploaded-institutions.ts:1431"
-        },
-        {
-          "institution": "Donji Vakuf",
-          "source": "src\\data\\verified-domains.ts:568"
         }
       ]
     },
     {
-      "url": "https://www.mostar.ba/kategorija/sluzbeni-dokumenti/",
+      "url": "https://novitravnik.gov.ba/",
+      "occurrences": [
+        {
+          "institution": "Novi Travnik",
+          "source": "src\\data\\municipalities-database.ts:955"
+        },
+        {
+          "institution": "Updated Government",
+          "source": "src\\data\\updated-government-forms.ts:409"
+        }
+      ]
+    },
+    {
+      "url": "https://eregistar.gnt.gov.ba/administrativni-postupci/",
+      "occurrences": [
+        {
+          "institution": "Novi Travnik",
+          "source": "src\\data\\municipalities-database.ts:959"
+        },
+        {
+          "institution": "Updated Government",
+          "source": "src\\data\\updated-government-forms.ts:410"
+        },
+        {
+          "institution": "Updated Government",
+          "source": "src\\data\\updated-government-forms.ts:413"
+        },
+        {
+          "institution": "Novi Travnik",
+          "source": "src\\data\\verified-domains.ts:594"
+        }
+      ]
+    },
+    {
+      "url": "https://novitravnik.gov.ba/index.php/novosti/oglasi-i-natjecaji",
+      "occurrences": [
+        {
+          "institution": "Novi Travnik",
+          "source": "src\\data\\municipalities-database.ts:963"
+        },
+        {
+          "institution": "Updated Government",
+          "source": "src\\data\\updated-government-forms.ts:414"
+        }
+      ]
+    },
+    {
+      "url": "https://csr-mostar.ba/zahtjevi-i-obrasci/",
       "occurrences": [
         {
           "institution": "Grad Mostar",
-          "source": "src\\data\\municipalities-database.ts:979"
+          "source": "src\\data\\municipalities-database.ts:1048"
         },
         {
           "institution": "Grad Mostar",
-          "source": "src\\data\\verified-domains.ts:665"
+          "source": "src\\data\\municipalities-database.ts:1049"
+        },
+        {
+          "institution": "Updated Government",
+          "source": "src\\data\\updated-government-forms.ts:611"
+        },
+        {
+          "institution": "Grad Mostar",
+          "source": "src\\data\\verified-domains.ts:679"
         }
       ]
     },
@@ -3012,7 +4315,7 @@
       "occurrences": [
         {
           "institution": "Jablanica",
-          "source": "src\\data\\municipalities-database.ts:1025"
+          "source": "src\\data\\municipalities-database.ts:1099"
         },
         {
           "institution": "Općina Jablanica",
@@ -3025,11 +4328,11 @@
       "occurrences": [
         {
           "institution": "Jablanica",
-          "source": "src\\data\\municipalities-database.ts:1029"
+          "source": "src\\data\\municipalities-database.ts:1103"
         },
         {
           "institution": "Jablanica",
-          "source": "src\\data\\municipalities-database.ts:1030"
+          "source": "src\\data\\municipalities-database.ts:1104"
         },
         {
           "institution": "Općina Jablanica",
@@ -3037,7 +4340,7 @@
         },
         {
           "institution": "Jablanica",
-          "source": "src\\data\\verified-domains.ts:701"
+          "source": "src\\data\\verified-domains.ts:715"
         }
       ]
     },
@@ -3046,11 +4349,11 @@
       "occurrences": [
         {
           "institution": "Konjic",
-          "source": "src\\data\\municipalities-database.ts:1044"
+          "source": "src\\data\\municipalities-database.ts:1118"
         },
         {
           "institution": "Municipality Registry",
-          "source": "src\\data\\municipality-registry.ts:186"
+          "source": "src\\data\\municipality-registry.ts:187"
         },
         {
           "institution": "Općina Konjic",
@@ -3058,7 +4361,144 @@
         },
         {
           "institution": "Konjic",
-          "source": "src\\data\\verified-domains.ts:712"
+          "source": "src\\data\\verified-domains.ts:726"
+        }
+      ]
+    },
+    {
+      "url": "https://neum.ba/",
+      "occurrences": [
+        {
+          "institution": "Neum",
+          "source": "src\\data\\municipalities-database.ts:1131"
+        },
+        {
+          "institution": "Updated Government",
+          "source": "src\\data\\updated-government-forms.ts:391"
+        },
+        {
+          "institution": "Općina Neum",
+          "source": "src\\data\\uploaded-institutions.ts:374"
+        }
+      ]
+    },
+    {
+      "url": "https://neum.ba/eDokumenti/sluzba-za-stambeno-komunalne-poslove-izgradnju-i-razvoj/",
+      "occurrences": [
+        {
+          "institution": "Neum",
+          "source": "src\\data\\municipalities-database.ts:1132"
+        },
+        {
+          "institution": "Updated Government",
+          "source": "src\\data\\updated-government-forms.ts:392"
+        },
+        {
+          "institution": "Updated Government",
+          "source": "src\\data\\updated-government-forms.ts:395"
+        },
+        {
+          "institution": "Općina Neum",
+          "source": "src\\data\\uploaded-institutions.ts:375"
+        },
+        {
+          "institution": "Neum",
+          "source": "src\\data\\verified-domains.ts:737"
+        }
+      ]
+    },
+    {
+      "url": "https://neum.ba/eDokumenti/sluzba-za-imovinsko-pravne-poslove-i-katastar-nekretnina/",
+      "occurrences": [
+        {
+          "institution": "Neum",
+          "source": "src\\data\\municipalities-database.ts:1133"
+        },
+        {
+          "institution": "Updated Government",
+          "source": "src\\data\\updated-government-forms.ts:396"
+        }
+      ]
+    },
+    {
+      "url": "https://neum.ba/eDokumenti/sluzba-za-financije-i-gospodarstvo/",
+      "occurrences": [
+        {
+          "institution": "Neum",
+          "source": "src\\data\\municipalities-database.ts:1134"
+        },
+        {
+          "institution": "Updated Government",
+          "source": "src\\data\\updated-government-forms.ts:397"
+        }
+      ]
+    },
+    {
+      "url": "https://neum.ba/eDokumenti/sluzba-za-graditeljstvo-i-prostorno-uredenje/",
+      "occurrences": [
+        {
+          "institution": "Neum",
+          "source": "src\\data\\municipalities-database.ts:1135"
+        },
+        {
+          "institution": "Updated Government",
+          "source": "src\\data\\updated-government-forms.ts:398"
+        }
+      ]
+    },
+    {
+      "url": "https://neum.ba/eDokumenti/sluzba-za-opcu-upravu-i-drustvene-djelatnosti/",
+      "occurrences": [
+        {
+          "institution": "Neum",
+          "source": "src\\data\\municipalities-database.ts:1136"
+        },
+        {
+          "institution": "Updated Government",
+          "source": "src\\data\\updated-government-forms.ts:399"
+        }
+      ]
+    },
+    {
+      "url": "https://neum.ba/eDokumenti/sluzba-za-civilnu-zastitu-i-vatrogastvo/",
+      "occurrences": [
+        {
+          "institution": "Neum",
+          "source": "src\\data\\municipalities-database.ts:1137"
+        },
+        {
+          "institution": "Updated Government",
+          "source": "src\\data\\updated-government-forms.ts:400"
+        }
+      ]
+    },
+    {
+      "url": "https://prozor-rama.org/",
+      "occurrences": [
+        {
+          "institution": "Prozor-Rama",
+          "source": "src\\data\\municipalities-database.ts:1149"
+        },
+        {
+          "institution": "Općina Prozor-Rama",
+          "source": "src\\data\\uploaded-institutions.ts:384"
+        }
+      ]
+    },
+    {
+      "url": "https://prozor-rama.org/euprava/dokumenti/zahtjevi",
+      "occurrences": [
+        {
+          "institution": "Prozor-Rama",
+          "source": "src\\data\\municipalities-database.ts:1153"
+        },
+        {
+          "institution": "Prozor-Rama",
+          "source": "src\\data\\municipalities-database.ts:1154"
+        },
+        {
+          "institution": "Prozor-Rama",
+          "source": "src\\data\\verified-domains.ts:748"
         }
       ]
     },
@@ -3067,11 +4507,11 @@
       "occurrences": [
         {
           "institution": "Domaljevac-Šamac",
-          "source": "src\\data\\municipalities-database.ts:1115"
+          "source": "src\\data\\municipalities-database.ts:1223"
         },
         {
           "institution": "Updated Government",
-          "source": "src\\data\\updated-government-forms.ts:116"
+          "source": "src\\data\\updated-government-forms.ts:117"
         },
         {
           "institution": "Domaljevac-Šamac",
@@ -3084,15 +4524,15 @@
       "occurrences": [
         {
           "institution": "Domaljevac-Šamac",
-          "source": "src\\data\\municipalities-database.ts:1116"
+          "source": "src\\data\\municipalities-database.ts:1224"
         },
         {
           "institution": "Updated Government",
-          "source": "src\\data\\updated-government-forms.ts:117"
+          "source": "src\\data\\updated-government-forms.ts:118"
         },
         {
           "institution": "Updated Government",
-          "source": "src\\data\\updated-government-forms.ts:120"
+          "source": "src\\data\\updated-government-forms.ts:121"
         },
         {
           "institution": "Domaljevac-Šamac",
@@ -3100,7 +4540,7 @@
         },
         {
           "institution": "Domaljevac-Šamac",
-          "source": "src\\data\\verified-domains.ts:782"
+          "source": "src\\data\\verified-domains.ts:797"
         }
       ]
     },
@@ -3109,11 +4549,11 @@
       "occurrences": [
         {
           "institution": "Grad Livno",
-          "source": "src\\data\\municipalities-database.ts:1137"
+          "source": "src\\data\\municipalities-database.ts:1245"
         },
         {
           "institution": "Municipality Registry",
-          "source": "src\\data\\municipality-registry.ts:411"
+          "source": "src\\data\\municipality-registry.ts:412"
         },
         {
           "institution": "Livno",
@@ -3126,7 +4566,7 @@
       "occurrences": [
         {
           "institution": "Drvar",
-          "source": "src\\data\\municipalities-database.ts:1162"
+          "source": "src\\data\\municipalities-database.ts:1270"
         },
         {
           "institution": "Updated Government",
@@ -3147,7 +4587,7 @@
       "occurrences": [
         {
           "institution": "Drvar",
-          "source": "src\\data\\municipalities-database.ts:1163"
+          "source": "src\\data\\municipalities-database.ts:1271"
         },
         {
           "institution": "Updated Government",
@@ -3167,7 +4607,7 @@
         },
         {
           "institution": "Drvar",
-          "source": "src\\data\\verified-domains.ts:821"
+          "source": "src\\data\\verified-domains.ts:836"
         }
       ]
     },
@@ -3176,11 +4616,11 @@
       "occurrences": [
         {
           "institution": "Grad Banja Luka",
-          "source": "src\\data\\municipalities-database.ts:1240"
+          "source": "src\\data\\municipalities-database.ts:1348"
         },
         {
           "institution": "Grad Banja Luka",
-          "source": "src\\data\\verified-domains.ts:925"
+          "source": "src\\data\\verified-domains.ts:940"
         }
       ]
     },
@@ -3189,7 +4629,7 @@
       "occurrences": [
         {
           "institution": "Grad Gradiška",
-          "source": "src\\data\\municipalities-database.ts:1265"
+          "source": "src\\data\\municipalities-database.ts:1373"
         },
         {
           "institution": "Gradiška",
@@ -3206,11 +4646,11 @@
       "occurrences": [
         {
           "institution": "Grad Gradiška",
-          "source": "src\\data\\municipalities-database.ts:1269"
+          "source": "src\\data\\municipalities-database.ts:1377"
         },
         {
           "institution": "Grad Gradiška",
-          "source": "src\\data\\municipalities-database.ts:1270"
+          "source": "src\\data\\municipalities-database.ts:1378"
         },
         {
           "institution": "Gradiška",
@@ -3218,7 +4658,7 @@
         },
         {
           "institution": "Grad Gradiška",
-          "source": "src\\data\\verified-domains.ts:937"
+          "source": "src\\data\\verified-domains.ts:952"
         }
       ]
     },
@@ -3227,11 +4667,11 @@
       "occurrences": [
         {
           "institution": "Grad Gradiška",
-          "source": "src\\data\\municipalities-database.ts:1274"
+          "source": "src\\data\\municipalities-database.ts:1382"
         },
         {
           "institution": "Grad Gradiška",
-          "source": "src\\data\\municipalities-database.ts:1287"
+          "source": "src\\data\\municipalities-database.ts:1395"
         }
       ]
     },
@@ -3240,11 +4680,11 @@
       "occurrences": [
         {
           "institution": "Grad Gradiška",
-          "source": "src\\data\\municipalities-database.ts:1278"
+          "source": "src\\data\\municipalities-database.ts:1386"
         },
         {
           "institution": "Grad Gradiška",
-          "source": "src\\data\\municipalities-database.ts:1288"
+          "source": "src\\data\\municipalities-database.ts:1396"
         }
       ]
     },
@@ -3253,11 +4693,11 @@
       "occurrences": [
         {
           "institution": "Grad Gradiška",
-          "source": "src\\data\\municipalities-database.ts:1282"
+          "source": "src\\data\\municipalities-database.ts:1390"
         },
         {
           "institution": "Grad Gradiška",
-          "source": "src\\data\\municipalities-database.ts:1289"
+          "source": "src\\data\\municipalities-database.ts:1397"
         }
       ]
     },
@@ -3266,11 +4706,11 @@
       "occurrences": [
         {
           "institution": "Kotor Varoš",
-          "source": "src\\data\\municipalities-database.ts:1312"
+          "source": "src\\data\\municipalities-database.ts:1420"
         },
         {
           "institution": "Municipality Registry",
-          "source": "src\\data\\municipality-registry.ts:268"
+          "source": "src\\data\\municipality-registry.ts:269"
         },
         {
           "institution": "Kotor Varoš",
@@ -3283,15 +4723,15 @@
       "occurrences": [
         {
           "institution": "Kotor Varoš",
-          "source": "src\\data\\municipalities-database.ts:1316"
+          "source": "src\\data\\municipalities-database.ts:1424"
         },
         {
           "institution": "Municipality Registry",
-          "source": "src\\data\\municipality-registry.ts:269"
+          "source": "src\\data\\municipality-registry.ts:270"
         },
         {
           "institution": "Municipality Registry",
-          "source": "src\\data\\municipality-registry.ts:274"
+          "source": "src\\data\\municipality-registry.ts:275"
         },
         {
           "institution": "Kotor Varoš",
@@ -3304,7 +4744,7 @@
       "occurrences": [
         {
           "institution": "Derventa",
-          "source": "src\\data\\municipalities-database.ts:1440"
+          "source": "src\\data\\municipalities-database.ts:1548"
         },
         {
           "institution": "Republika Srpska",
@@ -3313,11 +4753,24 @@
       ]
     },
     {
+      "url": "https://vukosavlje.gov.ba/ba/",
+      "occurrences": [
+        {
+          "institution": "Vukosavlje",
+          "source": "src\\data\\municipalities-database.ts:1577"
+        },
+        {
+          "institution": "Vukosavlje",
+          "source": "src\\data\\website-verification.ts:848"
+        }
+      ]
+    },
+    {
       "url": "https://opstinasamac.org/",
       "occurrences": [
         {
           "institution": "Šamac",
-          "source": "src\\data\\municipalities-database.ts:1491"
+          "source": "src\\data\\municipalities-database.ts:1602"
         },
         {
           "institution": "Updated Government",
@@ -3338,15 +4791,7 @@
       "occurrences": [
         {
           "institution": "Šamac",
-          "source": "src\\data\\municipalities-database.ts:1492"
-        },
-        {
-          "institution": "Updated Government",
-          "source": "src\\data\\updated-government-forms.ts:199"
-        },
-        {
-          "institution": "Updated Government",
-          "source": "src\\data\\updated-government-forms.ts:202"
+          "source": "src\\data\\municipalities-database.ts:1603"
         },
         {
           "institution": "Šamac",
@@ -3359,11 +4804,11 @@
       "occurrences": [
         {
           "institution": "Grad Bijeljina",
-          "source": "src\\data\\municipalities-database.ts:1508"
+          "source": "src\\data\\municipalities-database.ts:1619"
         },
         {
           "institution": "Updated Government",
-          "source": "src\\data\\updated-government-forms.ts:22"
+          "source": "src\\data\\updated-government-forms.ts:23"
         }
       ]
     },
@@ -3372,19 +4817,19 @@
       "occurrences": [
         {
           "institution": "Grad Istočno Sarajevo",
-          "source": "src\\data\\municipalities-database.ts:1582"
+          "source": "src\\data\\municipalities-database.ts:1693"
         },
         {
           "institution": "Sarajevo Region",
-          "source": "src\\data\\sarajevo-region-forms.ts:602"
+          "source": "src\\data\\sarajevo-region-forms.ts:603"
         },
         {
           "institution": "Sarajevo Region",
-          "source": "src\\data\\sarajevo-region-forms.ts:608"
+          "source": "src\\data\\sarajevo-region-forms.ts:609"
         },
         {
           "institution": "Sarajevo Region",
-          "source": "src\\data\\sarajevo-region-forms.ts:615"
+          "source": "src\\data\\sarajevo-region-forms.ts:616"
         },
         {
           "institution": "Grad Istočno Sarajevo",
@@ -3392,7 +4837,7 @@
         },
         {
           "institution": "Grad Istočno Sarajevo",
-          "source": "src\\data\\verified-domains.ts:1031"
+          "source": "src\\data\\verified-domains.ts:1046"
         }
       ]
     },
@@ -3401,11 +4846,11 @@
       "occurrences": [
         {
           "institution": "Grad Istočno Sarajevo",
-          "source": "src\\data\\municipalities-database.ts:1586"
+          "source": "src\\data\\municipalities-database.ts:1697"
         },
         {
           "institution": "Sarajevo Region",
-          "source": "src\\data\\sarajevo-region-forms.ts:601"
+          "source": "src\\data\\sarajevo-region-forms.ts:602"
         },
         {
           "institution": "Grad Istočno Sarajevo",
@@ -3422,11 +4867,11 @@
       "occurrences": [
         {
           "institution": "Istočna Ilidža",
-          "source": "src\\data\\municipalities-database.ts:1600"
+          "source": "src\\data\\municipalities-database.ts:1711"
         },
         {
           "institution": "Sarajevo Region",
-          "source": "src\\data\\sarajevo-region-forms.ts:630"
+          "source": "src\\data\\sarajevo-region-forms.ts:631"
         },
         {
           "institution": "Istočna Ilidža",
@@ -3443,19 +4888,19 @@
       "occurrences": [
         {
           "institution": "Istočna Ilidža",
-          "source": "src\\data\\municipalities-database.ts:1604"
+          "source": "src\\data\\municipalities-database.ts:1715"
         },
         {
           "institution": "Istočna Ilidža",
-          "source": "src\\data\\municipalities-database.ts:1605"
+          "source": "src\\data\\municipalities-database.ts:1716"
         },
         {
           "institution": "Sarajevo Region",
-          "source": "src\\data\\sarajevo-region-forms.ts:631"
+          "source": "src\\data\\sarajevo-region-forms.ts:632"
         },
         {
           "institution": "Sarajevo Region",
-          "source": "src\\data\\sarajevo-region-forms.ts:637"
+          "source": "src\\data\\sarajevo-region-forms.ts:638"
         },
         {
           "institution": "Istočna Ilidža",
@@ -3463,7 +4908,7 @@
         },
         {
           "institution": "Istočna Ilidža",
-          "source": "src\\data\\verified-domains.ts:1043"
+          "source": "src\\data\\verified-domains.ts:1058"
         }
       ]
     },
@@ -3472,11 +4917,11 @@
       "occurrences": [
         {
           "institution": "Istočna Ilidža",
-          "source": "src\\data\\municipalities-database.ts:1610"
+          "source": "src\\data\\municipalities-database.ts:1721"
         },
         {
           "institution": "Sarajevo Region",
-          "source": "src\\data\\sarajevo-region-forms.ts:644"
+          "source": "src\\data\\sarajevo-region-forms.ts:645"
         }
       ]
     },
@@ -3485,11 +4930,11 @@
       "occurrences": [
         {
           "institution": "Istočna Ilidža",
-          "source": "src\\data\\municipalities-database.ts:1611"
+          "source": "src\\data\\municipalities-database.ts:1722"
         },
         {
           "institution": "Sarajevo Region",
-          "source": "src\\data\\sarajevo-region-forms.ts:651"
+          "source": "src\\data\\sarajevo-region-forms.ts:652"
         }
       ]
     },
@@ -3498,11 +4943,11 @@
       "occurrences": [
         {
           "institution": "Istočna Ilidža",
-          "source": "src\\data\\municipalities-database.ts:1612"
+          "source": "src\\data\\municipalities-database.ts:1723"
         },
         {
           "institution": "Sarajevo Region",
-          "source": "src\\data\\sarajevo-region-forms.ts:658"
+          "source": "src\\data\\sarajevo-region-forms.ts:659"
         }
       ]
     },
@@ -3511,11 +4956,15 @@
       "occurrences": [
         {
           "institution": "Istočno Novo Sarajevo",
-          "source": "src\\data\\municipalities-database.ts:1625"
+          "source": "src\\data\\municipalities-database.ts:1736"
         },
         {
           "institution": "Sarajevo Region",
-          "source": "src\\data\\sarajevo-region-forms.ts:673"
+          "source": "src\\data\\sarajevo-region-forms.ts:674"
+        },
+        {
+          "institution": "Updated Government",
+          "source": "src\\data\\updated-government-forms.ts:423"
         },
         {
           "institution": "Istočno Novo Sarajevo",
@@ -3528,15 +4977,36 @@
       ]
     },
     {
+      "url": "https://opstinains.net/lat/maticne-sluzbe/",
+      "occurrences": [
+        {
+          "institution": "Istočno Novo Sarajevo",
+          "source": "src\\data\\municipalities-database.ts:1740"
+        },
+        {
+          "institution": "Updated Government",
+          "source": "src\\data\\updated-government-forms.ts:424"
+        },
+        {
+          "institution": "Updated Government",
+          "source": "src\\data\\updated-government-forms.ts:427"
+        },
+        {
+          "institution": "Istočno Novo Sarajevo",
+          "source": "src\\data\\verified-domains.ts:1070"
+        }
+      ]
+    },
+    {
       "url": "https://pale.rs.ba/",
       "occurrences": [
         {
           "institution": "Pale (RS)",
-          "source": "src\\data\\municipalities-database.ts:1640"
+          "source": "src\\data\\municipalities-database.ts:1755"
         },
         {
           "institution": "Sarajevo Region",
-          "source": "src\\data\\sarajevo-region-forms.ts:691"
+          "source": "src\\data\\sarajevo-region-forms.ts:692"
         },
         {
           "institution": "Pale (RS)",
@@ -3557,11 +5027,11 @@
       "occurrences": [
         {
           "institution": "Trnovo (RS)",
-          "source": "src\\data\\municipalities-database.ts:1655"
+          "source": "src\\data\\municipalities-database.ts:1770"
         },
         {
           "institution": "Sarajevo Region",
-          "source": "src\\data\\sarajevo-region-forms.ts:709"
+          "source": "src\\data\\sarajevo-region-forms.ts:710"
         },
         {
           "institution": "Trnovo (RS)",
@@ -3578,11 +5048,11 @@
       "occurrences": [
         {
           "institution": "Istočni Stari Grad",
-          "source": "src\\data\\municipalities-database.ts:1670"
+          "source": "src\\data\\municipalities-database.ts:1785"
         },
         {
           "institution": "Sarajevo Region",
-          "source": "src\\data\\sarajevo-region-forms.ts:726"
+          "source": "src\\data\\sarajevo-region-forms.ts:727"
         },
         {
           "institution": "Istočni Stari Grad",
@@ -3599,23 +5069,23 @@
       "occurrences": [
         {
           "institution": "Sokolac",
-          "source": "src\\data\\municipalities-database.ts:1684"
+          "source": "src\\data\\municipalities-database.ts:1799"
         },
         {
           "institution": "Sarajevo Region",
-          "source": "src\\data\\sarajevo-region-forms.ts:744"
+          "source": "src\\data\\sarajevo-region-forms.ts:745"
         },
         {
           "institution": "Sarajevo Region",
-          "source": "src\\data\\sarajevo-region-forms.ts:750"
+          "source": "src\\data\\sarajevo-region-forms.ts:751"
         },
         {
           "institution": "Sarajevo Region",
-          "source": "src\\data\\sarajevo-region-forms.ts:757"
+          "source": "src\\data\\sarajevo-region-forms.ts:758"
         },
         {
           "institution": "Sarajevo Region",
-          "source": "src\\data\\sarajevo-region-forms.ts:764"
+          "source": "src\\data\\sarajevo-region-forms.ts:765"
         },
         {
           "institution": "Sokolac",
@@ -3623,7 +5093,7 @@
         },
         {
           "institution": "Sokolac",
-          "source": "src\\data\\verified-domains.ts:1103"
+          "source": "src\\data\\verified-domains.ts:1118"
         }
       ]
     },
@@ -3632,11 +5102,11 @@
       "occurrences": [
         {
           "institution": "Sokolac",
-          "source": "src\\data\\municipalities-database.ts:1688"
+          "source": "src\\data\\municipalities-database.ts:1803"
         },
         {
           "institution": "Sarajevo Region",
-          "source": "src\\data\\sarajevo-region-forms.ts:743"
+          "source": "src\\data\\sarajevo-region-forms.ts:744"
         },
         {
           "institution": "Sokolac",
@@ -3657,7 +5127,7 @@
       "occurrences": [
         {
           "institution": "Gacko",
-          "source": "src\\data\\municipalities-database.ts:1741"
+          "source": "src\\data\\municipalities-database.ts:1856"
         },
         {
           "institution": "Gacko",
@@ -3670,15 +5140,15 @@
       "occurrences": [
         {
           "institution": "Ljubinje",
-          "source": "src\\data\\municipalities-database.ts:1766"
-        },
-        {
-          "institution": "Municipality Registry",
-          "source": "src\\data\\municipality-registry.ts:303"
+          "source": "src\\data\\municipalities-database.ts:1881"
         },
         {
           "institution": "Municipality Registry",
           "source": "src\\data\\municipality-registry.ts:304"
+        },
+        {
+          "institution": "Municipality Registry",
+          "source": "src\\data\\municipality-registry.ts:305"
         },
         {
           "institution": "Ljubinje",
@@ -3691,7 +5161,7 @@
       "occurrences": [
         {
           "institution": "Berkovići",
-          "source": "src\\data\\municipalities-database.ts:1786"
+          "source": "src\\data\\municipalities-database.ts:1901"
         },
         {
           "institution": "Berkovići",
@@ -3712,11 +5182,7 @@
       "occurrences": [
         {
           "institution": "Foča",
-          "source": "src\\data\\municipalities-database.ts:1811"
-        },
-        {
-          "institution": "Sarajevo Region",
-          "source": "src\\data\\sarajevo-region-forms.ts:783"
+          "source": "src\\data\\municipalities-database.ts:1926"
         },
         {
           "institution": "Sarajevo Region",
@@ -3724,11 +5190,15 @@
         },
         {
           "institution": "Sarajevo Region",
-          "source": "src\\data\\sarajevo-region-forms.ts:790"
+          "source": "src\\data\\sarajevo-region-forms.ts:785"
         },
         {
           "institution": "Sarajevo Region",
-          "source": "src\\data\\sarajevo-region-forms.ts:797"
+          "source": "src\\data\\sarajevo-region-forms.ts:791"
+        },
+        {
+          "institution": "Sarajevo Region",
+          "source": "src\\data\\sarajevo-region-forms.ts:798"
         },
         {
           "institution": "Opština Foča (RS)",
@@ -3740,7 +5210,7 @@
         },
         {
           "institution": "Foča (RS)",
-          "source": "src\\data\\verified-domains.ts:1119"
+          "source": "src\\data\\verified-domains.ts:1134"
         },
         {
           "institution": "Foca",
@@ -3757,11 +5227,11 @@
       "occurrences": [
         {
           "institution": "Čajniče",
-          "source": "src\\data\\municipalities-database.ts:1825"
+          "source": "src\\data\\municipalities-database.ts:1940"
         },
         {
           "institution": "Sarajevo Region",
-          "source": "src\\data\\sarajevo-region-forms.ts:822"
+          "source": "src\\data\\sarajevo-region-forms.ts:823"
         },
         {
           "institution": "Opština Čajniče",
@@ -3769,7 +5239,57 @@
         },
         {
           "institution": "Čajniče",
-          "source": "src\\data\\verified-domains.ts:1131"
+          "source": "src\\data\\verified-domains.ts:1146"
+        }
+      ]
+    },
+    {
+      "url": "https://opstinarudo.com/",
+      "occurrences": [
+        {
+          "institution": "Rudo",
+          "source": "src\\data\\municipalities-database.ts:1954"
+        },
+        {
+          "institution": "Sarajevo Region",
+          "source": "src\\data\\sarajevo-region-forms.ts:982"
+        },
+        {
+          "institution": "Updated Government",
+          "source": "src\\data\\updated-government-forms.ts:458"
+        },
+        {
+          "institution": "Opština Rudo",
+          "source": "src\\data\\uploaded-institutions.ts:256"
+        },
+        {
+          "institution": "Rudo",
+          "source": "src\\data\\website-verification.ts:609"
+        }
+      ]
+    },
+    {
+      "url": "https://opstinarudo.com/obrasci/",
+      "occurrences": [
+        {
+          "institution": "Rudo",
+          "source": "src\\data\\municipalities-database.ts:1958"
+        },
+        {
+          "institution": "Rudo",
+          "source": "src\\data\\municipalities-database.ts:1959"
+        },
+        {
+          "institution": "Updated Government",
+          "source": "src\\data\\updated-government-forms.ts:459"
+        },
+        {
+          "institution": "Updated Government",
+          "source": "src\\data\\updated-government-forms.ts:462"
+        },
+        {
+          "institution": "Rudo",
+          "source": "src\\data\\verified-domains.ts:1158"
         }
       ]
     },
@@ -3778,11 +5298,15 @@
       "occurrences": [
         {
           "institution": "Han Pijesak",
-          "source": "src\\data\\municipalities-database.ts:1863"
+          "source": "src\\data\\municipalities-database.ts:1986"
         },
         {
           "institution": "Sarajevo Region",
-          "source": "src\\data\\sarajevo-region-forms.ts:1031"
+          "source": "src\\data\\sarajevo-region-forms.ts:1032"
+        },
+        {
+          "institution": "Updated Government",
+          "source": "src\\data\\updated-government-forms.ts:516"
         },
         {
           "institution": "Opština Han Pijesak",
@@ -3799,23 +5323,31 @@
       "occurrences": [
         {
           "institution": "Han Pijesak",
-          "source": "src\\data\\municipalities-database.ts:1867"
+          "source": "src\\data\\municipalities-database.ts:1990"
         },
         {
           "institution": "Han Pijesak",
-          "source": "src\\data\\municipalities-database.ts:1868"
+          "source": "src\\data\\municipalities-database.ts:1991"
         },
         {
           "institution": "Sarajevo Region",
-          "source": "src\\data\\sarajevo-region-forms.ts:1032"
+          "source": "src\\data\\sarajevo-region-forms.ts:1033"
         },
         {
           "institution": "Sarajevo Region",
-          "source": "src\\data\\sarajevo-region-forms.ts:1038"
+          "source": "src\\data\\sarajevo-region-forms.ts:1039"
         },
         {
           "institution": "Sarajevo Region",
-          "source": "src\\data\\sarajevo-region-forms.ts:1045"
+          "source": "src\\data\\sarajevo-region-forms.ts:1046"
+        },
+        {
+          "institution": "Updated Government",
+          "source": "src\\data\\updated-government-forms.ts:517"
+        },
+        {
+          "institution": "Updated Government",
+          "source": "src\\data\\updated-government-forms.ts:520"
         },
         {
           "institution": "Opština Han Pijesak",
@@ -3823,20 +5355,20 @@
         },
         {
           "institution": "Han Pijesak",
-          "source": "src\\data\\verified-domains.ts:1171"
+          "source": "src\\data\\verified-domains.ts:1186"
         }
       ]
     },
     {
-      "url": "https://bdcentral.net/obrasci/",
+      "url": "https://vlada.bdcentral.net/Home/",
       "occurrences": [
         {
           "institution": "Brčko Distrikt BiH",
-          "source": "src\\data\\municipalities-database.ts:1894"
+          "source": "src\\data\\municipalities-database.ts:2017"
         },
         {
           "institution": "Brčko Distrikt BiH",
-          "source": "src\\data\\verified-domains.ts:1197"
+          "source": "src\\data\\verified-domains.ts:1212"
         }
       ]
     },
@@ -3858,7 +5390,7 @@
       "occurrences": [
         {
           "institution": "Sarajevo Region",
-          "source": "src\\data\\sarajevo-region-forms.ts:821"
+          "source": "src\\data\\sarajevo-region-forms.ts:822"
         },
         {
           "institution": "Opština Čajniče",
@@ -3871,44 +5403,23 @@
       ]
     },
     {
-      "url": "https://opstinarudo.com/",
-      "occurrences": [
-        {
-          "institution": "Sarajevo Region",
-          "source": "src\\data\\sarajevo-region-forms.ts:981"
-        },
-        {
-          "institution": "Opština Rudo",
-          "source": "src\\data\\uploaded-institutions.ts:256"
-        },
-        {
-          "institution": "Rudo",
-          "source": "src\\data\\website-verification.ts:609"
-        }
-      ]
-    },
-    {
       "url": "https://opstinarudo.com/gradjevinske-dozvole/",
       "occurrences": [
         {
           "institution": "Sarajevo Region",
-          "source": "src\\data\\sarajevo-region-forms.ts:982"
+          "source": "src\\data\\sarajevo-region-forms.ts:983"
         },
         {
           "institution": "Sarajevo Region",
-          "source": "src\\data\\sarajevo-region-forms.ts:988"
+          "source": "src\\data\\sarajevo-region-forms.ts:989"
         },
         {
           "institution": "Sarajevo Region",
-          "source": "src\\data\\sarajevo-region-forms.ts:995"
+          "source": "src\\data\\sarajevo-region-forms.ts:996"
         },
         {
           "institution": "Opština Rudo",
           "source": "src\\data\\uploaded-institutions.ts:257"
-        },
-        {
-          "institution": "Rudo",
-          "source": "src\\data\\verified-domains.ts:1143"
         }
       ]
     },
@@ -3917,7 +5428,7 @@
       "occurrences": [
         {
           "institution": "Sarajevo Region",
-          "source": "src\\data\\sarajevo-region-forms.ts:1010"
+          "source": "src\\data\\sarajevo-region-forms.ts:1011"
         },
         {
           "institution": "Opština Novo Goražde",
@@ -3926,6 +5437,45 @@
         {
           "institution": "Novo Gorazde",
           "source": "src\\data\\website-verification.ts:586"
+        }
+      ]
+    },
+    {
+      "url": "https://donji-vakuf.ba/2019/05/20/e-maticar/",
+      "occurrences": [
+        {
+          "institution": "Updated Government",
+          "source": "src\\data\\updated-government-forms.ts:167"
+        },
+        {
+          "institution": "Updated Government",
+          "source": "src\\data\\updated-government-forms.ts:170"
+        }
+      ]
+    },
+    {
+      "url": "https://eregistarsamac.com/%D0%B0%D0%B4%D0%BC%D0%B8%D0%BD%D0%B8%D1%81%D1%82%D1%80%D0%B0%D1%82%D0%B8%D0%B2%D0%BD%D0%B8-%D0%BF%D0%B0%D0%B5%D1%81%D1%82%D1%83%D0%BF%D1%86%D0%B8/",
+      "occurrences": [
+        {
+          "institution": "Updated Government",
+          "source": "src\\data\\updated-government-forms.ts:199"
+        },
+        {
+          "institution": "Updated Government",
+          "source": "src\\data\\updated-government-forms.ts:202"
+        }
+      ]
+    },
+    {
+      "url": "https://zenica.ba/",
+      "occurrences": [
+        {
+          "institution": "Updated Government",
+          "source": "src\\data\\updated-government-forms.ts:239"
+        },
+        {
+          "institution": "Zenica",
+          "source": "src\\data\\uploaded-institutions.ts:1530"
         }
       ]
     },
@@ -4020,12 +5570,12 @@
         },
         {
           "institution": "Grad Široki Brijeg",
-          "source": "src\\data\\verified-domains.ts:873"
+          "source": "src\\data\\verified-domains.ts:888"
         }
       ]
     },
     {
-      "url": "https://www.vladazzh.com/",
+      "url": "https://www.vladazzh.gov.ba/",
       "occurrences": [
         {
           "institution": "Ministarstvo prostornog uređenja, graditeljstva i zaštite okoliša ZHK",
@@ -4046,7 +5596,7 @@
         },
         {
           "institution": "Brčko Distrikt BiH",
-          "source": "src\\data\\verified-domains.ts:1240"
+          "source": "src\\data\\verified-domains.ts:1255"
         }
       ]
     },
@@ -4118,6 +5668,19 @@
       ]
     },
     {
+      "url": "https://www.ecitizen.ba/tuzla/eServices/eServicesSubcategory/2",
+      "occurrences": [
+        {
+          "institution": "Republika Srpska",
+          "source": "src\\data\\uploaded-institutions.ts:833"
+        },
+        {
+          "institution": "Tuzla",
+          "source": "src\\data\\uploaded-institutions.ts:1015"
+        }
+      ]
+    },
+    {
       "url": "https://www.prijedorgrad.org/",
       "occurrences": [
         {
@@ -4144,6 +5707,19 @@
         {
           "institution": "Novi Grad",
           "source": "src\\data\\website-verification.ts:514"
+        }
+      ]
+    },
+    {
+      "url": "https://www.euprava.opstina-novigrad.com/drustvene-djelatnosti/",
+      "occurrences": [
+        {
+          "institution": "Republika Srpska",
+          "source": "src\\data\\uploaded-institutions.ts:913"
+        },
+        {
+          "institution": "Republika Srpska",
+          "source": "src\\data\\uploaded-institutions.ts:915"
         }
       ]
     },
@@ -4225,7 +5801,7 @@
         },
         {
           "institution": "Brčko Distrikt BiH",
-          "source": "src\\data\\verified-domains.ts:1251"
+          "source": "src\\data\\verified-domains.ts:1266"
         }
       ]
     },
@@ -4532,6 +6108,19 @@
           "source": "src\\data\\website-verification.ts:825"
         }
       ]
+    },
+    {
+      "url": "https://policijabdbih.gov.ba/",
+      "occurrences": [
+        {
+          "institution": "Policija Brcko Distrikta Bih",
+          "source": "src\\data\\website-verification.ts:651"
+        },
+        {
+          "institution": "Policija BD",
+          "source": "src\\lib\\institutions-database.ts:209"
+        }
+      ]
     }
   ],
   "duplicateRecords": [
@@ -4657,5 +6246,615 @@
   "malformedUrlCount": 0,
   "malformedUrls": [],
   "syntaxErrors": [],
-  "institutions": []
+  "institutions": [
+    {
+      "name": "Busovaca",
+      "invalidLinks": [
+        {
+          "url": "https://opcina-busovaca.com/",
+          "error": "Timeout",
+          "sources": [
+            "src\\data\\busovaca-forms.ts:3",
+            "src\\data\\website-verification.ts:84"
+          ]
+        },
+        {
+          "url": "https://opcina-busovaca.com/dokumenti/",
+          "error": "Timeout",
+          "sources": [
+            "src\\data\\busovaca-forms.ts:4"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Busovača",
+      "invalidLinks": [
+        {
+          "url": "https://opcina-busovaca.com/",
+          "error": "Timeout",
+          "sources": [
+            "src\\data\\municipalities-database.ts:992"
+          ]
+        },
+        {
+          "url": "https://opcina-busovaca.com/dokumenti/",
+          "error": "Timeout",
+          "sources": [
+            "src\\data\\municipalities-database.ts:988",
+            "src\\data\\verified-domains.ts:616"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Gradačac",
+      "invalidLinks": [
+        {
+          "url": "https://estipendije-gradacac.ba/",
+          "error": "Timeout",
+          "sources": [
+            "src\\data\\municipalities-database.ts:669"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Općina Pale-Prača",
+      "invalidLinks": [
+        {
+          "url": "https://praca.ba/?s=Obrazac",
+          "error": "Timeout",
+          "sources": [
+            "src\\data\\verified-domains.ts:1018"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Pale Praca",
+      "invalidLinks": [
+        {
+          "url": "https://praca.ba/",
+          "error": "Timeout",
+          "sources": [
+            "src\\data\\website-verification.ts:639"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Pale-Prača",
+      "invalidLinks": [
+        {
+          "url": "https://praca.ba/?s=Obrazac",
+          "error": "Timeout",
+          "sources": [
+            "src\\data\\municipalities-database.ts:288",
+            "src\\data\\uploaded-institutions.ts:19"
+          ]
+        },
+        {
+          "url": "https://praca.ba/",
+          "error": "Timeout",
+          "sources": [
+            "src\\data\\municipalities-database.ts:292",
+            "src\\data\\uploaded-institutions.ts:18"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Prozor-Rama",
+      "invalidLinks": [
+        {
+          "url": "https://prozor-rama.org/status-zahtjeva",
+          "error": "HTTP 404 Not Found",
+          "contentType": "text/html; charset=UTF-8",
+          "sources": [
+            "src\\data\\municipalities-database.ts:1174"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Sarajevo Region",
+      "invalidLinks": [
+        {
+          "url": "https://praca.ba/?s=Obrazac",
+          "error": "Timeout",
+          "sources": [
+            "src\\data\\sarajevo-region-forms.ts:95",
+            "src\\data\\sarajevo-region-forms.ts:101",
+            "src\\data\\sarajevo-region-forms.ts:108"
+          ]
+        },
+        {
+          "url": "https://praca.ba/",
+          "error": "Timeout",
+          "sources": [
+            "src\\data\\sarajevo-region-forms.ts:94"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Travnička regija",
+      "invalidLinks": [
+        {
+          "url": "https://opcina-busovaca.com/",
+          "error": "Timeout",
+          "sources": [
+            "src\\data\\uploaded-institutions.ts:1460"
+          ]
+        },
+        {
+          "url": "https://opcina-busovaca.com/dokumenti/",
+          "error": "Timeout",
+          "sources": [
+            "src\\data\\uploaded-institutions.ts:1461"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Updated Government",
+      "invalidLinks": [
+        {
+          "url": "https://eregistarsamac.com/%D0%B0%D0%B4%D0%BC%D0%B8%D0%BD%D0%B8%D1%81%D1%82%D1%80%D0%B0%D1%82%D0%B8%D0%B2%D0%BD%D0%B8-%D0%BF%D0%B0%D0%B5%D1%81%D1%82%D1%83%D0%BF%D1%86%D0%B8/",
+          "error": "HTTP 404 Not Found",
+          "contentType": "text/html; charset=UTF-8",
+          "sources": [
+            "src\\data\\updated-government-forms.ts:199",
+            "src\\data\\updated-government-forms.ts:202"
+          ]
+        },
+        {
+          "url": "https://eregistarsamac.com/%D1%80%D0%B5%D0%B3%D0%B8%D1%81%D1%82%D0%B0%D1%80/10-04-%d0%b7%d0%b0%d1%85%d1%82%d1%98%d0%b5%d0%b2-%d0%b7%d0%b0-%d0%b8%d0%bd%d1%81%d0%bf%d0%b5%d0%ba%d1%86%d0%b8%d1%98%d1%81%d0%ba%d0%b8-%d0%bd%d0%b0%d0%b4%d0%b7%D0%B0%D0%B5%D1%80/",
+          "error": "HTTP 404 Not Found",
+          "contentType": "text/html; charset=UTF-8",
+          "sources": [
+            "src\\data\\updated-government-forms.ts:203"
+          ]
+        },
+        {
+          "url": "https://banovici.gov.ba/wp-content/uploads/2021/04/05-1.2-Zahtjev-za-ponistenje-pravnosnaznog-rjesenja-o-eksproprijaciji-nekretnina-deeksproprijacija.pdf",
+          "error": "HTTP 404 Not Found",
+          "contentType": "text/html; charset=UTF-8",
+          "sources": [
+            "src\\data\\updated-government-forms.ts:284"
+          ]
+        },
+        {
+          "url": "https://banovici.gov.ba/wp-content/uploads/2021/04/06-1.13-Zahtjev-za-ostvarivanje-novcane-podrske-za-proizvodnju-u-zasticenom-prostoru-%E2%80%93-plastenici-staklenici.pdf",
+          "error": "HTTP 404 Not Found",
+          "contentType": "text/html; charset=UTF-8",
+          "sources": [
+            "src\\data\\updated-government-forms.ts:326"
+          ]
+        },
+        {
+          "url": "https://banovici.gov.ba/wp-content/uploads/2021/04/06-1.21-Zahtjev-za-ostvarivanje-novcane-podrske-za-proizvodnju-stocnog-zita-kukuruz.pdf",
+          "error": "HTTP 404 Not Found",
+          "contentType": "text/html; charset=UTF-8",
+          "sources": [
+            "src\\data\\updated-government-forms.ts:334"
+          ]
+        },
+        {
+          "url": "https://banovici.gov.ba/wp-content/uploads/2021/04/08-1.4-Zahtjev-za-ispravku-promjenu-podataka-u-maticnoj-knjizi.pdf",
+          "error": "HTTP 404 Not Found",
+          "contentType": "text/html; charset=UTF-8",
+          "sources": [
+            "src\\data\\updated-government-forms.ts:340"
+          ]
+        },
+        {
+          "url": "https://banovici.gov.ba/wp-content/uploads/2021/04/08-1.5-Zahtjev-za-upis-rodjenja-u-maticnu-knjigu-rodjenih.pdf",
+          "error": "HTTP 404 Not Found",
+          "contentType": "text/html; charset=UTF-8",
+          "sources": [
+            "src\\data\\updated-government-forms.ts:341"
+          ]
+        },
+        {
+          "url": "https://banovici.gov.ba/wp-content/uploads/2021/04/08-1.6-Zahtjev-za-upis-smrti-u-maticnu-knjigu-umrlih.pdf",
+          "error": "HTTP 404 Not Found",
+          "contentType": "text/html; charset=UTF-8",
+          "sources": [
+            "src\\data\\updated-government-forms.ts:342"
+          ]
+        },
+        {
+          "url": "https://banovici.gov.ba/wp-content/uploads/2021/04/08-1.7-Zahtjev-za-upis-vjencanja-u-maticnu-knjigu-vjencanih.pdf",
+          "error": "HTTP 404 Not Found",
+          "contentType": "text/html; charset=UTF-8",
+          "sources": [
+            "src\\data\\updated-government-forms.ts:343"
+          ]
+        },
+        {
+          "url": "https://banovici.gov.ba/wp-content/uploads/2021/04/08-2.8-Zahtjev-za-uskladivanje-priznavanje-prava-na-porodicnu-invalidninu-nakon-ostvarivanja-prava-na-PIOMIO-penziju.pdf",
+          "error": "HTTP 404 Not Found",
+          "contentType": "text/html; charset=UTF-8",
+          "sources": [
+            "src\\data\\updated-government-forms.ts:352"
+          ]
+        },
+        {
+          "url": "https://banovici.gov.ba/wp-content/uploads/2021/04/10-1.2-Zahtjev-za-izdavanje-uvjerenja-o-pripadnosti-civilnoj-zastiti-u-preiodu-1992-1995.-godina.pdf",
+          "error": "HTTP 404 Not Found",
+          "contentType": "text/html; charset=UTF-8",
+          "sources": [
+            "src\\data\\updated-government-forms.ts:365"
+          ]
+        },
+        {
+          "url": "https://www.opstinabileca.ba/wp-content/uploads/2021/03/%D0%97%D0%B0%D1%85%D1%82%D1%98%D0%B5%D0%B2-%D0%B7%D0%B0-%D0%B8%D0%B7%D0%BB%D0%B0%D0%B7%D0%B0%D0%BA-%D1%81%D0%BB%D1%83%D0%B6%D0%B1%D0%B5%D0%BD%D0%BE%D0%B3-%D0%BB%D0%B8%D1%86%D0%B0-%D1%80%D0%B0%D0%B4%D0%B8-%D0%B0%D0%B5%D0%B2%D1%98%D0%B5%D1%80%D0%B5-%D0%BF%D0%B0%D0%B5%D1%82%D0%BF%D0%B8%D1%81%D0%B0.pdf",
+          "error": "HTTP 404 Not Found",
+          "contentType": "text/html",
+          "sources": [
+            "src\\data\\updated-government-forms.ts:441"
+          ]
+        },
+        {
+          "url": "https://www.opstinabileca.ba/wp-content/uploads/2021/03/%D0%97%D0%B0%D1%85%D1%82%D1%98%D0%B5%D0%B2-%D0%B7%D0%B0-%D0%BF%D1%80%D0%B8%D1%81%D1%82%D1%83%D0%BF-%D0%B8%D0%BD%D1%84%D0%B0%D0%B5%D1%80%D0%BC%D0%B0%D1%86%D0%B8%D1%98%D0%B0%D0%BC%D0%B0.pdf",
+          "error": "HTTP 404 Not Found",
+          "contentType": "text/html",
+          "sources": [
+            "src\\data\\updated-government-forms.ts:442"
+          ]
+        },
+        {
+          "url": "https://www.opstinabileca.ba/wp-content/uploads/2021/03/%D0%97%D0%B0%D1%85%D1%82%D1%98%D0%B5%D0%B2-%D0%B7%D0%B0-%D0%BF%D1%80%D0%B0%D0%B5%D0%BC%D1%98%D0%B5%D0%BD%D1%83-%D0%B8%D0%BC%D0%B5%D0%BD%D0%B0%D0%BF%D1%80%D0%B5%D0%B7%D0%B8%D0%BC%D0%B5%D0%BD%D0%B0.pdf",
+          "error": "HTTP 404 Not Found",
+          "contentType": "text/html",
+          "sources": [
+            "src\\data\\updated-government-forms.ts:444"
+          ]
+        },
+        {
+          "url": "https://www.opstinabileca.ba/wp-content/uploads/2021/03/%D0%97%D0%B0%D1%85%D1%82%D1%98%D0%B5%D0%B2-%D0%B7%D0%B0-%D0%B4%D0%B0%D0%B5%D0%BD%D0%B0%D0%B5%D1%88%D0%B5%D1%9A%D0%B5-%D1%80%D1%98%D0%B5%D1%88%D0%B5%D1%9A%D0%B0-%D0%B7%D0%B0-%D0%B8%D1%81%D0%BF%D1%80%D0%B0%D0%B2%D0%BA%D1%83-%D0%BF%D0%BE%D0%B4%D0%B0%D1%82%D0%B0%D0%BA%D0%B0-%D1%83-%D0%9C%D0%9A.pdf",
+          "error": "HTTP 404 Not Found",
+          "contentType": "text/html",
+          "sources": [
+            "src\\data\\updated-government-forms.ts:445"
+          ]
+        },
+        {
+          "url": "https://www.opstinabileca.ba/wp-content/uploads/2021/03/%D0%97%D0%B0%D1%85%D1%82%D1%98%D0%B5%D0%B2-%D0%B7%D0%B0-%D0%B4%D0%B0%D0%B5%D0%BD%D0%B0%D0%B5%D1%88%D0%B5%D1%9A%D0%B5-%D1%80%D1%98%D0%B5%D1%88%D0%B5%D1%9A%D0%B0-%D0%B7%D0%B0-%D0%BD%D0%B0%D0%BA%D0%BD%D0%B0%D0%B4%D0%BD%D0%B8-%D1%83%D0%BF%D0%B8%D1%81-%D1%87%D0%B8%D1%9A%D0%B5%D0%BD%D0%B8%D1%86%D0%B5-%D1%80%D0%BE%D1%92%D0%B5%D1%9A%D0%B0-%D1%83-%D0%9C%D0%9A%D0%A0-%D0%BF%D1%80%D0%B5%D0%BC%D0%B0-%D1%83%D0%BF%D0%B8%D1%81%D1%83-%D1%83-%D0%9A%D1%9A%D0%B8%D0%B3%D1%83-%D0%B4%D1%80%D0%B6%D0%B0%D0%B2%D1%99%D0%B0%D0%BD%D0%B0.pdf",
+          "error": "HTTP 404 Not Found",
+          "contentType": "text/html",
+          "sources": [
+            "src\\data\\updated-government-forms.ts:446"
+          ]
+        },
+        {
+          "url": "https://www.opstinabileca.ba/wp-content/uploads/2021/03/%D0%97%D0%B0%D1%85%D1%82%D1%98%D0%B5%D0%B2-%D0%B7%D0%B0-%D0%BF%D1%80%D0%B8%D0%B7%D0%BD%D0%B0%D0%B2%D0%B0%D1%9A%D0%B5-%D1%81%D1%82%D0%B0%D1%82%D1%83%D1%81%D0%B0-%D0%B1%D0%B0%D0%B5%D1%80%D1%86%D0%B0-%D0%B8-%D0%BA%D0%B0%D1%82%D0%B5%D0%B3%D0%B0%D0%B5%D1%80%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%98%D0%B5.pdf",
+          "error": "HTTP 404 Not Found",
+          "contentType": "text/html",
+          "sources": [
+            "src\\data\\updated-government-forms.ts:447"
+          ]
+        },
+        {
+          "url": "https://www.opstinabileca.ba/wp-content/uploads/2021/03/%D0%97%D0%B0%D1%85%D1%82%D1%98%D0%B5%D0%B2-%D0%B7%D0%B0-%D0%B0%D0%B5%D1%81%D1%82%D0%B2%D0%B0%D1%80%D0%B8%D0%B2%D0%B0%D1%9A%D0%B5-%D0%BF%D1%80%D0%B0%D0%B2%D0%B0-%D0%BD%D0%B0-%D0%B1%D0%B0%D0%B5%D1%80%D0%B0%D1%87%D0%BA%D0%B8-%D0%B4%D0%BE%D0%B4%D0%B0%D1%82%D0%B0%D0%BA.pdf",
+          "error": "HTTP 404 Not Found",
+          "contentType": "text/html",
+          "sources": [
+            "src\\data\\updated-government-forms.ts:449"
+          ]
+        },
+        {
+          "url": "https://opstinarudo.com/wp-content/uploads/2013/07/Zahtjev-za-obavljanje-promjenu-podataka-i-prestanak-obavljanja-zanatsko-preduzetnicke-djelatnosti.pdf",
+          "error": "HTTP 404 Not Found",
+          "contentType": "text/html",
+          "sources": [
+            "src\\data\\updated-government-forms.ts:478"
+          ]
+        },
+        {
+          "url": "https://opstinarudo.com/wp-content/uploads/2013/07/Zahtjev-za-pripremne-radnje-zanatsko-preduzetnicke-djelatnosti.pdf",
+          "error": "HTTP 404 Not Found",
+          "contentType": "text/html",
+          "sources": [
+            "src\\data\\updated-government-forms.ts:479"
+          ]
+        },
+        {
+          "url": "https://opstinarudo.com/wp-content/uploads/2013/07/Zahtjev-za-naknadu-po-odlikovanju-OBRAZAC.pdf",
+          "error": "HTTP 404 Not Found",
+          "contentType": "text/html",
+          "sources": [
+            "src\\data\\updated-government-forms.ts:487"
+          ]
+        },
+        {
+          "url": "https://opstinarudo.com/wp-content/uploads/2013/06/Zahtjev-za-ostvarivanje-porodicne-invalidnine-iza-umrlog-vojnog-invalida.pdf",
+          "error": "HTTP 404 Not Found",
+          "contentType": "text/html",
+          "sources": [
+            "src\\data\\updated-government-forms.ts:489"
+          ]
+        },
+        {
+          "url": "https://opstinarudo.com/wp-content/uploads/2026/06/Zahtjev-za-priznavanje-prava-na-boracki-dodatak.pdf",
+          "error": "HTTP 404 Not Found",
+          "contentType": "text/html",
+          "sources": [
+            "src\\data\\updated-government-forms.ts:491"
+          ]
+        },
+        {
+          "url": "https://opstinarudo.com/wp-content/uploads/2013/07/Zahtjev-za-priznavanje-svojstva-i-kategorije-borca.pdf",
+          "error": "HTTP 404 Not Found",
+          "contentType": "text/html",
+          "sources": [
+            "src\\data\\updated-government-forms.ts:494"
+          ]
+        },
+        {
+          "url": "https://opstinarudo.com/wp-content/uploads/2013/07/Zahtjev-za-priznavanje-svojstva-i-prava-RVI-OBRAZAC.pdf",
+          "error": "HTTP 404 Not Found",
+          "contentType": "text/html",
+          "sources": [
+            "src\\data\\updated-government-forms.ts:495"
+          ]
+        },
+        {
+          "url": "https://opstinarudo.com/wp-content/uploads/2013/06/Zahtjev-za-troskove-sahrane-borca-I-II-kat-OBRAZAC.pdf",
+          "error": "HTTP 404 Not Found",
+          "contentType": "text/html",
+          "sources": [
+            "src\\data\\updated-government-forms.ts:499"
+          ]
+        },
+        {
+          "url": "https://opstinarudo.com/wp-content/uploads/2013/06/Zahtjev-za-utvrdjivanje-novog-procenta-vojnog-invaliditeta.pdf",
+          "error": "HTTP 404 Not Found",
+          "contentType": "text/html",
+          "sources": [
+            "src\\data\\updated-government-forms.ts:500"
+          ]
+        },
+        {
+          "url": "https://hanpijesak.org/wp-content/uploads/2017/03/%D0%97%D0%B0%D0%BF%D0%B8%D1%81%D0%BD%D0%B8%D0%BA-%D0%BE-%D0%BF%D1%80%D0%B8%D1%98%D0%B0%D0%B2%D0%B8-%D0%BD%D0%B0%D0%BC%D1%98%D0%B5%D1%80%D0%B5-%D0%B7%D0%B0-%D1%81%D1%82%D1%83%D0%BF%D0%B0%D1%9A%D0%B5-%D1%83-%D0%B1%D1%80%D0%B0%D0%BA.doc",
+          "error": "HTTP 404 Not Found",
+          "contentType": "text/html; charset=UTF-8",
+          "sources": [
+            "src\\data\\updated-government-forms.ts:525"
+          ]
+        },
+        {
+          "url": "https://hanpijesak.org/wp-content/uploads/2017/03/%D0%9F%D1%80%D0%B8%D1%98%D0%B0%D0%B2%D0%B0-%D0%B7%D0%B0%D0%BA%D1%99%D1%83%D1%87%D0%B5%D1%9A%D0%B0-%D0%B1%D1%80%D0%B0%D0%BA%D0%B0.docx",
+          "error": "HTTP 404 Not Found",
+          "contentType": "text/html; charset=UTF-8",
+          "sources": [
+            "src\\data\\updated-government-forms.ts:526"
+          ]
+        },
+        {
+          "url": "https://hanpijesak.org/wp-content/uploads/2017/03/%D0%9F%D1%80%D0%B8%D1%98%D0%B0%D0%B2%D0%B0-%D1%87%D0%B8%D1%9A%D0%B5%D0%BD%D0%B8%D1%86%D0%B5-%D1%81%D0%BC%D1%80%D1%82%D0%B8.doc",
+          "error": "HTTP 404 Not Found",
+          "contentType": "text/html; charset=UTF-8",
+          "sources": [
+            "src\\data\\updated-government-forms.ts:528"
+          ]
+        },
+        {
+          "url": "https://hanpijesak.org/wp-content/uploads/2017/03/%D0%97%D0%B0%D1%85%D1%82%D1%98%D0%B5%D0%B2-%D0%B7%D0%B0-%D0%BE%D0%B4%D0%BE%D0%B1%D1%80%D0%B5%D1%9A%D0%B5-%D0%B7%D0%B0-%D0%B7%D0%B0%D0%BA%D1%99%D1%83%D1%87%D0%B5%D1%9A%D0%B5-%D0%B1%D1%80%D0%B0%D0%BA%D0%B0-%D0%BF%D0%BE-%D0%BF%D1%83%D0%BD%D0%BE%D0%BC%D0%BE%D1%9B%D0%BD%D0%B8%D0%BA%D1%83.docx",
+          "error": "HTTP 404 Not Found",
+          "contentType": "text/html; charset=UTF-8",
+          "sources": [
+            "src\\data\\updated-government-forms.ts:529"
+          ]
+        },
+        {
+          "url": "https://hanpijesak.org/wp-content/uploads/2017/03/%D0%97%D0%B0%D1%85%D1%82%D1%98%D0%B5%D0%B2-%D0%B7%D0%B0-%D0%BE%D0%B4%D0%BE%D0%B1%D1%80%D0%B5%D1%9A%D0%B5-%D0%B7%D0%B0-%D0%B8%D0%B7%D0%BB%D0%B0%D0%B7%D0%B0%D0%BA-%D0%BC%D0%B0%D1%82%D0%B8%D1%87%D0%B0%D1%80%D0%B0-%D0%BD%D0%B0-%D1%82%D0%B5%D1%80%D0%B5%D0%BD-%D1%80%D0%B0%D0%B4%D0%B8-%D0%BE%D0%B1%D0%B0%D0%B2%D1%99%D0%B0%D1%9A%D0%B0-%D0%B2%D1%98%D0%B5%D0%BD%D1%87%D0%B0%D1%9A%D0%B0.doc",
+          "error": "HTTP 404 Not Found",
+          "contentType": "text/html; charset=UTF-8",
+          "sources": [
+            "src\\data\\updated-government-forms.ts:530"
+          ]
+        },
+        {
+          "url": "https://hanpijesak.org/wp-content/uploads/2017/03/%D0%97%D0%B0%D1%85%D1%82%D1%98%D0%B5%D0%B2-%D0%B7%D0%B0-%D1%81%D0%B0%D1%81%D1%82%D0%B0%D0%B2%D1%99%D0%B0%D1%9A%D0%B5-%D1%81%D0%BC%D1%80%D1%82%D0%BE%D0%B2%D0%BD%D0%B8%D1%86%D0%B5-%D1%9B%D0%B8%D1%80%D0%B8%D0%BB%D0%B8%D1%86%D0%B0.doc",
+          "error": "HTTP 404 Not Found",
+          "contentType": "text/html; charset=UTF-8",
+          "sources": [
+            "src\\data\\updated-government-forms.ts:533"
+          ]
+        },
+        {
+          "url": "https://hanpijesak.org/wp-content/uploads/2017/03/%D0%97%D0%B0%D1%85%D1%82%D1%98%D0%B5%D0%B2-%D0%B7%D0%B0-%D1%83%D0%BF%D0%B8%D1%81-%D1%83-%D0%9C%D0%9A%D0%A3-%D0%BD%D0%B0-%D0%BE%D1%81%D0%BD%D0%BE%D0%B2%D1%83-%D0%B8%D0%BD%D0%BE%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%BE%D0%B3-%D0%B8%D0%B7%D0%B2%D0%BE%D0%B4%D0%B0.doc",
+          "error": "HTTP 404 Not Found",
+          "contentType": "text/html; charset=UTF-8",
+          "sources": [
+            "src\\data\\updated-government-forms.ts:535"
+          ]
+        },
+        {
+          "url": "https://hanpijesak.org/wp-content/uploads/2017/03/%D0%97%D0%B0%D1%85%D1%82%D1%98%D0%B5%D0%B2-%D0%B7%D0%B0-%D1%83%D0%BF%D0%B8%D1%81-%D1%87%D0%B8%D1%9A%D0%B5%D0%BD%D0%B8%D1%86%D0%B5-%D0%B4%D1%80%D0%B6%D0%B0%D0%B2%D1%99%D0%B0%D0%BD%D1%81%D1%82%D0%B2%D0%B0-%D1%83-%D0%BC%D0%B0%D1%82%D0%B8%D1%87%D0%BD%D1%83-%D0%BA%D1%9A%D0%B8%D0%B3%D1%83-%D1%80%D0%BE%D1%92%D0%B5%D0%BD%D0%B8%D1%85.doc",
+          "error": "HTTP 404 Not Found",
+          "contentType": "text/html; charset=UTF-8",
+          "sources": [
+            "src\\data\\updated-government-forms.ts:538"
+          ]
+        },
+        {
+          "url": "https://hanpijesak.org/wp-content/uploads/2017/03/%D0%97%D0%B0%D1%85%D1%82%D1%98%D0%B5%D0%B2-%D0%B7%D0%B0-%D0%BD%D0%B0%D0%BA%D0%BD%D0%B0%D0%B4%D0%BD%D0%B8-%D1%83%D0%BF%D0%B8%D1%81-%D1%83-%D0%9C%D0%9A%D0%A0-1.docx",
+          "error": "HTTP 404 Not Found",
+          "contentType": "text/html; charset=UTF-8",
+          "sources": [
+            "src\\data\\updated-government-forms.ts:540"
+          ]
+        },
+        {
+          "url": "https://hanpijesak.org/wp-content/uploads/2017/03/%D0%97%D0%B0%D1%85%D1%82%D1%98%D0%B5%D0%B2-%D0%B7%D0%B0-%D0%BD%D0%B0%D0%BA%D0%BD%D0%B0%D0%B4%D0%BD%D0%B8-%D1%83%D0%BF%D0%B8%D1%81-%D1%83-%D0%9C%D0%9A%D0%A0-2.docx",
+          "error": "HTTP 404 Not Found",
+          "contentType": "text/html; charset=UTF-8",
+          "sources": [
+            "src\\data\\updated-government-forms.ts:541"
+          ]
+        },
+        {
+          "url": "https://hanpijesak.org/wp-content/uploads/2017/03/%D0%97%D0%B0%D1%85%D1%82%D1%98%D0%B5%D0%B2-%D0%B7%D0%B0-%D0%B8%D1%81%D0%BF%D1%80%D0%B0%D0%B2%D0%BA%D1%83-%D0%BF%D0%BE%D0%B3%D1%80%D0%B5%D1%88%D0%BD%D0%BE-%D0%B5%D0%B2%D0%B8%D0%B4%D0%B5%D0%BD%D1%82%D0%B8%D1%80%D0%B0%D0%BD%D0%B8%D1%85-%D0%BF%D0%BE%D0%B4%D0%B0%D1%82%D0%B0%D0%BA%D0%B0.docx",
+          "error": "HTTP 404 Not Found",
+          "contentType": "text/html; charset=UTF-8",
+          "sources": [
+            "src\\data\\updated-government-forms.ts:542"
+          ]
+        },
+        {
+          "url": "https://hanpijesak.org/wp-content/uploads/2017/03/%D0%97%D0%B0%D1%85%D1%82%D1%98%D0%B5%D0%B2-%D0%B7%D0%B0-%D0%B8%D0%B7%D0%B4%D0%B0%D0%B2%D0%B0%D1%9A%D0%B5-%D0%B5%D0%BA%D0%BE%D0%BB%D0%BE%D1%88%D0%BA%D0%B5-%D0%B4%D0%BE%D0%B7%D0%B2%D0%BE%D0%BB%D0%B5.doc",
+          "error": "HTTP 404 Not Found",
+          "contentType": "text/html; charset=UTF-8",
+          "sources": [
+            "src\\data\\updated-government-forms.ts:549"
+          ]
+        },
+        {
+          "url": "https://hanpijesak.org/wp-content/uploads/2017/03/%D0%97%D0%B0%D1%85%D1%82%D1%98%D0%B5%D0%B2-%D0%B7%D0%B0-%D0%BE%D0%B1%D0%BD%D0%B0%D0%B2%D1%99%D0%B0%D1%9A%D0%B5-%D0%B5%D0%BA%D0%BE%D0%BB%D0%BE%D1%88%D0%BA%D0%B5-%D0%B4%D0%BE%D0%B7%D0%B2%D0%BE%D0%BB%D0%B5-2017.doc",
+          "error": "HTTP 404 Not Found",
+          "contentType": "text/html; charset=UTF-8",
+          "sources": [
+            "src\\data\\updated-government-forms.ts:550"
+          ]
+        },
+        {
+          "url": "https://hanpijesak.org/wp-content/uploads/2017/03/%D0%97%D0%B0%D1%85%D1%82%D1%98%D0%B5%D0%B2-%D0%B7%D0%B0-%D0%B8%D0%B7%D0%BB%D0%B0%D0%B7%D0%B0%D0%BA-%D0%B5%D0%BA%D0%BE%D0%BB%D0%BE%D1%88%D0%BA%D0%BE%D0%B3-%D0%B8%D0%BD%D1%81%D0%BF%D0%B5%D0%BA%D1%82%D0%BE%D1%80%D0%B0.docx",
+          "error": "HTTP 404 Not Found",
+          "contentType": "text/html; charset=UTF-8",
+          "sources": [
+            "src\\data\\updated-government-forms.ts:551"
+          ]
+        },
+        {
+          "url": "https://hanpijesak.org/wp-content/uploads/2017/03/%D0%97%D0%B0%D1%85%D1%82%D1%98%D0%B5%D0%B2-%D0%B7%D0%B0-%D0%B8%D0%B7%D0%BB%D0%B0%D0%B7%D0%B0%D0%BA-%D0%B8%D0%BD%D1%81%D0%BF%D0%B5%D0%BA%D1%82%D0%BE%D1%80%D0%B0-%D0%B7%D0%B0-%D1%85%D1%80%D0%B0%D0%BD%D1%83-%D0%B8-%D0%B7%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BE%D0%B3.doc",
+          "error": "HTTP 404 Not Found",
+          "contentType": "text/html; charset=UTF-8",
+          "sources": [
+            "src\\data\\updated-government-forms.ts:552"
+          ]
+        },
+        {
+          "url": "https://hanpijesak.org/wp-content/uploads/2017/03/%D0%97%D0%B0%D1%85%D1%82%D1%98%D0%B5%D0%B2-%D0%B7%D0%B0-%D0%B8%D0%B7%D0%BB%D0%B0%D0%B7%D0%B0%D0%BA-%D1%82%D1%80%D0%B6%D0%B8%D1%88%D0%BD%D0%BE%D0%B3-%D0%B8%D0%BD%D1%81%D0%BF%D0%B5%D0%BA%D1%82%D0%BE%D1%80%D0%B0.docx",
+          "error": "HTTP 404 Not Found",
+          "contentType": "text/html; charset=UTF-8",
+          "sources": [
+            "src\\data\\updated-government-forms.ts:553"
+          ]
+        },
+        {
+          "url": "https://hanpijesak.org/wp-content/uploads/2017/03/%D0%97%D0%B0%D1%85%D1%82%D1%98%D0%B5%D0%B2-%D0%B7%D0%B0-%D0%B8%D0%B7%D0%BB%D0%B0%D0%B7%D0%B0%D0%BA-%D1%83%D1%80%D0%B1%D0%B0%D0%BD%D0%B8%D1%81%D1%82%D0%B8%D1%87%D0%BA%D0%BE-%D0%B3%D1%80%D0%B0%D1%92%D0%B5%D0%B2%D0%B8%D0%BD%D1%81%D0%BA%D0%BE%D0%B3-%D0%B8%D0%BD%D1%81%D0%BF%D0%B5%D0%BA%D1%82%D0%BE%D1%80%D0%B0.doc",
+          "error": "HTTP 404 Not Found",
+          "contentType": "text/html; charset=UTF-8",
+          "sources": [
+            "src\\data\\updated-government-forms.ts:554"
+          ]
+        },
+        {
+          "url": "https://hanpijesak.org/wp-content/uploads/2017/03/%D0%97%D0%B0%D1%85%D1%82%D1%98%D0%B5%D0%B2-%D0%B7%D0%B0-%D0%B8%D0%B7%D0%BB%D0%B0%D0%B7%D0%B0%D0%BA-%D0%BA%D0%BE%D0%BC%D1%83%D0%BD%D0%B0%D0%BB%D0%BD%D0%BE%D1%98-%D0%BF%D0%BE%D0%BB%D0%B8%D1%86%D0%B8%D1%98%D0%B5.doc",
+          "error": "HTTP 404 Not Found",
+          "contentType": "text/html; charset=UTF-8",
+          "sources": [
+            "src\\data\\updated-government-forms.ts:555"
+          ]
+        },
+        {
+          "url": "https://hanpijesak.org/wp-content/uploads/2017/03/%D0%97%D0%B0%D1%85%D1%82%D1%98%D0%B5%D0%B2-%D0%B7%D0%B0-%D0%B5%D0%BA%D1%81%D1%85%D1%83%D0%BC%D0%B0%D1%86%D0%B8%D1%98%D1%83-%D0%BF%D0%BE%D1%81%D0%BC%D1%80%D1%82%D0%BD%D0%B8%D1%85-%D0%BE%D1%81%D1%82%D0%B0%D1%82%D0%B0%D0%BA%D0%B0.doc",
+          "error": "HTTP 404 Not Found",
+          "contentType": "text/html; charset=UTF-8",
+          "sources": [
+            "src\\data\\updated-government-forms.ts:556"
+          ]
+        },
+        {
+          "url": "https://hanpijesak.org/wp-content/uploads/2017/03/%D0%97%D0%B0%D1%85%D1%82%D1%98%D0%B5%D0%B2-%D0%B7%D0%B0-%D0%B8%D0%B7%D0%B4%D0%B0%D0%B2%D0%B0%D1%9A%D0%B5-%D0%BB%D0%B8%D1%86%D0%B5%D0%BD%D1%86%D0%B5-%D0%95-%D0%B7%D0%B0-%D0%BF%D1%80%D0%B5%D0%B2%D0%BE%D0%B7%D0%BD%D0%B8%D0%BA%D0%B0.doc",
+          "error": "HTTP 404 Not Found",
+          "contentType": "text/html; charset=UTF-8",
+          "sources": [
+            "src\\data\\updated-government-forms.ts:559"
+          ]
+        },
+        {
+          "url": "https://hanpijesak.org/wp-content/uploads/2017/03/%D0%97%D0%B0%D1%85%D1%82%D1%98%D0%B5%D0%B2-%D0%B7%D0%B0-%D0%B8%D0%B7%D0%B4%D0%B0%D0%B2%D0%B0%D1%9A%D0%B5-%D0%BB%D0%B8%D1%86%D0%B5%D0%BD%D1%86%D0%B5-%D0%A6-%D0%B7%D0%B0-%D0%BF%D1%80%D0%B5%D0%B2%D0%BE%D0%B7%D0%BD%D0%B8%D0%BA%D0%B0.doc",
+          "error": "HTTP 404 Not Found",
+          "contentType": "text/html; charset=UTF-8",
+          "sources": [
+            "src\\data\\updated-government-forms.ts:560"
+          ]
+        },
+        {
+          "url": "https://hanpijesak.org/wp-content/uploads/2017/03/%D0%97%D0%B0%D1%85%D1%82%D1%98%D0%B5%D0%B2-%D0%B7%D0%B0-%D0%B8%D0%B7%D0%B4%D0%B0%D0%B2%D0%B0%D1%9A%D0%B5-%D0%BE%D0%B4%D0%BE%D0%B1%D1%80%D0%B5%D1%9A%D0%B0-%D0%B7%D0%B0-%D0%BE%D0%B1%D0%B0%D0%B2%D1%99%D0%B0%D1%9A%D0%B5-%D0%BF%D1%80%D0%B5%D0%B2%D0%BE%D0%B7%D0%B0-%D0%B7%D0%B0-%D0%B2%D0%BB%D0%B0%D1%81%D1%82%D0%B8%D1%82%D0%B5-%D0%BF%D0%BE%D1%82%D1%80%D0%B5%D0%B1%D0%B5.doc",
+          "error": "HTTP 404 Not Found",
+          "contentType": "text/html; charset=UTF-8",
+          "sources": [
+            "src\\data\\updated-government-forms.ts:561"
+          ]
+        },
+        {
+          "url": "https://hanpijesak.org/wp-content/uploads/2017/03/%D0%97%D0%B0%D1%85%D1%82%D1%98%D0%B5%D0%B2-%D0%B7%D0%B0-%D0%B8%D0%B7%D0%B4%D0%B0%D0%B2%D0%B0%D1%9A%D0%B5-%D1%80%D1%98%D0%B5%D1%88%D0%B5%D1%9A%D0%B0-%D0%BE-%D1%80%D0%B5%D0%B3%D0%B8%D1%81%D1%82%D1%80%D0%B0%D1%86%D0%B8%D1%98%D0%B8-%D1%82%D0%B5%D1%80%D0%B5%D1%82.-%D0%BC%D0%BE%D1%82%D0%BE%D1%80%D0%BD%D0%BE%D0%B3-%D0%B2%D0%BE%D0%B7%D0%B8%D0%BB%D0%B0-%D0%B8-%D0%BF%D1%80%D0%B8%D0%BA%D1%99%D1%83%D1%87%D0%BD%D0%BE%D0%B3-%D0%B2%D0%BE%D0%B7%D0%B8%D0%BB%D0%B0.doc",
+          "error": "HTTP 404 Not Found",
+          "contentType": "text/html; charset=UTF-8",
+          "sources": [
+            "src\\data\\updated-government-forms.ts:562"
+          ]
+        },
+        {
+          "url": "https://hanpijesak.org/wp-content/uploads/2017/03/%D0%97%D0%B0%D1%85%D1%82%D1%98%D0%B5%D0%B2-%D0%B7%D0%B0-%D0%BE%D0%B4%D1%98%D0%B0%D0%B2%D1%83-%D0%A2%D0%9C%D0%92.odt",
+          "error": "HTTP 404 Not Found",
+          "contentType": "text/html; charset=UTF-8",
+          "sources": [
+            "src\\data\\updated-government-forms.ts:563"
+          ]
+        },
+        {
+          "url": "https://hanpijesak.org/wp-content/uploads/2017/03/%D0%97%D0%B0%D1%85%D1%82%D1%98%D0%B5%D0%B2-%D0%B7%D0%B0-%D0%B8%D0%B7%D0%B4%D0%B0%D0%B2%D0%B0%D1%9A%D0%B5-%D1%83%D0%B2%D1%98%D0%B5%D1%80%D0%B5%D1%9A%D0%B5-%D0%B7%D0%B0-%D0%BA%D1%83%D1%9B%D0%BD%D0%B8-%D0%B1%D1%80%D0%BE%D1%98.doc",
+          "error": "HTTP 404 Not Found",
+          "contentType": "text/html; charset=UTF-8",
+          "sources": [
+            "src\\data\\updated-government-forms.ts:568"
+          ]
+        },
+        {
+          "url": "https://hanpijesak.org/wp-content/uploads/2017/03/%D0%97%D0%B0%D1%85%D1%82%D1%98%D0%B5%D0%B2-%D0%B7%D0%B0-%D0%B8%D0%B7%D0%B4%D0%B0%D0%B2%D0%B0%D1%9A%D0%B5-%D1%83%D0%B2%D1%98%D0%B5%D1%80%D0%B5%D1%9A%D0%B0-%D0%B7%D0%B0-%D0%97%D0%A3%D0%9F.doc",
+          "error": "HTTP 404 Not Found",
+          "contentType": "text/html; charset=UTF-8",
+          "sources": [
+            "src\\data\\updated-government-forms.ts:569"
+          ]
+        },
+        {
+          "url": "https://hanpijesak.org/wp-content/uploads/2017/03/%D0%9F%D1%80%D0%B8%D1%98%D0%B0%D0%B2%D0%B0-%D0%B8%D0%B7%D0%B2%D0%BE%D1%92%D0%B5%D1%9A%D0%B0-%D0%BC%D1%83%D0%B7%D0%B8%D0%BA%D0%B5-%D1%83%D0%B6%D0%B8%D0%B2%D0%BE-%D1%83-%D1%83%D0%B3%D0%BE%D1%81%D1%82%D0%B8%D1%82%D0%B5%D1%99%D1%81%D0%BA%D0%BE%D0%BC-%D0%BE%D0%B1%D1%98%D0%B5%D0%BA%D1%82%D1%83.doc",
+          "error": "HTTP 404 Not Found",
+          "contentType": "text/html; charset=UTF-8",
+          "sources": [
+            "src\\data\\updated-government-forms.ts:575"
+          ]
+        },
+        {
+          "url": "https://hanpijesak.org/wp-content/uploads/2017/03/%D0%97%D0%B0%D1%85%D1%82%D1%98%D0%B5%D0%B2-%D0%B7%D0%B0-%D0%B8%D0%B7%D0%B4%D0%B0%D0%B2%D0%B0%D1%9A%D0%B5-%D0%BF%D0%BE%D1%99%D0%BE%D0%BF%D1%80%D0%B8%D0%B2%D1%80%D0%B5%D0%B4%D0%BD%D0%B5-%D1%81%D0%B0%D0%B3%D0%BB%D0%B0%D1%81%D0%BD%D0%BE%D1%81%D1%82%D0%B8.doc",
+          "error": "HTTP 404 Not Found",
+          "contentType": "text/html; charset=UTF-8",
+          "sources": [
+            "src\\data\\updated-government-forms.ts:577"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Uvjerenje o stažu osiguranja",
+      "invalidLinks": [
+        {
+          "url": "https://policijabdbih.gov.ba/images/dokumenti/obrasci/jafk/Zahtjev-zabrana-saobracaja-priredba-takmicenje26.pdf",
+          "error": "HTTP 404 Not Found",
+          "contentType": "text/html; charset=iso-8859-1",
+          "sources": [
+            "src\\lib\\institutions-database.ts:175"
+          ]
+        }
+      ]
+    }
+  ]
 }

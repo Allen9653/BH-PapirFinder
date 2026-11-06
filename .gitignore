@@ -33,3 +33,4 @@ dist-ssr
 *.key
 *.pem
 secrets/
+.andromity/
