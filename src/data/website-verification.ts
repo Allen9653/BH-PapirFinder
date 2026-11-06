@@ -565,18 +565,12 @@ export const websiteVerification: Record<string, WebsiteCheck> = {
   "verified": true,
   "source": "zvanični portal opštine"
  },
- "foca": {
-  "url": "https://foca.rs.ba",
-  "check": "ok",
-  "verified": true,
-  "source": "zvanični portal opštine"
- },
- "foca-rs": {
-  "url": "https://foca.rs.ba",
-  "check": "ok",
-  "verified": true,
-  "source": "zvanični portal opštine"
- },
+  "foca": {
+   "url": "https://foca.rs.ba",
+   "check": "ok",
+   "verified": true,
+   "source": "zvanični portal opštine"
+  },
  "han-pijesak": {
   "url": "https://hanpijesak.org/",
   "check": "ok",
@@ -589,18 +583,12 @@ export const websiteVerification: Record<string, WebsiteCheck> = {
   "verified": true,
   "source": "public.institucije.official_url"
  },
- "pale": {
-  "url": "https://pale.rs.ba",
-  "check": "ok",
-  "verified": true,
-  "source": "zvanični portal opštine"
- },
- "pale-rs": {
-  "url": "https://pale.rs.ba",
-  "check": "ok",
-  "verified": true,
-  "source": "zvanični portal opštine"
- },
+  "pale": {
+   "url": "https://pale.rs.ba",
+   "check": "ok",
+   "verified": true,
+   "source": "zvanični portal opštine"
+  },
  "rogatica": {
   "check": "unverified",
   "verified": false,
@@ -678,12 +666,7 @@ export const websiteVerification: Record<string, WebsiteCheck> = {
   "verified": false,
   "source": "public.institucije.official_url"
  },
- "prozor-rama": {
-  "url": "https://www.prozor-rama.org",
-  "check": "ok",
-  "verified": true,
-  "source": "public.institutions.website_url"
- },
+ "prozor-ram },
  "republika-srpska": {
   "url": "https://www.vladars.rs",
   "check": "redirect",
@@ -882,6 +865,15 @@ export const websiteVerification: Record<string, WebsiteCheck> = {
   "source": "public.institucije.official_url"
  },
  "zepce": {
+  "url": "https://zepce.ba",
+  "check": "ok",
+  "verified": true,
+  "source": "public.institucije.official_url"
+ }
+};
+
+};
+epce": {
   "url": "https://zepce.ba",
   "check": "ok",
   "verified": true,

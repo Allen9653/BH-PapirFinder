@@ -1546,7 +1546,7 @@ export const municipalitiesDatabase: MunicipalityData[] = [
   },
   {
     id: 'rs-derventa',
-    name: 'Derventa',
+    name: 'Grad Derventa',
     region: 'Doboj regija',
     entity: 'RS',
     urls: [
