@@ -139,7 +139,7 @@ const Header = () => {
             </div>
             <div className="hidden sm:flex flex-col">
               <span className="text-sm font-bold tracking-tight text-white flex items-center gap-1.5">
-                BH PapirFinder
+                BH PapirFinder{' '}
                 <span className="text-[10px] uppercase font-mono px-1.5 py-0.2 rounded bg-[#5df0a8]/20 text-[#5df0a8] border border-[#5df0a8]/30">
                   2.0
                 </span>
@@ -262,11 +262,8 @@ const Header = () => {
                   </div>
                   <span className="font-bold text-white text-sm">BH PapirFinder</span>
                 </div>
-                {location.pathname !== '/' && (
-                  <UniversalBackButton variant="minimal" />
-                )}
+                {location.pathname !== '/' && <UniversalBackButton variant="minimal" />}
               </div>
-
               <nav className="flex flex-col gap-2">
                 <NavLinks />
                 {userAccount ? (
