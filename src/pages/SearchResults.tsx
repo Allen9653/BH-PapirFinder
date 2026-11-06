@@ -154,7 +154,6 @@ const SearchResults = () => {
 
   const allMunicipalities = useMemo(() => getAllMunicipalities(), []);
 
-  // Sync recent searches from localStorage whenever updated across the app
   useEffect(() => {
     const handleSearchesChange = (e: Event) => {
       const customEvent = e as CustomEvent<string[]>;
@@ -395,7 +394,6 @@ const SearchResults = () => {
             <InstitutionAutocomplete />
           </div>
 
-          {/* Autocomplete Search Bar */}
           <div className="max-w-3xl">
             <SearchAutocompleteDropdown
               value={searchQuery}
@@ -405,7 +403,6 @@ const SearchResults = () => {
             />
           </div>
 
-          {/* Local Storage-backed Recent Searches */}
           <div className="max-w-3xl">
             <RecentSearches
               searches={recentSearches}
@@ -418,7 +415,6 @@ const SearchResults = () => {
         </div>
       </div>
 
-      {/* Subscription Alert if limited */}
       {!accessLevel.isAdmin && !accessLevel.hasSubscription && (
         <div className="bg-amber-500/10 border-b border-amber-500/20 py-3 backdrop-blur-md">
           <div className="container max-w-6xl px-4 mx-auto">
@@ -441,7 +437,6 @@ const SearchResults = () => {
         </div>
       )}
 
-      {/* Main Results Body */}
       <div className="container max-w-6xl px-4 py-8 mx-auto flex-1">
         {loading ? (
           <div className="text-center py-20">
@@ -484,7 +479,6 @@ const SearchResults = () => {
           </div>
         ) : (
           <>
-            {/* Header info */}
             <div className="mb-6 flex flex-col md:flex-row md:items-end justify-between gap-4">
               <div>
                 <h2 className="text-xl sm:text-2xl font-bold text-white">
@@ -500,7 +494,6 @@ const SearchResults = () => {
                 </p>
               </div>
 
-              {/* Tabs trigger */}
               <Tabs value={activeTab} onValueChange={setActiveTab} className="w-auto">
                 <TabsList className="bg-[#0b142d] border border-white/10">
                   <TabsTrigger
@@ -529,7 +522,6 @@ const SearchResults = () => {
             {/* TAB: RESULTS */}
             {activeTab === 'results' && (
               <div>
-                {/* Tag-Based Navigation Bar */}
                 <div className="glass-panel p-4 rounded-xl mb-4">
                   <TagNavigation
                     forms={allFormResults.map((r) => r.form)}
@@ -540,10 +532,8 @@ const SearchResults = () => {
                   />
                 </div>
 
-                {/* TOP BAR: Active Filters, Mobile Drawer Trigger, and Sort Controls */}
                 <div className="glass-panel p-4 rounded-xl mb-6 flex flex-col gap-3">
                   <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-3">
-                    {/* Mobile filter toggle */}
                     <div className="flex items-center gap-2">
                       <Button
                         type="button"
@@ -574,7 +564,6 @@ const SearchResults = () => {
                       </div>
                     </div>
 
-                    {/* Sorting selector */}
                     <div className="flex items-center gap-2">
                       <ArrowUpDown className="h-3.5 w-3.5 text-slate-400 shrink-0" />
                       <Select
@@ -596,7 +585,6 @@ const SearchResults = () => {
                     </div>
                   </div>
 
-                  {/* Active Filter Chips */}
                   {activeFilterCount > 0 && (
                     <div className="pt-2 border-t border-white/10 flex flex-wrap items-center gap-2 text-xs">
                       <span className="text-slate-400 font-mono text-[11px] mr-1">Aktivni filteri:</span>
@@ -660,80 +648,9 @@ const SearchResults = () => {
                       </Button>
                     </div>
                   )}
-
-                  {/* Mobile Collapsible Filter Drawer */}
-                  {isMobileFiltersOpen && (
-                    <div className="lg:hidden pt-3 border-t border-white/10 space-y-4 animate-in fade-in slide-in-from-top-2">
-                      <div>
-                        <label className="text-xs font-semibold text-slate-300 mb-1.5 flex items-center gap-1.5">
-                          <Layers className="w-3.5 h-3.5 text-[#5df0a8]" />
-                          <span>Kategorija obrasca</span>
-                        </label>
-                        <Select value={categoryFilter} onValueChange={setCategoryFilter}>
-                          <SelectTrigger className="w-full h-9 text-xs bg-white/5 border-white/10 text-white">
-                            <SelectValue placeholder="Odaberi kategoriju" />
-                          </SelectTrigger>
-                          <SelectContent className="bg-[#0b142d] border-white/10 text-slate-200">
-                            <SelectItem value="all">Sve kategorije ({allFormResults.length})</SelectItem>
-                            {availableCategories.map((c) => (
-                              <SelectItem key={c.name} value={c.name}>
-                                {c.name} ({c.count})
-                              </SelectItem>
-                            ))}
-                          </SelectContent>
-                        </Select>
-                      </div>
-
-                      <div>
-                        <label className="text-xs font-semibold text-slate-300 mb-1.5 flex items-center gap-1.5">
-                          <MapPin className="w-3.5 h-3.5 text-[#5df0a8]" />
-                          <span>Općina / Grad</span>
-                        </label>
-                        <Select value={municipalityFilter} onValueChange={setMunicipalityFilter}>
-                          <SelectTrigger className="w-full h-9 text-xs bg-white/5 border-white/10 text-white">
-                            <SelectValue placeholder="Odaberi općinu" />
-                          </SelectTrigger>
-                          <SelectContent className="bg-[#0b142d] border-white/10 text-slate-200">
-                            <SelectItem value="all">Sve općine ({allFormResults.length})</SelectItem>
-                            {availableMunicipalities.map((m) => (
-                              <SelectItem key={m.slug} value={m.slug}>
-                                {m.name} ({m.count})
-                              </SelectItem>
-                            ))}
-                          </SelectContent>
-                        </Select>
-                      </div>
-
-                      <div>
-                        <label className="text-xs font-semibold text-slate-300 mb-1.5 flex items-center gap-1.5">
-                          <Calendar className="w-3.5 h-3.5 text-[#5df0a8]" />
-                          <span>Datum dodavanja</span>
-                        </label>
-                        <div className="grid grid-cols-2 gap-1.5">
-                          {Object.entries(dateLabels).map(([key, label]) => (
-                            <button
-                              key={key}
-                              type="button"
-                              onClick={() => setDateFilter(key)}
-                              className={`px-2.5 py-1.5 rounded-lg text-xs text-left transition-all flex items-center justify-between ${
-                                dateFilter === key
-                                  ? 'bg-[#5df0a8]/20 text-[#5df0a8] border border-[#5df0a8]/40 font-semibold'
-                                  : 'bg-white/5 text-slate-300 hover:bg-white/10 border border-white/5'
-                              }`}
-                            >
-                              <span>{label}</span>
-                              {dateFilter === key && <Check className="w-3 h-3 text-[#5df0a8]" />}
-                            </button>
-                          ))}
-                        </div>
-                      </div>
-                    </div>
-                  )}
                 </div>
 
-                {/* 2-COLUMN LAYOUT: Desktop Sidebar Filter Group + Results Grid */}
                 <div className="flex flex-col lg:flex-row gap-6 items-start">
-                  {/* DESKTOP SIDEBAR FILTER GROUP */}
                   <aside className="hidden lg:block lg:w-72 shrink-0 w-full">
                     <div className="glass-panel p-5 rounded-2xl sticky top-24 space-y-6">
                       <div className="flex items-center justify-between pb-3 border-b border-white/10">
@@ -776,38 +693,6 @@ const SearchResults = () => {
                             ))}
                           </SelectContent>
                         </Select>
-
-                        <div className="flex flex-wrap gap-1 mt-2">
-                          <button
-                            type="button"
-                            onClick={() => setCategoryFilter('all')}
-                            className={`px-2 py-0.5 rounded text-[11px] transition-colors ${
-                              categoryFilter === 'all'
-                                ? 'bg-[#5df0a8]/20 text-[#5df0a8] border border-[#5df0a8]/30 font-semibold'
-                                : 'bg-white/5 text-slate-400 hover:text-slate-200 hover:bg-white/10'
-                            }`}
-                          >
-                            Sve
-                          </button>
-                          {UNIVERSAL_TAGS.slice(0, 3).map((uTag) => {
-                            const isSelected = categoryFilter === uTag.id;
-                            return (
-                              <button
-                                key={uTag.id}
-                                type="button"
-                                onClick={() => setCategoryFilter(isSelected ? 'all' : uTag.id)}
-                                className={`px-2 py-0.5 rounded text-[11px] transition-colors ${
-                                  isSelected
-                                 ? 'bg-[#5df0a8] text-[#04060f] font-bold shadow-xs'
-                                    : 'bg-[#5df0a8]/10 text-[#5df0a8] hover:bg-[#5df0a8]/20 border border-[#5df0a8]/20'
-                                }`}
-                                title={uTag.labels.en}
-                              >
-                                {uTag.labels.en}
-                              </button>
-                            );
-                          })}
-                        </div>
                       </div>
 
                       <div className="pt-4 border-t border-white/10">
@@ -834,43 +719,9 @@ const SearchResults = () => {
                           </SelectContent>
                         </Select>
                       </div>
-
-                      <div className="pt-4 border-t border-white/10">
-                        <label className="text-xs font-bold text-slate-200 mb-2.5 flex items-center justify-between">
-                          <span className="flex items-center gap-1.5">
-                            <Calendar className="w-3.5 h-3.5 text-[#5df0a8]" />
-                            <span>Datum dodavanja</span>
-                          </span>
-                        </label>
-                        <div className="space-y-1">
-                          {Object.entries(dateLabels).map(([key, label]) => {
-                            const isSelected = dateFilter === key;
-                            return (
-                              <button
-                                key={key}
-                                type="button"
-                                onClick={() => setDateFilter(key)}
-                                className={`w-full px-3 py-2 rounded-xl text-xs flex items-center justify-between transition-all ${
-                                  isSelected
-                                    ? 'bg-[#5df0a8]/15 text-[#5df0a8] font-semibold border border-[#5df0a8]/30 shadow-[0_0_10px_rgba(93,240,168,0.15)]'
-                                    : 'text-slate-300 hover:bg-white/5 hover:text-white border border-transparent'
-                                }`}
-                              >
-                                <span>{label}</span>
-                                {isSelected ? (
-                                  <Check className="w-3.5 h-3.5 text-[#5df0a8]" />
-                                ) : (
-                                  <span className="w-1.5 h-1.5 rounded-full bg-slate-600" />
-                                )}
-                              </button>
-                            );
-                          })}
-                        </div>
-                      </div>
                     </div>
                   </aside>
 
-                  {/* MAIN CONTENT AREA */}
                   <div className="flex-1 min-w-0 w-full">
                     <div className="mb-10">
                       <div className="flex items-center justify-between mb-4">
@@ -898,12 +749,107 @@ const SearchResults = () => {
                             className="bg-[#5df0a8] hover:bg-[#4de69c] text-[#04060f] font-bold text-xs"
                           >
                             <RotateCcw className="w-3.5 h-3.5 mr-1" />
-                         <Button
+                            Poništi filtere
+                          </Button>
+                        </div>
+                      ) : (
+                        <div className="grid gap-3">
+                          {displayedForms.map(({ municipality, form }) => {
+                            const dateAdded = getFormDateAdded(form);
+                            return (
+                              <div
+                                key={`${municipality.slug}-${form.id}`}
+                                className="glass-panel p-4 rounded-xl hover:border-[#5df0a8]/40 hover:bg-[#0c1635] transition-all flex flex-col sm:flex-row sm:items-center justify-between gap-4 group"
+                              >
+                                <div className="flex-1 min-w-0">
+                                  <div className="flex items-center gap-2 flex-wrap mb-1.5">
+                                    <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-[#5df0a8]/10 text-[#5df0a8] border border-[#5df0a8]/20">
+                                      {municipality.name} ({municipality.cantonShort})
+                                    </span>
+                                    <span className="text-[10px] font-mono text-slate-300 flex items-center gap-1 px-2 py-0.5 rounded bg-white/5 border border-white/10">
+                                      <Calendar className="w-3 h-3 text-[#5df0a8]" />
+                                      <span>{dateAdded}</span>
+                                    </span>
+                                  </div>
+                                  <h4
+                                    onClick={() => navigate(`/form/${form.id}`)}
+                                    className="text-sm sm:text-base font-semibold text-white group-hover:text-[#5df0a8] transition-colors cursor-pointer"
+                                  >
+                                    {form.name}
+                                  </h4>
+                                </div>
+
+                                <div className="flex items-center gap-2 shrink-0">
+                                  <Button
+                                    size="sm"
+                                    variant="outline"
+                                    className="h-8 px-3 text-xs border-white/10 bg-white/5 text-slate-200 hover:bg-white/10"
+                                    onClick={() => navigate(`/form/${form.id}`)}
+                                  >
+                                    Detalji
+                                  </Button>
+
+                                  <Button
+                                    size="sm"
+                                    className="h-8 px-3.5 text-xs bg-[#5df0a8] hover:bg-[#4be096] text-[#04060f] font-bold shadow-[0_0_12px_rgba(93,240,168,0.3)]"
+                                    onClick={() => setPreviewForm({ municipality, form })}
+                                  >
+                                    <Eye className="h-3.5 w-3.5 mr-1" />
+                                    Otvori PDF
+                                  </Button>
+                                </div>
+                              </div>
+                            );
+                          })}
+                        </div>
+                      )}
+                    </div>
+
+                    {filteredInstitutions.length > 0 && (
+                      <div>
+                        <h3 className="text-base sm:text-lg font-bold text-white flex items-center gap-2 mb-4">
+                          <Building2 className="w-4 h-4 text-[#5df0a8]" />
+                          <span>Općinski & Institucionalni Registri</span>
+                          <span className="text-xs font-mono px-2 py-0.5 rounded-full bg-[#5df0a8]/20 text-[#5df0a8]">
+                            {filteredInstitutions.length}
+                          </span>
+                        </h3>
+
+                        <div className="grid gap-3">
+                          {filteredInstitutions.map((result) => {
+                            const municipalitySlug = allMunicipalities.find(
+                              (municipality) => municipality.name.toLowerCase() === result.name.toLowerCase(),
+                            )?.slug;
+                            return (
+                              <div
+                                key={result.id}
+                                className="glass-panel p-5 rounded-2xl hover:border-[#5df0a8]/40 transition-all"
+                              >
+                                <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+                                  <div className="flex-1 min-w-0">
+                                    <div className="flex items-center gap-2 flex-wrap mb-1.5">
+                                      <h4 className="text-base sm:text-lg font-bold text-white">
+                                        {result.name}
+                                      </h4>
+                                      <span
+                                        className={`text-[10px] font-mono px-2 py-0.5 rounded border ${getTrustScoreColor(
+                                          result.trust_score,
+                                        )}`}
+                                      >
+                                        Trust Score: {result.trust_score}%
+                                      </span>
+                                    </div>
+                                  </div>
+
+                                  <div className="flex items-center gap-2 shrink-0">
+                                    {municipalitySlug && (
+                                      <Button
                                         size="sm"
                                         className="h-8 text-xs bg-[#5df0a8]/20 hover:bg-[#5df0a8]/30 text-[#5df0a8] border border-[#5df0a8]/40"
                                         onClick={() => navigate(`/municipality/${municipalitySlug}`)}
                                       >
-                                        Otvori Registar <ChevronRight className="h-3.5 w-3.5 ml-1" />
+                                        Otvori Registar
+                                        <ChevronRight className="h-3.5 w-3.5 ml-1" />
                                       </Button>
                                     )}
                                   </div>
@@ -939,91 +885,6 @@ const SearchResults = () => {
             )}
 
             {/* TAB: COMPARE */}
-            {activeTab === 'compare' && (
-              <div className="space-y-4">
-                <div className="glass-panel p-5 rounded-2xl mb-6">
-                  <h3 className="text-base font-bold text-white mb-1 flex items-center gap-2">
-                    <GitCompareArrows className="w-4 h-4 text-[#5df0a8]" />
-                    Međuopćinska Usporedba Formulara
-                  </h3>
-                  <p className="text-xs text-slate-400">
-                    Uporedite zahtjeve i potrebnu dokumentaciju za istu vrstu postupka između različitih općina u BiH.
-                  </p>
-                </div>
-
-                {comparisonData.length === 0 ? (
-                  <div className="glass-panel text-center py-12 px-4 rounded-xl text-slate-400 text-sm">
-                    Nema sličnih obrazaca u više općina za ovaj upit. Pokušajte pretražiti opći naziv (npr. &ldquo;građevinska dozvola&rdquo; ili &ldquo;uvjerenje&rdquo;).
-                  </div>
-                ) : (
-                  <div className="space-y-6">
-                    {comparisonData.map(({ keyword, matches }, idx) => (
-                      <div key={idx} className="glass-panel p-5 rounded-2xl">
-                        <div className="flex items-center justify-between mb-4 pb-3 border-b border-white/10">
-                          <h4 className="font-bold text-white text-sm sm:text-base capitalize flex items-center gap-2">
-                            <Tag className="w-4 h-4 text-[#5df0a8]" />
-                            {keyword}
-                          </h4>
-                          <Badge variant="outline" className="text-xs font-mono border-white/20 text-[#5df0a8]">
-                            {matches.length} općina
-                          </Badge>
-                        </div>
-
-                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
-                          {matches.map(({ municipality, form }, mIdx) => (
-                            <div key={mIdx} className="bg-white/5 border border-white/10 p-4 rounded-xl flex flex-col justify-between gap-3">
-                              <div>
-                                <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-[#5df0a8]/10 text-[#5df0a8] border border-[#5df0a8]/20 inline-block mb-2">
-                                  {municipality.name}
-                                </span>
-                                <h5 className="font-semibold text-xs text-white line-clamp-2">{form.name}</h5>
-                              </div>
-                              <div className="flex items-center gap-2 pt-2 border-t border-white/5">
-                                <Button
-                                  size="sm"
-                                  variant="outline"
-                                  className="h-7 text-[11px] w-full border-white/10 bg-white/5 text-slate-200 hover:bg-white/10"
-                                  onClick={() => navigate(`/form/${form.id}`)}
-                                >
-                                  Detalji
-                                </Button>
-                                <Button
-                                  size="sm"
-                                  className="h-7 text-[11px] w-full bg-[#5df0a8] text-[#04060f] font-bold"
-                                  onClick={() => setPreviewForm({ municipality, form })}
-                                >
-                                  Otvori PDF
-                                </Button>
-                              </div>
-                            </div>
-                          ))}
-                        </div>
-                      </div>
-                    ))}
-                  </div>
-                )}
-              </div>
-            )}
-          </>
-        )}
-      </div>
-
-      {/* PDF Preview Modal */}
-      {previewForm && (
-        <DocumentViewer
-          form={previewForm.form}
-          municipality={previewForm.municipality}
-          onClose={() => setPreviewForm(null)}
-        />
-      )}
-
-      <Footer />
-    </div>
-  );
-};
-
-export default SearchResults;
-                                   {/* TAB: COMPARE */}
             {activeTab === 'compare' && (
               <div className="space-y-4">
                 <div className="glass-panel p-5 rounded-2xl mb-6">
@@ -1091,7 +952,6 @@ export default SearchResults;
         )}
       </div>
 
-      {/* Modal za DocumentViewer PDF pregleda */}
       {previewForm && (
         <DocumentViewer
           open={!!previewForm}
