@@ -112,6 +112,10 @@ export const municipalitiesDatabase: MunicipalityData[] = [
       {
         main: 'https://novigradsarajevo.ba/',
         description: 'Službeni portal Općine Novi Grad Sarajevo'
+      },
+      {
+          forms: 'https://novigradsarajevo.ba/obrasci',
+          description: 'Obrazaci i dokumenti'
       }
     ],
     categories: ['Socijalna zaštita', 'Matični uredi', 'E-uprava', 'Prijemni obrasci'],
@@ -127,6 +131,10 @@ export const municipalitiesDatabase: MunicipalityData[] = [
       {
         main: 'https://novosarajevo.ba/',
         description: 'Službeni portal Općine Novo Sarajevo'
+      },
+      {
+          forms: 'https://novosarajevo.ba/obrasci',
+          description: 'Obrazaci i dokumenti'
       }
     ],
     categories: ['Ovjere i prepisi', 'Urbanizam', 'Matični uredi', 'Uvjerenja'],
@@ -138,6 +146,14 @@ export const municipalitiesDatabase: MunicipalityData[] = [
     canton: 'Kanton Sarajevo (KS)',
     entity: 'FBiH',
     urls: [
+      {
+        main: 'https://vogosca.ba/',
+        description: 'Službena web-stranica Općine Vogošća'
+      },
+      {
+        forms: 'https://vogosca.ba/obrasci',
+        description: 'Obrazaci i dokumenti'
+      }
     ],
     categories: ['Građanska stanja', 'Naknade porodiljama', 'E-uprava', 'Matični uredi'],
     komentar: 'Zahtjev za naknadu porodiljama / Građanska stanja'
@@ -151,6 +167,10 @@ export const municipalitiesDatabase: MunicipalityData[] = [
       {
         main: 'https://hadzici.ba/',
         description: 'Službeni portal Općine Hadžići'
+      },
+      {
+          forms: 'https://hadzici.ba/obrasci',
+          description: 'Obrazaci i dokumenti'
       }
     ],
     categories: ['Matični uredi', 'Građanska stanja'],
@@ -166,6 +186,10 @@ export const municipalitiesDatabase: MunicipalityData[] = [
       {
         main: 'https://trnovo.ba/',
         description: 'Službeni portal Općine Trnovo FBiH'
+      },
+      {
+          forms: 'https://trnovo.ba/obrasci',
+          description: 'Obrazaci i dokumenti'
       }
     ],
     categories: ['Urbanizam i građenje', 'Komunalni priključak', 'Matični uredi'],
@@ -207,6 +231,10 @@ export const municipalitiesDatabase: MunicipalityData[] = [
       {
         main: 'https://www.sarajevo.ba/',
         description: 'Zvanični portal Grada Sarajeva'
+      },
+      {
+          forms: 'https://www.sarajevo.ba/bs/category/145/1/e-uprava',
+          description: 'Obrazaci i dokumenti'
       }
     ],
     categories: ['Urbanizam', 'Uvjerenja', 'Lokacijska informacija'],
@@ -402,7 +430,14 @@ export const municipalitiesDatabase: MunicipalityData[] = [
     canton: 'Zeničko-dobojski kanton (ZDK)',
     entity: 'FBiH',
     urls: [
-      
+      {
+        main: 'https://www.maglaj.ba/',
+        description: 'Službena web-stranica Općine Maglaj'
+      },
+      {
+        forms: 'https://www.maglaj.ba/obrasci',
+        description: 'Obrazaci i dokumenti'
+      }
     ],
     categories: ['Zdravstvo'],
     komentar: 'Zdravstveni obrasci ZZO ZDK'
@@ -413,7 +448,14 @@ export const municipalitiesDatabase: MunicipalityData[] = [
     canton: 'Zeničko-dobojski kanton (ZDK)',
     entity: 'FBiH',
     urls: [
-      
+      {
+        main: 'https://zepce.ba/',
+        description: 'Službena web-stranica Općine Žepče'
+      },
+      {
+        forms: 'https://zepce.ba/obrasci',
+        description: 'Obrazaci i dokumenti'
+      }
     ],
     categories: ['Zdravstvo'],
     komentar: 'Zdravstveni obrasci ZZO ZDK'
@@ -424,7 +466,14 @@ export const municipalitiesDatabase: MunicipalityData[] = [
     canton: 'Zeničko-dobojski kanton (ZDK)',
     entity: 'FBiH',
     urls: [
-      
+      {
+          main: 'https://opcina-tesanj.ba/',
+          description: 'Službena web-stranica Tešanj',
+        },
+      {
+          forms: 'https://opcina-tesanj.ba/obrasci',
+          description: 'Obrazaci i dokumenti'
+      }
     ],
     categories: ['Zdravstvo'],
     komentar: 'Zdravstveni obrasci ZZO ZDK'
@@ -438,6 +487,10 @@ export const municipalitiesDatabase: MunicipalityData[] = [
       {
         main: 'https://olovo.gov.ba/?lsvrdocumentcat=elektronski-formulari',
         description: '71 elektronski formular — uvjerenja, urbanizam, građevinske dozvole, lokacijska informacija, samostalne djelatnosti, javni prijevoz, ugostiteljstvo'
+      },
+      {
+          forms: 'https://olovo.gov.ba/?lsvrdocumentcat=elektronski-formulari/obrasci',
+          description: 'Obrazaci i dokumenti'
       }
     ],
     categories: ['Uvjerenja', 'Urbanizam', 'Građevinske dozvole', 'Lokacijska informacija', 'Samostalna djelatnost', 'Javni prijevoz', 'Ugostiteljstvo', 'Socijalna zaštita', 'Imovinsko-pravni', 'Katastar'],
@@ -684,6 +737,10 @@ export const municipalitiesDatabase: MunicipalityData[] = [
       {
         main: 'https://kladanj.ba/',
         description: 'Službena web-stranica Općine Kladanj — matični ured (rodni/vjenčani/umrli list, uvjerenje o državljanstvu podnosi se lično u Šalter sali ili poštom za dijasporu), poticaji i stipendije u sekciji Zvanična obavještenja i konkursi, finansijski dokumenti građana u sekciji Izvršenje ugovora. Predaja: Šalter sala (prizemlje), Kladanjske brigade br. 2, 75280 Kladanj, uz dokaz o uplati općinske takse.'
+      },
+      {
+          forms: 'https://kladanj.ba/obrasci',
+          description: 'Obrazaci i dokumenti'
       }
     ],
     address: 'Kladanjske brigade br. 2, 75280 Kladanj',
@@ -714,7 +771,14 @@ export const municipalitiesDatabase: MunicipalityData[] = [
     canton: 'Tuzlanski kanton (TK)',
     entity: 'FBiH',
     urls: [
-      
+      {
+          main: 'http://www.opcinasapna.ba/',
+          description: 'Službena web-stranica Sapna',
+        },
+      {
+          forms: 'http://www.opcinasapna.ba/obrasci',
+          description: 'Obrazaci i dokumenti'
+      }
     ],
     categories: ['Uvjerenja', 'Urbanizam'],
     komentar: 'Uvjerenja i urbanistička dokumentacija'
@@ -743,7 +807,14 @@ export const municipalitiesDatabase: MunicipalityData[] = [
     canton: 'Tuzlanski kanton (TK)',
     entity: 'FBiH',
     urls: [
-      
+      {
+          main: 'https://teocak.gov.ba/',
+          description: 'Službena web-stranica Teočak',
+        },
+      {
+          forms: 'https://teocak.gov.ba/obrasci',
+          description: 'Obrazaci i dokumenti'
+      }
     ],
     categories: ['Uvjerenja', 'Zahtjevi građana'],
     komentar: 'Zahtjevi građana i uvjerenja'
@@ -759,6 +830,10 @@ export const municipalitiesDatabase: MunicipalityData[] = [
       {
         main: 'https://www.bihac.org/dokumenti/21',
         description: 'Obrasci i zahtjevi, izjave, prijave – razni obrasci za urbanizam, matične knjige, uvjerenja, lokacijske informacije'
+      },
+      {
+          forms: 'https://www.bihac.org/dokumenti/21/e-uprava',
+          description: 'Obrazaci i dokumenti'
       }
     ],
     categories: ['Urbanizam', 'Matični uredi', 'Uvjerenja', 'Lokacijska informacija'],
@@ -777,6 +852,10 @@ export const municipalitiesDatabase: MunicipalityData[] = [
       {
         main: 'https://www.ecitizen.ba/bosanska_krupa/eServices',
         description: 'Online popunjavanje i podnošenje formulara putem eCitizen platforme'
+      },
+      {
+          forms: 'https://gradbosanskakrupa.ba/obrasci',
+          description: 'Obrazaci i dokumenti'
       }
     ],
     categories: ['Vodiči i zahtjevi', 'Online formulari'],
@@ -791,6 +870,10 @@ export const municipalitiesDatabase: MunicipalityData[] = [
       {
         main: 'https://opcinabuzim.ba/',
         description: 'Službena stranica Općine Bužim'
+      },
+      {
+          forms: 'https://opcinabuzim.ba/obrasci',
+          description: 'Obrazaci i dokumenti'
       }
     ],
     guidanceLinks: [
@@ -860,7 +943,14 @@ export const municipalitiesDatabase: MunicipalityData[] = [
     canton: 'Unsko-sanski kanton (USK)',
     entity: 'FBiH',
     urls: [
-      
+      {
+          main: 'https://sanskimost.gov.ba/',
+          description: 'Službena web-stranica Sanski Most',
+        },
+      {
+          forms: 'https://sanskimost.gov.ba/obrasci',
+          description: 'Obrazaci i dokumenti'
+      }
     ],
     categories: ['Matični uredi', 'Urbanizam'],
     komentar: 'Matični uredi i urbanizam'
@@ -874,6 +964,10 @@ export const municipalitiesDatabase: MunicipalityData[] = [
       {
         main: 'https://velikakladusa.gov.ba/e-obrasci/',
         description: 'Obrasci – urbanistička saglasnost, zahtjev za izdavanje uvjerenja, matični uredi'
+      },
+      {
+          forms: 'https://velikakladusa.gov.ba/e-obrasci/obrasci',
+          description: 'Obrazaci i dokumenti'
       }
     ],
     categories: ['Urbanizam', 'Uvjerenja', 'Matični uredi'],
@@ -887,7 +981,14 @@ export const municipalitiesDatabase: MunicipalityData[] = [
     canton: 'Srednjobosanski kanton (SBK)',
     entity: 'FBiH',
     urls: [
-      
+      {
+          main: 'https://www.opcinatravnik.com.ba/',
+          description: 'Službena web-stranica Travnik',
+        },
+      {
+          forms: 'https://www.opcinatravnik.com.ba/obrasci',
+          description: 'Obrazaci i dokumenti'
+      }
     ],
     categories: ['Urbanizam', 'Uvjerenja'],
     komentar: 'Urbanistička saglasnost i uvjerenja'
@@ -975,7 +1076,14 @@ export const municipalitiesDatabase: MunicipalityData[] = [
     canton: 'Srednjobosanski kanton (SBK)',
     entity: 'FBiH',
     urls: [
-      
+      {
+          main: 'https://vitez.ba/',
+          description: 'Službena web-stranica Vitez',
+        },
+      {
+          forms: 'https://vitez.ba/obrasci',
+          description: 'Obrazaci i dokumenti'
+      }
     ],
     categories: ['Urbanizam', 'Lokacijska informacija'],
     komentar: 'Lokacijska informacija i urbanizam'
@@ -993,6 +1101,10 @@ export const municipalitiesDatabase: MunicipalityData[] = [
       {
         main: 'https://opcina-busovaca.com/',
         description: 'Zvanična web stranica Općine Busovača'
+      },
+      {
+          forms: 'https://opcina-busovaca.com/dokumenti/obrasci',
+          description: 'Obrazaci i dokumenti'
       }
     ],
     categories: ['Budžet i finansije', 'Obrasci i zahtjevi', 'Javni pozivi i obavijesti', 'Planovi i odluke', 'Službeni dokumenti', 'Mjesne zajednice', 'Urbanizam i zemljište', 'Udruženja i sufinansiranje', 'Obrt i djelatnosti', 'Matični uredi', 'Privreda i prevoz'],
@@ -1004,7 +1116,14 @@ export const municipalitiesDatabase: MunicipalityData[] = [
     canton: 'Srednjobosanski kanton (SBK)',
     entity: 'FBiH',
     urls: [
-      
+      {
+          main: 'https://www.opcina-kiseljak.org/',
+          description: 'Službena web-stranica Kiseljak',
+        },
+      {
+          forms: 'https://www.opcina-kiseljak.org/obrasci',
+          description: 'Obrazaci i dokumenti'
+      }
     ],
     categories: ['Urbanizam', 'Uvjerenja'],
     komentar: 'Urbanistička saglasnost i uvjerenja'
@@ -1015,7 +1134,14 @@ export const municipalitiesDatabase: MunicipalityData[] = [
     canton: 'Srednjobosanski kanton (SBK)',
     entity: 'FBiH',
     urls: [
-      
+      {
+          main: 'https://kresevo.ba/',
+          description: 'Službena web-stranica Kreševo',
+        },
+      {
+          forms: 'https://kresevo.ba/obrasci',
+          description: 'Obrazaci i dokumenti'
+      }
     ],
     categories: ['Uvjerenja', 'Urbanizam'],
     komentar: 'Dokumenti se dostavljaju preporučeno poštom'
@@ -1033,6 +1159,10 @@ export const municipalitiesDatabase: MunicipalityData[] = [
       {
         main: 'https://www.fojnica.ba/v3/',
         description: 'Službena web-stranica Općine Fojnica'
+      },
+      {
+          forms: 'https://www.fojnica.ba/v3/e-uprava/sluzba-za-opcu-upravu-obrasci/obrasci',
+          description: 'Obrazaci i dokumenti'
       }
     ],
     categories: ['Opća uprava', 'Kabinet načelnika', 'Civilna zaštita', 'Društvene djelatnosti', 'Socijalna zaštita'],
@@ -1086,6 +1216,10 @@ export const municipalitiesDatabase: MunicipalityData[] = [
       {
         main: 'https://citluk.ba/zahtjevi/',
         description: 'Zahtjevi, obrasci i dokumenti Općine Čitluk'
+      },
+      {
+          forms: 'https://citluk.ba/zahtjevi/obrasci',
+          description: 'Obrazaci i dokumenti'
       }
     ],
     categories: ['Urbanistička dozvola', 'Građevinska dozvola', 'Uporabna dozvola', 'Ostali zahtjevi', 'Izjave', 'Odobrenja', 'Prestanak rada', 'Rješenja', 'Uvjerenja', 'Ostalo', 'Priznavanja'],
@@ -1119,6 +1253,10 @@ export const municipalitiesDatabase: MunicipalityData[] = [
       {
         main: 'https://www.konjic.ba/ba/uprava/opcinske-sluzbe/prospekti-sluzbi.html',
         description: 'Obrasci – lokacijska informacija, građevinske dozvole, uvjerenja'
+      },
+      {
+          forms: 'https://www.konjic.ba/ba/uprava/opcinske-sluzbe/prospekti-sluzbi.html/obrasci',
+          description: 'Obrazaci i dokumenti'
       }
     ],
     categories: ['Urbanizam', 'Građevinske dozvole', 'Uvjerenja'],
@@ -1186,7 +1324,14 @@ export const municipalitiesDatabase: MunicipalityData[] = [
     canton: 'Hercegovačko-neretvanski kanton (HNK)',
     entity: 'FBiH',
     urls: [
-      
+      {
+          main: 'https://stolac.gov.ba/',
+          description: 'Službena web-stranica Stolac',
+        },
+      {
+          forms: 'https://stolac.gov.ba/obrasci',
+          description: 'Obrazaci i dokumenti'
+      }
     ],
     categories: ['Uvjerenja', 'Urbanizam'],
     komentar: 'Uvjerenja i urbanistička dokumentacija'
@@ -1199,7 +1344,14 @@ export const municipalitiesDatabase: MunicipalityData[] = [
     canton: 'Posavski kanton (PK)',
     entity: 'FBiH',
     urls: [
-      
+      {
+          main: 'https://orasje.ba/',
+          description: 'Službena web-stranica Orašje',
+        },
+      {
+          forms: 'https://orasje.ba/obrasci',
+          description: 'Obrazaci i dokumenti'
+      }
     ],
     categories: ['Uvjerenja', 'Urbanizam'],
     komentar: 'Uvjerenja i urbanistička saglasnost'
@@ -1210,7 +1362,14 @@ export const municipalitiesDatabase: MunicipalityData[] = [
     canton: 'Posavski kanton (PK)',
     entity: 'FBiH',
     urls: [
-      
+      {
+          main: 'https://www.odzak.ba/',
+          description: 'Službena web-stranica Odžak',
+        },
+      {
+          forms: 'https://www.odzak.ba/obrasci',
+          description: 'Obrazaci i dokumenti'
+      }
     ],
     categories: ['Urbanizam', 'Uvjerenja', 'Matični uredi'],
     komentar: 'Urbanističke saglasnosti i matični uredi'
@@ -1257,7 +1416,14 @@ export const municipalitiesDatabase: MunicipalityData[] = [
     canton: 'Kanton 10 (Livanjski)',
     entity: 'FBiH',
     urls: [
-      
+      {
+          main: 'https://www.tomislavgrad.gov.ba/',
+          description: 'Službena web-stranica Tomislavgrad',
+        },
+      {
+          forms: 'https://www.tomislavgrad.gov.ba/obrasci',
+          description: 'Obrazaci i dokumenti'
+      }
     ],
     categories: ['Urbanizam', 'Uvjerenja'],
     komentar: 'Urbanističke saglasnosti i uvjerenja'
@@ -1285,7 +1451,14 @@ export const municipalitiesDatabase: MunicipalityData[] = [
     canton: 'Zapadnohercegovački kanton (ZHK)',
     entity: 'FBiH',
     urls: [
-      
+      {
+          main: 'https://sirokibrijeg.ba/',
+          description: 'Službena web-stranica Grad Široki Brijeg',
+        },
+      {
+          forms: 'https://sirokibrijeg.ba/e-uprava',
+          description: 'Obrazaci i dokumenti'
+      }
     ],
     categories: ['Urbanizam', 'Uvjerenja'],
     komentar: 'Obrasci – lokacijska informacija, urbanizam, uvjerenja'
@@ -1296,7 +1469,14 @@ export const municipalitiesDatabase: MunicipalityData[] = [
     canton: 'Zapadnohercegovački kanton (ZHK)',
     entity: 'FBiH',
     urls: [
-      
+      {
+          main: 'https://ljubuski.ba/',
+          description: 'Službena web-stranica Grad Ljubuški',
+        },
+      {
+          forms: 'https://ljubuski.ba/e-uprava',
+          description: 'Obrazaci i dokumenti'
+      }
     ],
     categories: ['Urbanizam', 'Uvjerenja', 'Matični uredi'],
     komentar: 'Obrasci – urbanističke saglasnosti, matični uredi, izdavanje uvjerenja'
@@ -1331,7 +1511,14 @@ export const municipalitiesDatabase: MunicipalityData[] = [
     canton: 'Zapadnohercegovački kanton (ZHK)',
     entity: 'FBiH',
     urls: [
-      
+      {
+          main: 'https://www.posusje.ba/',
+          description: 'Službena web-stranica Posušje',
+        },
+      {
+          forms: 'https://www.posusje.ba/obrasci',
+          description: 'Obrazaci i dokumenti'
+      }
     ],
     categories: ['Urbanizam', 'Uvjerenja'],
     komentar: 'Urbanizam i izdavanje uvjerenja'
@@ -1411,7 +1598,14 @@ export const municipalitiesDatabase: MunicipalityData[] = [
     region: 'Banjalučka regija',
     entity: 'RS',
     urls: [
-      
+      {
+          main: 'https://prnjavor.ba/',
+          description: 'Službena web-stranica Prnjavor',
+        },
+      {
+          forms: 'https://prnjavor.ba/obrasci',
+          description: 'Obrazaci i dokumenti'
+      }
     ],
     categories: ['Urbanizam', 'Prijava boravka', 'Matični uredi'],
     komentar: 'Urbanizam i matični uredi'
@@ -1440,7 +1634,14 @@ export const municipalitiesDatabase: MunicipalityData[] = [
     region: 'Banjalučka regija',
     entity: 'RS',
     urls: [
-      
+      {
+          main: 'https://opstinaknezevo.org/',
+          description: 'Službena web-stranica Kneževo (Skender Vakuf)',
+        },
+      {
+          forms: 'https://opstinaknezevo.org/obrasci',
+          description: 'Obrazaci i dokumenti'
+      }
     ],
     categories: ['Urbanizam', 'Poljoprivreda', 'Registracije'],
     komentar: 'Urbanizam i poljoprivreda'
@@ -1451,7 +1652,14 @@ export const municipalitiesDatabase: MunicipalityData[] = [
     region: 'Banjalučka regija',
     entity: 'RS',
     urls: [
-      
+      {
+          main: 'https://mrkonjic-grad.rs-opstina.org/',
+          description: 'Službena web-stranica Mrkonjić Grad',
+        },
+      {
+          forms: 'https://mrkonjic-grad.rs-opstina.org/obrasci',
+          description: 'Obrazaci i dokumenti'
+      }
     ],
     categories: ['Urbanizam', 'Uvjerenja'],
     komentar: 'Obrasci na dnu naslovne stranice'
@@ -1462,7 +1670,14 @@ export const municipalitiesDatabase: MunicipalityData[] = [
     region: 'Banjalučka regija',
     entity: 'RS',
     urls: [
-      
+      {
+          main: 'https://opstina-novigrad.com/',
+          description: 'Službena web-stranica Novi Grad (Bosanski Novi)',
+        },
+      {
+          forms: 'https://opstina-novigrad.com/obrasci',
+          description: 'Obrazaci i dokumenti'
+      }
     ],
     categories: ['Urbanizam', 'Uvjerenja', 'Matični uredi'],
     komentar: 'Urbanizam i matični uredi'
@@ -1475,7 +1690,14 @@ export const municipalitiesDatabase: MunicipalityData[] = [
     region: 'Prijedorska regija',
     entity: 'RS',
     urls: [
-      
+      {
+          main: 'https://www.prijedorgrad.org/',
+          description: 'Službena web-stranica Grad Prijedor',
+        },
+      {
+          forms: 'https://www.prijedorgrad.org/e-uprava',
+          description: 'Obrazaci i dokumenti'
+      }
     ],
     categories: ['Urbanizam', 'Građevinske dozvole', 'Matični uredi'],
     komentar: 'Obrasci – urbanizam, građevinske dozvole, uvjerenja'
@@ -1486,7 +1708,14 @@ export const municipalitiesDatabase: MunicipalityData[] = [
     region: 'Prijedorska regija',
     entity: 'RS',
     urls: [
-      
+      {
+          main: 'https://kozarskadubica.org/',
+          description: 'Službena web-stranica Kozarska Dubica',
+        },
+      {
+          forms: 'https://kozarskadubica.org/obrasci',
+          description: 'Obrazaci i dokumenti'
+      }
     ],
     categories: ['Urbanizam', 'Građevinske dozvole', 'Prijava prebivališta'],
     komentar: 'Urbanistička saglasnost i građevinske dozvole'
@@ -1497,7 +1726,14 @@ export const municipalitiesDatabase: MunicipalityData[] = [
     region: 'Prijedorska regija',
     entity: 'RS',
     urls: [
-      
+      {
+          main: 'https://www.opstinaostraluka.org/',
+          description: 'Službena web-stranica Oštra Luka',
+        },
+      {
+          forms: 'https://www.opstinaostraluka.org/obrasci',
+          description: 'Obrazaci i dokumenti'
+      }
     ],
     categories: ['Urbanizam', 'Prijava prebivališta', 'Uvjerenja'],
     komentar: 'Urbanistička saglasnost i prijava prebivališta'
@@ -1517,6 +1753,10 @@ export const municipalitiesDatabase: MunicipalityData[] = [
       {
         main: 'https://doboj.gov.ba/',
         description: 'Zvanični portal Grada Doboj'
+      },
+      {
+          forms: 'https://doboj.gov.ba/dokumenti/%D0%B7%D0%B0%D1%85%D1%82%D1%98%D0%B5%D0%B2%D0%B8-%D0%B8-%D0%BE%D0%B1%D1%80%D0%B0%D1%81%D1%86%D0%B8/e-uprava',
+          description: 'Obrazaci i dokumenti'
       }
     ],
     categories: ['Privreda i preduzetništvo', 'Matična služba i izvodi', 'Građanska stanja', 'Državljanstvo', 'Prijemna kancelarija i ovjere'],
@@ -1528,7 +1768,14 @@ export const municipalitiesDatabase: MunicipalityData[] = [
     region: 'Doboj regija',
     entity: 'RS',
     urls: [
-      
+      {
+          main: 'https://teslic.com/',
+          description: 'Službena web-stranica Teslić',
+        },
+      {
+          forms: 'https://teslic.com/obrasci',
+          description: 'Obrazaci i dokumenti'
+      }
     ],
     categories: ['Urbanizam', 'Građevinske dozvole', 'Matični uredi'],
     komentar: 'Urbanistička saglasnost i matični uredi'
@@ -1539,7 +1786,14 @@ export const municipalitiesDatabase: MunicipalityData[] = [
     region: 'Doboj regija',
     entity: 'RS',
     urls: [
-      
+      {
+          main: 'https://modrica.ba/',
+          description: 'Službena web-stranica Modriča',
+        },
+      {
+          forms: 'https://modrica.ba/obrasci',
+          description: 'Obrazaci i dokumenti'
+      }
     ],
     categories: ['Urbanizam', 'Prijava boravka', 'Uvjerenja'],
     komentar: 'Urbanizam i prijava boravka'
@@ -1568,6 +1822,10 @@ export const municipalitiesDatabase: MunicipalityData[] = [
       {
         main: 'https://opstina-brod.net/%D0%B2%D0%B0%D0%B6%D0%BD%D0%B8-%D0%B4%D0%BE%D0%BA%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D0%B8/#lat',
         description: 'Važni dokumenti, obrasci, uputstva i zahtjevi'
+      },
+      {
+          forms: 'https://opstina-brod.net/%D0%B2%D0%B0%D0%B6%D0%BD%D0%B8-%D0%B4%D0%BE%D0%BA%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D0%B8/#lat/obrasci',
+          description: 'Obrazaci i dokumenti'
       }
     ],
     categories: ['Pristup informacijama', 'Prijava korupcije', 'Zaštita ličnih podataka', 'Boračko-invalidska zaštita', 'Matični uredi', 'Državljanstvo', 'Urbanizam i prostorno uređenje', 'Privreda i preduzetništvo'],
@@ -1582,6 +1840,10 @@ export const municipalitiesDatabase: MunicipalityData[] = [
       {
         main: 'https://vukosavlje.gov.ba/ba/',
         description: 'Službena web-stranica Općine Vukosavlje — prijava prebivališta i matični uredi'
+      },
+      {
+          forms: 'https://vukosavlje.gov.ba/ba/obrasci',
+          description: 'Obrazaci i dokumenti'
       }
     ],
     categories: ['Prijava prebivališta', 'Urbanizam', 'Matični uredi'],
@@ -1593,7 +1855,14 @@ export const municipalitiesDatabase: MunicipalityData[] = [
     region: 'Doboj regija',
     entity: 'RS',
     urls: [
-      
+      {
+          main: 'https://petrovo.ba/',
+          description: 'Službena web-stranica Petrovo',
+        },
+      {
+          forms: 'https://petrovo.ba/obrasci',
+          description: 'Obrazaci i dokumenti'
+      }
     ],
     categories: ['Urbanizam', 'Uvjerenja', 'Građevinske dozvole'],
     komentar: 'Urbanizam i građevinske dozvole'
@@ -1624,6 +1893,10 @@ export const municipalitiesDatabase: MunicipalityData[] = [
       {
         main: 'https://www.gradbijeljina.org/sr/1649.izvod-iz-maticne-knjige-umrlih.html',
         description: 'Službeni online zahtjev Grada Bijeljina'
+      },
+      {
+          forms: 'https://www.gradbijeljina.org/sr/1649.izvod-iz-maticne-knjige-umrlih.html/e-uprava',
+          description: 'Obrazaci i dokumenti'
       }
     ],
     categories: ['Matični uredi', 'Uvjerenja', 'Građanska stanja'],
@@ -1635,7 +1908,14 @@ export const municipalitiesDatabase: MunicipalityData[] = [
     region: 'Bijeljina regija',
     entity: 'RS',
     urls: [
-      
+      {
+          main: 'https://opstinaugljevik.net/',
+          description: 'Službena web-stranica Ugljevik',
+        },
+      {
+          forms: 'https://opstinaugljevik.net/obrasci',
+          description: 'Obrazaci i dokumenti'
+      }
     ],
     categories: ['Urbanizam', 'Prijava prebivališta', 'Matični uredi'],
     komentar: 'Urbanistička saglasnost i matični uredi'
@@ -1649,6 +1929,10 @@ export const municipalitiesDatabase: MunicipalityData[] = [
       {
         main: 'https://opstinalopare.com/',
         description: 'Službena web-stranica Opštine Lopare'
+      },
+      {
+          forms: 'https://opstinalopare.com/obrasci',
+          description: 'Obrazaci i dokumenti'
       }
     ],
     categories: ['Urbanizam i građenje', 'Matični ured', 'Opća uprava', 'Boračka zaštita'],
@@ -1660,7 +1944,14 @@ export const municipalitiesDatabase: MunicipalityData[] = [
     region: 'Bijeljina regija',
     entity: 'RS',
     urls: [
-      
+      {
+          main: 'https://gradzvornik.org/',
+          description: 'Službena web-stranica Zvornik',
+        },
+      {
+          forms: 'https://gradzvornik.org/obrasci',
+          description: 'Obrazaci i dokumenti'
+      }
     ],
     categories: ['Urbanizam', 'Matični uredi', 'Prijava boravka'],
     komentar: 'Urbanizam i matični uredi'
@@ -1671,7 +1962,14 @@ export const municipalitiesDatabase: MunicipalityData[] = [
     region: 'Bijeljina regija',
     entity: 'RS',
     urls: [
-      
+      {
+          main: 'https://sekovici.org/',
+          description: 'Službena web-stranica Šekovići',
+        },
+      {
+          forms: 'https://sekovici.org/obrasci',
+          description: 'Obrazaci i dokumenti'
+      }
     ],
     categories: ['Urbanizam', 'Matični uredi', 'Uvjerenja'],
     komentar: 'Urbanističke saglasnosti i matični uredi'
@@ -1682,7 +1980,14 @@ export const municipalitiesDatabase: MunicipalityData[] = [
     region: 'Bijeljina regija',
     entity: 'RS',
     urls: [
-      
+      {
+          main: 'https://osmaci.org/',
+          description: 'Službena web-stranica Osmaci',
+        },
+      {
+          forms: 'https://osmaci.org/obrasci',
+          description: 'Obrazaci i dokumenti'
+      }
     ],
     categories: ['Prijava prebivališta', 'Urbanizam', 'Matični uredi'],
     komentar: 'Prijava prebivališta i matični uredi'
@@ -1702,6 +2007,10 @@ export const municipalitiesDatabase: MunicipalityData[] = [
       {
         main: 'https://gradistocnosarajevo.net/',
         description: 'Službeni portal Grada Istočno Sarajevo'
+      },
+      {
+          forms: 'https://gradistocnosarajevo.net/dokumenti/e-uprava',
+          description: 'Obrazaci i dokumenti'
       }
     ],
     categories: ['Gradska uprava', 'Zvanični obrasci', 'Zahtjevi', 'Matični uredi'],
@@ -1760,6 +2069,10 @@ export const municipalitiesDatabase: MunicipalityData[] = [
       {
         main: 'https://pale.rs.ba/',
         description: 'Službeni portal Opštine Pale RS'
+      },
+      {
+          forms: 'https://pale.rs.ba/obrasci',
+          description: 'Obrazaci i dokumenti'
       }
     ],
     categories: ['Preduzetništvo i privreda', 'Građevinske dozvole', 'Urbanizam', 'Matični uredi'],
@@ -1775,6 +2088,10 @@ export const municipalitiesDatabase: MunicipalityData[] = [
       {
         main: 'https://trnovo-rs.com/',
         description: 'Službeni portal Opštine Trnovo RS'
+      },
+      {
+          forms: 'https://trnovo-rs.com/obrasci',
+          description: 'Obrazaci i dokumenti'
       }
     ],
     categories: ['Jednokratne pomoći', 'Matični uredi', 'Socijalna zaštita', 'Urbanizam'],
@@ -1790,6 +2107,10 @@ export const municipalitiesDatabase: MunicipalityData[] = [
       {
         main: 'https://opstinaisg.net/',
         description: 'Službeni portal Opštine Istočni Stari Grad'
+      },
+      {
+          forms: 'https://opstinaisg.net/obrasci',
+          description: 'Obrazaci i dokumenti'
       }
     ],
     categories: ['Građansko stanje', 'Uvjerenja', 'Matični uredi', 'Urbanizam'],
@@ -1821,7 +2142,14 @@ export const municipalitiesDatabase: MunicipalityData[] = [
     region: 'Trebinje regija',
     entity: 'RS',
     urls: [
-      
+      {
+          main: 'https://trebinje.rs.ba/',
+          description: 'Službena web-stranica Grad Trebinje',
+        },
+      {
+          forms: 'https://trebinje.rs.ba/e-uprava',
+          description: 'Obrazaci i dokumenti'
+      }
     ],
     categories: ['Urbanizam', 'Građevinske dozvole', 'Matični uredi'],
     komentar: 'Obrasci – urbanizam, lokacijska informacija, izdavanje uvjerenja'
@@ -1872,7 +2200,14 @@ export const municipalitiesDatabase: MunicipalityData[] = [
     region: 'Trebinje regija',
     entity: 'RS',
     urls: [
-      
+      {
+          main: 'https://opstinanevesinje.rs.ba/',
+          description: 'Službena web-stranica Nevesinje',
+        },
+      {
+          forms: 'https://opstinanevesinje.rs.ba/obrasci',
+          description: 'Obrazaci i dokumenti'
+      }
     ],
     categories: ['Urbanizam', 'Matični uredi'],
     komentar: 'Urbanizam i matični uredi'
@@ -1886,6 +2221,10 @@ export const municipalitiesDatabase: MunicipalityData[] = [
       {
         main: 'https://opstinaljubinje.org/',
         description: 'Službena web-stranica Opštine Ljubinje; digitalni dokumenti trenutno nisu dostupni online'
+      },
+      {
+          forms: 'https://opstinaljubinje.org/obrasci',
+          description: 'Obrazaci i dokumenti'
       }
     ],
     address: 'Svetosavska 2, 88380 Ljubinje',
@@ -1906,6 +2245,10 @@ export const municipalitiesDatabase: MunicipalityData[] = [
       {
         main: 'https://opstinaberkovici.com/home/',
         description: 'Službena stranica Opštine Berkovići; obrasci se preuzimaju lično u Šalter sali / Pisarnici opštine'
+      },
+      {
+          forms: 'https://opstinaberkovici.com/home/obrasci',
+          description: 'Obrazaci i dokumenti'
       }
     ],
     categories: [],
@@ -1916,8 +2259,7 @@ export const municipalitiesDatabase: MunicipalityData[] = [
     name: 'Istočni Mostar',
     region: 'Trebinje regija',
     entity: 'RS',
-    urls: [],
-    categories: [],
+    urls: null,
     komentar: 'Prema ažuriranju, Opština Istočni Mostar nema službenu web-stranicu.'
   },
 
@@ -1931,6 +2273,10 @@ export const municipalitiesDatabase: MunicipalityData[] = [
       {
         main: 'https://foca.rs.ba/',
         description: 'Službena web-stranica Opštine Foča'
+      },
+      {
+          forms: 'https://foca.rs.ba/obrasci',
+          description: 'Obrazaci i dokumenti'
       }
     ],
     categories: ['Usluge i obrasci', 'Službeni dokumenti', 'Javni pozivi'],
@@ -1945,6 +2291,10 @@ export const municipalitiesDatabase: MunicipalityData[] = [
       {
         main: 'https://opstinacajnice.rs.ba/%d0%be%d0%b1%d1%80%d0%b0%d1%81%d1%86%d0%b8-%d0%be%d0%bf%d1%88%d1%82%d0%b8%d0%bd%d0%b0-%d1%87%d0%b0%d1%98%d0%bd%d0%b8%d1%87%d0%b5/',
         description: 'Zvanični obrasci Opštine Čajniče'
+      },
+      {
+          forms: 'https://opstinacajnice.rs.ba/%d0%be%d0%b1%d1%80%d0%b0%d1%81%d1%86%d0%b8-%d0%be%d0%bf%d1%88%d1%82%d0%b8%d0%bd%d0%b0-%d1%87%d0%b0%d1%98%d0%bn%d0%b8%d1%87%d0%b5/obrasci',
+          description: 'Obrazaci i dokumenti'
       }
     ],
     categories: ['Opšta uprava', 'Privreda, finansije i društvene djelatnosti', 'Prostorno uređenje i stambeno-komunalni poslovi'],
@@ -1975,7 +2325,14 @@ export const municipalitiesDatabase: MunicipalityData[] = [
     region: 'Foča regija',
     entity: 'RS',
     urls: [
-      
+      {
+          main: 'https://novogorazde.net/',
+          description: 'Službena web-stranica Novo Goražde',
+        },
+      {
+          forms: 'https://novogorazde.net/obrasci',
+          description: 'Obrazaci i dokumenti'
+      }
     ],
     categories: ['Urbanizam', 'Prijava prebivališta', 'Matični uredi'],
     komentar: 'Urbanizam i matični uredi'
@@ -2007,7 +2364,14 @@ export const municipalitiesDatabase: MunicipalityData[] = [
     region: 'Sarajevo-romanijska regija',
     entity: 'RS',
     urls: [
-      
+      {
+          main: 'https://rogatica.ba/',
+          description: 'Službena web-stranica Rogatica',
+        },
+      {
+          forms: 'https://rogatica.ba/obrasci',
+          description: 'Obrazaci i dokumenti'
+      }
     ],
     categories: ['Urbanizam', 'Građevinske dozvole', 'Matični uredi'],
     komentar: 'Urbanističke saglasnosti i matični uredi'
@@ -2038,6 +2402,10 @@ export const municipalitiesDatabase: MunicipalityData[] = [
       {
         main: 'https://bdcentral.net/prostorno-planiranje/',
         description: 'Obrasci – lokacijska informacija, urbanistička saglasnost, građevinske dozvole'
+      },
+      {
+          forms: 'https://vlada.bdcentral.net/Home/obrasci',
+          description: 'Obrazaci i dokumenti'
       }
     ],
     categories: ['Urbanizam', 'Matični uredi', 'Zdravstvo', 'Obrazovanje', 'Građevinske dozvole'],

@@ -2,15 +2,18 @@
   "opcine": [
     {
       "naziv": "Općina Olovo",
-      "web_stranica": "https://olovo.gov.ba/"
+      "web_stranica": "https://olovo.gov.ba/",
+      "forms_url": "https://olovo.gov.ba/obrasci"
     },
     {
       "naziv": "Općina Tešanj",
-      "web_stranica": "https://opcina-tesanj.ba/"
+      "web_stranica": "https://opcina-tesanj.ba/",
+      "forms_url": "https://opcina-tesanj.ba/obrasci"
     },
     {
       "naziv": "Općina Maglaj",
-      "web_stranica": "https://www.maglaj.ba/ba/index.php"
+      "web_stranica": "https://www.maglaj.ba/ba/index.php",
+      "forms_url": "https://www.maglaj.ba/ba/index.php/obrasci"
     }
   ]
 }
