@@ -1,0 +1,92 @@
+{
+  "bs-Cyrl": {
+    "alert": "Ова општина има активан веб-сајт, али нема доступних докумената онлине. Генеришите е-маил захтјев за општину.",
+    "contact": {
+      "title": "Контакт подаци",
+      "address": "Адреса",
+      "taxId": "ЈИБ",
+      "treasuryAccount": "ЈРТ",
+      "email": "Е-маил",
+      "phone": "Телефон",
+      "workingHours": "Радно вријеме"
+    },
+    "steps": [
+      "Одаберите који документ или образац требате.",
+      "Унесите своје основне податке (име, презиме и контакт).",
+      "Кликните на дугме испод – отвориће се припремљена порука за ljubinje@teol.net. Прегледајте је и пошаљите из свог е-маил програма."
+    ],
+    "subject": "Захтјев за доставу обрасца/информације путем апликације BH PapirFinder"
+  },
+  "bs": {
+    "alert": "Ova općina ima aktivan website ali nema dostupnih dokumenata online. Generišite e-mail zahtjev za općinu.",
+    "contact": {
+      "title": "Kontakt podaci",
+      "address": "Adresa",
+      "taxId": "JIB",
+      "treasuryAccount": "JRT",
+      "email": "E-mail",
+      "phone": "Telefon",
+      "workingHours": "Radno vrijeme"
+    },
+    "steps": [
+      "Odaberite koji dokument ili obrazac trebate.",
+      "Unesite svoje osnovne podatke (ime, prezime i kontakt).",
+      "Kliknite na dugme ispod – otvorit će se pripremljena poruka za ljubinje@teol.net. Pregledajte je i pošaljite iz svog e-mail programa."
+    ],
+    "subject": "Zahtjev za dostavu obrasca/informacije putem aplikacije BH PapirFinder"
+  },
+  "en": {
+    "alert": "This municipality has an active website but no documents are available online. Generate an email request for the municipality.",
+    "contact": {
+      "title": "Contact details",
+      "address": "Address",
+      "taxId": "Tax ID",
+      "treasuryAccount": "Treasury account",
+      "email": "Email",
+      "phone": "Phone",
+      "workingHours": "Working hours"
+    },
+    "steps": [
+      "Select the document or form you need.",
+      "Enter your basic information (first name, last name, and contact).",
+      "Click the button below to open a prepared message to ljubinje@teol.net. Review and send it from your email app."
+    ],
+    "subject": "Request for document/information delivery via BH PapirFinder app"
+  },
+  "de": {
+    "alert": "Diese Gemeinde verfügt über eine aktive Website, aber es sind keine Dokumente online verfügbar. Generieren Sie eine E-Mail-Anfrage für die Gemeinde.",
+    "contact": {
+      "title": "Kontaktdaten",
+      "address": "Adresse",
+      "taxId": "Steuernummer",
+      "treasuryAccount": "Haushaltskonto",
+      "email": "E-Mail",
+      "phone": "Telefon",
+      "workingHours": "Öffnungszeiten"
+    },
+    "steps": [
+      "Wählen Sie das benötigte Dokument oder Formular aus.",
+      "Geben Sie Ihre Basisdaten ein (Vorname, Nachname und Kontaktdaten).",
+      "Klicken Sie unten, um eine vorbereitete Nachricht an ljubinje@teol.net zu öffnen. Prüfen und senden Sie sie in Ihrem E-Mail-Programm."
+    ],
+    "subject": "Antrag auf Bereitstellung von Formularen/Informationen über die BH PapirFinder-App"
+  },
+  "tr": {
+    "alert": "Bu belediyenin aktif bir web sitesi var ancak çevrimiçi hiçbir belge mevcut değil. Belediye için bir e-posta talebi oluşturun.",
+    "contact": {
+      "title": "İletişim bilgileri",
+      "address": "Adres",
+      "taxId": "Vergi numarası",
+      "treasuryAccount": "Hazine hesabı",
+      "email": "E-posta",
+      "phone": "Telefon",
+      "workingHours": "Çalışma saatleri"
+    },
+    "steps": [
+      "İhtiyacınız olan belgeyi veya formu seçin.",
+      "Temel bilgilerinizi girin (Ad, soyad ve iletişim).",
+      "Aşağıdaki düğmeye tıklayarak ljubinje@teol.net adresine hazırlanmış mesajı açın. E-posta uygulamanızda gözden geçirip gönderin."
+    ],
+    "subject": "BH PapirFinder uygulaması üzerinden belge/bilgi talebi"
+  }
+}

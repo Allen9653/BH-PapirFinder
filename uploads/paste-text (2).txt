@@ -1,0 +1,91 @@
+import { Suspense, lazy } from 'react';
+import { Toaster } from '@/components/ui/sonner';
+import { TooltipProvider } from '@/components/ui/tooltip';
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
+import { LanguageProvider } from '@/contexts/LanguageContext';
+import ErrorBoundary from '@/components/ErrorBoundary';
+
+// Index se učitava odmah (početna stranica, uvijek potrebna).
+import Index from './pages/Index';
+
+// Sve ostale stranice se učitavaju TEK kad korisnik stvarno ode na tu rutu —
+// npr. Admin/AdminDashboard/AdminReports (koje 99% posjetilaca nikad ne
+// otvara) više ne usporavaju prvo učitavanje sajta za obične korisnike.
+const Login = lazy(() => import('./pages/Login'));
+const Register = lazy(() => import('./pages/Register'));
+const Admin = lazy(() => import('./pages/Admin'));
+const AdminDashboard = lazy(() => import('./pages/AdminDashboard'));
+const AdminDocuments = lazy(() => import('./pages/AdminDocuments'));
+const AdminReports = lazy(() => import('./pages/AdminReports'));
+const NotificationPreferences = lazy(() => import('./pages/NotificationPreferences'));
+const Subscription = lazy(() => import('./pages/Subscription'));
+const SearchResults = lazy(() => import('./pages/SearchResults'));
+const MunicipalityForms = lazy(() => import('./pages/MunicipalityForms'));
+const FormDetail = lazy(() => import('./pages/FormDetail'));
+const Guide = lazy(() => import('./pages/Guide'));
+const Terms = lazy(() => import('./pages/Terms'));
+const Privacy = lazy(() => import('./pages/Privacy'));
+const Support = lazy(() => import('./pages/Support'));
+const AuditLog = lazy(() => import('./pages/AuditLog'));
+const DeleteAccount = lazy(() => import('./pages/DeleteAccount'));
+
+// AIChatbot je na svakoj stranici, ali nije dio prvog renderovanja
+// kritičnog sadržaja — takođe ga lijeno učitavamo.
+const AIChatbot = lazy(() => import('./components/AIChatbot'));
+
+const queryClient = new QueryClient();
+
+// Jednostavan, lagan fallback dok se ruta učitava (bez skakanja layouta)
+const PageLoadingFallback = () => (
+  <div className="flex items-center justify-center min-h-[40vh]">
+    <div className="h-8 w-8 animate-spin rounded-full border-2 border-current border-t-transparent text-[#003D7A]" />
+  </div>
+);
+
+const App = () => (
+  <ErrorBoundary>
+    <QueryClientProvider client={queryClient}>
+      <LanguageProvider>
+        <TooltipProvider>
+          <Toaster />
+          <BrowserRouter>
+            <Suspense fallback={<PageLoadingFallback />}>
+              <Routes>
+                <Route path="/" element={<Index />} />
+                <Route path="/login" element={<Login />} />
+                <Route path="/register" element={<Register />} />
+                <Route path="/admin" element={<Admin />} />
+                <Route path="/admin/dashboard" element={<AdminDashboard />} />
+                <Route path="/admin/documents" element={<AdminDocuments />} />
+                <Route path="/admin/reports" element={<AdminReports />} />
+                <Route path="/subscription" element={<Subscription />} />
+                <Route path="/search" element={<SearchResults />} />
+                <Route path="/municipality/:slug" element={<MunicipalityForms />} />
+                <Route path="/form/:formId" element={<FormDetail />} />
+                <Route path="/guide" element={<Guide />} />
+                <Route path="/terms" element={<Terms />} />
+                <Route path="/privacy" element={<Privacy />} />
+                <Route path="/support" element={<Support />} />
+                <Route path="/audit-log" element={<AuditLog />} />
+                <Route path="/delete-account" element={<DeleteAccount />} />
+                <Route path="/notifications/preferences" element={<NotificationPreferences />} />
+                {/* BH PapirFinder subpath - maps to search */}
+                <Route path="/bhpapirfinder" element={<Index />} />
+                <Route path="/bhpapirfinder/search" element={<SearchResults />} />
+                {/* Redirect all unknown routes to homepage instead of 404 */}
+                <Route path="*" element={<Navigate to="/" replace />} />
+              </Routes>
+            </Suspense>
+            {/* Floating AI Chatbot — available on all pages */}
+            <Suspense fallback={null}>
+              <AIChatbot />
+            </Suspense>
+          </BrowserRouter>
+        </TooltipProvider>
+      </LanguageProvider>
+    </QueryClientProvider>
+  </ErrorBoundary>
+);
+
+export default App;

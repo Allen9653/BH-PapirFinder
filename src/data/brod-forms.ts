@@ -1,0 +1,442 @@
+import type { MunicipalityForm } from './municipality-registry';
+
+export const BROD_OFFICIAL_URL = 'https://opstina-brod.net/';
+export const BROD_DOCUMENTS_SOURCE_URL = 'https://opstina-brod.net/%D0%B2%D0%B0%D0%B6%D0%BD%D0%B8-%D0%B4%D0%BE%D0%BA%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D0%B8/#lat';
+
+export const brodDocuments = {
+  id: 'brod',
+  name: 'Opština Brod',
+  aliases: ['Bosanski Brod'],
+  officialWebsite: BROD_OFFICIAL_URL,
+  formsSourceUrl: BROD_DOCUMENTS_SOURCE_URL,
+  hasStandardFormsPage: true,
+  notice: 'Dokumenti, obrasci i zahtjevi dostupni su direktno na zvaničnoj stranici Opštine Brod.',
+  documents: [
+    {
+      id: 'brod-1',
+      title: "Водич за приступ информацијама у општини Брод",
+      url: "https://opstina-brod.net/wp-content/uploads/2026/10/VODIC-ZA-PRISTUP-INFORMACIJA%D0%9C%D0%90-U-OPSTINI-BROD.pdf",
+      category: "Pristup informacijama",
+    },
+    {
+      id: 'brod-2',
+      title: "Захтјев за приступ информацијама",
+      url: "https://opstina-brod.net/wp-content/uploads/2026/10/%D0%97%D0%B0%D1%85%D1%82%D1%98%D0%B5%D0%B2-%D0%B7%D0%B0-%D0%BF%D1%80%D0%B8%D1%81%D1%82%D1%83%D0%BF-%D0%B8%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%86%D0%B8%D1%98%D0%B0%D0%BC%D0%B0.docx",
+      category: "Pristup informacijama",
+    },
+    {
+      id: 'brod-3',
+      title: "Упутство о поступању са пријавом корупције",
+      url: "https://opstina-brod.net/wp-content/uploads/2022/02/Uputstvo-o-postupanju-sa-prijavom-korupcije.pdf",
+      category: "Prijava korupcije",
+    },
+    {
+      id: 'brod-4',
+      title: "Образац пријаве корупције",
+      url: "https://opstina-brod.net/wp-content/uploads/2022/02/Obrazac-prijave-korupcije.doc",
+      category: "Prijava korupcije",
+    },
+    {
+      id: 'brod-5',
+      title: "Образац пријаве корупције у пдф-у",
+      url: "https://opstina-brod.net/wp-content/uploads/2022/02/Obrazac-prijave-korupcije-PDF.pdf",
+      category: "Prijava korupcije",
+    },
+    {
+      id: 'brod-6',
+      title: "Обавјештење о начину пријаве корупције",
+      url: "https://opstina-brod.net/wp-content/uploads/2022/02/Obavjestenje-o-nacinu-prijave-korupcije.pdf",
+      category: "Prijava korupcije",
+    },
+    {
+      id: 'brod-7',
+      title: "Закон о заштити лица која пријављују корупцију",
+      url: "https://opstina-brod.net/wp-content/uploads/2022/02/Zakon-o-zastiti-lica-koja-prijavljuju-korupciju.pdf",
+      category: "Prijava korupcije",
+    },
+    {
+      id: 'brod-8',
+      title: "Закон о заштити личних података",
+      url: "https://opstina-brod.net/wp-content/uploads/2026/03/Zakon-o-zastiti-licnih-podataka-1.pdf",
+      category: "Zaštita ličnih podataka",
+    },
+    {
+      id: 'brod-9',
+      title: "Правилник о провођењу Закона о заштити личних података у Општинској управи Општине Брод",
+      url: "https://opstina-brod.net/wp-content/uploads/2026/03/Pravilnik-o-provodjenju-Zakona-o-zastiti-licnih-podataka-u-Opstini-brod-1.pdf",
+      category: "Zaštita ličnih podataka",
+    },
+    {
+      id: 'brod-10',
+      title: "Политика приватности",
+      url: "https://opstina-brod.net/wp-content/uploads/2026/03/Politika-privatnosti-1.pdf",
+      category: "Zaštita ličnih podataka",
+    },
+    {
+      id: 'brod-11',
+      title: "Одлука о именовању службеника за заштиту личних података",
+      url: "https://opstina-brod.net/wp-content/uploads/2026/03/Odluka-o-imenovanju-sluzbenika-za-zastitu-licnih-podataka-1.pdf",
+      category: "Zaštita ličnih podataka",
+    },
+    {
+      id: 'brod-12',
+      title: "Одлука о успостављању система видео-надзора и правилима обраде",
+      url: "https://opstina-brod.net/wp-content/uploads/2026/03/Odluka-o-uspostavljanju-sistema-video-nadzora-i-pravilima-obrade-1.pdf",
+      category: "Zaštita ličnih podataka",
+    },
+    {
+      id: 'brod-13',
+      title: "Захтјев за утврђивање статуса члана пород умрлог VI и признавање права на ПИ",
+      url: "https://opstina-brod.net/wp-content/uploads/2022/05/Zahtjev-za-utvrdjivanje-statusa-clana-porod-umrlog-VI-i-priznavanje-prava-na-PI.pdf",
+      category: "Boračko-invalidska zaštita",
+    },
+    {
+      id: 'brod-14',
+      title: "Захтјев за утврђивање статуса борца и разврставања у одговарајућу категорију",
+      url: "https://opstina-brod.net/wp-content/uploads/2022/05/Zahtjev-za-utvrdjivanje-statusa-borca-i-razvstavanjau-odgovarajusu-kategoriju.pdf",
+      category: "Boračko-invalidska zaštita",
+    },
+    {
+      id: 'brod-15',
+      title: "Захтјев за утврђивање права на здравствено осигурање",
+      url: "https://opstina-brod.net/wp-content/uploads/2022/05/Zahtjev-za-utvrdjivanje-prava-na-zdravstveno-osiguranje.pdf",
+      category: "Boračko-invalidska zaštita",
+    },
+    {
+      id: 'brod-16',
+      title: "Захтјев за утврђивање права на новчану накнаду породици одликованог пог борца",
+      url: "https://opstina-brod.net/wp-content/uploads/2022/05/Zahtjev-za-utvrdjivanje-prava-na-novcanu-naknadu-porodici-odlikovanog-pog-borca.pdf",
+      category: "Boračko-invalidska zaštita",
+    },
+    {
+      id: 'brod-17',
+      title: "Захтјев за утврђивање права на новчану накнаду одликованом борцу",
+      url: "https://opstina-brod.net/wp-content/uploads/2022/05/Zahtjev-za-utvrdjivanje-prava-na-novcanu-naknadu-odlikovanom-borcu.pdf",
+      category: "Boračko-invalidska zaštita",
+    },
+    {
+      id: 'brod-18',
+      title: "Захтјев за утврђивање чињенице и околности заробљавања, рањавања, озљеђивања",
+      url: "https://opstina-brod.net/wp-content/uploads/2022/05/Zahtjev-za-utvrdjivanje-cinjenice-i-okolnosti-zarobljavanja-ranjavanja-ozljedjivanja.pdf",
+      category: "Boračko-invalidska zaštita",
+    },
+    {
+      id: 'brod-19',
+      title: "Захтјев за утврђивање чињенице и околности погибије, смрти и нестанка",
+      url: "https://opstina-brod.net/wp-content/uploads/2022/05/Zahtjev-za-utvrdjivanje-cinjenice-i-okolnosti-pogibije-smrti-i-nestanka.pdf",
+      category: "Boračko-invalidska zaštita",
+    },
+    {
+      id: 'brod-20',
+      title: "Захтјев за признавање војног ангажовања у ОС у рату",
+      url: "https://opstina-brod.net/wp-content/uploads/2022/05/Zahtjev-za-priznavanje-vojnog-angazovanja-u-OS-u-ratu.pdf",
+      category: "Boračko-invalidska zaštita",
+    },
+    {
+      id: 'brod-21',
+      title: "Захтјев за признавање статуса жртве ратне тортуре",
+      url: "https://opstina-brod.net/wp-content/uploads/2022/05/Zahtjev-za-priznavanje-statusa-zrtve-ratne-torture.pdf",
+      category: "Boračko-invalidska zaštita",
+    },
+    {
+      id: 'brod-22',
+      title: "Захтјев за признавање статуса члана ППБ, без права на ПИ",
+      url: "https://opstina-brod.net/wp-content/uploads/2022/05/Zahtjev-za-priznavanje-statua-clana-PPB-bez-prava-na-PI.pdf",
+      category: "Boračko-invalidska zaštita",
+    },
+    {
+      id: 'brod-23',
+      title: "Захтјев за признавање права на посебно мјесечно примање",
+      url: "https://opstina-brod.net/wp-content/uploads/2022/05/Zahtjev-za-priznavanje-prava-na-posebno-mjesecno-primanje.pdf",
+      category: "Boračko-invalidska zaštita",
+    },
+    {
+      id: 'brod-24',
+      title: "Захтјев за признавање права на мјесечни борачки додатак",
+      url: "https://opstina-brod.net/wp-content/uploads/2022/05/Zahtjev-za-priznavanje-prava-na-mjesecni-boracki-dodatak.pdf",
+      category: "Boračko-invalidska zaštita",
+    },
+    {
+      id: 'brod-25',
+      title: "Захтјев за признавање права на годишњи борачки додатак",
+      url: "https://opstina-brod.net/wp-content/uploads/2022/05/Zahtjev-za-priznavanje-prava-na-godisnji-boracki-dodatak.pdf",
+      category: "Boračko-invalidska zaštita",
+    },
+    {
+      id: 'brod-26',
+      title: "Захтјев за пријаву у војну евиденцију",
+      url: "https://opstina-brod.net/wp-content/uploads/2022/05/Zahtjev-za-prijavu-u-vojnu-evidenciju.pdf",
+      category: "Boračko-invalidska zaštita",
+    },
+    {
+      id: 'brod-27',
+      title: "Захтјев за пресељење списа због промјене пребивалишта",
+      url: "https://opstina-brod.net/wp-content/uploads/2022/05/Zahtjev-za-preseljenje-spisa-zbog-promjene-prebivalista.pdf",
+      category: "Boračko-invalidska zaštita",
+    },
+    {
+      id: 'brod-28',
+      title: "Захтјев за повластицу за увоз возила",
+      url: "https://opstina-brod.net/wp-content/uploads/2022/05/Zahtjev-za-povlasticu-za-uvoz-vozila.pdf",
+      category: "Boračko-invalidska zaštita",
+    },
+    {
+      id: 'brod-29',
+      title: "Захтјев за поновну оцјену војног инвалидитета",
+      url: "https://opstina-brod.net/wp-content/uploads/2022/05/Zahtjev-za-ponovnu-ocjenu-vojnog-invaliditeta.pdf",
+      category: "Boračko-invalidska zaštita",
+    },
+    {
+      id: 'brod-30',
+      title: "Захтјев за одјаву са здравственог осигурања",
+      url: "https://opstina-brod.net/wp-content/uploads/2022/05/Zahtjev-za-odjavu-sa-zdravstvenog-osiguranja.pdf",
+      category: "Boračko-invalidska zaštita",
+    },
+    {
+      id: 'brod-31',
+      title: "Захтјев за одјаву из војне евиденције",
+      url: "https://opstina-brod.net/wp-content/uploads/2022/05/Zahtjev-za-odjavu-iz-vojne-evidencije.pdf",
+      category: "Boračko-invalidska zaštita",
+    },
+    {
+      id: 'brod-32',
+      title: "Захтјев за обнову поступка на основу нових доказа",
+      url: "https://opstina-brod.net/wp-content/uploads/2022/05/Zahtjev-za-obnovu-postupka-na-osnovu-novih-dokaza.pdf",
+      category: "Boračko-invalidska zaštita",
+    },
+    {
+      id: 'brod-33',
+      title: "Захтјев за накнаду трошкова за израду надгробног споменика",
+      url: "https://opstina-brod.net/wp-content/uploads/2022/05/Zahtjev-za-naknadu-troskova-za-izgradnju-nadgrobnog-spomenika.pdf",
+      category: "Boračko-invalidska zaštita",
+    },
+    {
+      id: 'brod-34',
+      title: "Захтјев за исправку грешке у рјешењу",
+      url: "https://opstina-brod.net/wp-content/uploads/2022/05/Zahtjev-za-ispravku-greske-u-rjesenju.pdf",
+      category: "Boračko-invalidska zaštita",
+    },
+    {
+      id: 'brod-35',
+      title: "Захтјев за исплату мјесечног новчаног примања",
+      url: "https://opstina-brod.net/wp-content/uploads/2022/05/Zahtjev-za-isplatu-mjesecnog-novcanog-primanja.pdf",
+      category: "Boračko-invalidska zaštita",
+    },
+    {
+      id: 'brod-36',
+      title: "Захтјев за додјелу ЈНП",
+      url: "https://opstina-brod.net/wp-content/uploads/2022/05/Zahtjev-za-dodjelu-JNP.pdf",
+      category: "Boračko-invalidska zaštita",
+    },
+    {
+      id: 'brod-37',
+      title: "ЈНП - Сахрана",
+      url: "https://opstina-brod.net/wp-content/uploads/2022/05/JNP-Sahrana.pdf",
+      category: "Boračko-invalidska zaštita",
+    },
+    {
+      id: 'brod-38',
+      title: "ЈНП - Лијечење",
+      url: "https://opstina-brod.net/wp-content/uploads/2022/05/JNP-Lijecenje.pdf",
+      category: "Boračko-invalidska zaštita",
+    },
+    {
+      id: 'brod-39',
+      title: "Захтјев за закључење брака ван службених просторија",
+      url: "https://opstina-brod.net/wp-content/uploads/2023/04/Zahtjev-za-zakljucenje-braka-van-sluzbenih-prostorija.pdf",
+      category: "Matični uredi",
+    },
+    {
+      id: 'brod-40',
+      title: "Захтјев за закључење брака ван службених просторија - латиница",
+      url: "https://opstina-brod.net/wp-content/uploads/2023/04/Zahtjev-za-zakljucenje-braka-van-sluzbenih-prostorija-latinica.pdf",
+      category: "Matični uredi",
+    },
+    {
+      id: 'brod-41',
+      title: "Захтјев за промјену личног имена",
+      url: "https://opstina-brod.net/wp-content/uploads/2023/04/Zahtjev-za-promjenu-licnog-imena.pdf",
+      category: "Matični uredi",
+    },
+    {
+      id: 'brod-42',
+      title: "Захтјев за промјену личног имена - латиница",
+      url: "https://opstina-brod.net/wp-content/uploads/2023/04/Zahtjev-za-promjenu-licnog-imena-latinica.pdf",
+      category: "Matični uredi",
+    },
+    {
+      id: 'brod-43',
+      title: "Захтјев за промјену ентитетског држављанства",
+      url: "https://opstina-brod.net/wp-content/uploads/2023/04/Zahtjev-za-promjenu-entitetskog-drzavljanstva.pdf",
+      category: "Matični uredi",
+    },
+    {
+      id: 'brod-44',
+      title: "Захтјев за промјену ентитетског држављанства - латиница",
+      url: "https://opstina-brod.net/wp-content/uploads/2023/04/Zahtjev-za-promjenu-entitetskog-drzavljanstva-latinica.pdf",
+      category: "Matični uredi",
+    },
+    {
+      id: 'brod-45',
+      title: "Захтјев за приступ информацијама",
+      url: "https://opstina-brod.net/wp-content/uploads/2023/04/Zahtjev-za-pristup-informacijama.pdf",
+      category: "Matični uredi",
+    },
+    {
+      id: 'brod-46',
+      title: "Захтјев за приступ информацијама - латиница",
+      url: "https://opstina-brod.net/wp-content/uploads/2023/04/Zahtjev-za-pristup-informacijama-latinica.pdf",
+      category: "Matični uredi",
+    },
+    {
+      id: 'brod-47',
+      title: "Захтјев за овјеру изван службених просторија",
+      url: "https://opstina-brod.net/wp-content/uploads/2023/04/Zahtjev-za-ovjeru-izvan-sluzbenih-prostorija.pdf",
+      category: "Matični uredi",
+    },
+    {
+      id: 'brod-48',
+      title: "Захтјев за овјеру изван службених просторија - латиница",
+      url: "https://opstina-brod.net/wp-content/uploads/2023/04/Zahtjev-za-ovjeru-izvan-sluzbenih-prostorija-latinica.pdf",
+      category: "Matični uredi",
+    },
+    {
+      id: 'brod-49',
+      title: "Захтјев за накнадни упис у МКВ",
+      url: "https://opstina-brod.net/wp-content/uploads/2023/04/Zahtjev-za-naknadni-upis-u-MKV.pdf",
+      category: "Matični uredi",
+    },
+    {
+      id: 'brod-50',
+      title: "Захтјев за накнадни упис у МКВ - латиница",
+      url: "https://opstina-brod.net/wp-content/uploads/2023/04/Zahtjev-za-naknadni-upis-u-MKV-latinica.pdf",
+      category: "Matični uredi",
+    },
+    {
+      id: 'brod-51',
+      title: "Захтјев за накнадни упис у МКУ",
+      url: "https://opstina-brod.net/wp-content/uploads/2024/08/Zahtjev-za-naknadni-upis-u-MKU.pdf",
+      category: "Matični uredi",
+    },
+    {
+      id: 'brod-52',
+      title: "Захтјев за накнадни упис у МКУ - латиница",
+      url: "https://opstina-brod.net/wp-content/uploads/2024/08/Zahtjev-za-naknadni-upis-u-MKU-latinica.pdf",
+      category: "Matični uredi",
+    },
+    {
+      id: 'brod-53',
+      title: "Захтјев за накнадни упис у МКР",
+      url: "https://opstina-brod.net/wp-content/uploads/2023/04/Zahtjev-za-naknadni-upis-u-MKR.pdf",
+      category: "Matični uredi",
+    },
+    {
+      id: 'brod-54',
+      title: "Захтјев за накнадни упис у МКР - латиница",
+      url: "https://opstina-brod.net/wp-content/uploads/2023/04/Zahtjev-za-naknadni-upis-u-MKR-latinica.pdf",
+      category: "Matični uredi",
+    },
+    {
+      id: 'brod-55',
+      title: "Захтјев за издавање овјерених преписа из архиве",
+      url: "https://opstina-brod.net/wp-content/uploads/2023/04/Zahtjev-za-izdavanje-ovjerenih-prepisa-iz-arhive.pdf",
+      category: "Matični uredi",
+    },
+    {
+      id: 'brod-56',
+      title: "Захтјев за издавање овјерених преписа из архиве - латиница",
+      url: "https://opstina-brod.net/wp-content/uploads/2023/04/Zahtjev-za-izdavanje-ovjerenih-prepisa-iz-arhive-latinica.pdf",
+      category: "Matični uredi",
+    },
+    {
+      id: 'brod-57',
+      title: "Захтјев за исправку података у МК",
+      url: "https://opstina-brod.net/wp-content/uploads/2023/04/Zahtjev-za-ispravku-podataka-u-MK.pdf",
+      category: "Matični uredi",
+    },
+    {
+      id: 'brod-58',
+      title: "Захтјев за исправку података у МК - латиница",
+      url: "https://opstina-brod.net/wp-content/uploads/2023/04/Zahtjev-za-ispravku-podataka-u-MK-latinica.pdf",
+      category: "Matični uredi",
+    },
+    {
+      id: 'brod-59',
+      title: "Захтјев за стицање држављанства по члану 38. и 39. Закона",
+      url: "https://opstina-brod.net/wp-content/uploads/2023/04/Zahtjev-za-sticanje-drzavljanstva-po-clanu-38.-i-39-.Zakona.pdf",
+      category: "Državljanstvo",
+    },
+    {
+      id: 'brod-60',
+      title: "Захтјев за стицање држављанства и издавање гаранције",
+      url: "https://opstina-brod.net/wp-content/uploads/2023/04/Zahtjev-za-sticanje-drzavljanstva-i-izdavanje-garancije.pdf",
+      category: "Državljanstvo",
+    },
+    {
+      id: 'brod-61',
+      title: "Захтјев за стицање држављанства двојног - Србија",
+      url: "https://opstina-brod.net/wp-content/uploads/2023/04/Zahtjev-za-sticanje-drzavljanstva-dvojnog-Srbija.pdf",
+      category: "Državljanstvo",
+    },
+    {
+      id: 'brod-62',
+      title: "Захтјев за стицање држављанства двојног - Хрватска",
+      url: "https://opstina-brod.net/wp-content/uploads/2023/04/Zahtjev-za-sticanje-drzavljanstva-dvojnog-Hrvatska.pdf",
+      category: "Državljanstvo",
+    },
+    {
+      id: 'brod-63',
+      title: "Захтјев за накнадни упис држављанства - поријекло",
+      url: "https://opstina-brod.net/wp-content/uploads/2023/04/zahtjev-za-naknadni-upis-drzavljanstva-porijeklo.pdf",
+      category: "Državljanstvo",
+    },
+    {
+      id: 'brod-64',
+      title: "Износ комуналне накнаде за пословне и помоћне просторе",
+      url: "https://opstina-brod.net/wp-content/uploads/2024/05/Iznos-komunalne-naknade-za-poslovne-i-pomocne-prostore.pdf",
+      category: "Urbanizam i prostorno uređenje",
+    },
+    {
+      id: 'brod-65',
+      title: "Студија утицаја енергетског сиромаштва на жене у Босни и Херцеговини",
+      url: "https://opstina-brod.net/wp-content/uploads/2026/05/Studija_siromastva_zene_-BiH_web-objava.pdf",
+      category: "Urbanizam i prostorno uređenje",
+    },
+    {
+      id: 'brod-66',
+      title: "Листа физичких и правних лица за вршење техничког прегледа објеката на подручју општине Брод",
+      url: "https://opstina-brod.net/wp-content/uploads/2026/10/%D0%9B%D0%98%D0%A1%D0%A2%D0%90-%D0%9F%D0%A0%D0%90%D0%92.%D0%98-%D0%A4%D0%98%D0%97.-%D0%9B%D0%98%D0%A6%D0%90-%D0%97%D0%90-%D0%A2%D0%95%D0%A5.%D0%9F%D0%A0.pdf",
+      category: "Urbanizam i prostorno uređenje",
+    },
+    {
+      id: 'brod-67',
+      title: "Поступак регистрације предузећа са таксама и накнадама",
+      url: "https://opstina-brod.net/wp-content/uploads/2025/05/%D0%9F%D0%BE%D1%81%D1%82%D1%83%D0%BF%D0%B0%D0%BA-%D1%80%D0%B5%D0%B3%D0%B8%D1%81%D1%82%D1%80%D0%B0%D1%86%D0%B8%D1%98%D0%B5-%D0%BF%D1%80%D0%B5%D0%B4%D1%83%D0%B7%D0%B5%D1%9B%D0%B0-2025.pdf",
+      category: "Privreda i preduzetništvo",
+    },
+    {
+      id: 'brod-68',
+      title: "Поступак регистрације предузетника",
+      url: "https://opstina-brod.net/wp-content/uploads/2026/06/%D0%9F%D0%BE%D1%81%D1%82%D1%83%D0%BF%D0%B0%D0%BA-%D1%80%D0%B5%D0%B3%D0%B8%D1%81%D1%82%D1%80%D0%B0%D1%86%D0%B8%D1%98%D0%B5-%D0%BF%D1%80%D0%B5%D0%B4%D1%83%D0%B7%D0%B5%D1%82%D0%BD%D0%B8%D0%BA%D0%B0-2026.doc",
+      category: "Privreda i preduzetništvo",
+    },
+  ],
+} as const;
+
+export const brodForms: MunicipalityForm[] = brodDocuments.documents.map((document) => {
+  const path = new URL(document.url).pathname.toLowerCase();
+  const extension = path.slice(path.lastIndexOf('.') + 1);
+  const fileType: MunicipalityForm['fileType'] = extension === 'pdf' || extension === 'docx' || extension === 'doc'
+    ? extension
+    : undefined;
+
+  return {
+    id: document.id,
+    name: document.title,
+    pdfUrl: document.url,
+    category: document.category,
+    external: true,
+    fileType,
+    sourceUrl: brodDocuments.formsSourceUrl,
+  };
+});

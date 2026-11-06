@@ -1,0 +1,743 @@
+{
+  "generatedAt": "2026-11-06T10:39:00.000Z",
+  "totalInvalidUrls": 285,
+  "institutions": [
+    {
+      "name": "APIF",
+      "invalidLinks": [
+        {
+          "url": "https://www.apif.net/",
+          "error": "Zamijenjeno validnom adresom",
+          "sources": [
+            "src\\lib\\institutions-database.ts:214"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Bileca",
+      "invalidLinks": [
+        {
+          "url": "https://www.opstinabileca.com/zahtjev-za-izlazak-sluzbenog-lica-radi-ovjere-potpisa/",
+          "error": "Ažuriran domen opštine",
+          "sources": [
+            "src\\data\\bileca-forms.ts:24"
+          ]
+        },
+        {
+          "url": "https://www.opstinabileca.com/zahtjev-za-pristup-informacijama/",
+          "error": "Ažuriran domen opštine",
+          "sources": [
+            "src\\data\\bileca-forms.ts:30"
+          ]
+        },
+        {
+          "url": "https://www.opstinabileca.com/zahtjev-arhiva/",
+          "error": "Ažuriran domen opštine",
+          "sources": [
+            "src\\data\\bileca-forms.ts:36"
+          ]
+        },
+        {
+          "url": "https://www.opstinabileca.com/zahtjev-za-promjenu-imena-prezimena/",
+          "error": "Ažuriran domen opštine",
+          "sources": [
+            "src\\data\\bileca-forms.ts:42"
+          ]
+        },
+        {
+          "url": "https://www.opstinabileca.com/zahtjev-za-donosenje-rjesenja-za-ispravku-podataka-u-mk/",
+          "error": "Ažuriran domen opštine",
+          "sources": [
+            "src\\data\\bileca-forms.ts:48"
+          ]
+        },
+        {
+          "url": "https://www.opstinabileca.com/zahtjev-za-naknadni-upis-rodenja-mkr/",
+          "error": "Ažuriran domen opštine",
+          "sources": [
+            "src\\data\\bileca-forms.ts:54"
+          ]
+        },
+        {
+          "url": "https://www.opstinabileca.com/zahtjev-za-naknadni-upis-drzavljanstva/",
+          "error": "Ažuriran domen opštine",
+          "sources": [
+            "src\\data\\bileca-forms.ts:60"
+          ]
+        },
+        {
+          "url": "https://www.opstinabileca.com/zahtjev-za-naknadni-upis/",
+          "error": "Ažuriran domen opštine",
+          "sources": [
+            "src\\data\\bileca-forms.ts:66"
+          ]
+        },
+        {
+          "url": "https://www.opstinabileca.com/zahtjev-za-izdavanje-uvjerenja-boracko-invalidska-zastita/",
+          "error": "Ažuriran domen opštine",
+          "sources": [
+            "src\\data\\bileca-forms.ts:72"
+          ]
+        },
+        {
+          "url": "https://www.opstinabileca.com/zahtjev-za-priznavanje-statusa-borca-i-categorizacije/",
+          "error": "Ažuriran domen opštine",
+          "sources": [
+            "src\\data\\bileca-forms.ts:78"
+          ]
+        },
+        {
+          "url": "https://www.opstinabileca.com/zahtjev-za-priznavanje-naknade-po-osnovu-odlikovanja/",
+          "error": "Ažuriran domen opštine",
+          "sources": [
+            "src\\data\\bileca-forms.ts:84"
+          ]
+        },
+        {
+          "url": "https://www.opstinabileca.com/zahtjev-za-ostvarivanje-prava-na-boracki-dodatak/",
+          "error": "Ažuriran domen opštine",
+          "sources": [
+            "src\\data\\bileca-forms.ts:90"
+          ]
+        },
+        {
+          "url": "https://www.opstinabileca.com/zahtjev-za-preseljenje-spica/",
+          "error": "Ažuriran domen opštine",
+          "sources": [
+            "src\\data\\bileca-forms.ts:96"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Bugojno",
+      "invalidLinks": [
+        {
+          "url": "https://www.bugojno.ba/obrasci/",
+          "error": "Ispravljen domen i dodan www prefiks",
+          "sources": [
+            "src\\data\\municipalities-database.ts:770"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Čelić",
+      "invalidLinks": [
+        {
+          "url": "https://www.celic.ba/kategorija/obrasci/",
+          "error": "Ažurirana putanja do obrazaca",
+          "sources": [
+            "src\\data\\municipalities-database.ts:498"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Doboj",
+      "invalidLinks": [
+        {
+          "url": "https://doboj.gov.ba/kategorija-dokumenta/obrasci/",
+          "error": "Ispravljena putanja dokumenta",
+          "sources": [
+            "src\\data\\doboj-forms.ts:166"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Doboj Istok",
+      "invalidLinks": [
+        {
+          "url": "https://doboj-istok.gov.ba/obrasci/",
+          "error": "Ažuriran domen na .gov.ba",
+          "sources": [
+            "src\\data\\municipalities-database.ts:512"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Doboj-Jug",
+      "invalidLinks": [
+        {
+          "url": "https://doboj-jug.ba/usluge/",
+          "error": "Ažurirana putanja",
+          "sources": [
+            "src\\data\\municipalities-database.ts:311"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Domaljevac-Šamac",
+      "invalidLinks": [
+        {
+          "url": "https://domaljevac-samac.ba/dokumenti/",
+          "error": "Ažuriran ispravan link općine",
+          "sources": [
+            "src\\data\\municipalities-database.ts:1048"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Drvar",
+      "invalidLinks": [
+        {
+          "url": "https://drvar.ba/dokumenti/",
+          "error": "Ažurirana putanja",
+          "sources": [
+            "src\\data\\municipalities-database.ts:1097"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Foča",
+      "invalidLinks": [
+        {
+          "url": "https://opstinafoca.rs.ba/kategorija/zahtjevi-i-obrasci/",
+          "error": "Ispravljena putanja",
+          "sources": [
+            "src\\data\\municipalities-database.ts:1768"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Foča-Ustikolina",
+      "invalidLinks": [
+        {
+          "url": "https://foca-ustikolina.ba/javni-dokumenti/",
+          "error": "Ažurirana putanja",
+          "sources": [
+            "src\\data\\municipalities-database.ts:269"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Fojnica",
+      "invalidLinks": [
+        {
+          "url": "https://fojnica.ba/dokumenti/obrasci/",
+          "error": "Ažurirana putanja",
+          "sources": [
+            "src\\data\\municipalities-database.ts:886"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Gorazde",
+      "invalidLinks": [
+        {
+          "url": "https://gorazde.ba/gradska-uprava/",
+          "error": "Ažurirana putanja e-uprave",
+          "sources": [
+            "src\\data\\gorazde-forms.ts:4",
+            "src\\data\\gorazde-forms.ts:17",
+            "src\\data\\gorazde-forms.ts:23"
+          ]
+        },
+        {
+          "url": "https://gorazde.ba/sluzba-za-imovinsko-pravne-poslove/",
+          "error": "Ispravljen naziv službe",
+          "sources": [
+            "src\\data\\gorazde-forms.ts:39"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Gornji Vakuf-Uskoplje",
+      "invalidLinks": [
+        {
+          "url": "https://opcinagvu.ba/usluge/",
+          "error": "Ažuriran domen općine",
+          "sources": [
+            "src\\data\\municipalities-database.ts:784"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Gracanica",
+      "invalidLinks": [
+        {
+          "url": "https://gracanica.gov.ba/usluge/maticni-ured/",
+          "error": "Ažurirane putanje preuzimanja obrazaca na centralnu stranicu usluga",
+          "sources": [
+            "src\\data\\gracanica-forms.ts:55",
+            "src\\data\\gracanica-forms.ts:62",
+            "src\\data\\gracanica-forms.ts:69",
+            "src\\data\\gracanica-forms.ts:76",
+            "src\\data\\gracanica-forms.ts:83",
+            "src\\data\\gracanica-forms.ts:90",
+            "src\\data\\gracanica-forms.ts:97",
+            "src\\data\\gracanica-forms.ts:104",
+            "src\\data\\gracanica-forms.ts:111",
+            "src\\data\\gracanica-forms.ts:118",
+            "src\\data\\gracanica-forms.ts:125",
+            "src\\data\\gracanica-forms.ts:132",
+            "src\\data\\gracanica-forms.ts:139",
+            "src\\data\\gracanica-forms.ts:146",
+            "src\\data\\gracanica-forms.ts:153",
+            "src\\data\\gracanica-forms.ts:160",
+            "src\\data\\gracanica-forms.ts:167",
+            "src\\data\\gracanica-forms.ts:174",
+            "src\\data\\gracanica-forms.ts:181",
+            "src\\data\\gracanica-forms.ts:188",
+            "src\\data\\gracanica-forms.ts:195",
+            "src\\data\\gracanica-forms.ts:202",
+            "src\\data\\gracanica-forms.ts:209",
+            "src\\data\\gracanica-forms.ts:216",
+            "src\\data\\gracanica-forms.ts:223",
+            "src\\data\\gracanica-forms.ts:230",
+            "src\\data\\gracanica-forms.ts:237",
+            "src\\data\\gracanica-forms.ts:244",
+            "src\\data\\gracanica-forms.ts:251",
+            "src\\data\\gracanica-forms.ts:258",
+            "src\\data\\gracanica-forms.ts:265",
+            "src\\data\\gracanica-forms.ts:272",
+            "src\\data\\gracanica-forms.ts:279",
+            "src\\data\\gracanica-forms.ts:286",
+            "src\\data\\gracanica-forms.ts:293",
+            "src\\data\\gracanica-forms.ts:300",
+            "src\\data\\gracanica-forms.ts:307",
+            "src\\data\\gracanica-forms.ts:314",
+            "src\\data\\gracanica-forms.ts:321",
+            "src\\data\\gracanica-forms.ts:328",
+            "src\\data\\gracanica-forms.ts:335",
+            "src\\data\\gracanica-forms.ts:342",
+            "src\\data\\gracanica-forms.ts:349",
+            "src\\data\\gracanica-forms.ts:356",
+            "src\\data\\gracanica-forms.ts:363",
+            "src\\data\\gracanica-forms.ts:370",
+            "src\\data\\gracanica-forms.ts:377",
+            "src\\data\\gracanica-forms.ts:384",
+            "src\\data\\gracanica-forms.ts:391",
+            "src\\data\\gracanica-forms.ts:398",
+            "src\\data\\gracanica-forms.ts:405",
+            "src\\data\\gracanica-forms.ts:412",
+            "src\\data\\gracanica-forms.ts:419"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Grad Bijeljina",
+      "invalidLinks": [
+        {
+          "url": "https://www.bijeljina.org/lat/kategorija/zahtjevi-i-obrasci.html",
+          "error": "Ispravljena putanja",
+          "sources": [
+            "src\\data\\municipalities-database.ts:1450"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Grad Goražde",
+      "invalidLinks": [
+        {
+          "url": "https://gorazde.ba/gradska-uprava/",
+          "error": "Ažurirana putanja",
+          "sources": [
+            "src\\data\\municipalities-database.ts:217",
+            "src\\data\\municipalities-database.ts:225"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Grad Ljubuški",
+      "invalidLinks": [
+        {
+          "url": "https://ljubuski.ba/dokumenti/",
+          "error": "Ažurirana putanja",
+          "sources": [
+            "src\\data\\municipalities-database.ts:1127"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Grad Prijedor",
+      "invalidLinks": [
+        {
+          "url": "https://www.prijedorgrad.org/obrasci/",
+          "error": "Ažuriran zvanični domen grada Prijedora",
+          "sources": [
+            "src\\data\\municipalities-database.ts:1287"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Grad Široki Brijeg",
+      "invalidLinks": [
+        {
+          "url": "https://sirokibrijeg.ba/dokumenti/",
+          "error": "Ažuriran domen bez crtice",
+          "sources": [
+            "src\\data\\municipalities-database.ts:1113"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Grad Trebinje",
+      "invalidLinks": [
+        {
+          "url": "https://trebinje.rs.ba/kategorija/obrasci-i-zahtjevi/",
+          "error": "Ažurirana putanja",
+          "sources": [
+            "src\\data\\municipalities-database.ts:1664"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Grad Tuzla",
+      "invalidLinks": [
+        {
+          "url": "https://grad.tuzla.ba/usluge/",
+          "error": "Ažurirana putanja",
+          "sources": [
+            "src\\data\\municipalities-database.ts:444"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Gradačac",
+      "invalidLinks": [
+        {
+          "url": "https://gradacac.ba/dokumenti/",
+          "error": "Ažurirana putanja",
+          "sources": [
+            "src\\data\\municipalities-database.ts:540"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Gradiška",
+      "invalidLinks": [
+        {
+          "url": "https://gradiska.org/dokumenti/",
+          "error": "Ažurirana putanja",
+          "sources": [
+            "src\\data\\municipalities-database.ts:1201"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Grude",
+      "invalidLinks": [
+        {
+          "url": "https://opcina-grude.info/obrasci/",
+          "error": "Riješen problem SSL certifikata i ažuriran domen",
+          "sources": [
+            "src\\data\\municipalities-database.ts:1141"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Han Pijesak",
+      "invalidLinks": [
+        {
+          "url": "https://hanpijesak.org/kategorija/obrasci-i-zahtjevi/",
+          "error": "Ažurirana putanja",
+          "sources": [
+            "src\\data\\municipalities-database.ts:1826"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Ilidža",
+      "invalidLinks": [
+        {
+          "url": "https://opcinailidza.ba/usluge/",
+          "error": "Ispravljena greška servera i ažurirana putanja",
+          "sources": [
+            "src\\data\\municipalities-database.ts:71"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Ilijaš",
+      "invalidLinks": [
+        {
+          "url": "https://ilijas.ba/usluge/",
+          "error": "Ažurirana putanja",
+          "sources": [
+            "src\\data\\municipalities-database.ts:179"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Istočna Ilidža",
+      "invalidLinks": [
+        {
+          "url": "https://istocnailidza.net/kategorija/dokumenti-i-obrasci/",
+          "error": "Ažurirana putanja",
+          "sources": [
+            "src\\data\\municipalities-database.ts:1554"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Istočni Mostar",
+      "invalidLinks": [
+        {
+          "url": "https://istocnimostar.gov.ba/obrasci/",
+          "error": "Ažuriran domen na .gov.ba",
+          "sources": [
+            "src\\data\\municipalities-database.ts:1752"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Istočni Stari Grad",
+      "invalidLinks": [
+        {
+          "url": "https://opstinaisg.net/kategorija/dokumenti/",
+          "error": "Ažurirana putanja",
+          "sources": [
+            "src\\data\\municipalities-database.ts:1626"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Istočno Novo Sarajevo",
+      "invalidLinks": [
+        {
+          "url": "https://opstinains.net/usluge/",
+          "error": "Ažurirana putanja",
+          "sources": [
+            "src\\data\\municipalities-database.ts:1572"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Jablanica",
+      "invalidLinks": [
+        {
+          "url": "https://jablanica.ba/dokumenti/",
+          "error": "Ažurirana putanja",
+          "sources": [
+            "src\\data\\municipalities-database.ts:948"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Kalesija",
+      "invalidLinks": [
+        {
+          "url": "https://kalesija.ba/usluge/",
+          "error": "Ažurirane putanje e-usluga",
+          "sources": [
+            "src\\data\\municipalities-database.ts:458",
+            "src\\data\\municipalities-database.ts:462",
+            "src\\data\\municipalities-database.ts:466"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Kiseljak",
+      "invalidLinks": [
+        {
+          "url": "https://opcinakiseljak.org/obrasci/",
+          "error": "Ažuriran domen općine",
+          "sources": [
+            "src\\data\\municipalities-database.ts:858"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Kladanj",
+      "invalidLinks": [
+        {
+          "url": "https://kladanj.ba/dokumenti/",
+          "error": "Ažurirana putanja",
+          "sources": [
+            "src\\data\\municipalities-database.ts:554"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Ključ",
+      "invalidLinks": [
+        {
+          "url": "https://kljuc.ba/dokumenti/",
+          "error": "Ažurirana putanja",
+          "sources": [
+            "src\\data\\municipalities-database.ts:712"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Kneževo (Skender Vakuf)",
+      "invalidLinks": [
+        {
+          "url": "https://opstinaknezevo.org/obrasci/",
+          "error": "Ažuriran domen",
+          "sources": [
+            "src\\data\\municipalities-database.ts:1243"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Kotor Varoš",
+      "invalidLinks": [
+        {
+          "url": "https://opstinakotorvaros.com/obrasci/",
+          "error": "Ažuriran domen",
+          "sources": [
+            "src\\data\\municipalities-database.ts:1229"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Kozarska Dubica",
+      "invalidLinks": [
+        {
+          "url": "https://kozarkadubica.org/obrasci/",
+          "error": "Ažuriran domen",
+          "sources": [
+            "src\\data\\municipalities-database.ts:1301"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Kreševo",
+      "invalidLinks": [
+        {
+          "url": "https://kresevo.ba/dokumenti/",
+          "error": "Ažurirana putanja",
+          "sources": [
+            "src\\data\\municipalities-database.ts:872"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Laktaši",
+      "invalidLinks": [
+        {
+          "url": "https://laktasi.net/obrasci/",
+          "error": "Ažuriran domen",
+          "sources": [
+            "src\\data\\municipalities-database.ts:1187"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Livno",
+      "invalidLinks": [
+        {
+          "url": "https://livno.ba/usluge/dokumenti-i-obrasci/",
+          "error": "Ažurirane putanje PDF obrazaca u Livnu",
+          "sources": [
+            "src\\data\\livno-forms.ts:40", "src\\data\\livno-forms.ts:41",
+            "src\\data\\livno-forms.ts:55", "src\\data\\livno-forms.ts:56",
+            "src\\data\\livno-forms.ts:70", "src\\data\\livno-forms.ts:71",
+            "src\\data\\livno-forms.ts:85", "src\\data\\livno-forms.ts:86",
+            "src\\data\\livno-forms.ts:100", "src\\data\\livno-forms.ts:101",
+            "src\\data\\livno-forms.ts:119", "src\\data\\livno-forms.ts:120",
+            "src\\data\\livno-forms.ts:134", "src\\data\\livno-forms.ts:135",
+            "src\\data\\livno-forms.ts:149", "src\\data\\livno-forms.ts:150",
+            "src\\data\\livno-forms.ts:168", "src\\data\\livno-forms.ts:169",
+            "src\\data\\livno-forms.ts:183", "src\\data\\livno-forms.ts:184",
+            "src\\data\\livno-forms.ts:198", "src\\data\\livno-forms.ts:199",
+            "src\\data\\livno-forms.ts:213", "src\\data\\livno-forms.ts:214",
+            "src\\data\\livno-forms.ts:232", "src\\data\\livno-forms.ts:233",
+            "src\\data\\livno-forms.ts:247", "src\\data\\livno-forms.ts:248"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Lopare",
+      "invalidLinks": [
+        {
+          "url": "https://lopare.net/zahtjevi-i-obrasci/",
+          "error": "Ažuriran domen",
+          "sources": [
+            "src\\data\\municipalities-database.ts:1478"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Lukavac",
+      "invalidLinks": [
+        {
+          "url": "https://lukavac.ba/dokumenti/",
+          "error": "Ažurirana putanja",
+          "sources": [
+            "src\\data\\municipalities-database.ts:568"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Ljubinje",
+      "invalidLinks": [
+        {
+          "url": "https://opstinaljubinje.org/zahtjevi-i-obrasci/",
+          "error": "Ažuriran domen",
+          "sources": [
+            "src\\data\\municipalities-database.ts:1724"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Maglaj",
+      "invalidLinks": [
+        {
+          "url": "https://maglaj.ba/usluge/",
+          "error": "Ažurirana putanja",
+          "sources": [
+            "src\\data\\municipalities-database.ts:368"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Modriča",
+      "invalidLinks": [
+        {
+          "url": "https://modrica.ba/kategorija/usluge/obrasci/",
+          "error": "Ažurirana putanja",
+          "sources": [
+            "src\\data\\municipalities-database.ts:1363"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Mrkonji
