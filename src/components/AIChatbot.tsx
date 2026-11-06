@@ -362,7 +362,7 @@ const AIChatbot: React.FC = () => {
             onChange={e => setInputValue(e.target.value)}
             onKeyDown={handleKeyPress}
             placeholder={getInputPlaceholder(language)}
-            className="flex-1 border border-gray-300 rounded-full px-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+            className="flex-1 border border-gray-300 rounded-full px-4 py-2 text-sm text-gray-900 bg-white placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
             disabled={isTyping}
           />
           <button
@@ -376,11 +376,11 @@ const AIChatbot: React.FC = () => {
         <div className="flex justify-between items-center mt-2 px-1">
           <button
             onClick={resetChat}
-            className="text-[10px] text-gray-400 hover:text-gray-600 transition-colors"
+            className="text-[10px] text-gray-500 hover:text-gray-700 transition-colors"
           >
             {getResetLabel(language)}
           </button>
-          <span className="text-[10px] text-gray-300">BH PapirFinder AI</span>
+          <span className="text-[10px] text-gray-700 font-medium">BH PapirFinder AI</span>
         </div>
       </div>
     </div>

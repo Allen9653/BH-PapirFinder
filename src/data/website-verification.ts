@@ -295,8 +295,8 @@ export const websiteVerification: Record<string, WebsiteCheck> = {
   "verified": true,
   "source": "public.institucije.official_url"
  },
- "zivinice": {
-  "url": "https://gradzivinice.ba",
+"zivinice": {
+  "url": "https://gradzivinice.ba/e-maticar/",
   "check": "ok",
   "verified": true,
   "source": "statički imenik (uploads)"

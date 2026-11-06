@@ -1,30 +1,7 @@
-import { useMemo, useState } from 'react';
-import { Link, useNavigate, useParams } from 'react-router-dom';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import InstitutionAutocomplete from '@/components/InstitutionAutocomplete';
-import { Card, CardContent } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
-import { Badge } from '@/components/ui/badge';
-import { Input } from '@/components/ui/input';
-import { toast } from 'sonner';
-import {
-  ExternalLink, Eye, Download, Share2, Pencil, Printer, Languages, FileText, ShieldCheck, AlertTriangle, Building2, Tag, Save,
-} from 'lucide-react';
-import {
-  getDirectoryEntry,
-  hasNoListedMunicipalityDocuments,
-  DirectoryForm,
-  safeHttpsUrl,
-} from '@/lib/institution-directory';
-import { useDirectoryVersion } from '@/hooks/use-directory-version';
-import { useLanguage } from '@/contexts/LanguageContext';
-import TagNavigation, { matchesTagFilter } from '@/components/TagNavigation';
-import { saveDocumentLocally } from '@/lib/saved-documents';
+import DocumentViewer from '@/components/DocumentViewer';
 import OfficialDocumentPreview from '@/components/OfficialDocumentPreview';
-import MunicipalityEmailRequest from '@/components/MunicipalityEmailRequest';
-import { getMunicipalityContactEmail } from '@/data/municipality-contact-emails';
-
 const STATUS_STYLE: Record<string, string> = {
   active: 'bg-emerald-100 text-emerald-800',
   counter: 'bg-amber-100 text-amber-800',
@@ -322,15 +299,14 @@ const InstitutionPage = () => {
           </>
         )}
       </main>
-      {previewForm?.url && (
-        <OfficialDocumentPreview
+{previewForm?.url && (
+        <DocumentViewer
           open={!!previewForm}
           onOpenChange={(open) => {
             if (!open) setPreviewForm(null);
           }}
+          documentUrl={previewForm.url}
           title={previewForm.name}
-          url={previewForm.url}
-          fileType={previewForm.fileType}
           category={previewForm.category}
           municipality={institution?.name}
         />

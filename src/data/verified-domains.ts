@@ -423,18 +423,18 @@ export const verifiedDomains: VerifiedMunicipality[] = [
     status: 'active',
     secure: true,
     physical_presence_required: false,
-  },
-  {
+},
+{
     municipality_name: 'Grad Živinice',
     canton: 'Tuzlanski kanton (TK)',
     entity: 'FBiH',
     official_domain: 'gradzivinice.ba',
-    forms_url: 'https://gradzivinice.ba/obrasci-salter-sale/',
-    document_categories: ['Obrasci šalter sale', 'Matični uredi', 'Uvjerenja', 'Urbanizam'],
+    forms_url: 'https://gradzivinice.ba/e-maticar/',
+    document_categories: ['Matični uredi', 'Uvjerenja', 'Online podnošenje', 'Arhiva', 'Građevinsko zemljište', 'Javne nabave', 'Pristup informacijama'],
     status: 'active',
     secure: true,
     physical_presence_required: false,
-    komentar: 'Obrasci šalter sale — formulari za građane dostupni online',
+    komentar: 'Službeni portal Grada Živinice za e-matičar i online podnošenje zahtjeva. Dostupni obrasci za uvjerenja, izdavanje dokumentacije iz arhive, ovjera izvjava, pristup informacijama i građevinsko zemljište.',
   },
 
   // ============================================================

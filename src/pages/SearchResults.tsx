@@ -33,6 +33,8 @@ import {
   Filter,
   Printer,
   Download,
+  Save,
+  Eye,
   Radar,
   Sparkles,
   ChevronRight,
@@ -48,11 +50,10 @@ import {
 } from 'lucide-react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import DocumentViewer from '@/components/DocumentViewer';
 import UniversalBackButton from '@/components/UniversalBackButton';
-import PrintPreviewModal from '@/components/PrintPreviewModal';
-import { safeOpenExternal } from '@/lib/security';
-import { saveRecentSearch } from '@/lib/recent-searches';
-import { searchMunicipalities, UnifiedSearchResult } from '@/lib/municipalities-database-enhanced';
+import Breadcrumbs from '@/components/Breadcrumbs';
+import TagNavigation, { UNIVERSAL_TAGS } from '@/components/TagNavigation';
 import { hasAccess, recordSearch } from '@/lib/trial';
 import { getUserAccessLevel, getSubscriptionMessage } from '@/lib/access-control';
 import { SortOption } from '@/lib/supabaseClient';
@@ -63,17 +64,18 @@ import {
   MunicipalityInfo,
   getFormDateAdded,
 } from '@/data/municipality-registry';
-import DomainDetector from '@/components/DomainDetector';
-import RecentSearches from '@/components/RecentSearches';
-import Breadcrumbs from '@/components/Breadcrumbs';
+import { searchMunicipalities } from '@/data/municipalities-database';
+import { saveDocumentLocally, type LocalSavedDocument } from '@/lib/saved-documents';
 import {
   getRecentSearches,
+  saveRecentSearch,
   removeRecentSearch,
   clearRecentSearches,
   RECENT_SEARCHES_EVENT,
+  MAX_RECENT_SEARCHES,
 } from '@/lib/recent-searches';
-import TagNavigation, { matchesTagFilter, UNIVERSAL_TAGS } from '@/components/TagNavigation';
-
+import { toast } from 'sonner';
+import RecentSearches from '@/components/RecentSearches';
 type FormMatch = { municipality: MunicipalityInfo; form: MunicipalityForm };
 
 function normalizeFormName(name: string): string {
@@ -989,7 +991,7 @@ const SearchResults = () => {
                                     </span>
                                     {form.sizeKB && (
                                       <span className="text-[10px] text-slate-400 font-mono">
-                                        {form.sizeKB} KB PDF
+{form.sizeKB} KB PDF
                                       </span>
                                     )}
                                   </div>
@@ -998,38 +1000,59 @@ const SearchResults = () => {
                                     className="text-sm sm:text-base font-semibold text-white group-hover:text-[#5df0a8] transition-colors cursor-pointer"
                                   >
                                     {form.name}
-                                  </h4>
-                                </div>
+</h4>
 
-                                <div className="flex items-center gap-2 shrink-0">
-                                  <Button
-                                    size="sm"
-                                    variant="ghost"
-                                    className="h-8 px-2.5 text-xs text-slate-300 hover:text-[#5df0a8] hover:bg-white/5"
-                                    onClick={() => setPreviewForm({ municipality, form })}
-                                    title="Print Preview na papiru"
-                                  >
-                                    <Printer className="h-3.5 w-3.5 mr-1" />
-                                    <span className="hidden sm:inline">Print Preview</span>
-                                  </Button>
+                                  <div className="flex items-center gap-2 shrink-0">
+                                    <Button
+                                      size="sm"
+                                      variant="ghost"
+                                      className="h-8 px-2.5 text-xs text-slate-300 hover:text-[#5df0a8] hover:bg-white/5"
+                                      onClick={() => setPreviewForm({ municipality, form })}
+                                      title="Print Preview na papiru"
+                                    >
+                                      <Printer className="h-3.5 w-3.5 mr-1" />
+                                      <span className="hidden sm:inline">Print Preview</span>
+                                    </Button>
 
-                                  <Button
-                                    size="sm"
-                                    variant="outline"
-                                    className="h-8 px-3 text-xs border-white/10 bg-white/5 text-slate-200 hover:bg-white/10"
-                                    onClick={() => navigate(`/form/${form.id}`)}
-                                  >
-                                    Detalji
-                                  </Button>
+                                    <Button
+                                      size="sm"
+                                      variant="ghost"
+                                      className="h-8 px-2.5 text-xs text-slate-300 hover:text-[#00A651] hover:bg-white/5"
+                                      onClick={() => {
+                                        const saved = saveDocumentLocally({
+                                          id: form.id,
+                                          name: form.name,
+                                          municipality: municipality.name,
+                                          category: form.category,
+                                          file_url: form.url!,
+                                          notes: `Saved from search results`,
+                                        });
+                                        toast.success(saved ? 'Sačuvano u arhivu' : 'Već je u arhivi');
+                                      }}
+                                      title="Sačuvaj u arhivu"
+                                    >
+                                      <Save className="h-3.5 w-3.5 mr-1" />
+                                      <span className="hidden sm:inline">Sačuvaj</span>
+                                    </Button>
 
-                                  <Button
-                                    size="sm"
-                                    className="h-8 px-3.5 text-xs bg-[#5df0a8] hover:bg-[#4be096] text-[#04060f] font-bold shadow-[0_0_12px_rgba(93,240,168,0.3)]"
-                                    onClick={() => safeOpenExternal(form.pdfUrl)}
-                                  >
-                                    <Download className="h-3.5 w-3.5 mr-1" />
-                                    Preuzmi
-                                  </Button>
+                                    <Button
+                                      size="sm"
+                                      variant="outline"
+                                      className="h-8 px-3 text-xs border-white/10 bg-white/5 text-slate-200 hover:bg-white/10"
+                                      onClick={() => navigate(`/form/${form.id}`)}
+                                    >
+                                      Detalji
+                                    </Button>
+
+                                    <Button
+                                      size="sm"
+                                      className="h-8 px-3.5 text-xs bg-[#5df0a8] hover:bg-[#4be096] text-[#04060f] font-bold shadow-[0_0_12px_rgba(93,240,168,0.3)]"
+                                      onClick={() => setPreviewForm({ municipality, form })}
+                                    >
+                                      <Eye className="h-3.5 w-3.5 mr-1" />
+                                      Otvori PDF
+                                    </Button>
+                                  </div>
                                 </div>
                               </div>
                             );
@@ -1232,21 +1255,17 @@ const SearchResults = () => {
         )}
       </div>
 
-      {/* Modal za Print Preview obrazaca */}
+{/* Modal za DocumentViewer PDF pregleda */}
       {previewForm && (
-        <PrintPreviewModal
+        <DocumentViewer
           open={!!previewForm}
           onOpenChange={(open) => {
             if (!open) setPreviewForm(null);
           }}
-          formId={previewForm.form.id}
-          displayName={previewForm.form.name}
-          originalName={previewForm.form.name}
+          documentUrl={previewForm.form.pdfUrl}
+          title={previewForm.form.name}
           category={previewForm.form.category}
-          municipalityName={previewForm.municipality.name}
-          cantonShort={previewForm.municipality.cantonShort}
-          sizeKB={previewForm.form.sizeKB}
-          fileUrl={previewForm.form.pdfUrl}
+          municipality={previewForm.municipality.name}
         />
       )}
 
