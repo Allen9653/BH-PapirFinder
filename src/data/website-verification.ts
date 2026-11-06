@@ -514,7 +514,7 @@ export const websiteVerification: Record<string, WebsiteCheck> = {
   "url": "https://www.opstina-novigrad.com",
   "check": "ok",
   "verified": true,
-  "source": "public.institutions.website_url"
+  "source": "public.institutions.website_url — eUprava: https://www.euprava.opstina-novigrad.com"
  },
  "novi-grad-sarajevo": {
   "url": "https://novigradsarajevo.ba",
@@ -845,13 +845,13 @@ export const websiteVerification: Record<string, WebsiteCheck> = {
   "source": "zvanični portal općine"
  },
  "vukosavlje": {
-  "url": "",
+  "url": "https://vukosavlje.gov.ba/ba/",
   "check": "unverified",
   "verified": false,
   "source": "public.institucije.official_url"
  },
  "zapadnohercegovacki-kanton": {
-  "url": "https://www.vladazzh.com",
+  "url": "https://www.vladazzh.gov.ba",
   "check": "ok",
   "verified": true,
   "source": "zvanični registar vlada"

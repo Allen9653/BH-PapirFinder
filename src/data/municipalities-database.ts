@@ -213,6 +213,27 @@ export const municipalitiesDatabase: MunicipalityData[] = [
     komentar: 'Glavni grad - sveobuhvatni obrasci'
   },
 
+  // Vlada Kantona Sarajevo (KS) — kantonalni nivo
+  {
+    id: 'ks-vlada',
+    name: 'Vlada Kantona Sarajevo',
+    canton: 'Kanton Sarajevo (KS)',
+    entity: 'FBiH',
+    urls: [
+      {
+        main: 'https://vlada.ks.gov.ba/',
+        description: 'Službena web-stranica Vlade Kantona Sarajevo'
+      },
+      {
+        main: 'https://mf.ks.gov.ba/preuzimanja/zahtjevi-i-obrasci',
+        forms: 'https://mf.ks.gov.ba/preuzimanja/zahtjevi-i-obrasci',
+        description: 'Zahtjevi i obrasci Ministarstva finansija KS — praćenje realizacije ugovora, unos neplaniranih sredstava i drugi obrasci'
+      }
+    ],
+    categories: ['Ministarstvo finansija', 'Ministarstvo kulture i sporta', 'Ministarstvo privrede', 'Ministarstvo saobraćaja', 'Ministarstvo unutrašnjih poslova', 'Ministarstvo za boračka pitanja', 'Ministarstvo zdravstva', 'Besplatna pravna pomoć', 'Inspekcijski poslovi'],
+    komentar: 'Zahtjevi i obrasci Vlade KS dostupni su preko Ministarstva finansija (mf.ks.gov.ba) i nadležnih ministarstava, te Zavoda za besplatnu pravnu pomoć i Kantonalne uprave za inspekcijske poslove.'
+  },
+
   // BOSANSKO-PODRINJSKI KANTON (BPK GORAŽDE)
   {
     id: 'bpk-gorazde',
@@ -463,7 +484,7 @@ export const municipalitiesDatabase: MunicipalityData[] = [
       },
       {
         main: 'https://www.ecitizen.ba/tuzla/home',
-        forms: 'https://www.ecitizen.ba/tuzla/home',
+        forms: 'https://www.ecitizen.ba/tuzla/eServices',
         description: 'eCitizen – elektronske usluge Grada Tuzla'
       }
     ],
@@ -518,15 +539,20 @@ export const municipalitiesDatabase: MunicipalityData[] = [
     urls: [
       {
         main: 'https://opcinacelic.ba/',
+        forms: 'https://opcinacelic.ba/file/prijavni-obrazac-za-vjerske-zajednice-i-crkve/1117',
         description: 'Službena web-stranica Općine Čelić'
+      },
+      {
+        main: 'https://opcinacelic.ba/file/odluka-o-uslovima-i-nacinu-za-ostvarivanje-prava-na-jednokratnu-novcanu-pomoc-majci-porodilji-novorodenog-djeteta/10',
+        description: 'Odluka o uslovima i načinu za ostvarivanje prava na jednokratnu novčanu pomoć majci porodilji novorođenog djeteta'
       }
     ],
     guidanceLinks: [
-      
-      
+      { label: 'Prijavni obrazac za vjerske zajednice i crkve', url: 'https://opcinacelic.ba/file/prijavni-obrazac-za-vjerske-zajednice-i-crkve/1117' },
+      { label: 'Odluka o jednokratnoj novčanoj pomoći majci porodilji novorođenog djeteta', url: 'https://opcinacelic.ba/file/odluka-o-uslovima-i-nacinu-za-ostvarivanje-prava-na-jednokratnu-novcanu-pomoc-majci-porodilji-novorodenog-djeteta/10' }
     ],
     categories: ['Službeni glasnici', 'Upiti i dostava obrazaca'],
-    komentar: 'Poveznica za obrasce prenesena je iz dostavljenog dokumenta; građani ih mogu zatražiti i direktno u Općini.'
+    komentar: 'Za razliku od pojedinih općina u BiH koje imaju potpuno integrisan sistem e-Matićara za naručivanje i dostavu izvoda na kućnu adresu (poput Općine Centar Sarajevo), web stranica Općine Čelić funkcioniše kao informativni portal i repozitorij dokumenata. Ukoliko trebate izvršiti ove prijave ili dobiti izvode u Općini Čelić, postupak je sljedeći: 1. Lični dolazak: sve prijave i preuzimanje izvoda (rodni list, vjencani list, umrli list) obavljaju se direktno u prostorijama općine. 2. Matični uredi: pored centralnog ureda u Čeliću, općina ima i područne matične urede. Možete ih kontaktirati telefonom za provjeru potrebne dokumentacije prije dolaska: Matični ured Čelić: +387 (0)35 668-680, Matični ured Vrašići: +387 (0)35 668-681, Matični ured Šibošnica: +387 (0)35 668-682, Matični ured Humci: +387 (0)35 668-683.'
   },
   {
     id: 'tk-doboj-istok',
@@ -660,11 +686,11 @@ export const municipalitiesDatabase: MunicipalityData[] = [
     urls: [
       {
         main: 'https://kladanj.ba/',
-        description: 'Službena web-stranica Općine Kladanj'
+        description: 'Službena web-stranica Općine Kladanj — matični ured (rodni/vjenčani/umrli list, uvjerenje o državljanstvu podnosi se lično u Šalter sali ili poštom za dijasporu), poticaji i stipendije u sekciji Zvanična obavještenja i konkursi, finansijski dokumenti građana u sekciji Izvršenje ugovora. Predaja: Šalter sala (prizemlje), Kladanjske brigade br. 2, 75280 Kladanj, uz dokaz o uplati općinske takse.'
       }
     ],
     address: 'Kladanjske brigade br. 2, 75280 Kladanj',
-    categories: ['Matični uredi', 'Poticaji', 'Javni pozivi', 'Urbanizam', 'Privreda', 'Boračko-invalidska zaštita'],
+    categories: ['Matični uredi', 'Poticaji', 'Javni pozivi', 'Urbanizam', 'Privreda', 'Boračko-invalidska zaštita', 'Imovinsko-pravni odnosi'],
     komentar: 'Zahtjevi se predaju u fizičkoj šalter sali. Obrasci za matični ured, poticaje i javne pozive preuzimaju se iz pripadajućih sekcija zvanične stranice. Protokol: Kladanjske brigade br. 2, 75280 Kladanj.'
   },
   {
@@ -707,8 +733,8 @@ export const municipalitiesDatabase: MunicipalityData[] = [
         description: 'Službena web-stranica Općine Srebrenik'
       },
       {
-        forms: 'https://srebrenik.ba/e-uprava/',
-        description: 'e-Uprava i obrasci po nadležnim službama'
+        forms: 'https://www.srebrenik.ba/e-uprava/',
+        description: 'e-Uprava i obrasci po nadležnim službama: prostorno uređenje i zaštita okoliša, civilna zaštita, boračko-invalidska zaštita i društvene djelatnosti, opća uprava i zajednički poslovi, poduzetništvo i lokalni razvoj, finansije i inspekcijski nadzor, geodetski i imovinsko-pravni poslovi, interna revizija'
       }
     ],
     categories: ['Prostorno uređenje', 'Civilna zaštita', 'Boračko-invalidska zaštita', 'Opća uprava', 'Poduzetništvo', 'Finansije', 'Katastar', 'Interna revizija'],
@@ -1124,10 +1150,38 @@ export const municipalitiesDatabase: MunicipalityData[] = [
     canton: 'Hercegovačko-neretvanski kanton (HNK)',
     entity: 'FBiH',
     urls: [
-      
+      {
+        main: 'https://prozor-rama.org/',
+        description: 'Službena web-stranica Općine Prozor-Rama'
+      },
+      {
+        main: 'https://prozor-rama.org/euprava/dokumenti/zahtjevi',
+        forms: 'https://prozor-rama.org/euprava/dokumenti/zahtjevi',
+        description: 'Zahtjevi — eUprava Općine Prozor-Rama'
+      },
+      {
+        main: 'https://prozor-rama.org/files/download/7a824f32f319441',
+        description: 'Zahtjev za upis činjenice sklapanja braka u matičnu knjigu vjenčanih'
+      },
+      {
+        main: 'https://prozor-rama.org/files/download/45a24df3c836a20',
+        description: 'Zahtjev za upis činjenice rođenja u matičnu knjigu rođenih'
+      },
+      {
+        main: 'https://prozor-rama.org/files/download/c38dd5962afc8da',
+        description: 'Zahtjev za upis činjenice smrti u matičnu knjigu umrlih'
+      },
+      {
+        main: 'https://prozor-rama.org/files/download/f0690518cd86456',
+        description: 'Prijava (zahtjev) za ispravku-promjenu podataka u matičnoj knjizi'
+      },
+      {
+        main: 'https://prozor-rama.org/status-zahtjeva',
+        description: 'Status zahtjeva — provjerite svoj zahtjev'
+      }
     ],
-    categories: ['Matični uredi', 'Urbanizam'],
-    komentar: 'Izdavanje izvoda i urbanizam'
+    categories: ['Matični uredi', 'Urbanizam', 'E-uprava'],
+    komentar: 'eUprava s elektronskim zahtjevima i provjerom statusa zahtjeva'
   },
   {
     id: 'hnk-stolac',
@@ -1524,7 +1578,10 @@ export const municipalitiesDatabase: MunicipalityData[] = [
     region: 'Doboj regija',
     entity: 'RS',
     urls: [
-      
+      {
+        main: 'https://vukosavlje.gov.ba/ba/',
+        description: 'Službena web-stranica Općine Vukosavlje — prijava prebivališta i matični uredi'
+      }
     ],
     categories: ['Prijava prebivališta', 'Urbanizam', 'Matični uredi'],
     komentar: 'Prijava prebivališta i matični uredi'
@@ -1962,7 +2019,7 @@ export const municipalitiesDatabase: MunicipalityData[] = [
     entity: 'BD',
     urls: [
       {
-        main: 'https://bdcentral.net/obrasci/',
+        main: 'https://vlada.bdcentral.net/Home/',
         description: 'Obrasci – zahtjevi za uvjerenja, urbanistička saglasnost, lokacijska informacija, prijava boravka'
       },
       {

@@ -165,6 +165,19 @@ export const verifiedDomains: VerifiedMunicipality[] = [
     physical_presence_required: false,
     komentar: 'Obrasci – zahtjev za uvjerenja, urbanistička saglasnost, lokacijska informacija',
   },
+  {
+    municipality_name: 'Vlada Kantona Sarajevo',
+    canton: 'Kanton Sarajevo (KS)',
+    entity: 'FBiH',
+    official_domain: 'vlada.ks.gov.ba',
+    forms_url: 'https://mf.ks.gov.ba/preuzimanja/zahtjevi-i-obrasci',
+    e_government_link: 'https://vlada.ks.gov.ba/',
+    document_categories: ['Ministarstvo finansija', 'Ministarstvo kulture i sporta', 'Ministarstvo privrede', 'Ministarstvo saobraćaja', 'Ministarstvo unutrašnjih poslova', 'Ministarstvo za boračka pitanja', 'Ministarstvo zdravstva', 'Besplatna pravna pomoć', 'Inspekcijski poslovi'],
+    status: 'active',
+    secure: true,
+    physical_presence_required: false,
+    komentar: 'Zahtjevi i obrasci Vlade KS: mf.ks.gov.ba (finansije), te ministarstva kulture i sporta, privrede, saobraćaja, unutrašnjih poslova, boračkih pitanja i zdravstva, Zavod za besplatnu pravnu pomoć i Kantonalna uprava za inspekcijske poslove',
+  },
 
   // ============================================================
   // ZENIČKO-DOBOJSKI KANTON (ZDK)
@@ -313,11 +326,12 @@ export const verifiedDomains: VerifiedMunicipality[] = [
     canton: 'Tuzlanski kanton (TK)',
     entity: 'FBiH',
     official_domain: 'opcinacelic.ba',
+    forms_url: 'https://opcinacelic.ba/file/prijavni-obrazac-za-vjerske-zajednice-i-crkve/1117',
     document_categories: ['Službeni glasnici', 'Upiti i dostava obrazaca'],
     status: 'active',
     secure: true,
     physical_presence_required: true,
-    komentar: 'Nema centralne stranice s online obrascima; za konkretan obrazac obratite se nadležnoj općinskoj službi.'
+    komentar: 'Web stranica funkcioniše kao informativni portal i repozitorij dokumenata. Obrasci i odluke dostupni su putem veza na sajtu; matične evidencije i izvode se preuzimaju lično u općinskim uređima.'
   },
   {
     municipality_name: 'Doboj Istok',
@@ -393,7 +407,7 @@ export const verifiedDomains: VerifiedMunicipality[] = [
     canton: 'Tuzlanski kanton (TK)',
     entity: 'FBiH',
     official_domain: 'www.srebrenik.ba',
-    forms_url: 'https://srebrenik.ba/e-uprava/',
+    forms_url: 'https://www.srebrenik.ba/e-uprava/',
     document_categories: ['Prostorno uređenje', 'Civilna zaštita', 'Boračko-invalidska zaštita', 'Opća uprava', 'Poduzetništvo', 'Finansije', 'Katastar', 'Interna revizija'],
     status: 'active',
     secure: true,
@@ -731,7 +745,8 @@ export const verifiedDomains: VerifiedMunicipality[] = [
     municipality_name: 'Prozor-Rama',
     canton: 'Hercegovačko-neretvanski kanton (HNK)',
     entity: 'FBiH',
-    official_domain: 'prozor-rama.ba',
+    official_domain: 'prozor-rama.org',
+    forms_url: 'https://prozor-rama.org/euprava/dokumenti/zahtjevi',
     
     document_categories: ['Matični uredi', 'Urbanizam'],
     status: 'active',
@@ -1170,7 +1185,7 @@ export const verifiedDomains: VerifiedMunicipality[] = [
     entity: 'RS',
     official_domain: 'hanpijesak.org',
     forms_url: 'https://hanpijesak.org/zahtjevi-i-obrasci/',
-    document_categories: ['Prijemna kancelarija', 'Opšta uprava', 'Matični uredi', 'Urbanizam'],
+    document_categories: ['Prijemna kancelarija', 'Opšta uprava', 'Matični uredi', 'Urbanizam', 'Ekološke dozvole', 'Prevoz', 'Inspekcijski poslovi', 'Socijalna zaštita'],
     status: 'active',
     secure: true,
     physical_presence_required: false,
@@ -1195,7 +1210,7 @@ export const verifiedDomains: VerifiedMunicipality[] = [
     municipality_name: 'Brčko Distrikt BiH',
     entity: 'BD',
     official_domain: 'bdcentral.net',
-    forms_url: 'https://bdcentral.net/obrasci/',
+    forms_url: 'https://vlada.bdcentral.net/Home/',
     document_categories: ['Urbanizam', 'Matični uredi', 'Zdravstvo', 'Obrazovanje', 'Građevinske dozvole'],
     status: 'active',
     secure: true,

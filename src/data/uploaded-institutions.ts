@@ -372,7 +372,7 @@ export const uploadedInstitutions: UploadedInstitution[] = [
   "entity": "FBiH",
   "canton": "Hercegovačko-neretvanski kanton (HNK)",
   "website": "https://neum.ba",
-  "formsUrl": "https://neum.ba/dokumenti/",
+  "formsUrl": "https://neum.ba/eDokumenti/sluzba-za-stambeno-komunalne-poslove-izgradnju-i-razvoj/",
   "status": "active",
   "note": "Obrasci – zahtjev za uvjerenja, urbanistička dokumentacija",
   "region": "B&H MOSTARSKA REGIJA"
@@ -590,8 +590,8 @@ export const uploadedInstitutions: UploadedInstitution[] = [
   "name": "Ministarstvo prostornog uređenja, graditeljstva i zaštite okoliša ZHK",
   "entity": "FBiH",
   "canton": "Zapadnohercegovački kanton (ZHK)",
-  "website": "https://www.vladazzh.com/",
-  "formsUrl": "https://www.vladazzh.com/dokumenti.aspx",
+  "website": "https://www.vladazzh.gov.ba/",
+  "formsUrl": "https://www.vladazzh.gov.ba/Dokumenti.aspx",
   "status": "active",
   "note": "Ministarstvo prostornog uređenja, graditeljstva i zaštite okoliša ZHK",
   "region": "B&H MOSTARSKA REGIJA"
@@ -910,9 +910,9 @@ export const uploadedInstitutions: UploadedInstitution[] = [
   "entity": null,
   "canton": null,
   "website": "https://www.opstina-novigrad.com/",
-  
+  "formsUrl": "https://www.euprava.opstina-novigrad.com/drustvene-djelatnosti/",
   "status": "active",
-  "note": "Zvanična web stranica Opštine Novi Grad je aktivna i stabilna. Postoji jasno označen odjeljak za obrasce i zahtjeve. Nije potrebna posebna tražilica.",
+  "note": "eUprava Opštine Novi Grad: društvene djelatnosti, eMatičar, eDijaspora, ePitanje, eStatus (provjera statusa zahtjeva) i brisanje zahtjeva — https://www.euprava.opstina-novigrad.com/drustvene-djelatnosti/ , https://www.euprava.opstina-novigrad.com/ematicar/ , https://www.euprava.opstina-novigrad.com/edijaspora/ , https://www.euprava.opstina-novigrad.com/epitanje/ , https://www.euprava.opstina-novigrad.com/estatus/ , https://www.euprava.opstina-novigrad.com/brisanje-zahtjeva/",
   "region": "B&H BOSANSKA KRAJINA"
  },
  {
@@ -1082,7 +1082,7 @@ export const uploadedInstitutions: UploadedInstitution[] = [
   "website": "https://kladanj.ba/",
   "formsUrl": null,
   "status": "counter",
-  "note": "Digitalni obrasci trenutno nisu dostupni na e-Servisu. Korisnik može pripremiti e-mail zahtjev Službi za opću upravu.",
+  "note": "Digitalni obrasci trenutno nisu dostupni na e-Servisu. Matični ured: rodni/vjenčani/umrli list i uvjerenje o državljanstvu podnose se lično u Šalter sali ili poštom (dijaspora). Poticaji, stipendije i javni pozivi u sekciji Zvanična obavještenja i konkursi; ugovori u sekciji Izvršenje ugovora. Predaja: protokol, Šalter sala (prizemlje), Kladanjske brigade br. 2, 75280 Kladanj, uz dokaz o uplati općinske takse ako je propisana.",
   "region": "B&H POSAVINA REGIJA"
  },
  {
@@ -1530,7 +1530,7 @@ export const uploadedInstitutions: UploadedInstitution[] = [
   "website": "https://zenica.ba/",
   "formsUrl": "https://zenica.ba/e-registar-administrativnih-postupaka/",
   "status": "active",
-  "note": "PDF formular E-registar Administrativnih postupaka i E-Servis, razni administrativni formulari i obrasci.",
+  "note": "E-registar administrativnih postupaka, E-Matičar i E-servisi Grada Zenice: https://zenica.ba/e-registar-administrativnih-postupaka/ , https://zenica.ba/e-maticar/ , https://zenica.ba/#e-servisi",
   "region": "B&H ZENIČKA REGIJA"
  },
  {
