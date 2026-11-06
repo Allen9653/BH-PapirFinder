@@ -550,8 +550,8 @@ export const uploadedInstitutions: UploadedInstitution[] = [
   "name": "Grude",
   "entity": "FBiH",
   "canton": "Zapadnohercegovački kanton (ZHK)",
-  "website": "https://grude.info/",
-  "formsUrl": "https://grude.info/opcinska-uprava/opcinske-sluzbe/sluzba-za-opcu-upravu-branitelje-iz-domovinskog-rata-i-drustvene-djelatnosti/?search=&from=01.01.2000&to=31.12.2100#zahtjevi",
+  "website": "https://www.grude.ba/",
+  "formsUrl": "https://www.grude.ba/opcinska-uprava/opcinske-sluzbe/sluzba-za-opcu-upravu-branitelje-iz-domovinskog-rata-i-drustvene-djelatnosti/?search=&from=01.01.2000&to=31.12.2100#zahtjevi",
   "status": "active",
   "note": "Službena stranica s 23 zahtjeva i obrasca za matične evidencije, socijalnu i boračku zaštitu, obrazovanje i pristup informacijama.",
   "region": "B&H MOSTARSKA REGIJA"

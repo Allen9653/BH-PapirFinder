@@ -1319,8 +1319,8 @@ export const municipalitiesDatabase: MunicipalityData[] = [
     ],
     guidanceLinks: [
       ...grudeGuidanceLinks,
-      { label: 'Služba za prostorno uređenje, imovinsko-pravne i katastarske poslove – zahtjevi', url: 'https://grude.info/opcinska-uprava/opcinske-sluzbe/sluzba-za-prostorno-uredenje-imovinsko-pravne-i-katastarske-poslove/?search=&from=01.01.2000&to=31.12.2100#zahtjevi' },
-      { label: 'Služba za gospodarstvo, financije, inspekcijske poslove i civilnu zaštitu – zahtjevi', url: 'https://grude.info/opcinska-uprava/opcinske-sluzbe/sluzba-za-gospodarstvo-financije-inspekcijske-poslove-i-civilnu-zastitu/?search=&from=01.01.2000&to=31.12.2100#zahtjevi' }
+      { label: 'Služba za prostorno uređenje, imovinsko-pravne i katastarske poslove – zahtjevi', url: 'https://www.grude.ba/opcinska-uprava/opcinske-sluzbe/sluzba-za-prostorno-uredenje-imovinsko-pravne-i-katastarske-poslove/?search=&from=01.01.2000&to=31.12.2100#zahtjevi' },
+      { label: 'Služba za gospodarstvo, financije, inspekcijske poslove i civilnu zaštitu – zahtjevi', url: 'https://www.grude.ba/opcinska-uprava/opcinske-sluzbe/sluzba-za-gospodarstvo-financije-inspekcijske-poslove-i-civilnu-zastitu/?search=&from=01.01.2000&to=31.12.2100#zahtjevi' }
     ],
     categories: Array.from(new Set(grudeForms.map((form) => form.category))),
     komentar: 'Službena stranica s 23 zahtjeva i obrasca za matične evidencije, socijalnu i boračku zaštitu, obrazovanje i pristup informacijama.'

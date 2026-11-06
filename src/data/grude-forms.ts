@@ -1,12 +1,12 @@
 import type { MunicipalityForm } from './municipality-registry';
 
-export const GRUDE_OFFICIAL_URL = 'https://grude.info/';
+export const GRUDE_OFFICIAL_URL = 'https://www.grude.ba/';
 export const GRUDE_FORMS_PORTAL_URL =
-  'https://grude.info/opcinska-uprava/opcinske-sluzbe/sluzba-za-opcu-upravu-branitelje-iz-domovinskog-rata-i-drustvene-djelatnosti/?search=&from=01.01.2000&to=31.12.2100#';
+  'https://www.grude.ba/opcinska-uprava/opcinske-sluzbe/sluzba-za-opcu-upravu-branitelje-iz-domovinskog-rata-i-drustvene-djelatnosti/?search=&from=01.01.2000&to=31.12.2100#';
 export const GRUDE_REQUESTS_URL =
-  'https://grude.info/opcinska-uprava/opcinske-sluzbe/sluzba-za-opcu-upravu-branitelje-iz-domovinskog-rata-i-drustvene-djelatnosti/?search=&from=01.01.2000&to=31.12.2100#zahtjevi';
+  'https://www.grude.ba/opcinska-uprava/opcinske-sluzbe/sluzba-za-opcu-upravu-branitelje-iz-domovinskog-rata-i-drustvene-djelatnosti/?search=&from=01.01.2000&to=31.12.2100#zahtjevi';
 
-const requestPage = 'https://grude.info/opcinska-uprava/opcinske-sluzbe/sluzba-za-opcu-upravu-branitelje-iz-domovinskog-rata-i-drustvene-djelatnosti/?search=&from=01.01.2000&to=31.12.2100';
+const requestPage = 'https://www.grude.ba/opcinska-uprava/opcinske-sluzbe/sluzba-za-opcu-upravu-branitelje-iz-domovinskog-rata-i-drustvene-djelatnosti/?search=&from=01.01.2000&to=31.12.2100';
 
 const documentForm = (
   id: string,
