@@ -323,3 +323,6 @@ export const websiteVerification: Record<string, WebsiteCheck> = {
   "url": "https://vlada.hnzk.ba",
   "check": "redirect",
   "verified": true,
+  "source": "statički imenik (uploads)"
+},
+};
