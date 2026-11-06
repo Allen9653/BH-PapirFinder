@@ -5,6 +5,8 @@
 // institutions-database i korisničku bazu "#B&H KORISNI URL".
 // ============================================================
 
+import { supabase } from '@/lib/supabaseClient'; // <-- Dodaj ovo ovdje na vrh
+
 import { verifiedDomains, cantonalInstitutions } from '@/data/verified-domains';
 import { municipalitiesDatabase } from '@/data/municipalities-database';
 import { allInstitutions } from '@/lib/institutions-database';
