@@ -1,8 +1,10 @@
 import { useState, useEffect, useMemo } from 'react';
 import { getOfficialWebsite } from '@/lib/institution-directory';
+import type { UnifiedSearchResult } from '@/lib/municipalities-database-enhanced'; // <-- Ovdje
 import { useDirectoryVersion } from '@/hooks/use-directory-version';
 import InstitutionAutocomplete from '@/components/InstitutionAutocomplete';
 import SearchAutocompleteDropdown from '@/components/SearchAutocompleteDropdown';
+import DomainDetector from '@/components/DomainDetector'; // <-- Ovdje
 import { useNavigate, useSearchParams } from 'react-router-dom';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { Button } from '@/components/ui/button';
@@ -47,17 +49,17 @@ import {
   Layers,
   Tag,
   Check,
-} from 'lucide-react';
-import Header from '@/components/Header';
-import Footer from '@/components/Footer';
-import DocumentViewer from '@/components/DocumentViewer';
-import UniversalBackButton from '@/components/UniversalBackButton';
-import Breadcrumbs from '@/components/Breadcrumbs';
-import TagNavigation, { UNIVERSAL_TAGS } from '@/components/TagNavigation';
-import { hasAccess, recordSearch } from '@/lib/trial';
-import { getUserAccessLevel, getSubscriptionMessage } from '@/lib/access-control';
-import { SortOption } from '@/lib/supabaseClient';
-import {
+  } from 'lucide-react';
+  import DomainDetector from '@/components/DomainDetector';
+  import type { UnifiedSearchResult } from '@/lib/municipalities-database-enhanced';
+  import Header from '@/components/Header';
+  import Footer from '@/components/Footer';
+  import Breadcrumbs from '@/components/Breadcrumbs';
+  import TagNavigation, { UNIVERSAL_TAGS } from '@/components/TagNavigation';
+  import { hasAccess, recordSearch } from '@/lib/trial';
+  import { getUserAccessLevel, getSubscriptionMessage } from '@/lib/access-control';
+  import { SortOption } from '@/lib/supabaseClient';
+  import {
   getAllMunicipalities,
   searchMunicipalityForms,
   MunicipalityForm,
