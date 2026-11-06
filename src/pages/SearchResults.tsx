@@ -798,7 +798,7 @@ const SearchResults = () => {
                                 onClick={() => setCategoryFilter(isSelected ? 'all' : uTag.id)}
                                 className={`px-2 py-0.5 rounded text-[11px] transition-colors ${
                                   isSelected
-                                    ? 'bg-[#5df0a8] text-[#04060f] font-bold shadow-xs'
+                                 ? 'bg-[#5df0a8] text-[#04060f] font-bold shadow-xs'
                                     : 'bg-[#5df0a8]/10 text-[#5df0a8] hover:bg-[#5df0a8]/20 border border-[#5df0a8]/20'
                                 }`}
                                 title={uTag.labels.en}
@@ -898,109 +898,12 @@ const SearchResults = () => {
                             className="bg-[#5df0a8] hover:bg-[#4de69c] text-[#04060f] font-bold text-xs"
                           >
                             <RotateCcw className="w-3.5 h-3.5 mr-1" />
-                            Poništi filtere
-                          </Button>
-                        </div>
-                      ) : (
-                        <div className="grid gap-3">
-                          {displayedForms.map(({ municipality, form }) => {
-                            const dateAdded = getFormDateAdded(form);
-                            return (
-                              <div
-                                key={`${municipality.slug}-${form.id}`}
-                                className="glass-panel p-4 rounded-xl hover:border-[#5df0a8]/40 hover:bg-[#0c1635] transition-all flex flex-col sm:flex-row sm:items-center justify-between gap-4 group"
-                              >
-                                <div className="flex-1 min-w-0">
-                                  <div className="flex items-center gap-2 flex-wrap mb-1.5">
-                                    <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-[#5df0a8]/10 text-[#5df0a8] border border-[#5df0a8]/20">
-                                      {municipality.name} ({municipality.cantonShort})
-                                    </span>
-                                    <span className="text-[10px] font-mono text-slate-300 flex items-center gap-1 px-2 py-0.5 rounded bg-white/5 border border-white/10">
-                                      <Calendar className="w-3 h-3 text-[#5df0a8]" />
-                                      <span>{dateAdded}</span>
-                                    </span>
-                                  </div>
-                                  <h4
-                                    onClick={() => navigate(`/form/${form.id}`)}
-                                    className="text-sm sm:text-base font-semibold text-white group-hover:text-[#5df0a8] transition-colors cursor-pointer"
-                                  >
-                                    {form.name}
-                                  </h4>
-                                </div>
-
-                                <div className="flex items-center gap-2 shrink-0">
-                                  <Button
-                                    size="sm"
-                                    variant="outline"
-                                    className="h-8 px-3 text-xs border-white/10 bg-white/5 text-slate-200 hover:bg-white/10"
-                                    onClick={() => navigate(`/form/${form.id}`)}
-                                  >
-                                    Detalji
-                                  </Button>
-
-                                  <Button
-                                    size="sm"
-                                    className="h-8 px-3.5 text-xs bg-[#5df0a8] hover:bg-[#4be096] text-[#04060f] font-bold shadow-[0_0_12px_rgba(93,240,168,0.3)]"
-                                    onClick={() => setPreviewForm({ municipality, form })}
-                                  >
-                                    <Eye className="h-3.5 w-3.5 mr-1" />
-                                    Otvori PDF
-                                  </Button>
-                                </div>
-                              </div>
-                            );
-                          })}
-                        </div>
-                      )}
-                    </div>
-
-                    {/* Municipalities & Institutions section */}
-                    {filteredInstitutions.length > 0 && (
-                      <div>
-                        <h3 className="text-base sm:text-lg font-bold text-white flex items-center gap-2 mb-4">
-                          <Building2 className="w-4 h-4 text-[#5df0a8]" />
-                          <span>Općinski & Institucionalni Registri</span>
-                          <span className="text-xs font-mono px-2 py-0.5 rounded-full bg-[#5df0a8]/20 text-[#5df0a8]">
-                            {filteredInstitutions.length}
-                          </span>
-                        </h3>
-
-                        <div className="grid gap-3">
-                          {filteredInstitutions.map((result) => {
-                            const websiteUrl = getOfficialWebsite(result.name);
-                            const municipalitySlug = allMunicipalities.find(
-                              (municipality) => municipality.name.toLowerCase() === result.name.toLowerCase(),
-                            )?.slug;
-                            return (
-                              <div
-                                key={result.id}
-                                className="glass-panel p-5 rounded-2xl hover:border-[#5df0a8]/40 transition-all"
-                              >
-                                <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
-                                  <div className="flex-1 min-w-0">
-                                    <div className="flex items-center gap-2 flex-wrap mb-1.5">
-                                      <h4 className="text-base sm:text-lg font-bold text-white">
-                                        {result.name}
-                                      </h4>
-                                      <span
-                                        className={`text-[10px] font-mono px-2 py-0.5 rounded border ${getTrustScoreColor(
-                                          result.trust_score,
-                                        )}`}
-                                      >
-                                        Trust Score: {result.trust_score}%
-                                      </span>
-                                    </div>
-                                  </div>
-
-                                  <div className="flex items-center gap-2 shrink-0">
-                                    {municipalitySlug && (
-                                      <Button
+                         <Button
                                         size="sm"
                                         className="h-8 text-xs bg-[#5df0a8]/20 hover:bg-[#5df0a8]/30 text-[#5df0a8] border border-[#5df0a8]/40"
                                         onClick={() => navigate(`/municipality/${municipalitySlug}`)}
                                       >
-                                        Otvori Registar
-                                        <ChevronRight className="h-3.5 w-3.5 ml-1" />
+                                        Otvori Registar <ChevronRight className="h-3.5 w-3.5 ml-1" />
                                       </Button>
                                     )}
                                   </div>
@@ -1021,9 +924,7 @@ const SearchResults = () => {
 
                                 {expandedDetector === result.id && (
                                   <div className="mt-3 pt-3 border-t border-white/10">
-                                    <DomainDetector
-                                      municipalityName={result.name}
-                                    />
+                                    <DomainDetector municipalityName={result.name} />
                                   </div>
                                 )}
                               </div>
@@ -1038,6 +939,91 @@ const SearchResults = () => {
             )}
 
             {/* TAB: COMPARE */}
+            {activeTab === 'compare' && (
+              <div className="space-y-4">
+                <div className="glass-panel p-5 rounded-2xl mb-6">
+                  <h3 className="text-base font-bold text-white mb-1 flex items-center gap-2">
+                    <GitCompareArrows className="w-4 h-4 text-[#5df0a8]" />
+                    Međuopćinska Usporedba Formulara
+                  </h3>
+                  <p className="text-xs text-slate-400">
+                    Uporedite zahtjeve i potrebnu dokumentaciju za istu vrstu postupka između različitih općina u BiH.
+                  </p>
+                </div>
+
+                {comparisonData.length === 0 ? (
+                  <div className="glass-panel text-center py-12 px-4 rounded-xl text-slate-400 text-sm">
+                    Nema sličnih obrazaca u više općina za ovaj upit. Pokušajte pretražiti opći naziv (npr. &ldquo;građevinska dozvola&rdquo; ili &ldquo;uvjerenje&rdquo;).
+                  </div>
+                ) : (
+                  <div className="space-y-6">
+                    {comparisonData.map(({ keyword, matches }, idx) => (
+                      <div key={idx} className="glass-panel p-5 rounded-2xl">
+                        <div className="flex items-center justify-between mb-4 pb-3 border-b border-white/10">
+                          <h4 className="font-bold text-white text-sm sm:text-base capitalize flex items-center gap-2">
+                            <Tag className="w-4 h-4 text-[#5df0a8]" />
+                            {keyword}
+                          </h4>
+                          <Badge variant="outline" className="text-xs font-mono border-white/20 text-[#5df0a8]">
+                            {matches.length} općina
+                          </Badge>
+                        </div>
+
+                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
+                          {matches.map(({ municipality, form }, mIdx) => (
+                            <div key={mIdx} className="bg-white/5 border border-white/10 p-4 rounded-xl flex flex-col justify-between gap-3">
+                              <div>
+                                <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-[#5df0a8]/10 text-[#5df0a8] border border-[#5df0a8]/20 inline-block mb-2">
+                                  {municipality.name}
+                                </span>
+                                <h5 className="font-semibold text-xs text-white line-clamp-2">{form.name}</h5>
+                              </div>
+                              <div className="flex items-center gap-2 pt-2 border-t border-white/5">
+                                <Button
+                                  size="sm"
+                                  variant="outline"
+                                  className="h-7 text-[11px] w-full border-white/10 bg-white/5 text-slate-200 hover:bg-white/10"
+                                  onClick={() => navigate(`/form/${form.id}`)}
+                                >
+                                  Detalji
+                                </Button>
+                                <Button
+                                  size="sm"
+                                  className="h-7 text-[11px] w-full bg-[#5df0a8] text-[#04060f] font-bold"
+                                  onClick={() => setPreviewForm({ municipality, form })}
+                                >
+                                  Otvori PDF
+                                </Button>
+                              </div>
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                )}
+              </div>
+            )}
+          </>
+        )}
+      </div>
+
+      {/* PDF Preview Modal */}
+      {previewForm && (
+        <DocumentViewer
+          form={previewForm.form}
+          municipality={previewForm.municipality}
+          onClose={() => setPreviewForm(null)}
+        />
+      )}
+
+      <Footer />
+    </div>
+  );
+};
+
+export default SearchResults;
+                                   {/* TAB: COMPARE */}
             {activeTab === 'compare' && (
               <div className="space-y-4">
                 <div className="glass-panel p-5 rounded-2xl mb-6">
