@@ -285,16 +285,13 @@ export const municipalitiesDatabase: MunicipalityData[] = [
     entity: 'FBiH',
     urls: [
       {
-        main: 'https://praca.ba/?s=Obrazac',
+        main: 'http://praca.ba/',
+        forms: 'http://praca.ba/',
         description: 'Zahtjevi i obrasci općinske službe'
-      },
-      {
-        main: 'https://praca.ba/',
-        description: 'Službena stranica Općine Pale-Prača'
       }
     ],
     categories: ['Opća uprava', 'Matični uredi', 'Uvjerenja'],
-    komentar: 'Zahtjevi i obrasci općinske službe'
+    komentar: 'Zahtjevi i obrasci općinske službe — stari HTTPS domen blokira upite, koristi se HTTP verziju'
   },
   {
     id: 'bpk-foca-ustikolina',
@@ -671,7 +668,7 @@ export const municipalitiesDatabase: MunicipalityData[] = [
       }
     ],
     guidanceLinks: [
-      { label: 'eStipendije Grada Gradačac', url: 'https://estipendije-gradacac.ba/' },
+      { label: 'eStipendije Grada Gradačac', url: 'https://gradacac.ba/vijesti/obrasci' },
       { label: 'eCitizen – Grad Gradačac', url: 'https://ecitizen.ba/gradacac/home' },
       { label: 'Pristup podacima iz CIPS baze', url: 'https://gradacac.ba/aktuelnosti/clanak/pristup-podacima-iz-cips-baze' }
     ],
@@ -1363,10 +1360,14 @@ export const municipalitiesDatabase: MunicipalityData[] = [
     region: 'Banjalučka regija',
     entity: 'RS',
     urls: [
-      
+      {
+        main: 'https://gradlaktasi.com/',
+        forms: 'https://gradlaktasi.com/',
+        description: 'Zvanična web-stranica Grada Laktaši'
+      }
     ],
     categories: ['Urbanizam', 'Uvjerenja', 'Prijava boravka'],
-    komentar: 'Urbanizam i prijava boravka'
+    komentar: 'Urbanizam i prijava boravka — domen promijenjen sa laktasi.org na gradlaktasi.com'
   },
   {
     id: 'rs-gradiska',

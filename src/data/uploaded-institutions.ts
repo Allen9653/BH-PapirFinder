@@ -15,10 +15,10 @@ export const uploadedInstitutions: UploadedInstitution[] = [
   "name": "Pale-Prača",
   "entity": "FBiH",
   "canton": "Bosansko-podrinjski kanton (BPK)",
-  "website": "https://praca.ba/",
-  "formsUrl": "https://praca.ba/?s=Obrazac",
+  "website": "http://praca.ba/",
+  "formsUrl": "http://praca.ba/",
   "status": "active",
-  "note": "Zahtjevi i obrasci općinske službe Pale-Prača",
+  "note": "Zahtjevi i obrasci općinske službe Pale-Prača — stari HTTPS domen blokira upite, koristi se HTTP verziju",
   "region": "SARAJEVSKA REGIJA"
  },
  {
@@ -95,10 +95,10 @@ export const uploadedInstitutions: UploadedInstitution[] = [
   "name": "Općina Ilidža",
   "entity": "FBiH",
   "canton": "Kanton Sarajevo (KS)",
-  "website": "https://opcinailidza.ba",
-  
+  "website": "https://www.opcinailidza.ba/",
+  "formsUrl": "https://www.opcinailidza.ba/e-uprava",
   "status": "active",
-  "note": "Zahtjev za izdavanje lokacijske informacije i urbanističkih uslova",
+  "note": "Zvanična web-stranica Općine Ilidža — stari obrazci link vratio HTTP 500, koristi se domaća stranica i e-uprava",
   "region": "SARAJEVSKA REGIJA"
  },
  {
@@ -800,8 +800,8 @@ export const uploadedInstitutions: UploadedInstitution[] = [
   "name": "Srbac",
   "entity": null,
   "canton": null,
-  "website": "https://grad-laktasi.com/",
-  "formsUrl": "https://ecitizen.ba/laktasi/eServices",
+  "website": "https://gradlaktasi.com/",
+  "formsUrl": "https://gradlaktasi.com/",
   "status": "active",
   "note": "Zvanična web stranica Opštine Laktaši je aktivna i stabilna. Direktni linkovi za obrasce i zahtjeve vode na eCitizen platformu, što je uobičajena praksa i osigurava stabilan pristup. Nije potrebna posebna tražilica.",
   "region": "B&H BOSANSKA KRAJINA"

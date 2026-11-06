@@ -457,11 +457,12 @@ export const websiteVerification: Record<string, WebsiteCheck> = {
   "verified": true,
   "source": "statički imenik (uploads)"
  },
- "laktasi": {
-  "check": "unverified",
-  "verified": false,
+  "laktasi": {
+  "url": "https://gradlaktasi.com/",
+  "check": "ok",
+  "verified": true,
   "source": "public.institucije.official_url"
- },
+  },
  "lopare": {
   "url": "",
   "check": "unverified",

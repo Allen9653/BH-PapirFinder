@@ -261,6 +261,7 @@ export const agencyInstitutions: Institution[] = [
     level: 'agency',
     category: 'Registracija poslovanja',
     description: 'Registar poslovnih subjekata i finansijski izvještaji u RS',
+    website: 'http://www.apif.net/',
     
     keywords: ['APIF', 'registracija firme', 'Republika Srpska', 'registar', 'poslovanje', 'firma', 'preduzeće'],
     forms: [
