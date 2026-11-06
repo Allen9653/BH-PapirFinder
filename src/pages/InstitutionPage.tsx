@@ -39,15 +39,15 @@ import MunicipalityEmailRequest from '@/components/MunicipalityEmailRequest';
 import { saveDocumentLocally } from '@/lib/saved-documents';
 
 export default function InstitutionPage() {
-  const { id } = useParams<{ id: string }>();
+  const { slug } = useParams<{ slug: string }>();
   const navigate = useNavigate();
   const { t } = useLanguage();
   const directoryVersion = useDirectoryVersion();
 
   const entry = useMemo(() => {
-    if (!id) return undefined;
-    return getDirectoryEntry(id);
-  }, [id]);
+    if (!slug) return undefined;
+    return getDirectoryEntry(slug);
+  }, [slug]);
 
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedTag, setSelectedTag] = useState<string | null>(null);
