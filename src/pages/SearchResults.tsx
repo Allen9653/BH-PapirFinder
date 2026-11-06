@@ -1,10 +1,10 @@
 import { useState, useEffect, useMemo } from 'react';
 import { getOfficialWebsite } from '@/lib/institution-directory';
-import type { UnifiedSearchResult } from '@/lib/municipalities-database-enhanced'; // <-- Ovdje
+import type { UnifiedSearchResult } from '@/lib/municipalities-database-enhanced';
 import { useDirectoryVersion } from '@/hooks/use-directory-version';
 import InstitutionAutocomplete from '@/components/InstitutionAutocomplete';
 import SearchAutocompleteDropdown from '@/components/SearchAutocompleteDropdown';
-import DomainDetector from '@/components/DomainDetector'; // <-- Ovdje
+import DomainDetector from '@/components/DomainDetector';
 import { useNavigate, useSearchParams } from 'react-router-dom';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { Button } from '@/components/ui/button';
@@ -49,17 +49,15 @@ import {
   Layers,
   Tag,
   Check,
-  } from 'lucide-react';
-  import DomainDetector from '@/components/DomainDetector';
-  import type { UnifiedSearchResult } from '@/lib/municipalities-database-enhanced';
-  import Header from '@/components/Header';
-  import Footer from '@/components/Footer';
-  import Breadcrumbs from '@/components/Breadcrumbs';
-  import TagNavigation, { UNIVERSAL_TAGS } from '@/components/TagNavigation';
-  import { hasAccess, recordSearch } from '@/lib/trial';
-  import { getUserAccessLevel, getSubscriptionMessage } from '@/lib/access-control';
-  import { SortOption } from '@/lib/supabaseClient';
-  import {
+} from 'lucide-react';
+import Header from '@/components/Header';
+import Footer from '@/components/Footer';
+import Breadcrumbs from '@/components/Breadcrumbs';
+import TagNavigation, { UNIVERSAL_TAGS } from '@/components/TagNavigation';
+import { hasAccess, recordSearch } from '@/lib/trial';
+import { getUserAccessLevel, getSubscriptionMessage } from '@/lib/access-control';
+import { SortOption } from '@/lib/supabaseClient';
+import {
   getAllMunicipalities,
   searchMunicipalityForms,
   MunicipalityForm,
@@ -78,6 +76,8 @@ import {
 } from '@/lib/recent-searches';
 import { toast } from 'sonner';
 import RecentSearches from '@/components/RecentSearches';
+import DocumentViewer from '@/components/DocumentViewer';
+
 type FormMatch = { municipality: MunicipalityInfo; form: MunicipalityForm };
 
 function normalizeFormName(name: string): string {
@@ -288,15 +288,12 @@ const SearchResults = () => {
 
   const filteredFormResults = useMemo(() => {
     let list = allFormResults.filter(({ municipality, form }) => {
-      // 1. Municipality filter
       if (municipalityFilter !== 'all' && municipality.slug !== municipalityFilter) {
         return false;
       }
-      // 2. Category / Tag filter
       if (categoryFilter !== 'all' && !matchesTagFilter(form, categoryFilter)) {
         return false;
       }
-      // 3. Date added filter
       const formDate = getFormDateAdded(form);
       if (!isWithinDateRange(formDate, dateFilter)) {
         return false;
@@ -304,7 +301,6 @@ const SearchResults = () => {
       return true;
     });
 
-    // Apply Sorting
     if (sortOption === 'date_desc') {
       list = [...list].sort((a, b) => getFormDateAdded(b.form).localeCompare(getFormDateAdded(a.form)));
     } else if (sortOption === 'date_asc') {
@@ -387,7 +383,6 @@ const SearchResults = () => {
         <div className="container max-w-6xl px-4 mx-auto relative z-10">
           <div className="flex flex-wrap items-center justify-between gap-4 mb-5">
             <div className="flex flex-wrap items-center gap-3">
-              <UniversalBackButton variant="command" />
               <Breadcrumbs />
             </div>
             <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-mono text-[#5df0a8] bg-[#5df0a8]/10 border border-[#5df0a8]/30">
@@ -669,7 +664,6 @@ const SearchResults = () => {
                   {/* Mobile Collapsible Filter Drawer */}
                   {isMobileFiltersOpen && (
                     <div className="lg:hidden pt-3 border-t border-white/10 space-y-4 animate-in fade-in slide-in-from-top-2">
-                      {/* Category filter */}
                       <div>
                         <label className="text-xs font-semibold text-slate-300 mb-1.5 flex items-center gap-1.5">
                           <Layers className="w-3.5 h-3.5 text-[#5df0a8]" />
@@ -690,7 +684,6 @@ const SearchResults = () => {
                         </Select>
                       </div>
 
-                      {/* Municipality filter */}
                       <div>
                         <label className="text-xs font-semibold text-slate-300 mb-1.5 flex items-center gap-1.5">
                           <MapPin className="w-3.5 h-3.5 text-[#5df0a8]" />
@@ -711,7 +704,6 @@ const SearchResults = () => {
                         </Select>
                       </div>
 
-                      {/* Date filter */}
                       <div>
                         <label className="text-xs font-semibold text-slate-300 mb-1.5 flex items-center gap-1.5">
                           <Calendar className="w-3.5 h-3.5 text-[#5df0a8]" />
@@ -761,7 +753,6 @@ const SearchResults = () => {
                         )}
                       </div>
 
-                      {/* 1. Category Filter Group */}
                       <div>
                         <label className="text-xs font-bold text-slate-200 mb-2.5 flex items-center justify-between">
                           <span className="flex items-center gap-1.5">
@@ -786,7 +777,6 @@ const SearchResults = () => {
                           </SelectContent>
                         </Select>
 
-                        {/* Quick category & semantic tag chips */}
                         <div className="flex flex-wrap gap-1 mt-2">
                           <button
                             type="button"
@@ -817,24 +807,9 @@ const SearchResults = () => {
                               </button>
                             );
                           })}
-                          {availableCategories.slice(0, 3).map((c) => (
-                            <button
-                              key={c.name}
-                              type="button"
-                              onClick={() => setCategoryFilter(categoryFilter === c.name ? 'all' : c.name)}
-                              className={`px-2 py-0.5 rounded text-[11px] truncate max-w-[180px] transition-colors ${
-                                categoryFilter === c.name
-                                  ? 'bg-[#5df0a8]/20 text-[#5df0a8] border border-[#5df0a8]/30 font-semibold'
-                                  : 'bg-white/5 text-slate-400 hover:text-slate-200 hover:bg-white/10'
-                              }`}
-                            >
-                              {c.name} ({c.count})
-                            </button>
-                          ))}
                         </div>
                       </div>
 
-                      {/* 2. Municipality Filter Group */}
                       <div className="pt-4 border-t border-white/10">
                         <label className="text-xs font-bold text-slate-200 mb-2.5 flex items-center justify-between">
                           <span className="flex items-center gap-1.5">
@@ -858,38 +833,8 @@ const SearchResults = () => {
                             ))}
                           </SelectContent>
                         </Select>
-
-                        {/* Quick municipality pills */}
-                        <div className="flex flex-wrap gap-1 mt-2">
-                          <button
-                            type="button"
-                            onClick={() => setMunicipalityFilter('all')}
-                            className={`px-2 py-0.5 rounded text-[11px] transition-colors ${
-                              municipalityFilter === 'all'
-                                ? 'bg-sky-500/20 text-sky-400 border border-sky-500/30 font-semibold'
-                                : 'bg-white/5 text-slate-400 hover:text-slate-200 hover:bg-white/10'
-                            }`}
-                          >
-                            Sve
-                          </button>
-                          {availableMunicipalities.slice(0, 4).map((m) => (
-                            <button
-                              key={m.slug}
-                              type="button"
-                              onClick={() => setMunicipalityFilter(m.slug)}
-                              className={`px-2 py-0.5 rounded text-[11px] truncate max-w-[180px] transition-colors ${
-                                municipalityFilter === m.slug
-                                  ? 'bg-sky-500/20 text-sky-400 border border-sky-500/30 font-semibold'
-                                  : 'bg-white/5 text-slate-400 hover:text-slate-200 hover:bg-white/10'
-                              }`}
-                            >
-                              {m.name} ({m.count})
-                            </button>
-                          ))}
-                        </div>
                       </div>
 
-                      {/* 3. Date Added Filter Group */}
                       <div className="pt-4 border-t border-white/10">
                         <label className="text-xs font-bold text-slate-200 mb-2.5 flex items-center justify-between">
                           <span className="flex items-center gap-1.5">
@@ -927,7 +872,6 @@ const SearchResults = () => {
 
                   {/* MAIN CONTENT AREA */}
                   <div className="flex-1 min-w-0 w-full">
-                    {/* Individual Forms List (Glass Cards) */}
                     <div className="mb-10">
                       <div className="flex items-center justify-between mb-4">
                         <h3 className="text-base sm:text-lg font-bold text-white flex items-center gap-2">
@@ -968,22 +912,6 @@ const SearchResults = () => {
                               >
                                 <div className="flex-1 min-w-0">
                                   <div className="flex items-center gap-2 flex-wrap mb-1.5">
-                                    <button
-                                      type="button"
-                                      onClick={(e) => {
-                                        e.stopPropagation();
-                                        setCategoryFilter(categoryFilter === form.category ? 'all' : form.category);
-                                      }}
-                                      className={`text-[10px] font-mono uppercase px-2 py-0.5 rounded transition-colors flex items-center gap-1 cursor-pointer ${
-                                        categoryFilter === form.category
-                                          ? 'bg-[#5df0a8] text-[#04060f] font-bold shadow-[0_0_10px_rgba(93,240,168,0.3)]'
-                                          : 'bg-white/5 text-slate-300 hover:text-[#5df0a8] hover:bg-white/10 border border-white/10'
-                                      }`}
-                                      title={`Filtriraj po oznaci "${form.category}"`}
-                                    >
-                                      <Tag className="w-2.5 h-2.5" />
-                                      <span>{form.category}</span>
-                                    </button>
                                     <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-[#5df0a8]/10 text-[#5df0a8] border border-[#5df0a8]/20">
                                       {municipality.name} ({municipality.cantonShort})
                                     </span>
@@ -991,95 +919,38 @@ const SearchResults = () => {
                                       <Calendar className="w-3 h-3 text-[#5df0a8]" />
                                       <span>{dateAdded}</span>
                                     </span>
-                                    {form.sizeKB && (
-                                      <span className="text-[10px] text-slate-400 font-mono">
-{form.sizeKB} KB PDF
-                                      </span>
-                                    )}
                                   </div>
                                   <h4
                                     onClick={() => navigate(`/form/${form.id}`)}
                                     className="text-sm sm:text-base font-semibold text-white group-hover:text-[#5df0a8] transition-colors cursor-pointer"
                                   >
                                     {form.name}
-</h4>
+                                  </h4>
+                                </div>
 
-                                  <div className="flex items-center gap-2 shrink-0">
-                                    <Button
-                                      size="sm"
-                                      variant="ghost"
-                                      className="h-8 px-2.5 text-xs text-slate-300 hover:text-[#5df0a8] hover:bg-white/5"
-                                      onClick={() => setPreviewForm({ municipality, form })}
-                                      title="Print Preview na papiru"
-                                    >
-                                      <Printer className="h-3.5 w-3.5 mr-1" />
-                                      <span className="hidden sm:inline">Print Preview</span>
-                                    </Button>
+                                <div className="flex items-center gap-2 shrink-0">
+                                  <Button
+                                    size="sm"
+                                    variant="outline"
+                                    className="h-8 px-3 text-xs border-white/10 bg-white/5 text-slate-200 hover:bg-white/10"
+                                    onClick={() => navigate(`/form/${form.id}`)}
+                                  >
+                                    Detalji
+                                  </Button>
 
-                                    <Button
-                                      size="sm"
-                                      variant="ghost"
-                                      className="h-8 px-2.5 text-xs text-slate-300 hover:text-[#00A651] hover:bg-white/5"
-                                      onClick={() => {
-                                        const saved = saveDocumentLocally({
-                                          id: form.id,
-                                          name: form.name,
-                                          municipality: municipality.name,
-                                          category: form.category,
-                                          file_url: form.url!,
-                                          notes: `Saved from search results`,
-                                        });
-                                        toast.success(saved ? 'Sačuvano u arhivu' : 'Već je u arhivi');
-                                      }}
-                                      title="Sačuvaj u arhivu"
-                                    >
-                                      <Save className="h-3.5 w-3.5 mr-1" />
-                                      <span className="hidden sm:inline">Sačuvaj</span>
-                                    </Button>
-
-                                    <Button
-                                      size="sm"
-                                      variant="outline"
-                                      className="h-8 px-3 text-xs border-white/10 bg-white/5 text-slate-200 hover:bg-white/10"
-                                      onClick={() => navigate(`/form/${form.id}`)}
-                                    >
-                                      Detalji
-                                    </Button>
-
-                                    <Button
-                                      size="sm"
-                                      className="h-8 px-3.5 text-xs bg-[#5df0a8] hover:bg-[#4be096] text-[#04060f] font-bold shadow-[0_0_12px_rgba(93,240,168,0.3)]"
-                                      onClick={() => setPreviewForm({ municipality, form })}
-                                    >
-                                      <Eye className="h-3.5 w-3.5 mr-1" />
-                                      Otvori PDF
-                                    </Button>
-                                  </div>
+                                  <Button
+                                    size="sm"
+                                    className="h-8 px-3.5 text-xs bg-[#5df0a8] hover:bg-[#4be096] text-[#04060f] font-bold shadow-[0_0_12px_rgba(93,240,168,0.3)]"
+                                    onClick={() => setPreviewForm({ municipality, form })}
+                                  >
+                                    <Eye className="h-3.5 w-3.5 mr-1" />
+                                    Otvori PDF
+                                  </Button>
                                 </div>
                               </div>
                             );
                           })}
                         </div>
-                      )}
-
-                      {filteredFormResults.length > 10 && !showAllForms && (
-                        <Button
-                          variant="ghost"
-                          className="mt-4 text-[#5df0a8] hover:bg-white/5 w-full text-xs font-mono"
-                          onClick={() => setShowAllForms(true)}
-                        >
-                          Prikaži preostalih {filteredFormResults.length - 10} obrazaca ↓
-                        </Button>
-                      )}
-
-                      {showAllForms && filteredFormResults.length > 10 && (
-                        <Button
-                          variant="ghost"
-                          className="mt-4 text-slate-400 hover:bg-white/5 w-full text-xs font-mono"
-                          onClick={() => setShowAllForms(false)}
-                        >
-                          Prikaži manje ↑
-                        </Button>
                       )}
                     </div>
 
@@ -1111,11 +982,6 @@ const SearchResults = () => {
                                       <h4 className="text-base sm:text-lg font-bold text-white">
                                         {result.name}
                                       </h4>
-                                      {result.is_premium && (
-                                        <Badge className="bg-amber-400/20 text-amber-300 border border-amber-400/30 text-[10px]">
-                                          <Star className="h-3 w-3 mr-1" /> Verified
-                                        </Badge>
-                                      )}
                                       <span
                                         className={`text-[10px] font-mono px-2 py-0.5 rounded border ${getTrustScoreColor(
                                           result.trust_score,
@@ -1124,26 +990,9 @@ const SearchResults = () => {
                                         Trust Score: {result.trust_score}%
                                       </span>
                                     </div>
-
-                                    <div className="flex items-center gap-2 text-xs text-slate-400 flex-wrap">
-                                      {result.canton && <span>{result.canton}</span>}
-                                      {result.entity && <span>• {result.entity}</span>}
-                                    </div>
                                   </div>
 
                                   <div className="flex items-center gap-2 shrink-0">
-                                    {websiteUrl && (
-                                      <Button
-                                        size="sm"
-                                        variant="outline"
-                                        className="h-8 text-xs border-white/10 bg-white/5 text-slate-200 hover:bg-white/10"
-                                        onClick={() => safeOpenExternal(websiteUrl)}
-                                      >
-                                        <ExternalLink className="h-3.5 w-3.5 mr-1" />
-                                        Web
-                                      </Button>
-                                    )}
-
                                     {municipalitySlug && (
                                       <Button
                                         size="sm"
@@ -1157,7 +1006,6 @@ const SearchResults = () => {
                                   </div>
                                 </div>
 
-                                {/* Domain detector trigger */}
                                 <div className="mt-3 pt-3 border-t border-white/5 flex items-center justify-between text-xs">
                                   <span className="text-slate-400">
                                     Službena domena: <code className="text-slate-200">{result.domain || 'U registru'}</code>
@@ -1257,7 +1105,7 @@ const SearchResults = () => {
         )}
       </div>
 
-{/* Modal za DocumentViewer PDF pregleda */}
+      {/* Modal za DocumentViewer PDF pregleda */}
       {previewForm && (
         <DocumentViewer
           open={!!previewForm}
