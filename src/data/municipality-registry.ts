@@ -1,5 +1,5 @@
 import { matchesQuery } from '@/lib/search-match';
-import { municipalities } from '@/data/municipalities-database';
+import * as db from '@/data/municipalities-database';
 
 export interface MunicipalityForm {
   id: string;
@@ -22,7 +22,8 @@ export interface MunicipalityInfo {
 }
 
 export function getAllMunicipalities(): MunicipalityInfo[] {
-  return (municipalities || []) as MunicipalityInfo[];
+  const raw = (db as any).municipalities || (db as any).default || db;
+  return (Array.isArray(raw) ? raw : []) as MunicipalityInfo[];
 }
 
 export function getTotalFormsCount(): number {
@@ -35,6 +36,19 @@ export function getMunicipalityBySlug(slug: string): MunicipalityInfo | undefine
   return all.find((m) => m.slug === slug);
 }
 
+export function getFormById(formId: string): { municipality: MunicipalityInfo; form: MunicipalityForm } | undefined {
+  const all = getAllMunicipalities();
+  for (const municipality of all) {
+    if (municipality.forms) {
+      const form = municipality.forms.find((f) => f.id === formId);
+      if (form) {
+        return { municipality, form };
+      }
+    }
+  }
+  return undefined;
+}
+
 export function getFormDateAdded(form: MunicipalityForm): string {
   return form.dateAdded || 'N/A';
 }
@@ -44,7 +58,7 @@ export function searchMunicipalityForms(slug: string, query: string): Municipali
   if (!municipality || !query.trim()) return [];
 
   const place = `${municipality.name} ${municipality.cantonShort ?? ''} ${municipality.slug.replace(/-/g, ' ')}`;
-  return municipality.forms.filter((form) =>
+  return (municipality.forms || []).filter((form) =>
     matchesQuery(`${form.name} ${form.category} ${place}`, query),
   );
 }
