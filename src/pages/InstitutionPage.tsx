@@ -6,7 +6,7 @@ import { Input } from '@/components/ui/input';
 import { Card, CardContent } from '@/components/ui/card';
 import { getMunicipalityBySlug, searchMunicipalityForms } from '@/data/municipality-registry';
 
-export function InstitutionPage() {
+export default function InstitutionPage() {
   const { slug } = useParams<{ slug: string }>();
   const [searchQuery, setSearchQuery] = useState('');
 
