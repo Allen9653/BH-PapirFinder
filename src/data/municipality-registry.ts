@@ -1,9 +1,5 @@
 import { matchesQuery } from '@/lib/search-match';
-
-// Ovdje vrati originalni uvoz (import) baze općina koji si koristio u svom projektu prije ove izmjene,
-// npr. ako su podaci bili definisani tu ili uvezeni iz drugog JSON/TS fajla, zadrži to.
-// Primjer (prilagodi putanju ako je bila drugačija u tvom originalnom kodu):
-import { municipalities } from './municipalities-data'; // ili kako se već zvao vaš fajl s podacima
+import { municipalities } from '@/data/municipalities-database';
 
 export interface MunicipalityForm {
   id: string;
@@ -26,7 +22,7 @@ export interface MunicipalityInfo {
 }
 
 export function getAllMunicipalities(): MunicipalityInfo[] {
-  return municipalities as MunicipalityInfo[];
+  return (municipalities || []) as MunicipalityInfo[];
 }
 
 export function getTotalFormsCount(): number {
