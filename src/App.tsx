@@ -33,6 +33,7 @@ import DeleteAccount from './pages/DeleteAccount';
 import Dashboard from './pages/Dashboard';
 import AIChatbot from './components/AIChatbot';
 import InteractiveGlobeCanvas from './components/InteractiveGlobeCanvas';
+import { Analytics } from '@vercel/analytics/react';
 
 const queryClient = new QueryClient();
 
@@ -85,6 +86,7 @@ const App = () => (
             {/* Floating AI Chatbot — available on all pages */}
             <AIChatbot />
           </BrowserRouter>
+          <Analytics />
         </TooltipProvider>
       </LanguageProvider>
     </QueryClientProvider>
